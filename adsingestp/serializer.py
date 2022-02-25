@@ -1,4 +1,4 @@
-from adsputils import get_date
+from datetime import datetime
 
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
@@ -18,7 +18,7 @@ def serialize(input_dict, format):
 
     output['recordData'] = {
         'createdTime': None,
-        'parsedTime': get_date().strftime(TIMESTAMP_FMT),
+        'parsedTime': datetime.utcnow().strftime(TIMESTAMP_FMT),
         'loadType': 'fromURL' if format=='HTML' else 'fromFile',
         'loadFormat': format,
         'loadLocation': None,
@@ -57,7 +57,8 @@ def serialize(input_dict, format):
         'publisher': input_dict['publisher'] if 'publisher' in input_dict else None,
         'issueNum': input_dict['issue'] if 'issue' in input_dict else None,
         'volumeNum': input_dict['volume'] if 'volume' in input_dict else None,
-        'pubYear': input_dict['pubdate_print'][0:4] or input_dict['pubdate_electronic'][0:4] or None,
+        'pubYear': input_dict['pubdate_print'][0:4] if 'pubdate_print' in input_dict
+        else (input_dict['pubdate_electronic'][0:4] if 'pubdate_electronic' in input_dict else None),
         'ISSN': [{'pubtype': pubtype, 'issnString': issn} for (pubtype, issn) in input_dict['issn']] if 'issn' in input_dict else None,
         'isRefereed': True or False
     }

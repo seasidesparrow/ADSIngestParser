@@ -6,19 +6,7 @@ class BaseBeautifulSoupParser(object):
     out of the input XML stream.
     """
 
-    def bsfiletodict(self, fp, parser='lxml', **kwargs):
-        """
-        Returns a BeautifulSoup tree
-
-        :param fp:
-        :param parser: e.g. 'html.parser', 'html5lib', 'lxml' (default)
-        :param kwargs:
-        :return:
-        """
-        ## TODO what is fp? I think it's the file path - should modify because we're not reading files here, just input text blobs
-        return bs4.BeautifulSoup(fp.read(), parser, **kwargs)
-
-    def bsstrtodict(self, r, parser='lxml', **kwargs):
+    def bsstrtodict(self, r, parser='lxml-xml', **kwargs):
         """
         Returns a BeautifulSoup tree given an XML text
         :param r:
