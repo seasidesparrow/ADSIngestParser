@@ -1,26 +1,15 @@
 from bs4 import BeautifulSoup
 import re
 import os
-from .base import BaseBeautifulSoupParser
+import logging
 import namedentities
-from adsingestp import utils, serializer
-from adsingestp.parser_exceptions import JATSContribException
 from collections import OrderedDict
 
-# ============================= INITIALIZATION ==================================== #
-# - Use app logger:
-#import logging
-#logger = logging.getLogger('orcid-pipeline')
-# - Or individual logger for this file:
-from adsputils import setup_logging, load_config
-proj_home = os.path.realpath(os.path.join(os.path.dirname(__file__), '../'))
-config = load_config(proj_home=proj_home)
-logger = setup_logging(__name__, proj_home=proj_home,
-                        level=config.get('LOGGING_LEVEL', 'INFO'),
-                        attach_stdout=config.get('LOG_STDOUT', False))
+from adsingestp.parsers.base import BaseBeautifulSoupParser
+from adsingestp import utils, serializer
+from adsingestp.ingest_exceptions import JATSContribException
 
-# =============================== FUNCTIONS ======================================= #
-
+logging.basicConfig(filename='parser.log', level=logging.INFO)
 
 class JATSAffils(object):
     regex_spcom = re.compile(r'\s+,')
@@ -437,6 +426,8 @@ class JATSParser(BaseBeautifulSoupParser):
         :param kwargs:
         :return:
         """
+        # note that parser=lxml is recommended here - if the more stringent lxml-xml is used,
+        # the output is slightly different and the code will need to be modified
         newr = BeautifulSoup(str(r), 'lxml')
         try:
             tag_list = list(set([x.name for x in newr.find_all()]))
@@ -591,7 +582,7 @@ class JATSParser(BaseBeautifulSoupParser):
                         self.base_metadata['edhist_acc'] = eddate
                     else:
                         # TODO fix this log statement - what identifying info is needed?
-                        logger.info('Editorial history date type not recognized. ')
+                        logging.info('Editorial history date type not recognized. ')
 
             self.base_metadata['edhist_rec'] = received
             self.base_metadata['edhist_rev'] = revised
@@ -710,11 +701,11 @@ class JATSParser(BaseBeautifulSoupParser):
                     self.base_metadata['erratum'] = re.sub(doiurl_pat, '', relateddoi)
                 else:
                     # TODO need to figure out an ID for this log statement
-                    logger.warning('No DOI for erratum')
+                    logging.warning('No DOI for erratum')
                     # pass
             except Exception as err:
                 # TODO figure out an ID for this log statement
-                logger.warning('Problem making erratum: %s', err)
+                logging.warning('Problem making erratum: %s', err)
                 # pass
 
     def _parse_ids(self):
@@ -811,7 +802,8 @@ class JATSParser(BaseBeautifulSoupParser):
             self.base_metadata['page_first'] = self._detag(fpage, [])
 
         try:
-            self.base_metadata['electronic_id'] = self._detag(self.article_meta.find('elocation-id'), [])
+            tmp = self.article_meta.find('elocation-id')
+            self.base_metadata['electronic_id'] = self._detag(tmp, [])
         except Exception as e:
             pass
 
@@ -916,7 +908,7 @@ class JATSParser(BaseBeautifulSoupParser):
         # TODO return serialized? or object? look in requirements doc
         #   TODO A: return serialized!
         # TODO should the parse to dict function be separate from the parse to serialized function? for testing/atomicity?
-        output = serializer.serialize(self.base_metadata, format='JATS', )
+        output = serializer.serialize(self.base_metadata, format='JATS')
 
         return output
 
