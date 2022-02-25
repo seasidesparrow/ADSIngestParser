@@ -2,10 +2,9 @@
 import unittest
 import os
 import json
-from adsputils import get_date
 import datetime
 
-from ..parsers import jats
+from adsingestp.parsers import jats
 
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
@@ -34,7 +33,7 @@ class TestIOP(unittest.TestCase):
             parsed = parser.parse(input_data)
 
             # this field won't match the test data, so check and then discard
-            time_difference = datetime.datetime.strptime(parsed['recordData']['parsedTime'], TIMESTAMP_FMT) - get_date().replace(tzinfo=None)
+            time_difference = datetime.datetime.strptime(parsed['recordData']['parsedTime'], TIMESTAMP_FMT) - datetime.datetime.utcnow()
             self.assertTrue(abs(time_difference) < datetime.timedelta(seconds=10))
             parsed['recordData']['parsedTime'] = None
 
