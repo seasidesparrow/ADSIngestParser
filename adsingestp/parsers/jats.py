@@ -110,6 +110,13 @@ class JATSAffils(object):
             except Exception as err:
                 pass
 
+            # note that the ingest schema allows a single email address, but we've extracted all
+            # here in case that changes to allow more than one
+            if a['email']:
+                a['email'] = a['email'][0]
+            else:
+                a['email'] = ''
+
     def parse(self, article_metadata):
         """
 
@@ -268,13 +275,20 @@ class JATSAffils(object):
                                         pass
                                     e.decompose()
 
+                                # note that the ingest schema allows a single orcid, but we've extracted all
+                                # here in case that changes to allow more than one
+                                if orcid:
+                                    orcid_out = orcid[0]
+                                else:
+                                    orcid_out = ''
+
                                 # create the author dict
                                 auth.update(corresp=l_correspondent)
                                 auth.update(surname=surname)
                                 auth.update(given=given)
                                 auth.update(aff=aff_text)
                                 auth.update(xaff=xref_aff, xemail=xref_email)
-                                auth.update(orcid=orcid)
+                                auth.update(orcid=orcid_out)
                                 auth.update(email=emails)
                                 contrib.decompose()
 
