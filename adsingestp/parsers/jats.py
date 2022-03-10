@@ -49,6 +49,7 @@ class JATSAffils(object):
                 # check for empty strings with commas
                 checka = a.replace(',',' ')
                 if checka.replace(' ',''):
+                    a = a.replace(' , ', ', ').replace('  ',' ')
                     new_aff.append(a)
 
         newaffstr = '; '.join(new_aff)
@@ -278,7 +279,8 @@ class JATSAffils(object):
                                 # note that the ingest schema allows a single orcid, but we've extracted all
                                 # here in case that changes to allow more than one
                                 if orcid:
-                                    orcid_out = orcid[0]
+                                    orcid_out = self._fix_orcid(orcid)
+                                    orcid_out = orcid_out[0]
                                 else:
                                     orcid_out = ''
 
