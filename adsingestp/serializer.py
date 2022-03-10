@@ -61,14 +61,14 @@ def serialize(input_dict, format):
         }
 
     output['editorialHistory'] = {
-        'receivedDates': input_dict['edhist_rec'] if 'edhist_rec' in input_dict else '',
-        'revisedDates': input_dict['edhist_rev'] if 'edhist_rev' in input_dict else '',
-        'acceptedDate': input_dict['edhist_acc'] if 'edhist_acc' in input_dict else ''
+        'receivedDates': input_dict.get('edhist_rec', ''),
+        'revisedDates': input_dict.get('edhist_rev', ''),
+        'acceptedDate': input_dict.get('edhist_acc', '')
     }
 
     output['pubDate'] = {
-        'electrDate': input_dict['pubdate_electronic'] if 'pubdate_electronic' in input_dict else '',
-        'printDate': input_dict['pubdate_print'] if 'pubdate_print' in input_dict else '',
+        'electrDate': input_dict.get('pubdate_electronic', ''),
+        'printDate': input_dict.get('pubdate_print', ''),
         # 'otherPubDate': {
         #     'otherDateType': 'XXX', # TODO
         #     'otherDate': 'XXX' # TODO
@@ -77,15 +77,15 @@ def serialize(input_dict, format):
 
     output['publication'] = {
         #'docType': 'XXX',
-        'pubName': input_dict['publication'] if 'publication' in input_dict else '',
+        'pubName': input_dict.get('publication', ''),
         #'confName': 'XXX',
         #'confLocation': 'XXX',
         #'confDates': 'XXX',
         #'confEditors': ['XXX'],
         #'confPID': 'XXX',
-        'publisher': input_dict['publisher'] if 'publisher' in input_dict else '',
-        'issueNum': input_dict['issue'] if 'issue' in input_dict else '',
-        'volumeNum': input_dict['volume'] if 'volume' in input_dict else '',
+        'publisher': input_dict.get('publisher', ''),
+        'issueNum': input_dict.get('issue', ''),
+        'volumeNum': input_dict.get('volume', ''),
         'pubYear': input_dict['pubdate_print'][0:4] if 'pubdate_print' in input_dict
         else (input_dict['pubdate_electronic'][0:4] if 'pubdate_electronic' in input_dict else ''),
         'ISSN': [{'pubtype': pubtype, 'issnString': issn} for (pubtype, issn) in input_dict['issn']] if 'issn' in input_dict else '',
@@ -110,28 +110,28 @@ def serialize(input_dict, format):
 
     output['publisherIDs'] = [
         {
-            'attribute': i['attribute'] if 'attribute' in i else '',
-            'Identifier': i['Identifier'] if 'Identifier' in i else ''
+            'attribute': i.get('attribute', ''),
+            'Identifier': i.get('Identifier', '')
         }
     for i in input_dict['ids']['pub-id'] if 'ids' in input_dict and 'pub-id' in input_dict['ids']]
 
     output['pagination'] = {
-        'firstPage': input_dict['page_first'] if 'page_first' in input_dict else '',
-        'lastPage': input_dict['page_last'] if 'page_last' in input_dict else '',
-        'pageCount': input_dict['numpages'] if 'numpages' in input_dict else '',
-        'pageRange': input_dict['page_range'] if 'page_range' in input_dict else '',
-        'electronicID': input_dict['electronic_id'] if 'electronic_id' in input_dict else ''
+        'firstPage': input_dict.get('page_first', ''),
+        'lastPage': input_dict.get('page_last', ''),
+        'pageCount': input_dict.get('numpages', ''),
+        'pageRange': input_dict.get('page_range', ''),
+        'electronicID': input_dict.get('electronic_id', '')
     }
 
     output['authors'] = [
         {
             'name': {
-                'surname': i['surname'] if 'surname' in i else '',
-                'given-name': i['given'] if 'given' in i else '',
-                'middle-name': i['middle'] if 'middle' in i else '',
-                'prefix': i['prefix'] if 'prefix' in i else '',
-                'suffix': i['suffix'] if 'suffix' in i else '',
-                'pubraw': i['nameraw'] if 'nameraw' in i else '',
+                'surname': i.get('surname', ''),
+                'given-name': i.get('given', ''),
+                'middle-name': i.get('middle', ''),
+                'prefix': i.get('prefix', ''),
+                'suffix': i.get('suffix', ''),
+                'pubraw': i.get('nameraw', ''),
                 #'native-lang': 'XXX',
                 #'collab': 'XXX' # TODO need a collab example
             },
@@ -146,9 +146,9 @@ def serialize(input_dict, format):
                 #'collab': True or False, # TODO need a collab example
                 #'deceased': True or False, # TODO need an example
                 #'coauthor': True or False, # TODO need an example
-                'email': i['email'] if 'email' in i else '',
+                'email': i.get('email', ''),
                 #'funding': 'XXX', # TODO need an example
-                'orcid': i['orcid'] if 'orcid' in i else '',
+                'orcid': i.get('orcid', ''),
             }
         }
     for i in input_dict['authors'] if 'authors' in input_dict]
@@ -187,7 +187,7 @@ def serialize(input_dict, format):
     # ] # TODO need an example
 
     output['title'] = {
-        'textEnglish': input_dict['title'] if 'title' in input_dict else '', # TODO need to tweak for case of foreign language title
+        'textEnglish': input_dict.get('title', ''), # TODO need to tweak for case of foreign language title
         # 'textNative': 'XXX', # TODO
         # 'langNative': 'XXX' # TODO # TODO need an example
     }
@@ -195,7 +195,7 @@ def serialize(input_dict, format):
     #output['subtitle'] = 'XXX' # TODO need an example
 
     output['abstract'] = {
-        'textEnglish': input_dict['abstract'] if 'abstract' in input_dict else '', # TODO need to tweak for case of foreign language abstract
+        'textEnglish': input_dict.get('abstract', ''), # TODO need to tweak for case of foreign language abstract
         #'textNative': 'XXX', # TODO
         #'langNative': 'XXX' # TODO
     }
@@ -249,18 +249,18 @@ def serialize(input_dict, format):
 
     output['keywords'] = [
         {
-            'keyString': i['string'] if 'string' in i else '',
-            'keySystem': i['system'] if 'system' in i else '',
+            'keyString': i.get('string', ''),
+            'keySystem': i.get('system', ''),
             # 'keyIdent': {
             #     'system': 'XXX',
             #     'keyID': 'XXX'
             # }
         }
-    for i in input_dict['keywords'] if 'keywords' in input_dict]
+    for i in input_dict.get('keywords', []) ]
 
     output['copyright'] = {
         'status': True if 'copyright' in input_dict else False, # TODO ask MT about this
-        'statement': input_dict['copyright'] if 'copyright' in input_dict else ''
+        'statement': input_dict.get('copyright','')
     }
 
     output['openAccess'] = {
