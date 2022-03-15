@@ -1,7 +1,7 @@
-
 # TODO add exception handling
 class JATSContribException(Exception):
     pass
+
 
 class NoSchemaException(Exception):
     pass
