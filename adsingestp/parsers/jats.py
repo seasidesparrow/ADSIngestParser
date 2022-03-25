@@ -1,4 +1,5 @@
 import logging
+import os
 import re
 from collections import OrderedDict
 
@@ -9,7 +10,13 @@ from adsingestp import serializer, utils
 from adsingestp.ingest_exceptions import JATSContribException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
-logging.basicConfig(filename="parser.log", level=logging.INFO)
+proj_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+logging.basicConfig(
+    format="%(asctime)s %(message)s",
+    filename=os.path.join(proj_dir, "logs", "parser.log"),
+    level=logging.INFO,
+)
+# logging.basicConfig(filename="parser.log", level=logging.INFO)
 
 
 class JATSAffils(object):
@@ -87,7 +94,9 @@ class JATSAffils(object):
                         try:
                             a["aff"].append(self.xref_dict[x])
                         except Exception as err:
-                            logging.info("Missing key in xaff! Error: %s", err)
+                            # import pdb
+                            # pdb.set_trace()
+                            logging.info("Key is missing from xaff. Missing key: %s", err)
                             pass
 
                     # if you found any emails in an affstring, add them
@@ -546,7 +555,9 @@ class JATSParser(BaseBeautifulSoupParser):
                     df.decompose()
             except Exception:
                 pass
-            self.base_metadata["title"] = self._detag(title, self.JATS_TAGSET["title"]).strip()
+            self.base_metadata["titleEnglish"] = self._detag(
+                title, self.JATS_TAGSET["title"]
+            ).strip()
 
         try:
             abstract = self.article_meta.abstract.p
@@ -611,7 +622,6 @@ class JATSParser(BaseBeautifulSoupParser):
             keys_uat = []
             keys_misc = []
             keys_aas = []
-            keywords = []
             keys_out = []
             keyword_groups = self.article_meta.find_all("kwd-group")
             for kg in keyword_groups:
@@ -720,9 +730,15 @@ class JATSParser(BaseBeautifulSoupParser):
             try:
                 doiurl_pat = r"(.*?)(doi.org\/)"
                 if self.titledoi:
-                    self.base_metadata["erratum"] = re.sub(doiurl_pat, "", self.titledoi)
+                    self.base_metadata["relatedto"] = {
+                        "relationship": "errata",
+                        "id": re.sub(doiurl_pat, "", self.titledoi),
+                    }
                 elif relateddoi:
-                    self.base_metadata["erratum"] = re.sub(doiurl_pat, "", relateddoi)
+                    self.base_metadata["relatedto"] = {
+                        "relationship": "errata",
+                        "id": re.sub(doiurl_pat, "", relateddoi),
+                    }
                 else:
                     # TODO need to figure out an ID for this log statement
                     logging.warning("No DOI for erratum")
@@ -768,7 +784,7 @@ class JATSParser(BaseBeautifulSoupParser):
             pass
         else:
             # ax_pref = "https://arxiv.org/abs/"
-            self.base_metadata["ids"]["preprint"] = []
+            self.base_metadata["ids"]["preprint"] = {}
             for ax in arxiv:
                 try:
                     x_name = self._detag(ax.find("meta-name"), [])
