@@ -1,5 +1,7 @@
 from datetime import datetime
 
+from adsingestp.ingest_exceptions import WrongFormatException
+
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 # TODO will need to add boolean keys here if we want to keep falsy values - check these
@@ -43,8 +45,7 @@ def serialize(input_dict, format):
     """
 
     if format not in ["JATS", "OtherXML", "HTML", "Text"]:
-        # TODO give this a real exception
-        raise Exception
+        raise WrongFormatException
 
     output = {}
 
@@ -57,9 +58,10 @@ def serialize(input_dict, format):
         "recordOrigin": "",
     }
     # TODO this should be an array of objects - talk to MT
-    # TODO once we can parse more than just errata, need to expand this
-    if "erratum" in input_dict:
-        output["relatedTo"] = {"relationship": "errata", "relatedDocID": input_dict["erratum"]}
+    output["relatedTo"] = [
+        {"relationship": i.get("relationship", ""), "relatedDocID": i.get("id", "")}
+        for i in input_dict.get("relatedto", [])
+    ]
 
     output["editorialHistory"] = {
         "receivedDates": input_dict.get("edhist_rec", ""),
@@ -91,10 +93,9 @@ def serialize(input_dict, format):
         if "pubdate_print" in input_dict
         else (input_dict["pubdate_electronic"][0:4] if "pubdate_electronic" in input_dict else ""),
         "ISSN": [
-            {"pubtype": pubtype, "issnString": issn} for (pubtype, issn) in input_dict["issn"]
-        ]
-        if "issn" in input_dict
-        else "",
+            {"pubtype": pubtype, "issnString": issn}
+            for (pubtype, issn) in input_dict.get("issn", "")
+        ],
         #'isRefereed': True or False
     }
 
@@ -102,28 +103,17 @@ def serialize(input_dict, format):
         {
             #'Crossref': 'XXX',
             #'ISBN': 'XXX',
-            "DOI": input_dict["ids"]["doi"]
-            if "ids" in input_dict and "doi" in input_dict["ids"]
-            else "",
+            "DOI": input_dict.get("ids", {}).get("doi", ""),
             "preprint": {
-                "source": input_dict["ids"]["preprint"]["source"]
-                if "ids" in input_dict
-                and "preprint" in input_dict["ids"]
-                and "source" in input_dict["ids"]["preprint"]
-                else "",
-                "identifier": input_dict["ids"]["preprint"]["id"]
-                if "ids" in input_dict
-                and "preprint" in input_dict["ids"]
-                and "id" in input_dict["ids"]["preprint"]
-                else "",
+                "source": input_dict.get("ids", {}).get("preprint", {}).get("source", ""),
+                "identifier": input_dict.get("ids", {}).get("preprint", {}).get("id", ""),
             },
         }
     ]
 
     output["publisherIDs"] = [
         {"attribute": i.get("attribute", ""), "Identifier": i.get("Identifier", "")}
-        for i in input_dict["ids"]["pub-id"]
-        if "ids" in input_dict and "pub-id" in input_dict["ids"]
+        for i in input_dict.get("ids", {}).get("pub-id", "")
     ]
 
     output["pagination"] = {
@@ -149,11 +139,10 @@ def serialize(input_dict, format):
             "affiliation": [
                 {
                     "affPubRaw": j,
-                    "affPubID": i["xaff"][idx],
+                    "affPubID": i.get("xaff")[idx] if i.get("xaff") else "",
                     #'affPubIDType': 'XXX' # TODO ask MT
                 }
-                for idx, j in enumerate(i["aff"])
-                if "aff" in i
+                for idx, j in enumerate(i.get("aff", []))
             ],
             "attrib": {
                 #'collab': True or False, # TODO need a collab example
@@ -164,52 +153,51 @@ def serialize(input_dict, format):
                 "orcid": i.get("orcid", ""),
             },
         }
-        for i in input_dict["authors"]
-        if "authors" in input_dict
+        for i in input_dict.get("authors", [])
     ]
 
-    # output['otherContributor'] = [
-    #     {
-    #         'role': 'XXX',
-    #         'contrib': {
-    #             'name': {
-    #                 'surname': 'XXX',
-    #                 'given-name': 'XXX',
-    #                 'middle-name': 'XXX',
-    #                 'prefix': 'XXX',
-    #                 'suffix': 'XXX',
-    #                 'pubraw': 'XXX',
-    #                 'native-lang': 'XXX',
-    #                 'collab': 'XXX'
-    #             },
-    #             'affiliation': [
-    #                 {
-    #                     'affPubRaw': 'XXX',
-    #                     'affPubID': 'XXX',
-    #                     'affPubIDType': 'XXX'
-    #                 }
-    #             ],
-    #             'attrib': {
-    #                 'collab': True or False,
-    #                 'deceased': True or False,
-    #                 'coauthor': True or False,
-    #                 'email': 'XXX',
-    #                 'funding': 'XXX',
-    #                 'orcid': 'XXX'
-    #             }
-    #         }
-    #     }
-    # ] # TODO need an example
+    output["otherContributor"] = [
+        {
+            "role": i.get("role", ""),
+            "contrib": {
+                "name": {
+                    "surname": i.get("surname", ""),
+                    "given-name": i.get("given", ""),
+                    "middle-name": i.get("middle", ""),
+                    "prefix": i.get("prefix", ""),
+                    "suffix": i.get("suffix", ""),
+                    "pubraw": i.get("nameraw", ""),
+                    #'native-lang': 'XXX',
+                    #'collab': 'XXX'
+                },
+                "affiliation": [
+                    {
+                        "affPubRaw": j,
+                        "affPubID": i.get["xaff"][idx] if i.get("xaff") else "",
+                        #'affPubIDType': 'XXX'
+                    }
+                    for idx, j in enumerate(i.get("aff", []))
+                ],
+                "attrib": {
+                    # 'collab': True or False,
+                    # 'deceased': True or False,
+                    # 'coauthor': True or False,
+                    "email": i.get("email", ""),
+                    #'funding': 'XXX',
+                    "orcid": i.get("orcid", ""),
+                },
+            },
+        }
+        for i in input_dict.get("contributors", [])
+    ]
 
     output["title"] = {
-        "textEnglish": input_dict.get(
-            "title", ""
-        ),  # TODO need to tweak for case of foreign language title
-        # 'textNative': 'XXX', # TODO
-        # 'langNative': 'XXX' # TODO # TODO need an example
+        "textEnglish": input_dict.get("titleEnglish", ""),
+        "textNative": input_dict.get("titleNative", ""),
+        "langNative": input_dict.get("langNative", ""),
     }
 
-    # output['subtitle'] = 'XXX' # TODO need an example
+    output["subtitle"] = input_dict.get("subtitle", "")
 
     output["abstract"] = {
         "textEnglish": input_dict.get(
@@ -268,7 +256,7 @@ def serialize(input_dict, format):
     #     }
     # ] # TODO need an example
 
-    # output['doctype'] = 'XXX' # TODO ask MT about this
+    output["doctype"] = input_dict.get("doctype", "")
 
     output["keywords"] = [
         {
@@ -288,8 +276,8 @@ def serialize(input_dict, format):
     }
 
     output["openAccess"] = {
-        "open": input_dict["openAccess"]["open"]
-        if "openAccess" in input_dict and "open" in input_dict["openAccess"]
+        "open": input_dict.get("openAccess", {}).get("open", False)
+        if input_dict.get("openAccess")
         else False,
         # 'license': 'XXX',
         # 'licenseURL': 'XXX',
