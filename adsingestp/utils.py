@@ -3,10 +3,7 @@ import os
 import re
 
 import nameparser
-import unidecode
 from namedentities import named_entities, unicode_entities
-
-from adsingestp.ingest_exceptions import UnicodeHandlerError
 
 re_ents = re.compile(r"&[a-z0-9]+;|&#[0-9]{1,6};|&#x[0-9a-fA-F]{1,6};")
 
@@ -131,33 +128,6 @@ related_trans_dict = {
 }
 
 
-def u2asc(input):
-    """
-    Converts/transliterates unicode characters to ASCII, using the unidecode package.
-    Functionality is similar to the legacy code in adspy.Unicode, but may treat some characters differently
-    (e.g. umlauts). Standard unidecode package only handles Latin-based characters.
-    :param input: string to be transliterated. Can be either unicode or encoded in utf-8
-    :return output: transliterated string, in either unicode or encoded (to match input)
-    """
-
-    # TODO If used on anything but author names, add special handling for math symbols and other special chars
-    if not isinstance(input, str):
-        try:
-            input = input.decode("utf-8")
-        except UnicodeDecodeError:
-            raise UnicodeHandlerError("Input must be either unicode or encoded in utf8.")
-
-    try:
-        output = unidecode.unidecode(input)
-    except UnicodeDecodeError:
-        raise UnicodeHandlerError("Transliteration failed, check input.")
-
-    if not isinstance(input, str):
-        output = output.encode("utf-8")
-
-    return output
-
-
 class EntityConverter(object):
     def __init__(self):
         self.input_text = ""
@@ -242,9 +212,6 @@ class AuthorNames(object):
             )
         )
 
-        # Default unknown author
-        self.unknown_author_str = ""
-
     def _read_datfile(self, filename):
         output_list = []
 
@@ -260,131 +227,63 @@ class AuthorNames(object):
                         output_list.append(line.strip())
         return output_list
 
-    # def normalize(self, authors_str, delimiter=';', collaborations_params=default_collaborations_params):
-    #     """
-    #     Normalizes a string of author names separated by some delimiter
-    #     :param authors_str: Input string of one or more author names
-    #     :param delimiter: Delimiter that separates two author names
-    #     :param collaborations_params: Dict of collaborations params/config; should include 'keywords' (list),
-    #     'first_author_delimiter' (string), 'remove_the' (boolean), 'fix_arXiv_mixed_collaboration_string' (boolean)
-    #
-    #     :return author names, normalized, separated by the given delimiter plus a space
-    #     """
-    #     normalized_authors_list = []
-    #
-    #     for author_str in authors_str.split(delimiter):
-    #         normalized_authors_list.append(self._normalize_author(author_str, collaborations_params))
-    #     return (delimiter + ' ').join(normalized_authors_list)
-
-    # def _normalize_author(self, author_str, collaborations_params=default_collaborations_params):
-    #     """
-    #     Normalizes an author name string ensuring capitalization and
-    #     transforming first name to only initials
-    #     :param author_str
-    #     :param collaborations_params
-    #     """
-    #     try:
-    #         # TODO do we still need to convert to ASCII??
-    #         # Transliterates unicode characters to ASCII
-    #         author_str = u2asc(author_str.strip())
-    #     except Exception:
-    #         logging.exception("Unexpected error transliterating author name\
-    #                            unicode string to ASCII")
-    #         # TODO: Implement better error control
-    #         return self._normalize_author(self.unknown_author_str,
-    #                                       collaborations_params)
-    #
-    #     # Check first if it is a collaboration, given that collaboration strings
-    #     # may have commas and it may be wrongly interpreted as a name
-    #     collaboration = False
-    #     for keyword in collaborations_params['keywords']:
-    #         if keyword in author_str.lower():
-    #             collaboration = True
-    #             break
-    #     if collaboration:
-    #         # Make sure there are no commas to avoid interpreting this name as 'last, first name'
-    #         normalized_author_str = author_str.replace(",", "")
-    #     else:
-    #         match = self.regex_author.search(author_str)
-    #         if match:
-    #             # Last name detected
-    #             ## Using .title() breaks dutch last names!
-    #             # last_name = match.group('last_name').strip().title()
-    #             last_name = match.group('last_name').strip()
-    #             initials_list = []
-    #             # Collect initials from first name if it is present
-    #             for i in range(self.max_first_name_initials):
-    #                 key = 'initial' + str(i)
-    #                 if match.group(key):
-    #                     initials_list.append(match.group(key).strip().upper())
-    #             initials_str = " ".join(initials_list)
-    #             # Form normalized author string where capitalization is guaranteed
-    #             normalized_author_str = "{}, {}".format(last_name, initials_str)
-    #             # Make sure there are no dots
-    #             normalized_author_str = normalized_author_str.replace(".", "")
-    #         else:
-    #             # Make sure there are no commas to avoid interpreting this
-    #             # name as 'last, first name'
-    #             normalized_author_str = author_str.replace(",", "")
-    #             # Make sure there are no dots or commas
-    #             normalized_author_str = normalized_author_str.replace(".", "")
-    #
-    #     normalized_author_str = normalized_author_str.strip()
-    #     if len(normalized_author_str) == 0:
-    #         normalized_author_str = self.normalized_unknown_author_str
-    #     return normalized_author_str
-
     def _extract_collaboration(
-        self, collaboration_str, default_to_last_name, delimiter, collaborations_params
+        self, collaboration_str, default_to_last_name, collaborations_params
     ):
         """
         Verifies if the author name string contains a collaboration string
         The collaboration extraction can be controlled by the dictionary
         'collaborations_params'.
         """
-        corrected_collaboration_str = ""  # Default
+        corrected_collaboration_list = []
+        is_collaboration_str = False
         try:
             for keyword in collaborations_params["keywords"]:
                 if keyword in collaboration_str.lower():
-                    collaboration_str = re.sub(keyword, keyword.capitalize(), collaboration_str)
-                    if collaborations_params["remove_the"]:
-                        corrected_collaboration_str = self.regex_the.sub("", collaboration_str)
-                    else:
-                        corrected_collaboration_str = collaboration_str
-
-                    if collaborations_params["fix_arXiv_mixed_collaboration_string"]:
-                        # TODO: Think a better way to account for this
-                        # specific cases if there's a ',' in the string,
-                        # it probably includes the 1st author
-                        string_list = corrected_collaboration_str.split(",")
-                        if len(string_list) == 2:
-                            # Based on an arXiv author case: "collaboration,
-                            # Gaia"
-                            string_list.reverse()
-                            corrected_collaboration_str = " ".join(string_list)
-
+                    is_collaboration_str = True
                     if collaborations_params["first_author_delimiter"]:
                         # Based on an arXiv author case: "<tag>Collaboration:
                         # Name, Author</tag>"
-                        authors_list = corrected_collaboration_str.split(
+                        authors_list = collaboration_str.split(
                             collaborations_params["first_author_delimiter"]
                         )
-                        corrected_authors_list = []
-                        for author in authors_list:
-                            if keyword in author.lower():
-                                corrected_authors_list.append(author.strip())
-                            else:
-                                corrected_authors_list.append(
-                                    self._parse_author_name(author.strip(), default_to_last_name)
+                    else:
+                        authors_list = list(collaboration_str)
+                    for author in authors_list:
+                        if keyword in author.lower():
+                            corrected_collaboration_str_tmp = re.sub(
+                                keyword, keyword.capitalize(), author
+                            )
+                            if collaborations_params["remove_the"]:
+                                corrected_collaboration_str_tmp = self.regex_the.sub(
+                                    "", corrected_collaboration_str_tmp
                                 )
-                        corrected_collaboration_str = (
-                            (delimiter + " ").join(corrected_authors_list).strip()
-                        )
+
+                            if collaborations_params["fix_arXiv_mixed_collaboration_string"]:
+                                # TODO: Think a better way to account for this
+                                # specific cases if there's a ',' in the string,
+                                # it probably includes the 1st author
+                                string_list = corrected_collaboration_str_tmp.split(",")
+                                if len(string_list) == 2:
+                                    # Based on an arXiv author case: "collaboration,
+                                    # Gaia"
+                                    string_list.reverse()
+                                    corrected_collaboration_str_tmp = " ".join(string_list)
+                            corrected_collaboration_list.append(
+                                {
+                                    "collab": corrected_collaboration_str_tmp.strip(),
+                                    "nameraw": author.strip(),
+                                }
+                            )
+                        else:
+                            corrected_collaboration_list.append(
+                                self._parse_author_name(author.strip(), default_to_last_name)
+                            )
                     break
         except Exception:
             logging.exception("Unexpected error in collaboration checks")
-        is_collaboration_str = corrected_collaboration_str != ""
-        return is_collaboration_str, corrected_collaboration_str
+
+        return is_collaboration_str, corrected_collaboration_list
 
     def _clean_author_name(self, author_str):
         """
@@ -477,7 +376,7 @@ class AuthorNames(object):
             author.middle = " ".join(keep_as_middle)
             # [MT 2020 Oct 07, can't reproduce where .reverse() is necessary?]
             # add_to_last.reverse()
-            author.last = " ".join(add_to_last) + author.last
+            author.last = " ".join(add_to_last + [author.last])
 
         # Verify that no first names appear in the detected last name
         if author.last:
@@ -558,13 +457,14 @@ class AuthorNames(object):
         for author_str in authors_list:
             author_str = self._clean_author_name(author_str)
             # Check for collaboration strings
-            is_collaboration, collaboration_str = self._extract_collaboration(
-                author_str, default_to_last_name, delimiter, collaborations_params
+            is_collaboration, collaboration_list = self._extract_collaboration(
+                author_str, default_to_last_name, collaborations_params
             )
             if is_collaboration:
                 # Collaboration strings can contain the first author, which we need to split
-                for corrected_author_str in collaboration_str.split(delimiter):
-                    corrected_authors_list.append(corrected_author_str.strip())
+
+                for corrected_author in collaboration_list:
+                    corrected_authors_list.append(corrected_author)
             else:
                 corrected_authors_list.append(
                     self._parse_author_name(author_str, default_to_last_name)
