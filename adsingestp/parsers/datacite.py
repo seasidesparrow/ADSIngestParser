@@ -9,7 +9,6 @@ from adsingestp.ingest_exceptions import (
     WrongSchemaException,
 )
 from adsingestp.parsers.base import BaseXmlToDictParser
-from adsingestp.utils import AuthorNames
 
 
 class DataciteParser(BaseXmlToDictParser):
@@ -48,7 +47,7 @@ class DataciteParser(BaseXmlToDictParser):
 
     def _parse_contrib(self, author=True):
         contribs_out = []
-        name_parser = AuthorNames()
+        name_parser = utils.AuthorNames()
         if author:
             contrib_array = self._array(
                 self._dict(self.input_metadata.get("creators")).get("creator", [])

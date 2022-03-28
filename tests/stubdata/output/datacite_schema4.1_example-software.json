@@ -16,7 +16,7 @@
  "otherContributor": [{"contrib": {"name": {"given-name": "Apollo",
                                             "middle-name": "- University of",
                                             "pubraw": "Apollo - University of Cambridge Repository",
-                                            "surname": "CambridgeRepository"}},
+                                            "surname": "Cambridge Repository"}},
                        "role": "HostingInstitution"}],
  "persistentIDs": [{"DOI": "10.5072/example-software-2.0"}],
  "pubDate": {"electrDate": "2017-05-08"},
