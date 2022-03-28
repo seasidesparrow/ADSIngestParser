@@ -134,7 +134,7 @@ def serialize(input_dict, format):
                 "suffix": i.get("suffix", ""),
                 "pubraw": i.get("nameraw", ""),
                 #'native-lang': 'XXX',
-                #'collab': 'XXX' # TODO need a collab example
+                "collab": i.get("collab", ""),
             },
             "affiliation": [
                 {
@@ -145,7 +145,7 @@ def serialize(input_dict, format):
                 for idx, j in enumerate(i.get("aff", []))
             ],
             "attrib": {
-                #'collab': True or False, # TODO need a collab example
+                "collab": True if i.get("collab", "") else False,
                 #'deceased': True or False, # TODO need an example
                 #'coauthor': True or False, # TODO need an example
                 "email": i.get("email", ""),
@@ -168,7 +168,7 @@ def serialize(input_dict, format):
                     "suffix": i.get("suffix", ""),
                     "pubraw": i.get("nameraw", ""),
                     #'native-lang': 'XXX',
-                    #'collab': 'XXX'
+                    "collab": i.get("collab", ""),
                 },
                 "affiliation": [
                     {
@@ -179,7 +179,7 @@ def serialize(input_dict, format):
                     for idx, j in enumerate(i.get("aff", []))
                 ],
                 "attrib": {
-                    # 'collab': True or False,
+                    "collab": True if i.get("collab", "") else False,
                     # 'deceased': True or False,
                     # 'coauthor': True or False,
                     "email": i.get("email", ""),
