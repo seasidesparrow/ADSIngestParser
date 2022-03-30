@@ -140,22 +140,21 @@ class DataciteParser(BaseXmlToDictParser):
 
         self.base_metadata["abstract"] = abstract
 
+    def _parse_publisher(self):
+        self.base_metadata["publisher"] = self._text(self.input_metadata.get("publisher", ""))
+
     def _parse_pubdate(self):
         year = self._text(self.input_metadata.get("publicationYear"))
-        pubdate = None
-        dates = {}
+        if year:
+            self.base_metadata["pubdate_electronic"] = year
+
+        dates = []
         for d in self._array(self._dict(self.input_metadata.get("dates")).get("date", [])):
             t = self._attr(d, "dateType")
-            dates[t] = self._text(d)
-        # TODO ask MT how these date types map to data model date types
-        for dt in ["Issued", "Created", "Submitted"]:
-            if dt in dates:
-                pubdate = dates[dt]
-        if not pubdate:
-            pubdate = year
+            dates.append({"type": t, "date": self._text(d)})
 
-        # TODO fix the pubdate formatting
-        self.base_metadata["pubdate_electronic"] = pubdate
+        if dates:
+            self.base_metadata["pubdate_other"] = dates
 
     def _parse_keywords(self):
         keywords = []
@@ -235,6 +234,7 @@ class DataciteParser(BaseXmlToDictParser):
         self._parse_contrib(author=True)
         self._parse_contrib(author=False)
         self._parse_title_abstract()
+        self._parse_publisher()
         self._parse_pubdate()
         self._parse_keywords()
         self._parse_ids()
