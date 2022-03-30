@@ -19,7 +19,7 @@ def clean_empty(input_to_clean, keys_to_keep=required_keys):
     """
 
     :param input_to_clean: dictionary that contains empty key/value pairs to remove
-    :param keys_to_keep: list of keys to keep, even if they're empty
+    :param keys_to_keep: list of keys to keep, even if they"re empty
     :return: copy of input dict with all keys that contain empty values removed
     """
 
@@ -57,7 +57,7 @@ def serialize(input_dict, format):
         "loadLocation": "",
         "recordOrigin": "",
     }
-    # TODO this should be an array of objects - talk to MT
+
     output["relatedTo"] = [
         {"relationship": i.get("relationship", ""), "relatedDocID": i.get("id", "")}
         for i in input_dict.get("relatedto", [])
@@ -72,20 +72,20 @@ def serialize(input_dict, format):
     output["pubDate"] = {
         "electrDate": input_dict.get("pubdate_electronic", ""),
         "printDate": input_dict.get("pubdate_print", ""),
-        # 'otherPubDate': {
-        #     'otherDateType': 'XXX', # TODO
-        #     'otherDate': 'XXX' # TODO
-        # }
+        "otherDate": [
+            {"otherDateType": i.get("type", ""), "otherDateValue": i.get("date", "")}
+            for i in input_dict.get("pubdate_other", [])
+        ],
     }
 
     output["publication"] = {
-        #'docType': 'XXX',
+        # "docType": "XXX",
         "pubName": input_dict.get("publication", ""),
-        #'confName': 'XXX',
-        #'confLocation': 'XXX',
-        #'confDates': 'XXX',
-        #'confEditors': ['XXX'],
-        #'confPID': 'XXX',
+        # "confName": "XXX",
+        # "confLocation": "XXX",
+        # "confDates": "XXX",
+        # "confEditors": ["XXX"],
+        # "confPID": "XXX",
         "publisher": input_dict.get("publisher", ""),
         "issueNum": input_dict.get("issue", ""),
         "volumeNum": input_dict.get("volume", ""),
@@ -96,13 +96,13 @@ def serialize(input_dict, format):
             {"pubtype": pubtype, "issnString": issn}
             for (pubtype, issn) in input_dict.get("issn", "")
         ],
-        #'isRefereed': True or False
+        # "isRefereed": True or False
     }
 
     output["persistentIDs"] = [
         {
-            #'Crossref': 'XXX',
-            #'ISBN': 'XXX',
+            # "Crossref": "XXX",
+            # "ISBN": "XXX",
             "DOI": input_dict.get("ids", {}).get("doi", ""),
             "preprint": {
                 "source": input_dict.get("ids", {}).get("preprint", {}).get("source", ""),
@@ -133,23 +133,23 @@ def serialize(input_dict, format):
                 "prefix": i.get("prefix", ""),
                 "suffix": i.get("suffix", ""),
                 "pubraw": i.get("nameraw", ""),
-                #'native-lang': 'XXX',
+                # "native-lang": "XXX",
                 "collab": i.get("collab", ""),
             },
             "affiliation": [
                 {
                     "affPubRaw": j,
                     "affPubID": i.get("xaff")[idx] if i.get("xaff") else "",
-                    #'affPubIDType': 'XXX' # TODO ask MT
+                    # "affPubIDType": "XXX" # TODO ask MT
                 }
                 for idx, j in enumerate(i.get("aff", []))
             ],
             "attrib": {
                 "collab": True if i.get("collab", "") else False,
-                #'deceased': True or False, # TODO need an example
-                #'coauthor': True or False, # TODO need an example
+                # "deceased": True or False, # TODO need an example
+                # "coauthor": True or False, # TODO need an example
                 "email": i.get("email", ""),
-                #'funding': 'XXX', # TODO need an example
+                # "funding": "XXX", # TODO need an example
                 "orcid": i.get("orcid", ""),
             },
         }
@@ -167,23 +167,23 @@ def serialize(input_dict, format):
                     "prefix": i.get("prefix", ""),
                     "suffix": i.get("suffix", ""),
                     "pubraw": i.get("nameraw", ""),
-                    #'native-lang': 'XXX',
+                    # "native-lang": "XXX",
                     "collab": i.get("collab", ""),
                 },
                 "affiliation": [
                     {
                         "affPubRaw": j,
                         "affPubID": i.get["xaff"][idx] if i.get("xaff") else "",
-                        #'affPubIDType': 'XXX'
+                        # "affPubIDType": "XXX"
                     }
                     for idx, j in enumerate(i.get("aff", []))
                 ],
                 "attrib": {
                     "collab": True if i.get("collab", "") else False,
-                    # 'deceased': True or False,
-                    # 'coauthor': True or False,
+                    # "deceased": True or False,
+                    # "coauthor": True or False,
                     "email": i.get("email", ""),
-                    #'funding': 'XXX',
+                    # "funding": "XXX",
                     "orcid": i.get("orcid", ""),
                 },
             },
@@ -203,23 +203,23 @@ def serialize(input_dict, format):
         "textEnglish": input_dict.get(
             "abstract", ""
         ),  # TODO need to tweak for case of foreign language abstract
-        #'textNative': 'XXX', # TODO
-        #'langNative': 'XXX' # TODO
+        # "textNative": "XXX", # TODO
+        # "langNative": "XXX" # TODO
     }
 
-    # output['comments'] = [
+    # output["comments"] = [
     #     {
-    #         'commentOrigin': 'XXX',
-    #         'commentText': 'XXX'
+    #         "commentOrigin": "XXX",
+    #         "commentText": "XXX"
     #     }
     # ] # TODO need an example
 
-    # output['fulltext'] = {
-    #     'language': 'XXX',
-    #     'body': 'XXX'
+    # output["fulltext"] = {
+    #     "language": "XXX",
+    #     "body": "XXX"
     # } # TODO this is from fulltext
 
-    # output['acknowledgements'] = 'XXX' # TODO this is from fulltext
+    # output["acknowledgements"] = "XXX" # TODO this is from fulltext
 
     output["references"] = (
         input_dict["references"]
@@ -227,32 +227,32 @@ def serialize(input_dict, format):
         else [input_dict["references"]]
     ) or ""
 
-    # output['backmatter'] = [
+    # output["backmatter"] = [
     #     {
-    #         'backType': 'XXX',
-    #         'language': 'XXX',
-    #         'body': 'XXX'
+    #         "backType": "XXX",
+    #         "language": "XXX",
+    #         "body": "XXX"
     #     }
     # ] # TODO need an example
 
-    # output['astronomicalObjects'] = [
-    #     'XXX'
+    # output["astronomicalObjects"] = [
+    #     "XXX"
     # ] # TODO need an example
 
-    # output['esources'] = [
+    # output["esources"] = [
     #     {
-    #         'source': 'XXX',
-    #         'location': 'XXX'
+    #         "source": "XXX",
+    #         "location": "XXX"
     #     }
     # ] # TODO need an example
 
-    # output['dataLinks'] = [
+    # output["dataLinks"] = [
     #     {
-    #         'title': 'XXX',
-    #         'identifier': 'XXX',
-    #         'location': 'XXX',
-    #         'dataType': 'XXX',
-    #         'comment': 'XXX'
+    #         "title": "XXX",
+    #         "identifier": "XXX",
+    #         "location": "XXX",
+    #         "dataType": "XXX",
+    #         "comment": "XXX"
     #     }
     # ] # TODO need an example
 
@@ -262,9 +262,9 @@ def serialize(input_dict, format):
         {
             "keyString": i.get("string", ""),
             "keySystem": i.get("system", ""),
-            # 'keyIdent': {
-            #     'system': 'XXX',
-            #     'keyID': 'XXX'
+            # "keyIdent": {
+            #     "system": "XXX",
+            #     "keyID": "XXX"
             # }
         }
         for i in input_dict.get("keywords", [])
@@ -279,19 +279,19 @@ def serialize(input_dict, format):
         "open": input_dict.get("openAccess", {}).get("open", False)
         if input_dict.get("openAccess")
         else False,
-        # 'license': 'XXX',
-        # 'licenseURL': 'XXX',
-        # 'preprint': 'XXX',
-        # 'startDate': 'XXX',
-        # 'endDate': 'XXX',
-        # 'embargoLength': 'XXX'
+        # "license": "XXX",
+        # "licenseURL": "XXX",
+        # "preprint": "XXX",
+        # "startDate": "XXX",
+        # "endDate": "XXX",
+        # "embargoLength": "XXX"
     }  # TODO need an example
 
-    # output['pubnote'] = 'XXX' # TODO need an example
+    # output["pubnote"] = "XXX" # TODO need an example
     #
-    # output['funding'] = 'XXX' # TODO need an example
+    # output["funding"] = "XXX" # TODO need an example
     #
-    # output['version'] = 'XXX' # TODO need an example
+    # output["version"] = "XXX" # TODO need an example
 
     output_clean = clean_empty(output)
 

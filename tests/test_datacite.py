@@ -43,8 +43,7 @@ class TestDatacite(unittest.TestCase):
             try:
                 ads_schema_validator().validate(parsed)
             except Exception:
-                # TODO get RelatedTo changed to an array so this will pass
-                # self.fail("Schema validation failed")
+                self.fail("Schema validation failed")
                 pass
 
             # this field won't match the test data, so check and then discard
