@@ -1,5 +1,4 @@
 import logging
-import os
 import re
 from collections import OrderedDict
 
@@ -9,13 +8,7 @@ from adsingestp import serializer, utils
 from adsingestp.ingest_exceptions import JATSContribException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
-proj_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
-logging.basicConfig(
-    format="%(asctime)s %(message)s",
-    filename=os.path.join(proj_dir, "logs", "parser.log"),
-    level=logging.INFO,
-)
-# logging.basicConfig(filename="parser.log", level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 class JATSAffils(object):
@@ -95,7 +88,7 @@ class JATSAffils(object):
                         except Exception as err:
                             # import pdb
                             # pdb.set_trace()
-                            logging.info("Key is missing from xaff. Missing key: %s", err)
+                            logger.info("Key is missing from xaff. Missing key: %s", err)
                             pass
 
                     # if you found any emails in an affstring, add them
@@ -115,7 +108,7 @@ class JATSAffils(object):
                     try:
                         a["email"].append(self.xref_dict[item])
                     except Exception as err:
-                        logging.info("Missing key in xemail! Error: %s", err)
+                        logger.info("Missing key in xemail! Error: %s", err)
                         pass
             except Exception:
                 pass
@@ -377,7 +370,7 @@ class JATSAffils(object):
                         self.xref_dict[key] = aff_list
                         a.decompose()
                     except Exception:
-                        logging.info("No aff id key in: %s", a)
+                        logger.info("No aff id key in: %s", a)
                         pass
 
             # author-notes xrefs...
@@ -400,7 +393,7 @@ class JATSAffils(object):
                             self.xref_dict[key] = val
                             c.decompose()
                     except Exception:
-                        logging.info("No authnote id key in: %s", a)
+                        logger.info("No authnote id key in: %s", a)
                         pass
 
             # finishing up
@@ -611,7 +604,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     elif date_type == "accepted":
                         self.base_metadata["edhist_acc"] = eddate
                     else:
-                        logging.info("Editorial history date type (%s) not recognized.", date_type)
+                        logger.info("Editorial history date type (%s) not recognized.", date_type)
 
             self.base_metadata["edhist_rec"] = received
             self.base_metadata["edhist_rev"] = revised
@@ -740,11 +733,11 @@ class JATSParser(BaseBeautifulSoupParser):
                     }
                 else:
                     # TODO need to figure out an ID for this log statement
-                    logging.warning("No DOI for erratum")
+                    logger.warning("No DOI for erratum")
                     # pass
             except Exception as err:
                 # TODO figure out an ID for this log statement
-                logging.warning("Problem making erratum: %s", err)
+                logger.warning("Problem making erratum: %s", err)
                 # pass
 
     def _parse_ids(self):
