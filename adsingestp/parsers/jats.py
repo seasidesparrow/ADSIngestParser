@@ -2,7 +2,6 @@ import logging
 import re
 from collections import OrderedDict
 
-import namedentities
 from bs4 import BeautifulSoup
 
 from adsingestp import serializer, utils
@@ -866,9 +865,11 @@ class JATSParser(BaseBeautifulSoupParser):
             try:
                 ref_results = self.back_meta.find("ref-list").find_all("ref")
                 for r in ref_results:
-                    s = r.extract().get_text().replace("\n", " ")
-                    s = re.sub(r"\s+", r" ", s)
-                    s = namedentities.named_entities(s.strip())
+                    # s = r.extract().get_text().replace("\n", " ")
+                    # s = re.sub(r"\s+", r" ", s)
+                    # s = namedentities.named_entities(s.strip())
+                    # output raw XML for reference service to parse later
+                    s = str(r.extract()).replace("\n", " ")
                     ref_list_text.append(s)
             except Exception:
                 pass
