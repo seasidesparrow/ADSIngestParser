@@ -1,11 +1,20 @@
 import datetime
 import json
+import logging
 import os
 import unittest
 
 from adsingestschema import ads_schema_validator
 
 from adsingestp.parsers import datacite
+
+proj_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, "adsingestp"))
+logging.basicConfig(
+    format="%(levelname)s %(asctime)s %(message)s",
+    filename=os.path.join(proj_dir, "logs", "parser.log"),
+    level=logging.INFO,
+    force=True,
+)
 
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 

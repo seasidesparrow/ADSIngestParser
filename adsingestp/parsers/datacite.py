@@ -10,6 +10,8 @@ from adsingestp.ingest_exceptions import (
 )
 from adsingestp.parsers.base import BaseXmlToDictParser
 
+logger = logging.getLogger(__name__)
+
 
 class DataciteParser(BaseXmlToDictParser):
     """Compatible with DataCite schema versions 3 and 4"""
@@ -72,7 +74,7 @@ class DataciteParser(BaseXmlToDictParser):
                     contrib_name, collaborations_params=self.author_collaborations_params
                 )
                 if len(parsed_name) > 1:
-                    logging.warning(
+                    logger.warning(
                         "More than one name parsed, can only accept one. Input: %s, output: %s",
                         contrib_name,
                         parsed_name,
@@ -196,7 +198,7 @@ class DataciteParser(BaseXmlToDictParser):
             elif rt in utils.related_trans_dict.keys():
                 related_to.append({"relationship": utils.related_trans_dict[rt], "id": c})
             else:
-                logging.info("RelatedTo type %s not included in translation dictionary", rt)
+                logger.info("RelatedTo type %s not included in translation dictionary", rt)
                 related_to.append({"relationship": "related", "id": c})
 
         self.base_metadata["relatedto"] = related_to

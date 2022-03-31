@@ -1,6 +1,16 @@
+import logging
+import os
 import unittest
 
 from adsingestp import utils
+
+proj_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, "adsingestp"))
+logging.basicConfig(
+    format="%(levelname)s %(asctime)s %(message)s",
+    filename=os.path.join(proj_dir, "logs", "parser.log"),
+    level=logging.INFO,
+    force=True,
+)
 
 
 class TestAuthorNames(unittest.TestCase):

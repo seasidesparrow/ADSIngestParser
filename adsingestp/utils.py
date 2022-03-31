@@ -5,6 +5,8 @@ import re
 import nameparser
 from namedentities import named_entities, unicode_entities
 
+logger = logging.getLogger(__name__)
+
 re_ents = re.compile(r"&[a-z0-9]+;|&#[0-9]{1,6};|&#x[0-9a-fA-F]{1,6};")
 
 MONTH_TO_NUMBER = {
@@ -167,7 +169,7 @@ class AuthorNames(object):
         data_dirname = os.path.join(
             os.path.dirname(os.path.realpath(__file__)), "data_files", "author_names"
         )
-        logging.info("Loading ADS author names from: %s", data_dirname)
+        logger.info("Loading ADS author names from: %s", data_dirname)
         self.first_names = self._read_datfile(os.path.join(data_dirname, "first.dat"))
         self.last_names = self._read_datfile(os.path.join(data_dirname, "last.dat"))
         prefix_names = self._read_datfile(os.path.join(data_dirname, "prefixes.dat"))
@@ -180,7 +182,7 @@ class AuthorNames(object):
                 nameparser.config.CONSTANTS.suffix_acronyms.add(s)
                 nameparser.config.CONSTANTS.suffix_not_acronyms.add(s)
         except Exception as e:
-            logging.exception("Unexpected error setting up the nameparser")
+            logger.exception("Unexpected error setting up the nameparser")
             raise BaseException(e)
 
         # Setup the nameparser package and remove *all* of the preset titles:
@@ -219,7 +221,7 @@ class AuthorNames(object):
             fp = open(filename, "r")
         except Exception as err:
             # TODO fix logging
-            logging.exception("Error reading file: %s. Error: %s", filename, err)
+            logger.exception("Error reading file: %s. Error: %s", filename, err)
         else:
             with fp:
                 for line in fp.readlines():
@@ -281,7 +283,7 @@ class AuthorNames(object):
                             )
                     break
         except Exception:
-            logging.exception("Unexpected error in collaboration checks")
+            logger.exception("Unexpected error in collaboration checks")
 
         return is_collaboration_str, corrected_collaboration_list
 
@@ -372,7 +374,7 @@ class AuthorNames(object):
                         else:
                             keep_as_middle.append(middle_name)
             except Exception:
-                logging.exception("Unexpected error in middle name parsing")
+                logger.exception("Unexpected error in middle name parsing")
             author.middle = " ".join(keep_as_middle)
             # [MT 2020 Oct 07, can't reproduce where .reverse() is necessary?]
             # add_to_last.reverse()
@@ -399,7 +401,7 @@ class AuthorNames(object):
                     else:
                         verified_last_name_list.append(last_name)
             except Exception:
-                logging.exception("Unexpected error in last name parsing")
+                logger.exception("Unexpected error in last name parsing")
             else:
                 verified_last_name_list.reverse()
                 author.last = verified_last_name_list
@@ -413,7 +415,7 @@ class AuthorNames(object):
             parsed_author["prefix"] = unicode_entities(author.title).replace("  ", " ")
             parsed_author["nameraw"] = unicode_entities(author_str).replace("  ", " ")
         except Exception:
-            logging.exception("Unexpected error converting detected name into a string")
+            logger.exception("Unexpected error converting detected name into a string")
             # TODO: Implement better error control
             parsed_author["nameraw"] = unicode_entities(author_str).replace("  ", " ")
         return parsed_author
