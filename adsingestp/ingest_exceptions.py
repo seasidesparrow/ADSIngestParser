@@ -1,39 +1,54 @@
 # TODO add exception handling
-class JATSContribException(Exception):
+class IngestParserException(Exception):
     pass
 
 
-class MissingAuthorsException(Exception):
+class JATSContribException(IngestParserException):
     pass
 
 
-class MissingDoiException(Exception):
+class MissingAuthorsException(IngestParserException):
     pass
 
 
-class MissingTitleException(Exception):
+class MissingDoiException(IngestParserException):
     pass
 
 
-class NoSchemaException(Exception):
+class MissingTitleException(IngestParserException):
     pass
 
 
-class UnicodeHandlerError(Exception):
+class NoSchemaException(IngestParserException):
+    pass
+
+
+class NotCrossrefXMLException(IngestParserException):
+    pass
+
+
+class TooManyDocumentsException(IngestParserException):
+    pass
+
+
+class WrongSchemaException(IngestParserException):
+    pass
+
+
+class UnicodeHandlerError(IngestParserException):
     """
     Error in the UnicodeHandler.
     """
-
     pass
 
 
-class UnparseableException(Exception):
+class UnparseableException(IngestParserException):
     pass
 
 
-class WrongFormatException(Exception):
+class XmlLoadException(IngestParserException):
     pass
 
 
-class WrongSchemaException(Exception):
+class WrongFormatException(IngestParserException):
     pass

@@ -81,9 +81,9 @@ def serialize(input_dict, format):
     output["publication"] = {
         # "docType": "XXX",
         "pubName": input_dict.get("publication", ""),
-        # "confName": "XXX",
-        # "confLocation": "XXX",
-        # "confDates": "XXX",
+        "confName": input_dict.get("conf_name", ""),
+        "confLocation": input_dict.get("conf_location", ""),
+        "confDates": input_dict.get("conf_date", ""),
         # "confEditors": ["XXX"],
         # "confPID": "XXX",
         "publisher": input_dict.get("publisher", ""),
@@ -101,8 +101,8 @@ def serialize(input_dict, format):
 
     output["persistentIDs"] = [
         {
-            # "Crossref": "XXX",
-            # "ISBN": "XXX",
+            #'Crossref': 'XXX',
+            "ISBN": input_dict.get("isbn", ""),
             "DOI": input_dict.get("ids", {}).get("doi", ""),
             "preprint": {
                 "source": input_dict.get("ids", {}).get("preprint", {}).get("source", ""),
@@ -221,11 +221,15 @@ def serialize(input_dict, format):
 
     # output["acknowledgements"] = "XXX" # TODO this is from fulltext
 
-    output["references"] = (
-        input_dict["references"]
-        if type(input_dict["references"]) == list
-        else [input_dict["references"]]
-    ) or ""
+    if input_dict.get("references", None):
+        if type(input_dict.get("references")) == list:
+            input_refs = input_dict.get("references")
+        elif type(input_dict.get("references")) == str:
+            input_refs = list(input_dict.get("references"))
+        else:
+            # TODO add error handling here
+            input_refs = ""
+        output["references"] = input_refs
 
     # output["backmatter"] = [
     #     {

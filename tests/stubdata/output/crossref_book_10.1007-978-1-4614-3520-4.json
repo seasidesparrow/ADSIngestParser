@@ -1,0 +1,12 @@
+{"otherContributor": [{"contrib": {"name": {"given-name": "Eric D.", "surname": "Feigelson"}}, "role": "editor"},
+                      {"contrib": {"name": {"given-name": "G. Jogesh", "surname": "Babu"}}, "role": "editor"}],
+ "persistentIDs": [{"DOI": "10.1007/978-1-4614-3520-4", "ISBN": "978-1-4614-3519-8"}],
+ "pubDate": {"printDate": "2012-00-00"},
+ "publication": {"pubYear": "2012", "publisher": "Springer New York", "volumeNum": "902"},
+ "recordData": {"createdTime": "",
+                "loadFormat": "OtherXML",
+                "loadLocation": "",
+                "loadType": "fromFile",
+                "parsedTime": "",
+                "recordOrigin": ""},
+ "title": {"textEnglish": "Lecture Notes in Statistics"}}
