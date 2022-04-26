@@ -92,6 +92,11 @@ def serialize(input_dict, format):
         "pubYear": input_dict["pubdate_print"][0:4]
         if "pubdate_print" in input_dict
         else (input_dict["pubdate_electronic"][0:4] if "pubdate_electronic" in input_dict else ""),
+        "bookSeries": {
+            "seriesName": input_dict.get("series_title", ""),
+            "seriesID": input_dict.get("series_id", ""),
+            "seriesDescription": input_dict.get("series_id_description", ""),
+        },
         "ISSN": [
             {"pubtype": pubtype, "issnString": issn}
             for (pubtype, issn) in input_dict.get("issn", "")
@@ -102,7 +107,10 @@ def serialize(input_dict, format):
     output["persistentIDs"] = [
         {
             #'Crossref': 'XXX',
-            "ISBN": input_dict.get("isbn", ""),
+            "ISBN": [
+                {"pubtype": i.get("type", ""), "isbnString": i.get("isbn_str", "")}
+                for i in input_dict.get("isbn", [])
+            ],
             "DOI": input_dict.get("ids", {}).get("doi", ""),
             "preprint": {
                 "source": input_dict.get("ids", {}).get("preprint", {}).get("source", ""),

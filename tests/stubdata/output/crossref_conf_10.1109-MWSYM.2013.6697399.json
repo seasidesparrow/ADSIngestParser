@@ -5,7 +5,7 @@
              {"name": {"given-name": "Thomas", "surname": "Zwick"}},
              {"name": {"given-name": "Ingmar", "surname": "Kallfass"}}],
  "pagination": {"firstPage": "1", "lastPage": "3"},
- "persistentIDs": [{"DOI": "10.1109/MWSYM.2013.6697399", "ISBN": "978-1-4673-6176-7"}],
+ "persistentIDs": [{"DOI": "10.1109/MWSYM.2013.6697399", "ISBN": [{"isbnString": "978-1-4673-6176-7", "pubtype": "electronic"}]}],
  "pubDate": {"printDate": "2013-06-00"},
  "publication": {"confLocation": "Seattle, WA, USA",
                  "confName": "2013 IEEE/MTT-S International Microwave Symposium - MTT 2013",

@@ -51,30 +51,18 @@ class CrossrefParser(BaseBeautifulSoupParser):
         Takes a list of the ISBN nodes, returns the ISBN text of the correct node
 
         :param isbns: list of BS nodes
-        :return: text of single ISBN
+        :return: list of dicts of ISBNs
         """
-        # TODO the data model only accepts one ISBN right now, and we default to the print one. If this
-        # changes, this function needs to be updated to handle those
-        isbn_print = None
-        isbn_other = None
+        isbns_out = []
         for i in isbns:
             try:
                 isbn_type = i["media_type"]
             except KeyError:
                 isbn_type = "print"
 
-            if isbn_type == "print":
-                isbn_print = i.get_text()
-            else:
-                # store the non-print ISBN as a backup in case there's no print ISBN
-                isbn_other = i.get_text()
+            isbns_out.append({"type": isbn_type, "isbn_str": i.get_text()})
 
-        if isbn_print:
-            return isbn_print
-        elif isbn_other:
-            return isbn_other
-        else:
-            return None
+        return isbns_out
 
     def entity_convert(self):
         econv = utils.EntityConverter()
@@ -170,6 +158,17 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
         if proc_meta.find("isbn"):
             self.base_metadata["isbn"] = self._get_isbn(proc_meta.find_all("isbn"))
+
+    def _parse_book_series(self):
+        series_meta = self.record_meta.find("series_metadata")
+
+        if series_meta.find("title"):
+            self.base_metadata["series_title"] = series_meta.find("title").get_text()
+
+        # TODO need to add logic for other ID types
+        if series_meta.find("issn"):
+            self.base_metadata["series_id"] = series_meta.find("issn").get_text()
+            self.base_metadata["series_id_description"] = "issn"
 
     def _parse_title_abstract(self):
         if self.record_meta.find("titles") and self.record_meta.find("titles").find("title"):
@@ -350,6 +349,9 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
             if self.record_meta.find("isbn"):
                 self.base_metadata["isbn"] = self._get_isbn(self.record_meta.find_all("isbn"))
+
+            if self.record_meta.find("series_metadata"):
+                self._parse_book_series()
 
         self._parse_issue()
         self._parse_title_abstract()

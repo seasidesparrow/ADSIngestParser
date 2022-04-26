@@ -3,7 +3,7 @@
              {"name": {"surname": "Hong Wang"}},
              {"name": {"surname": "Gui-Fu Ding"}}],
  "pagination": {"firstPage": "447", "lastPage": "449"},
- "persistentIDs": [{"DOI": "10.1049/cp.2010.1342", "ISBN": "978 1 84919 238 5"}],
+ "persistentIDs": [{"DOI": "10.1049/cp.2010.1342", "ISBN": [{"isbnString": "978 1 84919 238 5", "pubtype": "print"}]}],
  "pubDate": {"printDate": "2010-00-00"},
  "publication": {"confDates": "23-25 Nov. 2010",
                  "confLocation": "Beijing, China",
