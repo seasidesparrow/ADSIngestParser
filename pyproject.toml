@@ -23,8 +23,10 @@ dependencies = [
     'beautifulsoup4==4.10.0',
     'lxml==4.7.1',
     'namedentities==1.9.4',
+    'nameparser==1.1.1',
     'python-dateutil==2.8.1',
-    'adsingestschema @ git+https://github.com/adsabs/ingest_data_model@v1.0.3#egg=adsingestschema',
+    'xmltodict==0.12.0',
+    'adsingestschema @ git+https://github.com/adsabs/ingest_data_model@v1.0.5#egg=adsingestschema',
 ]
 
 

@@ -5,7 +5,7 @@ import unittest
 
 from adsingestschema import ads_schema_validator
 
-from adsingestp.parsers import jats
+from adsingestp.parsers import datacite
 
 # import logging
 # proj_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, "adsingestp"))
@@ -19,7 +19,7 @@ from adsingestp.parsers import jats
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
-class TestJATS(unittest.TestCase):
+class TestDatacite(unittest.TestCase):
     maxDiff = None
 
     def setUp(self):
@@ -27,18 +27,17 @@ class TestJATS(unittest.TestCase):
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
 
-    def test_jats(self):
+    def test_datacite(self):
 
         filenames = [
-            "jats_apj_859_2_101",
-            "jats_mnras_493_1_141",
-            "jats_aj_158_4_139",
-            "jats_iop_ansnn_12_2_025001",
+            "datacite_schema4.1_example-full",
+            "datacite_schema3.1_example-full",
+            "datacite_schema4.1_example-software",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
             test_outfile = os.path.join(self.outputdir, f + ".json")
-            parser = jats.JATSParser()
+            parser = datacite.DataciteParser()
 
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
@@ -54,6 +53,7 @@ class TestJATS(unittest.TestCase):
                 ads_schema_validator().validate(parsed)
             except Exception:
                 self.fail("Schema validation failed")
+                pass
 
             # this field won't match the test data, so check and then discard
             time_difference = (
