@@ -28,6 +28,7 @@ MONTH_TO_NUMBER = {
 HTML_ENTITY_TABLE = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), "data_files", "html5.dat"
 )
+
 ENTITY_DICTIONARY = dict()
 try:
     with open(HTML_ENTITY_TABLE, "r") as fent:
@@ -137,7 +138,6 @@ def clean_output(in_text):
     output = re.sub(r"\s+", r" ", in_text)
 
     return output
-
 
 class EntityConverter(object):
     def __init__(self):

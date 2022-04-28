@@ -547,6 +547,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     df.decompose()
             except Exception:
                 pass
+
             self.base_metadata["title"] = self._detag(title, self.JATS_TAGSET["title"]).strip()
 
         try:

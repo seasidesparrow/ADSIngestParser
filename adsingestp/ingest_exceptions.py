@@ -1,4 +1,5 @@
 # TODO add exception handling
+
 class IngestParserException(Exception):
     pass
 

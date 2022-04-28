@@ -118,6 +118,7 @@ class DataciteParser(BaseXmlToDictParser):
         # we use the English title as the main one, then add any foreign ones
         # there are several options for "English" in this schema, so check for all of them (lowercase forms)
         en_key = list({"en", "en-us"} & set(titles.keys()))[0]
+
         self.base_metadata["title"] = titles.pop(en_key)
         title_foreign = []
         lang_foreign = []
