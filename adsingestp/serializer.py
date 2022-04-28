@@ -81,9 +81,9 @@ def serialize(input_dict, format):
     output["publication"] = {
         # "docType": "XXX",
         "pubName": input_dict.get("publication", ""),
-        # "confName": "XXX",
-        # "confLocation": "XXX",
-        # "confDates": "XXX",
+        "confName": input_dict.get("conf_name", ""),
+        "confLocation": input_dict.get("conf_location", ""),
+        "confDates": input_dict.get("conf_date", ""),
         # "confEditors": ["XXX"],
         # "confPID": "XXX",
         "publisher": input_dict.get("publisher", ""),
@@ -92,6 +92,11 @@ def serialize(input_dict, format):
         "pubYear": input_dict["pubdate_print"][0:4]
         if "pubdate_print" in input_dict
         else (input_dict["pubdate_electronic"][0:4] if "pubdate_electronic" in input_dict else ""),
+        "bookSeries": {
+            "seriesName": input_dict.get("series_title", ""),
+            "seriesID": input_dict.get("series_id", ""),
+            "seriesDescription": input_dict.get("series_id_description", ""),
+        },
         "ISSN": [
             {"pubtype": pubtype, "issnString": issn}
             for (pubtype, issn) in input_dict.get("issn", "")
@@ -101,8 +106,11 @@ def serialize(input_dict, format):
 
     output["persistentIDs"] = [
         {
-            # "Crossref": "XXX",
-            # "ISBN": "XXX",
+            #'Crossref': 'XXX',
+            "ISBN": [
+                {"pubtype": i.get("type", ""), "isbnString": i.get("isbn_str", "")}
+                for i in input_dict.get("isbn", [])
+            ],
             "DOI": input_dict.get("ids", {}).get("doi", ""),
             "preprint": {
                 "source": input_dict.get("ids", {}).get("preprint", {}).get("source", ""),
@@ -192,9 +200,9 @@ def serialize(input_dict, format):
     ]
 
     output["title"] = {
-        "textEnglish": input_dict.get("titleEnglish", ""),
-        "textNative": input_dict.get("titleNative", ""),
-        "langNative": input_dict.get("langNative", ""),
+        "textEnglish": input_dict.get("title", ""),
+        "textNative": input_dict.get("title_native", ""),
+        "langNative": input_dict.get("lang_native", ""),
     }
 
     output["subtitle"] = input_dict.get("subtitle", "")
@@ -207,12 +215,10 @@ def serialize(input_dict, format):
         # "langNative": "XXX" # TODO
     }
 
-    # output["comments"] = [
-    #     {
-    #         "commentOrigin": "XXX",
-    #         "commentText": "XXX"
-    #     }
-    # ] # TODO need an example
+    output["comments"] = [
+        {"commentOrigin": i.get("origin", ""), "commentText": i.get("text", "")}
+        for i in input_dict.get("comments", [])
+    ]
 
     # output["fulltext"] = {
     #     "language": "XXX",
@@ -221,11 +227,15 @@ def serialize(input_dict, format):
 
     # output["acknowledgements"] = "XXX" # TODO this is from fulltext
 
-    output["references"] = (
-        input_dict["references"]
-        if type(input_dict["references"]) == list
-        else [input_dict["references"]]
-    ) or ""
+    if input_dict.get("references", None):
+        if type(input_dict.get("references")) == list:
+            input_refs = input_dict.get("references")
+        elif type(input_dict.get("references")) == str:
+            input_refs = list(input_dict.get("references"))
+        else:
+            # TODO add error handling here
+            input_refs = ""
+        output["references"] = input_refs
 
     # output["backmatter"] = [
     #     {

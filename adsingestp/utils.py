@@ -25,7 +25,10 @@ MONTH_TO_NUMBER = {
 }
 
 # HTML_ENTITY_TABLE
-HTML_ENTITY_TABLE = os.path.dirname(os.path.abspath(__file__)) + "/html5.dat"
+HTML_ENTITY_TABLE = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "data_files", "html5.dat"
+)
+
 ENTITY_DICTIONARY = dict()
 try:
     with open(HTML_ENTITY_TABLE, "r") as fent:
@@ -57,7 +60,7 @@ try:
                 NAME_ENTITY = "xxxxx"
 
 except Exception as e:
-    print("Problem in config:", e)
+    logger.warning("Problem in config:", e)
 
 # ADS-specific translations
 # have been added to html5.txt
@@ -129,6 +132,12 @@ related_trans_dict = {
     "Erratum": "errata",
 }
 
+
+def clean_output(in_text):
+    in_text = in_text.replace("\n", " ")
+    output = re.sub(r"\s+", r" ", in_text)
+
+    return output
 
 class EntityConverter(object):
     def __init__(self):

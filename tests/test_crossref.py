@@ -5,37 +5,33 @@ import unittest
 
 from adsingestschema import ads_schema_validator
 
-from adsingestp.parsers import datacite
-
-# import logging
-# proj_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, "adsingestp"))
-# logging.basicConfig(
-#     format="%(levelname)s %(asctime)s %(message)s",
-#     filename=os.path.join(proj_dir, "logs", "parser.log"),
-#     level=logging.INFO,
-#     force=True,
-# )
+from adsingestp.parsers import crossref
 
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
-class TestDatacite(unittest.TestCase):
+class TestCrossref(unittest.TestCase):
+    maxDiff = None
+
     def setUp(self):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
 
-    def test_datacite(self):
+    def test_crossref(self):
 
         filenames = [
-            "datacite_schema4.1_example-full",
-            "datacite_schema3.1_example-full",
-            "datacite_schema4.1_example-software",
+            "crossref_10.1002_1521-3994",
+            "crossref_10.3847_2041-8213",
+            "crossref_conf_10.1049-cp.2010.1342",
+            "crossref_conf_10.1109-MWSYM.2013.6697399",
+            "crossref_book_10.1017-CBO9780511709265",
+            "crossref_book_10.1007-978-1-4614-3520-4",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
             test_outfile = os.path.join(self.outputdir, f + ".json")
-            parser = datacite.DataciteParser()
+            parser = crossref.CrossrefParser()
 
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
@@ -51,7 +47,6 @@ class TestDatacite(unittest.TestCase):
                 ads_schema_validator().validate(parsed)
             except Exception:
                 self.fail("Schema validation failed")
-                pass
 
             # this field won't match the test data, so check and then discard
             time_difference = (

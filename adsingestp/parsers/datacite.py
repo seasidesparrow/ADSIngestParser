@@ -118,7 +118,8 @@ class DataciteParser(BaseXmlToDictParser):
         # we use the English title as the main one, then add any foreign ones
         # there are several options for "English" in this schema, so check for all of them (lowercase forms)
         en_key = list({"en", "en-us"} & set(titles.keys()))[0]
-        self.base_metadata["titleEnglish"] = titles.pop(en_key)
+
+        self.base_metadata["title"] = titles.pop(en_key)
         title_foreign = []
         lang_foreign = []
         for tkey in titles:
@@ -127,8 +128,8 @@ class DataciteParser(BaseXmlToDictParser):
 
         # the data model only takes a single foreign-language title; will need to adjust if more are required
         if title_foreign:
-            self.base_metadata["titleNative"] = title_foreign[0]
-            self.base_metadata["langNative"] = lang_foreign[0]
+            self.base_metadata["title_native"] = title_foreign[0]
+            self.base_metadata["lang_native"] = lang_foreign[0]
 
         # abstract, references are all in the "descriptions" section
         # as of version 3.1 of datacite schema, "References" is not an
