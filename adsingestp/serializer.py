@@ -200,9 +200,9 @@ def serialize(input_dict, format):
     ]
 
     output["title"] = {
-        "textEnglish": input_dict.get("titleEnglish", ""),
-        "textNative": input_dict.get("titleNative", ""),
-        "langNative": input_dict.get("langNative", ""),
+        "textEnglish": input_dict.get("title", ""),
+        "textNative": input_dict.get("title_native", ""),
+        "langNative": input_dict.get("lang_native", ""),
     }
 
     output["subtitle"] = input_dict.get("subtitle", "")
@@ -215,12 +215,10 @@ def serialize(input_dict, format):
         # "langNative": "XXX" # TODO
     }
 
-    # output["comments"] = [
-    #     {
-    #         "commentOrigin": "XXX",
-    #         "commentText": "XXX"
-    #     }
-    # ] # TODO need an example
+    output["comments"] = [
+        {"commentOrigin": i.get("origin", ""), "commentText": i.get("text", "")}
+        for i in input_dict.get("comments", [])
+    ]
 
     # output["fulltext"] = {
     #     "language": "XXX",
