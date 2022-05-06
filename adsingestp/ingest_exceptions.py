@@ -1,5 +1,6 @@
 # TODO add exception handling
 
+
 class IngestParserException(Exception):
     pass
 
@@ -37,9 +38,6 @@ class WrongSchemaException(IngestParserException):
 
 
 class UnicodeHandlerError(IngestParserException):
-    """
-    Error in the UnicodeHandler.
-    """
     pass
 
 

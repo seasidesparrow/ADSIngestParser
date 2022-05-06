@@ -1,19 +1,19 @@
 import logging
 from collections import OrderedDict
 
-from adsingestp import serializer, utils
+from adsingestp import utils
 from adsingestp.ingest_exceptions import (
     MissingAuthorsException,
     MissingDoiException,
     MissingTitleException,
     WrongSchemaException,
 )
-from adsingestp.parsers.base import BaseXmlToDictParser
+from adsingestp.parsers.base import BaseBeautifulSoupParser
 
 logger = logging.getLogger(__name__)
 
 
-class DataciteParser(BaseXmlToDictParser):
+class DataciteParser(BaseBeautifulSoupParser):
     """Compatible with DataCite schema versions 3 and 4"""
 
     DC_SCHEMAS = ["http://datacite.org/schema/kernel-3", "http://datacite.org/schema/kernel-4"]
@@ -222,15 +222,25 @@ class DataciteParser(BaseXmlToDictParser):
         self.base_metadata["doctype"] = doctype
 
     def parse(self, text):
-        d = self.xmltodict(text)
+        """
+        Parse Datacite XML into standard JSON format
+        :param text: string, contents of XML file
+        :return: parsed file contents in JSON format
+        """
+        d = self.bsstrtodict(text, parser="lxml-xml")
 
         # as a convenience, remove the OAI wrapper if it's there
-        self.input_metadata = d.get("record", {}).get("metadata", {}).get("resource") or d.get(
-            "resource"
-        )
+        if (
+            d.find("record")
+            and d.find("record").find("metadata")
+            and d.find("record").find("metadata").find("resource")
+        ):
+            self.input_metadata = d.find("record").find("metadata").find("resource")
+        else:
+            self.input_metadata = d.find("resource")
 
         # check for namespace to make sure it's a compatible datacite schema
-        schema = self.input_metadata.get("@xmlns")
+        schema = self.input_metadata.get("xmlns", "")
         if schema not in self.DC_SCHEMAS:
             raise WrongSchemaException('Unexpected XML schema "%s"' % schema)
 
@@ -245,6 +255,6 @@ class DataciteParser(BaseXmlToDictParser):
         self._parse_permissions()
         self._parse_doctype()
 
-        output = serializer.serialize(self.base_metadata, format="OtherXML")
+        output = self.serialize(self.base_metadata, format="OtherXML")
 
         return output

@@ -1,6 +1,6 @@
 import logging
 
-from adsingestp import serializer, utils
+from adsingestp import utils
 from adsingestp.ingest_exceptions import (
     IngestParserException,
     NotCrossrefXMLException,
@@ -21,6 +21,11 @@ class CrossrefParser(BaseBeautifulSoupParser):
         self.record_type = None
 
     def _get_date(self, date_raw):
+        """
+        Extract and standarize date from input BeautifulSoup date object
+        :param date_raw: BeautifulSoup date object
+        :return: formatted date string (yyyy-mm-dd)
+        """
         if date_raw.find("year"):
             pubdate = date_raw.find("year").get_text()
         else:
@@ -289,19 +294,25 @@ class CrossrefParser(BaseBeautifulSoupParser):
             self.base_metadata["references"] = ref_list
 
     def parse(self, text):
+        """
+        Parse Crossref XML into standard JSON format
+        :param text: string, contents of XML file
+        :return: parsed file contents in JSON format
+        """
         try:
             d = self.bsstrtodict(text, parser="lxml-xml")
-            records_in_file = d.find_all("doi_record")
-            if len(records_in_file) > 1:
-                raise TooManyDocumentsException(
-                    "This file has %s records, should have only one!" % len(records_in_file)
-                )
         except Exception as err:
             raise XmlLoadException(err)
 
+        records_in_file = d.find_all("doi_record")
+        if len(records_in_file) > 1:
+            raise TooManyDocumentsException(
+                "This file has %s records, should have only one!" % len(records_in_file)
+            )
+
         try:
             self.input_metadata = d.find("crossref").extract()
-        except Exception as err:
+        except AttributeError as err:
             raise NotCrossrefXMLException(err)
 
         type_found = False
@@ -364,6 +375,6 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
         self.entity_convert()
 
-        output = serializer.serialize(self.base_metadata, format="OtherXML")
+        output = self.serialize(self.base_metadata, format="OtherXML")
 
         return output

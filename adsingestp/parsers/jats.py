@@ -4,16 +4,13 @@ from collections import OrderedDict
 
 from bs4 import BeautifulSoup
 
-from adsingestp import serializer, utils
-from adsingestp.ingest_exceptions import JATSContribException
+from adsingestp import utils
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
 logger = logging.getLogger(__name__)
 
 
 class JATSAffils(object):
-    regex_spcom = re.compile(r"\s+,")
-    regex_multisp = re.compile(r"\s+")
     regex_email = re.compile(r"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+")
 
     def __init__(self):
@@ -30,14 +27,18 @@ class JATSAffils(object):
         :param tag: tag in the BS tree to remove
         :return: BeautifulSoup object/tree
         """
-        try:
-            for element in soup(tag):
-                element.decompose()
-        except Exception:
-            pass
+        for element in soup(tag):
+            element.decompose()
+
         return soup
 
     def _fix_affil(self, affstring):
+        """
+        Separate email addresses from affiliations in a given input affiliation string
+        :param affstring: Raw affiliation string
+        :return: newaffstr: affiliation string with email addresses removed
+                 emails: list of email addresses
+        """
         aff_list = affstring.split(";")
         new_aff = []
         emails = []
@@ -47,360 +48,300 @@ class JATSAffils(object):
                 emails.append(a)
             else:
                 # check for empty strings with commas
-                checka = a.replace(",", " ")
-                if checka.replace(" ", ""):
-                    a = a.replace(" , ", ", ").replace("  ", " ")
+                check_a = a.replace(",", "")
+                if check_a:
+                    a = a.replace(" , ", ", ")
+                    a = re.sub("\\s+", " ", a)
                     new_aff.append(a)
 
         newaffstr = "; ".join(new_aff)
         return newaffstr, emails
 
     def _fix_email(self, email):
-        email_new = []
+        """
+        Separate and perform basic validation of email address string
+        :param email: String of email address(es)
+        :return: list of verified email addresses (those with an @ sign)
+        """
+        email_new = set()
         for em in email:
             if " " in em:
                 for e in em.strip().split():
                     if "@" in e:
-                        email_new.append(e.strip())
+                        email_new.add(e.strip())
             else:
                 if "@" in em:
-                    email_new.append(em.strip())
-        return list(dict.fromkeys(email_new))
+                    email_new.add(em.strip())
+        return list(email_new)
 
     def _fix_orcid(self, orcid):
-        orcid_new = []
+        """
+        Standarize ORCID formatting
+        :param orcid: string or list of ORCIDs
+        :return: uniqued list of ORCIDs, with URL-part removed if necessary
+        """
+        orcid_new = set()
+        if isinstance(orcid, str):
+            orcid = [orcid]
+        elif not isinstance(orcid, list):
+            raise TypeError("ORCID must be str or list")
+
         for orc in orcid:
             osplit = orc.strip().split()
             for o in osplit:
                 o = o.rstrip("/").split("/")[-1]
-                orcid_new.append(o)
-        return list(dict.fromkeys(orcid_new))
+                orcid_new.add(o)
+        return list(orcid_new)
 
-    def _match_xref(self):
-        for a in self.auth_list:
-            try:
-                for item in a["xaff"]:
-                    item = re.sub(r"\s+", ",", item)
-                    xi = re.split(",", item)
-                    for x in xi:
-                        try:
-                            a["aff"].append(self.xref_dict[x])
-                        except Exception as err:
-                            # import pdb
-                            # pdb.set_trace()
-                            logger.info("Key is missing from xaff. Missing key: %s", err)
-                            pass
-
-                    # if you found any emails in an affstring, add them
-                    # to the email field
-                    if item in self.email_xref:
-                        a["email"].append(self.email_xref[item])
-
-                # Check for 'ALLAUTH' affils (global affils without a key),
-                # and assign them to all authors
-                if "ALLAUTH" in self.xref_dict:
-                    a["aff"].append(self.xref_dict["ALLAUTH"])
-            except Exception:
-                pass
-
-            try:
-                for item in a["xemail"]:
+    def _match_xref_clean(self):
+        """
+        Matches crossreferenced affiliations and emails; cleans emails and ORCIDs
+        :return: none (updates class variable auth_list)
+        """
+        for auth in self.auth_list:
+            for item in auth.get("xaff", []):
+                xi = re.split("\\s*,\\s*|\\s+", item)
+                for x in xi:
                     try:
-                        a["email"].append(self.xref_dict[item])
-                    except Exception as err:
-                        logger.info("Missing key in xemail! Error: %s", err)
+                        auth["aff"].append(self.xref_dict[x])
+                    except KeyError as err:
+                        logger.info("Key is missing from xaff. Missing key: %s", err)
                         pass
-            except Exception:
-                pass
+
+                # if you found any emails in an affstring, add them
+                # to the email field
+                if item in self.email_xref:
+                    auth["email"].append(self.email_xref[item])
+
+            # Check for 'ALLAUTH' affils (global affils without a key), and assign them to all authors
+            if "ALLAUTH" in self.xref_dict:
+                auth["aff"].append(self.xref_dict["ALLAUTH"])
+
+            for item in auth.get("xemail", []):
+                try:
+                    auth["email"].append(self.xref_dict[item])
+                except KeyError as err:
+                    logger.info("Missing key in xemail! Error: %s", err)
+                    pass
+
+            if auth.get("email", []):
+                auth["email"] = self._fix_email(auth["email"])
+
+            if auth.get("orcid", []):
+                try:
+                    auth["orcid"] = self._fix_orcid(auth["orcid"])
+                except TypeError:
+                    logger.warning(
+                        "ORCID of wrong type (not str or list) passed, removing. ORCID: %s",
+                        auth["orcid"],
+                    )
+                    auth["orcid"] = []
 
             # note that the ingest schema allows a single email address, but we've extracted all
             # here in case that changes to allow more than one
-            if a["email"]:
-                a["email"] = a["email"][0]
+            if auth["email"]:
+                auth["email"] = auth["email"][0]
             else:
-                a["email"] = ""
+                auth["email"] = ""
+
+            # same for orcid
+            if auth["orcid"]:
+                auth["orcid"] = auth["orcid"][0]
+            else:
+                auth["orcid"] = ""
 
     def parse(self, article_metadata):
         """
-
-        :param article_metadata: BeautifulSoup object
-        :return:
+        Parses author affiliation from BeautifulSoup object
+        :param article_metadata: BeautifulSoup object containing author nodes
+        :return: auth_list: list of dicts, one per author
         """
-        try:
+        article_metadata = self._decompose(soup=article_metadata, tag="label")
+
+        art_contrib_group = None
+        if article_metadata.find("contrib-group"):
+            art_contrib_group = article_metadata.find("contrib-group").extract()
+
+        # JATS puts author data in <contrib-group>, giving individual authors in each <contrib>
+        if art_contrib_group:
+            contribs_raw = art_contrib_group.find_all("contrib")
+            for contrib in contribs_raw:
+                # note: IOP, APS get affil data within each contrib block,
+                #       OUP, AIP, Springer, etc get them via xrefs.
+
+                auth = {}
+
+                collab = contrib.find("collab")
+                if collab:
+                    collab_name = collab.get_text()
+                    if collab.find("address"):
+                        collab_affil = collab.find("address").get_text()
+                    else:
+                        collab_affil = ""
+                    self.collab = {
+                        "name": collab_name,
+                        "aff": collab_affil,
+                        "xaff": [],
+                        "xemail": [],
+                        "email": [],
+                        "corresp": False,
+                    }
+
+                l_correspondent = False
+                if contrib.get("corresp", "") == "yes":
+                    l_correspondent = True
+
+                # get author's name
+                if contrib.find("name") and contrib.find("name").find("surname"):
+                    surname = contrib.find("name").find("surname").get_text()
+                else:
+                    surname = ""
+                if contrib.find("name") and contrib.find("name").find("given-names"):
+                    given = contrib.find("name").find("given-names").get_text()
+                else:
+                    given = ""
+
+                # NOTE: institution-id is actually useful, but at
+                # at the moment, strip it
+                contrib = self._decompose(soup=contrib, tag="institution-id")
+
+                # get named affiliations within the contrib block
+                affs = contrib.find_all("aff")
+                aff_text = []
+                email_list = []
+                for i in affs:
+                    # special case: some pubs label affils with <sup>label</sup>, strip them
+                    i = self._decompose(soup=i, tag="sup")
+                    affstr = i.get_text(separator=" ").strip()
+                    (affstr, email_list) = self._fix_affil(affstr)
+                    aff_text.append(affstr)
+                    i.decompose()
+
+                # get xrefs...
+                xrefs = contrib.find_all("xref")
+                xref_aff = []
+                xref_email = []
+                for x in xrefs:
+                    if x.get("ref-type", "") == "aff":
+                        xref_aff.append(x["rid"])
+                    elif x.get("ref-type", "") == "corresp":
+                        xref_email.append(x["rid"])
+                    x.decompose()
+
+                # get email(s)...
+                # we already have raw emails stripped out of affil strings above, add to this from contrib block
+                email_contrib = contrib.find_all("email")
+                for e in email_contrib:
+                    email_list.append(e.get_text(separator=" ").strip())
+                    e.decompose()
+
+                # get orcid
+                contrib_id = contrib.find_all("contrib-id")
+                orcid = []
+                for c in contrib_id:
+                    if c.get("contrib-id-type", "") == "orcid":
+                        orcid.append(c.get_text(separator=" ").strip())
+                    c.decompose()
+
+                # double-check for orcid in other places...
+                extlinks = contrib.find_all("ext-link")
+                for e in extlinks:
+                    # orcid
+                    if e.get("ext-link-type", "") == "orcid":
+                        orcid.append(e.get_text(separator=" ").strip())
+                    e.decompose()
+
+                # note that the ingest schema allows a single orcid, but we've extracted all
+                # here in case that changes to allow more than one
+                if orcid:
+                    orcid_out = self._fix_orcid(orcid)
+                    orcid_out = orcid_out[0]
+                else:
+                    orcid_out = ""
+
+                # create the author dict
+                auth.update(corresp=l_correspondent)
+                auth.update(surname=surname)
+                auth.update(given=given)
+                auth.update(aff=aff_text)
+                auth.update(xaff=xref_aff, xemail=xref_email)
+                auth.update(orcid=orcid_out)
+                auth.update(email=email_list)
+                contrib.decompose()
+
+                # this is a list of author dicts
+                if auth:
+                    self.auth_list.append(auth)
+
+        if self.collab:
+            self.auth_list.append(self.collab)
+
+        # special case: affs defined in contrib-group, but not in individual contrib
+        if art_contrib_group:
+            contrib_aff = art_contrib_group.find_all("aff")
+            for aff in contrib_aff:
+                # check and see if the publisher defined an email tag inside an affil (like IOP does)
+                nested_email_list = aff.find_all("ext-link")
+                for e in nested_email_list:
+                    key = e["id"]
+                    value = e.text
+                    # build the cross-reference dictionary to be used later
+                    self.email_xref[key] = value
+                    e.decompose()
+
+                key = aff.get("id", "ALLAUTH")
+                # special case: get rid of <sup>...
+                aff = self._decompose(soup=aff, tag="sup")
+                aff = self._decompose(soup=aff, tag="institution-id")
+                # getting rid of ext-link eliminates *all* emails,
+                # so this is not the place to fix the iop thing
+                # a = self._decompose(soup=a, tag='ext-link')
+
+                affstr = aff.get_text().strip()
+                (affstr, email_list) = self._fix_affil(affstr)
+                if email_list:
+                    self.email_xref[key] = email_list
+                self.xref_dict[key] = affstr
+
+        # now get the xref keys outside of contrib-group:
+        # aff xrefs...
+        aff_glob = article_metadata.find_all("aff")
+        for aff in aff_glob:
             try:
-                article_metadata = self._decompose(soup=article_metadata, tag="label")
-            except Exception:
-                pass
+                key = aff["id"]
+            except KeyError:
+                logger.info("No aff id key in: %s", aff)
+                continue
+            # special case: get rid of <sup>...
+            aff = self._decompose(soup=aff, tag="sup")
+            # NOTE: institution-id is actually useful, but at
+            # at the moment, strip it
+            aff = self._decompose(soup=aff, tag="institution-id")
+            affstr = aff.get_text(separator=" ").strip()
+            (aff_list, email_list) = self._fix_affil(affstr)
+            self.xref_dict[key] = aff_list
+            aff.decompose()
 
-            # JATS puts author data in <contrib-group>, giving individual
-            # authors in each <contrib>
-            try:
-                art_contrib_group = article_metadata.find("contrib-group").extract()
-            except Exception:
-                pass
-            else:
-                contribs_raw = art_contrib_group.find_all("contrib")
+        # author-notes xrefs...
+        authnote_glob = article_metadata.find_all("author-notes")
+        for aff in authnote_glob:
+            # emails...
+            cor = aff.find_all("corresp")
+            for c in cor:
+                try:
+                    key = c["id"]
+                except KeyError:
+                    logger.info("No authnote id key in: %s", aff)
+                    continue
+                c = self._decompose(soup=c, tag="sup")
+                val = c.get_text(separator=" ").strip()
+                self.xref_dict[key] = val
+                c.decompose()
 
-                for contrib in contribs_raw:
-                    auth = {}
-                    l_correspondent = False
+        # finishing up
+        self._match_xref_clean()
 
-                    # note: IOP, APS get affil data within each contrib block,
-                    #       OUP, AIP, Springer, etc get them via xrefs.
-                    try:
-                        if contrib["contrib-type"] == "collab":
-                            collab = contrib.find("collab")
-                            try:
-                                collab_name = collab.text
-                            except Exception:
-                                pass
-                            else:
-                                self.collab = {
-                                    "name": collab_name,
-                                    "aff": [],
-                                    "xaff": [],
-                                    "xemail": [],
-                                    "email": [],
-                                    "corresp": False,
-                                }
-                        elif contrib["contrib-type"] == "author":
-                            if contrib.find("collab") is not None:
-                                collab = contrib.find("collab")
-                                try:
-                                    collab_name = collab.contents[0]
-                                except Exception:
-                                    pass
-                                else:
-                                    self.collab = {
-                                        "name": collab_name,
-                                        "aff": [],
-                                        "xaff": [],
-                                        "xemail": [],
-                                        "email": [],
-                                        "corresp": False,
-                                    }
-                                    try:
-                                        collab_affil = collab.find("address").text
-                                    except Exception:
-                                        pass
-                                    else:
-                                        self.collab["aff"] = collab_affil
-                            else:
-                                # corresponding author?
-                                try:
-                                    if contrib["corresp"] == "yes":
-                                        l_correspondent = True
-                                except Exception:
-                                    pass
-
-                                # get author's name
-                                try:
-                                    surname = contrib.find("name").find("surname").text
-                                except Exception:
-                                    surname = ""
-                                try:
-                                    given = contrib.find("name").find("given-names").text
-                                except Exception:
-                                    given = ""
-
-                                # get named affiliations within the contrib block
-                                affs = contrib.find_all("aff")
-                                aff_text = []
-                                for i in affs:
-                                    # special case: some pubs label affils with
-                                    # <sup>label</sup>, strip them
-                                    try:
-                                        # NOTE: institution-id is actually useful, but at
-                                        # at the moment, strip it
-                                        # TODO get an example from MT - none in the test data
-                                        contrib = self._decompose(
-                                            soup=contrib, tag="institution-id"
-                                        )
-                                        i = self._decompose(soup=i, tag="sup")
-                                    except Exception:
-                                        pass
-                                    affstr = i.get_text(separator=" ").strip()
-                                    (affstr, email_list) = self._fix_affil(affstr)
-                                    aff_text.append(affstr)
-                                    i.decompose()
-
-                                # get xrefs...
-                                xrefs = contrib.find_all("xref")
-                                xref_aff = []
-                                xref_email = []
-                                for x in xrefs:
-                                    try:
-                                        if x["ref-type"] == "aff":
-                                            xref_aff.append(x["rid"])
-                                        elif x["ref-type"] == "corresp":
-                                            xref_email.append(x["rid"])
-                                    except Exception:
-                                        pass
-                                    x.decompose()
-
-                                # get orcid
-                                contrib_id = contrib.find_all("contrib-id")
-                                orcid = []
-                                for c in contrib_id:
-                                    try:
-                                        if c["contrib-id-type"] == "orcid":
-                                            orcid.append(c.get_text(separator=" ").strip())
-                                    except Exception:
-                                        pass
-                                    c.decompose()
-
-                                # get email(s)...
-                                emails = []
-                                # first, add any emails found by stripping raw emails out of affil strings above...
-                                try:
-                                    for e in email_list:
-                                        emails.append(e)
-                                except Exception:
-                                    pass
-                                else:
-                                    email_list = []
-                                try:
-                                    email = contrib.find_all("email")
-                                    for e in email:
-                                        try:
-                                            emails.append(e.get_text(separator=" ").strip())
-                                        except Exception:
-                                            pass
-                                        e.decompose()
-                                except Exception:
-                                    pass
-
-                                # double-check for other things...
-                                extlinks = contrib.find_all("ext-link")
-                                for e in extlinks:
-                                    # orcid
-                                    try:
-                                        if e["ext-link-type"] == "orcid":
-                                            orcid.append(e.get_text(separator=" ").strip())
-                                    except Exception:
-                                        pass
-                                    e.decompose()
-
-                                # note that the ingest schema allows a single orcid, but we've extracted all
-                                # here in case that changes to allow more than one
-                                if orcid:
-                                    orcid_out = self._fix_orcid(orcid)
-                                    orcid_out = orcid_out[0]
-                                else:
-                                    orcid_out = ""
-
-                                # create the author dict
-                                auth.update(corresp=l_correspondent)
-                                auth.update(surname=surname)
-                                auth.update(given=given)
-                                auth.update(aff=aff_text)
-                                auth.update(xaff=xref_aff, xemail=xref_email)
-                                auth.update(orcid=orcid_out)
-                                auth.update(email=emails)
-                                contrib.decompose()
-
-                        # this is a list of author dicts
-                        if auth:
-                            self.auth_list.append(auth)
-                    except Exception:
-                        pass
-
-                if self.collab:
-                    self.auth_list.append(self.collab)
-
-                # special case: affs defined in contrib-group, but
-                #               not in individual contrib
-                contrib_aff = art_contrib_group.find_all("aff")
-                for a in contrib_aff:
-                    # check and see if the publisher defined an email tag
-                    # inside an affil (like IOP does...)
-                    nested_email_list = a.find_all("ext-link")
-                    if nested_email_list:
-                        for e in nested_email_list:
-                            key = e["id"]
-                            value = e.text
-                            self.email_xref[key] = value
-                            e.decompose()
-                    try:
-                        key = a["id"]
-                    except Exception:
-                        key = "ALLAUTH"
-                    try:
-                        # special case: get rid of <sup>...
-                        try:
-                            a = self._decompose(soup=a, tag="sup")
-                            a = self._decompose(soup=a, tag="institution-id")
-                            # getting rid of ext-link eliminates *all* emails,
-                            # so this is not the place to fix the iop thing
-                            # a = self._decompose(soup=a, tag='ext-link')
-                        except Exception:
-                            pass
-                        affstr = a.get_text().strip()
-                        (affstr, email_list) = self._fix_affil(affstr)
-                        if email_list:
-                            self.email_xref[key] = email_list
-                            email_list = []
-                        self.xref_dict[key] = affstr
-                    except Exception:
-                        pass
-
-            # now get the xref keys outside of contrib-group:
-            # aff xrefs...
-            try:
-                aff_glob = article_metadata.find_all("aff")
-            except Exception:
-                aff_glob = None
-            else:
-                for a in aff_glob:
-                    try:
-                        key = a["id"]
-                        # special case: get rid of <sup>...
-                        try:
-                            a = self._decompose(soup=a, tag="sup")
-                        except Exception:
-                            pass
-                        try:
-                            # NOTE: institution-id is actually useful, but at
-                            # at the moment, strip it
-                            a = self._decompose(soup=a, tag="institution-id")
-                        except Exception:
-                            pass
-                        affstr = a.get_text(separator=" ").strip()
-                        (aff_list, email_list) = self._fix_affil(affstr)
-                        self.xref_dict[key] = aff_list
-                        a.decompose()
-                    except Exception:
-                        logger.info("No aff id key in: %s", a)
-                        pass
-
-            # author-notes xrefs...
-            try:
-                authnote_glob = article_metadata.find_all("author-notes")
-            except Exception:
-                pass
-            else:
-                for a in authnote_glob:
-                    try:
-                        # emails...
-                        cor = a.find_all("corresp")
-                        for c in cor:
-                            key = c["id"]
-                            try:
-                                c = self._decompose(soup=c, tag="sup")
-                            except Exception:
-                                pass
-                            val = c.get_text(separator=" ").strip()
-                            self.xref_dict[key] = val
-                            c.decompose()
-                    except Exception:
-                        logger.info("No authnote id key in: %s", a)
-                        pass
-
-            # finishing up
-            self._match_xref()
-            return self.auth_list
-        except Exception as err:
-            raise JATSContribException(err)
+        return self.auth_list
 
 
 class JATSParser(BaseBeautifulSoupParser):
@@ -440,20 +381,19 @@ class JATSParser(BaseBeautifulSoupParser):
         self.journal_meta = None
         self.isErratum = False
 
-    def _detag(self, r, tags_keep, **kwargs):
+    def _detag(self, r, tags_keep):
         """
-
+        Removes tags from input BeautifulSoup object
         :param r: BeautifulSoup object (not string)
-        :param tags_keep:
-        :param kwargs:
-        :return:
+        :param tags_keep: this function will remove all tags except those passed here
+        :return: newr: striing with cleaned text
         """
         # note that parser=lxml is recommended here - if the more stringent lxml-xml is used,
         # the output is slightly different and the code will need to be modified
         newr = BeautifulSoup(str(r), "lxml")
-        try:
+        if newr.find_all():
             tag_list = list(set([x.name for x in newr.find_all()]))
-        except Exception:
+        else:
             tag_list = []
         for t in tag_list:
             elements = newr.find_all(t)
@@ -477,228 +417,199 @@ class JATSParser(BaseBeautifulSoupParser):
             s_new = "&" + s[1] + ";"
             newr = newr.replace(s_old, s_new)
 
-        newr = newr.replace(u"\n", u" ").replace(u"  ", u" ")
+        newr = re.sub("\\s+|\n+|\r+", " ", newr)
         newr = newr.replace("&nbsp;", " ")
         newr = newr.strip()
 
         return newr
 
     def _get_date(self, d):
-        pubdate = self._detag(d.year, [])
-        try:
-            d.month
-        except Exception:
-            pubdate = pubdate + "-" + "00"
+        """
+        Extract and standarize date from input BeautifulSoup date object
+        :param d: BeautifulSoup date object
+        :return: formatted date string (yyyy-mm-dd)
+        """
+        if d.find("year"):
+            pubdate = self._detag(d.year, [])
         else:
-            try:
-                int(self._detag(d.month, []))
-            except Exception:
-                month_name = self._detag(d.month, [])[0:3].lower()
-                month = utils.MONTH_TO_NUMBER[month_name]
+            pubdate = "0000"
+
+        if d.find("month"):
+            month_raw = self._detag(d.month, [])
+            if month_raw.isdigit():
+                month = month_raw
             else:
-                month = self._detag(d.month, [])
-            if int(month) < 10:
+                month_name = month_raw[0:3].lower()
+                month = utils.MONTH_TO_NUMBER[month_name]
+
+            if int(month) < 10 and len(month) < 2:
                 month = "0" + str(int(month))
             else:
                 month = str(month)
             pubdate = pubdate + "-" + month
-        try:
-            d.day
-        except Exception:
-            pubdate = pubdate + "-" + "00"
         else:
-            try:
-                int(self._detag(d.day, []))
-            except Exception:
-                day = "0"
+            pubdate = pubdate + "-" + "00"
+
+        if d.find("day"):
+            day_raw = self._detag(d.day, [])
+            if day_raw.isdigit():
+                day = day_raw
             else:
-                day = self._detag(d.day, [])
-            if int(day) < 10:
+                day = "00"
+
+            if int(day) < 10 and len(day) < 2:
                 day = "0" + str(int(day))
             else:
                 day = str(day)
             pubdate = pubdate + "-" + day
+        else:
+            pubdate = pubdate + "-" + "00"
 
         return pubdate
 
     def _parse_title_abstract(self):
         title_xref_list = []
         title_fn_list = []
-        try:
+        self.titledoi = None
+        if self.article_meta.find("title-group") and self.article_meta.find("title-group").find(
+            "article-title"
+        ):
             title = self.article_meta.find("title-group").find("article-title")
-        except Exception:
-            pass
-        else:
-            try:
-                for dx in title.find_all("ext-link"):
-                    ## TODO in the original code, this seems to only be used for errata (later in the code) - is that right?
-                    self.titledoi = dx["xlink:href"]
-            except Exception:
-                pass
-            try:
-                for dx in title.find_all("xref"):
-                    title_xref_list.append(self._detag(dx, self.JATS_TAGSET["abstract"]).strip())
-                    dx.decompose()
-            except Exception:
-                pass
-            try:
-                for df in title.find_all("fn"):
-                    title_fn_list.append(self._detag(df, self.JATS_TAGSET["abstract"]).strip())
-                    df.decompose()
-            except Exception:
-                pass
+            for dx in title.find_all("ext-link"):
+                self.titledoi = dx.find("xlink:href")
+            for dx in title.find_all("xref"):
+                title_xref_list.append(self._detag(dx, self.JATS_TAGSET["abstract"]).strip())
+                dx.decompose()
+            for df in title.find_all("fn"):
+                title_fn_list.append(self._detag(df, self.JATS_TAGSET["abstract"]).strip())
+                df.decompose()
 
             self.base_metadata["title"] = self._detag(title, self.JATS_TAGSET["title"]).strip()
 
-        try:
-            abstract = self.article_meta.abstract.p
-        except Exception:
-            pass
-        else:
-            abstract = self._detag(abstract, self.JATS_TAGSET["abstract"])
+        if self.article_meta.find("abstract") and self.article_meta.find("abstract").find("p"):
+            abstract = self._detag(
+                self.article_meta.find("abstract").find("p"), self.JATS_TAGSET["abstract"]
+            )
             self.base_metadata["abstract"] = abstract
             if title_fn_list:
                 self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
 
     def _parse_author(self):
-        try:
-            auth_affil = JATSAffils()
-            aa_output = auth_affil.parse(article_metadata=self.article_meta)
-        except Exception:
-            pass
-        else:
+        auth_affil = JATSAffils()
+        aa_output = auth_affil.parse(article_metadata=self.article_meta)
+        if aa_output:
             self.base_metadata["authors"] = aa_output
 
     def _parse_copyright(self):
-        try:
-            copyright = self.article_meta.find("copyright-statement")
-        except Exception:
-            pass
-        else:
+        copyright = self.article_meta.find("copyright-statement")
+        if copyright:
             self.base_metadata["copyright"] = self._detag(copyright, [])
 
     def _parse_edhistory(self):
         # received and revised dates can be arrays, but accepted can just be a single value
         received = []
         revised = []
-        try:
-            dates = self.article_meta.find("history").find_all("date")
-        except Exception:
-            pass
-        else:
-            for d in dates:
-                try:
-                    date_type = d["date-type"]
-                except Exception:
-                    date_type = ""
-                try:
-                    eddate = self._get_date(d)
-                except Exception:
-                    pass
-                else:
-                    if date_type == "received":
-                        received.append(eddate)
-                    elif date_type == "rev-recd":
-                        revised.append(eddate)
-                    elif date_type == "accepted":
-                        self.base_metadata["edhist_acc"] = eddate
-                    else:
-                        logger.info("Editorial history date type (%s) not recognized.", date_type)
 
-            self.base_metadata["edhist_rec"] = received
-            self.base_metadata["edhist_rev"] = revised
+        dates = self.article_meta.find("history").find_all("date")
+        for d in dates:
+            date_type = d.get("date-type", "")
+            eddate = self._get_date(d)
+            if date_type == "received":
+                received.append(eddate)
+            elif date_type == "rev-recd":
+                revised.append(eddate)
+            elif date_type == "accepted":
+                self.base_metadata["edhist_acc"] = eddate
+            else:
+                logger.info("Editorial history date type (%s) not recognized.", date_type)
+
+        self.base_metadata["edhist_rec"] = received
+        self.base_metadata["edhist_rev"] = revised
 
     def _parse_keywords(self):
-        try:
-            keys_uat = []
-            keys_misc = []
-            keys_aas = []
-            keys_out = []
-            keyword_groups = self.article_meta.find_all("kwd-group")
-            for kg in keyword_groups:
-                # Check for UAT first:
-                if kg["kwd-group-type"] == "author":
-                    keys_uat_test = kg.find_all("compound-kwd-part")
-                    for kk in keys_uat_test:
-                        if kk["content-type"] == "uat-code":
-                            keys_uat.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
-                    if not keys_uat:
-                        keys_misc_test = kg.find_all("kwd")
-                        for kk in keys_misc_test:
-                            keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
-                # Then check for AAS:
-                elif kg["kwd-group-type"] == "AAS":
-                    keys_aas_test = kg.find_all("kwd")
-                    for kk in keys_aas_test:
-                        keys_aas.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
-                # If all else fails, just search for 'kwd'
-                else:
+        keys_uat = []
+        keys_misc = []
+        keys_aas = []
+        keys_out = []
+        keyword_groups = self.article_meta.find_all("kwd-group")
+        for kg in keyword_groups:
+            # Check for UAT first:
+            if kg.get("kwd-group-type", "") == "author":
+                keys_uat_test = kg.find_all("compound-kwd-part")
+                for kk in keys_uat_test:
+                    if kk["content-type"] == "uat-code":
+                        keys_uat.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+                if not keys_uat:
                     keys_misc_test = kg.find_all("kwd")
                     for kk in keys_misc_test:
                         keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+            # Then check for AAS:
+            elif kg.get("kwd-group-type", "") == "AAS":
+                keys_aas_test = kg.find_all("kwd")
+                for kk in keys_aas_test:
+                    keys_aas.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+            # If all else fails, just search for 'kwd'
+            else:
+                keys_misc_test = kg.find_all("kwd")
+                for kk in keys_misc_test:
+                    keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
 
-            if keys_uat:
-                for k in keys_uat:
-                    keys_out.append({"system": "UAT", "string": k})
+        if keys_uat:
+            for k in keys_uat:
+                keys_out.append({"system": "UAT", "string": k})
 
-            if keys_aas:
-                for k in keys_aas:
-                    keys_out.append({"system": "AAS", "string": k})
+        if keys_aas:
+            for k in keys_aas:
+                keys_out.append({"system": "AAS", "string": k})
 
-            if keys_misc:
-                for k in keys_misc:
-                    keys_out.append({"system": "misc", "string": k})
+        if keys_misc:
+            for k in keys_misc:
+                keys_out.append({"system": "misc", "string": k})
 
-            if keys_out:
-                self.base_metadata["keywords"] = keys_out
-        except Exception:
-            pass
+        if keys_out:
+            self.base_metadata["keywords"] = keys_out
 
         if "keywords" not in self.base_metadata:
-            try:
+            if self.article_meta.find("article-categories"):
                 keywords = self.article_meta.find("article-categories").find_all("subj-group")
-            except Exception:
+            else:
                 keywords = []
             for c in keywords:
-                try:
-                    if c["subj-group-type"] == "toc-minor":
-                        for k in c.find_all("subject"):
-                            keys_out.append(
-                                {
-                                    "system": "subject",
-                                    "string": self._detag(k, self.JATS_TAGSET["keywords"]),
-                                }
-                            )
+                if c.get("subj-group-type", "") == "toc-minor":
+                    for k in c.find_all("subject"):
+                        keys_out.append(
+                            {
+                                "system": "subject",
+                                "string": self._detag(k, self.JATS_TAGSET["keywords"]),
+                            }
+                        )
 
-                        self.base_metadata["keywords"] = keys_out
-                    else:
-                        for k in c.find_all("subject"):
-                            if k.string == "Errata" or k.string == "Corrigendum":
-                                self.isErratum = True
-                except Exception:
-                    pass
+                    self.base_metadata["keywords"] = keys_out
+                else:
+                    for k in c.find_all("subject"):
+                        if k.string == "Errata" or k.string == "Corrigendum":
+                            self.isErratum = True
 
     def _parse_pub(self):
-        try:
+        journal = None
+        if self.journal_meta.find("journal-title-group") and self.journal_meta.find(
+            "journal-title-group"
+        ).find("journal-title"):
             journal = self.journal_meta.find("journal-title-group").find("journal-title")
+        elif self.journal_meta.find("journal-title"):
+            journal = self.journal_meta.find("journal-title")
+
+        if journal:
             self.base_metadata["publication"] = self._detag(journal, [])
-        except Exception:
-            try:
-                journal = self.journal_meta.find("journal-title")
-                self.base_metadata["publication"] = self._detag(journal, [])
-            except Exception:
-                pass
 
-        try:
-            publisher = self.journal_meta.find("publisher").find("publisher-name")
-            self.base_metadata["publisher"] = self._detag(publisher, [])
-        except Exception:
-            pass
+        if self.journal_meta.find("publisher") and self.journal_meta.find("publisher").find(
+            "publisher-name"
+        ):
+            self.base_metadata["publisher"] = self._detag(
+                self.journal_meta.find("publisher").find("publisher-name"), []
+            )
 
-        try:
-            issn_all = self.journal_meta.find_all("issn")
-        except Exception:
-            issn_all = []
+        issn_all = self.journal_meta.find_all("issn")
         issns = []
         for i in issn_all:
             issns.append((i["pub-type"], self._detag(i, [])))
@@ -707,149 +618,103 @@ class JATSParser(BaseBeautifulSoupParser):
     def _parse_related(self):
         # Related article data, especially corrections and errata
 
-        try:
-            related = self.article_meta.find_all("related-article")
-            for r in related:
-                # TODO are there other types of related articles to track? need an example
-                if r["related-article-type"] == "corrected-article":
-                    self.isErratum = True
-                    relateddoi = r["xlink:href"]
-        except Exception:
-            pass
+        related = self.article_meta.find_all("related-article")
+        relateddoi = ""
+        for r in related:
+            # TODO are there other types of related articles to track? need an example
+            if r.get("related-article-type", "") == "corrected-article":
+                self.isErratum = True
+                relateddoi = r.get("xlink:href", "")
 
         if self.isErratum:
-            try:
-                doiurl_pat = r"(.*?)(doi.org\/)"
-                if self.titledoi:
-                    self.base_metadata["relatedto"] = {
-                        "relationship": "errata",
-                        "id": re.sub(doiurl_pat, "", self.titledoi),
-                    }
-                elif relateddoi:
-                    self.base_metadata["relatedto"] = {
-                        "relationship": "errata",
-                        "id": re.sub(doiurl_pat, "", relateddoi),
-                    }
-                else:
-                    # TODO need to figure out an ID for this log statement
-                    logger.warning("No DOI for erratum")
-                    # pass
-            except Exception as err:
-                # TODO figure out an ID for this log statement
-                logger.warning("Problem making erratum: %s", err)
-                # pass
+            doiurl_pat = r"(.*?)(doi.org\/)"
+            if self.titledoi:
+                self.base_metadata["relatedto"] = {
+                    "relationship": "errata",
+                    "id": re.sub(doiurl_pat, "", self.titledoi),
+                }
+            elif relateddoi:
+                self.base_metadata["relatedto"] = {
+                    "relationship": "errata",
+                    "id": re.sub(doiurl_pat, "", relateddoi),
+                }
+            else:
+                logger.warning("No DOI for erratum: %s", related)
 
     def _parse_ids(self):
 
         self.base_metadata["ids"] = {}
 
-        try:
-            ids = self.article_meta.find_all("article-id")
-        except Exception:
-            ids = []
+        ids = self.article_meta.find_all("article-id")
 
         self.base_metadata["ids"]["pub-id"] = []
         for d in ids:
+            id_type = d.get("pub-id-type", "")
             # DOI
-            if d["pub-id-type"] == "doi":
+            if id_type == "doi":
                 self.base_metadata["ids"]["doi"] = self._detag(d, [])
 
             # publisher ID
-            if d["pub-id-type"] == "publisher-id":
+            if id_type == "publisher-id":
                 self.base_metadata["ids"]["pub-id"].append(
                     {"attribute": "publisher-id", "Identifier": self._detag(d, [])}
                 )
-            elif d["pub-id-type"] == "manuscript":
+            elif id_type == "manuscript":
                 self.base_metadata["ids"]["pub-id"].append(
                     {"attribute": "manuscript", "Identifier": self._detag(d, [])}
                 )
-            elif d["pub-id-type"] == "other":
+            elif id_type == "other":
                 self.base_metadata["ids"]["pub-id"].append(
                     {"attribute": "other", "Identifier": self._detag(d, [])}
                 )
 
         # Arxiv Preprint
-        try:
-            arxiv = self.article_meta.find_all("custom-meta")
-        except Exception:
-            pass
-        else:
-            # ax_pref = "https://arxiv.org/abs/"
-            self.base_metadata["ids"]["preprint"] = {}
-            for ax in arxiv:
-                try:
-                    x_name = self._detag(ax.find("meta-name"), [])
-                    x_value = self._detag(ax.find("meta-value"), [])
-                    if x_name == "arxivppt":
-                        self.base_metadata["ids"]["preprint"].append(
-                            {"source": "arxiv", "id": x_value}
-                        )
-                except Exception:
-                    pass
+        arxiv = self.article_meta.find_all("custom-meta")
+        # ax_pref = "https://arxiv.org/abs/"
+        self.base_metadata["ids"]["preprint"] = {}
+        for ax in arxiv:
+            x_name = self._detag(ax.find("meta-name"), [])
+            x_value = self._detag(ax.find("meta-value"), [])
+            if x_name and x_name == "arxivppt":
+                self.base_metadata["ids"]["preprint"].append({"source": "arxiv", "id": x_value})
 
     def _parse_pubdate(self):
-        try:
-            pub_dates = self.article_meta.find_all("pub-date")
-        except Exception:
-            pub_dates = []
+        pub_dates = self.article_meta.find_all("pub-date")
         for d in pub_dates:
-            try:
-                a = d["publication-format"]
-            except KeyError:
-                a = ""
-            try:
-                b = d["pub-type"]
-            except KeyError:
-                b = ""
-            try:
-                pubdate = self._get_date(d)
-            except Exception:
-                pass
-            else:
-                if a == "print" or b == "ppub" or b == "cover":
-                    self.base_metadata["pubdate_print"] = pubdate
-                elif a == "electronic" or b == "epub":
-                    self.base_metadata["pubdate_electronic"] = pubdate
-            try:
-                if b == "open-access":
-                    self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
-            except Exception:
-                pass
+            pub_format = d.get("publication-format", "")
+            pub_type = d.get("pub-type", "")
+            pubdate = self._get_date(d)
+            if pub_format == "print" or pub_type == "ppub" or pub_type == "cover":
+                self.base_metadata["pubdate_print"] = pubdate
+            elif pub_format == "electronic" or pub_type == "epub":
+                self.base_metadata["pubdate_electronic"] = pubdate
+
+            if pub_type == "open-access":
+                self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
 
     def _parse_permissions(self):
         # Check for open-access / "Permissions" field
-        try:
-            permissions = self.article_meta.find("permissions").find_all("license")
-        except Exception:
-            pass
-        else:
-            for p in permissions:
-                try:
-                    if p["license-type"] == "open":
-                        self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
-                except Exception:
-                    pass
+        permissions = self.article_meta.find("permissions").find_all("license")
+        for p in permissions:
+            if p.find("license-type") == "open":
+                self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
 
     def _parse_page(self):
-        fpage = self.article_meta.fpage
-        if fpage is None:
-            fpage = self.article_meta.pageStart
+        fpage = self.article_meta.find("fpage")
+        if not fpage:
+            fpage = self.article_meta.find("pageStart")
         if fpage:
             self.base_metadata["page_first"] = self._detag(fpage, [])
 
-        try:
-            tmp = self.article_meta.find("elocation-id")
-            self.base_metadata["electronic_id"] = self._detag(tmp, [])
-        except Exception:
-            pass
+        e_id = self.article_meta.find("elocation-id")
+        if e_id:
+            self.base_metadata["electronic_id"] = self._detag(e_id, [])
 
-        lpage = self.article_meta.lpage
-        if lpage is None:
-            lpage = self.article_meta.pageEnd
-
-        else:
-            if lpage == fpage:
-                lpage = None
+        lpage = self.article_meta.find("lpage")
+        if not lpage:
+            lpage = self.article_meta.find("pageEnd")
+        if lpage == fpage:
+            lpage = None
         if lpage:
             self.base_metadata["page_last"] = self._detag(lpage, [])
 
@@ -859,30 +724,22 @@ class JATSParser(BaseBeautifulSoupParser):
             )
 
         # Number of Pages:
-        try:
-            counts = self.article_meta.counts
-            pagecount = counts.find("page-count")
-            self.base_metadata["numpages"] = pagecount["count"]
-        except Exception:
-            pass
+        if self.article_meta.find("counts") and self.article_meta.find("counts").find(
+            "page-count"
+        ):
+            self.base_metadata["numpages"] = (
+                self.article_meta.find("counts").find("page-count").get("count", "")
+            )
 
     def _parse_references(self):
         if self.back_meta is not None:
-
             ref_list_text = []
-            try:
-                ref_results = self.back_meta.find("ref-list").find_all("ref")
-                for r in ref_results:
-                    # s = r.extract().get_text().replace("\n", " ")
-                    # s = re.sub(r"\s+", r" ", s)
-                    # s = namedentities.named_entities(s.strip())
-                    # output raw XML for reference service to parse later
-                    s = str(r.extract()).replace("\n", " ")
-                    ref_list_text.append(s)
-            except Exception:
-                pass
-            else:
-                self.base_metadata["references"] = ref_list_text
+            ref_results = self.back_meta.find("ref-list").find_all("ref")
+            for r in ref_results:
+                # output raw XML for reference service to parse later
+                s = str(r.extract()).replace("\n", " ")
+                ref_list_text.append(s)
+            self.base_metadata["references"] = ref_list_text
 
     def entity_convert(self):
         econv = utils.EntityConverter()
@@ -905,18 +762,19 @@ class JATSParser(BaseBeautifulSoupParser):
             self.base_metadata[k] = v
 
     def parse(self, text):
-
+        """
+        Parse JATS XML into standard JSON format
+        :param text: string, contents of XML file
+        :return: parsed file contents in JSON format
+        """
         d = self.bsstrtodict(text, parser="lxml-xml")
         document = d.article
 
         front_meta = document.front
         self.back_meta = document.back
 
-        try:
-            self.article_meta = front_meta.find("article-meta")
-            self.journal_meta = front_meta.find("journal-meta")
-        except Exception:
-            return {}
+        self.article_meta = front_meta.find("article-meta")
+        self.journal_meta = front_meta.find("journal-meta")
 
         # parse individual pieces
         self._parse_title_abstract()
@@ -944,7 +802,7 @@ class JATSParser(BaseBeautifulSoupParser):
 
         self.entity_convert()
 
-        output = serializer.serialize(self.base_metadata, format="JATS")
+        output = self.serialize(self.base_metadata, format="JATS")
 
         return output
 

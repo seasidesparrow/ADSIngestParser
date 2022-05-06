@@ -20,8 +20,6 @@ TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
 class TestJATS(unittest.TestCase):
-    maxDiff = None
-
     def setUp(self):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
