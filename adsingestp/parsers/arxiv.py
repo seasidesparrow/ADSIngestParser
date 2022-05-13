@@ -1,5 +1,4 @@
 import logging
-import re
 
 from adsingestp import utils
 from adsingestp.ingest_exceptions import (
@@ -20,7 +19,6 @@ class ArxivParser(BaseBeautifulSoupParser):
 
     author_collaborations_params = {
         "keywords": ["group", "team", "collaboration"],
-        "first_author_delimiter": ":",
         "remove_the": False,
         "fix_arXiv_mixed_collaboration_string": True,
     }
@@ -29,18 +27,6 @@ class ArxivParser(BaseBeautifulSoupParser):
         self.base_metadata = {}
         self.input_header = None
         self.input_metadata = None
-
-    def _clean_output(self, input):
-        """
-        Remove extra spaces and line breaks
-        :param input: text to clean
-        :return: cleaned text
-        """
-        input = input.replace("\n", " ")
-        output = re.sub(r"\s+", r" ", input)
-        output = output.strip()
-
-        return output
 
     def _parse_ids(self):
         if self.input_header.find("identifier"):

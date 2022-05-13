@@ -1,7 +1,7 @@
+import re
 from datetime import datetime
 
 import bs4
-import xmltodict as xmltodict_parser
 
 from adsingestp.ingest_exceptions import WrongFormatException
 
@@ -39,6 +39,18 @@ class IngestBase(object):
             return [v for v in map(self._clean_empty, input_to_clean) if v]
 
         return input_to_clean
+
+    def _clean_output(self, input):
+        """
+        Remove extra spaces and line breaks
+        :param input: text to clean
+        :return: cleaned text
+        """
+        input = input.replace("\n", " ")
+        output = re.sub(r"\s+", r" ", input)
+        output = output.strip()
+
+        return output
 
     def serialize(self, input_dict, format):
         """
@@ -314,19 +326,6 @@ class IngestBase(object):
         return output_clean
 
 
-class BaseXmlToDictParser(IngestBase):
-    """
-    An XML parser which uses xmltodict to create a dictionary
-    out of the input XML stream
-    """
-
-    def xmltodict(self, input_xml):
-        """returns a dict as created by xmltodict
-        :param input_xml: XML text blob
-        """
-        return xmltodict_parser.parse(input_xml)
-
-
 class BaseBeautifulSoupParser(IngestBase):
     """
     An XML parser which uses BeautifulSoup to create a dictionary
@@ -342,41 +341,3 @@ class BaseBeautifulSoupParser(IngestBase):
         """
 
         return bs4.BeautifulSoup(input_xml, parser)
-
-    def _array(self, e):
-        """Ensures that e is an array"""
-        if not e:
-            return []
-        elif isinstance(e, list):
-            return e
-        else:
-            return [e]
-
-    def _dict(self, e):
-        """Ensures that e is a dictionary"""
-        if not e:
-            return {}
-        elif isinstance(e, dict):
-            return e
-        else:
-            return {}
-
-    def _text(self, e):
-        """Returns text node of element e, or an empty string"""
-        if not e:
-            return ""
-        elif isinstance(e, dict):
-            return e.get("#text", "")
-        elif isinstance(e, str):
-            return e
-
-    def _attr(self, e, a, d=""):
-        """Returns attribute a from element e, or an empty string"""
-        if not e:
-            return d
-        elif isinstance(e, dict):
-            return e.get("@" + a, d)
-        elif isinstance(e, str):
-            return d
-        else:
-            return d

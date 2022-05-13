@@ -1,5 +1,4 @@
 import logging
-from collections import OrderedDict
 
 from adsingestp import utils
 from adsingestp.ingest_exceptions import (
@@ -20,9 +19,7 @@ class DataciteParser(BaseBeautifulSoupParser):
 
     author_collaborations_params = {
         "keywords": ["group", "team", "collaboration"],
-        "first_author_delimiter": ":",
         "remove_the": False,
-        "fix_arXiv_mixed_collaboration_string": False,
     }
 
     datacite_resourcetype_mapping = {
@@ -51,25 +48,32 @@ class DataciteParser(BaseBeautifulSoupParser):
         contribs_out = []
         name_parser = utils.AuthorNames()
         if author:
-            contrib_array = self._array(
-                self._dict(self.input_metadata.get("creators")).get("creator", [])
-            )
+            if self.input_metadata.find("creators"):
+                contrib_array = self.input_metadata.find("creators").find_all("creator")
+            else:
+                contrib_array = []
         else:
-            contrib_array = self._array(
-                self._dict(self.input_metadata.get("contributors")).get("contributor", [])
-            )
+            if self.input_metadata.find("contributors"):
+                contrib_array = self.input_metadata.find("contributors").find_all("contributor")
+            else:
+                contrib_array = []
         for c in contrib_array:
             contrib_tmp = {}
-            try:
-                contrib_tmp["given"] = c["givenName"]
-                contrib_tmp["surname"] = c["familyName"]
-            except KeyError:
+            if c.find("givenName") and c.find("familyName"):
+                contrib_tmp["given"] = c.find("givenName").get_text()
+                contrib_tmp["surname"] = c.find("familyName").get_text()
+            else:
                 if author:
-                    contrib_name = c.get("creatorName")
+                    if c.find("creatorName"):
+                        contrib_name = c.find("creatorName").get_text()
+                    else:
+                        contrib_name = ""
                 else:
-                    contrib_name = c.get("contributorName")
-                if type(contrib_name) is OrderedDict:
-                    contrib_name = contrib_name.get("#text")
+                    if c.find("contributorName"):
+                        contrib_name = c.find("contributorName").get_text()
+                    else:
+                        contrib_name = ""
+
                 parsed_name = name_parser.parse(
                     contrib_name, collaborations_params=self.author_collaborations_params
                 )
@@ -83,16 +87,21 @@ class DataciteParser(BaseBeautifulSoupParser):
                 for key in parsed_name_first.keys():
                     contrib_tmp[key] = parsed_name_first[key]
 
-            contrib_tmp["aff"] = self._array(c.get("affiliation", ""))
+            if c.find_all("affiliation"):
+                aff = []
+                for a in c.find_all("affiliation"):
+                    aff.append(a.get_text())
+                contrib_tmp["aff"] = aff
 
-            for i in self._array(c.get("nameIdentifier")):
-                if "ORCID" == i.get("@nameIdentifierScheme") or "http://orcid.org" == i.get(
-                    "@schemeURI"
+            for i in c.find_all("nameIdentifier"):
+                if (
+                    i.get("nameIdentifierScheme", "") == "ORCID"
+                    or i.get("schemeURI", "") == "http://orcid.org"
                 ):
-                    contrib_tmp["orcid"] = i.get("#text")
+                    contrib_tmp["orcid"] = i.get_text()
 
             if not author:
-                contrib_tmp["role"] = c.get("@contributorType", "")
+                contrib_tmp["role"] = c.get("contributorType", "")
 
             contribs_out.append(contrib_tmp)
         if not contribs_out:
@@ -105,21 +114,25 @@ class DataciteParser(BaseBeautifulSoupParser):
 
     def _parse_title_abstract(self):
         titles = {}
-        for t in self._array(self._dict(self.input_metadata.get("titles")).get("title", [])):
-            title_attr = self._attr(t, "xml:lang", "en")
+        if self.input_metadata.find("titles"):
+            titles_raw = self.input_metadata.find("titles").find_all("title")
+        else:
+            titles_raw = []
+        for t in titles_raw:
+            title_attr = t.get("xml:lang", "")
             # titleType is only present for subtitles and alternate titles, not the primary title
-            type_attr = self._attr(t, "titleType", "")
+            type_attr = t.get("titleType", "")
             if not type_attr:
-                titles[title_attr.lower()] = self._text(t)
+                titles[title_attr.lower()] = self._clean_output(t.get_text())
             if type_attr == "Subtitle":
-                self.base_metadata["subtitle"] = self._text(t)
+                self.base_metadata["subtitle"] = self._clean_output(t.get_text())
         if not titles:
             raise MissingTitleException("No title found")
         # we use the English title as the main one, then add any foreign ones
         # there are several options for "English" in this schema, so check for all of them (lowercase forms)
         en_key = list({"en", "en-us"} & set(titles.keys()))[0]
 
-        self.base_metadata["title"] = titles.pop(en_key)
+        self.base_metadata["title"] = self._clean_output(titles.pop(en_key))
         title_foreign = []
         lang_foreign = []
         for tkey in titles:
@@ -128,7 +141,7 @@ class DataciteParser(BaseBeautifulSoupParser):
 
         # the data model only takes a single foreign-language title; will need to adjust if more are required
         if title_foreign:
-            self.base_metadata["title_native"] = title_foreign[0]
+            self.base_metadata["title_native"] = self._clean_output(title_foreign[0])
             self.base_metadata["lang_native"] = lang_foreign[0]
 
         # abstract, references are all in the "descriptions" section
@@ -136,90 +149,98 @@ class DataciteParser(BaseBeautifulSoupParser):
         # allowed description type so Lars is shoving the references
         # in a section labeled as "Other" as a json structure
         abstract = None
-        for s in self._array(self.input_metadata.get("descriptions", {}).get("description", [])):
-            t = s.get("@descriptionType")
-            if t == "Abstract":
-                abstract = self._text(s)
+        if self.input_metadata.find("descriptions"):
+            for s in self.input_metadata.find("descriptions").find_all("description"):
+                t = s.get("descriptionType", "")
+                if t == "Abstract":
+                    abstract = s.get_text()
 
-        self.base_metadata["abstract"] = abstract
+        self.base_metadata["abstract"] = self._clean_output(abstract)
 
     def _parse_publisher(self):
-        self.base_metadata["publisher"] = self._text(self.input_metadata.get("publisher", ""))
+        if self.input_metadata.find("publisher"):
+            self.base_metadata["publisher"] = self.input_metadata.find("publisher").get_text()
 
     def _parse_pubdate(self):
-        year = self._text(self.input_metadata.get("publicationYear"))
-        if year:
-            self.base_metadata["pubdate_electronic"] = year
+        if self.input_metadata.find("publicationYear"):
+            self.base_metadata["pubdate_electronic"] = self.input_metadata.find(
+                "publicationYear"
+            ).get_text()
 
-        dates = []
-        for d in self._array(self._dict(self.input_metadata.get("dates")).get("date", [])):
-            t = self._attr(d, "dateType")
-            dates.append({"type": t, "date": self._text(d)})
+        if self.input_metadata.find("dates"):
+            dates = []
+            for d in self.input_metadata.find("dates").find_all("date"):
+                t = d.get("dateType", "")
+                dates.append({"type": t, "date": d.get_text()})
 
-        if dates:
-            self.base_metadata["pubdate_other"] = dates
+            if dates:
+                self.base_metadata["pubdate_other"] = dates
 
     def _parse_keywords(self):
-        keywords = []
-        for k in self._array(self._dict(self.input_metadata.get("subjects")).get("subject", [])):
-            # we are ignoring keyword scheme
-            keywords.append({"string": self._text(k), "system": "datacite"})
+        if self.input_metadata.find("subjects"):
+            keywords = []
+            for k in self.input_metadata.find("subjects").find_all("subject"):
+                # we are ignoring keyword scheme
+                keywords.append({"string": k.get_text(), "system": "datacite"})
 
-        self.base_metadata["keywords"] = keywords
+            self.base_metadata["keywords"] = keywords
 
     def _parse_ids(self):
         self.base_metadata["ids"] = {}
 
-        if "DOI" != self.input_metadata.get("identifier", {}).get("@identifierType", ""):
-            raise MissingDoiException("//identifier['@identifierType'] not DOI!")
-        self.base_metadata["ids"]["doi"] = self.input_metadata.get("identifier").get("#text")
+        if self.input_metadata.find("identifier"):
+            if self.input_metadata.find("identifier").get("identifierType", "") == "DOI":
+                self.base_metadata["ids"]["doi"] = self.input_metadata.find(
+                    "identifier"
+                ).get_text()
+            else:
+                raise MissingDoiException("//identifier['@identifierType'] not DOI!")
 
         # bibcodes should appear as <alternateIdentifiers>
-        pub_ids = []
-        for i in self._array(
-            self._dict(self.input_metadata.get("alternateIdentifiers")).get(
-                "alternateIdentifier", []
-            )
-        ):
-            t = i.get("@alternateIdentifierType")
-            pub_ids.append({"attribute": t, "Identifier": self._text(i)})
-        self.base_metadata["ids"]["pub-id"] = pub_ids
+        if self.input_metadata.find("alternateIdentifiers"):
+            pub_ids = []
+            for i in self.input_metadata.find("alternateIdentifiers").find_all(
+                "alternateIdentifier"
+            ):
+                t = i.get("alternateIdentifierType", "")
+                pub_ids.append({"attribute": t, "Identifier": i.get_text()})
+            self.base_metadata["ids"]["pub-id"] = pub_ids
 
     def _parse_related_refs(self):
         # related identifiers; bibcodes sometime appear in <relatedIdentifiers>
-        related_to = []
-        references = []
-        for i in self._array(
-            self._dict(self.input_metadata.get("relatedIdentifiers")).get("relatedIdentifier", [])
-        ):
-            rt = i.get("@relationType")
-            c = self._text(i)
-            if rt == "Cites":
-                references.append(c)
-            elif rt in utils.related_trans_dict.keys():
-                related_to.append({"relationship": utils.related_trans_dict[rt], "id": c})
-            else:
-                logger.info("RelatedTo type %s not included in translation dictionary", rt)
-                related_to.append({"relationship": "related", "id": c})
+        if self.input_metadata.find("relatedIdentifiers"):
+            related_to = []
+            references = []
+            for i in self.input_metadata.find("relatedIdentifiers").find_all("relatedIdentifier"):
+                rt = i.get("relationType", "")
+                c = i.get_text()
+                if rt == "Cites":
+                    references.append(c)
+                elif rt in utils.related_trans_dict.keys():
+                    related_to.append({"relationship": utils.related_trans_dict[rt], "id": c})
+                else:
+                    logger.info("RelatedTo type %s not included in translation dictionary", rt)
+                    related_to.append({"relationship": "related", "id": c})
 
-        self.base_metadata["relatedto"] = related_to
-        self.base_metadata["references"] = references
+            self.base_metadata["relatedto"] = related_to
+            self.base_metadata["references"] = references
 
     def _parse_permissions(self):
-        is_oa = False
-        for i in self._array(self._dict(self.input_metadata.get("rightsList")).get("rights", [])):
-            u = self._attr(i, "rightsURI")
-            c = self._text(i)
-            if u == "info:eu-repo/semantics/openAccess" or c == "Open Access":
-                is_oa = True
+        if self.input_metadata.find("rightsList"):
+            is_oa = False
+            for i in self.input_metadata.find("rightsList").find_all("rights"):
+                u = i.get("rightsURI", "")
+                c = i.get_text()
+                if u == "info:eu-repo/semantics/openAccess" or c == "Open Access":
+                    is_oa = True
 
-        self.base_metadata["openAccess"] = is_oa
+            self.base_metadata["openAccess"] = is_oa
 
     def _parse_doctype(self):
-        doctype = self.datacite_resourcetype_mapping.get(
-            self.input_metadata.get("resourceType", {}).get("@resourceTypeGeneral", None), "misc"
-        )
-        self.base_metadata["doctype"] = doctype
+        if self.input_metadata.find("resourceType"):
+            resource_type = self.input_metadata.find("resourceType").get("resourceTypeGeneral", "")
+            doctype = self.datacite_resourcetype_mapping.get(resource_type, "misc")
+            self.base_metadata["doctype"] = doctype
 
     def parse(self, text):
         """

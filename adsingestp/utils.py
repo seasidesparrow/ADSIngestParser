@@ -1,9 +1,12 @@
+import collections.abc
 import logging
 import os
 import re
 
 import nameparser
 from namedentities import named_entities, unicode_entities
+
+from adsingestp.ingest_exceptions import AuthorParserException
 
 logger = logging.getLogger(__name__)
 
@@ -139,6 +142,7 @@ def clean_output(in_text):
 
     return output
 
+
 class EntityConverter(object):
     def __init__(self):
         self.input_text = ""
@@ -172,29 +176,32 @@ class AuthorNames(object):
     }
 
     def __init__(self):
-        self.max_first_name_initials = 6
-        self.dutch_last_names = ["van", "von", "'t", "den", "der", "van't"]
-
         data_dirname = os.path.join(
             os.path.dirname(os.path.realpath(__file__)), "data_files", "author_names"
         )
         logger.info("Loading ADS author names from: %s", data_dirname)
         self.first_names = self._read_datfile(os.path.join(data_dirname, "first.dat"))
         self.last_names = self._read_datfile(os.path.join(data_dirname, "last.dat"))
-        prefix_names = self._read_datfile(os.path.join(data_dirname, "prefixes.dat"))
-        suffix_names = self._read_datfile(os.path.join(data_dirname, "suffixes.dat"))
-
-        try:
-            for s in prefix_names:
-                nameparser.config.CONSTANTS.titles.add(s)
-            for s in suffix_names:
-                nameparser.config.CONSTANTS.suffix_acronyms.add(s)
-                nameparser.config.CONSTANTS.suffix_not_acronyms.add(s)
-        except Exception as e:
-            logger.exception("Unexpected error setting up the nameparser")
-            raise BaseException(e)
+        # prefix_names = self._read_datfile(os.path.join(data_dirname, "prefixes.dat"))
+        # suffix_names = self._read_datfile(os.path.join(data_dirname, "suffixes.dat"))
 
         # Setup the nameparser package and remove *all* of the preset titles:
+        # nameparser.config.CONSTANTS.titles.remove(*nameparser.config.CONSTANTS.titles)
+        # nameparser.config.CONSTANTS.suffix_acronyms.remove(
+        #     *nameparser.config.CONSTANTS.suffix_acronyms
+        # )
+        # nameparser.config.CONSTANTS.suffix_not_acronyms.remove(
+        #     *nameparser.config.CONSTANTS.suffix_not_acronyms
+        # )
+        #
+        # # add back only our titles
+        # for s in prefix_names:
+        #     nameparser.config.CONSTANTS.titles.add(s)
+        # for s in suffix_names:
+        #     nameparser.config.CONSTANTS.suffix_acronyms.add(s)
+        #     nameparser.config.CONSTANTS.suffix_not_acronyms.add(s)
+
+        # Turn off title parsing
         nameparser.config.CONSTANTS.titles.remove(*nameparser.config.CONSTANTS.titles)
         nameparser.config.CONSTANTS.suffix_acronyms.remove(
             *nameparser.config.CONSTANTS.suffix_acronyms
@@ -202,45 +209,24 @@ class AuthorNames(object):
         nameparser.config.CONSTANTS.suffix_not_acronyms.remove(
             *nameparser.config.CONSTANTS.suffix_not_acronyms
         )
-        nameparser.config.CONSTANTS.string_format = (
-            '{last}, {first} "{nickname}", {suffix}, {title}'
-        )
 
         # Compile regular expressions
         self.regex_initial = re.compile(r"\. *(?!,)")
         self.regex_etal = re.compile(r",? et ?al\.?")
         self.regex_and = re.compile(r" and ")
-        self.regex_dash = re.compile(r"^-")
-        self.regex_quote = re.compile(r"^'")
+        self.regex_first_char = re.compile(r"^-|^'")
         self.regex_the = re.compile(r"^[Tt]he ")
-        self.regex_author = re.compile(
-            r"^(?P<last_name>[^,]+),\s*(?P<initial0>\S)\w*"
-            + "".join(
-                [
-                    r"(?:\s*(?P<initial{}>\S)\S*)?".format(i + 1)
-                    for i in range(self.max_first_name_initials - 1)
-                ]
-            )
-        )
+        self.regex_multiple_sp = re.compile(r" +")
 
     def _read_datfile(self, filename):
         output_list = []
-
-        try:
-            fp = open(filename, "r")
-        except Exception as err:
-            # TODO fix logging
-            logger.exception("Error reading file: %s. Error: %s", filename, err)
-        else:
-            with fp:
-                for line in fp.readlines():
-                    if line.strip() != "" and line[0] != "#":
-                        output_list.append(line.strip())
+        with open(filename, "r") as fp:
+            for line in fp.readlines():
+                if line.strip() != "" and line[0] != "#":
+                    output_list.append(line.strip())
         return output_list
 
-    def _extract_collaboration(
-        self, collaboration_str, default_to_last_name, collaborations_params
-    ):
+    def _extract_collaboration(self, author_str, default_to_last_name, collaborations_params):
         """
         Verifies if the author name string contains a collaboration string
         The collaboration extraction can be controlled by the dictionary
@@ -248,51 +234,46 @@ class AuthorNames(object):
         """
         corrected_collaboration_list = []
         is_collaboration_str = False
-        try:
-            for keyword in collaborations_params["keywords"]:
-                if keyword in collaboration_str.lower():
-                    is_collaboration_str = True
-                    if collaborations_params["first_author_delimiter"]:
-                        # Based on an arXiv author case: "<tag>Collaboration:
-                        # Name, Author</tag>"
-                        authors_list = collaboration_str.split(
-                            collaborations_params["first_author_delimiter"]
+        for keyword in collaborations_params["keywords"]:
+            if keyword in author_str.lower():
+                is_collaboration_str = True
+                if collaborations_params["first_author_delimiter"]:
+                    # Based on an arXiv author case: "<tag>Collaboration: Name, Author</tag>"
+                    authors_list = author_str.split(
+                        collaborations_params["first_author_delimiter"]
+                    )
+                else:
+                    authors_list = list(author_str)
+                for author in authors_list:
+                    if keyword in author.lower():
+                        corrected_collaboration_str_tmp = re.sub(
+                            keyword, keyword.capitalize(), author
+                        )
+                        if collaborations_params["remove_the"]:
+                            corrected_collaboration_str_tmp = self.regex_the.sub(
+                                "", corrected_collaboration_str_tmp
+                            )
+
+                        if collaborations_params["fix_arXiv_mixed_collaboration_string"]:
+                            # TODO: Think a better way to account for this
+                            # specific cases if there's a ',' in the string, it probably includes the 1st author
+                            string_list = corrected_collaboration_str_tmp.split(",")
+                            if len(string_list) == 2:
+                                # Based on an arXiv author case: "collaboration,
+                                # Gaia"
+                                string_list.reverse()
+                                corrected_collaboration_str_tmp = " ".join(string_list)
+                        corrected_collaboration_list.append(
+                            {
+                                "collab": corrected_collaboration_str_tmp.strip(),
+                                "nameraw": author.strip(),
+                            }
                         )
                     else:
-                        authors_list = list(collaboration_str)
-                    for author in authors_list:
-                        if keyword in author.lower():
-                            corrected_collaboration_str_tmp = re.sub(
-                                keyword, keyword.capitalize(), author
-                            )
-                            if collaborations_params["remove_the"]:
-                                corrected_collaboration_str_tmp = self.regex_the.sub(
-                                    "", corrected_collaboration_str_tmp
-                                )
-
-                            if collaborations_params["fix_arXiv_mixed_collaboration_string"]:
-                                # TODO: Think a better way to account for this
-                                # specific cases if there's a ',' in the string,
-                                # it probably includes the 1st author
-                                string_list = corrected_collaboration_str_tmp.split(",")
-                                if len(string_list) == 2:
-                                    # Based on an arXiv author case: "collaboration,
-                                    # Gaia"
-                                    string_list.reverse()
-                                    corrected_collaboration_str_tmp = " ".join(string_list)
-                            corrected_collaboration_list.append(
-                                {
-                                    "collab": corrected_collaboration_str_tmp.strip(),
-                                    "nameraw": author.strip(),
-                                }
-                            )
-                        else:
-                            corrected_collaboration_list.append(
-                                self._parse_author_name(author.strip(), default_to_last_name)
-                            )
-                    break
-        except Exception:
-            logger.exception("Unexpected error in collaboration checks")
+                        corrected_collaboration_list.append(
+                            self._parse_author_name(author.strip(), default_to_last_name)
+                        )
+                break
 
         return is_collaboration_str, corrected_collaboration_list
 
@@ -303,7 +284,8 @@ class AuthorNames(object):
         author_str = self.regex_initial.sub(". ", author_str)
         author_str = self.regex_etal.sub("", author_str)
         author_str = self.regex_and.sub(" ", author_str)
-        author_str = author_str.replace(" .", ".").replace("  ", " ").replace(" ,", ",")
+        author_str = author_str.replace(" .", ".").replace(" ,", ",")
+        author_str = self.regex_multiple_sp.sub(" ", author_str)
         author_str = author_str.strip()
         return author_str
 
@@ -321,7 +303,7 @@ class AuthorNames(object):
             author.suffix = "Jr."
 
         if author.middle:
-            # Move middle names to first name if detected as so,
+            # Keep middle names as middle if detected as a first name,
             # or move to last name if detected as so
             # or move to the default
             keep_as_middle = []
@@ -330,60 +312,45 @@ class AuthorNames(object):
 
             middle_name_list = author.middle.split()
 
-            try:
-                for middle_name in middle_name_list:
-                    middle_name_length = len(
-                        unicode_entities(middle_name).strip(".").strip("-")
-                    )  # Ignore '.' or '-' at the beginning/end of the string
-                    middle_name_upper = middle_name.upper()
-                    if (
-                        (
-                            middle_name_length <= 2
-                            and middle_name_upper not in self.last_names
-                            and "'" not in middle_name
-                        )
-                        or (
-                            middle_name_upper in self.first_names
-                            and middle_name_upper not in self.last_names
-                        )
-                        or (
-                            self.regex_dash.sub("", middle_name_upper) in self.first_names
-                            and self.regex_dash.sub("", middle_name_upper) not in self.last_names
-                        )
-                        or (
-                            self.regex_quote.sub("", middle_name_upper) in self.first_names
-                            and self.regex_quote.sub("", middle_name_upper) not in self.last_names
-                        )
-                    ):
-                        # Case: First name found
-                        # Middle name is found in the first names ADS
-                        # list and not in the last names ADS list
-                        if last_name_found:
-                            # Move all previously detected first names to
-                            # last name since we are in a situation where
-                            # we detected:
-                            # middle name: L F
-                            # hence we correct it to:
-                            # middle name: F F
-                            # where F is first name and L is last name
-                            keep_as_middle += add_to_last
-                            add_to_last = []
-                            last_name_found = False
-                        keep_as_middle.append(middle_name)
-                    elif last_name_found or middle_name.upper() in self.last_names:
-                        # Case: Last name found
+            for middle_name in middle_name_list:
+                middle_name_length = len(
+                    unicode_entities(middle_name).strip(".").strip("-")
+                )  # Ignore '.' or '-' at the beginning/end of the string
+                middle_name_upper = middle_name.upper()
+                if (  # ignore "-" or "'" at the beginnning of the string
+                    self.regex_first_char.sub("", middle_name_upper) in self.first_names
+                    and self.regex_first_char.sub("", middle_name_upper) not in self.last_names
+                ) or (
+                    middle_name_length <= 2
+                    and middle_name_upper not in self.last_names
+                    and "'" not in middle_name
+                ):
+                    # Case: First name found
+                    # Middle name is found in the first names ADS list and not in the last names ADS list
+                    if last_name_found:
+                        # Move all previously detected first names to last name since we are in a situation where
+                        # we detected:
+                        # middle name: L F
+                        # hence we correct it to:
+                        # middle name: F F
+                        # where F is first/middle name and L is last name
+                        keep_as_middle += add_to_last
+                        add_to_last = []
+                        last_name_found = False
+                    keep_as_middle.append(middle_name)
+                elif last_name_found or middle_name_upper in self.last_names:
+                    # Case: Last name found
+                    add_to_last.append(middle_name)
+                    last_name_found = True
+                else:
+                    # Case: Unknown
+                    # Middle name not found in the first or last names ADS list
+                    if default_to_last_name:
                         add_to_last.append(middle_name)
                         last_name_found = True
                     else:
-                        # Case: Unknown
-                        # Middle name not found in the first or last names ADS list
-                        if default_to_last_name:
-                            add_to_last.append(middle_name)
-                            last_name_found = True
-                        else:
-                            keep_as_middle.append(middle_name)
-            except Exception:
-                logger.exception("Unexpected error in middle name parsing")
+                        keep_as_middle.append(middle_name)
+
             author.middle = " ".join(keep_as_middle)
             # [MT 2020 Oct 07, can't reproduce where .reverse() is necessary?]
             # add_to_last.reverse()
@@ -392,54 +359,51 @@ class AuthorNames(object):
         # Verify that no first names appear in the detected last name
         if author.last:
             if isinstance(author.last, str):
-                last_name_list = [author.last]
-            else:
                 last_name_list = author.last.split()
+            elif isinstance(author.last, collections.abc.Sequence):
+                last_name_list = author.last.copy()
+            else:
+                raise AuthorParserException(
+                    "Author name %s of unhandled type: %s", author.last, type(author.last)
+                )
             # At this point we already know it has at least 1 last name and
             # we will not question that one (in the last position)
-            verified_last_name_list = [last_name_list.pop()]
-            last_name_list.reverse()
-            try:
-                for last_name in last_name_list:
-                    last_name_upper = last_name.upper()
-                    if (
-                        last_name_upper in self.first_names
-                        and last_name_upper not in self.last_names
-                    ):
-                        author.middle = [author.middle, last_name]
-                    else:
-                        verified_last_name_list.append(last_name)
-            except Exception:
-                logger.exception("Unexpected error in last name parsing")
-            else:
-                verified_last_name_list.reverse()
-                author.last = verified_last_name_list
+            last_last_name = last_name_list.pop()
+            verified_last_name_list = []
+            last_name_found = False
+            for last_name in last_name_list:
+                last_name_upper = last_name.upper()
+                if (
+                    last_name_upper in self.first_names
+                    and last_name_upper not in self.last_names
+                    and not last_name_found
+                ):
+                    author.middle = author.middle + " " + last_name
+                else:
+                    verified_last_name_list.append(last_name)
+                    last_name_found = True
+
+            verified_last_name_list = verified_last_name_list + [last_last_name]
+            author.last = " ".join(verified_last_name_list)
 
         parsed_author = {}
-        try:
-            parsed_author["given"] = unicode_entities(author.first).replace("  ", " ")
-            parsed_author["middle"] = unicode_entities(author.middle).replace("  ", " ")
-            parsed_author["surname"] = unicode_entities(author.last).replace("  ", " ")
-            parsed_author["suffix"] = unicode_entities(author.suffix).replace("  ", " ")
-            parsed_author["prefix"] = unicode_entities(author.title).replace("  ", " ")
-            parsed_author["nameraw"] = unicode_entities(author_str).replace("  ", " ")
-        except Exception:
-            logger.exception("Unexpected error converting detected name into a string")
-            # TODO: Implement better error control
-            parsed_author["nameraw"] = unicode_entities(author_str).replace("  ", " ")
+        parsed_author["given"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.first))
+        parsed_author["middle"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.middle))
+        parsed_author["surname"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.last))
+        parsed_author["suffix"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.suffix))
+        parsed_author["prefix"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.title))
+        parsed_author["nameraw"] = self.regex_multiple_sp.sub(" ", unicode_entities(author_str))
+
         return parsed_author
 
     def parse(
         self,
-        authors_str,
-        delimiter=";",
+        author_str,
         default_to_last_name=True,
         collaborations_params=default_collaborations_params,
     ):
         """
-        Receives an authors string with individual author names separated by a
-        delimiter and returns re-formatted authors string where all author
-        names follow the structure: last name, first name
+        Receives an author string and returns re-formatted parsed author dictionary
 
         It also verifies if an author name string contains a collaboration
         string.  The collaboration extraction can be controlled by the
@@ -459,27 +423,23 @@ class AuthorNames(object):
           mix the collaboration string with the collaboration string.
           (e.g. 'collaboration, Gaia'). Default: False
         """
-
-        # Split and convert unicode characters and numerical HTML
-        # (e.g. 'u'both em\u2014and&#x2013;dashes&hellip;' -> 'both em&mdash;and&ndash;dashes&hellip;')
-        authors_list = [str(named_entities(n.strip())) for n in authors_str.split(delimiter)]
-
+        full_collaborations_params = self.default_collaborations_params.copy()
+        full_collaborations_params.update(collaborations_params)
         corrected_authors_list = []
-        for author_str in authors_list:
-            author_str = self._clean_author_name(author_str)
-            # Check for collaboration strings
-            is_collaboration, collaboration_list = self._extract_collaboration(
-                author_str, default_to_last_name, collaborations_params
-            )
-            if is_collaboration:
-                # Collaboration strings can contain the first author, which we need to split
+        author_str = self._clean_author_name(author_str)
+        # Check for collaboration strings
+        is_collaboration, collaboration_list = self._extract_collaboration(
+            author_str, default_to_last_name, full_collaborations_params
+        )
+        if is_collaboration:
+            # Collaboration strings can contain the first author, which we need to split
 
-                for corrected_author in collaboration_list:
-                    corrected_authors_list.append(corrected_author)
-            else:
-                corrected_authors_list.append(
-                    self._parse_author_name(author_str, default_to_last_name)
-                )
+            for corrected_author in collaboration_list:
+                corrected_authors_list.append(corrected_author)
+        else:
+            corrected_authors_list.append(
+                self._parse_author_name(author_str, default_to_last_name)
+            )
 
         # Last minute global corrections due to manually detected problems in
         # our processing corrected_authors_str =

@@ -5,7 +5,7 @@ class IngestParserException(Exception):
     pass
 
 
-class JATSContribException(IngestParserException):
+class AuthorParserException(IngestParserException):
     pass
 
 
@@ -34,14 +34,6 @@ class TooManyDocumentsException(IngestParserException):
 
 
 class WrongSchemaException(IngestParserException):
-    pass
-
-
-class UnicodeHandlerError(IngestParserException):
-    pass
-
-
-class UnparseableException(IngestParserException):
     pass
 
 
