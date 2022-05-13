@@ -1,10 +1,11 @@
 # TODO add exception handling
 
+
 class IngestParserException(Exception):
     pass
 
 
-class JATSContribException(IngestParserException):
+class AuthorParserException(IngestParserException):
     pass
 
 
@@ -33,17 +34,6 @@ class TooManyDocumentsException(IngestParserException):
 
 
 class WrongSchemaException(IngestParserException):
-    pass
-
-
-class UnicodeHandlerError(IngestParserException):
-    """
-    Error in the UnicodeHandler.
-    """
-    pass
-
-
-class UnparseableException(IngestParserException):
     pass
 
 

@@ -2,16 +2,6 @@ import unittest
 
 from adsingestp import utils
 
-# import logging
-# import os
-# proj_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, "adsingestp"))
-# logging.basicConfig(
-#     format="%(levelname)s %(asctime)s %(message)s",
-#     filename=os.path.join(proj_dir, "logs", "parser.log"),
-#     level=logging.INFO,
-#     force=True,
-# )
-
 
 class TestAuthorNames(unittest.TestCase):
     def setUp(self):
@@ -96,6 +86,7 @@ class TestAuthorNames(unittest.TestCase):
         input_authors = [
             "The Collaboration: John Stuart",
             "Gaia Collaboration",
+            "BICEP/Keck Collaboration: Smith, Jane",
         ]
 
         # first round, test default collaboration params
@@ -112,9 +103,49 @@ class TestAuthorNames(unittest.TestCase):
                 },
             ],
             [{"nameraw": "Gaia Collaboration", "collab": "Gaia Collaboration"}],
+            [
+                {"nameraw": "BICEP/Keck Collaboration", "collab": "BICEP/Keck Collaboration"},
+                {
+                    "given": "Jane",
+                    "middle": "",
+                    "surname": "Smith",
+                    "suffix": "",
+                    "prefix": "",
+                    "nameraw": "Smith, Jane",
+                },
+            ],
         ]
 
         for idx, i in enumerate(input_authors):
             parsed = self.name_parser.parse(i)
+
+            self.assertEqual(parsed, expected_authors[idx])
+
+        # turn on fix_arXiv_mixed_collaboration_string param
+        input_authors = [
+            "Collaboration, Gaia",
+            "BICEP/Keck Collaboration: Smith, Jane",
+        ]
+
+        # first round, test default collaboration params
+        expected_authors = [
+            [{"nameraw": "Collaboration, Gaia", "collab": "Gaia Collaboration"}],
+            [
+                {"nameraw": "BICEP/Keck Collaboration", "collab": "BICEP/Keck Collaboration"},
+                {
+                    "given": "Jane",
+                    "middle": "",
+                    "surname": "Smith",
+                    "suffix": "",
+                    "prefix": "",
+                    "nameraw": "Smith, Jane",
+                },
+            ],
+        ]
+
+        for idx, i in enumerate(input_authors):
+            parsed = self.name_parser.parse(
+                i, collaborations_params={"fix_arXiv_mixed_collaboration_string": True}
+            )
 
             self.assertEqual(parsed, expected_authors[idx])

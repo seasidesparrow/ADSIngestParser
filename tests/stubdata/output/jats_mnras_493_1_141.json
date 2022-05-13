@@ -35,7 +35,7 @@
               {"keyString": "galaxies: formation", "keySystem": "misc"},
               {"keyString": "galaxies: high-redshift", "keySystem": "misc"},
               {"keyString": "galaxies: star formation", "keySystem": "misc"}],
- "pagination": {"electronicID": "None", "firstPage": "141", "lastPage": "160", "pageCount": "20", "pageRange": "141-160"},
+ "pagination": {"firstPage": "141", "lastPage": "160", "pageCount": "20", "pageRange": "141-160"},
  "persistentIDs": [{"DOI": "10.1093/mnras/staa093"}],
  "pubDate": {"electrDate": "2020-01-14", "printDate": "2020-03-00"},
  "publication": {"ISSN": [{"issnString": "0035-8711", "pubtype": "ppub"}, {"issnString": "1365-2966", "pubtype": "epub"}],
