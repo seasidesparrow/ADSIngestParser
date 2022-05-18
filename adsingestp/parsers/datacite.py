@@ -276,6 +276,8 @@ class DataciteParser(BaseBeautifulSoupParser):
         self._parse_permissions()
         self._parse_doctype()
 
-        output = self.serialize(self.base_metadata, format="OtherXML")
+        self.base_metadata = self._entity_convert(self.base_metadata)
+
+        output = self.format(self.base_metadata, format="OtherXML")
 
         return output

@@ -741,26 +741,6 @@ class JATSParser(BaseBeautifulSoupParser):
                 ref_list_text.append(s)
             self.base_metadata["references"] = ref_list_text
 
-    def entity_convert(self):
-        econv = utils.EntityConverter()
-        for k, v in self.base_metadata.items():
-            if isinstance(v, str):
-                econv.input_text = v
-                econv.convert()
-                v = econv.output_text
-            elif isinstance(v, list):
-                newv = []
-                for i in v:
-                    if isinstance(i, str):
-                        econv.input_text = i
-                        econv.convert()
-                        i = econv.output_text
-                    newv.append(i)
-                v = newv
-            else:
-                pass
-            self.base_metadata[k] = v
-
     def parse(self, text):
         """
         Parse JATS XML into standard JSON format
@@ -800,9 +780,9 @@ class JATSParser(BaseBeautifulSoupParser):
 
         self._parse_references()
 
-        self.entity_convert()
+        self.base_metadata = self._entity_convert(self.base_metadata)
 
-        output = self.serialize(self.base_metadata, format="JATS")
+        output = self.format(self.base_metadata, format="JATS")
 
         return output
 

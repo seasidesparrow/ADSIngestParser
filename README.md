@@ -2,11 +2,11 @@
 
 <p align="center">
 
-![CI Status](https://github.com/kelockhart/ADSIngestParser/actions/workflows/ci.yml/badge.svg)
+![CI Status](https://github.com/adsabs/ADSIngestParser/actions/workflows/ci.yml/badge.svg)
 
   <!--
-  <a href="https://codecov.io/gh/kelockhart/adsingestp">
-    <img src="https://img.shields.io/codecov/c/github/kelockhart/adsingestp.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
+  <a href="https://codecov.io/gh/adsabs/adsingestp">
+    <img src="https://img.shields.io/codecov/c/github/adsabs/ADSIngestParser.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
   </a>
   //-->
 </p>

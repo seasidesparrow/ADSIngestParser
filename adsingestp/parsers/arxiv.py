@@ -141,6 +141,8 @@ class ArxivParser(BaseBeautifulSoupParser):
         self._parse_abstract()
         self._parse_keywords()
 
-        output = self.serialize(self.base_metadata, format="OtherXML")
+        self.base_metadata = self._entity_convert(self.base_metadata)
+
+        output = self.format(self.base_metadata, format="OtherXML")
 
         return output

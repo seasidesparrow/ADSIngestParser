@@ -1,3 +1,4 @@
+import html
 import re
 from datetime import datetime
 
@@ -52,10 +53,27 @@ class IngestBase(object):
 
         return output
 
-    def serialize(self, input_dict, format):
+    def _entity_convert(self, input):
+        for k, v in input.items():
+            if isinstance(v, str):
+                v = html.unescape(v)
+            elif isinstance(v, list):
+                newv = []
+                for i in v:
+                    if isinstance(i, str):
+                        i = html.unescape(i)
+                    newv.append(i)
+                v = newv
+            else:
+                pass
+            input[k] = v
+
+        return input
+
+    def format(self, input_dict, format):
         """
 
-        :param input_dict: parsed metadata dictionary to serialize
+        :param input_dict: parsed metadata dictionary to format into formal data model
         :param format: JATS, OtherXML, HTML, Text
         :return: serialized JSON that follows our internal data model
         """

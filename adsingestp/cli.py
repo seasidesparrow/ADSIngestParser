@@ -1,15 +1,15 @@
 import click
 
-# try:
-#     import rutils
-#
-#     config = rutils.load_config()
-#     logger = rutils.setup_logging("adsingestp.cli")
-# except ImportError:
-#     import logging
-#
-#     config = {}
-#     logger = logging.getLogger("adsingestp.cli")
+try:
+    import lvtn1_utils as utils
+
+    config = utils.load_config()
+    logger = utils.setup_logging("adsingestp.cli")
+except ImportError:
+    import logging
+
+    config = {}
+    logger = logging.getLogger("adsingestp.cli")
 
 
 @click.group()

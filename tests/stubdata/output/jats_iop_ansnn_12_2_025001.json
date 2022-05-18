@@ -23,7 +23,7 @@
              {"affiliation": [{"affPubID": "ansnabfa8eaf1",
                                "affPubRaw": "Faculty of Food Technology, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam"}],
               "name": {"given-name": "Tran Quang", "surname": "Ngoc"}}],
- "copyright": {"statement": "2021 Vietnam Academy of Science &amp; Technology", "status": true},
+ "copyright": {"statement": "2021 Vietnam Academy of Science & Technology", "status": true},
  "editorialHistory": {"acceptedDate": "2021-03-17", "receivedDates": ["2021-01-21"]},
  "keywords": [{"keyString": "supercapacitor", "keySystem": "misc"},
              {"keyString": "graphene", "keySystem": "misc"},

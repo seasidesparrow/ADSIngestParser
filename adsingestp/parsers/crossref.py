@@ -1,6 +1,5 @@
 import logging
 
-from adsingestp import utils
 from adsingestp.ingest_exceptions import (
     IngestParserException,
     NotCrossrefXMLException,
@@ -68,26 +67,6 @@ class CrossrefParser(BaseBeautifulSoupParser):
             isbns_out.append({"type": isbn_type, "isbn_str": i.get_text()})
 
         return isbns_out
-
-    def entity_convert(self):
-        econv = utils.EntityConverter()
-        for k, v in self.base_metadata.items():
-            if isinstance(v, str):
-                econv.input_text = v
-                econv.convert()
-                v = econv.output_text
-            elif isinstance(v, list):
-                newv = []
-                for i in v:
-                    if isinstance(i, str):
-                        econv.input_text = i
-                        econv.convert()
-                        i = econv.output_text
-                    newv.append(i)
-                v = newv
-            else:
-                pass
-            self.base_metadata[k] = v
 
     def _parse_pub(self):
         # journal articles only
@@ -182,7 +161,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
         if self.record_meta.find("jats:abstract") and self.record_meta.find("jats:abstract").find(
             "jats:p"
         ):
-            self.base_metadata["abstract"] = utils.clean_output(
+            self.base_metadata["abstract"] = self._clean_output(
                 self.record_meta.find("jats:abstract").find("jats:p").get_text()
             )
 
@@ -373,8 +352,8 @@ class CrossrefParser(BaseBeautifulSoupParser):
         self._parse_ids()
         self._parse_references()
 
-        self.entity_convert()
+        self.base_metadata = self._entity_convert(self.base_metadata)
 
-        output = self.serialize(self.base_metadata, format="OtherXML")
+        output = self.format(self.base_metadata, format="OtherXML")
 
         return output

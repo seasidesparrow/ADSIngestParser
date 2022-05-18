@@ -135,7 +135,7 @@
 <pub-date pub-type="ppub">
 <month>02</month>
 <year>2022</year>
-</pub-date>  
+</pub-date>
 <volume>40</volume>
 <issue>1</issue><issue-id pub-id-type="publisher-id">jnwpu/2022/01</issue-id>
 <fpage>95</fpage>
@@ -158,10 +158,10 @@
 </permissions><self-uri content-type="abstract" xlink:href="https://www.jnwpu.org/articles/jnwpu/abs/2022/01/jnwpu2022401p95/jnwpu2022401p95.html"/><self-uri content-type="full_html" xlink:href="https://www.jnwpu.org/articles/jnwpu/full_html/2022/01/jnwpu2022401p95/jnwpu2022401p95.html"/><self-uri content-type="pdf" xlink:href="https://www.jnwpu.org/articles/jnwpu/pdf/2022/01/jnwpu2022401p95.pdf"/>
 <abstract xml:lang="en">
 <p>With the aging of the population, the decline of human body function leads to the decline of limb flexibility, and the severe cases lose the ability to walk. Research shows that the lower limb exoskeleton can assist human walking. In this paper, a lower limb exoskeleton is designed, which can collect the energy of the healthy side of the lower limb and release it when the affected side of the lower limb walks. The unilateral lower limb is used to compensate the movement of the affected limb, assist walking, and realize the collection, management and migration of human motion energy. The results showed that the root mean square value of rectus femoris decreased by 10%, and the EMG integral value of lateral gastrocnemius muscle decreased by 12%. The effect of exoskeleton on lower limb muscles is obvious. The walking assisted exoskeleton can provide auxiliary tension for lower limb movement and reduce muscle activity.</p>
-</abstract>  
+</abstract>
 <trans-abstract xml:lang="zh">
 <p>随着人口老龄化加剧, 人体机能衰退, 导致四肢灵活性下降, 严重者失去行走能力。研究表明, 借助下肢外骨骼可以辅助人体行走。设计了一种下肢外骨骼, 通过收集下肢健侧的能量, 在患侧下肢行走时释放。利用单侧下肢对患肢进行运动补偿, 辅助行走, 实现人体能量的收集、管理和迁移。通过人体穿戴实验评价外骨骼对于肌肉的影响, 结果表明股直肌的均方根值降幅可达10%, 腓肠肌外侧肌肉的肌电积分值降幅达12%。外骨骼对下肢肌肉的影响较为明显, 借助外骨骼可以为下肢运动提供辅助拉力, 同时降低肌肉活性。</p>
-</trans-abstract>  
+</trans-abstract>
 <kwd-group xml:lang="en">
 <kwd>exoskeleton</kwd>
 <kwd>human energy</kwd>
@@ -184,11 +184,11 @@
 <award-group>
 <funding-source country="CN">高等学校学科创新引智计划</funding-source>
 <award-id>B13044</award-id>
-</award-group>			
+</award-group>
 <award-group>
 <funding-source country="CN">西安市儿童医院项目</funding-source>
 <award-id>2020D06</award-id>
-</award-group>			
+</award-group>
 <funding-statement>中央高校基础研究基金(31020190503004)、高等学校学科创新引智计划(B13044)及西安市儿童医院项目(2020D06)资助</funding-statement>
 </funding-group>
 <counts>

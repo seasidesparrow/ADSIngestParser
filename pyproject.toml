@@ -22,7 +22,6 @@ dependencies = [
     'click>=8.0.3',
     'beautifulsoup4==4.10.0',
     'lxml==4.7.1',
-    'namedentities==1.9.4',
     'nameparser==1.1.1',
     'python-dateutil==2.8.1',
     'adsingestschema @ git+https://github.com/adsabs/ingest_data_model@v1.0.6#egg=adsingestschema',
@@ -36,7 +35,7 @@ Documentation = "https://adsingestp.readthedocs.io"
 
 [project.optional-dependencies]
 dev = [
-    'black==21.11b1',
+    'black==22.3.0',
     'flake8==4.0.1',
     'isort==5.10.1',
     'pytest==6.2.5',
@@ -82,7 +81,7 @@ known_first_party = ["adsingestp", "tests"]
 line-length = 99 # override black's default line-length
 
 [build-system]
-requires = ["setuptools >= 58.6.0", "wheel", "flit_core >=3.2,<4", "ppsetuptools==2.0.2"]
+requires = ["setuptools==60.10.0", "wheel", "flit_core >=3.2,<4", "ppsetuptools==2.0.2"]
 build-backend = "flit_core.buildapi"
 #build-backend = "setuptools.build_meta"
 

@@ -1,16 +1,14 @@
 import collections.abc
+import html
 import logging
 import os
 import re
 
 import nameparser
-from namedentities import named_entities, unicode_entities
 
 from adsingestp.ingest_exceptions import AuthorParserException
 
 logger = logging.getLogger(__name__)
-
-re_ents = re.compile(r"&[a-z0-9]+;|&#[0-9]{1,6};|&#x[0-9a-fA-F]{1,6};")
 
 MONTH_TO_NUMBER = {
     "jan": 1,
@@ -26,76 +24,6 @@ MONTH_TO_NUMBER = {
     "nov": 11,
     "dec": 12,
 }
-
-# HTML_ENTITY_TABLE
-HTML_ENTITY_TABLE = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "data_files", "html5.dat"
-)
-
-ENTITY_DICTIONARY = dict()
-try:
-    with open(HTML_ENTITY_TABLE, "r") as fent:
-        for line in fent.readlines():
-            carr = line.rstrip().split("\t")
-
-            UNI_ENTITY = None
-            NAME_ENTITY = None
-            HEX_ENTITY = None
-            DEC_ENTITY = None
-            if len(carr) >= 4:
-                UNI_ENTITY = carr[0]
-                NAME_ENTITY = carr[1]
-                HEX_ENTITY = carr[2].lower()
-                DEC_ENTITY = carr[3].lower()
-                for c in NAME_ENTITY.strip().split():
-                    # preserve greek letters, convert all other high-bit chars
-                    eValue = int(DEC_ENTITY.lstrip("&#").rstrip(";"))
-                    if (eValue >= 913 and eValue <= 969) or (eValue >= 192 and eValue <= 382):
-                        ENTITY_DICTIONARY[UNI_ENTITY.strip()] = c.strip()
-                        ENTITY_DICTIONARY[HEX_ENTITY.strip()] = c.strip()
-                        ENTITY_DICTIONARY[DEC_ENTITY.strip()] = c.strip()
-                    else:
-                        ENTITY_DICTIONARY[UNI_ENTITY.strip()] = DEC_ENTITY.strip()
-                        ENTITY_DICTIONARY[HEX_ENTITY.strip()] = DEC_ENTITY.strip()
-                        ENTITY_DICTIONARY[c.strip()] = DEC_ENTITY.strip()
-            else:
-                print("broken HTML entity:", line.rstrip())
-                NAME_ENTITY = "xxxxx"
-
-except Exception as e:
-    logger.warning("Problem in config:", e)
-
-# ADS-specific translations
-# have been added to html5.txt
-ENTITY_DICTIONARY["&sim;"] = "~"
-ENTITY_DICTIONARY["&#8764;"] = "~"
-ENTITY_DICTIONARY["&Tilde;"] = "~"
-ENTITY_DICTIONARY["&rsquo;"] = "'"
-ENTITY_DICTIONARY["&#8217;"] = "'"
-ENTITY_DICTIONARY["&lsquo;"] = "'"
-ENTITY_DICTIONARY["&#8216;"] = "'"
-ENTITY_DICTIONARY["&nbsp;"] = " "
-ENTITY_DICTIONARY["&mdash;"] = "-"
-ENTITY_DICTIONARY["&#8212;"] = "-"
-ENTITY_DICTIONARY["&ndash;"] = "-"
-ENTITY_DICTIONARY["&#8211;"] = "-"
-ENTITY_DICTIONARY["&rdquo;"] = '"'
-ENTITY_DICTIONARY["&#8221;"] = '"'
-ENTITY_DICTIONARY["&ldquo;"] = '"'
-ENTITY_DICTIONARY["&#8220;"] = '"'
-ENTITY_DICTIONARY["&minus;"] = "-"
-ENTITY_DICTIONARY["&#8722;"] = "-"
-ENTITY_DICTIONARY["&plus;"] = "+"
-ENTITY_DICTIONARY["&#43;"] = "+"
-ENTITY_DICTIONARY["&thinsp;"] = " "
-ENTITY_DICTIONARY["&#8201;"] = " "
-ENTITY_DICTIONARY["&hairsp;"] = " "
-ENTITY_DICTIONARY["&#8202;"] = " "
-ENTITY_DICTIONARY["&ensp;"] = " "
-ENTITY_DICTIONARY["&#8194;"] = " "
-ENTITY_DICTIONARY["&emsp;"] = " "
-ENTITY_DICTIONARY["&#8195;"] = " "
-
 # TODO have MT review this list
 related_trans_dict = {
     "IsCitedBy": "related",
@@ -136,33 +64,6 @@ related_trans_dict = {
 }
 
 
-def clean_output(in_text):
-    in_text = in_text.replace("\n", " ")
-    output = re.sub(r"\s+", r" ", in_text)
-
-    return output
-
-
-class EntityConverter(object):
-    def __init__(self):
-        self.input_text = ""
-        self.output_text = ""
-        self.ent_dict = ENTITY_DICTIONARY
-
-    def convert(self):
-        o = named_entities(self.input_text)
-        oents = list(dict.fromkeys(re.findall(re_ents, o)))
-
-        for e in oents:
-            try:
-                enew = self.ent_dict[e]
-            except Exception:
-                pass
-            else:
-                o = re.sub(e, enew, o)
-        self.output_text = o
-
-
 class AuthorNames(object):
     """
     Author names parser
@@ -174,6 +75,7 @@ class AuthorNames(object):
         "remove_the": True,
         "fix_arXiv_mixed_collaboration_string": False,
     }
+    parse_titles = False
 
     def __init__(self):
         data_dirname = os.path.join(
@@ -182,33 +84,26 @@ class AuthorNames(object):
         logger.info("Loading ADS author names from: %s", data_dirname)
         self.first_names = self._read_datfile(os.path.join(data_dirname, "first.dat"))
         self.last_names = self._read_datfile(os.path.join(data_dirname, "last.dat"))
-        # prefix_names = self._read_datfile(os.path.join(data_dirname, "prefixes.dat"))
-        # suffix_names = self._read_datfile(os.path.join(data_dirname, "suffixes.dat"))
+        suffix_names = self._read_datfile(os.path.join(data_dirname, "suffixes.dat"))
 
-        # Setup the nameparser package and remove *all* of the preset titles:
-        # nameparser.config.CONSTANTS.titles.remove(*nameparser.config.CONSTANTS.titles)
-        # nameparser.config.CONSTANTS.suffix_acronyms.remove(
-        #     *nameparser.config.CONSTANTS.suffix_acronyms
-        # )
-        # nameparser.config.CONSTANTS.suffix_not_acronyms.remove(
-        #     *nameparser.config.CONSTANTS.suffix_not_acronyms
-        # )
-        #
-        # # add back only our titles
-        # for s in prefix_names:
-        #     nameparser.config.CONSTANTS.titles.add(s)
-        # for s in suffix_names:
-        #     nameparser.config.CONSTANTS.suffix_acronyms.add(s)
-        #     nameparser.config.CONSTANTS.suffix_not_acronyms.add(s)
-
-        # Turn off title parsing
-        nameparser.config.CONSTANTS.titles.remove(*nameparser.config.CONSTANTS.titles)
+        # Remove the preset suffixes and add back only our suffixes
         nameparser.config.CONSTANTS.suffix_acronyms.remove(
             *nameparser.config.CONSTANTS.suffix_acronyms
         )
         nameparser.config.CONSTANTS.suffix_not_acronyms.remove(
             *nameparser.config.CONSTANTS.suffix_not_acronyms
         )
+        for s in suffix_names:
+            nameparser.config.CONSTANTS.suffix_acronyms.add(s)
+            nameparser.config.CONSTANTS.suffix_not_acronyms.add(s)
+
+        if self.parse_titles:
+            prefix_names = self._read_datfile(os.path.join(data_dirname, "prefixes.dat"))
+
+            # Remove the preset titles and add back only our titles
+            nameparser.config.CONSTANTS.titles.remove(*nameparser.config.CONSTANTS.titles)
+            for s in prefix_names:
+                nameparser.config.CONSTANTS.titles.add(s)
 
         # Compile regular expressions
         self.regex_initial = re.compile(r"\. *(?!,)")
@@ -314,7 +209,7 @@ class AuthorNames(object):
 
             for middle_name in middle_name_list:
                 middle_name_length = len(
-                    unicode_entities(middle_name).strip(".").strip("-")
+                    html.unescape(middle_name).strip(".").strip("-")
                 )  # Ignore '.' or '-' at the beginning/end of the string
                 middle_name_upper = middle_name.upper()
                 if (  # ignore "-" or "'" at the beginnning of the string
@@ -387,12 +282,12 @@ class AuthorNames(object):
             author.last = " ".join(verified_last_name_list)
 
         parsed_author = {}
-        parsed_author["given"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.first))
-        parsed_author["middle"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.middle))
-        parsed_author["surname"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.last))
-        parsed_author["suffix"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.suffix))
-        parsed_author["prefix"] = self.regex_multiple_sp.sub(" ", unicode_entities(author.title))
-        parsed_author["nameraw"] = self.regex_multiple_sp.sub(" ", unicode_entities(author_str))
+        parsed_author["given"] = self.regex_multiple_sp.sub(" ", html.unescape(author.first))
+        parsed_author["middle"] = self.regex_multiple_sp.sub(" ", html.unescape(author.middle))
+        parsed_author["surname"] = self.regex_multiple_sp.sub(" ", html.unescape(author.last))
+        parsed_author["suffix"] = self.regex_multiple_sp.sub(" ", html.unescape(author.suffix))
+        parsed_author["prefix"] = self.regex_multiple_sp.sub(" ", html.unescape(author.title))
+        parsed_author["nameraw"] = self.regex_multiple_sp.sub(" ", html.unescape(author_str))
 
         return parsed_author
 
@@ -401,28 +296,40 @@ class AuthorNames(object):
         author_str,
         default_to_last_name=True,
         collaborations_params=default_collaborations_params,
+        parse_titles=False,
     ):
         """
-        Receives an author string and returns re-formatted parsed author dictionary
+        Receives an author string and returns a list of re-formatted parsed author dictionaries
 
         It also verifies if an author name string contains a collaboration
-        string.  The collaboration extraction can be controlled by the
-        dictionary 'collaborations_params' which can have the following keys:
+        string.  The collaboration extraction can be controlled by collaborations_params
 
-        - keywords [list of strings]: Keywords that appear in strings that
-          should be identifier as collaboration strings. Default: 'group',
-          'team', 'collaboration'
-        - remove_the [boolean]: Remove the article 'The' from collaboration
-          strings (e.g., 'The collaboration'). Default: False.
-        - first_author_delimiter [string]: Some collaboration strings include
-          the first author separated by a delimiter (e.g., The collaboration:
-          First author), the delimiter can be specified in this variable,
-          otherwise None or False values can be provided to avoid trying to
-          extract first authors from collaboration strings. Default: ':'
-        - fix_arXiv_mixed_collaboration_string [boolean]: Some arXiv entries
-          mix the collaboration string with the collaboration string.
-          (e.g. 'collaboration, Gaia'). Default: False
+        :param author_str: raw author string for a single author
+        :param default_to_last_name: Boolean param to set whether unknown names parsed as middle named should be kept as
+        middle names or moved to the last name. Default: True
+        :param collaborations_params: dict that controls how collaborations are parsed; only need to pass in
+        key/values that are different from the default params. Keys:
+            - keywords [list of strings]: Keywords that appear in strings that
+              should be identifier as collaboration strings. Default: "group", "team",
+              "collaboration", "consortium"
+            - remove_the [boolean]: Remove the article 'The' from collaboration
+              strings (e.g., 'The collaboration'). Default: True
+            - first_author_delimiter [string]: Some collaboration strings include
+              the first author separated by a delimiter (e.g., The collaboration:
+              First author), the delimiter can be specified in this variable,
+              otherwise None or False values can be provided to avoid trying to
+              extract first authors from collaboration strings. Default: ':'
+            - fix_arXiv_mixed_collaboration_string [boolean]: Some arXiv entries
+              mix the collaboration string with the collaboration string.
+              (e.g. 'collaboration, Gaia'). Default: False
+        :param parse_titles: Boolean param to set whether to parse titles in author names. By default, this is
+            turned off because most modern records do not include author titles, and the set of titles
+            overlaps with some first names; recommended for older record parsing only. Default: False
+        :return: list of parsed author dictionaries
         """
+
+        if parse_titles:
+            self.parse_titles = True
         full_collaborations_params = self.default_collaborations_params.copy()
         full_collaborations_params.update(collaborations_params)
         corrected_authors_list = []
@@ -433,7 +340,6 @@ class AuthorNames(object):
         )
         if is_collaboration:
             # Collaboration strings can contain the first author, which we need to split
-
             for corrected_author in collaboration_list:
                 corrected_authors_list.append(corrected_author)
         else:
