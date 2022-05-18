@@ -8,7 +8,7 @@ You can contribute in many ways:
 
 ### Report Bugs
 
-Report bugs at <https://github.com/kelockhart/adsingestp/issues>.
+Report bugs at <https://github.com/adsabs/adsingestp/issues>.
 
 If you are reporting a bug, please include:
 
@@ -30,7 +30,7 @@ ADSIngestParser could always use more documentation, whether as part of the offi
 
 ### Submit Feedback
 
-The best way to send feedback is to file an issue at <https://github.com/kelockhart/adsingestp/issues>.
+The best way to send feedback is to file an issue at <https://github.com/adsabs/adsingestp/issues>.
 
 If you are proposing a feature:
 
