@@ -226,6 +226,8 @@ class DataciteParser(BaseBeautifulSoupParser):
             self.base_metadata["references"] = references
 
     def _parse_permissions(self):
+        self.base_metadata["openAccess"] = {}
+
         if self.input_metadata.find("rightsList"):
             is_oa = False
             for i in self.input_metadata.find("rightsList").find_all("rights"):
@@ -234,7 +236,7 @@ class DataciteParser(BaseBeautifulSoupParser):
                 if u == "info:eu-repo/semantics/openAccess" or c == "Open Access":
                     is_oa = True
 
-            self.base_metadata["openAccess"] = is_oa
+            self.base_metadata["openAccess"]["open"] = is_oa
 
     def _parse_doctype(self):
         if self.input_metadata.find("resourceType"):
