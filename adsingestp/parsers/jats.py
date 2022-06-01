@@ -67,14 +67,21 @@ class JATSAffils(object):
         email_new = set()
 
         email_format = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
+        email_parsed = False
         for em in email:
             if " " in em:
                 for e in em.strip().split():
                     if email_format.search(e):
                         email_new.add(email_format.search(e).group(0))
+                        email_parsed = True
             else:
                 if email_format.search(em):
                     email_new.add(email_format.search(em).group(0))
+                    email_parsed = True
+
+        if not email_parsed:
+            logger.warning("Email not verified as valid. Input email list: %s", str(email))
+
         return list(email_new)
 
     def _fix_orcid(self, orcid):
