@@ -5,6 +5,7 @@ from collections import OrderedDict
 from bs4 import BeautifulSoup
 
 from adsingestp import utils
+from adsingestp.ingest_exceptions import XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
 logger = logging.getLogger(__name__)
@@ -60,18 +61,20 @@ class JATSAffils(object):
     def _fix_email(self, email):
         """
         Separate and perform basic validation of email address string
-        :param email: String of email address(es)
-        :return: list of verified email addresses (those with an @ sign)
+        :param email: List of email address(es)
+        :return: list of verified email addresses (those that match the regex)
         """
         email_new = set()
+
+        email_format = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
         for em in email:
             if " " in em:
                 for e in em.strip().split():
-                    if "@" in e:
-                        email_new.add(e.strip())
+                    if email_format.search(e):
+                        email_new.add(email_format.search(e).group(0))
             else:
-                if "@" in em:
-                    email_new.add(em.strip())
+                if email_format.search(em):
+                    email_new.add(email_format.search(em).group(0))
         return list(email_new)
 
     def _fix_orcid(self, orcid):
@@ -86,11 +89,13 @@ class JATSAffils(object):
         elif not isinstance(orcid, list):
             raise TypeError("ORCID must be str or list")
 
+        orcid_format = re.compile(r"(\d{4}-){3}\d{3}(\d|X)")
         for orc in orcid:
             osplit = orc.strip().split()
             for o in osplit:
-                o = o.rstrip("/").split("/")[-1]
-                orcid_new.add(o)
+                # ORCID IDs sometimes have the URL prepended - remove it
+                if orcid_format.search(o):
+                    orcid_new.add(orcid_format.search(o).group(0))
         return list(orcid_new)
 
     def _match_xref_clean(self):
@@ -260,13 +265,14 @@ class JATSAffils(object):
                     orcid_out = ""
 
                 # create the author dict
-                auth.update(corresp=l_correspondent)
-                auth.update(surname=surname)
-                auth.update(given=given)
-                auth.update(aff=aff_text)
-                auth.update(xaff=xref_aff, xemail=xref_email)
-                auth.update(orcid=orcid_out)
-                auth.update(email=email_list)
+                auth["corresp"] = l_correspondent
+                auth["surname"] = surname
+                auth["given"] = given
+                auth["aff"] = aff_text
+                auth["xaff"] = xref_aff
+                auth["xemail"] = xref_email
+                auth["orcid"] = orcid_out
+                auth["email"] = email_list
                 contrib.decompose()
 
                 # this is a list of author dicts
@@ -747,7 +753,10 @@ class JATSParser(BaseBeautifulSoupParser):
         :param text: string, contents of XML file
         :return: parsed file contents in JSON format
         """
-        d = self.bsstrtodict(text, parser="lxml-xml")
+        try:
+            d = self.bsstrtodict(text, parser="lxml-xml")
+        except Exception as err:
+            raise XmlLoadException(err)
         document = d.article
 
         front_meta = document.front

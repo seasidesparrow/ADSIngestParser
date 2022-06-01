@@ -1,7 +1,7 @@
 import logging
+import re
 
 from adsingestp.ingest_exceptions import (
-    IngestParserException,
     NotCrossrefXMLException,
     TooManyDocumentsException,
     WrongSchemaException,
@@ -35,7 +35,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
         else:
             month = "00"
 
-        if int(month) < 10 and len(month) == 1:
+        if len(month) == 1:
             month = "0" + month
         pubdate = pubdate + "-" + month
 
@@ -44,7 +44,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
         else:
             day = "00"
 
-        if int(day) < 10 and len(day) == 1:
+        if len(day) == 1:
             day = "0" + day
         pubdate = pubdate + "-" + day
 
@@ -59,10 +59,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
         """
         isbns_out = []
         for i in isbns:
-            try:
-                isbn_type = i["media_type"]
-            except KeyError:
-                isbn_type = "print"
+            isbn_type = i.get("media_type", "print")
 
             isbns_out.append({"type": isbn_type, "isbn_str": i.get_text()})
 
@@ -75,15 +72,16 @@ class CrossrefParser(BaseBeautifulSoupParser):
         if journal_meta.find("full_title"):
             self.base_metadata["publication"] = journal_meta.find("full_title").get_text()
 
-        # todo check ISSN formatting (XXXX-XXXX)
         if journal_meta.find_all("issn"):
             issn_all = journal_meta.find_all("issn")
         else:
             issn_all = []
 
         issns = []
+        re_issn = re.compile(r"^\d{4}-\d{4}$")  # XXXX-XXXX
         for i in issn_all:
-            issns.append((i["media_type"], i.get_text()))
+            if i.get_text() and re_issn.match(i.get_text()):
+                issns.append((i["media_type"], i.get_text()))
         self.base_metadata["issn"] = issns
 
     def _parse_issue(self):
@@ -131,14 +129,9 @@ class CrossrefParser(BaseBeautifulSoupParser):
         # this will be overwritten by _parse_pubdate, if a pubdate is available for the conference paper itself, but
         # parsing the overall proceedings pubdate here at least provides a backstop
         if proc_meta.find("publication_date"):
-            try:
-                pubdate = self._get_date(proc_meta.find("publication_date"))
-            except IngestParserException:
-                pubdate = None
-
-            if pubdate:
-                # type of pubdate is not defined here, but default to print
-                self.base_metadata["pubdate_print"] = pubdate
+            pubdate = self._get_date(proc_meta.find("publication_date"))
+            # type of pubdate is not defined here, but default to print
+            self.base_metadata["pubdate_print"] = pubdate
 
         if proc_meta.find("isbn"):
             self.base_metadata["isbn"] = self._get_isbn(proc_meta.find_all("isbn"))
@@ -187,11 +180,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
                 orcid = orcid.replace("http://orcid.org/", "")
                 contrib_tmp["orcid"] = orcid
 
-            try:
-                role = c["contributor_role"]
-            except KeyError as err:
-                logger.warning("No contributor role found: %s", err)
-                role = "unknown"
+            role = c.get("contributor_role", "unknown")
 
             if role == "author":
                 authors_out.append(contrib_tmp)
@@ -207,22 +196,15 @@ class CrossrefParser(BaseBeautifulSoupParser):
     def _parse_pubdate(self):
         pubdates_raw = self.record_meta.find_all("publication_date")
         for p in pubdates_raw:
-            try:
-                datetype = p["media_type"]
-            except KeyError as err:
-                logger.warning("No pubdate type found: %s", err)
-                datetype = "print"
+            datetype = p.get("media_type", "print")
 
-            try:
-                pubdate = self._get_date(p)
-                if datetype == "print":
-                    self.base_metadata["pubdate_print"] = pubdate
-                elif datetype == "online":
-                    self.base_metadata["pubdate_electronic"] = pubdate
-                else:
-                    logger.warning("Unknown date type")
-            except IngestParserException:
-                pass
+            pubdate = self._get_date(p)
+            if datetype == "print":
+                self.base_metadata["pubdate_print"] = pubdate
+            elif datetype == "online":
+                self.base_metadata["pubdate_electronic"] = pubdate
+            else:
+                logger.warning("Unknown date type")
 
     def _parse_edhistory_copyright(self):
         if self.record_meta.find("crossmark") and self.record_meta.find("crossmark").find(
