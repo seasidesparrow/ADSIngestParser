@@ -141,6 +141,7 @@ class AuthorNames(object):
                     authors_list = list(author_str)
                 for author in authors_list:
                     if keyword in author.lower():
+                        # collaboration
                         corrected_collaboration_str_tmp = re.sub(
                             keyword, keyword.capitalize(), author
                         )
@@ -165,6 +166,7 @@ class AuthorNames(object):
                             }
                         )
                     else:
+                        # non-collaboration author
                         corrected_collaboration_list.append(
                             self._parse_author_name(author.strip(), default_to_last_name)
                         )

@@ -6,6 +6,7 @@ from adsingestp.ingest_exceptions import (
     MissingTitleException,
     NoSchemaException,
     WrongSchemaException,
+    XmlLoadException,
 )
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
@@ -66,21 +67,11 @@ class ArxivParser(BaseBeautifulSoupParser):
         author_array = self.input_metadata.find_all("dc:creator")
         for a in author_array:
             a = a.get_text()
-            author_tmp = {}
-            parsed_name = name_parser.parse(
+            parsed_name_list = name_parser.parse(
                 a, collaborations_params=self.author_collaborations_params
             )
-            if len(parsed_name) > 1:
-                logger.warning(
-                    "More than one name parsed, can only accept one. Input: %s, output: %s",
-                    a,
-                    parsed_name,
-                )
-            parsed_name_first = parsed_name[0]
-            for key in parsed_name_first.keys():
-                author_tmp[key] = parsed_name_first[key]
-
-            authors_out.append(author_tmp)
+            for name in parsed_name_list:
+                authors_out.append(name)
 
         if not authors_out:
             raise MissingAuthorsException("No contributors found for")
@@ -121,7 +112,10 @@ class ArxivParser(BaseBeautifulSoupParser):
         :param text: string, contents of XML file
         :return: parsed file contents in JSON format
         """
-        d = self.bsstrtodict(text, parser="lxml-xml")
+        try:
+            d = self.bsstrtodict(text, parser="lxml-xml")
+        except Exception as err:
+            raise XmlLoadException(err)
 
         if d.find("record"):
             self.input_header = d.find("record").find("header")

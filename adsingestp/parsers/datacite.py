@@ -6,6 +6,7 @@ from adsingestp.ingest_exceptions import (
     MissingDoiException,
     MissingTitleException,
     WrongSchemaException,
+    XmlLoadException,
 )
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
@@ -58,10 +59,12 @@ class DataciteParser(BaseBeautifulSoupParser):
             else:
                 contrib_array = []
         for c in contrib_array:
-            contrib_tmp = {}
+            contrib_tmp = []
             if c.find("givenName") and c.find("familyName"):
-                contrib_tmp["given"] = c.find("givenName").get_text()
-                contrib_tmp["surname"] = c.find("familyName").get_text()
+                sub_contrib = {}
+                sub_contrib["given"] = c.find("givenName").get_text()
+                sub_contrib["surname"] = c.find("familyName").get_text()
+                contrib_tmp.append(sub_contrib)
             else:
                 if author:
                     if c.find("creatorName"):
@@ -74,36 +77,32 @@ class DataciteParser(BaseBeautifulSoupParser):
                     else:
                         contrib_name = ""
 
-                parsed_name = name_parser.parse(
+                parsed_name_list = name_parser.parse(
                     contrib_name, collaborations_params=self.author_collaborations_params
                 )
-                if len(parsed_name) > 1:
-                    logger.warning(
-                        "More than one name parsed, can only accept one. Input: %s, output: %s",
-                        contrib_name,
-                        parsed_name,
-                    )
-                parsed_name_first = parsed_name[0]
-                for key in parsed_name_first.keys():
-                    contrib_tmp[key] = parsed_name_first[key]
+
+                contrib_tmp = parsed_name_list
 
             if c.find_all("affiliation"):
                 aff = []
                 for a in c.find_all("affiliation"):
                     aff.append(a.get_text())
-                contrib_tmp["aff"] = aff
+                for ct in contrib_tmp:
+                    ct["aff"] = aff
 
             for i in c.find_all("nameIdentifier"):
                 if (
                     i.get("nameIdentifierScheme", "") == "ORCID"
                     or i.get("schemeURI", "") == "http://orcid.org"
                 ):
-                    contrib_tmp["orcid"] = i.get_text()
+                    for ct in contrib_tmp:
+                        ct["orcid"] = i.get_text()
 
             if not author:
-                contrib_tmp["role"] = c.get("contributorType", "")
+                for ct in contrib_tmp:
+                    ct["role"] = c.get("contributorType", "")
 
-            contribs_out.append(contrib_tmp)
+            contribs_out += contrib_tmp
         if not contribs_out:
             raise MissingAuthorsException("No contributors found for")
 
@@ -248,7 +247,10 @@ class DataciteParser(BaseBeautifulSoupParser):
         :param text: string, contents of XML file
         :return: parsed file contents in JSON format
         """
-        d = self.bsstrtodict(text, parser="lxml-xml")
+        try:
+            d = self.bsstrtodict(text, parser="lxml-xml")
+        except Exception as err:
+            raise XmlLoadException(err)
 
         # as a convenience, remove the OAI wrapper if it's there
         if (
