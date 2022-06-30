@@ -15,7 +15,7 @@ class JATSAffils(object):
     regex_email = re.compile(r"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+")
 
     def __init__(self):
-        self.auth_list = []
+        self.contrib_dict = {}
         self.collab = {}
         self.xref_dict = OrderedDict()
         self.email_xref = OrderedDict()
@@ -110,57 +110,61 @@ class JATSAffils(object):
         Matches crossreferenced affiliations and emails; cleans emails and ORCIDs
         :return: none (updates class variable auth_list)
         """
-        for auth in self.auth_list:
-            for item in auth.get("xaff", []):
-                xi = re.split("\\s*,\\s*|\\s+", item)
-                for x in xi:
+
+        for contrib_type, contribs in self.contrib_dict.items():
+            for auth in contribs:
+                for item in auth.get("xaff", []):
+                    xi = re.split("\\s*,\\s*|\\s+", item)
+                    for x in xi:
+                        try:
+                            auth["aff"].append(self.xref_dict[x])
+                        except KeyError as err:
+                            logger.info("Key is missing from xaff. Missing key: %s", err)
+                            pass
+
+                    # if you found any emails in an affstring, add them
+                    # to the email field
+                    if item in self.email_xref:
+                        auth["email"].append(self.email_xref[item])
+
+                # Check for 'ALLAUTH'/'ALLCONTRIB' affils (global affils without a key), and assign them to all authors/contributors
+                if contrib_type == "authors" and "ALLAUTH" in self.xref_dict:
+                    auth["aff"].append(self.xref_dict["ALLAUTH"])
+                if contrib_type == "contributors" and "ALLCONTRIB" in self.xref_dict:
+                    auth["aff"].append(self.xref_dict["ALLCONTRIB"])
+
+                for item in auth.get("xemail", []):
                     try:
-                        auth["aff"].append(self.xref_dict[x])
+                        auth["email"].append(self.xref_dict[item])
                     except KeyError as err:
-                        logger.info("Key is missing from xaff. Missing key: %s", err)
+                        logger.info("Missing key in xemail! Error: %s", err)
                         pass
 
-                # if you found any emails in an affstring, add them
-                # to the email field
-                if item in self.email_xref:
-                    auth["email"].append(self.email_xref[item])
+                if auth.get("email", []):
+                    auth["email"] = self._fix_email(auth["email"])
 
-            # Check for 'ALLAUTH' affils (global affils without a key), and assign them to all authors
-            if "ALLAUTH" in self.xref_dict:
-                auth["aff"].append(self.xref_dict["ALLAUTH"])
+                if auth.get("orcid", []):
+                    try:
+                        auth["orcid"] = self._fix_orcid(auth["orcid"])
+                    except TypeError:
+                        logger.warning(
+                            "ORCID of wrong type (not str or list) passed, removing. ORCID: %s",
+                            auth["orcid"],
+                        )
+                        auth["orcid"] = []
 
-            for item in auth.get("xemail", []):
-                try:
-                    auth["email"].append(self.xref_dict[item])
-                except KeyError as err:
-                    logger.info("Missing key in xemail! Error: %s", err)
-                    pass
+                # note that the ingest schema allows a single email address, but we've extracted all
+                # here in case that changes to allow more than one
+                if auth["email"]:
+                    auth["email"] = auth["email"][0]
+                else:
+                    auth["email"] = ""
 
-            if auth.get("email", []):
-                auth["email"] = self._fix_email(auth["email"])
-
-            if auth.get("orcid", []):
-                try:
-                    auth["orcid"] = self._fix_orcid(auth["orcid"])
-                except TypeError:
-                    logger.warning(
-                        "ORCID of wrong type (not str or list) passed, removing. ORCID: %s",
-                        auth["orcid"],
-                    )
-                    auth["orcid"] = []
-
-            # note that the ingest schema allows a single email address, but we've extracted all
-            # here in case that changes to allow more than one
-            if auth["email"]:
-                auth["email"] = auth["email"][0]
-            else:
-                auth["email"] = ""
-
-            # same for orcid
-            if auth["orcid"]:
-                auth["orcid"] = auth["orcid"][0]
-            else:
-                auth["orcid"] = ""
+                # same for orcid
+                if auth["orcid"]:
+                    auth["orcid"] = auth["orcid"][0]
+                else:
+                    auth["orcid"] = ""
 
     def parse(self, article_metadata):
         """
@@ -170,13 +174,19 @@ class JATSAffils(object):
         """
         article_metadata = self._decompose(soup=article_metadata, tag="label")
 
-        art_contrib_group = None
+        art_contrib_groups = None
         if article_metadata.find("contrib-group"):
-            art_contrib_group = article_metadata.find("contrib-group").extract()
+            art_contrib_groups = article_metadata.find_all("contrib-group")
+
+        authors_out = []
+        contribs_out = []
 
         # JATS puts author data in <contrib-group>, giving individual authors in each <contrib>
-        if art_contrib_group:
+        for art_group in art_contrib_groups:
+            art_contrib_group = art_group.extract()
             contribs_raw = art_contrib_group.find_all("contrib")
+            default_key = "ALLAUTH"
+            num_contribs = len(contribs_raw)
             for contrib in contribs_raw:
                 # note: IOP, APS get affil data within each contrib block,
                 #       OUP, AIP, Springer, etc get them via xrefs.
@@ -229,6 +239,13 @@ class JATSAffils(object):
                     aff_text.append(affstr)
                     i.decompose()
 
+                # special case (e.g. AIP) - one author per contrib group, aff stored at contrib group level
+                if num_contribs == 1 and art_contrib_group.find("aff"):
+                    aff_list = art_contrib_group.find_all("aff")
+                    for aff in aff_list:
+                        aff_text.append(aff.get_text(separator=" ").strip())
+                        aff.decompose()
+
                 # get xrefs...
                 xrefs = contrib.find_all("xref")
                 xref_aff = []
@@ -280,41 +297,54 @@ class JATSAffils(object):
                 auth["xemail"] = xref_email
                 auth["orcid"] = orcid_out
                 auth["email"] = email_list
-                contrib.decompose()
 
                 # this is a list of author dicts
                 if auth:
-                    self.auth_list.append(auth)
+                    if contrib.get("contrib-type", "author") == "author":
+                        authors_out.append(auth)
+                        default_key = "ALLAUTH"
+                    else:
+                        if contrib.find("role"):
+                            role = contrib.find("role").get_text()
+                        else:
+                            role = contrib.get("contrib-type", "contributor")
+                        auth["role"] = role
+                        contribs_out.append(auth)
+                        default_key = "ALLCONTRIB"
 
-        if self.collab:
-            self.auth_list.append(self.collab)
+                contrib.decompose()
 
-        # special case: affs defined in contrib-group, but not in individual contrib
-        if art_contrib_group:
-            contrib_aff = art_contrib_group.find_all("aff")
-            for aff in contrib_aff:
-                # check and see if the publisher defined an email tag inside an affil (like IOP does)
-                nested_email_list = aff.find_all("ext-link")
-                for e in nested_email_list:
-                    key = e["id"]
-                    value = e.text
-                    # build the cross-reference dictionary to be used later
-                    self.email_xref[key] = value
-                    e.decompose()
+            if self.collab:
+                authors_out.append(self.collab)
 
-                key = aff.get("id", "ALLAUTH")
-                # special case: get rid of <sup>...
-                aff = self._decompose(soup=aff, tag="sup")
-                aff = self._decompose(soup=aff, tag="institution-id")
-                # getting rid of ext-link eliminates *all* emails,
-                # so this is not the place to fix the iop thing
-                # a = self._decompose(soup=a, tag='ext-link')
+            # special case: affs defined in contrib-group, but not in individual contrib
+            if art_contrib_group:
+                contrib_aff = art_contrib_group.find_all("aff")
+                for aff in contrib_aff:
+                    # check and see if the publisher defined an email tag inside an affil (like IOP does)
+                    nested_email_list = aff.find_all("ext-link")
+                    for e in nested_email_list:
+                        key = e["id"]
+                        value = e.text
+                        # build the cross-reference dictionary to be used later
+                        self.email_xref[key] = value
+                        e.decompose()
 
-                affstr = aff.get_text().strip()
-                (affstr, email_list) = self._fix_affil(affstr)
-                if email_list:
-                    self.email_xref[key] = email_list
-                self.xref_dict[key] = affstr
+                    key = aff.get("id", default_key)
+                    # special case: get rid of <sup>...
+                    aff = self._decompose(soup=aff, tag="sup")
+                    aff = self._decompose(soup=aff, tag="institution-id")
+                    # getting rid of ext-link eliminates *all* emails,
+                    # so this is not the place to fix the iop thing
+                    # a = self._decompose(soup=a, tag='ext-link')
+
+                    affstr = aff.get_text().strip()
+                    (affstr, email_list) = self._fix_affil(affstr)
+                    if email_list:
+                        self.email_xref[key] = email_list
+                    self.xref_dict[key] = affstr
+
+        self.contrib_dict = {"authors": authors_out, "contributors": contribs_out}
 
         # now get the xref keys outside of contrib-group:
         # aff xrefs...
@@ -354,7 +384,7 @@ class JATSAffils(object):
         # finishing up
         self._match_xref_clean()
 
-        return self.auth_list
+        return self.contrib_dict
 
 
 class JATSParser(BaseBeautifulSoupParser):
@@ -509,35 +539,54 @@ class JATSParser(BaseBeautifulSoupParser):
 
     def _parse_author(self):
         auth_affil = JATSAffils()
-        aa_output = auth_affil.parse(article_metadata=self.article_meta)
-        if aa_output:
-            self.base_metadata["authors"] = aa_output
+        aa_output_dict = auth_affil.parse(article_metadata=self.article_meta)
+        if aa_output_dict.get("authors"):
+            self.base_metadata["authors"] = aa_output_dict["authors"]
+
+        if aa_output_dict.get("contributors"):
+            self.base_metadata["contributors"] = aa_output_dict["contributors"]
 
     def _parse_copyright(self):
-        copyright = self.article_meta.find("copyright-statement")
+        if self.article_meta.find("copyright-statement"):
+            copyright = self._detag(self.article_meta.find("copyright-statement"), [])
+        else:
+            copyright = "&copy;"
+            if self.article_meta.find("copyright-year"):
+                copyright = (
+                    copyright + " " + self._detag(self.article_meta.find("copyright-year"), [])
+                )
+            if self.article_meta.find("copyright-holder"):
+                copyright = (
+                    copyright + " " + self._detag(self.article_meta.find("copyright-holder"), [])
+                )
+            if copyright == "&copy;":
+                # not copyright info found
+                copyright = None
+
         if copyright:
-            self.base_metadata["copyright"] = self._detag(copyright, [])
+            self.base_metadata["copyright"] = copyright
 
     def _parse_edhistory(self):
         # received and revised dates can be arrays, but accepted can just be a single value
         received = []
         revised = []
 
-        dates = self.article_meta.find("history").find_all("date")
-        for d in dates:
-            date_type = d.get("date-type", "")
-            eddate = self._get_date(d)
-            if date_type == "received":
-                received.append(eddate)
-            elif date_type == "rev-recd":
-                revised.append(eddate)
-            elif date_type == "accepted":
-                self.base_metadata["edhist_acc"] = eddate
-            else:
-                logger.info("Editorial history date type (%s) not recognized.", date_type)
+        if self.article_meta.find("history"):
+            dates = self.article_meta.find("history").find_all("date")
+            for d in dates:
+                date_type = d.get("date-type", "")
+                eddate = self._get_date(d)
+                if date_type == "received":
+                    received.append(eddate)
+                elif date_type == "rev-recd":
+                    revised.append(eddate)
+                elif date_type == "accepted":
+                    self.base_metadata["edhist_acc"] = eddate
+                else:
+                    logger.info("Editorial history date type (%s) not recognized.", date_type)
 
-        self.base_metadata["edhist_rec"] = received
-        self.base_metadata["edhist_rev"] = revised
+            self.base_metadata["edhist_rec"] = received
+            self.base_metadata["edhist_rev"] = revised
 
     def _parse_keywords(self):
         keys_uat = []
@@ -584,24 +633,41 @@ class JATSParser(BaseBeautifulSoupParser):
 
         if "keywords" not in self.base_metadata:
             if self.article_meta.find("article-categories"):
-                keywords = self.article_meta.find("article-categories").find_all("subj-group")
+                subj_groups = self.article_meta.find("article-categories").find_all("subj-group")
             else:
-                keywords = []
-            for c in keywords:
-                if c.get("subj-group-type", "") == "toc-minor":
-                    for k in c.find_all("subject"):
-                        keys_out.append(
-                            {
-                                "system": "subject",
-                                "string": self._detag(k, self.JATS_TAGSET["keywords"]),
-                            }
-                        )
+                subj_groups = []
+            for sg in subj_groups:
+                subjects = []
+                if sg.get("subj-group-type", "") == "toc-minor":
+                    subjects = sg.find_all("subject")
+                elif sg.get("subj-group-type", "") == "toc-heading":
+                    subjects = sg.find_all("subject")
 
-                    self.base_metadata["keywords"] = keys_out
-                else:
-                    for k in c.find_all("subject"):
-                        if k.string == "Errata" or k.string == "Corrigendum":
-                            self.isErratum = True
+                for k in subjects:
+                    keys_out.append(
+                        {
+                            "system": "subject",
+                            "string": self._detag(k, self.JATS_TAGSET["keywords"]),
+                        }
+                    )
+
+                for k in sg.find_all("subject"):
+                    if k.string == "Errata" or k.string == "Corrigendum":
+                        self.isErratum = True
+
+            self.base_metadata["keywords"] = keys_out
+
+    def _parse_conference(self):
+        event_meta = self.article_meta.find("conference")
+
+        if event_meta.find("conf-name"):
+            self.base_metadata["conf_name"] = self._detag(event_meta.find("conf-name"), [])
+
+        if event_meta.find("conf-loc"):
+            self.base_metadata["conf_location"] = self._detag(event_meta.find("conf-loc"), [])
+
+        if event_meta.find("conf-date"):
+            self.base_metadata["conf_date"] = self._detag(event_meta.find("conf-date"), [])
 
     def _parse_pub(self):
         journal = None
@@ -627,6 +693,13 @@ class JATSParser(BaseBeautifulSoupParser):
         for i in issn_all:
             issns.append((i["pub-type"], self._detag(i, [])))
         self.base_metadata["issn"] = issns
+
+        isbn_all = self.article_meta.find_all("isbn")
+        isbns = []
+        for i in isbn_all:
+            isbns.append({"type": i["content-type"], "isbn_str": self._detag(i, [])})
+
+        self.base_metadata["isbn"] = isbns
 
     def _parse_related(self):
         # Related article data, especially corrections and errata
@@ -785,6 +858,9 @@ class JATSParser(BaseBeautifulSoupParser):
         # Issue:
         issue = self.article_meta.issue
         self.base_metadata["issue"] = self._detag(issue, [])
+
+        if self.article_meta.find("conference"):
+            self._parse_conference()
 
         self._parse_pub()
         self._parse_related()
