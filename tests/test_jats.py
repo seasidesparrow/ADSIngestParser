@@ -32,6 +32,8 @@ class TestJATS(unittest.TestCase):
             "jats_mnras_493_1_141",
             "jats_aj_158_4_139",
             "jats_iop_ansnn_12_2_025001",
+            "jats_aip_aipc_2470_040010",
+            "jats_aip_amjph_90_286",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
