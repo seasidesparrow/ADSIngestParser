@@ -109,7 +109,7 @@ class ElsevierParser(BaseBeautifulSoupParser):
             "ce:date-accepted": "edhist_acc",
         }
 
-        for date_xml in dates_trans.keys():
+        for date_xml, field in dates_trans.items():
             if self.record_meta.find(date_xml):
                 dates = self.record_meta.find_all(date_xml)
                 dates_out = []
@@ -129,7 +129,7 @@ class ElsevierParser(BaseBeautifulSoupParser):
                     # this only accepts a single date, the other two accept a list
                     dates_out = dates_out[0]
 
-                self.base_metadata[dates_trans[date_xml]] = dates_out
+                self.base_metadata[field] = dates_out
 
     def _parse_title_abstract(self):
         if self.record_meta.find("ce:title"):
