@@ -11,6 +11,9 @@ from adsingestp.parsers.base import BaseBeautifulSoupParser
 
 logger = logging.getLogger(__name__)
 
+# compile outside of the class definition -- it only needs to be compiled once
+re_issn = re.compile(r"^\d{4}-?\d{3}[0-9X]$")  # XXXX-XXXX
+
 
 class CrossrefParser(BaseBeautifulSoupParser):
     def __init__(self):
@@ -78,7 +81,6 @@ class CrossrefParser(BaseBeautifulSoupParser):
             issn_all = []
 
         issns = []
-        re_issn = re.compile(r"^\d{4}-\d{4}$")  # XXXX-XXXX
         for i in issn_all:
             if i.get_text() and re_issn.match(i.get_text()):
                 issns.append((i["media_type"], i.get_text()))
