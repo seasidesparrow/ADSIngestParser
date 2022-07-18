@@ -236,6 +236,19 @@ class CrossrefParser(BaseBeautifulSoupParser):
             if page_info.find("last_page"):
                 self.base_metadata["page_last"] = page_info.last_page.get_text()
 
+        elif self.record_meta.find("publisher_item") and self.record_meta.find(
+            "publisher_item"
+        ).find("item_number"):
+            ids = {}
+            for idx, i in enumerate(
+                self.record_meta.find("publisher_item").find_all("item_number")
+            ):
+                tag = i.get("item_number_type")
+                ids[tag if tag else "other" + str(idx)] = i.get_text()
+            if ids.get("article-number"):
+                self.base_metadata["electronic_id"] = ids["article-number"]
+            # TODO if there are any other relevant publisher items, add handling here
+
     def _parse_ids(self):
         self.base_metadata["ids"] = {}
 
