@@ -70,7 +70,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
     def _parse_pub(self):
         # journal articles only
-        if self.input_metadata.find("journal"):
+        if self.input_metadata.find("journal") and self.input_metadata.find("journal").find("journal_metadata"):
             journal_meta = self.input_metadata.find("journal").find("journal_metadata")
             if journal_meta.find("full_title"):
                 self.base_metadata["publication"] = journal_meta.find("full_title").get_text()
@@ -209,7 +209,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
             if p.get("media_type"):
                 datetype = p.get("media_type")
             else:
-                logger.warn("Pubdate without a media type, assigning print.")
+                logger.warning("Pubdate without a media type, assigning print.")
                 datetype = "print"
 
             pubdate = self._get_date(p)
