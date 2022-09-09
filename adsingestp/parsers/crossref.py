@@ -70,7 +70,9 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
     def _parse_pub(self):
         # journal articles only
-        if self.input_metadata.find("journal") and self.input_metadata.find("journal").find("journal_metadata"):
+        if self.input_metadata.find("journal") and self.input_metadata.find("journal").find(
+            "journal_metadata"
+        ):
             journal_meta = self.input_metadata.find("journal").find("journal_metadata")
             if journal_meta.find("full_title"):
                 self.base_metadata["publication"] = journal_meta.find("full_title").get_text()
