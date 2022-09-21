@@ -183,7 +183,7 @@ class IngestBase(object):
                 "affiliation": [
                     {
                         "affPubRaw": j,
-                        "affPubID": i.get("aff")[idx] if i.get("aff") else "",
+                        "affPubID": i.get("xaff")[idx] if i.get("xaff") else "",
                         # "affPubIDType": "XXX" # TODO ask MT
                     }
                     for idx, j in enumerate(i.get("aff", []))
@@ -217,7 +217,7 @@ class IngestBase(object):
                     "affiliation": [
                         {
                             "affPubRaw": j,
-                            "affPubID": i.get("aff")[idx] if i.get("aff") else ""
+                            "affPubID": i.get("xaff")[idx] if i.get("xaff") else ""
                             # "affPubIDType": "XXX"
                         }
                         for idx, j in enumerate(i.get("aff", []))
