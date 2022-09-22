@@ -24,6 +24,7 @@ class TestJATS(unittest.TestCase):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
+        self.maxDiff = None
 
     def test_jats(self):
 

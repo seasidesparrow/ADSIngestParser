@@ -485,7 +485,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 month_name = month_raw[0:3].lower()
                 month = utils.MONTH_TO_NUMBER[month_name]
 
-            if int(month) < 10 and len(month) < 2:
+            if int(month) < 10 and len(str(month)) < 2:
                 month = "0" + str(int(month))
             else:
                 month = str(month)
@@ -500,7 +500,7 @@ class JATSParser(BaseBeautifulSoupParser):
             else:
                 day = "00"
 
-            if int(day) < 10 and len(day) < 2:
+            if int(day) < 10 and len(str(day)) < 2:
                 day = "0" + str(int(day))
             else:
                 day = str(day)
@@ -820,7 +820,10 @@ class JATSParser(BaseBeautifulSoupParser):
     def _parse_references(self):
         if self.back_meta is not None:
             ref_list_text = []
-            ref_results = self.back_meta.find("ref-list").find_all("ref")
+            if self.back_meta.find("ref-list"):
+                ref_results = self.back_meta.find("ref-list").find_all("ref")
+            else:
+                ref_results = []
             for r in ref_results:
                 # output raw XML for reference service to parse later
                 s = str(r.extract()).replace("\n", " ")

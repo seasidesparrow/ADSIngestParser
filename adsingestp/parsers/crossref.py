@@ -70,20 +70,30 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
     def _parse_pub(self):
         # journal articles only
-        journal_meta = self.input_metadata.find("journal").find("journal_metadata")
+        if self.input_metadata.find("journal") and self.input_metadata.find("journal").find(
+            "journal_metadata"
+        ):
+            journal_meta = self.input_metadata.find("journal").find("journal_metadata")
+            if journal_meta.find("full_title"):
+                self.base_metadata["publication"] = journal_meta.find("full_title").get_text()
 
-        if journal_meta.find("full_title"):
-            self.base_metadata["publication"] = journal_meta.find("full_title").get_text()
-
-        if journal_meta.find_all("issn"):
-            issn_all = journal_meta.find_all("issn")
+            else:
+                self.base_metadata["publication"] = None
+            if journal_meta.find_all("issn"):
+                issn_all = journal_meta.find_all("issn")
+            else:
+                issn_all = []
         else:
+            self.base_metadata["publication"] = None
             issn_all = []
 
         issns = []
         for i in issn_all:
             if i.get_text() and re_issn.match(i.get_text()):
-                issns.append((i["media_type"], i.get_text()))
+                if i.get("media_type"):
+                    issns.append((i["media_type"], i.get_text()))
+                else:
+                    issns.append(("print", i.get_text()))
         self.base_metadata["issn"] = issns
 
     def _parse_issue(self):
@@ -198,7 +208,11 @@ class CrossrefParser(BaseBeautifulSoupParser):
     def _parse_pubdate(self):
         pubdates_raw = self.record_meta.find_all("publication_date")
         for p in pubdates_raw:
-            datetype = p.get("media_type", "print")
+            if p.get("media_type"):
+                datetype = p.get("media_type")
+            else:
+                logger.warning("Pubdate without a media type, assigning print.")
+                datetype = "print"
 
             pubdate = self._get_date(p)
             if datetype == "print":
@@ -206,7 +220,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
             elif datetype == "online":
                 self.base_metadata["pubdate_electronic"] = pubdate
             else:
-                logger.warning("Unknown date type")
+                logger.warning("Unknown date type: %s" % datetype)
 
     def _parse_edhistory_copyright(self):
         if self.record_meta.find("crossmark") and self.record_meta.find("crossmark").find(
@@ -234,7 +248,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
                 self.base_metadata["page_first"] = page_info.find("first_page").get_text()
 
             if page_info.find("last_page"):
-                self.base_metadata["page_last"] = page_info.last_page.get_text()
+                self.base_metadata["page_last"] = page_info.find("last_page").get_text()
 
         elif self.record_meta.find("publisher_item") and self.record_meta.find(
             "publisher_item"
@@ -243,7 +257,10 @@ class CrossrefParser(BaseBeautifulSoupParser):
             for idx, i in enumerate(
                 self.record_meta.find("publisher_item").find_all("item_number")
             ):
-                tag = i.get("item_number_type")
+                if i.get("item_number_type"):
+                    tag = i.get("item_number_type")
+                else:
+                    tag = None
                 ids[tag if tag else "other" + str(idx)] = i.get_text()
             if ids.get("article-number"):
                 self.base_metadata["electronic_id"] = ids["article-number"]
@@ -296,14 +313,20 @@ class CrossrefParser(BaseBeautifulSoupParser):
         if self.input_metadata.find("journal"):
             type_found = True
             self.record_type = "journal"
-            self.record_meta = self.input_metadata.find("journal_article").extract()
+            if self.input_metadata.find("journal_article"):
+                self.record_meta = self.input_metadata.find("journal_article").extract()
+            else:
+                self.record_meta = None
         if self.input_metadata.find("conference"):
             if type_found:
                 raise WrongSchemaException("Too many document types found in CrossRef record")
             else:
                 type_found = True
                 self.record_type = "conference"
-                self.record_meta = self.input_metadata.find("conference_paper").extract()
+                if self.input_metadata.find("conference_paper"):
+                    self.record_meta = self.input_metadata.find("conference_paper").extract()
+                else:
+                    self.record_meta = None
         if self.input_metadata.find("book"):
             if type_found:
                 raise WrongSchemaException("Too many document types found in CrossRef record")
@@ -314,10 +337,16 @@ class CrossrefParser(BaseBeautifulSoupParser):
                     self.record_meta = self.input_metadata.find("book_metadata").extract()
                 elif self.input_metadata.find("book_series_metadata"):
                     self.record_meta = self.input_metadata.find("book_series_metadata").extract()
+                else:
+                    self.record_meta = None
 
         if not type_found:
             raise WrongSchemaException(
                 "Didn't find allowed document type (article, conference, book) in CrossRef record"
+            )
+        elif not self.record_meta:
+            raise WrongSchemaException(
+                "Null record_meta for document type %s in CrossRef record" % self.record_type
             )
 
         if self.record_type == "journal":

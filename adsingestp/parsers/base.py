@@ -217,7 +217,7 @@ class IngestBase(object):
                     "affiliation": [
                         {
                             "affPubRaw": j,
-                            "affPubID": i.get["xaff"][idx] if i.get("xaff") else "",
+                            "affPubID": i.get("xaff")[idx] if i.get("xaff") else ""
                             # "affPubIDType": "XXX"
                         }
                         for idx, j in enumerate(i.get("aff", []))
