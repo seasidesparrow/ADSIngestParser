@@ -830,14 +830,14 @@ class JATSParser(BaseBeautifulSoupParser):
                 ref_list_text.append(s)
             self.base_metadata["references"] = ref_list_text
 
-    def parse(self, text):
+    def parse(self, text, bsparser="lxml-xml"):
         """
         Parse JATS XML into standard JSON format
         :param text: string, contents of XML file
         :return: parsed file contents in JSON format
         """
         try:
-            d = self.bsstrtodict(text, parser="lxml-xml")
+            d = self.bsstrtodict(text, parser=bsparser)
         except Exception as err:
             raise XmlLoadException(err)
         document = d.article
