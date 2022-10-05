@@ -113,11 +113,14 @@ class JATSAffils(object):
 
         for contrib_type, contribs in self.contrib_dict.items():
             for auth in contribs:
+                # contents of xaff field aren't always properly separated - fix that here
+                xaff_tmp = []
                 for item in auth.get("xaff", []):
                     xi = re.split("\\s*,\\s*|\\s+", item)
                     for x in xi:
                         try:
                             auth["aff"].append(self.xref_dict[x])
+                            xaff_tmp.append(x)
                         except KeyError as err:
                             logger.info("Key is missing from xaff. Missing key: %s", err)
                             pass
@@ -126,6 +129,7 @@ class JATSAffils(object):
                     # to the email field
                     if item in self.email_xref:
                         auth["email"].append(self.email_xref[item])
+                auth["xaff"] = xaff_tmp
 
                 # Check for 'ALLAUTH'/'ALLCONTRIB' affils (global affils without a key), and assign them to all authors/contributors
                 if contrib_type == "authors" and "ALLAUTH" in self.xref_dict:
@@ -826,7 +830,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 ref_results = []
             for r in ref_results:
                 # output raw XML for reference service to parse later
-                s = str(r.extract()).replace("\n", " ")
+                s = str(r.extract()).replace("\n", " ").replace("\xa0", " ")
                 ref_list_text.append(s)
             self.base_metadata["references"] = ref_list_text
 
