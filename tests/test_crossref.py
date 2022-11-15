@@ -15,6 +15,7 @@ class TestCrossref(unittest.TestCase):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
+        self.maxDiff = None
 
     def test_crossref(self):
 
@@ -26,6 +27,11 @@ class TestCrossref(unittest.TestCase):
             "crossref_book_10.1017-CBO9780511709265",
             "crossref_book_10.1007-978-1-4614-3520-4",
             "crossref_10.1103_PhysRevD_64-117303",
+            "crossref_cn_10.1051=0004-6361=202243540",
+            "crossref_cn_10.1088=1475-7516=2022=10=098",
+            "crossref_cn_10.1093=mnras=stac2975",
+            "crossref_cn_10.1093=pasj=psac053",
+            "crossref_cn_10.3847=1538-4357=ac8c2f",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
