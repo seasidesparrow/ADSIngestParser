@@ -170,7 +170,9 @@ class CrossrefParser(BaseBeautifulSoupParser):
                 self.record_meta.find("jats:abstract").find("jats:p").get_text()
             )
         elif self.record_meta.find("abstract"):
-            self.bas_metadata["abstract"] = self._clean_output(
+            if self.record_meta.find("abstract").find("title"):
+                self.record_meta.find("abstract").find("title").decompose()
+            self.base_metadata["abstract"] = self._clean_output(
                 self.record_meta.find("abstract").get_text()
             )
 
