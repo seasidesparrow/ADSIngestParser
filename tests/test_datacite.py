@@ -31,6 +31,7 @@ class TestDatacite(unittest.TestCase):
             "datacite_schema4.1_example-full",
             "datacite_schema3.1_example-full",
             "datacite_schema4.1_example-software",
+            "datacite_schema4_example-habanero-pdsdataset",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
