@@ -101,3 +101,24 @@ class TestJATS(unittest.TestCase):
             parsed["recordData"]["parsedTime"] = ""
 
             self.assertEqual(parsed, output_data)
+
+    def test_jats_cite_context(self):
+        filenames = [
+            "jats_aj_158_4_139_fulltext",
+        ]
+
+        for f in filenames:
+            test_infile = os.path.join(self.inputdir, f + ".xml")
+            test_outfile = os.path.join(self.outputdir, f + ".json")
+            parser = jats.JATSParser()
+
+            with open(test_infile, "rb") as fp:
+                input_data = fp.read()
+
+            with open(test_outfile, "rb") as fp:
+                output_text = fp.read()
+                output_data = json.loads(output_text)
+
+            cite_context = parser.citation_context(input_data)
+
+            self.assertEqual(cite_context, output_data)
