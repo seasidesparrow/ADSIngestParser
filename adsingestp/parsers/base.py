@@ -70,6 +70,46 @@ class IngestBase(object):
 
         return input
 
+    def get_chunks(self, input_xml, start_pattern, end_pattern, head_foot=False):
+        """
+        Super simple method (though not inefficient) to cut input
+        into chunk-sized documents, preserving header/footer if needed
+
+        :param input_xml: Text of XML document to be chunked
+        :param start_pattern: string, regex pattern to match at beginning of a chunk
+        :param end_pattern: string, regex pattern to match at end of a chunk
+        :param head_foot: boolean, option to return the header/footer with each chunk
+        :return: iterator of chunks
+        """
+
+        start = re.compile(start_pattern, re.IGNORECASE)
+        end = re.compile(end_pattern, re.IGNORECASE)
+
+        first = start.search(input_xml)
+        if first is None:
+            return input_xml  # not found, return the whole thing
+
+        istart = first.start()
+        iend = None
+        for first in end.finditer(input_xml, istart + 1):
+            iend = first.end() + 1
+        if iend is None:
+            return input_xml  # not found, return the whole thing
+
+        if head_foot:
+            header = input_xml[0:istart]
+            footer = input_xml[iend:]
+        else:
+            header = ""
+            footer = ""
+
+        for snext in start.finditer(input_xml, istart + 1):
+            next_start = snext.start()
+            yield header + input_xml[istart:next_start] + footer
+            istart = snext.start()
+
+        yield header + input_xml[istart:iend] + footer
+
     def format(self, input_dict, format):
         """
 
