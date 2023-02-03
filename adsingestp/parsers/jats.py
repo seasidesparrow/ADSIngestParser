@@ -889,7 +889,7 @@ class JATSParser(BaseBeautifulSoupParser):
         pass
 
     def citation_context(
-        self, text, bsparser="lxml-xml", input_bibcode=None, num_char=500, resolve_refs=False
+        self, text, bsparser="lxml-xml", input_bibcode=None, num_char=500, resolve_refs=False, text_output=True
     ):
         """
         For a given fulltext XML, find the paragraph(s) each reference is cited in. Returns a dictionary of the
@@ -902,6 +902,7 @@ class JATSParser(BaseBeautifulSoupParser):
         :param num_char: integer, check that citation paragraph is at least this long; if it's shorter, return the
             paragraphs before and after the citing paragraph as well
         :param resolve_refs: boolean, set to True to convert reference IDs to bibcodes # TODO this isn't implemented yet
+        :param text_output: boolean, set to True to output citation context as a string, or False to output citation context as a beautifulSoup object
         :return: dictionary: {reference1: [cite_context1, cite_context2, ...], ...}
         """
         try:
@@ -918,17 +919,19 @@ class JATSParser(BaseBeautifulSoupParser):
             id = x["rid"]
             immediate_para = x.find_parent("p")  # try to find the containing paragraph
             if immediate_para:
-                context = immediate_para.get_text()
-                if len(context) < num_char:
+                context = immediate_para
+                if len(context.get_text()) < num_char:
                     prev_para = immediate_para.find_previous_sibling("p")
                     if prev_para:
-                        context = prev_para.get_text() + context
+                        context = prev_para.append(context)
                     next_para = immediate_para.find_next_sibling("p")
                     if next_para:
-                        context = context + next_para.get_text()
+                        context = context.append(next_para) 
             else:
                 # reference not contained in a paragraph, so just get whatever context we have
-                context = x.find_parent().get_text()
+                context = x.find_parent() 
+            if text_output and context: 
+                context = context.get_text() 
             if not context:
                 context = "WARNING NO CONTEXT FOUND"
             if id in cites.keys():
