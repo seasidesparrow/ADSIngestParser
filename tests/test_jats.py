@@ -20,6 +20,7 @@ TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
 class TestJATS(unittest.TestCase):
+    maxDiff = None
     def setUp(self):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
@@ -110,15 +111,37 @@ class TestJATS(unittest.TestCase):
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
             test_outfile = os.path.join(self.outputdir, f + ".json")
+            test_outfile_tags = os.path.join(self.outputdir, f + "_tags.json")
             parser = jats.JATSParser()
 
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
 
+            # Test output as strings
             with open(test_outfile, "rb") as fp:
                 output_text = fp.read()
                 output_data = json.loads(output_text)
-
             cite_context = parser.citation_context(input_data)
-
             self.assertEqual(cite_context, output_data)
+
+            # Test output as BeautifulSoup tags
+            with open(test_outfile_tags, "rb") as fp:
+                output_text = fp.read()
+                output_data_tags = json.loads(output_text)
+            cite_context = parser.citation_context(input_data,num_char=1, text_output=False)
+            # json.loads complained about loading a list of beautifulsoup objects
+            # so the lists are quoted in the test_outfile_tags_file.
+            # This also required some manipulation of the citation_context
+            # output to be equivalent strings.
+            # I imagine there is a better way...
+            for key in cite_context.keys():
+                cite_context[key] = str(cite_context[key])
+            cite_context = json.dumps(cite_context)
+            cite_context = cite_context.replace("'",'"')
+            cite_context = cite_context.replace('\\"', "'")
+            cite_context = repr(cite_context)
+            import pdb;pdb.set_trace()
+            output_data_tags = json.dumps(output_data_tags)
+            output_data_tags = repr(output_data_tags)
+            import pdb;pdb.set_trace()
+            self.assertEqual(cite_context, output_data_tags)
