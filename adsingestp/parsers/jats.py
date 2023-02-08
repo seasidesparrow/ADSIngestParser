@@ -1,6 +1,7 @@
 import logging
 import re
 from collections import OrderedDict
+from itertools import compress
 
 from bs4 import BeautifulSoup
 
@@ -889,7 +890,7 @@ class JATSParser(BaseBeautifulSoupParser):
         pass
 
     def citation_context(
-        self, text, bsparser="lxml-xml", input_bibcode=None, num_char=500, resolve_refs=False, text_output=True
+        self, text, bsparser="lxml-xml", input_bibcode=None, num_char=500, resolve_refs=False, citation_only=False, text_output=True
     ):
         """
         For a given fulltext XML, find the paragraph(s) each reference is cited in. Returns a dictionary of the
@@ -902,6 +903,7 @@ class JATSParser(BaseBeautifulSoupParser):
         :param num_char: integer, check that citation paragraph is at least this long; if it's shorter, return the
             paragraphs before and after the citing paragraph as well
         :param resolve_refs: boolean, set to True to convert reference IDs to bibcodes # TODO this isn't implemented yet
+        :param citation_only: boolean, set to False, if true will only return references that are citations
         :param text_output: boolean, set to True to output citation context as a string, or False to output citation context as a beautifulSoup object
         :return: dictionary: {reference1: [cite_context1, cite_context2, ...], ...}
         """
@@ -914,6 +916,17 @@ class JATSParser(BaseBeautifulSoupParser):
         self.back_meta = document.back
         body = document.body
         xrefs = body.find_all("xref")
+
+        # only include bibliographic references
+        if citation_only:
+            # from itertools import compress
+            # import re
+            cite_mask = [False] * len(xrefs)
+            for count, x in enumerate(xrefs):
+                if x.get("ref-type", "") == "bibr":
+                    cite_mask[count] = True
+            xrefs = list(compress(xrefs,cite_mask))
+
         cites = {}  # {rid_1: ["context 1", "context 2", ...]}
         for x in xrefs:
             id = x["rid"]
