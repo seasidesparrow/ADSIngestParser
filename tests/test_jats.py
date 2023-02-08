@@ -140,8 +140,6 @@ class TestJATS(unittest.TestCase):
             cite_context = cite_context.replace("'",'"')
             cite_context = cite_context.replace('\\"', "'")
             cite_context = repr(cite_context)
-            import pdb;pdb.set_trace()
             output_data_tags = json.dumps(output_data_tags)
             output_data_tags = repr(output_data_tags)
-            import pdb;pdb.set_trace()
             self.assertEqual(cite_context, output_data_tags)
