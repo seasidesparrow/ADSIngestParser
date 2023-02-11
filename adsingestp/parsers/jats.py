@@ -1,7 +1,6 @@
 import logging
 import re
 from collections import OrderedDict
-from itertools import compress
 
 from bs4 import BeautifulSoup
 
@@ -916,12 +915,13 @@ class JATSParser(BaseBeautifulSoupParser):
         body = document.body
         xrefs = body.find_all("xref")
 
-        # only include bibliographic references
-        cite_mask = [False] * len(xrefs)
-        for count, x in enumerate(xrefs):
-            if x.get("ref-type", "") == "bibr":
-                cite_mask[count] = True
-        xrefs = list(compress(xrefs,cite_mask))
+        # import pdb;pdb.set_trace()
+        cite_index = []
+        for index, xref in enumerate(xrefs):
+            if xref.get("ref-type", "") == "bibr":
+                cite_index.append(index)
+        # xrefs = xrefs[cite_index]
+        xrefs = [xrefs[i] for i in cite_index]
 
         cites = {}  # {rid_1: ["context 1", "context 2", ...]}
         for x in xrefs:
@@ -931,15 +931,13 @@ class JATSParser(BaseBeautifulSoupParser):
                 context = immediate_para
                 if text_output:
                     context = immediate_para.get_text()
-                else:
-                    context = immediate_para
-                if len(context) < num_char:
-                    prev_para = immediate_para.find_previous_sibling("p")
-                    if prev_para:
-                        context = prev_para.get_text() + context
-                    next_para = immediate_para.find_next_sibling("p")
-                    if next_para:
-                        context = context + next_para.get_text()
+                    if len(context) < num_char:
+                        prev_para = immediate_para.find_previous_sibling("p")
+                        if prev_para:
+                            context = prev_para.get_text() + context
+                        next_para = immediate_para.find_next_sibling("p")
+                        if next_para:
+                            context = context + next_para.get_text()
             else:
                 # reference not contained in a paragraph, so just get whatever context we have
                 if text_output:
