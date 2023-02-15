@@ -54,3 +54,42 @@ class TestArxiv(unittest.TestCase):
             parsed["recordData"]["parsedTime"] = ""
 
             self.assertEqual(parsed, output_data)
+
+
+class TextArxivMulti(unittest.TestCase):
+    def setUp(self):
+        stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
+        self.inputdir = os.path.join(stubdata_dir, "input")
+        self.outputdir = os.path.join(stubdata_dir, "output")
+
+    def test_arxiv_multi(self):
+
+        filenames = [
+            "arxiv_multi_20230125",
+        ]
+
+        parser = arxiv.MultiArxivParser()
+
+        for f in filenames:
+            test_infile = os.path.join(self.inputdir, f + ".xml")
+            test_outfile_header = os.path.join(self.outputdir, f + "_header.txt")
+            test_outfile_noheader = os.path.join(self.outputdir, f + "_noheader.txt")
+
+            with open(test_infile, "r") as fp:
+                input_data = fp.read()
+
+            with open(test_outfile_header, "r") as fp:
+                output_text = fp.read()
+                output_data_header = output_text.strip().split("\n\n")
+
+            parsed = parser.parse(input_data, header=True)
+
+            self.assertEqual(parsed, output_data_header)
+
+            with open(test_outfile_noheader, "r") as fp:
+                output_text = fp.read()
+                output_data_noheader = output_text.strip().split("\n\n")
+
+            parsed = parser.parse(input_data, header=False)
+
+            self.assertEqual(parsed, output_data_noheader)

@@ -8,9 +8,29 @@ from adsingestp.ingest_exceptions import (
     WrongSchemaException,
     XmlLoadException,
 )
-from adsingestp.parsers.base import BaseBeautifulSoupParser
+from adsingestp.parsers.base import BaseBeautifulSoupParser, IngestBase
 
 logger = logging.getLogger(__name__)
+
+
+class MultiArxivParser(IngestBase):
+    start_re = r"<record(?!-)[^>]*>"
+    end_re = r"</record(?!-)[^>]*>"
+
+    def parse(self, text, header=False):
+        """
+        Separate multi-record arXiv XML document into individual XML documents
+
+        :param text: string, input XML text from a multi-record XML document
+        :param header: boolean (default: False), set to True to preserve overall
+            document header/footer for each separate record's document
+        :return: list, each item is the XML of a separate arXiv document
+        """
+        output_chunks = []
+        for chunk in self.get_chunks(text, self.start_re, self.end_re, head_foot=header):
+            output_chunks.append(chunk.strip())
+
+        return output_chunks
 
 
 class ArxivParser(BaseBeautifulSoupParser):

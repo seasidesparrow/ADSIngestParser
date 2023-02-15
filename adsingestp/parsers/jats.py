@@ -887,3 +887,100 @@ class JATSParser(BaseBeautifulSoupParser):
 
     def add_fulltext(self):
         pass
+
+    def citation_context(
+        self, text, bsparser="lxml-xml", input_bibcode=None, num_char=500, resolve_refs=False
+    ):
+        """
+        For a given fulltext XML, find the paragraph(s) each reference is cited in. Returns a dictionary of the
+        references (key) and an array of the paragraph(s) they're cited in (value). If resolve_refs is set to True, the
+        keys are bibcodes, otherwise they're the internal ID of the reference
+
+        :param text: text of fulltext XML to parse
+        :param bsparser: parser to use with BeautifulSoup
+        :param input_bibcode: string, bibcode of input XML, if known # TODO do I need this? do I need to resolve and return the paper's own bibcode?
+        :param num_char: integer, check that citation paragraph is at least this long; if it's shorter, return the
+            paragraphs before and after the citing paragraph as well
+        :param resolve_refs: boolean, set to True to convert reference IDs to bibcodes # TODO this isn't implemented yet
+        :return: dictionary: {reference1: [cite_context1, cite_context2, ...], ...}
+        """
+        try:
+            d = self.bsstrtodict(text, parser=bsparser)
+        except Exception as err:
+            raise XmlLoadException(err)
+        document = d.article
+
+        self.back_meta = document.back
+        body = document.body
+        xrefs = body.find_all("xref")
+        cites = {}  # {rid_1: ["context 1", "context 2", ...]}
+        for x in xrefs:
+            id = x["rid"]
+            immediate_para = x.find_parent("p")  # try to find the containing paragraph
+            if immediate_para:
+                context = immediate_para.get_text()
+                if len(context) < num_char:
+                    prev_para = immediate_para.find_previous_sibling("p")
+                    if prev_para:
+                        context = prev_para.get_text() + context
+                    next_para = immediate_para.find_next_sibling("p")
+                    if next_para:
+                        context = context + next_para.get_text()
+            else:
+                # reference not contained in a paragraph, so just get whatever context we have
+                context = x.find_parent().get_text()
+            if not context:
+                context = "WARNING NO CONTEXT FOUND"
+            if id in cites.keys():
+                cites[id].append(context)
+            else:
+                cites[id] = [context]
+
+        if not resolve_refs:
+            return cites
+
+        out_cites = {}
+        if self.back_meta is not None:
+            if self.back_meta.find("ref-list"):
+                ref_results = self.back_meta.find("ref-list").find_all("ref")
+            else:
+                ref_results = []
+            for r in ref_results:
+                if r["id"]:
+                    ref_id = r["id"]
+                    bibc = None
+                    for e in r.find_all("ext-link"):
+                        if e.has_attr("ext-link-type") and e["ext-link-type"] == "bibcode":
+                            bibc = e.get_text()
+                            # if we have the bibcode, add to output and remove from temporary dict
+                            out_cites[bibc] = cites.pop(ref_id, [])
+                    if not bibc:
+                        # load the parsed references file (this should happen just once per input file, so somewhere up above)
+                        # parsed references file: /proj/ads_references/resolved/<bibstem>/<volume?>/<bibcode>.iopft.xml.result
+                        # columns of this file: score \s parsed reference bibcode \s raw XML
+                        # check w/ Golnaz for a reader for this file
+                        # look at this file: https://github.com/golnazads/ADSReferencePipeline/blob/master/adsrefpipe/utils.py
+
+                        # if we don't have the bibcode, parse ref and add to a structure to query the API
+                        # authors = r.find_all("surname")
+
+                        # match the raw ref XML from the input file to the parsed reference bibcode
+                        # bibc = "BIB" + ref_id
+
+                        # options for resolving references
+                        # 1. parse references here, pass parsed references to /xml endpoint to get bibcode
+                        #     pros: cleanest, easiest for other people to run the code later (no special /proj access needed)
+                        #     cons: have to parse the reference a bit to pass it to the /xml endpoint (code duplication, re-inventing the wheel, etc.),
+                        #           will likely have to make multiple requests per input file (can only do 16 refs per request) so this will be slower
+                        #           (plus API request overhead) and could be a hit on our API depending on how many files are being processed
+                        # 2. use these files: /proj/ads_references/resolved/<bibstem>/<volume?>/<bibcode>.iopft.xml.result to match raw XML w/ parsed bibcode
+                        #     pros: only need to access one file per XML file, easy to code, no need to do anything special for different formats
+                        #     cons: have to construct the file path (e.g. know the bibstem, volume, bibcode of the input file), have to establish
+                        #           connection to /proj (though pipelines can be set up to do this automatically, harder for individual users to do on
+                        #           localhost)
+                        # 3. reference pipeline database? is that a thing? there's a model for it but not sure if that's running anywhere
+                        #     pros: potentially easier to connect to than /proj (maybe), don't need to know input file's bibcode
+                        #     cons: not sure this is deployed anywhere useful right now, or populated
+                        pass
+
+        return out_cites
