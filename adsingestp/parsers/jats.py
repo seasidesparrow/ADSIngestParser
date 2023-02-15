@@ -913,14 +913,7 @@ class JATSParser(BaseBeautifulSoupParser):
 
         self.back_meta = document.back
         body = document.body
-        xrefs = body.find_all("xref")
-
-        # only include bibliographic references
-        cite_index = []
-        for index, xref in enumerate(xrefs):
-            if xref.get("ref-type", "") == "bibr":
-                cite_index.append(index)
-        xrefs = [xrefs[i] for i in cite_index]
+        xrefs = body.find_all("xref", attrs={"ref-type": "bibr"})
 
         cites = {}  # {rid_1: ["context 1", "context 2", ...]}
         for x in xrefs:
