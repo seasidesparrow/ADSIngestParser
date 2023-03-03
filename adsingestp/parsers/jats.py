@@ -220,10 +220,14 @@ class JATSAffils(object):
                 # get author's name
                 if contrib.find("name") and contrib.find("name").find("surname"):
                     surname = contrib.find("name").find("surname").get_text()
+                elif contrib.find("string-name") and contrib.find("string-name").find("surname"):
+                    surname = contrib.find("string-name").find("surname").get_text()
                 else:
                     surname = ""
                 if contrib.find("name") and contrib.find("name").find("given-names"):
                     given = contrib.find("name").find("given-names").get_text()
+                if contrib.find("string-name") and contrib.find("string-name").find("given-names"):
+                    given = contrib.find("string-name").find("given-names").get_text()
                 else:
                     given = ""
 
