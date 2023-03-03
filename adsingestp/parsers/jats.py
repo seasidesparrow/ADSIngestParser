@@ -226,7 +226,7 @@ class JATSAffils(object):
                     surname = ""
                 if contrib.find("name") and contrib.find("name").find("given-names"):
                     given = contrib.find("name").find("given-names").get_text()
-                if contrib.find("string-name") and contrib.find("string-name").find("given-names"):
+                elif contrib.find("string-name") and contrib.find("string-name").find("given-names"):
                     given = contrib.find("string-name").find("given-names").get_text()
                 else:
                     given = ""
