@@ -2,7 +2,6 @@ import logging
 
 from adsingestp import utils
 from adsingestp.ingest_exceptions import (
-    MissingAuthorsException,
     MissingDoiException,
     MissingTitleException,
     WrongSchemaException,
@@ -96,18 +95,15 @@ class DataciteParser(BaseBeautifulSoupParser):
                     or i.get("schemeURI", "") == "http://orcid.org"
                 ):
                     for ct in contrib_tmp:
-                        try:
-                            ct["orcid"] = i.get_text().replace("https://orcid.org/","")
-                        except Exception as err:
-                            ct["orcid"] = None
+                        orcid = i.get_text().replace("https://orcid.org/", "")
+                        if orcid:
+                            ct["orcid"] = orcid
 
             if not author:
                 for ct in contrib_tmp:
                     ct["role"] = c.get("contributorType", "")
 
             contribs_out += contrib_tmp
-        # if not contribs_out:
-        #     raise MissingAuthorsException("No contributors found for")
 
         if author:
             self.base_metadata["authors"] = contribs_out
