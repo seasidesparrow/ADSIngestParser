@@ -2,7 +2,6 @@ import logging
 
 from adsingestp import utils
 from adsingestp.ingest_exceptions import (
-    MissingAuthorsException,
     MissingDoiException,
     MissingTitleException,
     WrongSchemaException,
@@ -96,15 +95,15 @@ class DataciteParser(BaseBeautifulSoupParser):
                     or i.get("schemeURI", "") == "http://orcid.org"
                 ):
                     for ct in contrib_tmp:
-                        ct["orcid"] = i.get_text()
+                        orcid = i.get_text().replace("https://orcid.org/", "")
+                        if orcid:
+                            ct["orcid"] = orcid
 
             if not author:
                 for ct in contrib_tmp:
                     ct["role"] = c.get("contributorType", "")
 
             contribs_out += contrib_tmp
-        if not contribs_out:
-            raise MissingAuthorsException("No contributors found for")
 
         if author:
             self.base_metadata["authors"] = contribs_out
@@ -128,9 +127,8 @@ class DataciteParser(BaseBeautifulSoupParser):
         if not titles:
             raise MissingTitleException("No title found")
         # we use the English title as the main one, then add any foreign ones
-        # there are several options for "English" in this schema, so check for all of them (lowercase forms)
-        en_key = list({"en", "en-us"} & set(titles.keys()))[0]
-
+        # there are several options for "English" in this schema, so check for all of them (lowercase forms).  If no language specified (key is ""), assume English.
+        en_key = list({"en", "en-us", ""} & set(titles.keys()))[0]
         self.base_metadata["title"] = self._clean_output(titles.pop(en_key))
         title_foreign = []
         lang_foreign = []
@@ -154,7 +152,8 @@ class DataciteParser(BaseBeautifulSoupParser):
                 if t == "Abstract":
                     abstract = s.get_text()
 
-        self.base_metadata["abstract"] = self._clean_output(abstract)
+        if abstract:
+            self.base_metadata["abstract"] = self._clean_output(abstract)
 
     def _parse_publisher(self):
         if self.input_metadata.find("publisher"):

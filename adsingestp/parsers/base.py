@@ -8,7 +8,6 @@ from adsingestp.ingest_exceptions import WrongFormatException
 
 
 class IngestBase(object):
-
     TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
     # TODO will need to add boolean keys here if we want to keep falsy values - check these

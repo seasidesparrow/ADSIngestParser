@@ -27,7 +27,6 @@ class TestJATS(unittest.TestCase):
         self.maxDiff = None
 
     def test_jats(self):
-
         filenames = [
             "jats_apj_859_2_101",
             "jats_mnras_493_1_141",

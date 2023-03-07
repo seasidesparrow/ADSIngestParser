@@ -18,7 +18,6 @@ class TestCrossref(unittest.TestCase):
         self.maxDiff = None
 
     def test_crossref(self):
-
         filenames = [
             "crossref_10.1002_1521-3994",
             "crossref_10.3847_2041-8213",

@@ -17,7 +17,6 @@ class TestArxiv(unittest.TestCase):
         self.outputdir = os.path.join(stubdata_dir, "output")
 
     def test_arxiv(self):
-
         filenames = [
             "arxiv_1711_05739",
             "arxiv_0901_2443",
@@ -63,7 +62,6 @@ class TextArxivMulti(unittest.TestCase):
         self.outputdir = os.path.join(stubdata_dir, "output")
 
     def test_arxiv_multi(self):
-
         filenames = [
             "arxiv_multi_20230125",
         ]

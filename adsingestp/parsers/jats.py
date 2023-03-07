@@ -732,7 +732,6 @@ class JATSParser(BaseBeautifulSoupParser):
                 logger.warning("No DOI for erratum: %s", related)
 
     def _parse_ids(self):
-
         self.base_metadata["ids"] = {}
 
         ids = self.article_meta.find_all("article-id")
