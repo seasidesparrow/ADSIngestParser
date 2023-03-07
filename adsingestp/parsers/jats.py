@@ -146,6 +146,10 @@ class JATSAffils(object):
 
                 if auth.get("email", []):
                     auth["email"] = self._fix_email(auth["email"])
+                # the auth["email"] list may not maintain order when
+                # parsing the same file.  For consistency, sort it.
+                if type(auth["email"]) != str and type(auth["email"]) == list:
+                    auth["email"].sort()
 
                 if auth.get("orcid", []):
                     try:
@@ -156,17 +160,22 @@ class JATSAffils(object):
                             auth["orcid"],
                         )
                         auth["orcid"] = []
+                # the auth["orcid"] list may not maintain order when
+                # parsing the same file.  For consistency, sort it.
+                if type(auth["orcid"]) != str and type(auth["orcid"]) == list:
+                    auth["orcid"].sort()
+
 
                 # note that the ingest schema allows a single email address, but we've extracted all
                 # here in case that changes to allow more than one
                 if auth["email"]:
-                    auth["email"] = sorted(auth["email"])[0]
+                    auth["email"] = auth["email"][0]
                 else:
                     auth["email"] = ""
 
                 # same for orcid
                 if auth["orcid"]:
-                    auth["orcid"] = sorted(auth["orcid"])[0]
+                    auth["orcid"] = auth["orcid"][0]
                 else:
                     auth["orcid"] = ""
 
@@ -294,7 +303,7 @@ class JATSAffils(object):
                 # here in case that changes to allow more than one
                 if orcid:
                     orcid_out = self._fix_orcid(orcid)
-                    orcid_out = sorted(orcid_out)[0]
+                    orcid_out = orcid_out[0]
                 else:
                     orcid_out = ""
 
