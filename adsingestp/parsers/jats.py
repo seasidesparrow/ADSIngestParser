@@ -165,7 +165,6 @@ class JATSAffils(object):
                 if type(auth["orcid"]) != str and type(auth["orcid"]) == list:
                     auth["orcid"].sort()
 
-
                 # note that the ingest schema allows a single email address, but we've extracted all
                 # here in case that changes to allow more than one
                 if auth["email"]:
