@@ -160,13 +160,13 @@ class JATSAffils(object):
                 # note that the ingest schema allows a single email address, but we've extracted all
                 # here in case that changes to allow more than one
                 if auth["email"]:
-                    auth["email"] = auth["email"][0]
+                    auth["email"] = sorted(auth["email"])[0]
                 else:
                     auth["email"] = ""
 
                 # same for orcid
                 if auth["orcid"]:
-                    auth["orcid"] = auth["orcid"][0]
+                    auth["orcid"] = sorted(auth["orcid"])[0]
                 else:
                     auth["orcid"] = ""
 
@@ -294,7 +294,7 @@ class JATSAffils(object):
                 # here in case that changes to allow more than one
                 if orcid:
                     orcid_out = self._fix_orcid(orcid)
-                    orcid_out = orcid_out[0]
+                    orcid_out = sorted(orcid_out)[0]
                 else:
                     orcid_out = ""
 
