@@ -3,6 +3,7 @@ import re
 from collections import OrderedDict
 
 from bs4 import BeautifulSoup
+from ordered_set import OrderedSet
 
 from adsingestp import utils
 from adsingestp.ingest_exceptions import XmlLoadException
@@ -64,7 +65,7 @@ class JATSAffils(object):
         :param email: List of email address(es)
         :return: list of verified email addresses (those that match the regex)
         """
-        email_new = set()
+        email_new = OrderedSet()
 
         email_format = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
         email_parsed = False
@@ -90,7 +91,7 @@ class JATSAffils(object):
         :param orcid: string or list of ORCIDs
         :return: uniqued list of ORCIDs, with URL-part removed if necessary
         """
-        orcid_new = set()
+        orcid_new = OrderedSet()
         if isinstance(orcid, str):
             orcid = [orcid]
         elif not isinstance(orcid, list):
@@ -146,10 +147,6 @@ class JATSAffils(object):
 
                 if auth.get("email", []):
                     auth["email"] = self._fix_email(auth["email"])
-                # the auth["email"] list may not maintain order when
-                # parsing the same file.  For consistency, sort it.
-                if type(auth["email"]) != str and type(auth["email"]) == list:
-                    auth["email"].sort()
 
                 if auth.get("orcid", []):
                     try:
@@ -160,13 +157,10 @@ class JATSAffils(object):
                             auth["orcid"],
                         )
                         auth["orcid"] = []
-                # the auth["orcid"] list may not maintain order when
-                # parsing the same file.  For consistency, sort it.
-                if type(auth["orcid"]) != str and type(auth["orcid"]) == list:
-                    auth["orcid"].sort()
 
-                # note that the ingest schema allows a single email address, but we've extracted all
-                # here in case that changes to allow more than one
+                # note that the ingest schema allows a single email address,
+                # but we've extracted all here in case that changes to allow
+                #  more than one
                 if auth["email"]:
                     auth["email"] = auth["email"][0]
                 else:
