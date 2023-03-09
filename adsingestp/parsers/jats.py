@@ -3,6 +3,7 @@ import re
 from collections import OrderedDict
 
 from bs4 import BeautifulSoup
+from ordered_set import OrderedSet
 
 from adsingestp import utils
 from adsingestp.ingest_exceptions import XmlLoadException
@@ -64,7 +65,7 @@ class JATSAffils(object):
         :param email: List of email address(es)
         :return: list of verified email addresses (those that match the regex)
         """
-        email_new = set()
+        email_new = OrderedSet()
 
         email_format = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
         email_parsed = False
@@ -90,7 +91,7 @@ class JATSAffils(object):
         :param orcid: string or list of ORCIDs
         :return: uniqued list of ORCIDs, with URL-part removed if necessary
         """
-        orcid_new = set()
+        orcid_new = OrderedSet()
         if isinstance(orcid, str):
             orcid = [orcid]
         elif not isinstance(orcid, list):
@@ -157,8 +158,9 @@ class JATSAffils(object):
                         )
                         auth["orcid"] = []
 
-                # note that the ingest schema allows a single email address, but we've extracted all
-                # here in case that changes to allow more than one
+                # note that the ingest schema allows a single email address,
+                # but we've extracted all here in case that changes to allow
+                #  more than one
                 if auth["email"]:
                     auth["email"] = auth["email"][0]
                 else:
@@ -220,10 +222,16 @@ class JATSAffils(object):
                 # get author's name
                 if contrib.find("name") and contrib.find("name").find("surname"):
                     surname = contrib.find("name").find("surname").get_text()
+                elif contrib.find("string-name") and contrib.find("string-name").find("surname"):
+                    surname = contrib.find("string-name").find("surname").get_text()
                 else:
                     surname = ""
                 if contrib.find("name") and contrib.find("name").find("given-names"):
                     given = contrib.find("name").find("given-names").get_text()
+                elif contrib.find("string-name") and contrib.find("string-name").find(
+                    "given-names"
+                ):
+                    given = contrib.find("string-name").find("given-names").get_text()
                 else:
                     given = ""
 
