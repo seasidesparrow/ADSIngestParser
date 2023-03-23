@@ -908,8 +908,10 @@ class JATSParser(BaseBeautifulSoupParser):
         :param input_bibcode: string, bibcode of input XML, if known # TODO do I need this? do I need to resolve and return the paper's own bibcode?
         :param num_char: integer, check that citation paragraph is at least this long; if it's shorter, return the
             paragraphs before and after the citing paragraph as well
-        :param resolve_refs: boolean, set to True to convert reference IDs to bibcodes # TODO this isn't implemented yet
-        :return: dictionary: {reference1: [cite_context1, cite_context2, ...], ...}
+        :param resolve_refs: boolean, set to True to convert reference IDs to bibcodes # TODO this isn't fully implemented yet
+        :return: dictionary: {"resolved": {bibcode1: [cite_context1, cite_context2, ...], ...},
+                              "unresolved": {reference1: [cite_context1, cite_context2, ...], ...}}
+                 where a reference appears in "resolved" if a bibcode has been found for it, and "unresolved" if not
         """
         try:
             d = self.bsstrtodict(text, parser=bsparser)
@@ -920,7 +922,7 @@ class JATSParser(BaseBeautifulSoupParser):
         self.back_meta = document.back
         body = document.body
         xrefs = body.find_all("xref")
-        cites = {}  # {rid_1: ["context 1", "context 2", ...]}
+        raw_cites = {}  # {rid_1: ["context 1", "context 2", ...]}
         for x in xrefs:
             id = x["rid"]
             immediate_para = x.find_parent("p")  # try to find the containing paragraph
@@ -938,15 +940,16 @@ class JATSParser(BaseBeautifulSoupParser):
                 context = x.find_parent().get_text()
             if not context:
                 context = "WARNING NO CONTEXT FOUND"
-            if id in cites.keys():
-                cites[id].append(context)
+            if id in raw_cites.keys():
+                raw_cites[id].append(context)
             else:
-                cites[id] = [context]
+                raw_cites[id] = [context]
 
         if not resolve_refs:
-            return cites
+            out_cites = {"unresolved": raw_cites, "resolved": {}}
+            return out_cites
 
-        out_cites = {}
+        resolved_cites = {}
         if self.back_meta is not None:
             if self.back_meta.find("ref-list"):
                 ref_results = self.back_meta.find("ref-list").find_all("ref")
@@ -959,8 +962,10 @@ class JATSParser(BaseBeautifulSoupParser):
                     for e in r.find_all("ext-link"):
                         if e.has_attr("ext-link-type") and e["ext-link-type"] == "bibcode":
                             bibc = e.get_text()
-                            # if we have the bibcode, add to output and remove from temporary dict
-                            out_cites[bibc] = cites.pop(ref_id, [])
+                            # if we have the bibcode and it matches something in our unresolved dict, add to output
+                            tmp = raw_cites.pop(ref_id, [])
+                            if tmp:
+                                resolved_cites[bibc] = tmp
                     if not bibc:
                         # load the parsed references file (this should happen just once per input file, so somewhere up above)
                         # parsed references file: /proj/ads_references/resolved/<bibstem>/<volume?>/<bibcode>.iopft.xml.result
@@ -989,5 +994,7 @@ class JATSParser(BaseBeautifulSoupParser):
                         #     pros: potentially easier to connect to than /proj (maybe), don't need to know input file's bibcode
                         #     cons: not sure this is deployed anywhere useful right now, or populated
                         pass
+
+        out_cites = {"resolved": resolved_cites, "unresolved": raw_cites}
 
         return out_cites
