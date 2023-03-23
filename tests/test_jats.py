@@ -121,4 +121,19 @@ class TestJATS(unittest.TestCase):
 
             cite_context = parser.citation_context(input_data)
 
+            self.assertEqual(len(cite_context["unresolved"]), 2)
+            self.assertEqual(len(cite_context["resolved"]), 0)
             self.assertEqual(cite_context, output_data)
+
+            cite_context_resolved = parser.citation_context(input_data, resolve_refs=True)
+
+            self.assertEqual(len(cite_context_resolved["unresolved"]), 0)
+            self.assertEqual(len(cite_context_resolved["resolved"]), 2)
+            self.assertEqual(
+                cite_context["unresolved"]["ajab3643bib21"],
+                cite_context_resolved["resolved"]["2011Icar..213..564F"],
+            )
+            self.assertEqual(
+                cite_context["unresolved"]["ajab3643bib22"],
+                cite_context_resolved["resolved"]["2017Icar..286...94F"],
+            )
