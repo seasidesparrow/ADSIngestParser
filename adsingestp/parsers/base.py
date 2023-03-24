@@ -111,6 +111,84 @@ class IngestBase(object):
 
     def format(self, input_dict, format):
         """
+        Converts parsed metadata dictionary into formal data model. Parsed metadata dictionary should be
+        of the following format:
+
+        input_dict: {'abstract': string,
+                     'authors': [{'given': string,
+                                  'middle': string,
+                                  'surname': string,
+                                  'prefix': string,
+                                  'suffix': string,
+                                  'pubraw': string,
+                                  'collab': string,
+                                  'aff': [string],
+                                  'corresp': bool,
+                                  'email': string,
+                                  'orcid': string,
+                                  'xaff': [string],
+                                  'xemail': [string]}
+                                 ],
+                     'contributors': [{'given': string,
+                                       'middle': string,
+                                       'surname': string,
+                                       'prefix': string,
+                                       'suffix': string,
+                                       'pubraw': string,
+                                       'collab': string,
+                                       'aff': [string],
+                                       'corresp': bool,
+                                       'email': string,
+                                       'orcid': string,
+                                       'xaff': [string],
+                                       'xemail': [string]}
+                                      ],
+                     'comments': [{'origin': string,
+                                   'text': string}]
+                     'conf_name': string,
+                     'conf_location': string,
+                     'conf_date': string,
+                     'copyright': string,
+                     'doctype': string,
+                     'edhist_acc': string
+                     'edhist_rec': [string],
+                     'edhist_rev': [string],
+                     'electronic_id': string,
+                     'ids': {'doi': string,
+                             'preprint': {'source': string,
+                                          'id': string},
+                             'pub-id': [{'Identifier': string,
+                                         'attribute': string}]},
+                     'isbn': [{'type': string,
+                               'isbn_str': string}],
+                     'issn': [(pubtype_string, issn_string)],
+                     'issue': string,
+                     'keywords': [{'string': string,
+                                   'system': string}],
+                     'lang_native': string,
+                     'numpages': string,
+                     'openAccess': {'open': bool},
+                     'page_first': string,
+                     'page_last': string,
+                     'page_range': string,
+                     'pubdate_electronic': string,
+                     'pubdate_print': string,
+                     'pubdate_other': [{'type': string,
+                                        'date': string}]
+                     'publication': string,
+                     'publisher': string,
+                     'references': [string],
+                     'relatedto': [{'relationship': string,
+                                    'id': string}],
+                     'series_title': string,
+                     'series_id': string,
+                     'series_id_description': string,
+                     'subtitle': string,
+                     'title': string,
+                     'title_native': string,
+                     'volume': string
+                    }
+
 
         :param input_dict: parsed metadata dictionary to format into formal data model
         :param format: JATS, OtherXML, HTML, Text
