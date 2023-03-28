@@ -127,18 +127,5 @@ class TestJATS(unittest.TestCase):
             with open(test_outfile_tags, "rb") as fp:
                 output_text = fp.read()
                 output_data_tags = json.loads(output_text)
-            cite_context = parser.citation_context(input_data,num_char=1, text_output=False)
-            # json.loads complained about loading a list of beautifulsoup objects
-            # so the lists are quoted in the test_outfile_tags_file.
-            # This also required some manipulation of the citation_context
-            # output to be equivalent strings.
-            # I imagine there is a better way...
-            for key in cite_context.keys():
-                cite_context[key] = str(cite_context[key])
-            cite_context = json.dumps(cite_context)
-            cite_context = cite_context.replace("'",'"')
-            cite_context = cite_context.replace('\\"', "'")
-            cite_context = repr(cite_context)
-            output_data_tags = json.dumps(output_data_tags)
-            output_data_tags = repr(output_data_tags)
+            cite_context = parser.citation_context(input_data, text_output=False)
             self.assertEqual(cite_context, output_data_tags)
