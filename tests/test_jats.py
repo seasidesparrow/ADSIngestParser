@@ -143,5 +143,5 @@ class TestJATS(unittest.TestCase):
             with open(test_outfile_tags, "rb") as fp:
                 output_text = fp.read()
                 output_data_tags = json.loads(output_text)
-            cite_context = parser.citation_context(input_data, text_output=False)
+            cite_context = parser.citation_context(input_data, text_output=False, resolve_refs=False)
             self.assertEqual(cite_context, output_data_tags)
