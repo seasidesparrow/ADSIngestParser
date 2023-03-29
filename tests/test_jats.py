@@ -110,15 +110,16 @@ class TestJATS(unittest.TestCase):
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
             test_outfile = os.path.join(self.outputdir, f + ".json")
+            test_outfile_tags = os.path.join(self.outputdir, f + "_tags.json")
             parser = jats.JATSParser()
 
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
 
+            # Test output as strings
             with open(test_outfile, "rb") as fp:
                 output_text = fp.read()
                 output_data = json.loads(output_text)
-
             cite_context = parser.citation_context(input_data)
 
             self.assertEqual(len(cite_context["unresolved"]), 2)
@@ -137,3 +138,10 @@ class TestJATS(unittest.TestCase):
                 cite_context["unresolved"]["ajab3643bib22"],
                 cite_context_resolved["resolved"]["2017Icar..286...94F"],
             )
+
+            # Test output as BeautifulSoup tags
+            with open(test_outfile_tags, "rb") as fp:
+                output_text = fp.read()
+                output_data_tags = json.loads(output_text)
+            cite_context = parser.citation_context(input_data, text_output=False)
+            self.assertEqual(cite_context, output_data_tags)

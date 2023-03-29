@@ -896,7 +896,13 @@ class JATSParser(BaseBeautifulSoupParser):
         pass
 
     def citation_context(
-        self, text, bsparser="lxml-xml", input_bibcode=None, num_char=500, resolve_refs=False
+        self,
+        text,
+        bsparser="lxml-xml",
+        input_bibcode=None,
+        num_char=500,
+        resolve_refs=False,
+        text_output=True,
     ):
         """
         For a given fulltext XML, find the paragraph(s) each reference is cited in. Returns a dictionary of the
@@ -909,6 +915,7 @@ class JATSParser(BaseBeautifulSoupParser):
         :param num_char: integer, check that citation paragraph is at least this long; if it's shorter, return the
             paragraphs before and after the citing paragraph as well
         :param resolve_refs: boolean, set to True to convert reference IDs to bibcodes # TODO this isn't fully implemented yet
+        :param text_output: boolean, set to True to output citation context as a string, or False to output citation context as a raw XML string
         :return: dictionary: {"resolved": {bibcode1: [cite_context1, cite_context2, ...], ...},
                               "unresolved": {reference1: [cite_context1, cite_context2, ...], ...}}
                  where a reference appears in "resolved" if a bibcode has been found for it, and "unresolved" if not
@@ -921,23 +928,30 @@ class JATSParser(BaseBeautifulSoupParser):
 
         self.back_meta = document.back
         body = document.body
-        xrefs = body.find_all("xref")
+        xrefs = body.find_all("xref", attrs={"ref-type": "bibr"})
         raw_cites = {}  # {rid_1: ["context 1", "context 2", ...]}
         for x in xrefs:
             id = x["rid"]
             immediate_para = x.find_parent("p")  # try to find the containing paragraph
             if immediate_para:
-                context = immediate_para.get_text()
-                if len(context) < num_char:
-                    prev_para = immediate_para.find_previous_sibling("p")
-                    if prev_para:
-                        context = prev_para.get_text() + context
-                    next_para = immediate_para.find_next_sibling("p")
-                    if next_para:
-                        context = context + next_para.get_text()
+                context = immediate_para
+                if text_output:
+                    context = context.get_text()
+                    if len(context) < num_char:
+                        prev_para = immediate_para.find_previous_sibling("p")
+                        if prev_para:
+                            context = prev_para.get_text() + context
+                        next_para = immediate_para.find_next_sibling("p")
+                        if next_para:
+                            context = context + next_para.get_text()
+                else:
+                    context = str(context)
             else:
                 # reference not contained in a paragraph, so just get whatever context we have
-                context = x.find_parent().get_text()
+                if text_output:
+                    context = x.find_parent().get_text()
+                else:
+                    context = str(x.find_parent())
             if not context:
                 context = "WARNING NO CONTEXT FOUND"
             if id in raw_cites.keys():
