@@ -27,7 +27,6 @@ class TestJATS(unittest.TestCase):
         self.maxDiff = None
 
     def test_jats(self):
-
         filenames = [
             "jats_apj_859_2_101",
             "jats_mnras_493_1_141",
@@ -36,6 +35,7 @@ class TestJATS(unittest.TestCase):
             "jats_aip_aipc_2470_040010",
             "jats_aip_amjph_90_286",
             "jats_phrvd_106_023001",
+            "jats_pnas_1715554115",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -121,7 +121,23 @@ class TestJATS(unittest.TestCase):
                 output_text = fp.read()
                 output_data = json.loads(output_text)
             cite_context = parser.citation_context(input_data)
+            
+            self.assertEqual(len(cite_context["unresolved"]), 2)
+            self.assertEqual(len(cite_context["resolved"]), 0)
             self.assertEqual(cite_context, output_data)
+
+            cite_context_resolved = parser.citation_context(input_data, resolve_refs=True)
+
+            self.assertEqual(len(cite_context_resolved["unresolved"]), 0)
+            self.assertEqual(len(cite_context_resolved["resolved"]), 2)
+            self.assertEqual(
+                cite_context["unresolved"]["ajab3643bib21"],
+                cite_context_resolved["resolved"]["2011Icar..213..564F"],
+            )
+            self.assertEqual(
+                cite_context["unresolved"]["ajab3643bib22"],
+                cite_context_resolved["resolved"]["2017Icar..286...94F"],
+            )
 
             # Test output as BeautifulSoup tags
             with open(test_outfile_tags, "rb") as fp:

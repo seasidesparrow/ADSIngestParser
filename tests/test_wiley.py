@@ -28,7 +28,6 @@ class TestWiley(unittest.TestCase):
         self.outputdir = os.path.join(stubdata_dir, "output")
 
     def test_elsevier(self):
-
         filenames = [
             "wiley_jgra_12057",
             "wiley_jgra_57392",

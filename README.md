@@ -28,7 +28,7 @@ Install locally into virtualenv
 ```bash
 virtualenv .venv
 source .venv/bin/activate
-python rtool.py install
+pip install -e .
 ```
 
 ## Documentation

@@ -3,6 +3,7 @@ import re
 from collections import OrderedDict
 
 from bs4 import BeautifulSoup
+from ordered_set import OrderedSet
 
 from adsingestp import utils
 from adsingestp.ingest_exceptions import XmlLoadException
@@ -64,7 +65,7 @@ class JATSAffils(object):
         :param email: List of email address(es)
         :return: list of verified email addresses (those that match the regex)
         """
-        email_new = set()
+        email_new = OrderedSet()
 
         email_format = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
         email_parsed = False
@@ -90,7 +91,7 @@ class JATSAffils(object):
         :param orcid: string or list of ORCIDs
         :return: uniqued list of ORCIDs, with URL-part removed if necessary
         """
-        orcid_new = set()
+        orcid_new = OrderedSet()
         if isinstance(orcid, str):
             orcid = [orcid]
         elif not isinstance(orcid, list):
@@ -157,8 +158,9 @@ class JATSAffils(object):
                         )
                         auth["orcid"] = []
 
-                # note that the ingest schema allows a single email address, but we've extracted all
-                # here in case that changes to allow more than one
+                # note that the ingest schema allows a single email address,
+                # but we've extracted all here in case that changes to allow
+                #  more than one
                 if auth["email"]:
                     auth["email"] = auth["email"][0]
                 else:
@@ -220,10 +222,16 @@ class JATSAffils(object):
                 # get author's name
                 if contrib.find("name") and contrib.find("name").find("surname"):
                     surname = contrib.find("name").find("surname").get_text()
+                elif contrib.find("string-name") and contrib.find("string-name").find("surname"):
+                    surname = contrib.find("string-name").find("surname").get_text()
                 else:
                     surname = ""
                 if contrib.find("name") and contrib.find("name").find("given-names"):
                     given = contrib.find("name").find("given-names").get_text()
+                elif contrib.find("string-name") and contrib.find("string-name").find(
+                    "given-names"
+                ):
+                    given = contrib.find("string-name").find("given-names").get_text()
                 else:
                     given = ""
 
@@ -732,7 +740,6 @@ class JATSParser(BaseBeautifulSoupParser):
                 logger.warning("No DOI for erratum: %s", related)
 
     def _parse_ids(self):
-
         self.base_metadata["ids"] = {}
 
         ids = self.article_meta.find_all("article-id")
@@ -899,10 +906,13 @@ class JATSParser(BaseBeautifulSoupParser):
         :param text: text of fulltext XML to parse
         :param bsparser: parser to use with BeautifulSoup
         :param input_bibcode: string, bibcode of input XML, if known # TODO do I need this? do I need to resolve and return the paper's own bibcode?
-        :param num_char: integer, check that citation paragraph is at least this long; if it's shorter, return the paragraphs before and after the citing paragraph as well
-        :param resolve_refs: boolean, set to True to convert reference IDs to bibcodes # TODO this isn't implemented yet
+        :param num_char: integer, check that citation paragraph is at least this long; if it's shorter, return the
+            paragraphs before and after the citing paragraph as well
+        :param resolve_refs: boolean, set to True to convert reference IDs to bibcodes # TODO this isn't fully implemented yet
         :param text_output: boolean, set to True to output citation context as a string, or False to output citation context as a raw XML string
-        :return: dictionary: {reference1: [cite_context1, cite_context2, ...], ...}
+        :return: dictionary: {"resolved": {bibcode1: [cite_context1, cite_context2, ...], ...},
+                              "unresolved": {reference1: [cite_context1, cite_context2, ...], ...}}
+                 where a reference appears in "resolved" if a bibcode has been found for it, and "unresolved" if not
         """
         try:
             d = self.bsstrtodict(text, parser=bsparser)
@@ -913,8 +923,7 @@ class JATSParser(BaseBeautifulSoupParser):
         self.back_meta = document.back
         body = document.body
         xrefs = body.find_all("xref", attrs={"ref-type": "bibr"})
-
-        cites = {}  # {rid_1: ["context 1", "context 2", ...]}
+        raw_cites = {}  # {rid_1: ["context 1", "context 2", ...]}
         for x in xrefs:
             id = x["rid"]
             immediate_para = x.find_parent("p")  # try to find the containing paragraph
@@ -939,15 +948,16 @@ class JATSParser(BaseBeautifulSoupParser):
                     context = str(x.find_parent())
             if not context:
                 context = "WARNING NO CONTEXT FOUND"
-            if id in cites.keys():
-                cites[id].append(context)
+            if id in raw_cites.keys():
+                raw_cites[id].append(context)
             else:
-                cites[id] = [context]
+                raw_cites[id] = [context]
 
         if not resolve_refs:
-            return cites
+            out_cites = {"unresolved": raw_cites, "resolved": {}}
+            return out_cites
 
-        out_cites = {}
+        resolved_cites = {}
         if self.back_meta is not None:
             if self.back_meta.find("ref-list"):
                 ref_results = self.back_meta.find("ref-list").find_all("ref")
@@ -960,8 +970,10 @@ class JATSParser(BaseBeautifulSoupParser):
                     for e in r.find_all("ext-link"):
                         if e.has_attr("ext-link-type") and e["ext-link-type"] == "bibcode":
                             bibc = e.get_text()
-                            # if we have the bibcode, add to output and remove from temporary dict
-                            out_cites[bibc] = cites.pop(ref_id, [])
+                            # if we have the bibcode and it matches something in our unresolved dict, add to output
+                            tmp = raw_cites.pop(ref_id, [])
+                            if tmp:
+                                resolved_cites[bibc] = tmp
                     if not bibc:
                         # load the parsed references file (this should happen just once per input file, so somewhere up above)
                         # parsed references file: /proj/ads_references/resolved/<bibstem>/<volume?>/<bibcode>.iopft.xml.result
@@ -990,5 +1002,7 @@ class JATSParser(BaseBeautifulSoupParser):
                         #     pros: potentially easier to connect to than /proj (maybe), don't need to know input file's bibcode
                         #     cons: not sure this is deployed anywhere useful right now, or populated
                         pass
+
+        out_cites = {"resolved": resolved_cites, "unresolved": raw_cites}
 
         return out_cites

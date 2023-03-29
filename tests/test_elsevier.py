@@ -26,7 +26,6 @@ class TestElsevier(unittest.TestCase):
         self.outputdir = os.path.join(stubdata_dir, "output")
 
     def test_elsevier(self):
-
         filenames = [
             "els_apss_586_152807",
             "els_icar_382_115019",
