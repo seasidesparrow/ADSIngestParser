@@ -902,7 +902,8 @@ class JATSParser(BaseBeautifulSoupParser):
         input_bibcode=None,
         num_char=500,
         resolve_refs=False,
-        text_output=True):
+        text_output=True,
+    ):
         """
         For a given fulltext XML, find the paragraph(s) each reference is cited in. Returns a dictionary of the
         references (key) and an array of the paragraph(s) they're cited in (value). If resolve_refs is set to True, the
