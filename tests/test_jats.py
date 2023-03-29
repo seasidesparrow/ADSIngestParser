@@ -121,7 +121,7 @@ class TestJATS(unittest.TestCase):
                 output_text = fp.read()
                 output_data = json.loads(output_text)
             cite_context = parser.citation_context(input_data)
-            
+
             self.assertEqual(len(cite_context["unresolved"]), 2)
             self.assertEqual(len(cite_context["resolved"]), 0)
             self.assertEqual(cite_context, output_data)
