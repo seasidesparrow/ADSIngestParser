@@ -31,6 +31,7 @@ class TestCrossref(unittest.TestCase):
             "crossref_cn_10.1093=mnras=stac2975",
             "crossref_cn_10.1093=pasj=psac053",
             "crossref_cn_10.3847=1538-4357=ac8c2f",
+            "crossref_10.1146_annurev.energy.25.1.441"
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")

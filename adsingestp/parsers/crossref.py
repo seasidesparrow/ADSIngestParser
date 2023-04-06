@@ -198,6 +198,10 @@ class CrossrefParser(BaseBeautifulSoupParser):
                 orcid = orcid.replace("http://orcid.org/", "")
                 contrib_tmp["orcid"] = orcid
 
+            if c.find("affiliation"):
+                  affil = [a.get_text() for a in c.find_all("affiliation")]
+                  contrib_tmp["aff"] = affil
+
             role = c.get("contributor_role", "unknown")
 
             if role == "author":
