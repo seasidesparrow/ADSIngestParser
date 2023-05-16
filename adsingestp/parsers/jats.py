@@ -180,7 +180,7 @@ class JATSAffils(object):
         """
         article_metadata = self._decompose(soup=article_metadata, tag="label")
 
-        art_contrib_groups = None
+        art_contrib_groups = []
         if article_metadata.find("contrib-group"):
             art_contrib_groups = article_metadata.find_all("contrib-group")
 
