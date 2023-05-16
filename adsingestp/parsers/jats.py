@@ -161,13 +161,13 @@ class JATSAffils(object):
                 # note that the ingest schema allows a single email address,
                 # but we've extracted all here in case that changes to allow
                 #  more than one
-                if auth["email"]:
+                if auth.get("email", []):
                     auth["email"] = auth["email"][0]
                 else:
                     auth["email"] = ""
 
                 # same for orcid
-                if auth["orcid"]:
+                if auth.get("orcid", []):
                     auth["orcid"] = auth["orcid"][0]
                 else:
                     auth["orcid"] = ""
