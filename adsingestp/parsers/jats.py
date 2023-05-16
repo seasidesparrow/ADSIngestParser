@@ -773,7 +773,7 @@ class JATSParser(BaseBeautifulSoupParser):
             x_name = self._detag(ax.find("meta-name"), [])
             x_value = self._detag(ax.find("meta-value"), [])
             if x_name and x_name == "arxivppt":
-                self.base_metadata["ids"]["preprint"].append({"source": "arxiv", "id": x_value})
+                self.base_metadata["ids"]["preprint"] = {"source": "arxiv", "id": x_value}
 
     def _parse_pubdate(self):
         pub_dates = self.article_meta.find_all("pub-date")
