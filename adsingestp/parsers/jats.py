@@ -161,13 +161,13 @@ class JATSAffils(object):
                 # note that the ingest schema allows a single email address,
                 # but we've extracted all here in case that changes to allow
                 #  more than one
-                if auth["email"]:
+                if auth.get("email", []):
                     auth["email"] = auth["email"][0]
                 else:
                     auth["email"] = ""
 
                 # same for orcid
-                if auth["orcid"]:
+                if auth.get("orcid", []):
                     auth["orcid"] = auth["orcid"][0]
                 else:
                     auth["orcid"] = ""
@@ -180,7 +180,7 @@ class JATSAffils(object):
         """
         article_metadata = self._decompose(soup=article_metadata, tag="label")
 
-        art_contrib_groups = None
+        art_contrib_groups = []
         if article_metadata.find("contrib-group"):
             art_contrib_groups = article_metadata.find_all("contrib-group")
 
@@ -773,7 +773,7 @@ class JATSParser(BaseBeautifulSoupParser):
             x_name = self._detag(ax.find("meta-name"), [])
             x_value = self._detag(ax.find("meta-value"), [])
             if x_name and x_name == "arxivppt":
-                self.base_metadata["ids"]["preprint"].append({"source": "arxiv", "id": x_value})
+                self.base_metadata["ids"]["preprint"] = {"source": "arxiv", "id": x_value}
 
     def _parse_pubdate(self):
         pub_dates = self.article_meta.find_all("pub-date")

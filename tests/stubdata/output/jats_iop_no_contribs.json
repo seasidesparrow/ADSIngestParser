@@ -1,0 +1,68 @@
+{
+  "recordData": {
+    "createdTime": "",
+    "parsedTime": "",
+    "loadType": "fromFile",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "recordOrigin": ""
+  },
+  "editorialHistory": {
+    "receivedDates": [
+      "2023-04-25"
+    ],
+    "acceptedDate": "2023-04-25"
+  },
+  "pubDate": {
+    "electrDate": "2023-05-02",
+    "printDate": "2023-05-01"
+  },
+  "publication": {
+    "pubName": "Europhysics Letters",
+    "publisher": "EDP Sciences, IOP Publishing and Societ\u00e0 Italiana di Fisica",
+    "issueNum": "3",
+    "volumeNum": "142",
+    "pubYear": "2023",
+    "ISSN": [
+      {
+        "pubtype": "ppub",
+        "issnString": "0295-5075"
+      },
+      {
+        "pubtype": "epub",
+        "issnString": "1286-4854"
+      }
+    ]
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.1209/0295-5075/acd024"
+    }
+  ],
+  "publisherIDs": [
+    {
+      "attribute": "publisher-id",
+      "Identifier": "epl23100304"
+    },
+    {
+      "attribute": "manuscript",
+      "Identifier": "acd024"
+    }
+  ],
+  "pagination": {
+    "pageCount": "2",
+    "electronicID": "30000"
+  },
+  "title": {
+    "textEnglish": "Editorial \u2014How to write a good letter for EPL"
+  },
+  "references": [
+    "<ref id=\"epl23100304bib1\"><label>1</label><element-citation publication-type=\"journal\" xlink:type=\"simple\"><person-group person-group-type=\"author\"> <name name-style=\"western\"><surname>Letchford</surname><given-names>Adrian</given-names></name> <name name-style=\"western\"><surname>Moat Helen</surname><given-names>Susannah</given-names></name> <name name-style=\"western\"><surname>Preis</surname><given-names>Tobias</given-names></name> </person-group><year>2015</year><source>R. Soc. Open Sci.</source><volume>2</volume><elocation-id content-type=\"artnum\">150266</elocation-id></element-citation></ref>",
+    "<ref id=\"epl23100304bib2\"><label>2</label><element-citation publication-type=\"journal\" xlink:type=\"simple\"><person-group person-group-type=\"author\"> <name name-style=\"western\"><surname>Li</surname><given-names>Kun</given-names></name> <etal/> </person-group><year>2019</year><source>EPL</source><volume>128</volume><elocation-id content-type=\"artnum\">38002</elocation-id></element-citation></ref>",
+    "<ref id=\"epl23100304bib3\"><label>3</label><element-citation publication-type=\"journal\" xlink:type=\"simple\"><person-group person-group-type=\"author\"> <name name-style=\"western\"><surname>Yang</surname><given-names>Mu</given-names></name> <name name-style=\"western\"><surname>Liu</surname><given-names>Haitao</given-names></name> </person-group><year>2022</year><source>EPL</source><volume>139</volume><elocation-id content-type=\"artnum\">61002</elocation-id></element-citation></ref>"
+  ],
+  "copyright": {
+    "status": true,
+    "statement": "Copyright \u00a9 EPLA, 2023"
+  }
+}
