@@ -289,12 +289,12 @@ class IngestBase(object):
             {
                 "name": {
                     "surname": i.get("surname", ""),
-                    "given-name": i.get("given", ""),
-                    "middle-name": i.get("middle", ""),
+                    "given_name": i.get("given", ""),
+                    "middle_name": i.get("middle", ""),
                     "prefix": i.get("prefix", ""),
                     "suffix": i.get("suffix", ""),
                     "pubraw": i.get("nameraw", ""),
-                    # "native-lang": "XXX",
+                    # "native_lang": "XXX",
                     "collab": i.get("collab", ""),
                 },
                 "affiliation": [
@@ -323,12 +323,12 @@ class IngestBase(object):
                 "contrib": {
                     "name": {
                         "surname": i.get("surname", ""),
-                        "given-name": i.get("given", ""),
-                        "middle-name": i.get("middle", ""),
+                        "given_name": i.get("given", ""),
+                        "middle_name": i.get("middle", ""),
                         "prefix": i.get("prefix", ""),
                         "suffix": i.get("suffix", ""),
                         "pubraw": i.get("nameraw", ""),
-                        # "native-lang": "XXX",
+                        # "native_lang": "XXX",
                         "collab": i.get("collab", ""),
                     },
                     "affiliation": [

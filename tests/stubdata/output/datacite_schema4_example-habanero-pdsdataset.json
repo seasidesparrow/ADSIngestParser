@@ -41,7 +41,7 @@
     {
       "name": {
         "surname": "DeMeo",
-        "given-name": "Francesca"
+        "given_name": "Francesca"
       },
       "attrib": {
         "orcid": "0000-0002-8397-4219"
@@ -50,7 +50,7 @@
     {
       "name": {
         "surname": "Binzel",
-        "given-name": "Richard P."
+        "given_name": "Richard P."
       },
       "attrib": {
         "orcid": "0000-0002-9995-7341"
@@ -59,7 +59,7 @@
     {
       "name": {
         "surname": "Slivan",
-        "given-name": "Stephen M."
+        "given_name": "Stephen M."
       },
       "attrib": {
         "orcid": "0000-0003-3291-8708"
@@ -68,7 +68,7 @@
     {
       "name": {
         "surname": "Bus",
-        "given-name": "Schelte J."
+        "given_name": "Schelte J."
       },
       "attrib": {
         "orcid": "0000-0003-4191-6536"
@@ -81,7 +81,7 @@
       "contrib": {
         "name": {
           "surname": "Small Bodies Node",
-          "given-name": "PDS",
+          "given_name": "PDS",
           "pubraw": "PDS Small Bodies Node"
         }
       }

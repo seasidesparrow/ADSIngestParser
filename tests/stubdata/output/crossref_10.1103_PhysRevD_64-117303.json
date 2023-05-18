@@ -1,4 +1,4 @@
-{"authors": [{"name": {"given-name": "Ernest", "surname": "Ma"}}, {"name": {"given-name": "G.", "surname": "Rajasekaran"}}],
+{"authors": [{"name": {"given_name": "Ernest", "surname": "Ma"}}, {"name": {"given_name": "G.", "surname": "Rajasekaran"}}],
  "pagination": {"electronicID": "117303"},
  "persistentIDs": [{"DOI": "10.1103/PhysRevD.64.117303"}],
  "pubDate": {"electrDate": "2001-11-08"},

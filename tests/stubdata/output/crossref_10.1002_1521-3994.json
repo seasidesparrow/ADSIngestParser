@@ -1,4 +1,4 @@
-{"authors": [{"name": {"given-name": "E.", "surname": "Schmutzer"}}],
+{"authors": [{"name": {"given_name": "E.", "surname": "Schmutzer"}}],
  "pagination": {"firstPage": "1", "lastPage": "19"},
  "persistentIDs": [{"DOI": "10.1002/1521-3994(199903)320:1<1::AID-ASNA1>3.0.CO;2-8"}],
  "pubDate": {"printDate": "1999-03-00"},

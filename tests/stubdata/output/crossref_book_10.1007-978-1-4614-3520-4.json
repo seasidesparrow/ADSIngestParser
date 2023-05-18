@@ -1,5 +1,5 @@
-{"otherContributor": [{"contrib": {"name": {"given-name": "Eric D.", "surname": "Feigelson"}}, "role": "editor"},
-                      {"contrib": {"name": {"given-name": "G. Jogesh", "surname": "Babu"}}, "role": "editor"}],
+{"otherContributor": [{"contrib": {"name": {"given_name": "Eric D.", "surname": "Feigelson"}}, "role": "editor"},
+                      {"contrib": {"name": {"given_name": "G. Jogesh", "surname": "Babu"}}, "role": "editor"}],
  "persistentIDs": [{"DOI": "10.1007/978-1-4614-3520-4", "ISBN": [{"isbnString": "978-1-4614-3519-8", "pubtype": "print"}, {"isbnString": "978-1-4614-3520-4", "pubtype": "electronic"}]}],
  "pubDate": {"printDate": "2012-00-00"},
  "publication": {"pubYear": "2012", "publisher": "Springer New York", "volumeNum": "902", "bookSeries": {"seriesDescription": "issn", "seriesID": "0930-0325", "seriesName": "Lecture Notes in Statistics"}},

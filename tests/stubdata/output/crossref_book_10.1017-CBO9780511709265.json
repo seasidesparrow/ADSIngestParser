@@ -1,4 +1,4 @@
-{"authors": [{"name": {"given-name": "Agnes Mary", "surname": "Clerke"}}],
+{"authors": [{"name": {"given_name": "Agnes Mary", "surname": "Clerke"}}],
  "persistentIDs": [{"DOI": "10.1017/CBO9780511709265", "ISBN": [{"isbnString": "9780511709265", "pubtype": "print"}]}],
  "pubDate": {"electrDate": "2009-00-00", "printDate": "2010-00-00"},
  "publication": {"pubYear": "2010", "publisher": "Cambridge University Press"},

@@ -64,7 +64,7 @@
     {
       "name": {
         "surname": "Abdul Halim",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -79,7 +79,7 @@
     {
       "name": {
         "surname": "Abreu",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -94,7 +94,7 @@
     {
       "name": {
         "surname": "Aglietta",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -113,7 +113,7 @@
     {
       "name": {
         "surname": "Allekotte",
-        "given-name": "I."
+        "given_name": "I."
       },
       "affiliation": [
         {
@@ -128,7 +128,7 @@
     {
       "name": {
         "surname": "Allison",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -140,7 +140,7 @@
     {
       "name": {
         "surname": "Almeida Cheminant",
-        "given-name": "K."
+        "given_name": "K."
       },
       "affiliation": [
         {
@@ -155,7 +155,7 @@
     {
       "name": {
         "surname": "Almela",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -174,7 +174,7 @@
     {
       "name": {
         "surname": "Alvarez-Mu\u00f1iz",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -189,7 +189,7 @@
     {
       "name": {
         "surname": "Ammerman Yebra",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -204,7 +204,7 @@
     {
       "name": {
         "surname": "Anastasi",
-        "given-name": "G. A."
+        "given_name": "G. A."
       },
       "affiliation": [
         {
@@ -223,7 +223,7 @@
     {
       "name": {
         "surname": "Anchordoqui",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -238,7 +238,7 @@
     {
       "name": {
         "surname": "Andrada",
-        "given-name": "B."
+        "given_name": "B."
       },
       "affiliation": [
         {
@@ -250,7 +250,7 @@
     {
       "name": {
         "surname": "Andringa",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -265,7 +265,7 @@
     {
       "name": {
         "surname": "Aramo",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -280,7 +280,7 @@
     {
       "name": {
         "surname": "Ara\u00fajo Ferreira",
-        "given-name": "P. R."
+        "given_name": "P. R."
       },
       "affiliation": [
         {
@@ -295,7 +295,7 @@
     {
       "name": {
         "surname": "Arnone",
-        "given-name": "E."
+        "given_name": "E."
       },
       "affiliation": [
         {
@@ -314,7 +314,7 @@
     {
       "name": {
         "surname": "Arteaga Vel\u00e1zquez",
-        "given-name": "J. C."
+        "given_name": "J. C."
       },
       "affiliation": [
         {
@@ -326,7 +326,7 @@
     {
       "name": {
         "surname": "Asorey",
-        "given-name": "H."
+        "given_name": "H."
       },
       "affiliation": [
         {
@@ -341,7 +341,7 @@
     {
       "name": {
         "surname": "Assis",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -356,7 +356,7 @@
     {
       "name": {
         "surname": "Ave",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -368,7 +368,7 @@
     {
       "name": {
         "surname": "Avila",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -380,7 +380,7 @@
     {
       "name": {
         "surname": "Avocone",
-        "given-name": "E."
+        "given_name": "E."
       },
       "affiliation": [
         {
@@ -399,7 +399,7 @@
     {
       "name": {
         "surname": "Badescu",
-        "given-name": "A. M."
+        "given_name": "A. M."
       },
       "affiliation": [
         {
@@ -414,7 +414,7 @@
     {
       "name": {
         "surname": "Bakalova",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -429,7 +429,7 @@
     {
       "name": {
         "surname": "Balaceanu",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -444,7 +444,7 @@
     {
       "name": {
         "surname": "Barbato",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -463,7 +463,7 @@
     {
       "name": {
         "surname": "Beatty",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -475,7 +475,7 @@
     {
       "name": {
         "surname": "Bellido",
-        "given-name": "J. A."
+        "given_name": "J. A."
       },
       "affiliation": [
         {
@@ -494,7 +494,7 @@
     {
       "name": {
         "surname": "Berat",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -509,7 +509,7 @@
     {
       "name": {
         "surname": "Bertaina",
-        "given-name": "M. E."
+        "given_name": "M. E."
       },
       "affiliation": [
         {
@@ -528,7 +528,7 @@
     {
       "name": {
         "surname": "Bertou",
-        "given-name": "X."
+        "given_name": "X."
       },
       "affiliation": [
         {
@@ -540,7 +540,7 @@
     {
       "name": {
         "surname": "Bhatta",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -555,7 +555,7 @@
     {
       "name": {
         "surname": "Biermann",
-        "given-name": "P. L."
+        "given_name": "P. L."
       },
       "affiliation": [
         {
@@ -570,7 +570,7 @@
     {
       "name": {
         "surname": "Billoir",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -582,7 +582,7 @@
     {
       "name": {
         "surname": "Binet",
-        "given-name": "V."
+        "given_name": "V."
       },
       "affiliation": [
         {
@@ -594,7 +594,7 @@
     {
       "name": {
         "surname": "Bismark",
-        "given-name": "K."
+        "given_name": "K."
       },
       "affiliation": [
         {
@@ -613,7 +613,7 @@
     {
       "name": {
         "surname": "Bister",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -628,7 +628,7 @@
     {
       "name": {
         "surname": "Biteau",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -643,7 +643,7 @@
     {
       "name": {
         "surname": "Blazek",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -658,7 +658,7 @@
     {
       "name": {
         "surname": "Bleve",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -673,7 +673,7 @@
     {
       "name": {
         "surname": "Bl\u00fcmer",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -688,7 +688,7 @@
     {
       "name": {
         "surname": "Boh\u00e1\u010dov\u00e1",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -703,7 +703,7 @@
     {
       "name": {
         "surname": "Boncioli",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -722,7 +722,7 @@
     {
       "name": {
         "surname": "Bonifazi",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -741,7 +741,7 @@
     {
       "name": {
         "surname": "Bonneau Arbeletche",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -756,7 +756,7 @@
     {
       "name": {
         "surname": "Borodai",
-        "given-name": "N."
+        "given_name": "N."
       },
       "affiliation": [
         {
@@ -771,7 +771,7 @@
     {
       "name": {
         "surname": "Brack",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -786,7 +786,7 @@
     {
       "name": {
         "surname": "Bretz",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -798,7 +798,7 @@
     {
       "name": {
         "surname": "Brichetto Orchera",
-        "given-name": "P. G."
+        "given_name": "P. G."
       },
       "affiliation": [
         {
@@ -810,7 +810,7 @@
     {
       "name": {
         "surname": "Briechle",
-        "given-name": "F. L."
+        "given_name": "F. L."
       },
       "affiliation": [
         {
@@ -822,7 +822,7 @@
     {
       "name": {
         "surname": "Buchholz",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -834,7 +834,7 @@
     {
       "name": {
         "surname": "Bueno",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -849,7 +849,7 @@
     {
       "name": {
         "surname": "Buitink",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -864,7 +864,7 @@
     {
       "name": {
         "surname": "Buscemi",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -883,7 +883,7 @@
     {
       "name": {
         "surname": "B\u00fcsken",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -902,7 +902,7 @@
     {
       "name": {
         "surname": "Bwembya",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -921,7 +921,7 @@
     {
       "name": {
         "surname": "Caballero-Mora",
-        "given-name": "K. S."
+        "given_name": "K. S."
       },
       "affiliation": [
         {
@@ -936,7 +936,7 @@
     {
       "name": {
         "surname": "Caccianiga",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -955,7 +955,7 @@
     {
       "name": {
         "surname": "Caracas",
-        "given-name": "I."
+        "given_name": "I."
       },
       "affiliation": [
         {
@@ -967,7 +967,7 @@
     {
       "name": {
         "surname": "Caruso",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -986,7 +986,7 @@
     {
       "name": {
         "surname": "Castellina",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -1005,7 +1005,7 @@
     {
       "name": {
         "surname": "Catalani",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -1020,7 +1020,7 @@
     {
       "name": {
         "surname": "Cataldi",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -1035,7 +1035,7 @@
     {
       "name": {
         "surname": "Cazon",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -1050,7 +1050,7 @@
     {
       "name": {
         "surname": "Cerda",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -1062,7 +1062,7 @@
     {
       "name": {
         "surname": "Cester",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -1078,7 +1078,7 @@
     {
       "name": {
         "surname": "Chinellato",
-        "given-name": "J. A."
+        "given_name": "J. A."
       },
       "affiliation": [
         {
@@ -1093,7 +1093,7 @@
     {
       "name": {
         "surname": "Chirinos",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -1105,7 +1105,7 @@
     {
       "name": {
         "surname": "Chudoba",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -1120,7 +1120,7 @@
     {
       "name": {
         "surname": "Chytka",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -1135,7 +1135,7 @@
     {
       "name": {
         "surname": "Clay",
-        "given-name": "R. W."
+        "given_name": "R. W."
       },
       "affiliation": [
         {
@@ -1150,7 +1150,7 @@
     {
       "name": {
         "surname": "Cobos Cerutti",
-        "given-name": "A. C."
+        "given_name": "A. C."
       },
       "affiliation": [
         {
@@ -1169,7 +1169,7 @@
     {
       "name": {
         "surname": "Colalillo",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -1188,7 +1188,7 @@
     {
       "name": {
         "surname": "Coleman",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -1203,7 +1203,7 @@
     {
       "name": {
         "surname": "Coluccia",
-        "given-name": "M. R."
+        "given_name": "M. R."
       },
       "affiliation": [
         {
@@ -1218,7 +1218,7 @@
     {
       "name": {
         "surname": "Concei\u00e7\u00e3o",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -1233,7 +1233,7 @@
     {
       "name": {
         "surname": "Condorelli",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -1252,7 +1252,7 @@
     {
       "name": {
         "surname": "Consolati",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -1271,7 +1271,7 @@
     {
       "name": {
         "surname": "Contreras",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -1283,7 +1283,7 @@
     {
       "name": {
         "surname": "Convenga",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -1298,7 +1298,7 @@
     {
       "name": {
         "surname": "Correia dos Santos",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -1313,7 +1313,7 @@
     {
       "name": {
         "surname": "Covault",
-        "given-name": "C. E."
+        "given_name": "C. E."
       },
       "affiliation": [
         {
@@ -1328,7 +1328,7 @@
     {
       "name": {
         "surname": "Cristinziani",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -1343,7 +1343,7 @@
     {
       "name": {
         "surname": "Cruz Sanchez",
-        "given-name": "C. S."
+        "given_name": "C. S."
       },
       "affiliation": [
         {
@@ -1355,7 +1355,7 @@
     {
       "name": {
         "surname": "Dasso",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -1374,7 +1374,7 @@
     {
       "name": {
         "surname": "Daumiller",
-        "given-name": "K."
+        "given_name": "K."
       },
       "affiliation": [
         {
@@ -1389,7 +1389,7 @@
     {
       "name": {
         "surname": "Dawson",
-        "given-name": "B. R."
+        "given_name": "B. R."
       },
       "affiliation": [
         {
@@ -1404,7 +1404,7 @@
     {
       "name": {
         "surname": "de Almeida",
-        "given-name": "R. M."
+        "given_name": "R. M."
       },
       "affiliation": [
         {
@@ -1416,7 +1416,7 @@
     {
       "name": {
         "surname": "de Jes\u00fas",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -1432,7 +1432,7 @@
     {
       "name": {
         "surname": "de Jong",
-        "given-name": "S. J."
+        "given_name": "S. J."
       },
       "affiliation": [
         {
@@ -1451,7 +1451,7 @@
     {
       "name": {
         "surname": "de Mello Neto",
-        "given-name": "J. R. T."
+        "given_name": "J. R. T."
       },
       "affiliation": [
         {
@@ -1470,7 +1470,7 @@
     {
       "name": {
         "surname": "De Mitri",
-        "given-name": "I."
+        "given_name": "I."
       },
       "affiliation": [
         {
@@ -1489,7 +1489,7 @@
     {
       "name": {
         "surname": "de Oliveira",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -1501,7 +1501,7 @@
     {
       "name": {
         "surname": "de Oliveira Franco",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -1513,7 +1513,7 @@
     {
       "name": {
         "surname": "de Palma",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -1532,7 +1532,7 @@
     {
       "name": {
         "surname": "de Souza",
-        "given-name": "V."
+        "given_name": "V."
       },
       "affiliation": [
         {
@@ -1547,7 +1547,7 @@
     {
       "name": {
         "surname": "De Vito",
-        "given-name": "E."
+        "given_name": "E."
       },
       "affiliation": [
         {
@@ -1566,7 +1566,7 @@
     {
       "name": {
         "surname": "Del Popolo",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -1585,7 +1585,7 @@
     {
       "name": {
         "surname": "Deligny",
-        "given-name": "O."
+        "given_name": "O."
       },
       "affiliation": [
         {
@@ -1600,7 +1600,7 @@
     {
       "name": {
         "surname": "Deval",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -1616,7 +1616,7 @@
     {
       "name": {
         "surname": "di Matteo",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -1631,7 +1631,7 @@
     {
       "name": {
         "surname": "Dobre",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -1646,7 +1646,7 @@
     {
       "name": {
         "surname": "Dobrigkeit",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -1661,7 +1661,7 @@
     {
       "name": {
         "surname": "D\u2019Olivo",
-        "given-name": "J. C."
+        "given_name": "J. C."
       },
       "affiliation": [
         {
@@ -1673,7 +1673,7 @@
     {
       "name": {
         "surname": "Domingues Mendes",
-        "given-name": "L. M."
+        "given_name": "L. M."
       },
       "affiliation": [
         {
@@ -1688,7 +1688,7 @@
     {
       "name": {
         "surname": "Dorofeev",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -1700,7 +1700,7 @@
     {
       "name": {
         "surname": "dos Anjos",
-        "given-name": "R. C."
+        "given_name": "R. C."
       },
       "affiliation": [
         {
@@ -1715,7 +1715,7 @@
     {
       "name": {
         "surname": "Ebr",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -1730,7 +1730,7 @@
     {
       "name": {
         "surname": "Eman",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -1749,7 +1749,7 @@
     {
       "name": {
         "surname": "Engel",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -1769,7 +1769,7 @@
     {
       "name": {
         "surname": "Epicoco",
-        "given-name": "I."
+        "given_name": "I."
       },
       "affiliation": [
         {
@@ -1788,7 +1788,7 @@
     {
       "name": {
         "surname": "Erdmann",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -1803,7 +1803,7 @@
     {
       "name": {
         "surname": "Etchegoyen",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -1822,7 +1822,7 @@
     {
       "name": {
         "surname": "Falcke",
-        "given-name": "H."
+        "given_name": "H."
       },
       "affiliation": [
         {
@@ -1845,7 +1845,7 @@
     {
       "name": {
         "surname": "Farmer",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -1857,7 +1857,7 @@
     {
       "name": {
         "surname": "Farrar",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -1872,7 +1872,7 @@
     {
       "name": {
         "surname": "Fauth",
-        "given-name": "A. C."
+        "given_name": "A. C."
       },
       "affiliation": [
         {
@@ -1887,7 +1887,7 @@
     {
       "name": {
         "surname": "Fazzini",
-        "given-name": "N."
+        "given_name": "N."
       },
       "affiliation": [
         {
@@ -1899,7 +1899,7 @@
     {
       "name": {
         "surname": "Feldbusch",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -1911,7 +1911,7 @@
     {
       "name": {
         "surname": "Fenu",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -1930,7 +1930,7 @@
     {
       "name": {
         "surname": "Fick",
-        "given-name": "B."
+        "given_name": "B."
       },
       "affiliation": [
         {
@@ -1942,7 +1942,7 @@
     {
       "name": {
         "surname": "Figueira",
-        "given-name": "J. M."
+        "given_name": "J. M."
       },
       "affiliation": [
         {
@@ -1957,7 +1957,7 @@
     {
       "name": {
         "surname": "Filip\u010di\u010d",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -1976,7 +1976,7 @@
     {
       "name": {
         "surname": "Fitoussi",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -1991,7 +1991,7 @@
     {
       "name": {
         "surname": "Flaggs",
-        "given-name": "B."
+        "given_name": "B."
       },
       "affiliation": [
         {
@@ -2003,7 +2003,7 @@
     {
       "name": {
         "surname": "Fodran",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -2015,7 +2015,7 @@
     {
       "name": {
         "surname": "Fujii",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -2030,7 +2030,7 @@
     {
       "name": {
         "surname": "Fuster",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -2049,7 +2049,7 @@
     {
       "name": {
         "surname": "Galea",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -2064,7 +2064,7 @@
     {
       "name": {
         "surname": "Galelli",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -2083,7 +2083,7 @@
     {
       "name": {
         "surname": "Garc\u00eda",
-        "given-name": "B."
+        "given_name": "B."
       },
       "affiliation": [
         {
@@ -2102,7 +2102,7 @@
     {
       "name": {
         "surname": "Gemmeke",
-        "given-name": "H."
+        "given_name": "H."
       },
       "affiliation": [
         {
@@ -2114,7 +2114,7 @@
     {
       "name": {
         "surname": "Gesualdi",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -2133,7 +2133,7 @@
     {
       "name": {
         "surname": "Gherghel-Lascu",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -2148,7 +2148,7 @@
     {
       "name": {
         "surname": "Ghia",
-        "given-name": "P. L."
+        "given_name": "P. L."
       },
       "affiliation": [
         {
@@ -2163,7 +2163,7 @@
     {
       "name": {
         "surname": "Giaccari",
-        "given-name": "U."
+        "given_name": "U."
       },
       "affiliation": [
         {
@@ -2175,7 +2175,7 @@
     {
       "name": {
         "surname": "Giammarchi",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -2187,7 +2187,7 @@
     {
       "name": {
         "surname": "Glombitza",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -2202,7 +2202,7 @@
     {
       "name": {
         "surname": "Gobbi",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -2214,7 +2214,7 @@
     {
       "name": {
         "surname": "Gollan",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -2229,7 +2229,7 @@
     {
       "name": {
         "surname": "Golup",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -2244,7 +2244,7 @@
     {
       "name": {
         "surname": "G\u00f3mez Berisso",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -2259,7 +2259,7 @@
     {
       "name": {
         "surname": "G\u00f3mez Vitale",
-        "given-name": "P. F."
+        "given_name": "P. F."
       },
       "affiliation": [
         {
@@ -2274,7 +2274,7 @@
     {
       "name": {
         "surname": "Gongora",
-        "given-name": "J. P."
+        "given_name": "J. P."
       },
       "affiliation": [
         {
@@ -2286,7 +2286,7 @@
     {
       "name": {
         "surname": "Gonz\u00e1lez",
-        "given-name": "J. M."
+        "given_name": "J. M."
       },
       "affiliation": [
         {
@@ -2301,7 +2301,7 @@
     {
       "name": {
         "surname": "Gonz\u00e1lez",
-        "given-name": "N."
+        "given_name": "N."
       },
       "affiliation": [
         {
@@ -2316,7 +2316,7 @@
     {
       "name": {
         "surname": "Goos",
-        "given-name": "I."
+        "given_name": "I."
       },
       "affiliation": [
         {
@@ -2328,7 +2328,7 @@
     {
       "name": {
         "surname": "G\u00f3ra",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -2343,7 +2343,7 @@
     {
       "name": {
         "surname": "Gorgi",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -2362,7 +2362,7 @@
     {
       "name": {
         "surname": "Gottowik",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -2374,7 +2374,7 @@
     {
       "name": {
         "surname": "Grubb",
-        "given-name": "T. D."
+        "given_name": "T. D."
       },
       "affiliation": [
         {
@@ -2386,7 +2386,7 @@
     {
       "name": {
         "surname": "Guarino",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -2405,7 +2405,7 @@
     {
       "name": {
         "surname": "Guedes",
-        "given-name": "G. P."
+        "given_name": "G. P."
       },
       "affiliation": [
         {
@@ -2417,7 +2417,7 @@
     {
       "name": {
         "surname": "Guido",
-        "given-name": "E."
+        "given_name": "E."
       },
       "affiliation": [
         {
@@ -2432,7 +2432,7 @@
     {
       "name": {
         "surname": "Hahn",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -2448,7 +2448,7 @@
     {
       "name": {
         "surname": "Hamal",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -2463,7 +2463,7 @@
     {
       "name": {
         "surname": "Hampel",
-        "given-name": "M. R."
+        "given_name": "M. R."
       },
       "affiliation": [
         {
@@ -2478,7 +2478,7 @@
     {
       "name": {
         "surname": "Hansen",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -2493,7 +2493,7 @@
     {
       "name": {
         "surname": "Harari",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -2508,7 +2508,7 @@
     {
       "name": {
         "surname": "Harton",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -2520,7 +2520,7 @@
     {
       "name": {
         "surname": "Harvey",
-        "given-name": "V. M."
+        "given_name": "V. M."
       },
       "affiliation": [
         {
@@ -2535,7 +2535,7 @@
     {
       "name": {
         "surname": "Haungs",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -2550,7 +2550,7 @@
     {
       "name": {
         "surname": "Hebbeker",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -2565,7 +2565,7 @@
     {
       "name": {
         "surname": "Heck",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -2577,7 +2577,7 @@
     {
       "name": {
         "surname": "Hojvat",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -2592,7 +2592,7 @@
     {
       "name": {
         "surname": "H\u00f6randel",
-        "given-name": "J. R."
+        "given_name": "J. R."
       },
       "affiliation": [
         {
@@ -2611,7 +2611,7 @@
     {
       "name": {
         "surname": "Horvath",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -2626,7 +2626,7 @@
     {
       "name": {
         "surname": "Hrabovsk\u00fd",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -2641,7 +2641,7 @@
     {
       "name": {
         "surname": "Huege",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -2660,7 +2660,7 @@
     {
       "name": {
         "surname": "Insolia",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -2679,7 +2679,7 @@
     {
       "name": {
         "surname": "Isar",
-        "given-name": "P. G."
+        "given_name": "P. G."
       },
       "affiliation": [
         {
@@ -2694,7 +2694,7 @@
     {
       "name": {
         "surname": "Janecek",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -2709,7 +2709,7 @@
     {
       "name": {
         "surname": "Johnsen",
-        "given-name": "J. A."
+        "given_name": "J. A."
       },
       "affiliation": [
         {
@@ -2721,7 +2721,7 @@
     {
       "name": {
         "surname": "Jurysek",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -2736,7 +2736,7 @@
     {
       "name": {
         "surname": "K\u00e4\u00e4p\u00e4",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -2751,7 +2751,7 @@
     {
       "name": {
         "surname": "Kampert",
-        "given-name": "K. H."
+        "given_name": "K. H."
       },
       "affiliation": [
         {
@@ -2766,7 +2766,7 @@
     {
       "name": {
         "surname": "Keilhauer",
-        "given-name": "B."
+        "given_name": "B."
       },
       "affiliation": [
         {
@@ -2781,7 +2781,7 @@
     {
       "name": {
         "surname": "Khakurdikar",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -2796,7 +2796,7 @@
     {
       "name": {
         "surname": "Kizakke Covilakam",
-        "given-name": "V. V."
+        "given_name": "V. V."
       },
       "affiliation": [
         {
@@ -2815,7 +2815,7 @@
     {
       "name": {
         "surname": "Klages",
-        "given-name": "H. O."
+        "given_name": "H. O."
       },
       "affiliation": [
         {
@@ -2830,7 +2830,7 @@
     {
       "name": {
         "surname": "Kleifges",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -2845,7 +2845,7 @@
     {
       "name": {
         "surname": "Kleinfeller",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -2857,7 +2857,7 @@
     {
       "name": {
         "surname": "Knapp",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -2869,7 +2869,7 @@
     {
       "name": {
         "surname": "Knapp",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -2881,7 +2881,7 @@
     {
       "name": {
         "surname": "Kunka",
-        "given-name": "N."
+        "given_name": "N."
       },
       "affiliation": [
         {
@@ -2893,7 +2893,7 @@
     {
       "name": {
         "surname": "Lachaud",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -2905,7 +2905,7 @@
     {
       "name": {
         "surname": "Lago",
-        "given-name": "B. L."
+        "given_name": "B. L."
       },
       "affiliation": [
         {
@@ -2920,7 +2920,7 @@
     {
       "name": {
         "surname": "Langner",
-        "given-name": "N."
+        "given_name": "N."
       },
       "affiliation": [
         {
@@ -2935,7 +2935,7 @@
     {
       "name": {
         "surname": "Leigui de Oliveira",
-        "given-name": "M. A."
+        "given_name": "M. A."
       },
       "affiliation": [
         {
@@ -2947,7 +2947,7 @@
     {
       "name": {
         "surname": "Lenok",
-        "given-name": "V."
+        "given_name": "V."
       },
       "affiliation": [
         {
@@ -2962,7 +2962,7 @@
     {
       "name": {
         "surname": "Letessier-Selvon",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -2977,7 +2977,7 @@
     {
       "name": {
         "surname": "Lhenry-Yvon",
-        "given-name": "I."
+        "given_name": "I."
       },
       "affiliation": [
         {
@@ -2992,7 +2992,7 @@
     {
       "name": {
         "surname": "Lo Presti",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -3011,7 +3011,7 @@
     {
       "name": {
         "surname": "Lopes",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -3026,7 +3026,7 @@
     {
       "name": {
         "surname": "L\u00f3pez",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -3038,7 +3038,7 @@
     {
       "name": {
         "surname": "Lu",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -3053,7 +3053,7 @@
     {
       "name": {
         "surname": "Luce",
-        "given-name": "Q."
+        "given_name": "Q."
       },
       "affiliation": [
         {
@@ -3068,7 +3068,7 @@
     {
       "name": {
         "surname": "Lundquist",
-        "given-name": "J. P."
+        "given_name": "J. P."
       },
       "affiliation": [
         {
@@ -3083,7 +3083,7 @@
     {
       "name": {
         "surname": "Machado Payeras",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -3098,7 +3098,7 @@
     {
       "name": {
         "surname": "Mandat",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -3113,7 +3113,7 @@
     {
       "name": {
         "surname": "Manning",
-        "given-name": "B. C."
+        "given_name": "B. C."
       },
       "affiliation": [
         {
@@ -3125,7 +3125,7 @@
     {
       "name": {
         "surname": "Manshanden",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -3137,7 +3137,7 @@
     {
       "name": {
         "surname": "Mantsch",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -3152,7 +3152,7 @@
     {
       "name": {
         "surname": "Marafico",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -3167,7 +3167,7 @@
     {
       "name": {
         "surname": "Mariani",
-        "given-name": "F. M."
+        "given_name": "F. M."
       },
       "affiliation": [
         {
@@ -3186,7 +3186,7 @@
     {
       "name": {
         "surname": "Mariazzi",
-        "given-name": "A. G."
+        "given_name": "A. G."
       },
       "affiliation": [
         {
@@ -3201,7 +3201,7 @@
     {
       "name": {
         "surname": "Mari\u015f",
-        "given-name": "I. C."
+        "given_name": "I. C."
       },
       "affiliation": [
         {
@@ -3216,7 +3216,7 @@
     {
       "name": {
         "surname": "Marsella",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -3235,7 +3235,7 @@
     {
       "name": {
         "surname": "Martello",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -3254,7 +3254,7 @@
     {
       "name": {
         "surname": "Martinelli",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -3270,7 +3270,7 @@
     {
       "name": {
         "surname": "Mart\u00ednez Bravo",
-        "given-name": "O."
+        "given_name": "O."
       },
       "affiliation": [
         {
@@ -3285,7 +3285,7 @@
     {
       "name": {
         "surname": "Martins",
-        "given-name": "M. A."
+        "given_name": "M. A."
       },
       "affiliation": [
         {
@@ -3300,7 +3300,7 @@
     {
       "name": {
         "surname": "Mastrodicasa",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -3316,7 +3316,7 @@
     {
       "name": {
         "surname": "Mathes",
-        "given-name": "H. J."
+        "given_name": "H. J."
       },
       "affiliation": [
         {
@@ -3331,7 +3331,7 @@
     {
       "name": {
         "surname": "Matthews",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -3346,7 +3346,7 @@
     {
       "name": {
         "surname": "Matthiae",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -3365,7 +3365,7 @@
     {
       "name": {
         "surname": "Mayotte",
-        "given-name": "E."
+        "given_name": "E."
       },
       "affiliation": [
         {
@@ -3384,7 +3384,7 @@
     {
       "name": {
         "surname": "Mayotte",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -3399,7 +3399,7 @@
     {
       "name": {
         "surname": "Mazur",
-        "given-name": "P. O."
+        "given_name": "P. O."
       },
       "affiliation": [
         {
@@ -3414,7 +3414,7 @@
     {
       "name": {
         "surname": "Medina-Tanco",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -3429,7 +3429,7 @@
     {
       "name": {
         "surname": "Meinert",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -3441,7 +3441,7 @@
     {
       "name": {
         "surname": "Melo",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -3453,7 +3453,7 @@
     {
       "name": {
         "surname": "Menshikov",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -3465,7 +3465,7 @@
     {
       "name": {
         "surname": "Michal",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -3477,7 +3477,7 @@
     {
       "name": {
         "surname": "Micheletti",
-        "given-name": "M. I."
+        "given_name": "M. I."
       },
       "affiliation": [
         {
@@ -3489,7 +3489,7 @@
     {
       "name": {
         "surname": "Miramonti",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -3508,7 +3508,7 @@
     {
       "name": {
         "surname": "Mollerach",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -3523,7 +3523,7 @@
     {
       "name": {
         "surname": "Montanet",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -3538,7 +3538,7 @@
     {
       "name": {
         "surname": "Morejon",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -3553,7 +3553,7 @@
     {
       "name": {
         "surname": "Morello",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -3569,7 +3569,7 @@
     {
       "name": {
         "surname": "M\u00fcller",
-        "given-name": "A. L."
+        "given_name": "A. L."
       },
       "affiliation": [
         {
@@ -3584,7 +3584,7 @@
     {
       "name": {
         "surname": "Mulrey",
-        "given-name": "K."
+        "given_name": "K."
       },
       "affiliation": [
         {
@@ -3603,7 +3603,7 @@
     {
       "name": {
         "surname": "Mussa",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -3618,7 +3618,7 @@
     {
       "name": {
         "surname": "Muzio",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -3633,7 +3633,7 @@
     {
       "name": {
         "surname": "Namasaka",
-        "given-name": "W. M."
+        "given_name": "W. M."
       },
       "affiliation": [
         {
@@ -3645,7 +3645,7 @@
     {
       "name": {
         "surname": "Nasr-Esfahani",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -3657,7 +3657,7 @@
     {
       "name": {
         "surname": "Nellen",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -3672,7 +3672,7 @@
     {
       "name": {
         "surname": "Nicora",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -3687,7 +3687,7 @@
     {
       "name": {
         "surname": "Niculescu-Oglinzanu",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -3699,7 +3699,7 @@
     {
       "name": {
         "surname": "Niechciol",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -3714,7 +3714,7 @@
     {
       "name": {
         "surname": "Nitz",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -3729,7 +3729,7 @@
     {
       "name": {
         "surname": "Norwood",
-        "given-name": "I."
+        "given_name": "I."
       },
       "affiliation": [
         {
@@ -3741,7 +3741,7 @@
     {
       "name": {
         "surname": "Nosek",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -3756,7 +3756,7 @@
     {
       "name": {
         "surname": "Novotny",
-        "given-name": "V."
+        "given_name": "V."
       },
       "affiliation": [
         {
@@ -3771,7 +3771,7 @@
     {
       "name": {
         "surname": "No\u017eka",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -3786,7 +3786,7 @@
     {
       "name": {
         "surname": "Nucita",
-        "given-name": "A"
+        "given_name": "A"
       },
       "affiliation": [
         {
@@ -3805,7 +3805,7 @@
     {
       "name": {
         "surname": "N\u00fa\u00f1ez",
-        "given-name": "L. A."
+        "given_name": "L. A."
       },
       "affiliation": [
         {
@@ -3820,7 +3820,7 @@
     {
       "name": {
         "surname": "Oliveira",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -3832,7 +3832,7 @@
     {
       "name": {
         "surname": "Palatka",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -3847,7 +3847,7 @@
     {
       "name": {
         "surname": "Pallotta",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -3862,7 +3862,7 @@
     {
       "name": {
         "surname": "Parente",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -3877,7 +3877,7 @@
     {
       "name": {
         "surname": "Parra",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -3889,7 +3889,7 @@
     {
       "name": {
         "surname": "Pawlowsky",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -3901,7 +3901,7 @@
     {
       "name": {
         "surname": "Pech",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -3916,7 +3916,7 @@
     {
       "name": {
         "surname": "P\u0229kala",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -3931,7 +3931,7 @@
     {
       "name": {
         "surname": "Pelayo",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -3946,7 +3946,7 @@
     {
       "name": {
         "surname": "Pereira Martins",
-        "given-name": "E. E."
+        "given_name": "E. E."
       },
       "affiliation": [
         {
@@ -3965,7 +3965,7 @@
     {
       "name": {
         "surname": "Perez Armand",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -3977,7 +3977,7 @@
     {
       "name": {
         "surname": "P\u00e9rez Bertolli",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -3996,7 +3996,7 @@
     {
       "name": {
         "surname": "Perrone",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -4015,7 +4015,7 @@
     {
       "name": {
         "surname": "Petrera",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -4034,7 +4034,7 @@
     {
       "name": {
         "surname": "Petrucci",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -4053,7 +4053,7 @@
     {
       "name": {
         "surname": "Pierog",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -4068,7 +4068,7 @@
     {
       "name": {
         "surname": "Pimenta",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4083,7 +4083,7 @@
     {
       "name": {
         "surname": "Platino",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4098,7 +4098,7 @@
     {
       "name": {
         "surname": "Pont",
-        "given-name": "B."
+        "given_name": "B."
       },
       "affiliation": [
         {
@@ -4113,7 +4113,7 @@
     {
       "name": {
         "surname": "Pothast",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4129,7 +4129,7 @@
     {
       "name": {
         "surname": "Pourmohammad Shavar",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4145,7 +4145,7 @@
     {
       "name": {
         "surname": "Privitera",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -4160,7 +4160,7 @@
     {
       "name": {
         "surname": "Prouza",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4175,7 +4175,7 @@
     {
       "name": {
         "surname": "Puyleart",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -4190,7 +4190,7 @@
     {
       "name": {
         "surname": "Querchfeld",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -4205,7 +4205,7 @@
     {
       "name": {
         "surname": "Rautenberg",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -4217,7 +4217,7 @@
     {
       "name": {
         "surname": "Ravignani",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -4232,7 +4232,7 @@
     {
       "name": {
         "surname": "Reininghaus",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4244,7 +4244,7 @@
     {
       "name": {
         "surname": "Ridky",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -4259,7 +4259,7 @@
     {
       "name": {
         "surname": "Riehn",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -4274,7 +4274,7 @@
     {
       "name": {
         "surname": "Risse",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4289,7 +4289,7 @@
     {
       "name": {
         "surname": "Rizi",
-        "given-name": "V."
+        "given_name": "V."
       },
       "affiliation": [
         {
@@ -4308,7 +4308,7 @@
     {
       "name": {
         "surname": "Rodrigues de Carvalho",
-        "given-name": "W."
+        "given_name": "W."
       },
       "affiliation": [
         {
@@ -4323,7 +4323,7 @@
     {
       "name": {
         "surname": "Rodriguez Rojo",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -4335,7 +4335,7 @@
     {
       "name": {
         "surname": "Roncoroni",
-        "given-name": "M. J."
+        "given_name": "M. J."
       },
       "affiliation": [
         {
@@ -4347,7 +4347,7 @@
     {
       "name": {
         "surname": "Rossoni",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -4359,7 +4359,7 @@
     {
       "name": {
         "surname": "Roth",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4374,7 +4374,7 @@
     {
       "name": {
         "surname": "Roulet",
-        "given-name": "E."
+        "given_name": "E."
       },
       "affiliation": [
         {
@@ -4389,7 +4389,7 @@
     {
       "name": {
         "surname": "Rovero",
-        "given-name": "A. C."
+        "given_name": "A. C."
       },
       "affiliation": [
         {
@@ -4404,7 +4404,7 @@
     {
       "name": {
         "surname": "Ruehl",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -4419,7 +4419,7 @@
     {
       "name": {
         "surname": "Saftoiu",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -4434,7 +4434,7 @@
     {
       "name": {
         "surname": "Saharan",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4449,7 +4449,7 @@
     {
       "name": {
         "surname": "Salamida",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -4468,7 +4468,7 @@
     {
       "name": {
         "surname": "Salazar",
-        "given-name": "H."
+        "given_name": "H."
       },
       "affiliation": [
         {
@@ -4483,7 +4483,7 @@
     {
       "name": {
         "surname": "Salina",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -4495,7 +4495,7 @@
     {
       "name": {
         "surname": "Sanabria Gomez",
-        "given-name": "J. D."
+        "given_name": "J. D."
       },
       "affiliation": [
         {
@@ -4507,7 +4507,7 @@
     {
       "name": {
         "surname": "S\u00e1nchez",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -4522,7 +4522,7 @@
     {
       "name": {
         "surname": "Santos",
-        "given-name": "E. M."
+        "given_name": "E. M."
       },
       "affiliation": [
         {
@@ -4537,7 +4537,7 @@
     {
       "name": {
         "surname": "Santos",
-        "given-name": "E."
+        "given_name": "E."
       },
       "affiliation": [
         {
@@ -4552,7 +4552,7 @@
     {
       "name": {
         "surname": "Sarazin",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -4567,7 +4567,7 @@
     {
       "name": {
         "surname": "Sarmento",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -4582,7 +4582,7 @@
     {
       "name": {
         "surname": "Sato",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -4594,7 +4594,7 @@
     {
       "name": {
         "surname": "Savina",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -4609,7 +4609,7 @@
     {
       "name": {
         "surname": "Sch\u00e4fer",
-        "given-name": "C. M."
+        "given_name": "C. M."
       },
       "affiliation": [
         {
@@ -4624,7 +4624,7 @@
     {
       "name": {
         "surname": "Scherini",
-        "given-name": "V."
+        "given_name": "V."
       },
       "affiliation": [
         {
@@ -4643,7 +4643,7 @@
     {
       "name": {
         "surname": "Schieler",
-        "given-name": "H."
+        "given_name": "H."
       },
       "affiliation": [
         {
@@ -4658,7 +4658,7 @@
     {
       "name": {
         "surname": "Schimassek",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4673,7 +4673,7 @@
     {
       "name": {
         "surname": "Schimp",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4688,7 +4688,7 @@
     {
       "name": {
         "surname": "Schl\u00fcter",
-        "given-name": "F."
+        "given_name": "F."
       },
       "affiliation": [
         {
@@ -4707,7 +4707,7 @@
     {
       "name": {
         "surname": "Schmidt",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -4722,7 +4722,7 @@
     {
       "name": {
         "surname": "Scholten",
-        "given-name": "O."
+        "given_name": "O."
       },
       "affiliation": [
         {
@@ -4737,7 +4737,7 @@
     {
       "name": {
         "surname": "Schoorlemmer",
-        "given-name": "H."
+        "given_name": "H."
       },
       "affiliation": [
         {
@@ -4756,7 +4756,7 @@
     {
       "name": {
         "surname": "Schov\u00e1nek",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -4771,7 +4771,7 @@
     {
       "name": {
         "surname": "Schr\u00f6der",
-        "given-name": "F. G."
+        "given_name": "F. G."
       },
       "affiliation": [
         {
@@ -4790,7 +4790,7 @@
     {
       "name": {
         "surname": "Schulte",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -4805,7 +4805,7 @@
     {
       "name": {
         "surname": "Schulz",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -4820,7 +4820,7 @@
     {
       "name": {
         "surname": "Sciutto",
-        "given-name": "S. J."
+        "given_name": "S. J."
       },
       "affiliation": [
         {
@@ -4835,7 +4835,7 @@
     {
       "name": {
         "surname": "Scornavacche",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -4854,7 +4854,7 @@
     {
       "name": {
         "surname": "Segreto",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -4873,7 +4873,7 @@
     {
       "name": {
         "surname": "Sehgal",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -4888,7 +4888,7 @@
     {
       "name": {
         "surname": "Shivashankara",
-        "given-name": "S. U."
+        "given_name": "S. U."
       },
       "affiliation": [
         {
@@ -4900,7 +4900,7 @@
     {
       "name": {
         "surname": "Sigl",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -4915,7 +4915,7 @@
     {
       "name": {
         "surname": "Silli",
-        "given-name": "G."
+        "given_name": "G."
       },
       "affiliation": [
         {
@@ -4927,7 +4927,7 @@
     {
       "name": {
         "surname": "Sima",
-        "given-name": "O."
+        "given_name": "O."
       },
       "affiliation": [
         {
@@ -4939,7 +4939,7 @@
     {
       "name": {
         "surname": "Smau",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -4954,7 +4954,7 @@
     {
       "name": {
         "surname": "\u0160m\u00edda",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -4969,7 +4969,7 @@
     {
       "name": {
         "surname": "Sommers",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -4984,7 +4984,7 @@
     {
       "name": {
         "surname": "Soriano",
-        "given-name": "J. F."
+        "given_name": "J. F."
       },
       "affiliation": [
         {
@@ -4999,7 +4999,7 @@
     {
       "name": {
         "surname": "Squartini",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -5011,7 +5011,7 @@
     {
       "name": {
         "surname": "Stadelmaier",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -5026,7 +5026,7 @@
     {
       "name": {
         "surname": "Stanca",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -5041,7 +5041,7 @@
     {
       "name": {
         "surname": "Stani\u010d",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -5056,7 +5056,7 @@
     {
       "name": {
         "surname": "Stasielak",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -5071,7 +5071,7 @@
     {
       "name": {
         "surname": "Stassi",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -5086,7 +5086,7 @@
     {
       "name": {
         "surname": "Straub",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -5098,7 +5098,7 @@
     {
       "name": {
         "surname": "Streich",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -5114,7 +5114,7 @@
     {
       "name": {
         "surname": "Su\u00e1rez-Dur\u00e1n",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -5129,7 +5129,7 @@
     {
       "name": {
         "surname": "Sudholz",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -5141,7 +5141,7 @@
     {
       "name": {
         "surname": "Suomij\u00e4rvi",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -5156,7 +5156,7 @@
     {
       "name": {
         "surname": "Supanitsky",
-        "given-name": "A. D."
+        "given_name": "A. D."
       },
       "affiliation": [
         {
@@ -5171,7 +5171,7 @@
     {
       "name": {
         "surname": "Szadkowski",
-        "given-name": "Z."
+        "given_name": "Z."
       },
       "affiliation": [
         {
@@ -5186,7 +5186,7 @@
     {
       "name": {
         "surname": "Tapia",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -5201,7 +5201,7 @@
     {
       "name": {
         "surname": "Taricco",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -5220,7 +5220,7 @@
     {
       "name": {
         "surname": "Timmermans",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -5239,7 +5239,7 @@
     {
       "name": {
         "surname": "Tkachenko",
-        "given-name": "O."
+        "given_name": "O."
       },
       "affiliation": [
         {
@@ -5254,7 +5254,7 @@
     {
       "name": {
         "surname": "Tobiska",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -5269,7 +5269,7 @@
     {
       "name": {
         "surname": "Todero Peixoto",
-        "given-name": "C. J."
+        "given_name": "C. J."
       },
       "affiliation": [
         {
@@ -5284,7 +5284,7 @@
     {
       "name": {
         "surname": "Tom\u00e9",
-        "given-name": "B."
+        "given_name": "B."
       },
       "affiliation": [
         {
@@ -5299,7 +5299,7 @@
     {
       "name": {
         "surname": "Torr\u00e8s",
-        "given-name": "Z."
+        "given_name": "Z."
       },
       "affiliation": [
         {
@@ -5314,7 +5314,7 @@
     {
       "name": {
         "surname": "Travaini",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -5329,7 +5329,7 @@
     {
       "name": {
         "surname": "Travnicek",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -5344,7 +5344,7 @@
     {
       "name": {
         "surname": "Trimarelli",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -5363,7 +5363,7 @@
     {
       "name": {
         "surname": "Tueros",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -5378,7 +5378,7 @@
     {
       "name": {
         "surname": "Ulrich",
-        "given-name": "R."
+        "given_name": "R."
       },
       "affiliation": [
         {
@@ -5393,7 +5393,7 @@
     {
       "name": {
         "surname": "Unger",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -5408,7 +5408,7 @@
     {
       "name": {
         "surname": "Vaclavek",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -5423,7 +5423,7 @@
     {
       "name": {
         "surname": "Vacula",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {
@@ -5438,7 +5438,7 @@
     {
       "name": {
         "surname": "Vald\u00e9s Galicia",
-        "given-name": "J. F."
+        "given_name": "J. F."
       },
       "affiliation": [
         {
@@ -5453,7 +5453,7 @@
     {
       "name": {
         "surname": "Valore",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -5472,7 +5472,7 @@
     {
       "name": {
         "surname": "Varela",
-        "given-name": "E."
+        "given_name": "E."
       },
       "affiliation": [
         {
@@ -5487,7 +5487,7 @@
     {
       "name": {
         "surname": "V\u00e1squez-Ram\u00edrez",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -5502,7 +5502,7 @@
     {
       "name": {
         "surname": "Veberi\u010d",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -5517,7 +5517,7 @@
     {
       "name": {
         "surname": "Ventura",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -5532,7 +5532,7 @@
     {
       "name": {
         "surname": "Vergara Quispe",
-        "given-name": "I. D."
+        "given_name": "I. D."
       },
       "affiliation": [
         {
@@ -5547,7 +5547,7 @@
     {
       "name": {
         "surname": "Verzi",
-        "given-name": "V."
+        "given_name": "V."
       },
       "affiliation": [
         {
@@ -5562,7 +5562,7 @@
     {
       "name": {
         "surname": "Vicha",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -5577,7 +5577,7 @@
     {
       "name": {
         "surname": "Villase nor Cendejas",
-        "given-name": "L. M."
+        "given_name": "L. M."
       },
       "affiliation": [
         {
@@ -5589,7 +5589,7 @@
     {
       "name": {
         "surname": "Vink",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -5604,7 +5604,7 @@
     {
       "name": {
         "surname": "Vorobiov",
-        "given-name": "S."
+        "given_name": "S."
       },
       "affiliation": [
         {
@@ -5619,7 +5619,7 @@
     {
       "name": {
         "surname": "Watanabe",
-        "given-name": "C."
+        "given_name": "C."
       },
       "affiliation": [
         {
@@ -5631,7 +5631,7 @@
     {
       "name": {
         "surname": "Watson",
-        "given-name": "A. A."
+        "given_name": "A. A."
       },
       "affiliation": [
         {
@@ -5646,7 +5646,7 @@
     {
       "name": {
         "surname": "Weindl",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -5661,7 +5661,7 @@
     {
       "name": {
         "surname": "Wiencke",
-        "given-name": "L."
+        "given_name": "L."
       },
       "affiliation": [
         {
@@ -5676,7 +5676,7 @@
     {
       "name": {
         "surname": "Wilczy\u0144ski",
-        "given-name": "H."
+        "given_name": "H."
       },
       "affiliation": [
         {
@@ -5691,7 +5691,7 @@
     {
       "name": {
         "surname": "Wittkowski",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -5703,7 +5703,7 @@
     {
       "name": {
         "surname": "Wundheiler",
-        "given-name": "B."
+        "given_name": "B."
       },
       "affiliation": [
         {
@@ -5718,7 +5718,7 @@
     {
       "name": {
         "surname": "Younk",
-        "given-name": "P."
+        "given_name": "P."
       },
       "affiliation": [
         {
@@ -5730,7 +5730,7 @@
     {
       "name": {
         "surname": "Yushkov",
-        "given-name": "A."
+        "given_name": "A."
       },
       "affiliation": [
         {
@@ -5745,7 +5745,7 @@
     {
       "name": {
         "surname": "Zapparrata",
-        "given-name": "O."
+        "given_name": "O."
       },
       "affiliation": [
         {
@@ -5760,7 +5760,7 @@
     {
       "name": {
         "surname": "Zas",
-        "given-name": "E."
+        "given_name": "E."
       },
       "affiliation": [
         {
@@ -5775,7 +5775,7 @@
     {
       "name": {
         "surname": "Zavrtanik",
-        "given-name": "D."
+        "given_name": "D."
       },
       "affiliation": [
         {
@@ -5794,7 +5794,7 @@
     {
       "name": {
         "surname": "Zavrtanik",
-        "given-name": "M."
+        "given_name": "M."
       },
       "affiliation": [
         {

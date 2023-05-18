@@ -57,7 +57,7 @@
     {
       "name": {
         "surname": "Blot",
-        "given-name": "Linda"
+        "given_name": "Linda"
       },
       "affiliation": [
         {
@@ -72,7 +72,7 @@
     {
       "name": {
         "surname": "Corasaniti",
-        "given-name": "Pier Stefano"
+        "given_name": "Pier Stefano"
       },
       "affiliation": [
         {
@@ -87,7 +87,7 @@
     {
       "name": {
         "surname": "Schmidt",
-        "given-name": "Fabian"
+        "given_name": "Fabian"
       },
       "affiliation": [
         {
