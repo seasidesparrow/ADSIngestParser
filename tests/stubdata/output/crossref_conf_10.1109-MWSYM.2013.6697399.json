@@ -36,7 +36,7 @@
     {
       "name": {
         "surname": "Lewark",
-        "given-name": "Ulrich J."
+        "given_name": "Ulrich J."
       },
       "affiliation": [
         {
@@ -47,7 +47,7 @@
     {
       "name": {
         "surname": "Tessmann",
-        "given-name": "Axel"
+        "given_name": "Axel"
       },
       "affiliation": [
         {
@@ -58,7 +58,7 @@
     {
       "name": {
         "surname": "Massler",
-        "given-name": "Hermann"
+        "given_name": "Hermann"
       },
       "affiliation": [
         {
@@ -69,7 +69,7 @@
     {
       "name": {
         "surname": "Leuther",
-        "given-name": "Arnulf"
+        "given_name": "Arnulf"
       },
       "affiliation": [
         {
@@ -80,7 +80,7 @@
     {
       "name": {
         "surname": "Zwick",
-        "given-name": "Thomas"
+        "given_name": "Thomas"
       },
       "affiliation": [
         {
@@ -91,7 +91,7 @@
     {
       "name": {
         "surname": "Kallfass",
-        "given-name": "Ingmar"
+        "given_name": "Ingmar"
       },
       "affiliation": [
         {
