@@ -200,7 +200,8 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
             if c.find("affiliation"):
                 affil = [a.get_text() for a in c.find_all("affiliation")]
-                contrib_tmp["aff"] = affil
+                if affil:
+                    contrib_tmp["aff"] = affil
 
             role = c.get("contributor_role", "unknown")
 
