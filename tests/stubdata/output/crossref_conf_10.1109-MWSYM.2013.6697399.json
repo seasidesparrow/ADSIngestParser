@@ -1,21 +1,106 @@
-{"authors": [{"name": {"given_name": "Ulrich J.", "surname": "Lewark"}},
-             {"name": {"given_name": "Axel", "surname": "Tessmann"}},
-             {"name": {"given_name": "Hermann", "surname": "Massler"}},
-             {"name": {"given_name": "Arnulf", "surname": "Leuther"}},
-             {"name": {"given_name": "Thomas", "surname": "Zwick"}},
-             {"name": {"given_name": "Ingmar", "surname": "Kallfass"}}],
- "pagination": {"firstPage": "1", "lastPage": "3"},
- "persistentIDs": [{"DOI": "10.1109/MWSYM.2013.6697399", "ISBN": [{"isbnString": "978-1-4673-6176-7", "pubtype": "electronic"}]}],
- "pubDate": {"printDate": "2013-06-00"},
- "publication": {"confLocation": "Seattle, WA, USA",
-                 "confName": "2013 IEEE/MTT-S International Microwave Symposium - MTT 2013",
-                 "pubName": "2013 IEEE MTT-S International Microwave Symposium Digest (MTT)",
-                 "pubYear": "2013",
-                 "publisher": "IEEE"},
- "recordData": {"createdTime": "",
-                "loadFormat": "OtherXML",
-                "loadLocation": "",
-                "loadType": "fromFile",
-                "parsedTime": "",
-                "recordOrigin": ""},
- "title": {"textEnglish": "An active 600 GHz frequency multiplier-by-six S-MMIC"}}
+{
+  "recordData": {
+    "createdTime": "",
+    "parsedTime": "",
+    "loadType": "fromFile",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "recordOrigin": ""
+  },
+  "pubDate": {
+    "printDate": "2013-06-00"
+  },
+  "publication": {
+    "pubName": "2013 IEEE MTT-S International Microwave Symposium Digest (MTT)",
+    "confName": "2013 IEEE/MTT-S International Microwave Symposium - MTT 2013",
+    "confLocation": "Seattle, WA, USA",
+    "publisher": "IEEE",
+    "pubYear": "2013"
+  },
+  "persistentIDs": [
+    {
+      "ISBN": [
+        {
+          "pubtype": "electronic",
+          "isbnString": "978-1-4673-6176-7"
+        }
+      ],
+      "DOI": "10.1109/MWSYM.2013.6697399"
+    }
+  ],
+  "pagination": {
+    "firstPage": "1",
+    "lastPage": "3"
+  },
+  "authors": [
+    {
+      "name": {
+        "surname": "Lewark",
+        "given_name": "Ulrich J."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institut fu\u00a8r Hochfrequenztechnik und Elektronik, Karlsruhe, Germany"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Tessmann",
+        "given_name": "Axel"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Fraunhofer IAF, Freiburg, Germany Universita\u00a8t Stuttgart, Institute of Robust Power Semiconductor Systems, Stuttgart, Germany"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Massler",
+        "given_name": "Hermann"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Fraunhofer IAF, Freiburg, Germany Universita\u00a8t Stuttgart, Institute of Robust Power Semiconductor Systems, Stuttgart, Germany"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Leuther",
+        "given_name": "Arnulf"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Fraunhofer IAF, Freiburg, Germany Universita\u00a8t Stuttgart, Institute of Robust Power Semiconductor Systems, Stuttgart, Germany"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Zwick",
+        "given_name": "Thomas"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institut fu\u00a8r Hochfrequenztechnik und Elektronik, Karlsruhe, Germany"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Kallfass",
+        "given_name": "Ingmar"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Fraunhofer IAF, Freiburg, Germany Universita\u00a8t Stuttgart, Institute of Robust Power Semiconductor Systems, Stuttgart, Germany"
+        }
+      ]
+    }
+  ],
+  "title": {
+    "textEnglish": "An active 600 GHz frequency multiplier-by-six S-MMIC"
+  }
+}
