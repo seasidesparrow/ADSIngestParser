@@ -39,6 +39,7 @@ class TestJATS(unittest.TestCase):
             "jats_iop_no_contribs",
             "jats_iop_no_orcid_tag",
             "jats_iop_preprint_in_record",
+            "jats_iop_apj_923_1_47",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -53,6 +54,9 @@ class TestJATS(unittest.TestCase):
                 output_data = json.loads(output_text)
 
             parsed = parser.parse(input_data)
+            #wuw = test_outfile+".wuw"
+            #with open(wuw,"w") as fw:
+            #    fw.write(json.dumps(parsed, indent=2))
 
             # make sure this is valid schema
             try:

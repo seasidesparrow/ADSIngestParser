@@ -336,11 +336,12 @@ class JATSAffils(object):
                     # check and see if the publisher defined an email tag inside an affil (like IOP does)
                     nested_email_list = aff.find_all("ext-link")
                     for e in nested_email_list:
-                        key = e["id"]
-                        value = e.text
-                        # build the cross-reference dictionary to be used later
-                        self.email_xref[key] = value
-                        e.decompose()
+                        if e.get("ext-link-type", None) == "email":
+                            key = e["id"]
+                            value = e.text
+                            # build the cross-reference dictionary to be used later
+                            self.email_xref[key] = value
+                            e.decompose()
 
                     key = aff.get("id", default_key)
                     # special case: get rid of <sup>...
