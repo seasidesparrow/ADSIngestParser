@@ -54,9 +54,6 @@ class TestJATS(unittest.TestCase):
                 output_data = json.loads(output_text)
 
             parsed = parser.parse(input_data)
-            #wuw = test_outfile+".wuw"
-            #with open(wuw,"w") as fw:
-            #    fw.write(json.dumps(parsed, indent=2))
 
             # make sure this is valid schema
             try:
