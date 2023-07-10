@@ -40,6 +40,7 @@ class TestJATS(unittest.TestCase):
             "jats_iop_no_orcid_tag",
             "jats_iop_preprint_in_record",
             "jats_iop_apj_923_1_47",
+            "jats_a+a_multiparagraph_abstract",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
