@@ -543,7 +543,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     dx.decompose()
                 for df in title.find_all("fn"):
                     title_fn_list.append(self._detag(df, self.JATS_TAGSET["abstract"]).strip())
-                df.decompose()
+                    df.decompose()
                 if title_group.find("subtitle"):
                     subtitle = title_group.find("article-title")
                     for dx in subtitle.find_all("ext-link"):
@@ -553,7 +553,7 @@ class JATSParser(BaseBeautifulSoupParser):
                         dx.decompose()
                     for df in subtitle.find_all("fn"):
                         subtitle_fn_list.append(self._detag(df, self.JATS_TAGSET["abstract"]).strip())
-                    df.decompose()
+                        df.decompose()
                     sub_title = self._detag(subtitle, self.JATS_TAGSET["title"]).strip()
                 art_title = self._detag(title, self.JATS_TAGSET["title"]).strip()
             if art_title:
