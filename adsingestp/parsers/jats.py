@@ -545,7 +545,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     title_fn_list.append(self._detag(df, self.JATS_TAGSET["abstract"]).strip())
                     df.decompose()
                 if title_group.find("subtitle"):
-                    subtitle = title_group.find("article-title")
+                    subtitle = title_group.find("subtitle")
                     for dx in subtitle.find_all("ext-link"):
                         self.subtitledoi = dx.find("xlink:href")
                     for dx in subtitle.find_all("xref"):
