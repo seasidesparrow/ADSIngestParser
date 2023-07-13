@@ -336,11 +336,12 @@ class JATSAffils(object):
                     # check and see if the publisher defined an email tag inside an affil (like IOP does)
                     nested_email_list = aff.find_all("ext-link")
                     for e in nested_email_list:
-                        key = e["id"]
-                        value = e.text
-                        # build the cross-reference dictionary to be used later
-                        self.email_xref[key] = value
-                        e.decompose()
+                        if e.get("ext-link-type", None) == "email":
+                            key = e["id"]
+                            value = e.text
+                            # build the cross-reference dictionary to be used later
+                            self.email_xref[key] = value
+                            e.decompose()
 
                     key = aff.get("id", default_key)
                     # special case: get rid of <sup>...
@@ -542,10 +543,16 @@ class JATSParser(BaseBeautifulSoupParser):
             self.base_metadata["title"] = self._detag(title, self.JATS_TAGSET["title"]).strip()
 
         if self.article_meta.find("abstract") and self.article_meta.find("abstract").find("p"):
-            abstract = self._detag(
-                self.article_meta.find("abstract").find("p"), self.JATS_TAGSET["abstract"]
-            )
-            self.base_metadata["abstract"] = abstract
+            abstract_all = self.article_meta.find("abstract").find_all("p")
+            abstract_paragraph_list = list()
+            for paragraph in abstract_all:
+                para = self._detag(paragraph, self.JATS_TAGSET["abstract"])
+                abstract_paragraph_list.append(para)
+            self.base_metadata["abstract"] = "\n".join(abstract_paragraph_list)
+            # abstract = self._detag(
+            #     self.article_meta.find("abstract").find("p"), self.JATS_TAGSET["abstract"]
+            # )
+            # self.base_metadata["abstract"] = abstract
             if title_fn_list:
                 self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
 
