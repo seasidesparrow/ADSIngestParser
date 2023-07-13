@@ -215,6 +215,8 @@ class JATSAffils(object):
                         "corresp": False,
                     }
 
+                if not contrib:
+                    continue
                 l_correspondent = False
                 if contrib.get("corresp", "") == "yes":
                     l_correspondent = True
