@@ -215,9 +215,11 @@ class JATSAffils(object):
                         "corresp": False,
                     }
 
-                if not contrib:
-                    continue
                 l_correspondent = False
+                try:
+                    contrib.get("corresp")
+                except Exception as noop:
+                    continue
                 if contrib.get("corresp", "") == "yes":
                     l_correspondent = True
 
