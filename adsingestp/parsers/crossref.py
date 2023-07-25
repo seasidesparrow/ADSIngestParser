@@ -68,6 +68,49 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
         return isbns_out
 
+    def _get_funding(self, fundgroups):
+        funding = []
+        funding_text = None
+        for fg in fundgroups:
+            funder = None
+            try:
+                name = fg.find("assertion", {"name": "funder_name"}).get_text()
+            except Exception as noop:
+                name = None
+            try:
+                awards = fg.find_all("assertion", {"name": "award_number"})
+                award_list = []
+                for a in awards:
+                    award_list.append(a.get_text())
+                award = ", ".join(award_list)
+            except Exception as noop:
+                award = None
+
+            if name:
+               multiline = []
+               for l in name.split('\n'):
+                   if l.strip():
+                       multiline.append(l.strip())
+               funder = ", ".join(multiline)
+            if award:
+                if funder:
+                    funder = funder + ", Award(s): %s" % award
+                else:
+                    funder = "Award(s): %s" % award
+            if funder:
+                funding.append(funder)
+
+            funding_text = "; ".join(funding)
+
+        return funding_text
+
+    def _parse_funding(self):
+        fundgroups = self.record_meta.find_all("assertion", {"name": "fundgroup"})
+        if not fundgroups:
+            print('wtf, why no data?')
+        funding = self._get_funding(fundgroups)
+        self.base_metadata["funding"] = funding
+
     def _parse_pub(self):
         # journal articles only
         if self.input_metadata.find("journal") and self.input_metadata.find("journal").find(
@@ -158,6 +201,23 @@ class CrossrefParser(BaseBeautifulSoupParser):
         if series_meta.find("issn"):
             self.base_metadata["series_id"] = series_meta.find("issn").get_text()
             self.base_metadata["series_id_description"] = "issn"
+
+    def _parse_posted_content(self):
+        if self.record_meta.find("institution"):
+            inst_name = None
+            if self.record_meta.find("institution").find("institution_name"):
+                inst_name = self.record_meta.find("institution").find("institution_name").get_text()
+            if self.record_meta.find("institution").find("institution_acronym"):
+                if inst_name:
+                    inst_name = inst_name + " (%s)" % self.record_meta.find("institution").find("institution_acronym").get_text()
+                else:
+                    inst_name = self.record_meta.find("institution").find("institution_acronym").get_text()
+            if inst_name:
+                self.base_metadata["publisher"] = inst_name
+        if self.record_meta.find("posted_date"):
+            pubdate = self._get_date(self.record_meta.find("posted_date"))
+            self.base_metadata["pubdate_electronic"] = pubdate
+            
 
     def _parse_title_abstract(self):
         if self.record_meta.find("titles") and self.record_meta.find("titles").find("title"):
@@ -350,10 +410,20 @@ class CrossrefParser(BaseBeautifulSoupParser):
                     self.record_meta = self.input_metadata.find("book_series_metadata").extract()
                 else:
                     self.record_meta = None
+        if self.input_metadata.find("posted_content"):
+            if type_found:
+                raise WrongSchemaException("Too many document types found in CrossRef record")
+            else:
+                type_found = True
+                self.record_type = "posted_content"
+                if self.input_metadata.find("posted_content"):
+                    self.record_meta = self.input_metadata.find("posted_content").extract()
+                else:
+                    self.record_meta = None
 
         if not type_found:
             raise WrongSchemaException(
-                "Didn't find allowed document type (article, conference, book) in CrossRef record"
+                "Didn't find allowed document type (article, conference, book, posted_content) in CrossRef record"
             )
         elif not self.record_meta:
             raise WrongSchemaException(
@@ -380,6 +450,10 @@ class CrossrefParser(BaseBeautifulSoupParser):
             if self.record_meta.find("series_metadata"):
                 self._parse_book_series()
 
+        if self.record_type == "posted_content":
+            self._parse_posted_content()
+
+        self._parse_funding()
         self._parse_issue()
         self._parse_title_abstract()
         self._parse_contrib()
