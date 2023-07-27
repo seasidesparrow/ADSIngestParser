@@ -69,7 +69,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
         return isbns_out
 
     def _get_funding(self, fundgroups):
-        funding = []
+        funding_arr = []
         funding_text = None
         for fg in fundgroups:
             funder = {}
