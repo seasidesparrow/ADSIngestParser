@@ -72,7 +72,8 @@ class CrossrefParser(BaseBeautifulSoupParser):
         funding = []
         funding_text = None
         for fg in fundgroups:
-            funder = None
+            funder = {}
+            """
             try:
                 name = fg.find("assertion", {"name": "funder_name"}).get_text()
             except Exception as noop:
@@ -99,10 +100,10 @@ class CrossrefParser(BaseBeautifulSoupParser):
                     funder = "Award(s): %s" % award
             if funder:
                 funding.append(funder)
+            """
 
-            funding_text = "; ".join(funding)
 
-        return funding_text
+        return funding_arr
 
     def _parse_funding(self):
         fundgroups = self.record_meta.find_all("assertion", {"name": "fundgroup"})
