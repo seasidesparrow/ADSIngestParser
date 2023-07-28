@@ -73,44 +73,30 @@ class CrossrefParser(BaseBeautifulSoupParser):
         funding_text = None
         for fg in fundgroups:
             funder = {}
-            """
-            try:
-                name = fg.find("assertion", {"name": "funder_name"}).get_text()
-            except Exception as noop:
-                name = None
-            try:
-                awards = fg.find_all("assertion", {"name": "award_number"})
-                award_list = []
-                for a in awards:
-                    award_list.append(a.get_text())
-                award = ", ".join(award_list)
-            except Exception as noop:
-                award = None
+            funder_name = fg.find("assertion", {"name": "funder_name"}).extract()
+            funder_award = fg.find("assertion", {"name": "award_number"}).extract()
+            if funder_name:
+                funder_id = funder_name.find("assertion", {"name": "funder_identifier"}).extract()
+            else:
+                funder_id = None
 
-            if name:
-               multiline = []
-               for l in name.split('\n'):
-                   if l.strip():
-                       multiline.append(l.strip())
-               funder = ", ".join(multiline)
-            if award:
-                if funder:
-                    funder = funder + ", Award(s): %s" % award
-                else:
-                    funder = "Award(s): %s" % award
+            if funder_name:
+                funder.setdefault("agencyname", funder_name.get_text())
+            if funder_id:
+                funder.setdefault("agencyid", {"idvalue": funder_id.get_text()})
+            if funder_award:
+                funder.setdefault("awardnumber", funder_award.get_text())
+                
             if funder:
-                funding.append(funder)
-            """
-
+                funding_arr.append(funder)
 
         return funding_arr
 
     def _parse_funding(self):
         fundgroups = self.record_meta.find_all("assertion", {"name": "fundgroup"})
-        if not fundgroups:
-            print('wtf, why no data?')
-        funding = self._get_funding(fundgroups)
-        self.base_metadata["funding"] = funding
+        if fundgroups:
+            funding = self._get_funding(fundgroups)
+            self.base_metadata["funding"] = funding
 
     def _parse_pub(self):
         # journal articles only
