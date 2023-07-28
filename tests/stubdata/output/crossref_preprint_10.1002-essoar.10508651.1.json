@@ -1,0 +1,276 @@
+{
+  "recordData": {
+    "createdTime": "",
+    "parsedTime": "",
+    "loadType": "fromFile",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "recordOrigin": ""
+  },
+  "pubDate": {
+    "electrDate": "2021-11-08"
+  },
+  "publication": {
+    "publisher": "Earth and Space Science Open Archive (ESSOAr)",
+    "pubYear": "2021"
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.1002/essoar.10508651.1"
+    }
+  ],
+  "authors": [
+    {
+      "name": {
+        "surname": "Livi",
+        "given_name": "Roberto"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-0396-0547"
+      }
+    },
+    {
+      "name": {
+        "surname": "Larson",
+        "given_name": "Davin E"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Kasper",
+        "given_name": "Justin C"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Michigan"
+        },
+        {
+          "affPubRaw": "Smithsonian Astrophysical Observatory"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Abiad",
+        "given_name": "Robert"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Case",
+        "given_name": "Anthony W"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Smithsonian Astrophysical Observatory"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Klein",
+        "given_name": "Kristopher G"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Michigan"
+        },
+        {
+          "affPubRaw": "University of Arizona"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Curtis",
+        "given_name": "David W"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Dalton",
+        "given_name": "Gregory"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Stevens",
+        "given_name": "Michael"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Smithsonian Astrophysical Observatory"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Korreck",
+        "given_name": "Kelly E"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Smithsonian Astrophysical Observatory"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Ho",
+        "given_name": "George"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Applied Physics Laboratory, Johns Hopkins University"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Robinson",
+        "given_name": "Miles"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Tiu",
+        "given_name": "Chris"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "NASA"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Whittlesey",
+        "given_name": "Phyllis L"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Verniero",
+        "given_name": "J L"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Halekas",
+        "given_name": "Jasper"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Iowa"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Mcfadden",
+        "given_name": "James"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Marckwordt",
+        "given_name": "Mario"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Slagle",
+        "given_name": "Amanda"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Abatcha",
+        "given_name": "Mamuda"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Rahmati",
+        "given_name": "Ali"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of California"
+        }
+      ]
+    }
+  ],
+  "title": {
+    "textEnglish": "The Solar Probe ANalyzer -Ions on Parker Solar Probe"
+  },
+  "funding": [
+    {
+      "agencyname": "National Aeronautics and Space Administration",
+      "agencyid": {
+        "idvalue": "100000104"
+      },
+      "awardnumber": "NNN06AA01C"
+    }
+  ]
+}
