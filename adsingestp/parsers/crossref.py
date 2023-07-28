@@ -81,11 +81,11 @@ class CrossrefParser(BaseBeautifulSoupParser):
                 funder_id = None
 
             if funder_name:
-                funder.setdefault("agencyname", funder_name.get_text())
+                funder.setdefault("agencyname", funder_name.get_text().strip())
             if funder_id:
-                funder.setdefault("agencyid", {"idvalue": funder_id.get_text()})
+                funder.setdefault("agencyid", {"idvalue": funder_id.get_text().strip()})
             if funder_award:
-                funder.setdefault("awardnumber", funder_award.get_text())
+                funder.setdefault("awardnumber", funder_award.get_text().strip())
                 
             if funder:
                 funding_arr.append(funder)
