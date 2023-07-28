@@ -1,0 +1,68 @@
+{
+  "recordData": {
+    "createdTime": "",
+    "parsedTime": "",
+    "loadType": "fromFile",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "recordOrigin": ""
+  },
+  "pubDate": {
+    "electrDate": "2022-04-17"
+  },
+  "publication": {
+    "pubYear": "2022"
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.31223/X5WD2C"
+    }
+  ],
+  "authors": [
+    {
+      "name": {
+        "surname": "Halamka",
+        "given_name": "Toby"
+      }
+    },
+    {
+      "name": {
+        "surname": "Raberg",
+        "given_name": "Jonathan"
+      }
+    },
+    {
+      "name": {
+        "surname": "McFarlin",
+        "given_name": "Jamie"
+      }
+    },
+    {
+      "name": {
+        "surname": "Younkin",
+        "given_name": "Adam"
+      }
+    },
+    {
+      "name": {
+        "surname": "Mulligan",
+        "given_name": "Christopher"
+      }
+    },
+    {
+      "name": {
+        "surname": "Liu",
+        "given_name": "Xiao-Lei"
+      }
+    },
+    {
+      "name": {
+        "surname": "Kopf",
+        "given_name": "Sebastian"
+      }
+    }
+  ],
+  "title": {
+    "textEnglish": "Production of diverse brGDGTs by Acidobacterium Solibacter usitatus in response to temperature, pH, and O2 provides a culturing perspective on brGDGT paleoproxies and biosynthesis"
+  }
+}

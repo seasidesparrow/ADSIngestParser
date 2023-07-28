@@ -452,7 +452,7 @@ class IngestBase(object):
 
         # output["pubnote"] = "XXX" # TODO need an example
         #
-        # output["funding"] = "XXX" # TODO need an example
+        output["funding"] = input_dict.get("funding", [])
         #
         # output["version"] = "XXX" # TODO need an example
 
