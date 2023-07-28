@@ -70,13 +70,15 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
     def _get_funding(self, fundgroups):
         funding_arr = []
-        funding_text = None
         for fg in fundgroups:
             funder = {}
-            funder_name = fg.find("assertion", {"name": "funder_name"}).extract()
-            funder_award = fg.find("assertion", {"name": "award_number"}).extract()
+            funder_name = fg.find("assertion", {"name": "funder_name"})
+            funder_award = fg.find("assertion", {"name": "award_number"})
             if funder_name:
-                funder_id = funder_name.find("assertion", {"name": "funder_identifier"}).extract()
+                funder_id = funder_name.find("assertion", {"name": "funder_identifier"})
+                if funder_id:
+                    funder_id = funder_id.extract()
+                funder_name = funder_name.extract()
             else:
                 funder_id = None
 
@@ -85,8 +87,8 @@ class CrossrefParser(BaseBeautifulSoupParser):
             if funder_id:
                 funder.setdefault("agencyid", {"idvalue": funder_id.get_text().strip()})
             if funder_award:
-                funder.setdefault("awardnumber", funder_award.get_text().strip())
-                
+                funder.setdefault("awardnumber", funder_award.extract().get_text().strip())
+
             if funder:
                 funding_arr.append(funder)
 
@@ -193,18 +195,27 @@ class CrossrefParser(BaseBeautifulSoupParser):
         if self.record_meta.find("institution"):
             inst_name = None
             if self.record_meta.find("institution").find("institution_name"):
-                inst_name = self.record_meta.find("institution").find("institution_name").get_text()
+                inst_name = (
+                    self.record_meta.find("institution").find("institution_name").get_text()
+                )
             if self.record_meta.find("institution").find("institution_acronym"):
                 if inst_name:
-                    inst_name = inst_name + " (%s)" % self.record_meta.find("institution").find("institution_acronym").get_text()
+                    inst_name = (
+                        inst_name
+                        + " (%s)"
+                        % self.record_meta.find("institution")
+                        .find("institution_acronym")
+                        .get_text()
+                    )
                 else:
-                    inst_name = self.record_meta.find("institution").find("institution_acronym").get_text()
+                    inst_name = (
+                        self.record_meta.find("institution").find("institution_acronym").get_text()
+                    )
             if inst_name:
                 self.base_metadata["publisher"] = inst_name
         if self.record_meta.find("posted_date"):
             pubdate = self._get_date(self.record_meta.find("posted_date"))
             self.base_metadata["pubdate_electronic"] = pubdate
-            
 
     def _parse_title_abstract(self):
         if self.record_meta.find("titles") and self.record_meta.find("titles").find("title"):
@@ -242,7 +253,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
             if c.find("ORCID"):
                 orcid = c.find("ORCID").get_text()
-                orcid = orcid.replace("http://orcid.org/", "")
+                orcid = orcid.replace("http://orcid.org/", "").replace("https://orcid.org/", "")
                 contrib_tmp["orcid"] = orcid
 
             if c.find("affiliation"):
