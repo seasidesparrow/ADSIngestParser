@@ -832,7 +832,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 license_text = p.find("license-p")
                 if license_text:
                     license_uri = license_text.find("ext-link")
-                    self.base_metadata.setdefault("openAccess", {}).setdefault("license", self._detag(license_uri, []))
+                    self.base_metadata.setdefault("openAccess", {}).setdefault("license", self._detag(license_text, []))
                     if license_uri:
                         license_uri = license_uri["xlink:href"]
                         self.base_metadata.setdefault("openAccess", {}).setdefault("licenseURL", self._detag(license_uri, []))
