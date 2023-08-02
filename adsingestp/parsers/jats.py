@@ -826,8 +826,18 @@ class JATSParser(BaseBeautifulSoupParser):
         # Check for open-access / "Permissions" field
         permissions = self.article_meta.find("permissions").find_all("license")
         for p in permissions:
-            if p.find("license-type") == "open":
+            if p.find("license-type") == "open" or p.find("license-type") == "open-access":
                 self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
+            if p.find("license-p"):
+                license_text = p.find("license-p")
+                if license_text:
+                    license_uri = license_text.find("ext-link")
+                    self.base_metadata.setdefault("openAccess", {}).setdefault("license", self._detag(license_uri, []))
+                    if license_uri:
+                        license_uri = license_uri["xlink:href"]
+                        self.base_metadata.setdefault("openAccess", {}).setdefault("licenseURL", self._detag(license_uri, []))
+                       
+                     
 
     def _parse_page(self):
         fpage = self.article_meta.find("fpage")
