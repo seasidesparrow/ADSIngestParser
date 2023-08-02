@@ -826,7 +826,7 @@ class JATSParser(BaseBeautifulSoupParser):
         # Check for open-access / "Permissions" field
         permissions = self.article_meta.find("permissions").find_all("license")
         for p in permissions:
-            if p.find("license-type") == "open" or p.find("license-type") == "open-access":
+            if p.get("license-type", None) == "open" or p.get("license-type", None) == "open-access":
                 self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
             if p.find("license-p"):
                 license_text = p.find("license-p")
