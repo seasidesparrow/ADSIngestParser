@@ -733,7 +733,10 @@ class JATSParser(BaseBeautifulSoupParser):
         issn_all = self.journal_meta.find_all("issn")
         issns = []
         for i in issn_all:
-            issns.append((i["pub-type"], self._detag(i, [])))
+            if i.get("pub-type", None):
+                issns.append((i["pub-type"], self._detag(i, [])))
+            else:
+                issns.append(("", self._detag(i, [])))
         self.base_metadata["issn"] = issns
 
         isbn_all = self.article_meta.find_all("isbn")
