@@ -278,5 +278,8 @@
   "copyright": {
     "status": true,
     "statement": "\u00a9 2021. The American Astronomical Society. All rights reserved."
+  },
+  "openAccess": {
+    "license": "This article is available under the terms of the IOP-Standard License."
   }
 }

@@ -3571,5 +3571,10 @@
   "copyright": {
     "status": true,
     "statement": "Copyright \u00a9 2018 the Author(s). Published by PNAS."
+  },
+  "openAccess": {
+    "open": true,
+    "license": "This open access article is distributed under Creative Commons Attribution-NonCommercial-NoDerivatives License 4.0 (CC BY-NC-ND).",
+    "licenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
   }
 }

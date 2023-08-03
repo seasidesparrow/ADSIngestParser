@@ -178,6 +178,8 @@
     "statement": "\u00a9 2023 The Author(s)"
   },
   "openAccess": {
-    "open": true
+    "open": true,
+    "license": "\nPublished by IOP Publishing Ltd on behalf of Sissa Medialab. Original content from this work may be used under the terms of the Creative Commons Attribution 4.0 licence. Any further distribution of this work must maintain attribution to the author(s) and the title of the work, journal citation and DOI.",
+    "licenseURL": "http://creativecommons.org/licenses/by/4.0"
   }
 }

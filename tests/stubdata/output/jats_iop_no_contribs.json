@@ -64,5 +64,9 @@
   "copyright": {
     "status": true,
     "statement": "Copyright \u00a9 EPLA, 2023"
+  },
+  "openAccess": {
+    "license": "This article is available under the terms of the IOP-Standard License.",
+    "licenseURL": "https://publishingsupport.iopscience.iop.org/iop-standard/v1"
   }
 }
