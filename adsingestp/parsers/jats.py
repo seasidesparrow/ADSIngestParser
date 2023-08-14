@@ -15,11 +15,10 @@ logger = logging.getLogger(__name__)
 # -- we will never need to pass any url to an HTTP client during parsing!
 try:
     import warnings
-    warnings.filterwarnings("ignore",
-                            category=MarkupResemblesLocatorWarning,
-                            module="bs4")
-except:
-    pass
+
+    warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning, module="bs4")
+except Exception as err:
+    logger.warning("Problem filtering BeautifulSoup warnings: %s" % err)
 
 
 class JATSAffils(object):

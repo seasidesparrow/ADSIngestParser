@@ -2,9 +2,8 @@ import datetime
 import json
 import os
 import unittest
-import pytest
-import bs4
 
+import pytest
 from adsingestschema import ads_schema_validator
 
 from adsingestp.parsers import jats
@@ -12,7 +11,7 @@ from adsingestp.parsers import jats
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
-@pytest.mark.filterwarnings('ignore::bs4.MarkupResemblesLocatorWarning')
+@pytest.mark.filterwarnings("ignore::bs4.MarkupResemblesLocatorWarning")
 class TestJATS(unittest.TestCase):
     def setUp(self):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
