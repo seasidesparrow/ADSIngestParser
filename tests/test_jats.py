@@ -2,23 +2,17 @@ import datetime
 import json
 import os
 import unittest
+import pytest
+import bs4
 
 from adsingestschema import ads_schema_validator
 
 from adsingestp.parsers import jats
 
-# import logging
-# proj_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, "adsingestp"))
-# logging.basicConfig(
-#     format="%(levelname)s %(asctime)s %(message)s",
-#     filename=os.path.join(proj_dir, "logs", "parser.log"),
-#     level=logging.INFO,
-#     force=True,
-# )
-
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
+@pytest.mark.filterwarnings('ignore::bs4.MarkupResemblesLocatorWarning')
 class TestJATS(unittest.TestCase):
     def setUp(self):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")

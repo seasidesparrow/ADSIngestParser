@@ -2,7 +2,7 @@ import logging
 import re
 from collections import OrderedDict
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, MarkupResemblesLocatorWarning
 from ordered_set import OrderedSet
 
 from adsingestp import utils
@@ -10,6 +10,16 @@ from adsingestp.ingest_exceptions import XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
 logger = logging.getLogger(__name__)
+
+# Ignore the specific warning that BeautifulSoup throws if it finds a URL
+# -- we will never need to pass any url to an HTTP client during parsing!
+try:
+    import warnings
+    warnings.filterwarnings("ignore",
+                            category=MarkupResemblesLocatorWarning,
+                            module="bs4")
+except:
+    pass
 
 
 class JATSAffils(object):
@@ -446,7 +456,9 @@ class JATSParser(BaseBeautifulSoupParser):
         """
         # note that parser=lxml is recommended here - if the more stringent lxml-xml is used,
         # the output is slightly different and the code will need to be modified
+
         newr = BeautifulSoup(str(r), "lxml")
+
         if newr.find_all():
             tag_list = list(set([x.name for x in newr.find_all()]))
         else:
