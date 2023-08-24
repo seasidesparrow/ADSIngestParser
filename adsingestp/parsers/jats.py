@@ -555,6 +555,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 for df in title.find_all("fn"):
                     title_fn_list.append(self._detag(df, self.JATS_TAGSET["abstract"]).strip())
                     df.decompose()
+                art_title = self._detag(title, self.JATS_TAGSET["title"]).strip()
                 if title_group.find("subtitle"):
                     subtitle = title_group.find("subtitle")
                     for dx in subtitle.find_all("ext-link"):
@@ -570,7 +571,6 @@ class JATSParser(BaseBeautifulSoupParser):
                         )
                         df.decompose()
                     sub_title = self._detag(subtitle, self.JATS_TAGSET["title"]).strip()
-                art_title = self._detag(title, self.JATS_TAGSET["title"]).strip()
             if art_title:
                 self.base_metadata["title"] = art_title
                 if sub_title:
@@ -589,6 +589,8 @@ class JATSParser(BaseBeautifulSoupParser):
             # self.base_metadata["abstract"] = abstract
             if title_fn_list:
                 self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
+            if subtitle_fn_list:
+                self.base_metadata["abstract"] += "  " + " ".join(subtitle_fn_list)
 
     def _parse_author(self):
         auth_affil = JATSAffils()
@@ -845,15 +847,15 @@ class JATSParser(BaseBeautifulSoupParser):
             if p.find("license-p"):
                 license_text = p.find("license-p")
                 if license_text:
-                    license_uri = license_text.find("ext-link")
                     self.base_metadata.setdefault("openAccess", {}).setdefault(
                         "license", license_text.get_text()
                     )
+                    license_uri = license_text.find("ext-link")
                     if license_uri:
                         if license_uri.get("xlink:href", None):
-                            license_uri = license_uri.get("xlink:href", None)
+                            license_uri_value = license_uri.get("xlink:href", None)
                             self.base_metadata.setdefault("openAccess", {}).setdefault(
-                                "licenseURL", self._detag(license_uri, [])
+                                "licenseURL", self._detag(license_uri_value, [])
                             )
 
     def _parse_page(self):

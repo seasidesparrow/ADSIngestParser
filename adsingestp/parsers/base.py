@@ -442,10 +442,6 @@ class IngestBase(object):
             "open": input_dict.get("openAccess", {}).get("open", False),
             "license": input_dict.get("openAccess", {}).get("license", ""),
             "licenseURL": input_dict.get("openAccess", {}).get("licenseURL", "")
-            if input_dict.get("openAccess")
-            else False,
-            # "license": "XXX",
-            # "licenseURL": "XXX",
             # "preprint": "XXX",
             # "startDate": "XXX",
             # "endDate": "XXX",
