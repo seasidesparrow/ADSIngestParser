@@ -153,6 +153,7 @@ class IngestBase(object):
                      'edhist_acc': string
                      'edhist_rec': [string],
                      'edhist_rev': [string],
+                     'esources': [(sourcestring, locationstring)],
                      'electronic_id': string,
                      'ids': {'doi': string,
                              'preprint': {'source': string,
@@ -402,12 +403,10 @@ class IngestBase(object):
         #     "XXX"
         # ] # TODO need an example
 
-        # output["esources"] = [
-        #     {
-        #         "source": "XXX",
-        #         "location": "XXX"
-        #     }
-        # ] # TODO need an example
+        output["esources"] = [
+            {"source": source, "location": location}
+            for (source, location) in input_dict.get("esources", "")
+        ]
 
         # output["dataLinks"] = [
         #     {
