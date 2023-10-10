@@ -613,31 +613,42 @@ class JATSParser(BaseBeautifulSoupParser):
         keys_aas = []
         keys_out = []
         keyword_groups = self.article_meta.find_all("kwd-group")
+
         for kg in keyword_groups:
-            # Check for UAT first:
             if kg.get("kwd-group-type", "") == "author":
-                keys_uat_test = kg.find_all("compound-kwd-part")
-                for kk in keys_uat_test:
-                    if kk["content-type"] == "uat-code":
-                        keys_uat.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
-                if not keys_uat:
-                    keys_misc_test = kg.find_all("kwd")
-                    for kk in keys_misc_test:
-                        keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+                keywords_uat_test = kg.find_all("compound-kwd")
+                for kw in keywords_uat_test:
+                    keys_uat_test = kw.find_all("compound-kwd-part")
+                    for kk in keys_uat_test:
+                        # Check for UAT first:
+                        if kk["content-type"] == "uat-code":
+                            keyid = self._detag(kk, self.JATS_TAGSET["keywords"])
+                        if kk["content-type"] == "term":
+                            keystring = self._detag(kk, self.JATS_TAGSET["keywords"])
+
+                    if keyid or keystring:
+                        keys_uat.append({"string": keystring, "system": "UAT", "id": keyid})
+
+                    if not keys_uat:
+                        keys_misc_test = kg.find_all("kwd")
+                        for kk in keys_misc_test:
+                            keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+
             # Then check for AAS:
-            elif kg.get("kwd-group-type", "") == "AAS":
+            if kg.get("kwd-group-type", "") == "AAS":
                 keys_aas_test = kg.find_all("kwd")
                 for kk in keys_aas_test:
                     keys_aas.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+
             # If all else fails, just search for 'kwd'
-            else:
+            if (not keys_uat) and (not keys_aas):
                 keys_misc_test = kg.find_all("kwd")
                 for kk in keys_misc_test:
                     keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
 
         if keys_uat:
             for k in keys_uat:
-                keys_out.append({"system": "UAT", "string": k})
+                keys_out.append(k)
 
         if keys_aas:
             for k in keys_aas:
