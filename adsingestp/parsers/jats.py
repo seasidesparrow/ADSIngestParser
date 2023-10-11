@@ -540,7 +540,6 @@ class JATSParser(BaseBeautifulSoupParser):
         subtitle_xref_list = []
         subtitle_fn_list = []
         self.titledoi = None
-        self.subtitledoi = None
         title_group = self.article_meta.find("title-group")
         art_title = None
         sub_title = None
@@ -558,12 +557,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 art_title = self._detag(title, self.JATS_TAGSET["title"]).strip()
                 if title_group.find("subtitle"):
                     subtitle = title_group.find("subtitle")
-                    for dx in subtitle.find_all("ext-link"):
-                        self.subtitledoi = dx.find("xlink:href")
                     for dx in subtitle.find_all("xref"):
-                        subtitle_xref_list.append(
-                            self._detag(dx, self.JATS_TAGSET["abstract"]).strip()
-                        )
                         dx.decompose()
                     for df in subtitle.find_all("fn"):
                         subtitle_fn_list.append(
@@ -583,10 +577,11 @@ class JATSParser(BaseBeautifulSoupParser):
                 para = self._detag(paragraph, self.JATS_TAGSET["abstract"])
                 abstract_paragraph_list.append(para)
             self.base_metadata["abstract"] = "\n".join(abstract_paragraph_list)
-            # abstract = self._detag(
-            #     self.article_meta.find("abstract").find("p"), self.JATS_TAGSET["abstract"]
-            # )
-            # self.base_metadata["abstract"] = abstract
+            # !!!!!!!!!!!!!!!
+            # !!!!!!!!!!!!!!!
+            # REVISE below: THESE NEED TO BE MOVED TO THEIR OWN SPACE IN IDM!
+            # !!!!!!!!!!!!!!!
+            # !!!!!!!!!!!!!!!
             if title_fn_list:
                 self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
             if subtitle_fn_list:
