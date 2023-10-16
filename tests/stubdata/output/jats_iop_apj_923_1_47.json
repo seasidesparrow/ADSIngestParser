@@ -102,8 +102,8 @@
     }
   ],
   "copyright": {
-    "status": true,
-    "statement": "\u00a9 2021. The American Astronomical Society. All rights reserved."
+    "statement": "\u00a9 2021. The American Astronomical Society. All rights reserved.",
+    "status": true
   },
   "editorialHistory": {
     "acceptedDate": "2021-09-08",

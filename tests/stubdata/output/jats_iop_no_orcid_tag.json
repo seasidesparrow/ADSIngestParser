@@ -5754,13 +5754,16 @@
     },
     {
       "attrib": {
-        "email": "spokespersons@auger.org"
+        "collab": true
+      },
+      "name": {
+        "collab": "(The Pierre Auger Collaboration)"
       }
     }
   ],
   "copyright": {
-    "status": true,
-    "statement": "\u00a9 2023. The Author(s). Published by the American Astronomical Society."
+    "statement": "\u00a9 2023. The Author(s). Published by the American Astronomical Society.",
+    "status": true
   },
   "editorialHistory": {
     "acceptedDate": "2022-11-21",
