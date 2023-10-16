@@ -100,5 +100,11 @@
   },
   "abstract": {
     "textEnglish": "Near-term forecasts of environmental outcomes can inform real-time decision making. Data assimilation modeling techniques can be used for forecasts to leverage real-time data streams, where the difference between model predictions and observations can be used to adjust the model to make better predictions tomorrow. In this use case, we developed a process-guided deep learning and data assimilation approach to make 7-day forecasts of daily maximum water temperature in the Delaware River Basin. Our modeling system produced forecasts of daily maximum stream temperature with an average root mean squared error (RMSE) from 1.2 to 1.6\u00b0C for 1-day lead time across all sites. The data assimilation algorithm successfully adjusted the process-guided deep learning model states and marginally improved forecast performance when compared to forecasts produced using the process-guided deep learning model alone (7-13% lower RMSE with the data assimilation algorithm). Our model characterized forecast uncertainty relatively well as 57-80% of observations were within 90% forecast confidence intervals across all sites and lead times, and the uncertainty associated with our forecasts allow managers to anticipate probability of exceedances of ecologically relevant thresholds and aid in decisions about releasing reservoir water downstream. The flexibility of deep learning models to be applied to various prediction problems shows promise for using these types of models to forecast many other important environmental variables and aid in decision making."
-  }
+  },
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "http://eartharxiv.org/repository/view/2590/"
+    }
+  ]
 }

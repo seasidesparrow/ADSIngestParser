@@ -1,224 +1,181 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "recordOrigin": ""
-  },
-  "pubDate": {
-    "electrDate": "2018-02-05",
-    "printDate": "2018-02-20"
-  },
-  "publication": {
-    "pubName": "Proceedings of the National Academy of Sciences",
-    "publisher": "National Academy of Sciences",
-    "issueNum": "8",
-    "volumeNum": "115",
-    "pubYear": "2018",
-    "ISSN": [
-      {
-        "pubtype": "ppub",
-        "issnString": "0027-8424"
-      },
-      {
-        "pubtype": "epub",
-        "issnString": "1091-6490"
-      }
-    ]
-  },
-  "persistentIDs": [
-    {
-      "DOI": "10.1073/pnas.1715554115"
-    }
-  ],
-  "publisherIDs": [
-    {
-      "attribute": "publisher-id",
-      "Identifier": "201715554"
-    }
-  ],
-  "pagination": {
-    "firstPage": "1697",
-    "lastPage": "1706",
-    "pageCount": "10",
-    "pageRange": "1697-1706"
+  "abstract": {
+    "textEnglish": "Alzheimer\u2019s disease (AD) is an age-related neurodegenerative disease. Genome-wide association studies predominately focusing on Caucasian populations have identified risk loci and genes associated with AD; the majority of these variants reside in noncoding regions with unclear functions. Here, we report a whole-genome sequencing study for AD in the Chinese population. Other than the APOE locus, we identified common variants in GCH1 and KCNJ15 that show suggestive associations with AD. For these two risk variants, an association with AD or advanced onset of disease can be observed in non-Asian AD cohorts. An association study of risk variants with expression data revealed their modulatory effects on immune signatures, linking the potential roles of these genes with immune-related pathways during AD pathogenesis."
   },
   "authors": [
     {
-      "name": {
-        "surname": "Zhou",
-        "given_name": "Xiaopu"
-      },
       "affiliation": [
         {
-          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China",
-          "affPubID": "aff1"
+          "affPubID": "aff1",
+          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         }
-      ]
+      ],
+      "name": {
+        "given_name": "Xiaopu",
+        "surname": "Zhou"
+      }
     },
     {
-      "name": {
-        "surname": "Chen",
-        "given_name": "Yu"
-      },
       "affiliation": [
         {
-          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China",
-          "affPubID": "aff1"
+          "affPubID": "aff1",
+          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China",
-          "affPubID": "aff2"
+          "affPubID": "aff2",
+          "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China"
         },
         {
-          "affPubRaw": "The Brain Cognition and Brain Disease Institute, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, 518055 Guangdong, China",
-          "affPubID": "aff3"
+          "affPubID": "aff3",
+          "affPubRaw": "The Brain Cognition and Brain Disease Institute, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, 518055 Guangdong, China"
         }
-      ]
+      ],
+      "name": {
+        "given_name": "Yu",
+        "surname": "Chen"
+      }
     },
     {
-      "name": {
-        "surname": "Mok",
-        "given_name": "Kin Y."
-      },
       "affiliation": [
         {
-          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China",
-          "affPubID": "aff1"
+          "affPubID": "aff1",
+          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubRaw": "Department of Molecular Neuroscience, University College London Institute of Neurology, London WC1N 3BG, United Kingdom",
-          "affPubID": "aff4"
+          "affPubID": "aff4",
+          "affPubRaw": "Department of Molecular Neuroscience, University College London Institute of Neurology, London WC1N 3BG, United Kingdom"
         }
-      ]
+      ],
+      "name": {
+        "given_name": "Kin Y.",
+        "surname": "Mok"
+      }
     },
     {
-      "name": {
-        "surname": "Zhao",
-        "given_name": "Qianhua"
-      },
       "affiliation": [
         {
-          "affPubRaw": "Department of Neurology, Huashan Hospital, Fudan University, 200040 Shanghai, China",
-          "affPubID": "aff5"
+          "affPubID": "aff5",
+          "affPubRaw": "Department of Neurology, Huashan Hospital, Fudan University, 200040 Shanghai, China"
         }
-      ]
+      ],
+      "name": {
+        "given_name": "Qianhua",
+        "surname": "Zhao"
+      }
     },
     {
-      "name": {
-        "surname": "Chen",
-        "given_name": "Keliang"
-      },
       "affiliation": [
         {
-          "affPubRaw": "Department of Neurology, Huashan Hospital, Fudan University, 200040 Shanghai, China",
-          "affPubID": "aff5"
+          "affPubID": "aff5",
+          "affPubRaw": "Department of Neurology, Huashan Hospital, Fudan University, 200040 Shanghai, China"
         }
-      ]
+      ],
+      "name": {
+        "given_name": "Keliang",
+        "surname": "Chen"
+      }
     },
     {
-      "name": {
-        "surname": "Chen",
-        "given_name": "Yuewen"
-      },
       "affiliation": [
         {
-          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China",
-          "affPubID": "aff1"
+          "affPubID": "aff1",
+          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China",
-          "affPubID": "aff2"
+          "affPubID": "aff2",
+          "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China"
         },
         {
-          "affPubRaw": "The Brain Cognition and Brain Disease Institute, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, 518055 Guangdong, China",
-          "affPubID": "aff3"
+          "affPubID": "aff3",
+          "affPubRaw": "The Brain Cognition and Brain Disease Institute, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, 518055 Guangdong, China"
         }
-      ]
+      ],
+      "name": {
+        "given_name": "Yuewen",
+        "surname": "Chen"
+      }
     },
     {
-      "name": {
-        "surname": "Hardy",
-        "given_name": "John"
-      },
       "affiliation": [
         {
-          "affPubRaw": "Department of Molecular Neuroscience, University College London Institute of Neurology, London WC1N 3BG, United Kingdom",
-          "affPubID": "aff4"
+          "affPubID": "aff4",
+          "affPubRaw": "Department of Molecular Neuroscience, University College London Institute of Neurology, London WC1N 3BG, United Kingdom"
         }
-      ]
+      ],
+      "name": {
+        "given_name": "John",
+        "surname": "Hardy"
+      }
     },
     {
-      "name": {
-        "surname": "Li",
-        "given_name": "Yun"
-      },
       "affiliation": [
         {
-          "affPubRaw": "Department of Genetics, University of North Carolina, Chapel Hill, NC 27599",
-          "affPubID": "aff6"
+          "affPubID": "aff6",
+          "affPubRaw": "Department of Genetics, University of North Carolina, Chapel Hill, NC 27599"
         },
         {
-          "affPubRaw": "Department of Biostatistics, University of North Carolina, Chapel Hill, NC 27599",
-          "affPubID": "aff7"
+          "affPubID": "aff7",
+          "affPubRaw": "Department of Biostatistics, University of North Carolina, Chapel Hill, NC 27599"
         },
         {
-          "affPubRaw": "Department of Computer Science, University of North Carolina, Chapel Hill, NC 27599",
-          "affPubID": "aff8"
+          "affPubID": "aff8",
+          "affPubRaw": "Department of Computer Science, University of North Carolina, Chapel Hill, NC 27599"
         }
-      ]
+      ],
+      "name": {
+        "given_name": "Yun",
+        "surname": "Li"
+      }
     },
     {
-      "name": {
-        "surname": "Fu",
-        "given_name": "Amy K. Y."
-      },
       "affiliation": [
         {
-          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China",
-          "affPubID": "aff1"
+          "affPubID": "aff1",
+          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China",
-          "affPubID": "aff2"
+          "affPubID": "aff2",
+          "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China"
         }
-      ]
+      ],
+      "name": {
+        "given_name": "Amy K. Y.",
+        "surname": "Fu"
+      }
     },
     {
-      "name": {
-        "surname": "Guo",
-        "given_name": "Qihao"
-      },
       "affiliation": [
         {
-          "affPubRaw": "Department of Neurology, Huashan Hospital, Fudan University, 200040 Shanghai, China",
-          "affPubID": "aff5"
+          "affPubID": "aff5",
+          "affPubRaw": "Department of Neurology, Huashan Hospital, Fudan University, 200040 Shanghai, China"
         }
       ],
       "attrib": {
         "email": "dr.guoqihao@126.com"
+      },
+      "name": {
+        "given_name": "Qihao",
+        "surname": "Guo"
       }
     },
     {
-      "name": {
-        "surname": "Ip",
-        "given_name": "Nancy Y."
-      },
       "affiliation": [
         {
-          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China",
-          "affPubID": "aff1"
+          "affPubID": "aff1",
+          "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China",
-          "affPubID": "aff2"
+          "affPubID": "aff2",
+          "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China"
         }
       ],
       "attrib": {
         "email": "dr.guoqihao@126.com",
         "orcid": "0000-0002-2763-8907"
+      },
+      "name": {
+        "given_name": "Nancy Y.",
+        "surname": "Ip"
       }
     },
     {
@@ -227,3244 +184,3310 @@
       }
     }
   ],
-  "otherContributor": [
+  "copyright": {
+    "statement": "Copyright \u00a9 2018 the Author(s). Published by PNAS.",
+    "status": true
+  },
+  "keywords": [
     {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Saykin",
-          "given_name": "Andrew J."
-        }
-      }
+      "keyString": "Alzheimer\u2019s disease",
+      "keySystem": "misc"
     },
     {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Toga",
-          "given_name": "Arthur W."
-        }
-      }
+      "keyString": "whole-genome sequencing",
+      "keySystem": "misc"
     },
     {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Borowski",
-          "given_name": "Bret"
-        }
-      }
+      "keyString": "GWAS",
+      "keySystem": "misc"
     },
     {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ward",
-          "given_name": "Chad"
-        }
-      }
+      "keyString": "risk variant",
+      "keySystem": "misc"
     },
     {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "DeCarli",
-          "given_name": "Charles"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mathis",
-          "given_name": "Chet"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Jack",
-          "given_name": "Clifford R."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Harvey",
-          "given_name": "Danielle"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Holtzman",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Jones",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Gessert",
-          "given_name": "Devon"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lilly",
-          "given_name": "Eli"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Reiman",
-          "given_name": "Eric M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Franklin",
-          "given_name": "Erin"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hefti",
-          "given_name": "Franz"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sorensen",
-          "given_name": "Greg"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Jimenez",
-          "given_name": "Gustavo"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Fillit",
-          "given_name": "Howard"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Gunter",
-          "given_name": "Jeff"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Salazar",
-          "given_name": "Jennifer"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hsiao",
-          "given_name": "John"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Morris",
-          "given_name": "John"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Trojanowki",
-          "given_name": "John Q."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Neu",
-          "given_name": "Karen Crawford Scott"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kantarci",
-          "given_name": "Kejal"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Faber",
-          "given_name": "Kelley"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Harless",
-          "given_name": "Kelly"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Chen",
-          "given_name": "Kewei"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Nho",
-          "given_name": "Kwangsik"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Beckett",
-          "given_name": "Laurel"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Thal",
-          "given_name": "Lean"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Thal",
-          "given_name": "Leon"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Shaw",
-          "given_name": "Leslie M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kuller",
-          "given_name": "Lew"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Shen",
-          "given_name": "Li"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hergesheimer",
-          "given_name": "Lindsey"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Taylor-Reinwald",
-          "given_name": "Lisa"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mesulam",
-          "given_name": "M. Marcel"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Korecka",
-          "given_name": "Magdalena"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Raichle",
-          "given_name": "Marc"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Carrillo",
-          "given_name": "Maria"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Albert",
-          "given_name": "Marilyn"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Senjem",
-          "given_name": "Matt"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bernstein",
-          "given_name": "Matthew"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Donohue",
-          "given_name": "Michael"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Weiner",
-          "given_name": "Michael"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Figurski",
-          "given_name": "Michal"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Buckholtz",
-          "given_name": "Neil"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Fox",
-          "given_name": "Nick"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Cairns",
-          "given_name": "Nigel J."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Schuff",
-          "given_name": "Norbert"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Foster",
-          "given_name": "Norm"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Aisen",
-          "given_name": "Paul"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Thompson",
-          "given_name": "Paul"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Davies",
-          "given_name": "Peter"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Snyder",
-          "given_name": "Peter J."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Snyder",
-          "given_name": "Peter"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Vemuri",
-          "given_name": "Prashanthi"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Frank",
-          "given_name": "Richard"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Koeppe",
-          "given_name": "Robert A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Green",
-          "given_name": "Robert C."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Petersen",
-          "given_name": "Ronald"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Walter",
-          "given_name": "Sarah"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Paul",
-          "given_name": "Steven"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Potkin",
-          "given_name": "Steven"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kim",
-          "given_name": "Sungeun"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Foroud",
-          "given_name": "Tatiana M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Montine",
-          "given_name": "Tom"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lee",
-          "given_name": "Virginia"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Jagust",
-          "given_name": "William"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Potter",
-          "given_name": "William"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Cabrera",
-          "given_name": "Yuliana"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Khachaturian",
-          "given_name": "Zaven"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Fleisher",
-          "given_name": "Adam"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pierce",
-          "given_name": "Aimee"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mintz",
-          "given_name": "Akiva"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lerner",
-          "given_name": "Alan"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Norbash",
-          "given_name": "Alexander"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Levey",
-          "given_name": "Allan I."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Rosen",
-          "given_name": "Allyson"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Smith",
-          "given_name": "Amanda"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ulysse",
-          "given_name": "Anaztasia"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Budson",
-          "given_name": "Andrew E."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kertesz",
-          "given_name": "Andrew"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Oliver",
-          "given_name": "Angela"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hake",
-          "given_name": "Ann Marie"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Burke",
-          "given_name": "Anna"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sarrael",
-          "given_name": "Antero"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Porsteinsson",
-          "given_name": "Anton P."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lamb",
-          "given_name": "Ashley"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lee",
-          "given_name": "Athena"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Raj",
-          "given_name": "Balebail Ashok"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lane",
-          "given_name": "Barton"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Yanez",
-          "given_name": "Beatriz"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ances",
-          "given_name": "Beau"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mudge",
-          "given_name": "Benita"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lind",
-          "given_name": "Betty"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Stefanovic",
-          "given_name": "Bojana"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Goldstein",
-          "given_name": "Bonnie S."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bonakdarpour",
-          "given_name": "Borna"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Matthews",
-          "given_name": "Brandy R."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ott",
-          "given_name": "Brian R."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Reynolds",
-          "given_name": "Brigid"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Miller",
-          "given_name": "Bruce L."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Spann",
-          "given_name": "Bryan M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sadowsky",
-          "given_name": "Carl"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bernick",
-          "given_name": "Charles"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Smith",
-          "given_name": "Charles D."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Onyike",
-          "given_name": "Chiadi"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Heyn",
-          "given_name": "Chris (Chinthaka)"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hosein",
-          "given_name": "Chris"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Leach",
-          "given_name": "Christi"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Belden",
-          "given_name": "Christine M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "van Dyck",
-          "given_name": "Christopher H."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Clark",
-          "given_name": "Christopher M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Wu",
-          "given_name": "Chuang-Kuo"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Albers",
-          "given_name": "Colleen S."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Brand",
-          "given_name": "Connie"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bodge",
-          "given_name": "Courtney"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Tatsuoka",
-          "given_name": "Curtis"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Carlsson",
-          "given_name": "Cynthia M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mathews",
-          "given_name": "Dana"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "D\u2019Agostino",
-          "given_name": "Daniel"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Silverman",
-          "given_name": "Daniel H.S."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Marson",
-          "given_name": "Daniel"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Wolk",
-          "given_name": "David A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bachman",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Clark",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Geldmacher",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hart",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Knopman",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Perry",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Winkfield",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Miller",
-          "given_name": "Delwyn D."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kerwin",
-          "given_name": "Diana"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Drost",
-          "given_name": "Dick"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Simpson",
-          "given_name": "Donna M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Munic",
-          "given_name": "Donna"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Scharre",
-          "given_name": "Douglas W."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bartha",
-          "given_name": "Rob"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Celmins",
-          "given_name": "Dzintra"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Zimmerman",
-          "given_name": "Earl A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Teng",
-          "given_name": "Edmond"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Coleman",
-          "given_name": "Edward"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Zamrini",
-          "given_name": "Edward"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mitsis",
-          "given_name": "Effie"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Finger",
-          "given_name": "Elizabeth"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Oates",
-          "given_name": "Elizabeth"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sosa",
-          "given_name": "Elizabeth"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Woo",
-          "given_name": "Ellen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Rogalski",
-          "given_name": "Emily"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Fletcher",
-          "given_name": "Evan"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Parfitt",
-          "given_name": "Francine"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Thai",
-          "given_name": "Gaby"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Marshall",
-          "given_name": "Gad A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Conrad",
-          "given_name": "Gary"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Tremont",
-          "given_name": "Geoffrey"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bartzokis",
-          "given_name": "George"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hsiung",
-          "given_name": "Ging-Yuek Robin"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Chiang",
-          "given_name": "Gloria"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pearlson",
-          "given_name": "Godfrey D."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Jicha",
-          "given_name": "Greg"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Vanderswag",
-          "given_name": "Helen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Grossman",
-          "given_name": "Hillel"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Capote",
-          "given_name": "Horacio"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bergman",
-          "given_name": "Howard"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Chertkow",
-          "given_name": "Howard"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Feldman",
-          "given_name": "Howard"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Rosen",
-          "given_name": "Howard J."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Koleva",
-          "given_name": "Hristina"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Shim",
-          "given_name": "Hyungsub"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Rachinsky",
-          "given_name": "Irina"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mintzer",
-          "given_name": "Jacobo"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ziolkowski",
-          "given_name": "Jaimie"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Brewer",
-          "given_name": "James"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lah",
-          "given_name": "James J."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Singleton-Garvin",
-          "given_name": "Jamika"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Cellar",
-          "given_name": "Janet S."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Brosch",
-          "given_name": "Jared R."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Tinklenberg",
-          "given_name": "Jared"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Karlawish",
-          "given_name": "Jason H."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Villanueva-Meyer",
-          "given_name": "Javier"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kaye",
-          "given_name": "Jeffrey A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Burns",
-          "given_name": "Jeffrey M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Petrella",
-          "given_name": "Jeffrey R."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Yesavage",
-          "given_name": "Jerome"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Allard",
-          "given_name": "Joanne"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lord",
-          "given_name": "Joanne L."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hetelle",
-          "given_name": "Joel"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Brockington",
-          "given_name": "John"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Morris",
-          "given_name": "John C."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Olichney",
-          "given_name": "John"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Rogers",
-          "given_name": "John"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Quinn",
-          "given_name": "Joseph"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kass",
-          "given_name": "Joseph S."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Taylor",
-          "given_name": "Joy L."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Heidebrink",
-          "given_name": "Judith L."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Anderson",
-          "given_name": "Karen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Blank",
-          "given_name": "Karen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Smith",
-          "given_name": "Karen Ekstam"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bell",
-          "given_name": "Karen L."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Johnson",
-          "given_name": "Kathleen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Tingus",
-          "given_name": "Kathleen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "DeMarco",
-          "given_name": "Kathryn"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sink",
-          "given_name": "Kaycee M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Johnson",
-          "given_name": "Keith A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Makino",
-          "given_name": "Kelly M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Spicer",
-          "given_name": "Kenneth"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Nam",
-          "given_name": "Ki Won"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Martin",
-          "given_name": "Kim"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Poki-Walker",
-          "given_name": "Kim"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Johnson",
-          "given_name": "Kris"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Fargher",
-          "given_name": "Kristin"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lipowski",
-          "given_name": "Kristine"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Womack",
-          "given_name": "Kyle"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Flashman",
-          "given_name": "Laura A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Honig",
-          "given_name": "Lawrence S."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Apostolova",
-          "given_name": "Liana"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Teodoro",
-          "given_name": "Liberty"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Silbert",
-          "given_name": "Lisa C."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ravdin",
-          "given_name": "Lisa"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Schneider",
-          "given_name": "Lon S."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Daiello",
-          "given_name": "Lori A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ismail",
-          "given_name": "M. Saleem"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Seltzer",
-          "given_name": "Marc"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mesulam",
-          "given_name": "Marek-Marsel"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Carroll",
-          "given_name": "Maria"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kataki",
-          "given_name": "Maria"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Greig-Custo",
-          "given_name": "Maria T."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Love",
-          "given_name": "Marissa Natelson"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mintun",
-          "given_name": "Mark A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Farlow",
-          "given_name": "Martin R."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sadowski",
-          "given_name": "Martin"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Creech",
-          "given_name": "Mary L."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hynes",
-          "given_name": "Mary L."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Quiceno",
-          "given_name": "Mary"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Oakley",
-          "given_name": "MaryAnn"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Becerra",
-          "given_name": "Mauricio"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Witbracht",
-          "given_name": "Megan"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Keltz",
-          "given_name": "Melanie"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lamar",
-          "given_name": "Melissa"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Yang",
-          "given_name": "Mia"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Borrie",
-          "given_name": "Michael"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lin",
-          "given_name": "Michael"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Assaly",
-          "given_name": "Michele"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Rainka",
-          "given_name": "Michelle"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Dang",
-          "given_name": "Mimi"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sheikh",
-          "given_name": "Mohammed O."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Gaikwad",
-          "given_name": "Mrunalini"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Chowdhury",
-          "given_name": "Munir"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Trncic",
-          "given_name": "Nadira"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Johnson",
-          "given_name": "Nancy"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kowalksi",
-          "given_name": "Nancy"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pacini",
-          "given_name": "Nathaniel"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kowall",
-          "given_name": "Neil"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Graff-Radford",
-          "given_name": "Neill R"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Relkin",
-          "given_name": "Norman"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Oyonumo",
-          "given_name": "Ntekim E."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pomara",
-          "given_name": "Nunzio"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "James",
-          "given_name": "Olga"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ogunlana",
-          "given_name": "Olu"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lopez",
-          "given_name": "Oscar L."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Carmichael",
-          "given_name": "Owen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Doraiswamy",
-          "given_name": "P. Murali"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Fatica",
-          "given_name": "Parianne"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Johnson",
-          "given_name": "Patricia Lynn"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Samuels",
-          "given_name": "Patricia"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Malloy",
-          "given_name": "Paul"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ogrocki",
-          "given_name": "Paula"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Maillard",
-          "given_name": "Pauline"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hardy",
-          "given_name": "Peter"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Tariot",
-          "given_name": "Pierre"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lu",
-          "given_name": "Po H."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Varma",
-          "given_name": "Pradeep"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Doody",
-          "given_name": "Rachelle S."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Carter",
-          "given_name": "Raina"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Shah",
-          "given_name": "Raj C."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Griffith",
-          "given_name": "Randall"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Yeh",
-          "given_name": "Randy"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Duara",
-          "given_name": "Ranjan"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Tarawneh",
-          "given_name": "Rawan"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Turner",
-          "given_name": "Raymond Scott"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hernando",
-          "given_name": "Raymundo"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sperling",
-          "given_name": "Reisa A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Carson",
-          "given_name": "Richard E."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "El Khouli",
-          "given_name": "Riham"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Santulli",
-          "given_name": "Robert B."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Killiany",
-          "given_name": "Ronald"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Rodriguez",
-          "given_name": "Rosemarie"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Swerdlow",
-          "given_name": "Russell H."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Borges-Neto",
-          "given_name": "Salvador"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Black",
-          "given_name": "Sandra"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Weintraub",
-          "given_name": "Sandra"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Asthana",
-          "given_name": "Sanjay"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Vaishnavi",
-          "given_name": "Sanjeev"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Dolen",
-          "given_name": "Sara"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Mason",
-          "given_name": "Sara S."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kremen",
-          "given_name": "Sarah"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Herring",
-          "given_name": "Scott"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sirrel",
-          "given_name": "Sherye A."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kittur",
-          "given_name": "Smita"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pawluczyk",
-          "given_name": "Sonia"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Schneider",
-          "given_name": "Stacy"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kielb",
-          "given_name": "Stephanie"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Reeder",
-          "given_name": "Stephanie"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Correia",
-          "given_name": "Stephen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pasternack",
-          "given_name": "Stephen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pasternak",
-          "given_name": "Stephen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Salloway",
-          "given_name": "Stephen"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Johnson",
-          "given_name": "Sterling"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Chao",
-          "given_name": "Steven"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Arnold",
-          "given_name": "Steven E."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Schultz",
-          "given_name": "Susan K."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Rountree",
-          "given_name": "Susan"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lee",
-          "given_name": "T-Y"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Wong",
-          "given_name": "Terence Z."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Villena",
-          "given_name": "Teresa"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Obisesan",
-          "given_name": "Thomas O."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pavlik",
-          "given_name": "Valory"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Bates",
-          "given_name": "Vernice"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Sossi",
-          "given_name": "Vesna"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Shibley",
-          "given_name": "Victoria"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Brooks",
-          "given_name": "William M."
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pavlosky",
-          "given_name": "William"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Stern",
-          "given_name": "Yaakov"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Simon",
-          "given_name": "Adam"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Dongre",
-          "given_name": "Ashok"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Dean",
-          "given_name": "Bob"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Navia",
-          "given_name": "Brad"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Spellman",
-          "given_name": "Dan"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Lee",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Shera",
-          "given_name": "David"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Siemers",
-          "given_name": "Eric"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Pickering",
-          "given_name": "Eve"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Swenson",
-          "given_name": "Frank"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Immerman",
-          "given_name": "Fred"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Nomikos",
-          "given_name": "George"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Soares",
-          "given_name": "Holly"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Wan",
-          "given_name": "Hong"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Seeburger",
-          "given_name": "Jeff"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Waring",
-          "given_name": "Jeff"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Trojanowski",
-          "given_name": "John"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Siuciak",
-          "given_name": "Judy"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Duffin",
-          "given_name": "Kevin"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Shaw",
-          "given_name": "Les"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Wang",
-          "given_name": "Li-San"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Thambisetty",
-          "given_name": "Madhav"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Walton",
-          "given_name": "Marc"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Savage",
-          "given_name": "Mary"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Ferm",
-          "given_name": "Mats"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Kuhn",
-          "given_name": "Max"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Buckholtz",
-          "given_name": "Neil"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Zagouras",
-          "given_name": "Panos"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Cole",
-          "given_name": "Patricia"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Hendrickson",
-          "given_name": "Ron"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Xie",
-          "given_name": "Sharon"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Allauzen",
-          "given_name": "Sophie"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Koroshetz",
-          "given_name": "Walter"
-        }
-      }
-    },
-    {
-      "role": "author non-byline",
-      "contrib": {
-        "name": {
-          "surname": "Potter",
-          "given_name": "William"
-        }
-      }
+      "keyString": "immune",
+      "keySystem": "misc"
     }
   ],
-  "title": {
-    "textEnglish": "Identification of genetic risk factors in the Chinese population implicates a role of immune system in Alzheimer\u2019s disease pathogenesis"
+  "otherContributor": [
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Andrew J.",
+          "surname": "Saykin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Arthur W.",
+          "surname": "Toga"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Bret",
+          "surname": "Borowski"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Chad",
+          "surname": "Ward"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Charles",
+          "surname": "DeCarli"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Chet",
+          "surname": "Mathis"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Clifford R.",
+          "surname": "Jack"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Danielle",
+          "surname": "Harvey"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Holtzman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Jones"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Devon",
+          "surname": "Gessert"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Eli",
+          "surname": "Lilly"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Eric M.",
+          "surname": "Reiman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Erin",
+          "surname": "Franklin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Franz",
+          "surname": "Hefti"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Greg",
+          "surname": "Sorensen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Gustavo",
+          "surname": "Jimenez"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Howard",
+          "surname": "Fillit"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jeff",
+          "surname": "Gunter"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jennifer",
+          "surname": "Salazar"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "John",
+          "surname": "Hsiao"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "John",
+          "surname": "Morris"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "John Q.",
+          "surname": "Trojanowki"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Karen Crawford Scott",
+          "surname": "Neu"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kejal",
+          "surname": "Kantarci"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kelley",
+          "surname": "Faber"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kelly",
+          "surname": "Harless"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kewei",
+          "surname": "Chen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kwangsik",
+          "surname": "Nho"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Laurel",
+          "surname": "Beckett"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Lean",
+          "surname": "Thal"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Leon",
+          "surname": "Thal"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Leslie M.",
+          "surname": "Shaw"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Lew",
+          "surname": "Kuller"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Li",
+          "surname": "Shen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Lindsey",
+          "surname": "Hergesheimer"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Lisa",
+          "surname": "Taylor-Reinwald"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "M. Marcel",
+          "surname": "Mesulam"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Magdalena",
+          "surname": "Korecka"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Marc",
+          "surname": "Raichle"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Maria",
+          "surname": "Carrillo"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Marilyn",
+          "surname": "Albert"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Matt",
+          "surname": "Senjem"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Matthew",
+          "surname": "Bernstein"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Michael",
+          "surname": "Donohue"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Michael",
+          "surname": "Weiner"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Michal",
+          "surname": "Figurski"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Neil",
+          "surname": "Buckholtz"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Nick",
+          "surname": "Fox"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Nigel J.",
+          "surname": "Cairns"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Norbert",
+          "surname": "Schuff"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Norm",
+          "surname": "Foster"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Paul",
+          "surname": "Aisen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Paul",
+          "surname": "Thompson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Peter",
+          "surname": "Davies"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Peter J.",
+          "surname": "Snyder"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Peter",
+          "surname": "Snyder"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Prashanthi",
+          "surname": "Vemuri"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Richard",
+          "surname": "Frank"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Robert A.",
+          "surname": "Koeppe"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Robert C.",
+          "surname": "Green"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ronald",
+          "surname": "Petersen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sarah",
+          "surname": "Walter"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Steven",
+          "surname": "Paul"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Steven",
+          "surname": "Potkin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sungeun",
+          "surname": "Kim"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Tatiana M.",
+          "surname": "Foroud"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Tom",
+          "surname": "Montine"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Virginia",
+          "surname": "Lee"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "William",
+          "surname": "Jagust"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "William",
+          "surname": "Potter"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Yuliana",
+          "surname": "Cabrera"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Zaven",
+          "surname": "Khachaturian"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Adam",
+          "surname": "Fleisher"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Aimee",
+          "surname": "Pierce"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Akiva",
+          "surname": "Mintz"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Alan",
+          "surname": "Lerner"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Alexander",
+          "surname": "Norbash"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Allan I.",
+          "surname": "Levey"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Allyson",
+          "surname": "Rosen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Amanda",
+          "surname": "Smith"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Anaztasia",
+          "surname": "Ulysse"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Andrew E.",
+          "surname": "Budson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Andrew",
+          "surname": "Kertesz"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Angela",
+          "surname": "Oliver"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ann Marie",
+          "surname": "Hake"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Anna",
+          "surname": "Burke"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Antero",
+          "surname": "Sarrael"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Anton P.",
+          "surname": "Porsteinsson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ashley",
+          "surname": "Lamb"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Athena",
+          "surname": "Lee"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Balebail Ashok",
+          "surname": "Raj"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Barton",
+          "surname": "Lane"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Beatriz",
+          "surname": "Yanez"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Beau",
+          "surname": "Ances"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Benita",
+          "surname": "Mudge"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Betty",
+          "surname": "Lind"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Bojana",
+          "surname": "Stefanovic"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Bonnie S.",
+          "surname": "Goldstein"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Borna",
+          "surname": "Bonakdarpour"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Brandy R.",
+          "surname": "Matthews"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Brian R.",
+          "surname": "Ott"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Brigid",
+          "surname": "Reynolds"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Bruce L.",
+          "surname": "Miller"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Bryan M.",
+          "surname": "Spann"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Carl",
+          "surname": "Sadowsky"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Charles",
+          "surname": "Bernick"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Charles D.",
+          "surname": "Smith"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Chiadi",
+          "surname": "Onyike"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Chris (Chinthaka)",
+          "surname": "Heyn"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Chris",
+          "surname": "Hosein"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Christi",
+          "surname": "Leach"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Christine M.",
+          "surname": "Belden"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Christopher H.",
+          "surname": "van Dyck"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Christopher M.",
+          "surname": "Clark"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Chuang-Kuo",
+          "surname": "Wu"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Colleen S.",
+          "surname": "Albers"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Connie",
+          "surname": "Brand"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Courtney",
+          "surname": "Bodge"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Curtis",
+          "surname": "Tatsuoka"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Cynthia M.",
+          "surname": "Carlsson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Dana",
+          "surname": "Mathews"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Daniel",
+          "surname": "D\u2019Agostino"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Daniel H.S.",
+          "surname": "Silverman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Daniel",
+          "surname": "Marson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David A.",
+          "surname": "Wolk"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Bachman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Clark"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Geldmacher"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Hart"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Knopman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Perry"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Winkfield"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Delwyn D.",
+          "surname": "Miller"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Diana",
+          "surname": "Kerwin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Dick",
+          "surname": "Drost"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Donna M.",
+          "surname": "Simpson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Donna",
+          "surname": "Munic"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Douglas W.",
+          "surname": "Scharre"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Rob",
+          "surname": "Bartha"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Dzintra",
+          "surname": "Celmins"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Earl A.",
+          "surname": "Zimmerman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Edmond",
+          "surname": "Teng"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Edward",
+          "surname": "Coleman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Edward",
+          "surname": "Zamrini"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Effie",
+          "surname": "Mitsis"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Elizabeth",
+          "surname": "Finger"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Elizabeth",
+          "surname": "Oates"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Elizabeth",
+          "surname": "Sosa"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ellen",
+          "surname": "Woo"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Emily",
+          "surname": "Rogalski"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Evan",
+          "surname": "Fletcher"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Francine",
+          "surname": "Parfitt"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Gaby",
+          "surname": "Thai"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Gad A.",
+          "surname": "Marshall"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Gary",
+          "surname": "Conrad"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Geoffrey",
+          "surname": "Tremont"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "George",
+          "surname": "Bartzokis"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ging-Yuek Robin",
+          "surname": "Hsiung"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Gloria",
+          "surname": "Chiang"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Godfrey D.",
+          "surname": "Pearlson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Greg",
+          "surname": "Jicha"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Helen",
+          "surname": "Vanderswag"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Hillel",
+          "surname": "Grossman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Horacio",
+          "surname": "Capote"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Howard",
+          "surname": "Bergman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Howard",
+          "surname": "Chertkow"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Howard",
+          "surname": "Feldman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Howard J.",
+          "surname": "Rosen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Hristina",
+          "surname": "Koleva"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Hyungsub",
+          "surname": "Shim"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Irina",
+          "surname": "Rachinsky"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jacobo",
+          "surname": "Mintzer"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jaimie",
+          "surname": "Ziolkowski"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "James",
+          "surname": "Brewer"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "James J.",
+          "surname": "Lah"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jamika",
+          "surname": "Singleton-Garvin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Janet S.",
+          "surname": "Cellar"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jared R.",
+          "surname": "Brosch"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jared",
+          "surname": "Tinklenberg"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jason H.",
+          "surname": "Karlawish"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Javier",
+          "surname": "Villanueva-Meyer"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jeffrey A.",
+          "surname": "Kaye"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jeffrey M.",
+          "surname": "Burns"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jeffrey R.",
+          "surname": "Petrella"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jerome",
+          "surname": "Yesavage"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Joanne",
+          "surname": "Allard"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Joanne L.",
+          "surname": "Lord"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Joel",
+          "surname": "Hetelle"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "John",
+          "surname": "Brockington"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "John C.",
+          "surname": "Morris"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "John",
+          "surname": "Olichney"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "John",
+          "surname": "Rogers"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Joseph",
+          "surname": "Quinn"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Joseph S.",
+          "surname": "Kass"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Joy L.",
+          "surname": "Taylor"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Judith L.",
+          "surname": "Heidebrink"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Karen",
+          "surname": "Anderson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Karen",
+          "surname": "Blank"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Karen Ekstam",
+          "surname": "Smith"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Karen L.",
+          "surname": "Bell"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kathleen",
+          "surname": "Johnson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kathleen",
+          "surname": "Tingus"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kathryn",
+          "surname": "DeMarco"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kaycee M.",
+          "surname": "Sink"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Keith A.",
+          "surname": "Johnson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kelly M.",
+          "surname": "Makino"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kenneth",
+          "surname": "Spicer"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ki Won",
+          "surname": "Nam"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kim",
+          "surname": "Martin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kim",
+          "surname": "Poki-Walker"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kris",
+          "surname": "Johnson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kristin",
+          "surname": "Fargher"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kristine",
+          "surname": "Lipowski"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kyle",
+          "surname": "Womack"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Laura A.",
+          "surname": "Flashman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Lawrence S.",
+          "surname": "Honig"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Liana",
+          "surname": "Apostolova"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Liberty",
+          "surname": "Teodoro"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Lisa C.",
+          "surname": "Silbert"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Lisa",
+          "surname": "Ravdin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Lon S.",
+          "surname": "Schneider"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Lori A.",
+          "surname": "Daiello"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "M. Saleem",
+          "surname": "Ismail"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Marc",
+          "surname": "Seltzer"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Marek-Marsel",
+          "surname": "Mesulam"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Maria",
+          "surname": "Carroll"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Maria",
+          "surname": "Kataki"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Maria T.",
+          "surname": "Greig-Custo"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Marissa Natelson",
+          "surname": "Love"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mark A.",
+          "surname": "Mintun"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Martin R.",
+          "surname": "Farlow"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Martin",
+          "surname": "Sadowski"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mary L.",
+          "surname": "Creech"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mary L.",
+          "surname": "Hynes"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mary",
+          "surname": "Quiceno"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "MaryAnn",
+          "surname": "Oakley"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mauricio",
+          "surname": "Becerra"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Megan",
+          "surname": "Witbracht"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Melanie",
+          "surname": "Keltz"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Melissa",
+          "surname": "Lamar"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mia",
+          "surname": "Yang"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Michael",
+          "surname": "Borrie"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Michael",
+          "surname": "Lin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Michele",
+          "surname": "Assaly"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Michelle",
+          "surname": "Rainka"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mimi",
+          "surname": "Dang"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mohammed O.",
+          "surname": "Sheikh"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mrunalini",
+          "surname": "Gaikwad"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Munir",
+          "surname": "Chowdhury"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Nadira",
+          "surname": "Trncic"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Nancy",
+          "surname": "Johnson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Nancy",
+          "surname": "Kowalksi"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Nathaniel",
+          "surname": "Pacini"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Neil",
+          "surname": "Kowall"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Neill R",
+          "surname": "Graff-Radford"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Norman",
+          "surname": "Relkin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ntekim E.",
+          "surname": "Oyonumo"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Nunzio",
+          "surname": "Pomara"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Olga",
+          "surname": "James"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Olu",
+          "surname": "Ogunlana"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Oscar L.",
+          "surname": "Lopez"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Owen",
+          "surname": "Carmichael"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "P. Murali",
+          "surname": "Doraiswamy"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Parianne",
+          "surname": "Fatica"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Patricia Lynn",
+          "surname": "Johnson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Patricia",
+          "surname": "Samuels"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Paul",
+          "surname": "Malloy"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Paula",
+          "surname": "Ogrocki"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Pauline",
+          "surname": "Maillard"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Peter",
+          "surname": "Hardy"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Pierre",
+          "surname": "Tariot"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Po H.",
+          "surname": "Lu"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Pradeep",
+          "surname": "Varma"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Rachelle S.",
+          "surname": "Doody"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Raina",
+          "surname": "Carter"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Raj C.",
+          "surname": "Shah"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Randall",
+          "surname": "Griffith"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Randy",
+          "surname": "Yeh"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ranjan",
+          "surname": "Duara"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Rawan",
+          "surname": "Tarawneh"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Raymond Scott",
+          "surname": "Turner"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Raymundo",
+          "surname": "Hernando"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Reisa A.",
+          "surname": "Sperling"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Richard E.",
+          "surname": "Carson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Riham",
+          "surname": "El Khouli"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Robert B.",
+          "surname": "Santulli"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ronald",
+          "surname": "Killiany"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Rosemarie",
+          "surname": "Rodriguez"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Russell H.",
+          "surname": "Swerdlow"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Salvador",
+          "surname": "Borges-Neto"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sandra",
+          "surname": "Black"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sandra",
+          "surname": "Weintraub"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sanjay",
+          "surname": "Asthana"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sanjeev",
+          "surname": "Vaishnavi"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sara",
+          "surname": "Dolen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sara S.",
+          "surname": "Mason"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sarah",
+          "surname": "Kremen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Scott",
+          "surname": "Herring"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sherye A.",
+          "surname": "Sirrel"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Smita",
+          "surname": "Kittur"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sonia",
+          "surname": "Pawluczyk"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Stacy",
+          "surname": "Schneider"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Stephanie",
+          "surname": "Kielb"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Stephanie",
+          "surname": "Reeder"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Stephen",
+          "surname": "Correia"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Stephen",
+          "surname": "Pasternack"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Stephen",
+          "surname": "Pasternak"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Stephen",
+          "surname": "Salloway"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sterling",
+          "surname": "Johnson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Steven",
+          "surname": "Chao"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Steven E.",
+          "surname": "Arnold"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Susan K.",
+          "surname": "Schultz"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Susan",
+          "surname": "Rountree"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "T-Y",
+          "surname": "Lee"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Terence Z.",
+          "surname": "Wong"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Teresa",
+          "surname": "Villena"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Thomas O.",
+          "surname": "Obisesan"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Valory",
+          "surname": "Pavlik"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Vernice",
+          "surname": "Bates"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Vesna",
+          "surname": "Sossi"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Victoria",
+          "surname": "Shibley"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "William M.",
+          "surname": "Brooks"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "William",
+          "surname": "Pavlosky"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Yaakov",
+          "surname": "Stern"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Adam",
+          "surname": "Simon"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ashok",
+          "surname": "Dongre"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Bob",
+          "surname": "Dean"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Brad",
+          "surname": "Navia"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Dan",
+          "surname": "Spellman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Lee"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "David",
+          "surname": "Shera"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Eric",
+          "surname": "Siemers"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Eve",
+          "surname": "Pickering"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Frank",
+          "surname": "Swenson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Fred",
+          "surname": "Immerman"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "George",
+          "surname": "Nomikos"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Holly",
+          "surname": "Soares"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Hong",
+          "surname": "Wan"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jeff",
+          "surname": "Seeburger"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Jeff",
+          "surname": "Waring"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "John",
+          "surname": "Trojanowski"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Judy",
+          "surname": "Siuciak"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Kevin",
+          "surname": "Duffin"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Les",
+          "surname": "Shaw"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Li-San",
+          "surname": "Wang"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Madhav",
+          "surname": "Thambisetty"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Marc",
+          "surname": "Walton"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mary",
+          "surname": "Savage"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Mats",
+          "surname": "Ferm"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Max",
+          "surname": "Kuhn"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Neil",
+          "surname": "Buckholtz"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Panos",
+          "surname": "Zagouras"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Patricia",
+          "surname": "Cole"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Ron",
+          "surname": "Hendrickson"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sharon",
+          "surname": "Xie"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Sophie",
+          "surname": "Allauzen"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "Walter",
+          "surname": "Koroshetz"
+        }
+      },
+      "role": "author non-byline"
+    },
+    {
+      "contrib": {
+        "name": {
+          "given_name": "William",
+          "surname": "Potter"
+        }
+      },
+      "role": "author non-byline"
+    }
+  ],
+  "pagination": {
+    "firstPage": "1697",
+    "lastPage": "1706",
+    "pageCount": "10",
+    "pageRange": "1697-1706"
   },
-  "abstract": {
-    "textEnglish": "Alzheimer\u2019s disease (AD) is an age-related neurodegenerative disease. Genome-wide association studies predominately focusing on Caucasian populations have identified risk loci and genes associated with AD; the majority of these variants reside in noncoding regions with unclear functions. Here, we report a whole-genome sequencing study for AD in the Chinese population. Other than the APOE locus, we identified common variants in GCH1 and KCNJ15 that show suggestive associations with AD. For these two risk variants, an association with AD or advanced onset of disease can be observed in non-Asian AD cohorts. An association study of risk variants with expression data revealed their modulatory effects on immune signatures, linking the potential roles of these genes with immune-related pathways during AD pathogenesis."
+  "persistentIDs": [
+    {
+      "DOI": "10.1073/pnas.1715554115"
+    }
+  ],
+  "pubDate": {
+    "electrDate": "2018-02-05",
+    "printDate": "2018-02-20"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0027-8424",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "1091-6490",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "8",
+    "pubName": "Proceedings of the National Academy of Sciences",
+    "pubYear": "2018",
+    "publisher": "National Academy of Sciences",
+    "volumeNum": "115"
+  },
+  "publisherIDs": [
+    {
+      "Identifier": "201715554",
+      "attribute": "publisher-id"
+    }
+  ],
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<ref id=\"r1\"><label>1</label><mixed-citation publication-type=\"journal\"><person-group person-group-type=\"author\"><string-name name-style=\"western\"><given-names>KY</given-names> <surname>Chan</surname></string-name>, <etal/></person-group>, <article-title>Epidemiology of Alzheimer\u2019s disease and other forms of dementia in China, 1990-2010: A systematic review and analysis</article-title>. <source><italic toggle=\"yes\">Lancet</italic></source><person-group person-group-type=\"author\">; <collab>Global Health Epidemiology Reference Group (GHERG)</collab></person-group> <volume><bold>381</bold></volume>, <fpage>2016</fpage>\u2013<lpage>2023</lpage> (<year>2013</year>).</mixed-citation></ref>",
@@ -3546,30 +3569,7 @@
     "<ref id=\"r77\"><label>77</label><mixed-citation publication-type=\"journal\"><person-group person-group-type=\"author\"><string-name name-style=\"western\"><given-names>E</given-names> <surname>Masliah</surname></string-name>, <string-name name-style=\"western\"><given-names>W</given-names> <surname>Dumaop</surname></string-name>, <string-name name-style=\"western\"><given-names>D</given-names> <surname>Galasko</surname></string-name>, <string-name name-style=\"western\"><given-names>P</given-names> <surname>Desplats</surname></string-name></person-group>, <article-title>Distinctive patterns of DNA methylation associated with Parkinson disease: Identification of concordant epigenetic changes in brain and peripheral blood leukocytes</article-title>. <source><italic toggle=\"yes\">Epigenetics</italic></source> <volume><bold>8</bold></volume>, <fpage>1030</fpage>\u2013<lpage>1038</lpage> (<year>2013</year>).</mixed-citation></ref>",
     "<ref id=\"r78\"><label>78</label><mixed-citation publication-type=\"journal\"><person-group person-group-type=\"author\"><string-name name-style=\"western\"><given-names>NA</given-names> <surname>Bowden</surname></string-name>, <etal/></person-group>, <article-title>Preliminary investigation of gene expression profiles in peripheral blood lymphocytes in schizophrenia</article-title>. <source><italic toggle=\"yes\">Schizophr Res</italic></source> <volume><bold>82</bold></volume>, <fpage>175</fpage>\u2013<lpage>183</lpage> (<year>2006</year>).</mixed-citation></ref>"
   ],
-  "keywords": [
-    {
-      "keyString": "Alzheimer\u2019s disease",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "whole-genome sequencing",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "GWAS",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "risk variant",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "immune",
-      "keySystem": "misc"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "Copyright \u00a9 2018 the Author(s). Published by PNAS."
+  "title": {
+    "textEnglish": "Identification of genetic risk factors in the Chinese population implicates a role of immune system in Alzheimer\u2019s disease pathogenesis"
   }
 }

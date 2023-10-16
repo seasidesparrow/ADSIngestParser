@@ -151,5 +151,11 @@
     "<citation key=\"b87\"> <doi>10.1029/98GL01029</doi> </citation>",
     "<citation key=\"b88\"> <doi>10.1029/1998GL900169</doi> </citation>",
     "<citation key=\"b89\"> <doi>10.1175/1520-0442(2000)013<3337:DVITWV>2.0.CO;2</doi> </citation>"
+  ],
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "https://www.annualreviews.org/doi/10.1146/annurev.energy.25.1.441"
+    }
   ]
 }

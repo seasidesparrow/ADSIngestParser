@@ -49,6 +49,7 @@ dev = [
     'pytest-cov==3.0.0',
     'pytest-cookies==0.6.1',
     'semantic-release==0.1.0',
+    'validators==0.22.0',
 ]
 docs = [
     'Sphinx==4.3.1',

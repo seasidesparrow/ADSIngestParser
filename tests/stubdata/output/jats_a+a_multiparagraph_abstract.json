@@ -1,311 +1,348 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "Context. V838 Monocerotis is a peculiar binary that underwent an immense stellar explosion in 2002, leaving behind an expanding cool supergiant and a hot B3V companion. Five years after the outburst, the B3V companion disappeared from view, and has not returned to its original state.\nAims. We investigate the changes in the light curve and spectral features to explain the behaviour of V838 Mon during the current long-lasting minimum.\nMethods. A monitoring campaign has been performed over the past 13 years with the Nordic Optical Telescope to obtain optical photometric and spectroscopic data. The datasets are used to analyse the temporal evolution of the spectral features and the spectral energy distribution, and to characterise the object.\nResults. Our photometric data show a steady brightening in all bands over the past 13 years, which is particularly prominent in the blue. This rise is also reflected in the spectra, showing a gradual relative increase in the continuum flux at shorter wavelengths. In addition, a slow brightening of the H\u03b1 emission line starting in 2015 was detected. These changes might imply that the B3V companion is slowly reappearing. During the same time interval, our analysis reveals a considerable change in the observed colours of the object along with a steady decrease in the strength and width of molecular absorption bands in our low-resolution spectra. These changes suggest a rising temperature of the cool supergiant along with a weakening of its wind, most likely combined with a slow recovery of the secondary due to the evaporation of the dust and accretion of the material from the shell in which the hot companion is embedded. From our medium-resolution spectra, we find that the heliocentric radial velocity of the atomic absorption line of Ti I 6556.06 \u00c5 has been stable for more than a decade. We propose that Ti I lines are tracing the velocity of the red supergiant in V838 Mon, and do not represent the infalling matter as previously stated."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF1",
+          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic"
+        },
+        {
+          "affPubID": "AFF2",
+          "affPubRaw": "Tartu Observatory, University of Tartu, Observatooriumi 1, 61602 T\u00f5ravere, Estonia"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-2196-9091"
+      },
+      "name": {
+        "given_name": "T.",
+        "surname": "Liimets"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF2",
+          "affPubRaw": "Tartu Observatory, University of Tartu, Observatooriumi 1, 61602 T\u00f5ravere, Estonia"
+        }
+      ],
+      "name": {
+        "given_name": "I.",
+        "surname": "Kolka"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF1",
+          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-4502-6330"
+      },
+      "name": {
+        "given_name": "M.",
+        "surname": "Kraus"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF2",
+          "affPubRaw": "Tartu Observatory, University of Tartu, Observatooriumi 1, 61602 T\u00f5ravere, Estonia"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Eenm\u00e4e"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF2",
+          "affPubRaw": "Tartu Observatory, University of Tartu, Observatooriumi 1, 61602 T\u00f5ravere, Estonia"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Tuvikene"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF3",
+          "affPubRaw": "Nordic Optical Telescope, Rambla Jos\u00e9 Ana Fern\u00e1ndez, P\u00e9rez 7, 38711 Bre\u00f1a Baja, Spain"
+        },
+        {
+          "affPubID": "AFF4",
+          "affPubRaw": "Department of Physics and Astronomy, Aarhus University, Munkegade 120, 8000 Aarhus C, Denmark"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Augusteijn"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF5",
+          "affPubRaw": "Instituto de F\u00edsica y Astronom\u00eda, Universidad de Valpara\u00edso, Gran Breta\u00f1a 1111, Playa Ancha, Valpara\u00edso 2360102, Chile"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Antunes Amaral"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF3",
+          "affPubRaw": "Nordic Optical Telescope, Rambla Jos\u00e9 Ana Fern\u00e1ndez, P\u00e9rez 7, 38711 Bre\u00f1a Baja, Spain"
+        },
+        {
+          "affPubID": "AFF4",
+          "affPubRaw": "Department of Physics and Astronomy, Aarhus University, Munkegade 120, 8000 Aarhus C, Denmark"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-6316-9880"
+      },
+      "name": {
+        "given_name": "A. A.",
+        "surname": "Djupvik"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF3",
+          "affPubRaw": "Nordic Optical Telescope, Rambla Jos\u00e9 Ana Fern\u00e1ndez, P\u00e9rez 7, 38711 Bre\u00f1a Baja, Spain"
+        },
+        {
+          "affPubID": "AFF4",
+          "affPubRaw": "Department of Physics and Astronomy, Aarhus University, Munkegade 120, 8000 Aarhus C, Denmark"
+        }
+      ],
+      "name": {
+        "given_name": "J. H.",
+        "surname": "Telting"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF1",
+          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic"
+        }
+      ],
+      "name": {
+        "given_name": "B.",
+        "surname": "Deshev"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF6",
+          "affPubRaw": "Tuorla Observatory, Department of Physics and Astronomy, University of Turku, 20014 Turku, Finland"
+        }
+      ],
+      "name": {
+        "given_name": "E.",
+        "surname": "Kankare"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF1",
+          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Kankare"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF1",
+          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-3811-4591"
+      },
+      "name": {
+        "given_name": "J. E.",
+        "surname": "Lindberg"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF7",
+          "affPubRaw": "Viborg Katedralskole, Gl.Skivevej 2, 8800 Viborg, Denmark"
+        }
+      ],
+      "name": {
+        "given_name": "T. M.",
+        "surname": "Amby"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF3",
+          "affPubRaw": "Nordic Optical Telescope, Rambla Jos\u00e9 Ana Fern\u00e1ndez, P\u00e9rez 7, 38711 Bre\u00f1a Baja, Spain"
+        },
+        {
+          "affPubID": "AFF4",
+          "affPubRaw": "Department of Physics and Astronomy, Aarhus University, Munkegade 120, 8000 Aarhus C, Denmark"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Pursimo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF6",
+          "affPubRaw": "Tuorla Observatory, Department of Physics and Astronomy, University of Turku, 20014 Turku, Finland"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Somero"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF8",
+          "affPubRaw": "Department of Physics, University of Warwick, Coventry CV4 7AL, UK"
+        },
+        {
+          "affPubID": "AFF9",
+          "affPubRaw": "Institut d\u2019astrophysique de Paris, CNRS, UMR 7095 & Sorbonne Universit\u00e9s, UPMC Paris 6, 98 Boulevard Arago, 75014 Paris, France"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Thygesen"
+      }
+    },
+    {
+      "name": {
+        "given_name": "P. A.",
+        "surname": "Str\u00f8m"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 T. Liimets et al. 2023",
+    "status": true
   },
   "editorialHistory": {
+    "acceptedDate": "2022-11-12",
     "receivedDates": [
       "2021-12-20"
-    ],
-    "acceptedDate": "2022-11-12"
-  },
-  "pubDate": {
-    "electrDate": "2023-01-27",
-    "printDate": "2023-02-00"
-  },
-  "publication": {
-    "pubName": "Astronomy & Astrophysics",
-    "publisher": "EDP Sciences",
-    "issueNum": "None",
-    "volumeNum": "670",
-    "pubYear": "2023",
-    "ISSN": [
-      {
-        "pubtype": "ppub",
-        "issnString": "0004-6361"
-      },
-      {
-        "pubtype": "epub",
-        "issnString": "1432-0746"
-      }
     ]
+  },
+  "esources": [
+    {
+      "location": "https://www.aanda.org/articles/aa/full_html/2023/02/aa42959-21/aa42959-21.html",
+      "source": "pub_html"
+    },
+    {
+      "location": "https://www.aanda.org/articles/aa/pdf/2023/02/aa42959-21.pdf",
+      "source": "pub_pdf"
+    }
+  ],
+  "keywords": [
+    {
+      "keyString": "stars: individual: V838 Mon",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "stars: evolution",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "stars: peculiar",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "stars: mass-loss",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "techniques: photometric",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "techniques: spectroscopic",
+      "keySystem": "misc"
+    }
+  ],
+  "pagination": {
+    "electronicID": "A13",
+    "pageCount": "13"
   },
   "persistentIDs": [
     {
       "DOI": "10.1051/0004-6361/202142959"
     }
   ],
+  "pubDate": {
+    "electrDate": "2023-01-27",
+    "printDate": "2023-02-00"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0004-6361",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "1432-0746",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "None",
+    "pubName": "Astronomy & Astrophysics",
+    "pubYear": "2023",
+    "publisher": "EDP Sciences",
+    "volumeNum": "670"
+  },
   "publisherIDs": [
     {
-      "attribute": "publisher-id",
-      "Identifier": "aa42959-21"
+      "Identifier": "aa42959-21",
+      "attribute": "publisher-id"
     },
     {
-      "attribute": "other",
-      "Identifier": "2023A%26A...670A..13L"
+      "Identifier": "2023A%26A...670A..13L",
+      "attribute": "other"
     }
   ],
-  "pagination": {
-    "pageCount": "13",
-    "electronicID": "A13"
-  },
-  "authors": [
-    {
-      "name": {
-        "surname": "Liimets",
-        "given_name": "T."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic",
-          "affPubID": "AFF1"
-        },
-        {
-          "affPubRaw": "Tartu Observatory, University of Tartu, Observatooriumi 1, 61602 T\u00f5ravere, Estonia",
-          "affPubID": "AFF2"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-2196-9091"
-      }
-    },
-    {
-      "name": {
-        "surname": "Kolka",
-        "given_name": "I."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Tartu Observatory, University of Tartu, Observatooriumi 1, 61602 T\u00f5ravere, Estonia",
-          "affPubID": "AFF2"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Kraus",
-        "given_name": "M."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic",
-          "affPubID": "AFF1"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-4502-6330"
-      }
-    },
-    {
-      "name": {
-        "surname": "Eenm\u00e4e",
-        "given_name": "T."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Tartu Observatory, University of Tartu, Observatooriumi 1, 61602 T\u00f5ravere, Estonia",
-          "affPubID": "AFF2"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Tuvikene",
-        "given_name": "T."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Tartu Observatory, University of Tartu, Observatooriumi 1, 61602 T\u00f5ravere, Estonia",
-          "affPubID": "AFF2"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Augusteijn",
-        "given_name": "T."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Nordic Optical Telescope, Rambla Jos\u00e9 Ana Fern\u00e1ndez, P\u00e9rez 7, 38711 Bre\u00f1a Baja, Spain",
-          "affPubID": "AFF3"
-        },
-        {
-          "affPubRaw": "Department of Physics and Astronomy, Aarhus University, Munkegade 120, 8000 Aarhus C, Denmark",
-          "affPubID": "AFF4"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Antunes Amaral",
-        "given_name": "L."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Instituto de F\u00edsica y Astronom\u00eda, Universidad de Valpara\u00edso, Gran Breta\u00f1a 1111, Playa Ancha, Valpara\u00edso 2360102, Chile",
-          "affPubID": "AFF5"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Djupvik",
-        "given_name": "A. A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Nordic Optical Telescope, Rambla Jos\u00e9 Ana Fern\u00e1ndez, P\u00e9rez 7, 38711 Bre\u00f1a Baja, Spain",
-          "affPubID": "AFF3"
-        },
-        {
-          "affPubRaw": "Department of Physics and Astronomy, Aarhus University, Munkegade 120, 8000 Aarhus C, Denmark",
-          "affPubID": "AFF4"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-6316-9880"
-      }
-    },
-    {
-      "name": {
-        "surname": "Telting",
-        "given_name": "J. H."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Nordic Optical Telescope, Rambla Jos\u00e9 Ana Fern\u00e1ndez, P\u00e9rez 7, 38711 Bre\u00f1a Baja, Spain",
-          "affPubID": "AFF3"
-        },
-        {
-          "affPubRaw": "Department of Physics and Astronomy, Aarhus University, Munkegade 120, 8000 Aarhus C, Denmark",
-          "affPubID": "AFF4"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Deshev",
-        "given_name": "B."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic",
-          "affPubID": "AFF1"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Kankare",
-        "given_name": "E."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Tuorla Observatory, Department of Physics and Astronomy, University of Turku, 20014 Turku, Finland",
-          "affPubID": "AFF6"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Kankare",
-        "given_name": "J."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic",
-          "affPubID": "AFF1"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Lindberg",
-        "given_name": "J. E."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Astronomical Institute, Czech Academy of Sciences, Fri\u010dova 298, 25165 Ond\u0159ejov, Czech Republic",
-          "affPubID": "AFF1"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-3811-4591"
-      }
-    },
-    {
-      "name": {
-        "surname": "Amby",
-        "given_name": "T. M."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Viborg Katedralskole, Gl.Skivevej 2, 8800 Viborg, Denmark",
-          "affPubID": "AFF7"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Pursimo",
-        "given_name": "T."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Nordic Optical Telescope, Rambla Jos\u00e9 Ana Fern\u00e1ndez, P\u00e9rez 7, 38711 Bre\u00f1a Baja, Spain",
-          "affPubID": "AFF3"
-        },
-        {
-          "affPubRaw": "Department of Physics and Astronomy, Aarhus University, Munkegade 120, 8000 Aarhus C, Denmark",
-          "affPubID": "AFF4"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Somero",
-        "given_name": "A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Tuorla Observatory, Department of Physics and Astronomy, University of Turku, 20014 Turku, Finland",
-          "affPubID": "AFF6"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Thygesen",
-        "given_name": "A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Physics, University of Warwick, Coventry CV4 7AL, UK",
-          "affPubID": "AFF8"
-        },
-        {
-          "affPubRaw": "Institut d\u2019astrophysique de Paris, CNRS, UMR 7095 & Sorbonne Universit\u00e9s, UPMC Paris 6, 98 Boulevard Arago, 75014 Paris, France",
-          "affPubID": "AFF9"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Str\u00f8m",
-        "given_name": "P. A."
-      }
-    }
-  ],
-  "title": {
-    "textEnglish": "V838 Mon: A slow waking up of Sleeping Beauty?"
-  },
-  "abstract": {
-    "textEnglish": "Context. V838 Monocerotis is a peculiar binary that underwent an immense stellar explosion in 2002, leaving behind an expanding cool supergiant and a hot B3V companion. Five years after the outburst, the B3V companion disappeared from view, and has not returned to its original state.\nAims. We investigate the changes in the light curve and spectral features to explain the behaviour of V838 Mon during the current long-lasting minimum.\nMethods. A monitoring campaign has been performed over the past 13 years with the Nordic Optical Telescope to obtain optical photometric and spectroscopic data. The datasets are used to analyse the temporal evolution of the spectral features and the spectral energy distribution, and to characterise the object.\nResults. Our photometric data show a steady brightening in all bands over the past 13 years, which is particularly prominent in the blue. This rise is also reflected in the spectra, showing a gradual relative increase in the continuum flux at shorter wavelengths. In addition, a slow brightening of the H\u03b1 emission line starting in 2015 was detected. These changes might imply that the B3V companion is slowly reappearing. During the same time interval, our analysis reveals a considerable change in the observed colours of the object along with a steady decrease in the strength and width of molecular absorption bands in our low-resolution spectra. These changes suggest a rising temperature of the cool supergiant along with a weakening of its wind, most likely combined with a slow recovery of the secondary due to the evaporation of the dust and accretion of the material from the shell in which the hot companion is embedded. From our medium-resolution spectra, we find that the heliocentric radial velocity of the atomic absorption line of Ti I 6556.06 \u00c5 has been stable for more than a decade. We propose that Ti I lines are tracing the velocity of the red supergiant in V838 Mon, and do not represent the infalling matter as previously stated."
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<ref id=\"R1\"> <mixed-citation publication-type=\"journal\"> <string-name><surname>Af\u015far</surname>, <given-names>M.</given-names></string-name>, & <string-name><surname>Bond</surname>, <given-names>H. E.</given-names></string-name> <year>2007</year>, <source>AJ</source>, <volume>133</volume>, <fpage>387</fpage> </mixed-citation> </ref>",
@@ -364,34 +401,7 @@
     "<ref id=\"R54\"> <mixed-citation publication-type=\"journal\"> <string-name><surname>Woodward</surname>, <given-names>C. E.</given-names></string-name>, <string-name><surname>Evans</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Banerjee</surname>, <given-names>D. P. K.</given-names></string-name>, et al. <year>2021</year>, <source>AJ</source>, <volume>162</volume>, <fpage>183</fpage> </mixed-citation> </ref>",
     "<ref id=\"R55\"> <mixed-citation publication-type=\"journal\"> <string-name><surname>Worthey</surname>, <given-names>G.</given-names></string-name>, & <string-name><surname>Lee</surname>, <given-names>H.-C.</given-names></string-name> <year>2011</year>, <source>A&AS</source>, <volume>193</volume>, <fpage>1</fpage> </mixed-citation> </ref>"
   ],
-  "keywords": [
-    {
-      "keyString": "stars: individual: V838 Mon",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "stars: evolution",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "stars: peculiar",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "stars: mass-loss",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "techniques: photometric",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "techniques: spectroscopic",
-      "keySystem": "misc"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "\u00a9 T. Liimets et al. 2023"
+  "title": {
+    "textEnglish": "V838 Mon: A slow waking up of Sleeping Beauty?"
   }
 }

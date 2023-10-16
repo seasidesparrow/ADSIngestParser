@@ -264,6 +264,12 @@
   "title": {
     "textEnglish": "The Solar Probe ANalyzer -Ions on Parker Solar Probe"
   },
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "https://essopenarchive.org/doi/full/10.1002/essoar.10508651.1"
+    }
+  ],
   "funding": [
     {
       "agencyname": "National Aeronautics and Space Administration",

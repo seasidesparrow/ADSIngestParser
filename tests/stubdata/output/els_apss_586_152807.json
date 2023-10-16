@@ -20,6 +20,7 @@
  "keywords": [{"keyString": "Pulsed nanosecond laser", "keySystem": "Elsevier"}, {"keyString": "Topography", "keySystem": "Elsevier"}, {"keyString": "Residual stress", "keySystem": "Elsevier"}, {"keyString": "XRD", "keySystem": "Elsevier"}, {"keyString": "Scanning microwave microscopy SMM", "keySystem": "Elsevier"}],
  "pagination": {"electronicID": "152807"},
  "persistentIDs": [{"DOI": "10.1016/j.apsusc.2022.152807"}],
+ "esources": [{"source": "pub_html", "location": "http://dx.doi.org/10.1016/j.apsusc.2022.152807"}],
  "pubDate": {"printDate": "2022-06-01"},
  "publication": {"ISSN": [{"issnString": "0169-4332", "pubtype": "not specified"}], "pubName": "Applied Surface Science", "pubYear": "2022", "publisher": "Elsevier B.V.", "volumeNum": "586"},
  "publisherIDs": [{"Identifier": "S0169-4332(22)00385-3", "attribute": "PII"}],

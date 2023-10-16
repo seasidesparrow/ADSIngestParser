@@ -209,6 +209,12 @@
     "<citation key=\"2022111019292998700_bib111\"> <journal_title>A&A</journal_title> <author>Zari</author> <volume>628</volume> <first_page>A123</first_page> <cYear>2019</cYear> <doi>10.1051/0004-6361/201935781</doi> </citation>",
     "<citation key=\"2022111019292998700_bib112\"> <volume_title>Proc. 1996 ACM SIGMOD International Conference on Management of Data (SIGMOD\u201996</volume_title> <author>Zhang</author> <first_page>103</first_page> <cYear>1996</cYear> <doi provider=\"crossref\">10.1145/233269.233324</doi> </citation>"
   ],
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "https://academic.oup.com/mnras/article/517/4/5496/6764744"
+    }
+  ],
   "funding": [
     {
       "agencyname": "Chinese Academy of Sciences",

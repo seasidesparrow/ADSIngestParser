@@ -167,5 +167,11 @@
   ],
   "title": {
     "textEnglish": "Marsquake locations and 1-D seismic models for Mars from InSight data"
-  }
+  },
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "https://essopenarchive.org/doi/full/10.1002/essoar.10511074.2"
+    }
+  ]
 }
