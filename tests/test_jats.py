@@ -28,6 +28,22 @@ class TestJATS(unittest.TestCase):
 
     def test_jats(self):
         filenames = [
+            "jats_spie_jmnmm_1.JMM.21.4.041407",
+            "jats_spie_spie_12.2663387",
+            "jats_spie_spie_12.2665113",
+            "jats_spie_opten_1.OE.62.4.048103",
+            "jats_spie_spie_12.2663472",
+            "jats_spie_spie_12.2665157",
+            "jats_spie_opten_1.OE.62.4.066101",
+            "jats_spie_spie_12.2663687",
+            "jats_spie_spie_12.2665696",
+            "jats_spie_spie_12.2663029",
+            "jats_spie_spie_12.2664418",
+            "jats_spie_spie_12.2690579",
+            "jats_spie_spie_12.2663066",
+            "jats_spie_spie_12.2664959",
+            "jats_spie_spie_12.2663263",
+            "jats_spie_spie_12.2665099",
             "jats_springer_AcMSn_s10409-023-23061-x",
             "jats_springer_AcMSn_s10409-023-23086-x",
             "jats_springerEarly_ExA_s10686-023-09907-7",

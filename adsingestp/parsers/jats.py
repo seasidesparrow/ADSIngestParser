@@ -594,19 +594,20 @@ class JATSParser(BaseBeautifulSoupParser):
 
             self.base_metadata["title"] = self._detag(title, self.JATS_TAGSET["title"]).strip()
 
-        if self.article_meta.find("abstract") and self.article_meta.find("abstract").find("p"):
-            abstract_all = self.article_meta.find("abstract").find_all("p")
-            abstract_paragraph_list = list()
-            for paragraph in abstract_all:
-                para = self._detag(paragraph, self.JATS_TAGSET["abstract"])
-                abstract_paragraph_list.append(para)
-            self.base_metadata["abstract"] = "\n".join(abstract_paragraph_list)
-            # abstract = self._detag(
-            #     self.article_meta.find("abstract").find("p"), self.JATS_TAGSET["abstract"]
-            # )
-            # self.base_metadata["abstract"] = abstract
-            if title_fn_list:
-                self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
+        if self.article_meta.find("abstract"):
+            if self.article_meta.find("abstract").find("p"):
+                abstract_all = self.article_meta.find("abstract").find_all("p")
+                abstract_paragraph_list = list()
+                for paragraph in abstract_all:
+                    para = self._detag(paragraph, self.JATS_TAGSET["abstract"])
+                    abstract_paragraph_list.append(para)
+                self.base_metadata["abstract"] = "\n".join(abstract_paragraph_list)
+                if title_fn_list:
+                    self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
+            else:
+                abs_raw = self.article_meta.find("abstract")
+                abs_txt = self._detag(abs_raw, self.JATS_TAGSET["abstract"])
+                self.base_metadata["abstract"] = abs_txt
 
     def _parse_author(self):
         auth_affil = JATSAffils()
@@ -773,7 +774,7 @@ class JATSParser(BaseBeautifulSoupParser):
         issn_all = self.journal_meta.find_all("issn")
         issns = []
         for i in issn_all:
-            issns.append((i["pub-type"], self._detag(i, [])))
+            issns.append((i.get("pub-type", ""), self._detag(i, [])))
         self.base_metadata["issn"] = issns
 
         isbn_all = self.article_meta.find_all("isbn")
@@ -847,13 +848,23 @@ class JATSParser(BaseBeautifulSoupParser):
 
     def _parse_pubdate(self):
         pub_dates = self.article_meta.find_all("pub-date")
+
         for d in pub_dates:
             pub_format = d.get("publication-format", "")
             pub_type = d.get("pub-type", "")
             pubdate = self._get_date(d)
-            if pub_format == "print" or pub_type == "ppub" or pub_type == "cover":
+            if (
+                pub_format == "print"
+                or pub_type == "ppub"
+                or pub_type == "cover"
+                or (pub_type == "" and pub_format == "")
+            ):
                 self.base_metadata["pubdate_print"] = pubdate
-            elif pub_format == "electronic" or pub_type == "epub":
+            if (
+                pub_format == "electronic"
+                or pub_type == "epub"
+                or (pub_type == "" and pub_format == "")
+            ):
                 self.base_metadata["pubdate_electronic"] = pubdate
 
             if pub_type == "open-access":
