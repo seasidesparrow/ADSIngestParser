@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "recordData": {
     "createdTime": "",
     "parsedTime": "",
@@ -42,6 +43,154 @@
     {
       "attribute": "manuscript",
       "Identifier": "AJP22-AR-00002"
+=======
+  "abstract": {
+    "textEnglish": "Gravitational-wave observatories around the world are searching for continuous waves: persistent signals from sources, such as spinning neutron stars. These searches use sophisticated statistical techniques to look for weak signals in noisy data. In this paper, we demonstrate these techniques using a table-top model gravitational-wave detector: a Michelson interferometer where sound is used as an analog for gravitational waves. Using signal processing techniques from continuous-wave searches, we demonstrate the recovery of tones with constant and wandering frequencies. We also explore the use of the interferometer as a teaching tool for educators in physics and electrical engineering by using it as an \u201coptical microphone\u201d to capture music and speech. A range of filtering techniques used to recover signals from noisy data are detailed in the supplementary material of this article. Here, we present the highlights of our results using a combined notch plus Wiener filter and the statistical log minimum mean-square error (logMMSE) estimator. Using these techniques, we easily recover recordings of simple chords and drums, but complex music and speech are more challenging. This demonstration can be used by educators in undergraduate laboratories and can be adapted for communicating gravitational-wave and signal-processing topics to nonspecialist audiences."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Centre for Gravitational Astrophysics, The Australian National University , Acton, ACT 2601,  Australia ;"
+        },
+        {
+          "affPubRaw": "OzGrav-ANU, Australian Research Council Centre of Excellence for Gravitational Wave Discovery, The Australian National University , Acton, ACT 2601,  Australia ; and  School of Physics, University of Melbourne , Parkville, Victoria 3010,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "James W.",
+        "surname": "Gardner"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "School of Physics, University of Melbourne, Parkville, Victoria 3010, Australia;  Centre for Astrophysics and Supercomputing, Swinburne University of Technology , Hawthorn, Victoria 3122,  Australia ;  OzGrav-Melbourne, Australian Research Council Centre of Excellence for Gravitational Wave Discovery , Parkville, Victoria 3010,  Australia ; and School of Physics and Astronomy and Institute for Gravitational Wave Astronomy, University of Birmingham, Edgbaston, Birmingham, B15 9TT, United Kingdom"
+        }
+      ],
+      "name": {
+        "given_name": "Hannah",
+        "surname": "Middleton"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Electrical and Electronic Engineering, University of Melbourne, Parkville, Victoria 3010, Australia and  OzGrav-Melbourne, Australian Research Council Centre of Excellence for Gravitational Wave Discovery , Parkville, Victoria 3010,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "Changrong",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "School of Physics, University of Melbourne , Parkville, Victoria 3010,  Australia  and  OzGrav-Melbourne, Australian Research Council Centre of Excellence for Gravitational Wave Discovery , Parkville, Victoria 3010,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "Andrew",
+        "surname": "Melatos"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Electrical and Electronic Engineering, University of Melbourne, Parkville, Victoria 3010, Australia and  OzGrav-Melbourne, Australian Research Council Centre of Excellence for Gravitational Wave Discovery , Parkville, Victoria 3010,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "Robin",
+        "surname": "Evans"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Electrical and Electronic Engineering, University of Melbourne , Parkville, Victoria 3010,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "William",
+        "surname": "Moran"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Physics, The University of Adelaide , Adelaide, South Australia 5005,  Australia ;  The Institute of Photonics and Advanced Sensing (IPAS), The University of Adelaide , Adelaide, South Australia 5005,  Australia ; and  OzGrav-Adelaide, Australian Research Council Centre of Excellence for Gravitational Wave Discovery , Adelaide, South Australia 5005,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "Deeksha",
+        "surname": "Beniwal"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Physics, The University of Adelaide , Adelaide, South Australia 5005,  Australia ;"
+        },
+        {
+          "affPubRaw": "The Institute of Photonics and Advanced Sensing (IPAS), The University of Adelaide , Adelaide, South Australia 5005,  Australia ; and  OzGrav-Adelaide, Australian Research Council Centre of Excellence for Gravitational Wave Discovery , Adelaide, South Australia 5005,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "Huy Tuong",
+        "surname": "Cao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Physics, The University of Adelaide , Adelaide, South Australia 5005,  Australia ;  The Institute of Photonics and Advanced Sensing (IPAS), The University of Adelaide , Adelaide, South Australia 5005,  Australia ; and  OzGrav-Adelaide, Australian Research Council Centre of Excellence for Gravitational Wave Discovery , Adelaide, South Australia 5005,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "Craig",
+        "surname": "Ingram"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Physics, The University of Adelaide , Adelaide, South Australia 5005,  Australia ;  The Institute of Photonics and Advanced Sensing (IPAS), The University of Adelaide , Adelaide, South Australia 5005,  Australia ; and  OzGrav-Adelaide, Australian Research Council Centre of Excellence for Gravitational Wave Discovery , Adelaide, South Australia 5005,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "Daniel",
+        "surname": "Brown"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Physics, The University of Adelaide , Adelaide, South Australia 5005,  Australia ;  The Institute of Photonics and Advanced Sensing (IPAS), The University of Adelaide , Adelaide, South Australia 5005,  Australia ; and  OzGrav-Adelaide, Australian Research Council Centre of Excellence for Gravitational Wave Discovery , Adelaide, South Australia 5005,  Australia"
+        }
+      ],
+      "name": {
+        "given_name": "Sebastian",
+        "surname": "Ng"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 2022 Author(s).",
+    "status": true
+  },
+  "editorialHistory": {
+    "acceptedDate": "2021-12-07",
+    "receivedDates": [
+      "2020-11-19"
+    ]
+  },
+  "keywords": [
+    {
+      "keyString": "PAPERS",
+      "keySystem": "subject"
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
     }
   ],
   "pagination": {
@@ -50,6 +199,7 @@
     "pageCount": "11",
     "pageRange": "286-296"
   },
+<<<<<<< HEAD
   "authors": [
     {
       "name": {
@@ -184,6 +334,46 @@
   },
   "abstract": {
     "textEnglish": "Gravitational-wave observatories around the world are searching for continuous waves: persistent signals from sources, such as spinning neutron stars. These searches use sophisticated statistical techniques to look for weak signals in noisy data. In this paper, we demonstrate these techniques using a table-top model gravitational-wave detector: a Michelson interferometer where sound is used as an analog for gravitational waves. Using signal processing techniques from continuous-wave searches, we demonstrate the recovery of tones with constant and wandering frequencies. We also explore the use of the interferometer as a teaching tool for educators in physics and electrical engineering by using it as an \u201coptical microphone\u201d to capture music and speech. A range of filtering techniques used to recover signals from noisy data are detailed in the supplementary material of this article. Here, we present the highlights of our results using a combined notch plus Wiener filter and the statistical log minimum mean-square error (logMMSE) estimator. Using these techniques, we easily recover recordings of simple chords and drums, but complex music and speech are more challenging. This demonstration can be used by educators in undergraduate laboratories and can be adapted for communicating gravitational-wave and signal-processing topics to nonspecialist audiences."
+=======
+  "persistentIDs": [
+    {
+      "DOI": "10.1119/10.0009409"
+    }
+  ],
+  "pubDate": {
+    "printDate": "2022-04-00"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0002-9505",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "1943-2909",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "4",
+    "pubName": "American Journal of Physics",
+    "pubYear": "2022",
+    "publisher": "American Association of Physics Teachers",
+    "volumeNum": "90"
+  },
+  "publisherIDs": [
+    {
+      "Identifier": "AJP22-AR-00002",
+      "attribute": "manuscript"
+    }
+  ],
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
   },
   "references": [
     "<ref id=\"c1\"> <label>1.</label> <mixed-citation publication-type=\"journal\"> <string-name> <given-names>B. P.</given-names> <surname>Abbott</surname> </string-name>, <string-name> <given-names>R.</given-names> <surname>Abbott</surname> </string-name>, <string-name> <given-names>T. D.</given-names> <surname>Abbott</surname> </string-name> <etal><italic>et al.</italic></etal>, \u201c <article-title>Observation of gravitational waves from a binary black hole merger</article-title>,\u201d <source>Phys. Rev. Lett.</source> <volume><bold>116</bold></volume>, <fpage>061102</fpage> (<year>2016</year>).<pub-id pub-id-type=\"doi\" specific-use=\"metadata\">10.1103/PhysRevLett.116.061102</pub-id></mixed-citation> </ref>",
@@ -213,6 +403,7 @@
     "<ref id=\"c25\"> <label>25.</label> <mixed-citation publication-type=\"book\"> <string-name> <given-names>E. T.</given-names> <surname>Jaynes</surname> </string-name>, <source><italic>Probability Theory: The Logic of Science</italic></source> ( <publisher-name>Cambridge U. P</publisher-name>., <publisher-loc>Cambridge</publisher-loc>, <year>2003</year>).</mixed-citation> </ref>",
     "<ref id=\"c26\"> <label>26.</label> <mixed-citation publication-type=\"supplementary-material\">See supplementary material at <inline-supplementary-material xlink:href=\"https://www.scitation.org/doi/suppl/10.1119/10.0009409\">https://www.scitation.org/doi/suppl/10.1119/10.0009409</inline-supplementary-material> for further resources and a detailed explanation and discussion of the different signal-processing techniques used for speech enhancement of the recordings from the optical microphone, including techniques not presented in the main text.</mixed-citation> </ref>"
   ],
+<<<<<<< HEAD
   "keywords": [
     {
       "keyString": "PAPERS",
@@ -225,5 +416,9 @@
   },
   "openAccess": {
     "license": "Published under an exclusive license by American Association of Physics Teachers."
+=======
+  "title": {
+    "textEnglish": "Continuous gravitational waves in the lab: Recovering audio signals with a table-top optical microphone"
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
   }
 }

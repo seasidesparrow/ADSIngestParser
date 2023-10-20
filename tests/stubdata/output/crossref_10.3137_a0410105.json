@@ -368,5 +368,11 @@
     "<citation key=\"CIT0301\"> <doi>10.1007/s00376-000-0001-1</doi> </citation>",
     "<citation key=\"CIT0302\"> <doi>10.1002/qj.49712757702</doi> </citation>",
     "<citation key=\"CIT0303\"> <doi>10.1002/qj.49712253206</doi> </citation>"
+  ],
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "http://www.tandfonline.com/doi/abs/10.3137/ao.410105"
+    }
   ]
 }

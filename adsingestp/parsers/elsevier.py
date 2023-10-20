@@ -1,6 +1,8 @@
 import logging
 import re
 
+import validators
+
 from adsingestp import utils
 from adsingestp.ingest_exceptions import XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
@@ -327,6 +329,14 @@ class ElsevierParser(BaseBeautifulSoupParser):
 
             self.base_metadata["references"] = references
 
+    def _parse_esources(self):
+        links = []
+        if self.record_header.find("prism:url"):
+            if validators.url(self.record_header.find("prism:url").get_text()):
+                links.append(("pub_html", self.record_header.find("prism:url").get_text()))
+
+        self.base_metadata["esources"] = links
+
     def parse(self, text):
         """
         Parse Elsevier XML into standard JSON format
@@ -352,6 +362,7 @@ class ElsevierParser(BaseBeautifulSoupParser):
         self._parse_authors()
         self._parse_keywords()
         self._parse_references()
+        self._parse_esources()
 
         self.base_metadata = self._entity_convert(self.base_metadata)
 

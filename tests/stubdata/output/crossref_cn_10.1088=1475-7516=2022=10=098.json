@@ -157,6 +157,12 @@
     "<citation key=\"be70709088624a1c6796dc62916fcfc27\"/>",
     "<citation key=\"beb2f428f5c2030a6f8e14ac7e8dd1eca\"/>"
   ],
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "https://iopscience.iop.org/article/10.1088/1475-7516/2022/10/098"
+    }
+  ],
   "copyright": {
     "status": true,
     "statement": "\u00a9 2022 IOP Publishing Ltd and Sissa Medialab"

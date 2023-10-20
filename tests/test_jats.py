@@ -21,6 +21,32 @@ class TestJATS(unittest.TestCase):
 
     def test_jats(self):
         filenames = [
+            "jats_spie_jmnmm_1.JMM.21.4.041407",
+            "jats_spie_spie_12.2663387",
+            "jats_spie_spie_12.2665113",
+            "jats_spie_opten_1.OE.62.4.048103",
+            "jats_spie_spie_12.2663472",
+            "jats_spie_spie_12.2665157",
+            "jats_spie_opten_1.OE.62.4.066101",
+            "jats_spie_spie_12.2663687",
+            "jats_spie_spie_12.2665696",
+            "jats_spie_spie_12.2663029",
+            "jats_spie_spie_12.2664418",
+            "jats_spie_spie_12.2690579",
+            "jats_spie_spie_12.2663066",
+            "jats_spie_spie_12.2664959",
+            "jats_spie_spie_12.2663263",
+            "jats_spie_spie_12.2665099",
+            "jats_springer_AcMSn_s10409-023-23061-x",
+            "jats_springer_AcMSn_s10409-023-23086-x",
+            "jats_springerEarly_ExA_s10686-023-09907-7",
+            "jats_springer_EPJC_s10052-023-11699-1",
+            "jats_springer_Natur_s41598-023-38673-x",
+            "jats_springer_EPJC_s10052-023-11733-2",
+            "jats_springer_ZaMP_s00033-023-02064-z",
+            "jats_springer_JHEP_JHEP07_2023_200",
+            "jats_springer_AcMSn_s10409-023-23108-x",
+            "jats_springer_NatCo_s41467-023-40272-3",
             "jats_apj_859_2_101",
             "jats_mnras_493_1_141",
             "jats_aj_158_4_139",
@@ -44,11 +70,11 @@ class TestJATS(unittest.TestCase):
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
 
+            parsed = parser.parse(input_data)
+
             with open(test_outfile, "rb") as fp:
                 output_text = fp.read()
                 output_data = json.loads(output_text)
-
-            parsed = parser.parse(input_data)
 
             # make sure this is valid schema
             try:

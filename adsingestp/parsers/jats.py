@@ -1,8 +1,9 @@
 import logging
 import re
 from collections import OrderedDict
+from copy import copy
 
-from bs4 import BeautifulSoup, MarkupResemblesLocatorWarning
+import validators
 from ordered_set import OrderedSet
 
 from adsingestp import utils
@@ -10,15 +11,6 @@ from adsingestp.ingest_exceptions import XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
 logger = logging.getLogger(__name__)
-
-# Ignore the specific warning that BeautifulSoup throws if it finds a URL
-# -- we will never need to pass any url to an HTTP client during parsing!
-try:
-    import warnings
-
-    warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning, module="bs4")
-except Exception as err:
-    logger.warning("Problem filtering BeautifulSoup warnings: %s" % err)
 
 
 class JATSAffils(object):
@@ -199,24 +191,72 @@ class JATSAffils(object):
         # JATS puts author data in <contrib-group>, giving individual authors in each <contrib>
         for art_group in art_contrib_groups:
             art_contrib_group = art_group.extract()
-            contribs_raw = art_contrib_group.find_all("contrib")
+
+            contribs_raw = art_contrib_group.find_all("contrib", recursive=False)
+
             default_key = "ALLAUTH"
+
             num_contribs = len(contribs_raw)
-            for contrib in contribs_raw:
+
+            # extract <contrib> from each <contrib-group>
+            for idx, contrib in enumerate(contribs_raw):
                 # note: IOP, APS get affil data within each contrib block,
                 #       OUP, AIP, Springer, etc get them via xrefs.
-
                 auth = {}
+                # cycle through <contrib> to check if a <collab> is listed in the same level as an author an has multiple authors nested under it; targeted for Springer
 
-                collab = contrib.find("collab")
-                if collab:
+                if contrib.find("collab"):
+                    # Springer collab info for nested authors is given as <institution>
+                    if contrib.find("collab").find("institution"):
+                        collab = contrib.find("collab").find("institution")
+                    else:
+                        collab = contrib.find("collab")
+
+                    collab_affil = ""
                     collab_name = collab.get_text()
                     if collab.find("address"):
                         collab_affil = collab.find("address").get_text()
-                    else:
-                        collab_affil = ""
+
                     self.collab = {
-                        "name": collab_name,
+                        "collab": collab_name,
+                        "aff": collab_affil,
+                        "xaff": [],
+                        "xemail": [],
+                        "email": [],
+                        "corresp": False,
+                    }
+                    if self.collab:
+                        # add collab in the correct author position
+                        if self.collab not in authors_out:
+                            authors_out.append(self.collab)
+
+                    # find nested collab authors and unnest them
+                    nested_contribs = contrib.find_all("contrib")
+
+                    nested_idx = idx + 1
+                    for nested_contrib in nested_contribs:
+                        # add new collab tag to each unnested author
+                        collabtag = copy(contrib.find("collab").find("institution"))
+                        nested_contrib.append(collabtag)
+                        contribs_raw.insert(nested_idx, nested_contrib.extract())
+                        nested_idx += 1
+
+                    continue
+
+                collab = contrib.find("collab")
+
+                # Springer collab info for nested authors is given as <institution>
+                if not collab:
+                    collab = contrib.find("institution")
+
+                if collab:
+                    collab_affil = ""
+                    collab_name = collab.get_text()
+                    if collab.find("address"):
+                        collab_affil = collab.find("address").get_text()
+
+                    self.collab = {
+                        "collab": collab_name,
                         "aff": collab_affil,
                         "xaff": [],
                         "xemail": [],
@@ -321,6 +361,9 @@ class JATSAffils(object):
 
                 # this is a list of author dicts
                 if auth:
+                    if collab:
+                        auth["collab"] = collab_name
+
                     if contrib.get("contrib-type", "author") == "author":
                         authors_out.append(auth)
                         default_key = "ALLAUTH"
@@ -332,11 +375,11 @@ class JATSAffils(object):
                         auth["role"] = role
                         contribs_out.append(auth)
                         default_key = "ALLCONTRIB"
-
                 contrib.decompose()
 
             if self.collab:
-                authors_out.append(self.collab)
+                if self.collab not in authors_out:
+                    authors_out.append(self.collab)
 
             # special case: affs defined in contrib-group, but not in individual contrib
             if art_contrib_group:
@@ -455,9 +498,7 @@ class JATSParser(BaseBeautifulSoupParser):
         """
         # note that parser=lxml is recommended here - if the more stringent lxml-xml is used,
         # the output is slightly different and the code will need to be modified
-
-        newr = BeautifulSoup(str(r), "lxml")
-
+        newr = self.bsstrtodict(str(r), "lxml")
         if newr.find_all():
             tag_list = list(set([x.name for x in newr.find_all()]))
         else:
@@ -549,43 +590,49 @@ class JATSParser(BaseBeautifulSoupParser):
                 for dx in title.find_all("ext-link"):
                     self.titledoi = dx.find("xlink:href")
                 for dx in title.find_all("xref"):
-                    title_xref_list.append(self._detag(dx, self.JATS_TAGSET["abstract"]).strip())
+                    title_xref_list.append(self._detag(dx, self.JATS_TAGSET["title"]).strip())
                     dx.decompose()
                 for df in title.find_all("fn"):
-                    title_fn_list.append(self._detag(df, self.JATS_TAGSET["abstract"]).strip())
+                    title_fn_list.append(self._detag(df, self.JATS_TAGSET["title"]).strip())
                     df.decompose()
                 art_title = self._detag(title, self.JATS_TAGSET["title"]).strip()
+                title_notes = [].extend(title_xref_list).extend(title_fn_list)
                 if title_group.find("subtitle"):
                     subtitle = title_group.find("subtitle")
                     for dx in subtitle.find_all("xref"):
+                        subtitle_xref_list.append(
+                            self._detag(dx, self.JATS_TAGSET["title"].strip()]
                         dx.decompose()
                     for df in subtitle.find_all("fn"):
                         subtitle_fn_list.append(
-                            self._detag(df, self.JATS_TAGSET["abstract"]).strip()
+                            self._detag(df, self.JATS_TAGSET["title"]).strip()
                         )
                         df.decompose()
                     sub_title = self._detag(subtitle, self.JATS_TAGSET["title"]).strip()
+                subtitle_notes = [].extend(subtitle_xref_list).extend(subtitle_fn_list)
             if art_title:
                 self.base_metadata["title"] = art_title
+                if title_notes:
+                    self.base_metadata["title_notes"] = title_notes
                 if sub_title:
                     self.base_metadata["subtitle"] = sub_title
+                if subtitle_notes:
+                    self.base_metadata["subtitle_notes"] = subtitle_notes
 
-        if self.article_meta.find("abstract") and self.article_meta.find("abstract").find("p"):
-            abstract_all = self.article_meta.find("abstract").find_all("p")
-            abstract_paragraph_list = list()
-            for paragraph in abstract_all:
-                para = self._detag(paragraph, self.JATS_TAGSET["abstract"])
-                abstract_paragraph_list.append(para)
-            self.base_metadata["abstract"] = "\n".join(abstract_paragraph_list)
-            # !!!!!!!!!!!!!!!
-            # !!!!!!!!!!!!!!!
-            # REVISE below: THESE NEED TO BE MOVED TO THEIR OWN SPACE IN IDM!
-            # !!!!!!!!!!!!!!!
-            # !!!!!!!!!!!!!!!
-            if title_fn_list:
-                self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
-            if subtitle_fn_list:
-                self.base_metadata["abstract"] += "  " + " ".join(subtitle_fn_list)
+        if self.article_meta.find("abstract"):
+            if self.article_meta.find("abstract").find("p"):
+                abstract_all = self.article_meta.find("abstract").find_all("p")
+                abstract_paragraph_list = list()
+                for paragraph in abstract_all:
+                    para = self._detag(paragraph, self.JATS_TAGSET["abstract"])
+                    abstract_paragraph_list.append(para)
+                self.base_metadata["abstract"] = "\n".join(abstract_paragraph_list)
+                if title_fn_list:
+                    self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
+            else:
+                abs_raw = self.article_meta.find("abstract")
+                abs_txt = self._detag(abs_raw, self.JATS_TAGSET["abstract"])
+                self.base_metadata["abstract"] = abs_txt
 
     def _parse_author(self):
         auth_affil = JATSAffils()
@@ -644,31 +691,42 @@ class JATSParser(BaseBeautifulSoupParser):
         keys_aas = []
         keys_out = []
         keyword_groups = self.article_meta.find_all("kwd-group")
+
         for kg in keyword_groups:
-            # Check for UAT first:
             if kg.get("kwd-group-type", "") == "author":
-                keys_uat_test = kg.find_all("compound-kwd-part")
-                for kk in keys_uat_test:
-                    if kk["content-type"] == "uat-code":
-                        keys_uat.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
-                if not keys_uat:
-                    keys_misc_test = kg.find_all("kwd")
-                    for kk in keys_misc_test:
-                        keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+                keywords_uat_test = kg.find_all("compound-kwd")
+                for kw in keywords_uat_test:
+                    keys_uat_test = kw.find_all("compound-kwd-part")
+                    for kk in keys_uat_test:
+                        # Check for UAT first:
+                        if kk["content-type"] == "uat-code":
+                            keyid = self._detag(kk, self.JATS_TAGSET["keywords"])
+                        if kk["content-type"] == "term":
+                            keystring = self._detag(kk, self.JATS_TAGSET["keywords"])
+
+                    if keyid or keystring:
+                        keys_uat.append({"string": keystring, "system": "UAT", "id": keyid})
+
+                    if not keys_uat:
+                        keys_misc_test = kg.find_all("kwd")
+                        for kk in keys_misc_test:
+                            keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+
             # Then check for AAS:
-            elif kg.get("kwd-group-type", "") == "AAS":
+            if kg.get("kwd-group-type", "") == "AAS":
                 keys_aas_test = kg.find_all("kwd")
                 for kk in keys_aas_test:
                     keys_aas.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+
             # If all else fails, just search for 'kwd'
-            else:
+            if (not keys_uat) and (not keys_aas):
                 keys_misc_test = kg.find_all("kwd")
                 for kk in keys_misc_test:
                     keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
 
         if keys_uat:
             for k in keys_uat:
-                keys_out.append({"system": "UAT", "string": k})
+                keys_out.append(k)
 
         if keys_aas:
             for k in keys_aas:
@@ -741,10 +799,7 @@ class JATSParser(BaseBeautifulSoupParser):
         issn_all = self.journal_meta.find_all("issn")
         issns = []
         for i in issn_all:
-            if i.get("pub-type", None):
-                issns.append((i["pub-type"], self._detag(i, [])))
-            else:
-                issns.append(("", self._detag(i, [])))
+            issns.append((i.get("pub-type", ""), self._detag(i, [])))
         self.base_metadata["issn"] = issns
 
         isbn_all = self.article_meta.find_all("isbn")
@@ -818,13 +873,23 @@ class JATSParser(BaseBeautifulSoupParser):
 
     def _parse_pubdate(self):
         pub_dates = self.article_meta.find_all("pub-date")
+
         for d in pub_dates:
             pub_format = d.get("publication-format", "")
             pub_type = d.get("pub-type", "")
             pubdate = self._get_date(d)
-            if pub_format == "print" or pub_type == "ppub" or pub_type == "cover":
+            if (
+                pub_format == "print"
+                or pub_type == "ppub"
+                or pub_type == "cover"
+                or (pub_type == "" and pub_format == "")
+            ):
                 self.base_metadata["pubdate_print"] = pubdate
-            elif pub_format == "electronic" or pub_type == "epub":
+            if (
+                pub_format == "electronic"
+                or pub_type == "epub"
+                or (pub_type == "" and pub_format == "")
+            ):
                 self.base_metadata["pubdate_electronic"] = pubdate
 
             if pub_type == "open-access":
@@ -898,6 +963,28 @@ class JATSParser(BaseBeautifulSoupParser):
                 ref_list_text.append(s)
             self.base_metadata["references"] = ref_list_text
 
+    def _parse_esources(self):
+        links = []
+        rawlinks = self.article_meta.find_all("self-uri")
+
+        for link in rawlinks:
+            if link.get("content-type", "") == "full_html":
+                if validators.url(link.get("xlink:href", "")):
+                    links.append(("pub_html", link.get("xlink:href", "")))
+
+            if link.get("content-type", "") == "pdf":
+                if validators.url(link.get("xlink:href", "")):
+                    links.append(("pub_pdf", link.get("xlink:href", "")))
+
+        # add a check to see if pub_html exists in links. if not, search for abstract link
+        if "pub_html" not in dict(links).keys():
+            for link in rawlinks:
+                if link.get("content-type", "") == "abstract":
+                    if validators.url(link.get("xlink:href", "")):
+                        links.append(("pub_html", link.get("xlink:href", "")))
+
+        self.base_metadata["esources"] = links
+
     def parse(self, text, bsparser="lxml-xml"):
         """
         Parse JATS XML into standard JSON format
@@ -940,6 +1027,7 @@ class JATSParser(BaseBeautifulSoupParser):
         self._parse_edhistory()
         self._parse_permissions()
         self._parse_page()
+        self._parse_esources()
 
         self._parse_references()
 

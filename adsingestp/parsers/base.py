@@ -153,6 +153,7 @@ class IngestBase(object):
                      'edhist_acc': string
                      'edhist_rec': [string],
                      'edhist_rev': [string],
+                     'esources': [(sourcestring, locationstring)],
                      'electronic_id': string,
                      'ids': {'doi': string,
                              'preprint': {'source': string,
@@ -183,9 +184,13 @@ class IngestBase(object):
                      'series_title': string,
                      'series_id': string,
                      'series_id_description': string,
+                     'sub_lang_native': string,
                      'subtitle': string,
+                     'subtitle_native': string,
+                     'subtitle_notes': [string],
                      'title': string,
                      'title_native': string,
+                     'title_notes': [string],
                      'volume': string
                     }
 
@@ -356,9 +361,15 @@ class IngestBase(object):
             "textEnglish": input_dict.get("title", ""),
             "textNative": input_dict.get("title_native", ""),
             "langNative": input_dict.get("lang_native", ""),
+            "textNotes": input_dict.get("title_notes", []),
         }
 
-        output["subtitle"] = input_dict.get("subtitle", "")
+        output["subtitle"] = {
+            "textEnglish": input_dict.get("subtitle", "")
+            "textNative": input_dict.get("subtitle_native", ""),
+            "langNative": input_dict.get("sub_lang_native", ""),
+            "textNotes": input_dict.get("subtitle_notes", []),
+        }
 
         output["abstract"] = {
             "textEnglish": input_dict.get(
@@ -402,12 +413,10 @@ class IngestBase(object):
         #     "XXX"
         # ] # TODO need an example
 
-        # output["esources"] = [
-        #     {
-        #         "source": "XXX",
-        #         "location": "XXX"
-        #     }
-        # ] # TODO need an example
+        output["esources"] = [
+            {"source": source, "location": location}
+            for (source, location) in input_dict.get("esources", "")
+        ]
 
         # output["dataLinks"] = [
         #     {
@@ -425,10 +434,7 @@ class IngestBase(object):
             {
                 "keyString": i.get("string", ""),
                 "keySystem": i.get("system", ""),
-                # "keyIdent": {
-                #     "system": "XXX",
-                #     "keyID": "XXX"
-                # }
+                "keyID": i.get("id", "") if i.get("id", "") and i.get("system", "") else "",
             }
             for i in input_dict.get("keywords", [])
         ]

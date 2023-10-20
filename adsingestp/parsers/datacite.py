@@ -178,9 +178,22 @@ class DataciteParser(BaseBeautifulSoupParser):
         if self.input_metadata.find("subjects"):
             keywords = []
             for k in self.input_metadata.find("subjects").find_all("subject"):
-                # we are ignoring keyword scheme
-                keywords.append({"string": k.get_text(), "system": "datacite"})
+                # check if keyword is from UAT
+                if "unified astronomy thesaurus" in str(
+                    k.get("subjectScheme", "")
+                ).lower() or "uat" in k.get("schemeURI", ""):
+                    # extract the numeric keyID from the URI
+                    keyid = [int(x) for x in k.get("valueURI").split("/") if x.isdigit()]
 
+                    if keyid:
+                        keywords.append(
+                            {"string": k.get_text(), "system": "UAT", "id": str(keyid[0])}
+                        )
+                    else:
+                        keywords.append({"string": k.get_text(), "system": "UAT"})
+
+                else:
+                    keywords.append({"string": k.get_text(), "system": "datacite"})
             self.base_metadata["keywords"] = keywords
 
     def _parse_ids(self):

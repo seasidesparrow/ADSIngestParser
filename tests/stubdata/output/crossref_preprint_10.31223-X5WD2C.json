@@ -64,5 +64,11 @@
   ],
   "title": {
     "textEnglish": "Production of diverse brGDGTs by Acidobacterium Solibacter usitatus in response to temperature, pH, and O2 provides a culturing perspective on brGDGT paleoproxies and biosynthesis"
-  }
+  },
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "http://eartharxiv.org/repository/view/3263/"
+    }
+  ]
 }

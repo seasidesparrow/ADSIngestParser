@@ -360,6 +360,14 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
             self.base_metadata["references"] = ref_list
 
+    def _parse_esources(self):
+        links = []
+        if self.record_meta.find("doi_data"):
+            if self.record_meta.find("doi_data").find("resource"):
+                links.append(("pub_html", self.record_meta.find("resource").get_text()))
+
+        self.base_metadata["esources"] = links
+
     def parse(self, text):
         """
         Parse Crossref XML into standard JSON format
@@ -465,6 +473,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
         self._parse_page()
         self._parse_ids()
         self._parse_references()
+        self._parse_esources()
 
         self.base_metadata = self._entity_convert(self.base_metadata)
 

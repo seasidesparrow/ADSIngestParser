@@ -227,6 +227,12 @@
     "<citation key=\"apjac8c2fbib112\"> <journal_title>Natur</journal_title> <author>Zamaninasab</author> <doi>10.1038/nature13399</doi> <volume>510</volume> <first_page>126</first_page> <cYear>2014</cYear> </citation>",
     "<citation key=\"apjac8c2fbib113\"> <journal_title>MNRAS</journal_title> <author>Znajek</author> <doi>10.1093/mnras/179.3.457</doi> <volume>179</volume> <first_page>457</first_page> <cYear>1977</cYear> </citation>"
   ],
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "https://iopscience.iop.org/article/10.3847/1538-4357/ac8c2f"
+    }
+  ],
   "copyright": {
     "status": true,
     "statement": "\u00a9 2022. The Author(s). Published by the American Astronomical Society."

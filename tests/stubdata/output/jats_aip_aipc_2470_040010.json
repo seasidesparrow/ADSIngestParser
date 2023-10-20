@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "recordData": {
     "createdTime": "",
     "parsedTime": "",
@@ -57,6 +58,13 @@
         "surname": "Savitri",
         "given_name": "Emma"
       },
+=======
+  "abstract": {
+    "textEnglish": "Garlic and chitosan are well-known have an antimicrobial activity to terminate or inhibit the growth of bacteria. This study aims to synthesize, characterize chitosan-garlic film using FTIR, SEM, UV-VIS Spectrophotometry, and swelling analysis; and obtain antimicrobial activity during period time. The variation processes were a type of garlic extract, type of bacteria, and the concentration of garlic extract 1%, 2%, 3%, 10%, and 20%. Chitosan-garlic composite film as a product has an elastic and greasy texture. FTIR analysis shows that chitosan-garlic composite film has ionic interaction between chitosan and garlic extract. The water absorption ability of chitosan-garlic composite film cannot be well determined as not using a crosslinking agent that links garlic extract to composite film. SEM analysis shows the heterogeneous morphology surface of the chitosan-garlic film. Chitosan-garlic powder composite film at 20% concentration (b/v) tested against S. aureus has the highest antimicrobial activity with OD<sub>600</sub> 0,001342. Chitosan-garlic oil composite film at 20% concentration (v/v) tested against S. aureus has the highest antimicrobial activity with OD<sub>600</sub> 0,0013. Spectrophotometry UV-VIS method confirmed that the antimicrobial activity of chitosan-garlic composite film increased compared to the concentration of garlic extract and decreased compared to storage time. The elasticity of chitosan-garlic composite film decreased compared to the concentration of garlic extract."
+  },
+  "authors": [
+    {
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
       "affiliation": [
         {
           "affPubRaw": "Chemical Engineering Department, University of Surabaya, Surabaya 60293, Indonesia"
@@ -64,6 +72,7 @@
       ],
       "attrib": {
         "email": "savitri_ma@staff.ubaya.ac.id"
+<<<<<<< HEAD
       }
     },
     {
@@ -71,10 +80,20 @@
         "surname": "Tjahayani",
         "given_name": "Maria Irine"
       },
+=======
+      },
+      "name": {
+        "given_name": "Emma",
+        "surname": "Savitri"
+      }
+    },
+    {
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
       "affiliation": [
         {
           "affPubRaw": "Chemical Engineering Department, University of Surabaya, Surabaya 60293, Indonesia"
         }
+<<<<<<< HEAD
       ]
     },
     {
@@ -82,25 +101,57 @@
         "surname": "Say",
         "given_name": "Anastasia Apriyani Ngene"
       },
+=======
+      ],
+      "name": {
+        "given_name": "Maria Irine",
+        "surname": "Tjahayani"
+      }
+    },
+    {
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
       "affiliation": [
         {
           "affPubRaw": "Chemical Engineering Department, University of Surabaya, Surabaya 60293, Indonesia"
         }
+<<<<<<< HEAD
       ]
+=======
+      ],
+      "name": {
+        "given_name": "Anastasia Apriyani Ngene",
+        "surname": "Say"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 2022 Author(s)",
+    "status": true
+  },
+  "keywords": [
+    {
+      "keyString": "POWER SYSTEM AND SMART ENERGY MANAGEMENT",
+      "keySystem": "subject"
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
     }
   ],
   "otherContributor": [
     {
+<<<<<<< HEAD
       "role": "Conference Editor",
       "contrib": {
         "name": {
           "surname": "Parung",
           "given_name": "Joniarto"
         },
+=======
+      "contrib": {
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
         "affiliation": [
           {
             "affPubRaw": "Universitas Surabaya, Surabaya, Indonesia"
           }
+<<<<<<< HEAD
         ]
       }
     },
@@ -111,10 +162,23 @@
           "surname": "Pah",
           "given_name": "Nemuel Daniel"
         },
+=======
+        ],
+        "name": {
+          "given_name": "Joniarto",
+          "surname": "Parung"
+        }
+      },
+      "role": "Conference Editor"
+    },
+    {
+      "contrib": {
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
         "affiliation": [
           {
             "affPubRaw": "Universitas Surabaya, Surabaya, Indonesia"
           }
+<<<<<<< HEAD
         ]
       }
     },
@@ -125,10 +189,23 @@
           "surname": "Sutrisna",
           "given_name": "Putu Doddy"
         },
+=======
+        ],
+        "name": {
+          "given_name": "Nemuel Daniel",
+          "surname": "Pah"
+        }
+      },
+      "role": "Conference Editor"
+    },
+    {
+      "contrib": {
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
         "affiliation": [
           {
             "affPubRaw": "Universitas Surabaya, Surabaya, Indonesia"
           }
+<<<<<<< HEAD
         ]
       }
     },
@@ -139,10 +216,23 @@
           "surname": "Suciadi",
           "given_name": "Marcellinus Ferdinand"
         },
+=======
+        ],
+        "name": {
+          "given_name": "Putu Doddy",
+          "surname": "Sutrisna"
+        }
+      },
+      "role": "Conference Editor"
+    },
+    {
+      "contrib": {
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
         "affiliation": [
           {
             "affPubRaw": "Universitas Surabaya, Surabaya, Indonesia"
           }
+<<<<<<< HEAD
         ]
       }
     }
@@ -152,6 +242,68 @@
   },
   "abstract": {
     "textEnglish": "Garlic and chitosan are well-known have an antimicrobial activity to terminate or inhibit the growth of bacteria. This study aims to synthesize, characterize chitosan-garlic film using FTIR, SEM, UV-VIS Spectrophotometry, and swelling analysis; and obtain antimicrobial activity during period time. The variation processes were a type of garlic extract, type of bacteria, and the concentration of garlic extract 1%, 2%, 3%, 10%, and 20%. Chitosan-garlic composite film as a product has an elastic and greasy texture. FTIR analysis shows that chitosan-garlic composite film has ionic interaction between chitosan and garlic extract. The water absorption ability of chitosan-garlic composite film cannot be well determined as not using a crosslinking agent that links garlic extract to composite film. SEM analysis shows the heterogeneous morphology surface of the chitosan-garlic film. Chitosan-garlic powder composite film at 20% concentration (b/v) tested against S. aureus has the highest antimicrobial activity with OD<sub>600</sub> 0,001342. Chitosan-garlic oil composite film at 20% concentration (v/v) tested against S. aureus has the highest antimicrobial activity with OD<sub>600</sub> 0,0013. Spectrophotometry UV-VIS method confirmed that the antimicrobial activity of chitosan-garlic composite film increased compared to the concentration of garlic extract and decreased compared to storage time. The elasticity of chitosan-garlic composite film decreased compared to the concentration of garlic extract."
+=======
+        ],
+        "name": {
+          "given_name": "Marcellinus Ferdinand",
+          "surname": "Suciadi"
+        }
+      },
+      "role": "Conference Editor"
+    }
+  ],
+  "pagination": {
+    "electronicID": "040010",
+    "pageCount": "9"
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.1063/5.0080203",
+      "ISBN": [
+        {
+          "isbnString": "978-0-7354-4180-4",
+          "pubtype": "conf-proc"
+        }
+      ]
+    }
+  ],
+  "pubDate": {
+    "printDate": "2022-04-25"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0094-243X",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "1551-7616",
+        "pubtype": "epub"
+      }
+    ],
+    "confDates": "25\u201326 August 2021",
+    "confLocation": "Surabaya, Indonesia",
+    "confName": "INTERNATIONAL CONFERENCE ON INFORMATICS, TECHNOLOGY, AND ENGINEERING 2021 (InCITE 2021): Leveraging Smart Engineering",
+    "issueNum": "1",
+    "pubName": "AIP Conference Proceedings",
+    "pubYear": "2022",
+    "publisher": "AIP Publishing LLC",
+    "volumeNum": "2470"
+  },
+  "publisherIDs": [
+    {
+      "Identifier": "AIPCP21-AR-InCITE2021-00025",
+      "attribute": "manuscript"
+    }
+  ],
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
   },
   "references": [
     "<ref id=\"c1\"><label>1.</label><mixed-citation publication-type=\"journal\"><string-name><given-names>S.</given-names> <surname>Qomariah</surname></string-name>, Lisdiana, and <string-name><given-names>W.</given-names> <surname>Christijanti</surname></string-name>, <source>Unnes Journal of Life Science</source>, <volume>79</volume>, (<year>2014</year>).</mixed-citation></ref>",
@@ -172,6 +324,7 @@
     "<ref id=\"c16\"><label>16.</label><mixed-citation publication-type=\"other\"><string-name><given-names>A.</given-names> <surname>Lucas</surname></string-name>, A. <source>Pengaruh Plasticizer terhadap Sifat Mekanik dan Struktur Kimia Film Kitosan-Pati. Penelitian.</source> (<year>2010</year>)</mixed-citation></ref>",
     "<ref id=\"c17\"><label>17.</label><mixed-citation publication-type=\"journal\"><string-name><given-names>A.M.</given-names> <surname>Far\u00edas-Campomanes</surname></string-name>, <string-name><given-names>C. N.</given-names> <surname>Horita</surname></string-name>, <string-name><given-names>M.A.R.</given-names> <surname>Pollonio</surname></string-name>, <string-name><given-names>M. A. A.</given-names> <surname>Meireles</surname></string-name>. <article-title>Allicin-Rich Extract Obtained from Garlic by Pressurized Liquid Extraction: Quantitative Determination of Allicin in Garlic Samples</article-title>, <source>Food and Public Health</source> <volume>4</volume>(<issue>6</issue>): <fpage>272</fpage>\u2013<lpage>278</lpage> (<year>2014</year>)</mixed-citation></ref>"
   ],
+<<<<<<< HEAD
   "keywords": [
     {
       "keyString": "POWER SYSTEM AND SMART ENERGY MANAGEMENT",
@@ -184,5 +337,9 @@
   },
   "openAccess": {
     "license": "Published by AIP Publishing."
+=======
+  "title": {
+    "textEnglish": "Synthesis and characterization of chitosan-Allium sativum film"
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
   }
 }

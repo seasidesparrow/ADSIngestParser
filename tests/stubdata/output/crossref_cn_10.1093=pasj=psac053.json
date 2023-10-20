@@ -183,6 +183,12 @@
     "<citation key=\"2022101014261863600_bib90\"> <journal_title>A&A</journal_title> <author>Zatsarinny</author> <volume>412</volume> <first_page>587</first_page> <cYear>2003</cYear> <doi provider=\"crossref\">10.1051/0004-6361:20031462</doi> </citation>",
     "<citation key=\"2022101014261863600_bib91\"> <journal_title>A&A</journal_title> <author>Zatsarinny</author> <volume>417</volume> <first_page>1173</first_page> <cYear>2004</cYear> <doi provider=\"crossref\">10.1051/0004-6361:20034174</doi> </citation>"
   ],
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "https://academic.oup.com/pasj/article/74/5/1022/6646725"
+    }
+  ],
   "funding": [
     {
       "agencyname": "JSPS",

@@ -1,110 +1,124 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "Upcoming large-scale structure surveys can shed new light on the properties of dark energy. In particular, if dark energy is a dynamical component, it must have spatial perturbations. Their behaviour is regulated by the speed of sound parameter, which is currently unconstrained. In this work, we present the numerical methods that will allow to perform cosmological simulations of inhomogeneous dark energy scenarios where the speed of sound is small and non-vanishing. We treat the dark energy component as an effective fluid and build upon established numerical methods for hydrodynamics to construct a numerical solution of the effective continuity and Euler equations. In particular, we develop conservative finite volume schemes that rely on the solution of the Riemann problem, which we provide here in both exact and approximate forms for the case of a dark energy fluid."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": "affiliation01",
+          "affPubRaw": "Max Planck Institute for Astrophysics, Karl-Schwarzschild str. 1, 85748 Garching, Germany"
+        }
+      ],
+      "attrib": {
+        "email": "lblot@mpa-garching.mpg.de"
+      },
+      "name": {
+        "given_name": "Linda",
+        "surname": "Blot"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "affiliation02",
+          "affPubRaw": "Laboratoire Univers et Th\u00e9ories (LUTh), UMR 8102 CNRS, Observatoire de Paris, Universit\u00e9 Paris Diderot, 5 Place Jules Janssen, 92190 Meudon, France"
+        }
+      ],
+      "attrib": {
+        "email": "pier-stefano.corasaniti@obspm.fr"
+      },
+      "name": {
+        "given_name": "Pier Stefano",
+        "surname": "Corasaniti"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "affiliation01",
+          "affPubRaw": "Max Planck Institute for Astrophysics, Karl-Schwarzschild str. 1, 85748 Garching, Germany"
+        }
+      ],
+      "attrib": {
+        "email": "fabians@mpa-garching.mpg.de"
+      },
+      "name": {
+        "given_name": "Fabian",
+        "surname": "Schmidt"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 2023 The Author(s)",
+    "status": true
   },
   "editorialHistory": {
+    "acceptedDate": "2023-04-13",
     "receivedDates": [
       "2022-10-11"
-    ],
-    "acceptedDate": "2023-04-13"
-  },
-  "pubDate": {
-    "electrDate": "2023-05-02",
-    "printDate": "2023-05-01"
-  },
-  "publication": {
-    "pubName": "Journal of Cosmology and Astroparticle Physics",
-    "publisher": "IOP Publishing",
-    "issueNum": "05",
-    "volumeNum": "2023",
-    "pubYear": "2023",
-    "ISSN": [
-      {
-        "pubtype": "epub",
-        "issnString": "1475-7516"
-      }
     ]
+  },
+  "keywords": [
+    {
+      "keyString": "cosmological simulations",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "dark energy theory",
+      "keySystem": "misc"
+    }
+  ],
+  "openAccess": {
+    "open": true
+  },
+  "pagination": {
+    "electronicID": "001",
+    "pageCount": "35"
   },
   "persistentIDs": [
     {
       "DOI": "10.1088/1475-7516/2023/05/001",
       "preprint": {
-        "source": "arxiv",
-        "identifier": "2210.04800"
+        "identifier": "2210.04800",
+        "source": "arxiv"
       }
     }
   ],
+  "pubDate": {
+    "electrDate": "2023-05-02",
+    "printDate": "2023-05-01"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "1475-7516",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "05",
+    "pubName": "Journal of Cosmology and Astroparticle Physics",
+    "pubYear": "2023",
+    "publisher": "IOP Publishing",
+    "volumeNum": "2023"
+  },
   "publisherIDs": [
     {
-      "attribute": "publisher-id",
-      "Identifier": "JCAP_029P_1022"
+      "Identifier": "JCAP_029P_1022",
+      "attribute": "publisher-id"
     },
     {
-      "attribute": "manuscript",
-      "Identifier": "JCAP_029P_1022"
+      "Identifier": "JCAP_029P_1022",
+      "attribute": "manuscript"
     }
   ],
-  "pagination": {
-    "pageCount": "35",
-    "electronicID": "001"
-  },
-  "authors": [
-    {
-      "name": {
-        "surname": "Blot",
-        "given_name": "Linda"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Max Planck Institute for Astrophysics, Karl-Schwarzschild str. 1, 85748 Garching, Germany",
-          "affPubID": "affiliation01"
-        }
-      ],
-      "attrib": {
-        "email": "lblot@mpa-garching.mpg.de"
-      }
-    },
-    {
-      "name": {
-        "surname": "Corasaniti",
-        "given_name": "Pier Stefano"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Laboratoire Univers et Th\u00e9ories (LUTh), UMR 8102 CNRS, Observatoire de Paris, Universit\u00e9 Paris Diderot, 5 Place Jules Janssen, 92190 Meudon, France",
-          "affPubID": "affiliation02"
-        }
-      ],
-      "attrib": {
-        "email": "pier-stefano.corasaniti@obspm.fr"
-      }
-    },
-    {
-      "name": {
-        "surname": "Schmidt",
-        "given_name": "Fabian"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Max Planck Institute for Astrophysics, Karl-Schwarzschild str. 1, 85748 Garching, Germany",
-          "affPubID": "affiliation01"
-        }
-      ],
-      "attrib": {
-        "email": "fabians@mpa-garching.mpg.de"
-      }
-    }
-  ],
-  "title": {
-    "textEnglish": "Non-linear Eulerian hydrodynamics of dark energy: Riemann problem and finite volume schemes"
-  },
-  "abstract": {
-    "textEnglish": "Upcoming large-scale structure surveys can shed new light on the properties of dark energy. In particular, if dark energy is a dynamical component, it must have spatial perturbations. Their behaviour is regulated by the speed of sound parameter, which is currently unconstrained. In this work, we present the numerical methods that will allow to perform cosmological simulations of inhomogeneous dark energy scenarios where the speed of sound is small and non-vanishing. We treat the dark energy component as an effective fluid and build upon established numerical methods for hydrodynamics to construct a numerical solution of the effective continuity and Euler equations. In particular, we develop conservative finite volume schemes that rely on the solution of the Riemann problem, which we provide here in both exact and approximate forms for the case of a dark energy fluid."
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<ref id=\"b79a48aa47eb485e75b64d25e2cb1947f\"><label>[1]</label><element-citation publication-type=\"journal\" xlink:type=\"simple\"><person-group person-group-type=\"author\"> <collab xlink:type=\"simple\">Planck Collaboration</collab> <name name-style=\"western\"><surname>Aghanim</surname><given-names>N.</given-names></name> <etal/> </person-group><article-title>Planck 2018 results. VI. Cosmological parameters</article-title><source>Astron. Astrophys.</source><year>2020</year><volume>641</volume><fpage>A6</fpage><pub-id pub-id-type=\"doi\">10.1051/0004-6361/201833910</pub-id><comment>(arXiv:<ext-link ext-link-type=\"arxiv\" xlink:href=\"https://arxiv.org/abs/1807.06209\" xlink:type=\"simple\">1807.06209</ext-link>)</comment><comment>[Erratum: Astron.Astrophys. 652, C4 (2021)]</comment></element-citation></ref>",
@@ -163,6 +177,7 @@
     "<ref id=\"b799cc3bd37e47b9d18b3654c86456197\"><label>[54]</label><element-citation publication-type=\"other\" xlink:type=\"simple\"><comment> M. Zingale, <italic toggle=\"yes\">Introduction to Computational Astrophysical Hydrodynamics</italic>, <ext-link ext-link-type=\"uri\" xlink:href=\"http://bender.astro.sunysb.edu/hydro_by_example/CompHydroTutorial.pdf\" xlink:type=\"simple\">http://bender.astro.sunysb.edu/hydro_by_example/CompHydroTutorial.pdf</ext-link>.   </comment></element-citation></ref>",
     "<ref id=\"b869deae2f493f21948d6030dfaad7ec0\"><label>[55]</label><element-citation publication-type=\"journal\" xlink:type=\"simple\"><person-group person-group-type=\"author\"> <name name-style=\"western\"><surname>Colella</surname><given-names>Phillip</given-names></name> <name name-style=\"western\"><surname>Woodward</surname><given-names>Paul R.</given-names></name> </person-group><article-title>The Piecewise Parabolic Method (PPM) for Gas Dynamical Simulations</article-title><source>J. Comput. Phys.</source><year>1984</year><volume>54</volume><fpage>174</fpage><lpage>201</lpage><pub-id pub-id-type=\"doi\">10.1016/0021-9991(84)90143-8</pub-id></element-citation></ref>"
   ],
+<<<<<<< HEAD
   "keywords": [
     {
       "keyString": "cosmological simulations",
@@ -181,5 +196,9 @@
     "open": true,
     "license": "\nPublished by IOP Publishing Ltd on behalf of Sissa Medialab. Original content from this work may be used under the terms of the Creative Commons Attribution 4.0 licence. Any further distribution of this work must maintain attribution to the author(s) and the title of the work, journal citation and DOI.",
     "licenseURL": "http://creativecommons.org/licenses/by/4.0"
+=======
+  "title": {
+    "textEnglish": "Non-linear Eulerian hydrodynamics of dark energy: Riemann problem and finite volume schemes"
+>>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
   }
 }

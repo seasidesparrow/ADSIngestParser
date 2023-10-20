@@ -69,7 +69,9 @@
   "title": {
     "textEnglish": "3D simulations of AGB stellar winds"
   },
-  "subtitle": "I. Steady winds and dust formation",
+  "subtitle": {
+    "textEnglish": "I. Steady winds and dust formation"
+  },
   "abstract": {
     "textEnglish": "Aims. We present the implementation of the treatment of particle ejection and dust nucleation in the smoothed particle hydrodynamics (SPH) code P HANTOM . These developments represent the first step toward a more complete modeling of dust-driven winds emanating from asymptotic giant branch (AGB) stars that can be used for comparison with high resolution imaging of these stars. Methods. The AGB outflow is modeled by injecting the SPH particles from a spherical inner boundary. This boundary is a series of concentric shells, with the AGB star at its center, and the particles are positioned on these shells on the vertices of an isocahedron geodesic surface. The outermost shell is ejected with a predefined radial velocity, and subsequent lower shells replenish the ejected ones, all rotated randomly to improve the isotropy of the outflow. The physical properties of the particles on these shells are set by solving the 1D analytic steady wind equations. The formation of dust is calculated starting from a compact chemical network for carbon-rich material, which creates the building blocks of the solid-state particles. Subsequently, the theory of the moments is used to obtain dust growth rates, without requiring knowledge on the grain size distribution. Results. We tested our implementation against a series of 1D reference solutions. We demonstrate that our method is able to reproduce Parker-type wind solutions. For the trans-sonic solution, small oscillations are present in the vicinity of the sonic point, but these do not impact the trans-sonic passage or terminal wind velocity. Supersonic solutions always compare nicely with 1D analytic profiles. We also tested our implementation of dust using two formalisms: an analytic prescription for the opacity devised by Bowen and the full treatment of carbon-dust formation. Both simulations reproduce the 1D analytic solution displaying the expected additional acceleration when the gas temperature falls below the condensation temperature."
   },
@@ -175,5 +177,10 @@
     "<citation key=\"R99\"> <journal_title>SIAM J. Sci. Comput.</journal_title> <author>Wang</author> <volume>33</volume> <first_page>2536</first_page> <cYear>2011</cYear> <doi provider=\"crossref\">10.1137/090761355</doi> </citation>",
     "<citation key=\"R100\"> <journal_title>MNRAS</journal_title> <author>Whitehouse</author> <volume>364</volume> <first_page>1367</first_page> <cYear>2005</cYear> <doi provider=\"crossref\">10.1111/j.1365-2966.2005.09683.x</doi> </citation>",
     "<citation key=\"R101\"> <journal_title>A&A</journal_title> <author>Winters</author> <volume>361</volume> <first_page>641</first_page> <cYear>2000</cYear> </citation>"
-  ]
+  ],
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "https://www.aanda.org/10.1051/0004-6361/202243540"
+    }
 }
