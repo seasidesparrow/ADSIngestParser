@@ -651,7 +651,9 @@
   "title": {
     "textEnglish": "Dissecting the interstellar medium of a z = 6.3 galaxy"
   },
-  "subtitle": "X-shooter spectroscopy and HST imaging of the afterglow and environment of the Swift GRB 210905A",
+  "subtitle": {
+    "textEnglish": "X-shooter spectroscopy and HST imaging of the afterglow and environment of the Swift GRB 210905A\u22c6"
+  },
   "abstract": {
     "textEnglish": "The study of the properties of galaxies in the first billion years after the Big Bang is one of the major topics of current astrophysics. Optical and near-infrared spectroscopy of the afterglows of long gamma-ray bursts (GRBs) provides a powerful diagnostic tool to probe the interstellar medium (ISM) of their host galaxies and foreground absorbers, even up to the highest redshifts. We analyze the VLT/X-shooter afterglow spectrum of GRB 210905A, triggered by the Neil Gehrels Swift Observatory, and detect neutral hydrogen, low-ionization, high-ionization, and fine-structure absorption lines from a complex system at z = 6.3118, which we associate with the GRB host galaxy. We use them to study the ISM properties of the host system, revealing the metallicity, kinematics, and chemical abundance pattern of its gas along the GRB line of sight. We also detect absorption lines from at least two foreground absorbers at z = 5.7390 and z = 2.8296. The total metallicity of the z \u223c 6.3 system is [M/H]<sub>tot</sub> = \u22121.72 \u00b1 0.13, after correcting for dust depletion and taking \u03b1-element enhancement into account, as suggested by our analysis. This is consistent with the values found for the other two GRBs at z \u223c 6 with spectroscopic data showing metal absorption lines (GRB 050904 and GRB 130606A), and it is at the higher end of the metallicity distribution of quasar damped Lyman-\u03b1 systems (QSO-DLAs) extrapolated to such a high redshift. In addition, we determine the overall amount of dust and dust-to-metal mass ratio (DTM) ([Zn/Fe]<sub>fit</sub> = 0.33 \u00b1 0.09 and DTM = 0.18 \u00b1 0.03). We find indications of nucleosynthesis due to massive stars and, for some of the components of the gas clouds, we find evidence of peculiar nucleosynthesis, with an overabundance of aluminum (as also found for GRB 130606A). From the analysis of fine-structure lines, we determine distances of several kiloparsecs for the low-ionization gas clouds closest to the GRB. Those are farther distances than usually found for GRB host absorption systems, possibly due to the very high number of ionizing photons produced by the GRB that could ionize the line of sight up to several hundreds of parsecs. Using the HST/F140W image of the GRB field, we show the GRB host galaxy (with a possible afterglow contamination) as well as multiple objects within 2\u2033 from the GRB position. We discuss the galaxy structure and kinematics that could explain our observations, also taking into account a tentative detection of Lyman-\u03b1 emission at z = 6.3449 (\u223c1200 km s<sup>\u22121</sup> from the GRB redshift in velocity space), and the observational properties of Lyman-\u03b1 emitters at very high redshift. This study shows the amazing potential of GRBs to access detailed information on the properties (metal enrichment, gas kinematic, dust content, nucleosynthesis...) of very high-redshift galaxies, independently of the galaxy luminosity. Deep spectroscopic observations with VLT/MUSE and JWST will offer the unique possibility of combining the information presented in this paper with the properties of the ionized gas, with the goal of better understanding how galaxies in the reionization era form and evolve."
   },
@@ -788,6 +790,16 @@
     "<ref id=\"R130\"> <mixed-citation publication-type=\"journal\"> <string-name><surname>Yang</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Leethochawalit</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Treu</surname>, <given-names>T.</given-names></string-name>, et al. <year>2022</year>, <source>MNRAS</source>, <volume>514</volume>, <fpage>1148</fpage> </mixed-citation> </ref>",
     "<ref id=\"R131\"> <mixed-citation publication-type=\"journal\"> <string-name><surname>Zafar</surname>, <given-names>T.</given-names></string-name>, & <string-name><surname>M\u00f8ller</surname>, <given-names>P.</given-names></string-name> <year>2019</year>, <source>MNRAS</source>, <volume>482</volume>, <fpage>2731</fpage> </mixed-citation> </ref>",
     "<ref id=\"R132\"> <mixed-citation publication-type=\"journal\"> <string-name><surname>Zafar</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>P\u00e9roux</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Popping</surname>, <given-names>A.</given-names></string-name>, et al. <year>2013</year>, <source>A&A</source>, <volume>556</volume>, <fpage>A141</fpage> </mixed-citation> </ref>"
+  ],
+  "esources": [
+    {
+      "source": "pub_html",
+      "location": "https://www.aanda.org/articles/aa/full_html/2023/03/aa44205-22/aa44205-22.html"
+    },
+    {
+      "source": "pub_pdf",
+      "location": "https://www.aanda.org/articles/aa/pdf/2023/03/aa44205-22.pdf"
+    }
   ],
   "keywords": [
     {

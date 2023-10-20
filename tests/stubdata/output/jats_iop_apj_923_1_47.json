@@ -1,202 +1,169 @@
 {
-  "abstract": {
-    "textEnglish": "Radioactive nuclei were present in the early solar system (ESS), as inferred from analysis of meteorites. Many are produced in massive stars, either during their lives or their final explosions. In the first paper of this series (Brinkman et al. 2019), we focused on the production of <sup>26</sup>Al in massive binaries. Here, we focus on the production of another two short-lived radioactive nuclei, <sup>36</sup>Cl and <sup>41</sup>Ca, and the comparison to the ESS data. We used the MESA stellar evolution code with an extended nuclear network and computed massive (10\u201380 M <sub>\u2299</sub>), rotating (with initial velocities of 150 and 300 km s<sup>\u22121</sup>) and nonrotating single stars at solar metallicity (Z = 0.014) up to the onset of core collapse. We present the wind yields for the radioactive isotopes <sup>26</sup>Al, <sup>36</sup>Cl, and <sup>41</sup>Ca, and the stable isotopes <sup>19</sup>F and <sup>22</sup>Ne. In relation to the stable isotopes, we find that only the most massive models, \u226560 and \u226540 M <sub>\u2299</sub> give positive <sup>19</sup>F and <sup>22</sup>Ne yields, respectively, depending on the initial rotation rate. In relation to the radioactive isotopes, we find that the ESS abundances of <sup>26</sup>Al and <sup>41</sup>Ca can be matched with by models with initial masses \u226540 M <sub>\u2299</sub>, while <sup>36</sup>Cl is matched only by our most massive models, \u226560 M <sub>\u2299</sub>. <sup>60</sup>Fe is not significantly produced by any wind model, as required by the observations. Therefore, massive star winds are a favored candidate for the origin of the very short-lived <sup>26</sup>Al, <sup>36</sup>Cl, and <sup>41</sup>Ca in the ESS."
-  },
-  "authors": [
-    {
-      "affiliation": [
-        {
-          "affPubID": "affiliation01",
-          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
-        },
-        {
-          "affPubID": "affiliation02",
-          "affPubRaw": "Graduate School of Physics, University of Szeged, Dom t\u00e9r 9, Szeged, 6720 Hungary"
-        }
-      ],
-      "attrib": {
-        "email": "hannah.brinkman@csfk.org"
-      },
-      "name": {
-        "given_name": "Hannah E.",
-        "surname": "Brinkman"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "affiliation01",
-          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
-        }
-      ],
-      "name": {
-        "given_name": "J. W. den",
-        "surname": "Hartogh"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "affiliation01",
-          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
-        },
-        {
-          "affPubID": "affiliation03",
-          "affPubRaw": "School of Physics and Astronomy, Monash University, VIC 3800, Australia"
-        }
-      ],
-      "name": {
-        "given_name": "C. L.",
-        "surname": "Doherty"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "affiliation01",
-          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
-        },
-        {
-          "affPubID": "affiliation04",
-          "affPubRaw": "E.A. Milne Centre for Astrophysics, Department of Physics and Mathematics, University of Hull, HU6 7RX, UK"
-        },
-        {
-          "affPubID": "affiliation05",
-          "affPubRaw": "NuGrid Collaboration, http://nugridstars.org"
-        },
-        {
-          "affPubID": "affiliation06",
-          "affPubRaw": "Joint Institute for Nuclear Astrophysics, Center for the Evolution of the Elements, Michigan State University, 640 South Shaw Lane, East Lansing, MI 48824, USA"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-9048-6010"
-      },
-      "name": {
-        "given_name": "M.",
-        "surname": "Pignatari"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "affiliation01",
-          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
-        },
-        {
-          "affPubID": "affiliation03",
-          "affPubRaw": "School of Physics and Astronomy, Monash University, VIC 3800, Australia"
-        },
-        {
-          "affPubID": "affiliation07",
-          "affPubRaw": "ELTE E\u00f6tv\u00f6s Lor\u00e1nd University, Institute of Physics, Budapest 1117, P\u00e1zm\u00e1ny P\u00e9ter s\u00e9t\u00e1ny 1/A, Hungary"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-6972-3958"
-      },
-      "name": {
-        "given_name": "M.",
-        "surname": "Lugaro"
-      }
-    }
-  ],
-  "copyright": {
-    "statement": "\u00a9 2021. The American Astronomical Society. All rights reserved.",
-    "status": true
+  "recordData": {
+    "createdTime": "",
+    "parsedTime": "",
+    "loadType": "fromFile",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "recordOrigin": ""
   },
   "editorialHistory": {
-    "acceptedDate": "2021-09-08",
     "receivedDates": [
       "2021-04-30"
     ],
     "revisedDates": [
       "2021-09-07"
-    ]
+    ],
+    "acceptedDate": "2021-09-08"
   },
-  "keywords": [
-    {
-      "keyID": "1636",
-      "keyString": "Stellar winds",
-      "keySystem": "UAT"
-    },
-    {
-      "keyID": "1599",
-      "keyString": "Stellar evolution",
-      "keySystem": "UAT"
-    },
-    {
-      "keyID": "1616",
-      "keyString": "Stellar nucleosynthesis",
-      "keySystem": "UAT"
-    },
-    {
-      "keyID": "1528",
-      "keyString": "Solar system",
-      "keySystem": "UAT"
-    },
-    {
-      "keyID": "732",
-      "keyString": "Massive stars",
-      "keySystem": "UAT"
-    },
-    {
-      "keyID": "1629",
-      "keyString": "Stellar rotation",
-      "keySystem": "UAT"
-    }
-  ],
-  "pagination": {
-    "electronicID": "47",
-    "pageCount": "14"
+  "pubDate": {
+    "electrDate": "2021-12-09",
+    "printDate": "2021-12-00"
+  },
+  "publication": {
+    "pubName": "The Astrophysical Journal",
+    "publisher": "The American Astronomical Society",
+    "issueNum": "1",
+    "volumeNum": "923",
+    "pubYear": "2021",
+    "ISSN": [
+      {
+        "pubtype": "ppub",
+        "issnString": "0004-637X"
+      },
+      {
+        "pubtype": "epub",
+        "issnString": "1538-4357"
+      }
+    ]
   },
   "persistentIDs": [
     {
       "DOI": "10.3847/1538-4357/ac25ea"
     }
   ],
-  "pubDate": {
-    "electrDate": "2021-12-09",
-    "printDate": "2021-12-00"
-  },
-  "publication": {
-    "ISSN": [
-      {
-        "issnString": "0004-637X",
-        "pubtype": "ppub"
-      },
-      {
-        "issnString": "1538-4357",
-        "pubtype": "epub"
-      }
-    ],
-    "issueNum": "1",
-    "pubName": "The Astrophysical Journal",
-    "pubYear": "2021",
-    "publisher": "The American Astronomical Society",
-    "volumeNum": "923"
-  },
   "publisherIDs": [
     {
-      "Identifier": "apjac25ea",
-      "attribute": "publisher-id"
+      "attribute": "publisher-id",
+      "Identifier": "apjac25ea"
     },
     {
-      "Identifier": "ac25ea",
-      "attribute": "manuscript"
+      "attribute": "manuscript",
+      "Identifier": "ac25ea"
     },
     {
-      "Identifier": "AAS31921",
-      "attribute": "other"
+      "attribute": "other",
+      "Identifier": "AAS31921"
     }
   ],
-  "recordData": {
-    "createdTime": "",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "loadType": "fromFile",
-    "parsedTime": "",
-    "recordOrigin": ""
+  "pagination": {
+    "pageCount": "14",
+    "electronicID": "47"
+  },
+  "authors": [
+    {
+      "name": {
+        "surname": "Brinkman",
+        "given_name": "Hannah E."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary",
+          "affPubID": "affiliation01"
+        },
+        {
+          "affPubRaw": "Graduate School of Physics, University of Szeged, Dom t\u00e9r 9, Szeged, 6720 Hungary",
+          "affPubID": "affiliation02"
+        }
+      ],
+      "attrib": {
+        "email": "hannah.brinkman@csfk.org"
+      }
+    },
+    {
+      "name": {
+        "surname": "Hartogh",
+        "given_name": "J. W. den"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary",
+          "affPubID": "affiliation01"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Doherty",
+        "given_name": "C. L."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary",
+          "affPubID": "affiliation01"
+        },
+        {
+          "affPubRaw": "School of Physics and Astronomy, Monash University, VIC 3800, Australia",
+          "affPubID": "affiliation03"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Pignatari",
+        "given_name": "M."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary",
+          "affPubID": "affiliation01"
+        },
+        {
+          "affPubRaw": "E.A. Milne Centre for Astrophysics, Department of Physics and Mathematics, University of Hull, HU6 7RX, UK",
+          "affPubID": "affiliation04"
+        },
+        {
+          "affPubRaw": "NuGrid Collaboration, http://nugridstars.org",
+          "affPubID": "affiliation05"
+        },
+        {
+          "affPubRaw": "Joint Institute for Nuclear Astrophysics, Center for the Evolution of the Elements, Michigan State University, 640 South Shaw Lane, East Lansing, MI 48824, USA",
+          "affPubID": "affiliation06"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-9048-6010"
+      }
+    },
+    {
+      "name": {
+        "surname": "Lugaro",
+        "given_name": "M."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary",
+          "affPubID": "affiliation01"
+        },
+        {
+          "affPubRaw": "School of Physics and Astronomy, Monash University, VIC 3800, Australia",
+          "affPubID": "affiliation03"
+        },
+        {
+          "affPubRaw": "ELTE E\u00f6tv\u00f6s Lor\u00e1nd University, Institute of Physics, Budapest 1117, P\u00e1zm\u00e1ny P\u00e9ter s\u00e9t\u00e1ny 1/A, Hungary",
+          "affPubID": "affiliation07"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-6972-3958"
+      }
+    }
+  ],
+  "title": {
+    "textEnglish": "<sup>26</sup>Aluminum from Massive Binary Stars. II. Rotating Single Stars Up to Core Collapse and Their Impact on the Early Solar System"
+  },
+  "abstract": {
+    "textEnglish": "Radioactive nuclei were present in the early solar system (ESS), as inferred from analysis of meteorites. Many are produced in massive stars, either during their lives or their final explosions. In the first paper of this series (Brinkman et al. 2019), we focused on the production of <sup>26</sup>Al in massive binaries. Here, we focus on the production of another two short-lived radioactive nuclei, <sup>36</sup>Cl and <sup>41</sup>Ca, and the comparison to the ESS data. We used the MESA stellar evolution code with an extended nuclear network and computed massive (10\u201380 M <sub>\u2299</sub>), rotating (with initial velocities of 150 and 300 km s<sup>\u22121</sup>) and nonrotating single stars at solar metallicity (Z = 0.014) up to the onset of core collapse. We present the wind yields for the radioactive isotopes <sup>26</sup>Al, <sup>36</sup>Cl, and <sup>41</sup>Ca, and the stable isotopes <sup>19</sup>F and <sup>22</sup>Ne. In relation to the stable isotopes, we find that only the most massive models, \u226560 and \u226540 M <sub>\u2299</sub> give positive <sup>19</sup>F and <sup>22</sup>Ne yields, respectively, depending on the initial rotation rate. In relation to the radioactive isotopes, we find that the ESS abundances of <sup>26</sup>Al and <sup>41</sup>Ca can be matched with by models with initial masses \u226540 M <sub>\u2299</sub>, while <sup>36</sup>Cl is matched only by our most massive models, \u226560 M <sub>\u2299</sub>. <sup>60</sup>Fe is not significantly produced by any wind model, as required by the observations. Therefore, massive star winds are a favored candidate for the origin of the very short-lived <sup>26</sup>Al, <sup>36</sup>Cl, and <sup>41</sup>Ca in the ESS."
   },
   "references": [
     "<ref id=\"apjac25eabib1\"><element-citation publication-type=\"journal\" xlink:type=\"simple\"><person-group person-group-type=\"author\"> <name name-style=\"western\"><surname>Abia</surname><given-names>C.</given-names></name> <name name-style=\"western\"><surname>Cristallo</surname><given-names>S.</given-names></name> <name name-style=\"western\"><surname>Cunha</surname><given-names>K.</given-names></name> <name name-style=\"western\"><surname>de Laverny</surname><given-names>P.</given-names></name> <name name-style=\"western\"><surname>Smith</surname><given-names>V. V.</given-names></name> </person-group><year>2019</year><source>A&A</source><volume>625</volume><fpage>A40</fpage><ext-link ext-link-type=\"bibcode\" xlink:type=\"simple\">2019A&A...625A..40A</ext-link><pub-id pub-id-type=\"doi\">10.1051/0004-6361/201935286</pub-id></element-citation></ref>",
@@ -282,31 +249,36 @@
     "<ref id=\"apjac25eabib81\"><element-citation publication-type=\"journal\" xlink:type=\"simple\"><person-group person-group-type=\"author\"> <name name-style=\"western\"><surname>Wasserburg</surname><given-names>G. J.</given-names></name> <name name-style=\"western\"><surname>Busso</surname><given-names>M.</given-names></name> <name name-style=\"western\"><surname>Gallino</surname><given-names>R.</given-names></name> <name name-style=\"western\"><surname>Nollett</surname><given-names>K. M.</given-names></name> </person-group><year>2006</year><source>NuPhA</source><volume>777</volume><fpage>5</fpage><ext-link ext-link-type=\"bibcode\" xlink:type=\"simple\">2006NuPhA.777....5W</ext-link><pub-id pub-id-type=\"doi\">10.1016/j.nuclphysa.2005.07.015</pub-id></element-citation></ref>",
     "<ref id=\"apjac25eabib82\"><element-citation publication-type=\"journal\" xlink:type=\"simple\"><person-group person-group-type=\"author\"> <name name-style=\"western\"><surname>Young</surname><given-names>E. D.</given-names></name> </person-group><year>2014</year><source>E&PSL</source><volume>392</volume><fpage>16</fpage><ext-link ext-link-type=\"bibcode\" xlink:type=\"simple\">2014E&PSL.392...16Y</ext-link><pub-id pub-id-type=\"doi\">10.1016/j.epsl.2014.02.014</pub-id></element-citation></ref>"
   ],
-<<<<<<< HEAD
   "keywords": [
     {
-      "keyString": "1636",
-      "keySystem": "UAT"
+      "keyString": "Stellar winds",
+      "keySystem": "UAT",
+      "keyID": "1636"
     },
     {
-      "keyString": "1599",
-      "keySystem": "UAT"
+      "keyString": "Stellar evolution",
+      "keySystem": "UAT",
+      "keyID": "1599"
     },
     {
-      "keyString": "1616",
-      "keySystem": "UAT"
+      "keyString": "Stellar nucleosynthesis",
+      "keySystem": "UAT",
+      "keyID": "1616"
     },
     {
-      "keyString": "1528",
-      "keySystem": "UAT"
+      "keyString": "Solar system",
+      "keySystem": "UAT",
+      "keyID": "1528"
     },
     {
-      "keyString": "732",
-      "keySystem": "UAT"
+      "keyString": "Massive stars",
+      "keySystem": "UAT",
+      "keyID": "732"
     },
     {
-      "keyString": "1629",
-      "keySystem": "UAT"
+      "keyString": "Stellar rotation",
+      "keySystem": "UAT",
+      "keyID": "1629"
     }
   ],
   "copyright": {
@@ -315,9 +287,5 @@
   },
   "openAccess": {
     "license": "This article is available under the terms of the IOP-Standard License."
-=======
-  "title": {
-    "textEnglish": "<sup>26</sup>Aluminum from Massive Binary Stars. II. Rotating Single Stars Up to Core Collapse and Their Impact on the Early Solar System"
->>>>>>> 39ae85a1af33b5e0f7614fdf4cb87f0a5f6fae86
   }
 }

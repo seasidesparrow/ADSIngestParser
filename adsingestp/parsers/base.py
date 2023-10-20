@@ -365,7 +365,7 @@ class IngestBase(object):
         }
 
         output["subtitle"] = {
-            "textEnglish": input_dict.get("subtitle", "")
+            "textEnglish": input_dict.get("subtitle", ""),
             "textNative": input_dict.get("subtitle_native", ""),
             "langNative": input_dict.get("sub_lang_native", ""),
             "textNotes": input_dict.get("subtitle_notes", []),

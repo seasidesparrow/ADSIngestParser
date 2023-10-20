@@ -596,20 +596,35 @@ class JATSParser(BaseBeautifulSoupParser):
                     title_fn_list.append(self._detag(df, self.JATS_TAGSET["title"]).strip())
                     df.decompose()
                 art_title = self._detag(title, self.JATS_TAGSET["title"]).strip()
-                title_notes = [].extend(title_xref_list).extend(title_fn_list)
+                title_notes = []
+                if title_xref_list:
+                    title_notes.extend(title_xref_list)
+                if title_fn_list:
+                    title_notes.extend(title_fn_list)
+
                 if title_group.find("subtitle"):
                     subtitle = title_group.find("subtitle")
+                    # To do: find_all xref, but extract rid.  Then find_all
+                    # fn, and create a key-value pair of (id:text), and use
+                    # the rid from the xref to populate textNotes
+                    """
                     for dx in subtitle.find_all("xref"):
                         subtitle_xref_list.append(
-                            self._detag(dx, self.JATS_TAGSET["title"].strip()]
+                            self._detag(dx, self.JATS_TAGSET["title"]).strip()
+                        )
                         dx.decompose()
                     for df in subtitle.find_all("fn"):
                         subtitle_fn_list.append(
                             self._detag(df, self.JATS_TAGSET["title"]).strip()
                         )
                         df.decompose()
+                    """
                     sub_title = self._detag(subtitle, self.JATS_TAGSET["title"]).strip()
-                subtitle_notes = [].extend(subtitle_xref_list).extend(subtitle_fn_list)
+                subtitle_notes = []
+                if subtitle_xref_list:
+                    subtitle_notes.extend(subtitle_xref_list)
+                if subtitle_fn_list:
+                    subtitle_notes.extend(subtitle_fn_list)
             if art_title:
                 self.base_metadata["title"] = art_title
                 if title_notes:

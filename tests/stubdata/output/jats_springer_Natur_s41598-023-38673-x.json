@@ -1,882 +1,881 @@
 {
-  "abstract": {
-    "textEnglish": "A growing body of literature suggests the important role of the thalamus in cognition and neurodegenerative diseases. This study aims to elucidate whether the preoperative thalamic volume is associated with preoperative cognitive impairment (preCI) and whether it is predictive for postoperative cognitive dysfunction at 3 months (POCD). We enrolled 301 patients aged 65 or older and without signs of dementia who were undergoing elective surgery. Magnetic resonance imaging was conducted prior to surgery. Freesurfer (version 5.3.) was used to automatically segment the thalamus volume. A neuropsychological test battery was administered before surgery and at a 3 month follow-up. It included the computerized tests Paired Associate Learning (PAL), Verbal Recognition Memory (VRM), Spatial Span Length (SSP), Simple Reaction Time (SRT), the pen-and-paper Trail-Making-Test (TMT) and the manual Grooved Pegboard Test (GPT). Using a reliable change index, preCI and POCD were defined as total Z-score > 1.96 (sum score over all tests) and/or Z-scores > 1.96 in \u2265 2 individual cognitive test parameters. For statistical analyses, multivariable logistic regression models were applied. Age, sex and intracranial volume were covariates in the models. Of 301 patients who received a presurgical neuropsychological testing and MRI, 34 (11.3%) had preCI. 89 patients (29.5%) were lost to follow-up. The remaining 212 patients received a follow-up cognitive test after 3 months, of whom 25 (8.3%) presented with POCD. Independently of age, sex and intracranial volume, neither preCI (OR per cm <sup>3</sup> increment 0.81 [95% CI 0.60\u20131.07] p = 0.14) nor POCD (OR 1.02 per cm <sup>3</sup> increment [95% CI 0.75\u20131.40] p = 0.87) were statistically significantly associated with patients\u2019 preoperative thalamus volume. In this cohort we could not show an association of presurgical thalamus volume with preCI or POCD.\nClinical Trial Number: NCT02265263 ( https://clinicaltrials.gov/ct2/show/results/NCT02265263) ."
-  },
-  "authors": [
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "email": "marinus.fislage@charite.de",
-        "orcid": "0000-0001-9102-1373"
-      },
-      "name": {
-        "given_name": "Marinus",
-        "surname": "Fislage"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "Faculty of Health/School of Medicine Witten/Herdecke University Witten Germany"
-        },
-        {
-          "affPubID": "Aff3",
-          "affPubRaw": "Molecular Epidemiology Research Group Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-0307-1862"
-      },
-      "name": {
-        "given_name": "Insa",
-        "surname": "Feinkohl"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-7290-2271"
-      },
-      "name": {
-        "given_name": "Friedrich",
-        "surname": "Borchers"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff3",
-          "affPubRaw": "Molecular Epidemiology Research Group Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany"
-        },
-        {
-          "affPubID": "Aff4",
-          "affPubRaw": "Biobank Technology Platform Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany"
-        },
-        {
-          "affPubID": "Aff5",
-          "affPubRaw": "Core Facility Biobank Berlin Institute of Health at Charit\u00e9 - Universit\u00e4tsmedizin Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-1568-767X"
-      },
-      "name": {
-        "given_name": "Tobias",
-        "surname": "Pischon"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-1062-0495"
-      },
-      "name": {
-        "given_name": "Claudia D.",
-        "surname": "Spies"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        },
-        {
-          "affPubID": "Aff6",
-          "affPubRaw": "Pharmaimage Biomarker Solutions GmbH Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-3610-5029"
-      },
-      "name": {
-        "given_name": "Georg",
-        "surname": "Winterer"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        },
-        {
-          "affPubID": "Aff6",
-          "affPubRaw": "Pharmaimage Biomarker Solutions GmbH Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-5794-5716"
-      },
-      "name": {
-        "given_name": "Norman",
-        "surname": "Zacharias"
-      }
-    },
-    {
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Alissa",
-        "surname": "Wolf"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Anika",
-        "surname": "M\u00fcller"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Daniel",
-        "surname": "Hadzidiakos"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Fatima",
-        "surname": "Y\u00fcrek"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Gunnar",
-        "surname": "Lachmann"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Kwaku",
-        "surname": "Ofosu"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Maria",
-        "surname": "Heinrich"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Rudolf",
-        "surname": "M\u00f6rgeli"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff8",
-          "affPubRaw": "University Medical Center Hamburg Hamburg Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "J\u00fcrgen",
-        "surname": "Gallinat"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff8",
-          "affPubRaw": "University Medical Center Hamburg Hamburg Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Simone",
-        "surname": "K\u00fchn"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Arjen",
-        "surname": "Slooter"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Edwin",
-        "surname": "van Dellen"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Ilse",
-        "surname": "Kant"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Jeroen",
-        "surname": "de Bresser"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Jeroen",
-        "surname": "Hendrikse"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Simone",
-        "surname": "van Montfort"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "David",
-        "surname": "Menon"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Emmanuel",
-        "surname": "Stamatakis"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Jacobus",
-        "surname": "Preller"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Laura",
-        "surname": "Moreno-L\u00f3pez"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Stefan",
-        "surname": "Winzeck"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff11",
-          "affPubRaw": "National Research Council Napoli Naples Italy"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Daniela",
-        "surname": "Melillo"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff11",
-          "affPubRaw": "National Research Council Napoli Naples Italy"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Diana",
-        "surname": "Boraschi"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff11",
-          "affPubRaw": "National Research Council Napoli Naples Italy"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Giacomo Della",
-        "surname": "Camera"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff11",
-          "affPubRaw": "National Research Council Napoli Naples Italy"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Paola",
-        "surname": "Italiani"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff12",
-          "affPubRaw": "University of Luxembourg Esch-sur-Alzette Luxembourg"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Reinhard",
-        "surname": "Schneider"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff12",
-          "affPubRaw": "University of Luxembourg Esch-sur-Alzette Luxembourg"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Roland",
-        "surname": "Krause"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff13",
-          "affPubRaw": "ATLAS Biolabs GmBH Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Karsten",
-        "surname": "Heidtke"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff13",
-          "affPubRaw": "ATLAS Biolabs GmBH Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Peter",
-        "surname": "N\u00fcrnberg"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Anja",
-        "surname": "Helmschrodt"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Axel",
-        "surname": "B\u00f6cher"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Bettina",
-        "surname": "Hafen"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Franz Paul",
-        "surname": "Armbruster"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Ina",
-        "surname": "Diehl"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Jana",
-        "surname": "Ruppert"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Katarina",
-        "surname": "Hartmann"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Marion",
-        "surname": "Kronabel"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Marius",
-        "surname": "Weyer"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Thomas Bernd",
-        "surname": "Dschietzig"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff15",
-          "affPubRaw": "Cellogic GmbH Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Malte",
-        "surname": "Pietzsch"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff15",
-          "affPubRaw": "Cellogic GmbH Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Simon",
-        "surname": "Weber"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff16",
-          "affPubRaw": "Physikalisch-Technische Bundesanstalt Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Bernd",
-        "surname": "Ittermann"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff16",
-          "affPubRaw": "Physikalisch-Technische Bundesanstalt Berlin Germany"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "BioCog Consortium",
-        "given_name": "Ariane",
-        "surname": "Fillmer"
-      }
-    }
-  ],
-  "copyright": {
-    "statement": "\u00a9 The Author(s) 2023. corrected publication 2023",
-    "status": true
+  "recordData": {
+    "createdTime": "",
+    "parsedTime": "",
+    "loadType": "fromFile",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "recordOrigin": ""
   },
   "editorialHistory": {
-    "acceptedDate": "2023-07-12",
     "receivedDates": [
       "2022-09-09"
-    ]
+    ],
+    "acceptedDate": "2023-07-12"
   },
-  "pagination": {
-    "electronicID": "11732"
+  "pubDate": {
+    "electrDate": "2023-12-00"
+  },
+  "publication": {
+    "pubName": "Scientific Reports",
+    "publisher": "Nature Publishing Group UK",
+    "issueNum": "1",
+    "volumeNum": "13",
+    "pubYear": "2023",
+    "ISSN": [
+      {
+        "pubtype": "epub",
+        "issnString": "2045-2322"
+      }
+    ]
   },
   "persistentIDs": [
     {
       "DOI": "10.1038/s41598-023-38673-x"
     }
   ],
-  "pubDate": {
-    "electrDate": "2023-12-00"
-  },
-  "publication": {
-    "ISSN": [
-      {
-        "issnString": "2045-2322",
-        "pubtype": "epub"
-      }
-    ],
-    "issueNum": "1",
-    "pubName": "Scientific Reports",
-    "pubYear": "2023",
-    "publisher": "Nature Publishing Group UK",
-    "volumeNum": "13"
-  },
   "publisherIDs": [
     {
-      "Identifier": "s41598-023-38673-x",
-      "attribute": "publisher-id"
+      "attribute": "publisher-id",
+      "Identifier": "s41598-023-38673-x"
     },
     {
-      "Identifier": "38673",
-      "attribute": "manuscript"
+      "attribute": "manuscript",
+      "Identifier": "38673"
     }
   ],
-  "recordData": {
-    "createdTime": "",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "loadType": "fromFile",
-    "parsedTime": "",
-    "recordOrigin": ""
+  "pagination": {
+    "electronicID": "11732"
+  },
+  "authors": [
+    {
+      "name": {
+        "surname": "Fislage",
+        "given_name": "Marinus"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff1"
+        }
+      ],
+      "attrib": {
+        "email": "marinus.fislage@charite.de",
+        "orcid": "0000-0001-9102-1373"
+      }
+    },
+    {
+      "name": {
+        "surname": "Feinkohl",
+        "given_name": "Insa"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Faculty of Health/School of Medicine Witten/Herdecke University Witten Germany",
+          "affPubID": "Aff2"
+        },
+        {
+          "affPubRaw": "Molecular Epidemiology Research Group Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany",
+          "affPubID": "Aff3"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-0307-1862"
+      }
+    },
+    {
+      "name": {
+        "surname": "Borchers",
+        "given_name": "Friedrich"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff1"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-7290-2271"
+      }
+    },
+    {
+      "name": {
+        "surname": "Pischon",
+        "given_name": "Tobias"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Molecular Epidemiology Research Group Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany",
+          "affPubID": "Aff3"
+        },
+        {
+          "affPubRaw": "Biobank Technology Platform Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany",
+          "affPubID": "Aff4"
+        },
+        {
+          "affPubRaw": "Core Facility Biobank Berlin Institute of Health at Charit\u00e9 - Universit\u00e4tsmedizin Berlin Berlin Germany",
+          "affPubID": "Aff5"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-1568-767X"
+      }
+    },
+    {
+      "name": {
+        "surname": "Spies",
+        "given_name": "Claudia D."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff1"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-1062-0495"
+      }
+    },
+    {
+      "name": {
+        "surname": "Winterer",
+        "given_name": "Georg"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Pharmaimage Biomarker Solutions GmbH Berlin Germany",
+          "affPubID": "Aff6"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-3610-5029"
+      }
+    },
+    {
+      "name": {
+        "surname": "Zacharias",
+        "given_name": "Norman"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Pharmaimage Biomarker Solutions GmbH Berlin Germany",
+          "affPubID": "Aff6"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-5794-5716"
+      }
+    },
+    {
+      "name": {
+        "collab": "BioCog Consortium"
+      },
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Wolf",
+        "given_name": "Alissa",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "M\u00fcller",
+        "given_name": "Anika",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Hadzidiakos",
+        "given_name": "Daniel",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Y\u00fcrek",
+        "given_name": "Fatima",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Lachmann",
+        "given_name": "Gunnar",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Ofosu",
+        "given_name": "Kwaku",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Heinrich",
+        "given_name": "Maria",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "M\u00f6rgeli",
+        "given_name": "Rudolf",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Gallinat",
+        "given_name": "J\u00fcrgen",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University Medical Center Hamburg Hamburg Germany",
+          "affPubID": "Aff8"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "K\u00fchn",
+        "given_name": "Simone",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University Medical Center Hamburg Hamburg Germany",
+          "affPubID": "Aff8"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Slooter",
+        "given_name": "Arjen",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands",
+          "affPubID": "Aff9"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "van Dellen",
+        "given_name": "Edwin",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands",
+          "affPubID": "Aff9"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Kant",
+        "given_name": "Ilse",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands",
+          "affPubID": "Aff9"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "de Bresser",
+        "given_name": "Jeroen",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands",
+          "affPubID": "Aff9"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Hendrikse",
+        "given_name": "Jeroen",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands",
+          "affPubID": "Aff9"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "van Montfort",
+        "given_name": "Simone",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands",
+          "affPubID": "Aff9"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Menon",
+        "given_name": "David",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Cambridge Cambridge UK",
+          "affPubID": "Aff10"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Stamatakis",
+        "given_name": "Emmanuel",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Cambridge Cambridge UK",
+          "affPubID": "Aff10"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Preller",
+        "given_name": "Jacobus",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Cambridge Cambridge UK",
+          "affPubID": "Aff10"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Moreno-L\u00f3pez",
+        "given_name": "Laura",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Cambridge Cambridge UK",
+          "affPubID": "Aff10"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Winzeck",
+        "given_name": "Stefan",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Cambridge Cambridge UK",
+          "affPubID": "Aff10"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Melillo",
+        "given_name": "Daniela",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "National Research Council Napoli Naples Italy",
+          "affPubID": "Aff11"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Boraschi",
+        "given_name": "Diana",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "National Research Council Napoli Naples Italy",
+          "affPubID": "Aff11"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Camera",
+        "given_name": "Giacomo Della",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "National Research Council Napoli Naples Italy",
+          "affPubID": "Aff11"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Italiani",
+        "given_name": "Paola",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "National Research Council Napoli Naples Italy",
+          "affPubID": "Aff11"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Schneider",
+        "given_name": "Reinhard",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Luxembourg Esch-sur-Alzette Luxembourg",
+          "affPubID": "Aff12"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Krause",
+        "given_name": "Roland",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "University of Luxembourg Esch-sur-Alzette Luxembourg",
+          "affPubID": "Aff12"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Heidtke",
+        "given_name": "Karsten",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "ATLAS Biolabs GmBH Berlin Germany",
+          "affPubID": "Aff13"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "N\u00fcrnberg",
+        "given_name": "Peter",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "ATLAS Biolabs GmBH Berlin Germany",
+          "affPubID": "Aff13"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Helmschrodt",
+        "given_name": "Anja",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "B\u00f6cher",
+        "given_name": "Axel",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Hafen",
+        "given_name": "Bettina",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Armbruster",
+        "given_name": "Franz Paul",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Diehl",
+        "given_name": "Ina",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Ruppert",
+        "given_name": "Jana",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Hartmann",
+        "given_name": "Katarina",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Kronabel",
+        "given_name": "Marion",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Weyer",
+        "given_name": "Marius",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Dschietzig",
+        "given_name": "Thomas Bernd",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Immundiagnostik AG Bensheim Germany",
+          "affPubID": "Aff14"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Pietzsch",
+        "given_name": "Malte",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Cellogic GmbH Berlin Germany",
+          "affPubID": "Aff15"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Weber",
+        "given_name": "Simon",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Cellogic GmbH Berlin Germany",
+          "affPubID": "Aff15"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Ittermann",
+        "given_name": "Bernd",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Physikalisch-Technische Bundesanstalt Berlin Germany",
+          "affPubID": "Aff16"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Fillmer",
+        "given_name": "Ariane",
+        "collab": "BioCog Consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Physikalisch-Technische Bundesanstalt Berlin Germany",
+          "affPubID": "Aff16"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    }
+  ],
+  "title": {
+    "textEnglish": "Preoperative thalamus volume is not associated with preoperative cognitive impairment (preCI) or postoperative cognitive dysfunction (POCD)"
+  },
+  "abstract": {
+    "textEnglish": "A growing body of literature suggests the important role of the thalamus in cognition and neurodegenerative diseases. This study aims to elucidate whether the preoperative thalamic volume is associated with preoperative cognitive impairment (preCI) and whether it is predictive for postoperative cognitive dysfunction at 3 months (POCD). We enrolled 301 patients aged 65 or older and without signs of dementia who were undergoing elective surgery. Magnetic resonance imaging was conducted prior to surgery. Freesurfer (version 5.3.) was used to automatically segment the thalamus volume. A neuropsychological test battery was administered before surgery and at a 3 month follow-up. It included the computerized tests Paired Associate Learning (PAL), Verbal Recognition Memory (VRM), Spatial Span Length (SSP), Simple Reaction Time (SRT), the pen-and-paper Trail-Making-Test (TMT) and the manual Grooved Pegboard Test (GPT). Using a reliable change index, preCI and POCD were defined as total Z-score > 1.96 (sum score over all tests) and/or Z-scores > 1.96 in \u2265 2 individual cognitive test parameters. For statistical analyses, multivariable logistic regression models were applied. Age, sex and intracranial volume were covariates in the models. Of 301 patients who received a presurgical neuropsychological testing and MRI, 34 (11.3%) had preCI. 89 patients (29.5%) were lost to follow-up. The remaining 212 patients received a follow-up cognitive test after 3 months, of whom 25 (8.3%) presented with POCD. Independently of age, sex and intracranial volume, neither preCI (OR per cm <sup>3</sup> increment 0.81 [95% CI 0.60\u20131.07] p = 0.14) nor POCD (OR 1.02 per cm <sup>3</sup> increment [95% CI 0.75\u20131.40] p = 0.87) were statistically significantly associated with patients\u2019 preoperative thalamus volume. In this cohort we could not show an association of presurgical thalamus volume with preCI or POCD.\nClinical Trial Number: NCT02265263 ( https://clinicaltrials.gov/ct2/show/results/NCT02265263) ."
   },
   "references": [
     "<ref id=\"CR1\"> <label>1.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Androsova</surname> <given-names>G</given-names> </name> <name> <surname>Krause</surname> <given-names>R</given-names> </name> <name> <surname>Winterer</surname> <given-names>G</given-names> </name> <name> <surname>Schneider</surname> <given-names>R</given-names> </name> </person-group> <article-title xml:lang=\"en\">Biomarkers of postoperative delirium and cognitive dysfunction</article-title> <source>Front. Aging Neurosci.</source> <year>2015</year> <volume>7</volume> <fpage>112</fpage> <pub-id pub-id-type=\"pmid\">26106326</pub-id> <pub-id pub-id-type=\"pmcid\">4460425</pub-id> </mixed-citation> </ref>",
@@ -923,7 +922,13 @@
     "<ref id=\"CR42\"> <label>42.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Berger</surname> <given-names>M</given-names> </name> <name> <surname>Terrando</surname> <given-names>N</given-names> </name> <name> <surname>Smith</surname> <given-names>SK</given-names> </name> <name> <surname>Browndyke</surname> <given-names>JN</given-names> </name> <name> <surname>Newman</surname> <given-names>MF</given-names> </name> <name> <surname>Mathew</surname> <given-names>JP</given-names> </name> </person-group> <article-title xml:lang=\"en\">Neurocognitive function after cardiac surgery: From phenotypes to mechanisms</article-title> <source>Anesthesiology</source> <year>2018</year> <volume>129</volume> <fpage>829</fpage> <lpage>851</lpage> <pub-id pub-id-type=\"pmid\">29621031</pub-id> </mixed-citation> </ref>",
     "<ref id=\"CR43\"> <label>43.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Dieleman</surname> <given-names>N</given-names> </name> <name> <surname>Koek</surname> <given-names>HL</given-names> </name> <name> <surname>Hendrikse</surname> <given-names>J</given-names> </name> </person-group> <article-title xml:lang=\"en\">Short-term mechanisms influencing volumetric brain dynamics</article-title> <source>Neuroimage Clin.</source> <year>2017</year> <volume>16</volume> <fpage>507</fpage> <lpage>513</lpage> <pub-id pub-id-type=\"pmid\">28971004</pub-id> <pub-id pub-id-type=\"pmcid\">5609861</pub-id> </mixed-citation> </ref>"
   ],
-  "title": {
-    "textEnglish": "Preoperative thalamus volume is not associated with preoperative cognitive impairment (preCI) or postoperative cognitive dysfunction (POCD)"
+  "copyright": {
+    "status": true,
+    "statement": "\u00a9 The Author(s) 2023. corrected publication 2023"
+  },
+  "openAccess": {
+    "open": true,
+    "license": "\nOpen Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit\n\t\t\t\t\t\thttp://creativecommons.org/licenses/by/4.0/.\n\t\t\t\t\t",
+    "licenseURL": "http://creativecommons.org/licenses/by/4.0/"
   }
 }

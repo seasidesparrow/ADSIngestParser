@@ -25,7 +25,7 @@ dependencies = [
     'nameparser==1.1.1',
     'ordered-set==4.1.0',
     'python-dateutil==2.8.1',
-    'adsingestschema @ git+https://github.com/adsabs/ingest_data_model@v1.0.9#egg=adsingestschema',
+    'adsingestschema @ git+https://github.com/adsabs/ingest_data_model@v1.0.10#egg=adsingestschema',
 ]
 
 
