@@ -576,10 +576,8 @@ class JATSParser(BaseBeautifulSoupParser):
         return pubdate
 
     def _parse_title_abstract(self):
-        title_xref_list = []
-        title_fn_list = []
         title_fn_dict = {}
-        subtitle_xref_list = []
+        title_fn_list = []
         subtitle_fn_list = []
         self.titledoi = None
         title_group = self.article_meta.find("title-group")
@@ -611,6 +609,7 @@ class JATSParser(BaseBeautifulSoupParser):
 
                 if title_group.find("subtitle"):
                     subtitle = title_group.find("subtitle")
+                    # subtitle xrefs
                     for dx in subtitle.find_all("xref"):
                         key = dx.get("rid", None)
                         if title_fn_dict.get(key, None):
