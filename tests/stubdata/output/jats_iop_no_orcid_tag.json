@@ -5900,5 +5900,15 @@
     "open": true,
     "license": "\n\nOriginal content from this work may be used under the terms of the Creative Commons Attribution 4.0 licence. Any further distribution of this work must maintain attribution to the author(s) and the title of the work, journal citation and DOI.",
     "licenseURL": "http://creativecommons.org/licenses/by/4.0/"
-  }
+  },
+  "funding": [
+    {
+      "agencyname": "MINCyT \u2223 Agencia Nacional de Promoci\u00f3n Cient\u00edfica y Tecnol\u00f3gica (ANPCyT)\n",
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "https://doi.org/10.13039/501100003074"
+      },
+      "awardnumber": "0"
+    }
+  ]
 }

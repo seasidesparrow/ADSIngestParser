@@ -357,5 +357,20 @@
   "openAccess": {
     "license": "This article is published and distributed under the terms of the Oxford University Press, Standard Journals Publication Model (https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model)",
     "licenseURL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
-  }
+  },
+  "funding": [
+    {
+      "agencyname": "\n\n10.13039/100010029\n\n",
+      "agencyid": {
+        "idvalue": "Lancaster University"
+      }
+    },
+    {
+      "agencyname": "\n\n10.13039/501100001871\n\n",
+      "agencyid": {
+        "idvalue": "Funda\u00e7\u00e3o para a Ci\u00eancia e a Tecnologia"
+      },
+      "awardnumber": "PTDC/FIS-AST/31546/2017"
+    }
+  ]
 }

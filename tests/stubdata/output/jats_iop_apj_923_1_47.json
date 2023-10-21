@@ -287,5 +287,15 @@
   },
   "openAccess": {
     "license": "This article is available under the terms of the IOP-Standard License."
-  }
+  },
+  "funding": [
+    {
+      "agencyname": "EC \u2223 European Research Council (ERC)\n",
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "https://doi.org/10.13039/501100000781"
+      },
+      "awardnumber": "724560"
+    }
+  ]
 }

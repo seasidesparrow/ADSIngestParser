@@ -994,6 +994,60 @@ class JATSParser(BaseBeautifulSoupParser):
 
         self.base_metadata["esources"] = links
 
+    def _parse_funding(self):
+        funding = []
+        funding_groups = self.article_meta.find_all("funding-group")
+        for fg in funding_groups:
+            award_groups = fg.find_all("award-group")
+            for ag in award_groups:
+                # with institution-wrap
+                institution_tag = ag.find("institution")
+                if institution_tag:
+                    institution = institution_tag.get_text()
+                else:
+                    institution = None
+                institution_id = ag.find("institution-id")
+                if institution_id:
+                    idschema = institution_id.get("institution-id-type", None)
+                    idvalue = institution_id.get_text()
+                else:
+                    idschema = None
+                    idvalue = None
+                award_id_tag = ag.find("award-id")
+                if award_id_tag:
+                    award_id = award_id_tag.get_text()
+                else:
+                    award_id = None
+
+                # without institution-wrap
+                if not institution:
+                    funding_source = ag.find("funding-source")
+                    if funding_source:
+                        named_content = funding_source.find("named-content")
+                        if named_content:
+                            idvalue = named_content.get_text()
+                            if "doi" in idvalue:
+                                idschema = "doi"
+                            named_content.decompose()
+                        institution = funding_source.get_text()
+                        funding_source.decompose()
+
+                funder = {}
+                if institution:
+                    funder.setdefault("agencyname", institution)
+                if idschema or idvalue:
+                    if idschema:
+                        funder.setdefault("agencyid", {}).setdefault("idschema", idschema)
+                    if idvalue:
+                        funder.setdefault("agencyid", {}).setdefault("idvalue", idvalue)
+                if award_id:
+                    funder.setdefault("awardnumber", award_id)
+                if funder:
+                    funding.append(funder)
+                ag.decompose()
+            fg.decompose()
+        self.base_metadata["funding"] = funding
+
     def parse(self, text, bsparser="lxml-xml"):
         """
         Parse JATS XML into standard JSON format
@@ -1037,6 +1091,7 @@ class JATSParser(BaseBeautifulSoupParser):
         self._parse_permissions()
         self._parse_page()
         self._parse_esources()
+        self._parse_funding()
 
         self._parse_references()
 

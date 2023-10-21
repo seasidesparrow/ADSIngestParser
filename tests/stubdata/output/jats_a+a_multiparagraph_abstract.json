@@ -411,5 +411,19 @@
     "open": true,
     "license": "Open Access article, published by EDP Sciences, under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
     "licenseURL": "https://www.edpsciences.org"
-  }
+  },
+  "funding": [
+    {
+      "agencyid": {
+        "idvalue": "Czech Science Foundation"
+      },
+      "awardnumber": "20-00150S"
+    },
+    {
+      "agencyid": {
+        "idvalue": "European Union\u2019s Framework Programme for Research and Innovation Horizon 2020"
+      },
+      "awardnumber": "823734"
+    }
+  ]
 }
