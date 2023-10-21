@@ -578,6 +578,7 @@ class JATSParser(BaseBeautifulSoupParser):
     def _parse_title_abstract(self):
         title_xref_list = []
         title_fn_list = []
+        title_fn_dict = {}
         subtitle_xref_list = []
         subtitle_fn_list = []
         self.titledoi = None
@@ -588,41 +589,35 @@ class JATSParser(BaseBeautifulSoupParser):
             if title_group.find("article-title"):
                 title = title_group.find("article-title")
                 for dx in title.find_all("ext-link"):
-                    self.titledoi = dx.find("xlink:href")
-                for dx in title.find_all("xref"):
-                    title_xref_list.append(self._detag(dx, self.JATS_TAGSET["title"]).strip())
-                    dx.decompose()
-                for df in title.find_all("fn"):
-                    title_fn_list.append(self._detag(df, self.JATS_TAGSET["title"]).strip())
+                    if dx.find("xlink:href"):
+                        self.titledoi = dx.find("xlink:href")
+                # all title footnotes:
+                for df in title_group.find_all("fn"):
+                    key = df.get("id", None)
+                    note = self._detag(df, self.JATS_TAGSET["abstract"]).strip()
+                    if key and note:
+                        title_fn_dict[key] = note
                     df.decompose()
+                # title xrefs
+                for dx in title.find_all("xref"):
+                    key = dx.get("rid", None)
+                    if title_fn_dict.get(key, None):
+                        title_fn_list.append(title_fn_dict.get(key, None))
+                    dx.decompose()
                 art_title = self._detag(title, self.JATS_TAGSET["title"]).strip()
                 title_notes = []
-                if title_xref_list:
-                    title_notes.extend(title_xref_list)
                 if title_fn_list:
                     title_notes.extend(title_fn_list)
 
                 if title_group.find("subtitle"):
                     subtitle = title_group.find("subtitle")
-                    # To do: find_all xref, but extract rid.  Then find_all
-                    # fn, and create a key-value pair of (id:text), and use
-                    # the rid from the xref to populate textNotes
-                    """
                     for dx in subtitle.find_all("xref"):
-                        subtitle_xref_list.append(
-                            self._detag(dx, self.JATS_TAGSET["title"]).strip()
-                        )
+                        key = dx.get("rid", None)
+                        if title_fn_dict.get(key, None):
+                            subtitle_fn_list.append(title_fn_dict.get(key, None))
                         dx.decompose()
-                    for df in subtitle.find_all("fn"):
-                        subtitle_fn_list.append(
-                            self._detag(df, self.JATS_TAGSET["title"]).strip()
-                        )
-                        df.decompose()
-                    """
                     sub_title = self._detag(subtitle, self.JATS_TAGSET["title"]).strip()
                 subtitle_notes = []
-                if subtitle_xref_list:
-                    subtitle_notes.extend(subtitle_xref_list)
                 if subtitle_fn_list:
                     subtitle_notes.extend(subtitle_fn_list)
             if art_title:
