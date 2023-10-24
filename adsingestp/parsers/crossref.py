@@ -221,6 +221,11 @@ class CrossrefParser(BaseBeautifulSoupParser):
         if self.record_meta.find("titles") and self.record_meta.find("titles").find("title"):
             self.base_metadata["title"] = self.record_meta.find("titles").find("title").get_text()
 
+        if self.record_meta.find("titles") and self.record_meta.find("titles").find("subtitle"):
+            self.base_metadata["subtitle"] = (
+                self.record_meta.find("titles").find("subtitle").get_text()
+            )
+
         if self.record_meta.find("jats:abstract") and self.record_meta.find("jats:abstract").find(
             "jats:p"
         ):

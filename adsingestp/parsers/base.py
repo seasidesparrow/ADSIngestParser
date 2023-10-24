@@ -184,9 +184,13 @@ class IngestBase(object):
                      'series_title': string,
                      'series_id': string,
                      'series_id_description': string,
+                     'sub_lang_native': string,
                      'subtitle': string,
+                     'subtitle_native': string,
+                     'subtitle_notes': [string],
                      'title': string,
                      'title_native': string,
+                     'title_notes': [string],
                      'volume': string
                     }
 
@@ -357,9 +361,15 @@ class IngestBase(object):
             "textEnglish": input_dict.get("title", ""),
             "textNative": input_dict.get("title_native", ""),
             "langNative": input_dict.get("lang_native", ""),
+            "textNotes": input_dict.get("title_notes", []),
         }
 
-        output["subtitle"] = input_dict.get("subtitle", "")
+        output["subtitle"] = {
+            "textEnglish": input_dict.get("subtitle", ""),
+            "textNative": input_dict.get("subtitle_native", ""),
+            "langNative": input_dict.get("sub_lang_native", ""),
+            "textNotes": input_dict.get("subtitle_notes", []),
+        }
 
         output["abstract"] = {
             "textEnglish": input_dict.get(
@@ -435,11 +445,9 @@ class IngestBase(object):
         }
 
         output["openAccess"] = {
-            "open": input_dict.get("openAccess", {}).get("open", False)
-            if input_dict.get("openAccess")
-            else False,
-            # "license": "XXX",
-            # "licenseURL": "XXX",
+            "open": input_dict.get("openAccess", {}).get("open", False),
+            "license": input_dict.get("openAccess", {}).get("license", ""),
+            "licenseURL": input_dict.get("openAccess", {}).get("licenseURL", "")
             # "preprint": "XXX",
             # "startDate": "XXX",
             # "endDate": "XXX",

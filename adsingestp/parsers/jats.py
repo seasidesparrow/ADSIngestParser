@@ -265,7 +265,7 @@ class JATSAffils(object):
                     }
 
                 l_correspondent = False
-                if contrib.get("corresp", "") == "yes":
+                if contrib.get("corresp", None) == "yes":
                     l_correspondent = True
 
                 # get author's name
@@ -576,23 +576,57 @@ class JATSParser(BaseBeautifulSoupParser):
         return pubdate
 
     def _parse_title_abstract(self):
-        title_xref_list = []
+        title_fn_dict = {}
         title_fn_list = []
+        subtitle_fn_list = []
         self.titledoi = None
-        if self.article_meta.find("title-group") and self.article_meta.find("title-group").find(
-            "article-title"
-        ):
-            title = self.article_meta.find("title-group").find("article-title")
-            for dx in title.find_all("ext-link"):
-                self.titledoi = dx.find("xlink:href")
-            for dx in title.find_all("xref"):
-                title_xref_list.append(self._detag(dx, self.JATS_TAGSET["abstract"]).strip())
-                dx.decompose()
-            for df in title.find_all("fn"):
-                title_fn_list.append(self._detag(df, self.JATS_TAGSET["abstract"]).strip())
-                df.decompose()
+        title_group = self.article_meta.find("title-group")
+        art_title = None
+        sub_title = None
+        if title_group:
+            if title_group.find("article-title"):
+                title = title_group.find("article-title")
+                for dx in title.find_all("ext-link"):
+                    if dx.find("xlink:href"):
+                        self.titledoi = dx.find("xlink:href")
+                # all title footnotes:
+                for df in title_group.find_all("fn"):
+                    key = df.get("id", None)
+                    note = self._detag(df, self.JATS_TAGSET["abstract"]).strip()
+                    if key and note:
+                        title_fn_dict[key] = note
+                    df.decompose()
+                # title xrefs
+                for dx in title.find_all("xref"):
+                    key = dx.get("rid", None)
+                    if title_fn_dict.get(key, None):
+                        title_fn_list.append(title_fn_dict.get(key, None))
+                    dx.decompose()
+                art_title = self._detag(title, self.JATS_TAGSET["title"]).strip()
+                title_notes = []
+                if title_fn_list:
+                    title_notes.extend(title_fn_list)
 
-            self.base_metadata["title"] = self._detag(title, self.JATS_TAGSET["title"]).strip()
+                if title_group.find("subtitle"):
+                    subtitle = title_group.find("subtitle")
+                    # subtitle xrefs
+                    for dx in subtitle.find_all("xref"):
+                        key = dx.get("rid", None)
+                        if title_fn_dict.get(key, None):
+                            subtitle_fn_list.append(title_fn_dict.get(key, None))
+                        dx.decompose()
+                    sub_title = self._detag(subtitle, self.JATS_TAGSET["title"]).strip()
+                subtitle_notes = []
+                if subtitle_fn_list:
+                    subtitle_notes.extend(subtitle_fn_list)
+            if art_title:
+                self.base_metadata["title"] = art_title
+                if title_notes:
+                    self.base_metadata["title_notes"] = title_notes
+                if sub_title:
+                    self.base_metadata["subtitle"] = sub_title
+                if subtitle_notes:
+                    self.base_metadata["subtitle_notes"] = subtitle_notes
 
         if self.article_meta.find("abstract"):
             if self.article_meta.find("abstract").find("p"):
@@ -874,8 +908,24 @@ class JATSParser(BaseBeautifulSoupParser):
         # Check for open-access / "Permissions" field
         permissions = self.article_meta.find("permissions").find_all("license")
         for p in permissions:
-            if p.find("license-type") == "open":
+            if (
+                p.get("license-type", None) == "open"
+                or p.get("license-type", None) == "open-access"
+            ):
                 self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
+            if p.find("license-p"):
+                license_text = p.find("license-p")
+                if license_text:
+                    self.base_metadata.setdefault("openAccess", {}).setdefault(
+                        "license", license_text.get_text()
+                    )
+                    license_uri = license_text.find("ext-link")
+                    if license_uri:
+                        if license_uri.get("xlink:href", None):
+                            license_uri_value = license_uri.get("xlink:href", None)
+                            self.base_metadata.setdefault("openAccess", {}).setdefault(
+                                "licenseURL", self._detag(license_uri_value, [])
+                            )
 
     def _parse_page(self):
         fpage = self.article_meta.find("fpage")
@@ -944,6 +994,60 @@ class JATSParser(BaseBeautifulSoupParser):
 
         self.base_metadata["esources"] = links
 
+    def _parse_funding(self):
+        funding = []
+        funding_groups = self.article_meta.find_all("funding-group")
+        for fg in funding_groups:
+            award_groups = fg.find_all("award-group")
+            for ag in award_groups:
+                # with institution-wrap
+                institution_tag = ag.find("institution")
+                if institution_tag:
+                    institution = institution_tag.get_text()
+                else:
+                    institution = None
+                institution_id = ag.find("institution-id")
+                if institution_id:
+                    idschema = institution_id.get("institution-id-type", None)
+                    idvalue = institution_id.get_text()
+                else:
+                    idschema = None
+                    idvalue = None
+                award_id_tag = ag.find("award-id")
+                if award_id_tag:
+                    award_id = award_id_tag.get_text()
+                else:
+                    award_id = None
+
+                # without institution-wrap
+                if not institution:
+                    funding_source = ag.find("funding-source")
+                    if funding_source:
+                        named_content = funding_source.find("named-content")
+                        if named_content:
+                            idvalue = named_content.get_text()
+                            if "doi" in idvalue:
+                                idschema = "doi"
+                            named_content.decompose()
+                        institution = funding_source.get_text()
+                        funding_source.decompose()
+
+                funder = {}
+                if institution:
+                    funder.setdefault("agencyname", institution)
+                if idschema or idvalue:
+                    if idschema:
+                        funder.setdefault("agencyid", {}).setdefault("idschema", idschema)
+                    if idvalue:
+                        funder.setdefault("agencyid", {}).setdefault("idvalue", idvalue)
+                if award_id:
+                    funder.setdefault("awardnumber", award_id)
+                if funder:
+                    funding.append(funder)
+                ag.decompose()
+            fg.decompose()
+        self.base_metadata["funding"] = funding
+
     def parse(self, text, bsparser="lxml-xml"):
         """
         Parse JATS XML into standard JSON format
@@ -987,6 +1091,7 @@ class JATSParser(BaseBeautifulSoupParser):
         self._parse_permissions()
         self._parse_page()
         self._parse_esources()
+        self._parse_funding()
 
         self._parse_references()
 

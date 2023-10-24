@@ -1,142 +1,111 @@
 {
-  "abstract": {
-    "textEnglish": "This paper is concerned with the time-asymptotic stability of a nonlinear wave for the outflow problem of the isentropic compressible Navier\u2013Stokes\u2013Korteweg equations in the half space. Under some suitable assumptions on the spatial-asymptotic states and boundary data, the time-asymptotic profile is a nonlinear wave which is the superposition of a stationary solution and a rarefaction wave. Employing the <inline-formula id=\"IEq1\"> <mml:math> <mml:mi>L</mml:mi> <mml:mn>2</mml:mn> </mml:math> <tex-math id=\"IEq1_TeX\">\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$L^{2}$$\\end{document}</tex-math> </inline-formula>-energy method and the decay (in both time and space variables) estimates of each component of the nonlinear wave, we prove that this nonlinear wave is time asymptotically stable under a small initial perturbation."
-  },
-  "authors": [
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "School of Sciences Nantong University 226019 Nantong People\u2019s Republic of China"
-        }
-      ],
-      "name": {
-        "given_name": "Yeping",
-        "surname": "Li"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "School of Sciences Nantong University 226019 Nantong People\u2019s Republic of China"
-        }
-      ],
-      "name": {
-        "given_name": "Rui",
-        "surname": "Xu"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "School of Mathematical Sciences Anhui University 230601 Hefei People\u2019s Republic of China"
-        },
-        {
-          "affPubID": "Aff3",
-          "affPubRaw": "Centre of Pure Mathematics, School of Mathematical Sciences Anhui University 230601 Hefei People\u2019s Republic of China"
-        }
-      ],
-      "attrib": {
-        "email": "chenzzandu@163.com",
-        "orcid": "0000-0002-4062-3267"
-      },
-      "name": {
-        "given_name": "Zhengzheng",
-        "surname": "Chen"
-      }
-    }
-  ],
-  "copyright": {
-    "statement": "\u00a9 The Author(s), under exclusive licence to Springer Nature Switzerland AG 2023. Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law.",
-    "status": true
+  "recordData": {
+    "createdTime": "",
+    "parsedTime": "",
+    "loadType": "fromFile",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "recordOrigin": ""
   },
   "editorialHistory": {
-    "acceptedDate": "2023-07-04",
     "receivedDates": [
       "2021-05-14"
     ],
     "revisedDates": [
       "2023-07-04"
-    ]
+    ],
+    "acceptedDate": "2023-07-04"
   },
-  "keywords": [
-    {
-      "keyString": "Compressible Navier\u2013Stokes\u2013Korteweg equations",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "Asymptotic stability",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "Rarefaction wave",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "Stationary solution",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "Energy method",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "76W05",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "35B40",
-      "keySystem": "misc"
-    }
-  ],
-  "pagination": {
-    "electronicID": "167"
+  "pubDate": {
+    "electrDate": "2023-07-19",
+    "printDate": "2023-08-00"
+  },
+  "publication": {
+    "pubName": "Zeitschrift f\u00fcr angewandte Mathematik und Physik",
+    "publisher": "Springer International Publishing",
+    "issueNum": "4",
+    "volumeNum": "74",
+    "pubYear": "2023",
+    "ISSN": [
+      {
+        "pubtype": "ppub",
+        "issnString": "0044-2275"
+      },
+      {
+        "pubtype": "epub",
+        "issnString": "1420-9039"
+      }
+    ]
   },
   "persistentIDs": [
     {
       "DOI": "10.1007/s00033-023-02064-z"
     }
   ],
-  "pubDate": {
-    "electrDate": "2023-07-19",
-    "printDate": "2023-08-00"
-  },
-  "publication": {
-    "ISSN": [
-      {
-        "issnString": "0044-2275",
-        "pubtype": "ppub"
-      },
-      {
-        "issnString": "1420-9039",
-        "pubtype": "epub"
-      }
-    ],
-    "issueNum": "4",
-    "pubName": "Zeitschrift f\u00fcr angewandte Mathematik und Physik",
-    "pubYear": "2023",
-    "publisher": "Springer International Publishing",
-    "volumeNum": "74"
-  },
   "publisherIDs": [
     {
-      "Identifier": "s00033-023-02064-z",
-      "attribute": "publisher-id"
+      "attribute": "publisher-id",
+      "Identifier": "s00033-023-02064-z"
     },
     {
-      "Identifier": "2064",
-      "attribute": "manuscript"
+      "attribute": "manuscript",
+      "Identifier": "2064"
     }
   ],
-  "recordData": {
-    "createdTime": "",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "loadType": "fromFile",
-    "parsedTime": "",
-    "recordOrigin": ""
+  "pagination": {
+    "electronicID": "167"
+  },
+  "authors": [
+    {
+      "name": {
+        "surname": "Li",
+        "given_name": "Yeping"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "School of Sciences Nantong University 226019 Nantong People\u2019s Republic of China",
+          "affPubID": "Aff1"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Xu",
+        "given_name": "Rui"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "School of Sciences Nantong University 226019 Nantong People\u2019s Republic of China",
+          "affPubID": "Aff1"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Chen",
+        "given_name": "Zhengzheng"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "School of Mathematical Sciences Anhui University 230601 Hefei People\u2019s Republic of China",
+          "affPubID": "Aff2"
+        },
+        {
+          "affPubRaw": "Centre of Pure Mathematics, School of Mathematical Sciences Anhui University 230601 Hefei People\u2019s Republic of China",
+          "affPubID": "Aff3"
+        }
+      ],
+      "attrib": {
+        "email": "chenzzandu@163.com",
+        "orcid": "0000-0002-4062-3267"
+      }
+    }
+  ],
+  "title": {
+    "textEnglish": "Asymptotic stability of a nonlinear wave for the compressible Navier\u2013Stokes\u2013Korteweg equations in the half space"
+  },
+  "abstract": {
+    "textEnglish": "This paper is concerned with the time-asymptotic stability of a nonlinear wave for the outflow problem of the isentropic compressible Navier\u2013Stokes\u2013Korteweg equations in the half space. Under some suitable assumptions on the spatial-asymptotic states and boundary data, the time-asymptotic profile is a nonlinear wave which is the superposition of a stationary solution and a rarefaction wave. Employing the <inline-formula id=\"IEq1\"> <mml:math> <mml:mi>L</mml:mi> <mml:mn>2</mml:mn> </mml:math> <tex-math id=\"IEq1_TeX\">\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$L^{2}$$\\end{document}</tex-math> </inline-formula>-energy method and the decay (in both time and space variables) estimates of each component of the nonlinear wave, we prove that this nonlinear wave is time asymptotically stable under a small initial perturbation."
   },
   "references": [
     "<ref id=\"CR1\"> <label>1.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Bresch</surname> <given-names>D</given-names> </name> <name> <surname>Desjardins</surname> <given-names>B</given-names> </name> <name> <surname>Lin</surname> <given-names>C-K</given-names> </name> </person-group> <article-title xml:lang=\"en\">On some compressible fluid models: Korteweg, lubrication and shallow water systems</article-title> <source>Commun. Partial Differ. Equ.</source> <year>2003</year> <volume>28</volume> <fpage>843</fpage> <lpage>868</lpage> <pub-id pub-id-type=\"amsid\">1978317</pub-id> <pub-id pub-id-type=\"zbl\">1106.76436</pub-id> <pub-id pub-id-type=\"doi\">10.1081/PDE-120020499</pub-id> </mixed-citation> </ref>",
@@ -193,7 +162,52 @@
     "<ref id=\"CR52\"> <label>52.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Wang</surname> <given-names>Y-J</given-names> </name> <name> <surname>Tan</surname> <given-names>Z</given-names> </name> </person-group> <article-title xml:lang=\"en\">Optimal decay rates for the compressible fluid models of Korteweg type</article-title> <source>J. Math. Anal. Appl.</source> <year>2011</year> <volume>379</volume> <fpage>256</fpage> <lpage>271</lpage> <pub-id pub-id-type=\"amsid\">2776470</pub-id> <pub-id pub-id-type=\"zbl\">1211.35228</pub-id> <pub-id pub-id-type=\"doi\">10.1016/j.jmaa.2011.01.006</pub-id> </mixed-citation> </ref>",
     "<ref id=\"CR53\"> <label>53.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Wang</surname> <given-names>W-J</given-names> </name> <name> <surname>Wang</surname> <given-names>W-K</given-names> </name> </person-group> <article-title xml:lang=\"en\">Decay rate of the compressible Navier-Stokes-Korteweg equations with potential force</article-title> <source>Dis. Contin. Dyn. Syst.</source> <year>2015</year> <volume>35</volume> <fpage>513</fpage> <lpage>536</lpage> <pub-id pub-id-type=\"amsid\">3286970</pub-id> <pub-id pub-id-type=\"zbl\">1304.35576</pub-id> <pub-id pub-id-type=\"doi\">10.3934/dcds.2015.35.513</pub-id> </mixed-citation> </ref>"
   ],
-  "title": {
-    "textEnglish": "Asymptotic stability of a nonlinear wave for the compressible Navier\u2013Stokes\u2013Korteweg equations in the half space"
-  }
+  "keywords": [
+    {
+      "keyString": "Compressible Navier\u2013Stokes\u2013Korteweg equations",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "Asymptotic stability",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "Rarefaction wave",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "Stationary solution",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "Energy method",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "76W05",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "35B40",
+      "keySystem": "misc"
+    }
+  ],
+  "copyright": {
+    "status": true,
+    "statement": "\u00a9 The Author(s), under exclusive licence to Springer Nature Switzerland AG 2023. Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law."
+  },
+  "funding": [
+    {
+      "agencyname": "National Natural Science Foundation of China",
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "http://dx.doi.org/10.13039/501100001809"
+      },
+      "awardnumber": "12171258"
+    },
+    {
+      "agencyname": "Support Program for Outstanding Young Talents in Universities of Anhui Province",
+      "awardnumber": "gxyqZD2022007"
+    }
+  ]
 }

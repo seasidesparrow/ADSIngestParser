@@ -1,665 +1,664 @@
 {
-  "abstract": {
-    "textEnglish": "A Gamma Variant RBD-based aluminum hydroxide adjuvanted vaccine called ARVAC CG was selected for a first in human clinical trial. Healthy male and female participants (18-55 years old) with a complete COVID-19-primary vaccine scheme were assigned to receive two intramuscular doses of either a low-dose or a high-dose of ARVAC CG. The primary endpoint was safety. The secondary objective was humoral immunogenicity. Cellular immune responses were studied as an exploratory objective. The trial was prospectively registered in PRIISA.BA (Registration Code 6564) and ANMAT and retrospectively registered in ClinicalTrials.gov (NCT05656508). Samples from participants of a surveillance strategy implemented by the Ministry of Health of the Province of Buenos Aires that were boosted with BNT162b2 were also analyzed to compare with the booster effect of ARVAC CG. ARVAC CG exhibits a satisfactory safety profile, a robust and broad booster response of neutralizing antibodies against the Ancestral strain of SARS-CoV-2 and the Gamma, Delta, Omicron BA.1 and Omicron BA.5 variants of concern and a booster effect on T cell immunity in individuals previously immunized with different COVID-19 vaccine platforms."
-  },
-  "authors": [
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        },
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "email": "kpasquevich@iib.unsam.edu.ar",
-        "orcid": "0000-0003-4448-0977"
-      },
-      "name": {
-        "given_name": "Karina A.",
-        "surname": "Pasquevich"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        },
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-5359-8382"
-      },
-      "name": {
-        "given_name": "Lorena M.",
-        "surname": "Coria"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Ana",
-        "surname": "Ceballos"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Bianca",
-        "surname": "Mazzitelli"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff4",
-          "affPubRaw": "Fundaci\u00f3n Pablo Cassar\u00e1 - Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Juan Manuel",
-        "surname": "Rodriguez"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        },
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Agostina",
-        "surname": "Demar\u00eda"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        },
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Celeste",
-        "surname": "Pueblas Castro"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        },
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Laura",
-        "surname": "Bruno"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        },
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Lucas",
-        "surname": "Saposnik"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Melina",
-        "surname": "Salvatori"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Augusto",
-        "surname": "Varese"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff5",
-          "affPubRaw": "Ministerio de Salud de la Provincia de Buenos Aires Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Soledad",
-        "surname": "Gonz\u00e1lez"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff5",
-          "affPubRaw": "Ministerio de Salud de la Provincia de Buenos Aires Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-5231-1773"
-      },
-      "name": {
-        "given_name": "Veronica V.",
-        "surname": "Gonz\u00e1lez Mart\u00ednez"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Jorge",
-        "surname": "Geffner"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        },
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Diego",
-        "surname": "\u00c1lvarez"
-      }
-    },
-    {
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Sabrina A.",
-        "surname": "del Priore"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        },
-        {
-          "affPubID": "Aff4",
-          "affPubRaw": "Fundaci\u00f3n Pablo Cassar\u00e1 - Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Andr\u00e9s C.",
-        "surname": "Hernando Insua"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Ingrid G.",
-        "surname": "Kaufmann"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Adri\u00e1n",
-        "surname": "Di Mar\u00eda"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Adri\u00e1n",
-        "surname": "G\u00f3ngora"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Agust\u00edn",
-        "surname": "Moreno"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Susana",
-        "surname": "Cervellini"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Blasco",
-        "surname": "Martin"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Esteban",
-        "surname": "Ali"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Romina",
-        "surname": "Albarrac\u00edn"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Barsanti",
-        "surname": "Bruno"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Fernando",
-        "surname": "Toneguzzo"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Guillermina",
-        "surname": "Sasso"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Sebastian",
-        "surname": "Stamer"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Regina",
-        "surname": "Cardoso"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "collab": true
-      },
-      "name": {
-        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium",
-        "given_name": "Alejandro",
-        "surname": "Chajet"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff6",
-          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Ethel",
-        "surname": "Feleder"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff6",
-          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Karina",
-        "surname": "Halabe"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff6",
-          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Pablo E.",
-        "surname": "Perez Lera"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Federico Montes",
-        "surname": "de Oca"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Julio C.",
-        "surname": "Vega"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff8",
-          "affPubRaw": "Nobeltri Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "M\u00f3nica",
-        "surname": "Lombardo"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff6",
-          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina"
-        }
-      ],
-      "name": {
-        "given_name": "Gustavo A.",
-        "surname": "Yerino"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-0051-7435"
-      },
-      "name": {
-        "given_name": "Juan",
-        "surname": "Fl\u00f3"
-      }
-    },
-    {
-      "affiliation": [
-        {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
-        },
-        {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
-        }
-      ],
-      "attrib": {
-        "email": "jucassataro@iib.unsam.edu.ar",
-        "orcid": "0000-0002-7122-869X"
-      },
-      "name": {
-        "given_name": "Juliana",
-        "surname": "Cassataro"
-      }
-    }
-  ],
-  "copyright": {
-    "statement": "\u00a9 The Author(s) 2023",
-    "status": true
+  "recordData": {
+    "createdTime": "",
+    "parsedTime": "",
+    "loadType": "fromFile",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "recordOrigin": ""
   },
   "editorialHistory": {
-    "acceptedDate": "2023-07-20",
     "receivedDates": [
       "2023-02-17"
-    ]
+    ],
+    "acceptedDate": "2023-07-20"
   },
-  "pagination": {
-    "electronicID": "4551"
+  "pubDate": {
+    "electrDate": "2023-12-00"
+  },
+  "publication": {
+    "pubName": "Nature Communications",
+    "publisher": "Nature Publishing Group UK",
+    "issueNum": "1",
+    "volumeNum": "14",
+    "pubYear": "2023",
+    "ISSN": [
+      {
+        "pubtype": "epub",
+        "issnString": "2041-1723"
+      }
+    ]
   },
   "persistentIDs": [
     {
       "DOI": "10.1038/s41467-023-40272-3"
     }
   ],
-  "pubDate": {
-    "electrDate": "2023-12-00"
-  },
-  "publication": {
-    "ISSN": [
-      {
-        "issnString": "2041-1723",
-        "pubtype": "epub"
-      }
-    ],
-    "issueNum": "1",
-    "pubName": "Nature Communications",
-    "pubYear": "2023",
-    "publisher": "Nature Publishing Group UK",
-    "volumeNum": "14"
-  },
   "publisherIDs": [
     {
-      "Identifier": "s41467-023-40272-3",
-      "attribute": "publisher-id"
+      "attribute": "publisher-id",
+      "Identifier": "s41467-023-40272-3"
     },
     {
-      "Identifier": "40272",
-      "attribute": "manuscript"
+      "attribute": "manuscript",
+      "Identifier": "40272"
     }
   ],
-  "recordData": {
-    "createdTime": "",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "loadType": "fromFile",
-    "parsedTime": "",
-    "recordOrigin": ""
+  "pagination": {
+    "electronicID": "4551"
+  },
+  "authors": [
+    {
+      "name": {
+        "surname": "Pasquevich",
+        "given_name": "Karina A."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff2"
+        }
+      ],
+      "attrib": {
+        "email": "kpasquevich@iib.unsam.edu.ar",
+        "orcid": "0000-0003-4448-0977"
+      }
+    },
+    {
+      "name": {
+        "surname": "Coria",
+        "given_name": "Lorena M."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff2"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-5359-8382"
+      }
+    },
+    {
+      "name": {
+        "surname": "Ceballos",
+        "given_name": "Ana"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina",
+          "affPubID": "Aff3"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Mazzitelli",
+        "given_name": "Bianca"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina",
+          "affPubID": "Aff3"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Rodriguez",
+        "given_name": "Juan Manuel"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Fundaci\u00f3n Pablo Cassar\u00e1 - Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff4"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Demar\u00eda",
+        "given_name": "Agostina"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff2"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Pueblas Castro",
+        "given_name": "Celeste"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff2"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Bruno",
+        "given_name": "Laura"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff2"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Saposnik",
+        "given_name": "Lucas"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff2"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Salvatori",
+        "given_name": "Melina"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina",
+          "affPubID": "Aff3"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Varese",
+        "given_name": "Augusto"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina",
+          "affPubID": "Aff3"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Gonz\u00e1lez",
+        "given_name": "Soledad"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Ministerio de Salud de la Provincia de Buenos Aires Buenos Aires Argentina",
+          "affPubID": "Aff5"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Gonz\u00e1lez Mart\u00ednez",
+        "given_name": "Veronica V."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Ministerio de Salud de la Provincia de Buenos Aires Buenos Aires Argentina",
+          "affPubID": "Aff5"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-5231-1773"
+      }
+    },
+    {
+      "name": {
+        "surname": "Geffner",
+        "given_name": "Jorge"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina",
+          "affPubID": "Aff3"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "\u00c1lvarez",
+        "given_name": "Diego"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff2"
+        }
+      ]
+    },
+    {
+      "name": {
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "del Priore",
+        "given_name": "Sabrina A.",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Hernando Insua",
+        "given_name": "Andr\u00e9s C.",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Fundaci\u00f3n Pablo Cassar\u00e1 - Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff4"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Kaufmann",
+        "given_name": "Ingrid G.",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Di Mar\u00eda",
+        "given_name": "Adri\u00e1n",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "G\u00f3ngora",
+        "given_name": "Adri\u00e1n",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Moreno",
+        "given_name": "Agust\u00edn",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Cervellini",
+        "given_name": "Susana",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Martin",
+        "given_name": "Blasco",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Ali",
+        "given_name": "Esteban",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Albarrac\u00edn",
+        "given_name": "Romina",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Bruno",
+        "given_name": "Barsanti",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Toneguzzo",
+        "given_name": "Fernando",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Sasso",
+        "given_name": "Guillermina",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Stamer",
+        "given_name": "Sebastian",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Cardoso",
+        "given_name": "Regina",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Chajet",
+        "given_name": "Alejandro",
+        "collab": "Laboratorio Pablo Cassar\u00e1 R&D and CMC for ARVAC CG consortium"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "collab": true
+      }
+    },
+    {
+      "name": {
+        "surname": "Feleder",
+        "given_name": "Ethel"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina",
+          "affPubID": "Aff6"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Halabe",
+        "given_name": "Karina"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina",
+          "affPubID": "Aff6"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Perez Lera",
+        "given_name": "Pablo E."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina",
+          "affPubID": "Aff6"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "de Oca",
+        "given_name": "Federico Montes"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Vega",
+        "given_name": "Julio C."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Lombardo",
+        "given_name": "M\u00f3nica"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Nobeltri Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff8"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Yerino",
+        "given_name": "Gustavo A."
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina",
+          "affPubID": "Aff6"
+        }
+      ]
+    },
+    {
+      "name": {
+        "surname": "Fl\u00f3",
+        "given_name": "Juan"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina",
+          "affPubID": "Aff7"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-0051-7435"
+      }
+    },
+    {
+      "name": {
+        "surname": "Cassataro",
+        "given_name": "Juliana"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff1"
+        },
+        {
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina",
+          "affPubID": "Aff2"
+        }
+      ],
+      "attrib": {
+        "email": "jucassataro@iib.unsam.edu.ar",
+        "orcid": "0000-0002-7122-869X"
+      }
+    }
+  ],
+  "title": {
+    "textEnglish": "Safety and immunogenicity of a SARS-CoV-2 Gamma variant RBD-based protein adjuvanted vaccine used as booster in healthy adults"
+  },
+  "abstract": {
+    "textEnglish": "A Gamma Variant RBD-based aluminum hydroxide adjuvanted vaccine called ARVAC CG was selected for a first in human clinical trial. Healthy male and female participants (18-55 years old) with a complete COVID-19-primary vaccine scheme were assigned to receive two intramuscular doses of either a low-dose or a high-dose of ARVAC CG. The primary endpoint was safety. The secondary objective was humoral immunogenicity. Cellular immune responses were studied as an exploratory objective. The trial was prospectively registered in PRIISA.BA (Registration Code 6564) and ANMAT and retrospectively registered in ClinicalTrials.gov (NCT05656508). Samples from participants of a surveillance strategy implemented by the Ministry of Health of the Province of Buenos Aires that were boosted with BNT162b2 were also analyzed to compare with the booster effect of ARVAC CG. ARVAC CG exhibits a satisfactory safety profile, a robust and broad booster response of neutralizing antibodies against the Ancestral strain of SARS-CoV-2 and the Gamma, Delta, Omicron BA.1 and Omicron BA.5 variants of concern and a booster effect on T cell immunity in individuals previously immunized with different COVID-19 vaccine platforms."
   },
   "references": [
     "<ref id=\"CR1\"> <label>1.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Chi</surname> <given-names>W-Y</given-names> </name> <etal/> </person-group> <article-title xml:lang=\"en\">COVID-19 vaccine update: vaccine effectiveness, SARS-CoV-2 variants, boosters, adverse effects, and immune correlates of protection</article-title> <source>J. Biomed. Sci.</source> <year>2022</year> <volume>29</volume> <pub-id pub-id-type=\"doi\">10.1186/s12929-022-00853-8</pub-id> <pub-id pub-id-type=\"pmid\">36243868</pub-id> <pub-id pub-id-type=\"pmcid\">9569411</pub-id> </mixed-citation> </ref>",
@@ -694,7 +693,18 @@
     "<ref id=\"CR30\"> <label>30.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Varese</surname> <given-names>A</given-names> </name> <etal/> </person-group> <article-title xml:lang=\"en\">Omicron Breakthrough Infection After Heterologous Prime-Boost Vaccination Induces a Vigorous Antibody Response</article-title> <source>J. Infect. Dis.</source> <year>2022</year> <volume>226</volume> <fpage>1717</fpage> <lpage>1720</lpage> <pub-id pub-id-type=\"coi\">1:CAS:528:DC%2BB3sXptFart7w%3D</pub-id> <pub-id pub-id-type=\"doi\">10.1093/infdis/jiac250</pub-id> <pub-id pub-id-type=\"pmid\">35723970</pub-id> </mixed-citation> </ref>",
     "<ref id=\"CR31\"> <label>31.</label> <mixed-citation publication-type=\"other\">World_Health_Organization. WHO manual for the establishment of national and other secondary standards for antibodies against infectious agents focusing on SARSCoV2. (World Health Organization, 2022).</mixed-citation> </ref>"
   ],
-  "title": {
-    "textEnglish": "Safety and immunogenicity of a SARS-CoV-2 Gamma variant RBD-based protein adjuvanted vaccine used as booster in healthy adults"
-  }
+  "copyright": {
+    "status": true,
+    "statement": "\u00a9 The Author(s) 2023"
+  },
+  "openAccess": {
+    "open": true,
+    "license": "\nOpen Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article\u2019s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit\n\t\t\t\t\t\thttp://creativecommons.org/licenses/by/4.0/.\n\t\t\t\t\t",
+    "licenseURL": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "funding": [
+    {
+      "agencyname": "Laboratorio Pablo Cassara"
+    }
+  ]
 }
