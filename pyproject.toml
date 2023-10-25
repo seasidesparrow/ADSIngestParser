@@ -26,6 +26,7 @@ dependencies = [
     'ordered-set==4.1.0',
     'python-dateutil==2.8.1',
     'adsingestschema @ git+https://github.com/adsabs/ingest_data_model@v1.0.10#egg=adsingestschema',
+    'validators==0.22.0',
 ]
 
 
@@ -49,7 +50,6 @@ dev = [
     'pytest-cov==3.0.0',
     'pytest-cookies==0.6.1',
     'semantic-release==0.1.0',
-    'validators==0.22.0',
 ]
 docs = [
     'Sphinx==4.3.1',
