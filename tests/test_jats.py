@@ -21,6 +21,7 @@ class TestJATS(unittest.TestCase):
 
     def test_jats(self):
         filenames = [
+            "jats_nature_41467_2023_Article_40261_nlm",
             "jats_spie_jmnmm_1.JMM.21.4.041407",
             "jats_spie_spie_12.2663387",
             "jats_spie_spie_12.2665113",

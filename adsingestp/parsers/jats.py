@@ -53,6 +53,7 @@ class JATSAffils(object):
                 # check for empty strings with commas
                 check_a = a.replace(",", "")
                 if check_a:
+                    a = a.replace(" —", "—")
                     a = a.replace(" , ", ", ")
                     a = re.sub("\\s+", " ", a)
                     new_aff.append(a)
@@ -403,7 +404,7 @@ class JATSAffils(object):
                     # so this is not the place to fix the iop thing
                     # a = self._decompose(soup=a, tag='ext-link')
 
-                    affstr = aff.get_text().strip()
+                    affstr = aff.get_text(separator=" ").strip()
                     (affstr, email_list) = self._fix_affil(affstr)
                     if email_list:
                         self.email_xref[key] = email_list
@@ -832,15 +833,19 @@ class JATSParser(BaseBeautifulSoupParser):
         if self.isErratum:
             doiurl_pat = r"(.*?)(doi.org\/)"
             if self.titledoi:
-                self.base_metadata["relatedto"] = {
-                    "relationship": "errata",
-                    "id": re.sub(doiurl_pat, "", self.titledoi),
-                }
+                self.base_metadata["relatedto"] = [
+                    {
+                        "relationship": "errata",
+                        "id": re.sub(doiurl_pat, "", self.titledoi),
+                    }
+                ]
             elif relateddoi:
-                self.base_metadata["relatedto"] = {
-                    "relationship": "errata",
-                    "id": re.sub(doiurl_pat, "", relateddoi),
-                }
+                self.base_metadata["relatedto"] = [
+                    {
+                        "relationship": "errata",
+                        "id": re.sub(doiurl_pat, "", relateddoi),
+                    }
+                ]
             else:
                 logger.warning("No DOI for erratum: %s", related)
 
