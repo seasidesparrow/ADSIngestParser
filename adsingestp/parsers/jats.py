@@ -454,7 +454,6 @@ class JATSAffils(object):
 
 
 class JATSParser(BaseBeautifulSoupParser):
-
     def __init__(self):
         self.base_metadata = {}
         self.back_meta = None
