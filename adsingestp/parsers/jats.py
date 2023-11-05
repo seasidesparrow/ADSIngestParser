@@ -454,34 +454,6 @@ class JATSAffils(object):
 
 
 class JATSParser(BaseBeautifulSoupParser):
-    fix_ampersand = re.compile(r"(&amp;)(.*?)(;)")
-
-    JATS_TAGS_MATH = [
-        "inline-formula",
-        "tex-math",
-        "mml:math",
-        "mml:semantics",
-        "mml:mrow",
-        "mml:munder",
-        "mml:mo",
-        "mml:mi",
-        "mml:msub",
-        "mml:mover",
-        "mml:mn",
-        "mml:annotation",
-    ]
-
-    JATS_TAGS_HTML = ["sub", "sup", "a", "astrobj"]
-
-    JATS_TAGSET = {
-        "title": JATS_TAGS_MATH + JATS_TAGS_HTML,
-        "abstract": JATS_TAGS_MATH + JATS_TAGS_HTML + ["pre", "br"],
-        "comments": JATS_TAGS_MATH + JATS_TAGS_HTML + ["pre", "br"],
-        "affiliations": ["email", "orcid"],
-        "keywords": ["astrobj"],
-    }
-
-    JATS_TAGS_DANGER = ["php", "script", "css"]
 
     def __init__(self):
         self.base_metadata = {}
@@ -489,48 +461,6 @@ class JATSParser(BaseBeautifulSoupParser):
         self.article_meta = None
         self.journal_meta = None
         self.isErratum = False
-
-    def _detag(self, r, tags_keep):
-        """
-        Removes tags from input BeautifulSoup object
-        :param r: BeautifulSoup object (not string)
-        :param tags_keep: this function will remove all tags except those passed here
-        :return: newr: striing with cleaned text
-        """
-        # note that parser=lxml is recommended here - if the more stringent lxml-xml is used,
-        # the output is slightly different and the code will need to be modified
-        newr = self.bsstrtodict(str(r), "lxml")
-        if newr.find_all():
-            tag_list = list(set([x.name for x in newr.find_all()]))
-        else:
-            tag_list = []
-        for t in tag_list:
-            elements = newr.find_all(t)
-            for e in elements:
-                if t in self.JATS_TAGS_DANGER:
-                    e.decompose()
-                elif t in tags_keep:
-                    continue
-                else:
-                    if t.lower() == "sc":
-                        e.string = e.string.upper()
-                    e.unwrap()
-
-        # Note: newr is converted from a bs4 object to a string here.
-        # Everything after this point is string manipulation.
-        newr = str(newr)
-
-        amp_fix = self.fix_ampersand.findall(newr)
-        for s in amp_fix:
-            s_old = "".join(s)
-            s_new = "&" + s[1] + ";"
-            newr = newr.replace(s_old, s_new)
-
-        newr = re.sub("\\s+|\n+|\r+", " ", newr)
-        newr = newr.replace("&nbsp;", " ")
-        newr = newr.strip()
-
-        return newr
 
     def _get_date(self, d):
         """
@@ -593,7 +523,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 # all title footnotes:
                 for df in title_group.find_all("fn"):
                     key = df.get("id", None)
-                    note = self._detag(df, self.JATS_TAGSET["abstract"]).strip()
+                    note = self._detag(df, self.HTML_TAGSET["abstract"]).strip()
                     if key and note:
                         title_fn_dict[key] = note
                     df.decompose()
@@ -603,7 +533,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     if title_fn_dict.get(key, None):
                         title_fn_list.append(title_fn_dict.get(key, None))
                     dx.decompose()
-                art_title = self._detag(title, self.JATS_TAGSET["title"]).strip()
+                art_title = self._detag(title, self.HTML_TAGSET["title"]).strip()
                 title_notes = []
                 if title_fn_list:
                     title_notes.extend(title_fn_list)
@@ -616,7 +546,7 @@ class JATSParser(BaseBeautifulSoupParser):
                         if title_fn_dict.get(key, None):
                             subtitle_fn_list.append(title_fn_dict.get(key, None))
                         dx.decompose()
-                    sub_title = self._detag(subtitle, self.JATS_TAGSET["title"]).strip()
+                    sub_title = self._detag(subtitle, self.HTML_TAGSET["title"]).strip()
                 subtitle_notes = []
                 if subtitle_fn_list:
                     subtitle_notes.extend(subtitle_fn_list)
@@ -634,14 +564,14 @@ class JATSParser(BaseBeautifulSoupParser):
                 abstract_all = self.article_meta.find("abstract").find_all("p")
                 abstract_paragraph_list = list()
                 for paragraph in abstract_all:
-                    para = self._detag(paragraph, self.JATS_TAGSET["abstract"])
+                    para = self._detag(paragraph, self.HTML_TAGSET["abstract"])
                     abstract_paragraph_list.append(para)
                 self.base_metadata["abstract"] = "\n".join(abstract_paragraph_list)
                 if title_fn_list:
                     self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
             else:
                 abs_raw = self.article_meta.find("abstract")
-                abs_txt = self._detag(abs_raw, self.JATS_TAGSET["abstract"])
+                abs_txt = self._detag(abs_raw, self.HTML_TAGSET["abstract"])
                 self.base_metadata["abstract"] = abs_txt
 
     def _parse_author(self):
@@ -710,9 +640,9 @@ class JATSParser(BaseBeautifulSoupParser):
                     for kk in keys_uat_test:
                         # Check for UAT first:
                         if kk["content-type"] == "uat-code":
-                            keyid = self._detag(kk, self.JATS_TAGSET["keywords"])
+                            keyid = self._detag(kk, self.HTML_TAGSET["keywords"])
                         if kk["content-type"] == "term":
-                            keystring = self._detag(kk, self.JATS_TAGSET["keywords"])
+                            keystring = self._detag(kk, self.HTML_TAGSET["keywords"])
 
                     if keyid or keystring:
                         keys_uat.append({"string": keystring, "system": "UAT", "id": keyid})
@@ -720,19 +650,19 @@ class JATSParser(BaseBeautifulSoupParser):
                     if not keys_uat:
                         keys_misc_test = kg.find_all("kwd")
                         for kk in keys_misc_test:
-                            keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+                            keys_misc.append(self._detag(kk, self.HTML_TAGSET["keywords"]))
 
             # Then check for AAS:
             if kg.get("kwd-group-type", "") == "AAS":
                 keys_aas_test = kg.find_all("kwd")
                 for kk in keys_aas_test:
-                    keys_aas.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+                    keys_aas.append(self._detag(kk, self.HTML_TAGSET["keywords"]))
 
             # If all else fails, just search for 'kwd'
             if (not keys_uat) and (not keys_aas):
                 keys_misc_test = kg.find_all("kwd")
                 for kk in keys_misc_test:
-                    keys_misc.append(self._detag(kk, self.JATS_TAGSET["keywords"]))
+                    keys_misc.append(self._detag(kk, self.HTML_TAGSET["keywords"]))
 
         if keys_uat:
             for k in keys_uat:
@@ -765,7 +695,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     keys_out.append(
                         {
                             "system": "subject",
-                            "string": self._detag(k, self.JATS_TAGSET["keywords"]),
+                            "string": self._detag(k, self.HTML_TAGSET["keywords"]),
                         }
                     )
 

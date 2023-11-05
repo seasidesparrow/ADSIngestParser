@@ -24,6 +24,7 @@ class TestDatacite(unittest.TestCase):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
+        self.maxDiff = None
 
     def test_datacite(self):
         filenames = [
@@ -31,6 +32,10 @@ class TestDatacite(unittest.TestCase):
             "datacite_schema3.1_example-full",
             "datacite_schema4.1_example-software",
             "datacite_schema4_example-habanero-pdsdataset",
+            "zenodo_test",
+            "zenodo_test2",
+            "zenodo_test3",
+            "zenodo_test4",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")

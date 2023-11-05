@@ -96,9 +96,9 @@
   "doctype": "misc",
   "keywords": [
     {
-      "keyID": "72",
       "keyString": "Asteroids",
-      "keySystem": "UAT"
+      "keySystem": "UAT",
+      "keyID": "72"
     }
   ]
 }
