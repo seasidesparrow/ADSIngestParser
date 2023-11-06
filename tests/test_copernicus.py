@@ -30,6 +30,7 @@ class TestCopernicus(unittest.TestCase):
             "copernicus_ISPAn_isprs-annals-X-M-1-2023-237-2023",
             "copernicus_GeChr_gchron-5-323-2023",
             "copernicus_ISPAr_isprs-archives-XLVIII-M-2-2023-721-2023",
+            "copernicus_wes-8-1625-2023",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")

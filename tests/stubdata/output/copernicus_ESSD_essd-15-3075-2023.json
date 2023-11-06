@@ -26,6 +26,11 @@
       }
     ]
   },
+  "pagination": {
+    "electronicID": "145",
+    "firstPage": "3075",
+    "lastPage": "3094"
+  },
   "persistentIDs": [
     {
       "DOI": "10.5194/essd-15-3075-2023"

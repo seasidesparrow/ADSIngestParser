@@ -31,6 +31,11 @@
       "DOI": "10.5194/gchron-5-323-2023"
     }
   ],
+  "pagination": {
+    "electronicID": "18",
+    "firstPage": "323",
+    "lastPage": "332"
+  },
   "authors": [
     {
       "name": {
