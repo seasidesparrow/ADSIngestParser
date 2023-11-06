@@ -45,7 +45,7 @@ class CopernicusParser(BaseBeautifulSoupParser):
         if self.input_metadata.find("end_page"):
             self.base_metadata["page_last"] = self.input_metadata.find("end_page").get_text()
 
-        if self.record_meta.find("article_number"):
+        if self.input_metadata.find("article_number"):
             self.base_metadata["electronic_id"] = self.input_metadata.find(
                 "article_number"
             ).get_text()
@@ -187,6 +187,7 @@ class CopernicusParser(BaseBeautifulSoupParser):
         self._parse_title()
         self._parse_author()
         self._parse_pubdate()
+        self._parse_pagination()
         self._parse_abstract()
         self._parse_references()
         self._parse_esources()

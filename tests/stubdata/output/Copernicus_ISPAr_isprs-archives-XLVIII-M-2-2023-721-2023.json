@@ -26,6 +26,10 @@
       }
     ]
   },
+  "pagination": {
+    "firstPage": "721",
+    "lastPage": "727"
+  },
   "persistentIDs": [
     {
       "DOI": "10.5194/isprs-archives-XLVIII-M-2-2023-721-2023"

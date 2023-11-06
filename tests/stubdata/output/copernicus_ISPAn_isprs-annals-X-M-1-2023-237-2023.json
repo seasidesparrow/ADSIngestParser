@@ -26,6 +26,10 @@
       }
     ]
   },
+  "pagination": {
+    "firstPage": "237",
+    "lastPage": "244"
+  },
   "persistentIDs": [
     {
       "DOI": "10.5194/isprs-annals-X-M-1-2023-237-2023"
