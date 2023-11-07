@@ -471,6 +471,37 @@ class BaseBeautifulSoupParser(IngestBase):
     out of the input XML stream.
     """
 
+    fix_ampersand_1 = re.compile(r"(__amp__)(.*?)(;)")
+    fix_ampersand_2 = re.compile(r"(&amp;)(.*?)(;)")
+    re_ampersands = [fix_ampersand_1, fix_ampersand_2]
+
+    HTML_TAGS_MATH = [
+        "inline-formula",
+        "tex-math",
+        "mml:math",
+        "mml:semantics",
+        "mml:mrow",
+        "mml:munder",
+        "mml:mo",
+        "mml:mi",
+        "mml:msub",
+        "mml:mover",
+        "mml:mn",
+        "mml:annotation",
+    ]
+
+    HTML_TAGS_HTML = ["sub", "sup", "a", "astrobj"]
+
+    HTML_TAGSET = {
+        "title": HTML_TAGS_MATH + HTML_TAGS_HTML,
+        "abstract": HTML_TAGS_MATH + HTML_TAGS_HTML + ["pre", "br"],
+        "comments": HTML_TAGS_MATH + HTML_TAGS_HTML + ["pre", "br"],
+        "affiliations": ["email", "orcid"],
+        "keywords": ["astrobj"],
+    }
+
+    HTML_TAGS_DANGER = ["php", "script", "css"]
+
     def bsstrtodict(self, input_xml, parser="lxml-xml"):
         """
         Returns a BeautifulSoup tree given an XML text
@@ -480,3 +511,46 @@ class BaseBeautifulSoupParser(IngestBase):
         """
 
         return bs4.BeautifulSoup(input_xml, parser)
+
+    def _detag(self, r, tags_keep):
+        """
+        Removes tags from input BeautifulSoup object
+        :param r: BeautifulSoup object (not string)
+        :param tags_keep: this function will remove all tags except those passed here
+        :return: newr: striing with cleaned text
+        """
+        # note that parser=lxml is recommended here - if the more stringent lxml-xml is used,
+        # the output is slightly different and the code will need to be modified
+        newr = self.bsstrtodict(str(r), "lxml")
+        if newr.find_all():
+            tag_list = list(set([x.name for x in newr.find_all()]))
+        else:
+            tag_list = []
+        for t in tag_list:
+            elements = newr.find_all(t)
+            for e in elements:
+                if t in self.HTML_TAGS_DANGER:
+                    e.decompose()
+                elif t in tags_keep:
+                    continue
+                else:
+                    if t.lower() == "sc":
+                        e.string = e.string.upper()
+                    e.unwrap()
+
+        # Note: newr is converted from a bs4 object to a string here.
+        # Everything after this point is string manipulation.
+        newr = str(newr)
+
+        for reamp in self.re_ampersands:
+            amp_fix = reamp.findall(newr)
+            for s in amp_fix:
+                s_old = "".join(s)
+                s_new = "&" + s[1] + ";"
+                newr = newr.replace(s_old, s_new)
+
+        newr = re.sub("\\s+|\n+|\r+", " ", newr)
+        newr = newr.replace("&nbsp;", " ")
+        newr = newr.strip()
+
+        return newr

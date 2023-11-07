@@ -1,0 +1,74 @@
+{
+  "recordData": {
+    "createdTime": "",
+    "parsedTime": "",
+    "loadType": "fromFile",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "recordOrigin": ""
+  },
+  "relatedTo": [
+    {
+      "relationship": "related"
+    },
+    {
+      "relationship": "related",
+      "relatedDocID": "https://zenodo.org/communities/sciops2015"
+    }
+  ],
+  "pubDate": {
+    "electrDate": "2015",
+    "otherDate": [
+      {
+        "otherDateType": "Issued",
+        "otherDateValue": "2015-12-03"
+      }
+    ]
+  },
+  "publication": {
+    "publisher": "Zenodo",
+    "pubYear": "2015"
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.5281/zenodo.34650"
+    }
+  ],
+  "publisherIDs": [
+    {
+      "attribute": "oai",
+      "Identifier": "oai:zenodo.org:34650"
+    }
+  ],
+  "authors": [
+    {
+      "name": {
+        "surname": "Reetz",
+        "given_name": "Johannes"
+      },
+      "affiliation": [
+        {
+          "affPubRaw": "Max Planck Computing and Data Facility, Garching, Germany"
+        }
+      ]
+    }
+  ],
+  "title": {
+    "textEnglish": "EUDAT - Open Data Services for Research"
+  },
+  "abstract": {
+    "textEnglish": "Presentation slides"
+  },
+  "doctype": "misc",
+  "keywords": [
+    {
+      "keyString": "Science data management",
+      "keySystem": "datacite"
+    }
+  ],
+  "openAccess": {
+    "open": true,
+    "license": "Creative Commons Attribution 4.0 International",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+  }
+}

@@ -123,13 +123,17 @@ class DataciteParser(BaseBeautifulSoupParser):
             if not type_attr:
                 titles[title_attr.lower()] = self._clean_output(t.get_text())
             if type_attr == "Subtitle":
-                self.base_metadata["subtitle"] = self._clean_output(t.get_text())
+                self.base_metadata["subtitle"] = self._detag(
+                    self._clean_output(t.get_text()), self.HTML_TAGSET["title"]
+                )
         if not titles:
             raise MissingTitleException("No title found")
         # we use the English title as the main one, then add any foreign ones
         # there are several options for "English" in this schema, so check for all of them (lowercase forms).  If no language specified (key is ""), assume English.
         en_key = list({"en", "en-us", ""} & set(titles.keys()))[0]
-        self.base_metadata["title"] = self._clean_output(titles.pop(en_key))
+        self.base_metadata["title"] = self._detag(
+            self._clean_output(titles.pop(en_key)), self.HTML_TAGSET["title"]
+        )
         title_foreign = []
         lang_foreign = []
         for tkey in titles:
@@ -138,7 +142,9 @@ class DataciteParser(BaseBeautifulSoupParser):
 
         # the data model only takes a single foreign-language title; will need to adjust if more are required
         if title_foreign:
-            self.base_metadata["title_native"] = self._clean_output(title_foreign[0])
+            self.base_metadata["title_native"] = self._detag(
+                self._clean_output(title_foreign[0]), self.HTML_TAGSET["title"]
+            )
             self.base_metadata["lang_native"] = lang_foreign[0]
 
         # abstract, references are all in the "descriptions" section
@@ -153,7 +159,9 @@ class DataciteParser(BaseBeautifulSoupParser):
                     abstract = s.get_text()
 
         if abstract:
-            self.base_metadata["abstract"] = self._clean_output(abstract)
+            self.base_metadata["abstract"] = self._detag(
+                self._clean_output(abstract), self.HTML_TAGSET["abstract"]
+            )
 
     def _parse_publisher(self):
         if self.input_metadata.find("publisher"):
@@ -246,8 +254,16 @@ class DataciteParser(BaseBeautifulSoupParser):
                 c = i.get_text()
                 if u == "info:eu-repo/semantics/openAccess" or c == "Open Access":
                     is_oa = True
+                elif "http" in u:
+                    self.base_metadata.setdefault("openAccess", {}).setdefault("licenseURL", u)
+                    if "creativecommon" in u:
+                        is_oa = True
+                    if c:
+                        self.base_metadata.setdefault("openAccess", {}).setdefault("license", c)
+                        if "Creative Common" in c or "GNU General Public License" in c:
+                            is_oa = True
 
-            self.base_metadata["openAccess"]["open"] = is_oa
+            self.base_metadata.setdefault("openAccess", {}).setdefault("open", is_oa)
 
     def _parse_doctype(self):
         if self.input_metadata.find("resourceType"):

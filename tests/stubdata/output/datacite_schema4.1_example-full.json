@@ -91,5 +91,10 @@
       "keyString": "000 computer science",
       "keySystem": "datacite"
     }
-  ]
+  ],
+  "openAccess": {
+    "open": true,
+    "license": "CC0 1.0 Universal",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/"
+  }
 }
