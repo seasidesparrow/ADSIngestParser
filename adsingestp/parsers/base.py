@@ -471,7 +471,9 @@ class BaseBeautifulSoupParser(IngestBase):
     out of the input XML stream.
     """
 
-    fix_ampersand = re.compile(r"(&amp;)(.*?)(;)")
+    fix_ampersand_1 = re.compile(r"(__amp__)(.*?)(;)")
+    fix_ampersand_2 = re.compile(r"(&amp;)(.*?)(;)")
+    re_ampersands = [fix_ampersand_1, fix_ampersand_2]
 
     HTML_TAGS_MATH = [
         "inline-formula",
@@ -540,11 +542,12 @@ class BaseBeautifulSoupParser(IngestBase):
         # Everything after this point is string manipulation.
         newr = str(newr)
 
-        amp_fix = self.fix_ampersand.findall(newr)
-        for s in amp_fix:
-            s_old = "".join(s)
-            s_new = "&" + s[1] + ";"
-            newr = newr.replace(s_old, s_new)
+        for reamp in self.re_ampersands:
+            amp_fix = reamp.findall(newr)
+            for s in amp_fix:
+                s_old = "".join(s)
+                s_new = "&" + s[1] + ";"
+                newr = newr.replace(s_old, s_new)
 
         newr = re.sub("\\s+|\n+|\r+", " ", newr)
         newr = newr.replace("&nbsp;", " ")
