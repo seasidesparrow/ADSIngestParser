@@ -889,9 +889,10 @@ class JATSParser(BaseBeautifulSoupParser):
         if self.article_meta.find("counts") and self.article_meta.find("counts").find(
             "page-count"
         ):
-            self.base_metadata["numpages"] = (
-                self.article_meta.find("counts").find("page-count").get("count", "")
-            )
+            if str(self.article_meta.find("counts").find("page-count").get("count", "")).isdigit():
+                self.base_metadata["numpages"] = (
+                    self.article_meta.find("counts").find("page-count").get("count", "")
+                )
 
     def _parse_references(self):
         if self.back_meta is not None:
