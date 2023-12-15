@@ -516,6 +516,8 @@ class JATSParser(BaseBeautifulSoupParser):
         if title_group:
             if title_group.find("article-title"):
                 title = title_group.find("article-title")
+                if not title or not title.get_text():
+                    title = title_group.find("alt-title")
                 for dx in title.find_all("ext-link"):
                     if dx.find("xlink:href"):
                         self.titledoi = dx.find("xlink:href")
