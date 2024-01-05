@@ -5,19 +5,20 @@ import unittest
 
 from adsingestschema import ads_schema_validator
 
-from adsingestp.parsers import arxiv
+from adsingestp.parsers import dubcore
 
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
-class TestArxiv(unittest.TestCase):
+class TestDublinCore(unittest.TestCase):
     def setUp(self):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
 
-    def test_arxiv(self):
+    def test_dubcore(self):
         filenames = [
+            "dubcore_pos_ecrs_002",
             "arxiv_1711_05739",
             "arxiv_0901_2443",
             "arxiv_1711_04702",
@@ -26,7 +27,7 @@ class TestArxiv(unittest.TestCase):
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
             test_outfile = os.path.join(self.outputdir, f + ".json")
-            parser = arxiv.ArxivParser()
+            parser = dubcore.DublinCoreParser()
 
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
@@ -55,18 +56,18 @@ class TestArxiv(unittest.TestCase):
             self.assertEqual(parsed, output_data)
 
 
-class TextArxivMulti(unittest.TestCase):
+class TextDublinCoreMulti(unittest.TestCase):
     def setUp(self):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
 
-    def test_arxiv_multi(self):
+    def test_dubcore_multi(self):
         filenames = [
             "arxiv_multi_20230125",
         ]
 
-        parser = arxiv.MultiArxivParser()
+        parser = dubcore.MultiDublinCoreParser()
 
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -81,7 +82,6 @@ class TextArxivMulti(unittest.TestCase):
                 output_data_header = output_text.strip().split("\n\n")
 
             parsed = parser.parse(input_data, header=True)
-
             self.assertEqual(parsed, output_data_header)
 
             with open(test_outfile_noheader, "r") as fp:
