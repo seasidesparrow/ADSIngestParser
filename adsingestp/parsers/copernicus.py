@@ -58,7 +58,7 @@ class CopernicusParser(BaseBeautifulSoupParser):
             issns.append(("print", self.input_metadata.find("issn").get_text()))
 
         if self.input_metadata.find("eissn"):
-            issns.append(("electronic", self.input_metadata.find("issn").get_text()))
+            issns.append(("electronic", self.input_metadata.find("eissn").get_text()))
 
         self.base_metadata["issn"] = issns
 
