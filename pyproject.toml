@@ -52,9 +52,9 @@ dev = [
     'semantic-release==0.1.0',
 ]
 docs = [
-    'Sphinx==4.3.1',
-    'myst-parser==0.15.2',
-    'sphinx-rtd-theme==1.0.0'
+    'Sphinx==7.6.2',
+    'myst-parser==2.0.0',
+    'sphinx-rtd-theme==2.0.0'
 ]
 
 
