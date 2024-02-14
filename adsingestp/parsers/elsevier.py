@@ -302,7 +302,9 @@ class ElsevierParser(BaseBeautifulSoupParser):
 
     def _parse_keywords(self):
         key_system = "Elsevier"
-        if self.record_meta.find("ce:keywords").find("ce:section-title"):
+        if self.record_meta.find("ce:keywords") and self.record_meta.find("ce:keywords").find(
+            "ce:section-title"
+        ):
             key_system_raw = (
                 self.record_meta.find("ce:keywords").find("ce:section-title").get_text()
             )
