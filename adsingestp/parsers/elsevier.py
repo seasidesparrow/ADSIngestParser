@@ -262,9 +262,13 @@ class ElsevierParser(BaseBeautifulSoupParser):
             authors_raw = self.record_meta.find("ce:author-group").find_all("ce:author")
             for author in authors_raw:
                 author_tmp = {}
-                if author.find("ce:given-name") and author.find("ce:surname"):
-                    author_tmp["given"] = author.find("ce:given-name").get_text()
+                if author.find("ce:surname"):
+                    if author.find("ce:given-name"):
+                        author_tmp["given"] = author.find("ce:given-name").get_text()
                     author_tmp["surname"] = author.find("ce:surname").get_text()
+                elif author.find("ce:given-name") and not author.find("ce:surname"):
+                    # In case given-name is present, but no surname is available, put the given name in the surname
+                    author_tmp["surname"] = author.find("ce:given-name")
 
                 author_tmp["orcid"] = author.get("orcid", "")
 
