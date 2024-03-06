@@ -4,7 +4,7 @@ import re
 import validators
 
 from adsingestp import utils
-from adsingestp.ingest_exceptions import XmlLoadException
+from adsingestp.ingest_exceptions import NoSchemaException, XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
 logger = logging.getLogger(__name__)
@@ -135,14 +135,22 @@ class ElsevierParser(BaseBeautifulSoupParser):
 
     def _parse_title_abstract(self):
         if self.record_meta.find("ce:title"):
-            self.base_metadata["title"] = self.record_meta.find("ce:title").get_text()
+            self.base_metadata["title"] = self._clean_output(
+                self.record_meta.find("ce:title").get_text()
+            )
         elif self.record_header.find("dct:title"):
-            self.base_metadata["title"] = self.record_header.find("dct:title").get_text()
+            self.base_metadata["title"] = self._clean_output(
+                self.record_header.find("dct:title").get_text()
+            )
         elif self.record_meta.find("cd:textfn"):
-            self.base_metadata["title"] = self.record_meta.find("cd:textfn").get_text()
+            self.base_metadata["title"] = self._clean_output(
+                self.record_meta.find("cd:textfn").get_text()
+            )
 
         if self.record_meta.find("ce:subtitle"):
-            self.base_metadata["subtitle"] = self.record_meta.find("ce:subtitle").get_text()
+            self.base_metadata["subtitle"] = self._clean_output(
+                self.record_meta.find("ce:subtitle").get_text()
+            )
 
         if self.record_meta.find("ce:abstract"):
             abstract = ""
@@ -343,6 +351,27 @@ class ElsevierParser(BaseBeautifulSoupParser):
 
         self.base_metadata["esources"] = links
 
+    def _find_article_type(self, d):
+        article_types = {
+            "cja:converted-article": "article",
+            "ja:article": "article",
+            "ja:simple-article": "article",
+            "ja:book-review": "article",
+            "ja:exam": "nonarticle",
+            "bk:book": "book",
+            "bk:chapter": "inbook",
+            "bk:simple-chapter": "inbook",
+            "bk:examination": "nonarticle",
+            "bk:fb-non-chapter": "inbook",
+            "bk:glossary": "inbook",
+            "bk:index": "inbook",
+            "bk:introduction": "inbook",
+            "bk:bibliography": "inbook",
+        }
+        for art_type in article_types.keys():
+            if d.find(art_type, None):
+                return art_type, article_types[art_type]
+
     def parse(self, text):
         """
         Parse Elsevier XML into standard JSON format
@@ -355,7 +384,13 @@ class ElsevierParser(BaseBeautifulSoupParser):
             raise XmlLoadException(err)
 
         self.record_header = d.find("rdf:Description")
-        self.record_meta = d.find("ja:article")
+
+        article_type, document_enum = self._find_article_type(d)
+        self.base_metadata["doctype"] = document_enum
+        self.record_meta = d.find(article_type)
+
+        if self.record_meta is None:
+            raise NoSchemaException("No Schema Found")
 
         self._parse_pub()
         self._parse_issue()
