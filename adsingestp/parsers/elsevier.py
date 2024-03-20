@@ -23,7 +23,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
             self.base_metadata["publication"] = self.record_header.find(
                 "prism:publicationName"
             ).get_text()
-
         if self.record_header.find("dct:publisher"):
             self.base_metadata["publisher"] = self.record_header.find("dct:publisher").get_text()
 
@@ -33,7 +32,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
         else:
             # TODO the perl has a branch for books - add that
             pass
-
         if self.record_header.find("prism:number"):
             self.base_metadata["issue"] = self.record_header.find("prism:number").get_text()
 
@@ -41,7 +39,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
         regex_roman = re.compile(r"[ivxIVX]+")
         # TODO the perl has some code for first/last pages that start with L, e, CO, IFC - add that
         # TODO there's also some regex in the perl checking for - or , - check/add that
-
         if self.record_header.find("prism:startingPage"):
             fpage = self.record_header.find("prism:startingPage").get_text()
             if regex_roman.match(fpage):
@@ -50,7 +47,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 except KeyError:
                     logger.warning("Can't convert Roman numeral %s to a number", fpage)
             self.base_metadata["page_first"] = fpage
-
         if self.record_header.find("prism:endingPage"):
             lpage = self.record_header.find("prism:endingPage").get_text()
             if regex_roman.match(lpage):
@@ -59,7 +55,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 except KeyError:
                     logger.warning("Can't convert Roman numeral %s to a number", lpage)
             self.base_metadata["page_last"] = lpage
-
         if self.record_meta.find("ce:article-number"):
             self.base_metadata["electronic_id"] = self.record_meta.find(
                 "ce:article-number"
@@ -77,9 +72,9 @@ class ElsevierParser(BaseBeautifulSoupParser):
 
         pubdate = None
         if self.record_header.find("prism:coverDate"):
-            pubdate = self.record_header.find("prism:coverDate").get_text()
+            pubdate = self._detag(self.record_header.find("prism:coverDate"), [])
         elif self.record_header.find("prism:coverDisplayDate"):
-            pubdate = self.record_header.find("prism:coverDisplayDate").get_text()
+            pubdate = self._detag(self.record_header.find("prism:coverDisplayDate"), [])
 
         if pubdate:
             if regex_yyyymmdd.match(pubdate):
@@ -110,7 +105,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
             "ce:date-revised": "edhist_rev",
             "ce:date-accepted": "edhist_acc",
         }
-
         for date_xml, field in dates_trans.items():
             if self.record_meta.find(date_xml):
                 dates = self.record_meta.find_all(date_xml)
@@ -130,26 +124,33 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 if date_xml == "ce:date-accepted":
                     # this only accepts a single date, the other two accept a list
                     dates_out = dates_out[0]
-
                 self.base_metadata[field] = dates_out
 
     def _parse_title_abstract(self):
         if self.record_meta.find("ce:title"):
             self.base_metadata["title"] = self._clean_output(
-                self.record_meta.find("ce:title").get_text()
+                self._detag(
+                    self.record_meta.find("ce:title"), self.HTML_TAGSET["abstract"]
+                ).strip()
             )
         elif self.record_header.find("dct:title"):
             self.base_metadata["title"] = self._clean_output(
-                self.record_header.find("dct:title").get_text()
+                self._detag(
+                    self.record_header.find("dct:title"), self.HTML_TAGSET["abstract"]
+                ).strip()
             )
         elif self.record_meta.find("cd:textfn"):
             self.base_metadata["title"] = self._clean_output(
-                self.record_meta.find("cd:textfn").get_text()
+                self._detag(
+                    self.record_meta.find("ce:textfn"), self.HTML_TAGSET["abstract"]
+                ).strip()
             )
 
         if self.record_meta.find("ce:subtitle"):
             self.base_metadata["subtitle"] = self._clean_output(
-                self.record_meta.find("ce:subtitle").get_text()
+                self._detag(
+                    self.record_meta.find("ce:subtitle"), self.HTML_TAGSET["abstract"]
+                ).strip()
             )
 
         if self.record_meta.find("ce:abstract"):
@@ -161,30 +162,35 @@ class ElsevierParser(BaseBeautifulSoupParser):
                         abs_text_all = abs.find_all("ce:simple-para")
                         abstract = ""  # we've found the real abstract, so reset
                         for abs_text in abs_text_all:
-                            abstract = abstract + " " + abs_text.get_text()
+                            abstract = (
+                                abstract
+                                + " "
+                                + self._detag(abs_text, self.HTML_TAGSET["abstract"]).strip()
+                            )
                         if abstract:
                             self.base_metadata["abstract"] = abstract
                             break
-                    elif abs.find("ce:section-title").get_text().lower() == "highlights":
-                        abs_text_all = abs.find_all("ce:para")
-                        for abs_text in abs_text_all:
-                            abstract = abstract + " " + abs_text.get_text()
+                        elif abs.find("ce:section-title").get_text().lower() == "highlights":
+                            abs_text_all = abs.find_all("ce:para")
+                            for abs_text in abs_text_all:
+                                abstract = (
+                                    abstract
+                                    + " "
+                                    + self._detag(abs_text, self.HTML_TAGSET["abstract"]).strip()
+                                )
 
             if abstract:
                 self.base_metadata["abstract"] = self._clean_output(abstract)
 
     def _parse_ids(self):
         self.base_metadata["ids"] = {}
-
         if self.record_header.find("prism:doi"):
             self.base_metadata["ids"]["doi"] = self.record_header.find("prism:doi").get_text()
-
         if self.record_header.find("prism:issn"):
             # pubtype, issnstring
             self.base_metadata["issn"] = [
                 ("not specified", self.record_header.find("prism:issn").get_text())
             ]
-
         if self.record_header.find("prism:isbn"):
             self.base_metadata["isbn"] = [
                 {
@@ -192,13 +198,11 @@ class ElsevierParser(BaseBeautifulSoupParser):
                     "isbn_str": self.record_header.find("prism:isbn").get_text(),
                 }
             ]
-
         self.base_metadata["ids"]["pub-id"] = []
         if self.record_meta.find("ce:pii"):
             self.base_metadata["ids"]["pub-id"].append(
                 {"attribute": "PII", "Identifier": self.record_meta.find("ce:pii").get_text()}
             )
-
         if self.record_meta.find("prism:issn"):
             # (type, issn) - type is not specified here
             self.base_metadata["issn"] = (
@@ -208,14 +212,12 @@ class ElsevierParser(BaseBeautifulSoupParser):
 
     def _parse_permissions(self):
         self.base_metadata["openAccess"] = {"open": False}
-
         if (
             self.record_header.find("oa:openAccessStatus")
             and self.record_header.find("oa:openAccessStatus").get_text()
         ):
             if self.record_header.find("oa:openAccessStatus").get_text()[-5:].lower() == "#full":
                 self.base_metadata["openAccess"]["open"] = True
-
         copyright_year = None
         if self.record_meta.find("ce:copyright"):
             copyright_year = self.record_meta.find("ce:copyright").get("year")
@@ -226,10 +228,12 @@ class ElsevierParser(BaseBeautifulSoupParser):
             copyright_stub = copyright_stub + " " + copyright_year
 
         if self.record_header.find("prism:copyright"):
-            self.base_metadata["copyright"] = self.record_header.find("prism:copyright").get_text()
+            self.base_metadata["copyright"] = self._detag(
+                self.record_header.find("prism:copyright"), []
+            )
         elif self.record_meta.find("ce:copyright"):
             self.base_metadata["copyright"] = (
-                copyright_stub + " " + self.record_meta.find("ce:copyright").get_text()
+                copyright_stub + " " + self._detag(self.record_header.find("ce:copyright"), [])
             )
         else:
             self.base_metadata["copyright"] = (
@@ -238,7 +242,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
 
     def _parse_authors(self):
         author_list = []
-
         if self.record_meta.find("ce:author-group"):
             # build affiliations cross-reference dict
             affs_xref_raw = self.record_meta.find("ce:author-group").find_all("ce:affiliation")
@@ -248,7 +251,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
                     label = aff.find("ce:label").get_text()
                 else:
                     label = "ALLAUTH"
-
                 if aff.find("ce:textfn"):
                     # formatted affiliation string
                     # note: sa:affiliation contains the parsed affiliation - not useful now but may be in the future
@@ -258,7 +260,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
                     value = aff.find("ce:source-text").get_text()
                 else:
                     value = ""
-
                 if label == "ALLAUTH":
                     # collect all of the implicit affiliations in a list
                     value_list = affs_xref.get("ALLAUTH", [])
@@ -266,7 +267,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
                     affs_xref["ALLAUTH"] = value_list
                 else:
                     affs_xref[label] = value
-
             authors_raw = self.record_meta.find("ce:author-group").find_all("ce:author")
             for author in authors_raw:
                 author_tmp = {}
@@ -277,15 +277,12 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 elif author.find("ce:given-name") and not author.find("ce:surname"):
                     # In case given-name is present, but no surname is available, put the given name in the surname
                     author_tmp["surname"] = author.find("ce:given-name")
-
                 author_tmp["orcid"] = author.get("orcid", "")
-
                 if (
                     author.find("ce:e-address")
                     and author.find("ce:e-address").get("type", "") == "email"
                 ):
                     author_tmp["email"] = author.find("ce:e-address").get_text()
-
                 if author.find("ce:cross-ref") and author.find("ce:cross-ref").find("ce:sup"):
                     affs = []
                     for i in author.find("ce:cross-ref").find_all("ce:sup"):
@@ -296,9 +293,7 @@ class ElsevierParser(BaseBeautifulSoupParser):
                     author_tmp["aff"] = affs
                 elif affs_xref.get("ALLAUTH"):
                     author_tmp["aff"] = affs_xref["ALLAUTH"]
-
                 author_list.append(author_tmp)
-
         elif self.record_header.find("dct:creator"):
             name_parser = utils.AuthorNames()
             authors_raw = self.record_header.find_all("dct:creator")
@@ -308,7 +303,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
                     author_name_raw, collaborations_params=self.author_collaborations_params
                 )
                 author_list.append(parsed_name)
-
         if author_list:
             self.base_metadata["authors"] = author_list
 
@@ -317,8 +311,9 @@ class ElsevierParser(BaseBeautifulSoupParser):
         if self.record_meta.find("ce:keywords") and self.record_meta.find("ce:keywords").find(
             "ce:section-title"
         ):
-            key_system_raw = (
-                self.record_meta.find("ce:keywords").find("ce:section-title").get_text()
+            key_system_raw = self._detag(
+                self.record_meta.find("ce:keywords").find("ce:section-title"),
+                self.HTML_TAGSET["keywords"],
             )
             if key_system_raw.lower() != "keywords":
                 key_system = key_system_raw
@@ -327,7 +322,12 @@ class ElsevierParser(BaseBeautifulSoupParser):
             for k in self.record_meta.find_all("ce:keyword"):
                 k_text = k.find("ce:text")
                 if k_text:
-                    keywords.append({"string": k_text.get_text(), "system": key_system})
+                    keywords.append(
+                        {
+                            "string": self._detag(k_text, self.HTML_TAGSET["keywords"]),
+                            "system": key_system,
+                        }
+                    )
 
             self.base_metadata["keywords"] = keywords
 
@@ -340,7 +340,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 # output raw XML for reference service to parse later
                 ref_xml = str(ref.extract()).replace("\n", " ")
                 references.append(ref_xml)
-
             self.base_metadata["references"] = references
 
     def _parse_esources(self):
@@ -404,9 +403,6 @@ class ElsevierParser(BaseBeautifulSoupParser):
         self._parse_keywords()
         self._parse_references()
         self._parse_esources()
-
         self.base_metadata = self._entity_convert(self.base_metadata)
-
         output = self.format(self.base_metadata, format="OtherXML")
-
         return output
