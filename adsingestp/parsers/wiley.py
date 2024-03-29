@@ -53,18 +53,15 @@ class WileyParser(BaseBeautifulSoupParser):
             elif n["type"] == "pageLast":
                 if n.get_text() not in ["n/a", "no"]:
                     self.base_metadata["page_last"] = n.get_text()
-        if not page_first:
-            for i in self.pubmeta_unit.find_all("id"):
-                if i["type"] == "society":
-                    page_first = i.get_text()
-                if i["type"] == "eLocator":
-                    # TODO check w/ curators - the last 5 is what the perl was doing, but should we keep the whole thing?
-                    self.base_metadata["electronic_id"] = i.get_text()[-5:]
 
         if page_first in ["n/a", "no"]:
             page_first = None
 
-        if page_first:
+        if not page_first:
+            for i in self.pubmeta_unit.find_all("id"):
+                if i["type"] == "eLocator":
+                    self.base_metadata["electronic_id"] = i["value"]
+        else:
             self.base_metadata["page_first"] = page_first
 
         if self.pubmeta_unit.find("countGroup") and self.pubmeta_unit.find("countGroup").find(
