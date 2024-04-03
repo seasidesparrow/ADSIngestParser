@@ -61,7 +61,10 @@ class WileyParser(BaseBeautifulSoupParser):
             for i in self.pubmeta_unit.find_all("id"):
                 if i["type"] == "eLocator":
                     self.base_metadata["electronic_id"] = i["value"]
-        else:
+                elif i["type"] == "society":
+                    page_first = i["value"]
+
+        if page_first:
             self.base_metadata["page_first"] = page_first
 
         if self.pubmeta_unit.find("countGroup") and self.pubmeta_unit.find("countGroup").find(
