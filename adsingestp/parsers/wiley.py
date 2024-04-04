@@ -57,11 +57,11 @@ class WileyParser(BaseBeautifulSoupParser):
         if page_first in ["n/a", "no"]:
             page_first = None
 
-        if not page_first:
-            for i in self.pubmeta_unit.find_all("id"):
-                if i["type"] == "eLocator":
-                    self.base_metadata["electronic_id"] = i["value"]
-                elif i["type"] == "society":
+        for i in self.pubmeta_unit.find_all("id"):
+            if i["type"] == "eLocator":
+                self.base_metadata["electronic_id"] = i["value"]
+            elif i["type"] == "society":
+                if not page_first:
                     page_first = i["value"]
 
         if page_first:
