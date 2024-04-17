@@ -2,6 +2,7 @@ import logging
 import re
 
 import validators
+from lxml import etree
 
 from adsingestp import utils
 from adsingestp.ingest_exceptions import NoSchemaException, XmlLoadException
@@ -129,55 +130,50 @@ class ElsevierParser(BaseBeautifulSoupParser):
     def _parse_title_abstract(self):
         if self.record_meta.find("ce:title"):
             self.base_metadata["title"] = self._clean_output(
-                self._detag(
-                    self.record_meta.find("ce:title"), self.HTML_TAGSET["abstract"]
-                ).strip()
+                self._detag(self.record_meta.find("ce:title"), self.HTML_TAGSET["title"]).strip()
             )
         elif self.record_header.find("dct:title"):
             self.base_metadata["title"] = self._clean_output(
                 self._detag(
-                    self.record_header.find("dct:title"), self.HTML_TAGSET["abstract"]
+                    self.record_header.find("dct:title"), self.HTML_TAGSET["title"]
                 ).strip()
             )
         elif self.record_meta.find("cd:textfn"):
             self.base_metadata["title"] = self._clean_output(
-                self._detag(
-                    self.record_meta.find("ce:textfn"), self.HTML_TAGSET["abstract"]
-                ).strip()
+                self._detag(self.record_meta.find("ce:textfn"), self.HTML_TAGSET["title"]).strip()
             )
 
         if self.record_meta.find("ce:subtitle"):
             self.base_metadata["subtitle"] = self._clean_output(
                 self._detag(
-                    self.record_meta.find("ce:subtitle"), self.HTML_TAGSET["abstract"]
+                    self.record_meta.find("ce:subtitle"), self.HTML_TAGSET["title"]
                 ).strip()
             )
 
         if self.record_meta.find("ce:abstract"):
             abstract = ""
             abs_all = self.record_meta.find_all("ce:abstract")
+            abs_text_all = ""
             for abs in abs_all:
-                if abs.find("ce:section-title"):
+                if abs.get("class", None) == "author":
+                    abs_text_all = abs.find_all("ce:simple-para")
+                elif abs.find("ce:section-title"):
                     if abs.find("ce:section-title").get_text().lower() == "abstract":
                         abs_text_all = abs.find_all("ce:simple-para")
-                        abstract = ""  # we've found the real abstract, so reset
-                        for abs_text in abs_text_all:
-                            abstract = (
-                                abstract
-                                + " "
-                                + self._detag(abs_text, self.HTML_TAGSET["abstract"]).strip()
-                            )
-                        if abstract:
-                            self.base_metadata["abstract"] = abstract
-                            break
-                        elif abs.find("ce:section-title").get_text().lower() == "highlights":
-                            abs_text_all = abs.find_all("ce:para")
-                            for abs_text in abs_text_all:
-                                abstract = (
-                                    abstract
-                                    + " "
-                                    + self._detag(abs_text, self.HTML_TAGSET["abstract"]).strip()
-                                )
+                    elif abs.find("ce:section-title").get_text().lower() == "highlights":
+                        abs_text_all = abs.find_all("p")
+
+                abstract = ""
+                for abs_text in abs_text_all:
+                    abstract = (
+                        abstract
+                        + " "
+                        + self._detag(abs_text, self.HTML_TAGSET["abstract"]).strip()
+                    )
+
+                if abstract:
+                    self.base_metadata["abstract"] = abstract
+                    break
 
             if abstract:
                 self.base_metadata["abstract"] = self._clean_output(abstract)
@@ -283,9 +279,9 @@ class ElsevierParser(BaseBeautifulSoupParser):
                     and author.find("ce:e-address").get("type", "") == "email"
                 ):
                     author_tmp["email"] = author.find("ce:e-address").get_text()
-                if author.find("ce:cross-ref") and author.find("ce:cross-ref").find("ce:sup"):
+                if author.find("ce:cross-ref") and author.find("ce:cross-ref").find("sup"):
                     affs = []
-                    for i in author.find("ce:cross-ref").find_all("ce:sup"):
+                    for i in author.find("ce:cross-ref").find_all("sup"):
                         aff_label = i.get_text()
                         # don't append an empty aff
                         if affs_xref.get(aff_label):
@@ -371,6 +367,35 @@ class ElsevierParser(BaseBeautifulSoupParser):
             if d.find(art_type, None):
                 return art_type, article_types[art_type]
 
+    def _remove_namespaces(self, text):
+        convert = {
+            "italics": "i",
+            "italic": "i",
+            "bold": "b",
+            "sup": "sup",
+            "inf": "sub",
+            "list": "ul",
+            "list-item": "li",
+            "para": "p",
+        }
+
+        root = etree.fromstring(text)
+
+        # Iterate through all XML elements
+        for elem in root.getiterator():
+            # Skip comments and processing instructions,
+            # because they do not have names
+            if not (
+                isinstance(elem, etree._Comment) or isinstance(elem, etree._ProcessingInstruction)
+            ):
+                # Remove a namespace URI in the element's name if element is specified in convert
+                if etree.QName(elem).localname in convert.keys():
+                    elem.tag = convert[etree.QName(elem).localname]
+
+        # Remove unused namespace declarations
+        etree.cleanup_namespaces(root)
+        return etree.tostring(root)
+
     def parse(self, text):
         """
         Parse Elsevier XML into standard JSON format
@@ -378,7 +403,8 @@ class ElsevierParser(BaseBeautifulSoupParser):
         :return: parsed file contents in JSON format
         """
         try:
-            d = self.bsstrtodict(text, parser="lxml-xml")
+            detagged_text = self._remove_namespaces(text)
+            d = self.bsstrtodict(detagged_text, parser="lxml-xml")
         except Exception as err:
             raise XmlLoadException(err)
 

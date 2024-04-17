@@ -1,178 +1,208 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "Extreme ultraviolet (EUV) lithography is crucial to achieving smaller device sizes for next-generation technology, although organic resists face substantial challenges, such as low etch resistance, which limit the resolution of smaller features.\nEvaluate the potential for area-selective deposition (ASD) to improve EUV pattern resolution (e.g., by increasing etch resistance).\nWe evaluate thermal compatibility, atomic layer deposition growth rate, and selectivity for TiO<sub>2</sub> ASD on various organic EUV resist materials using water contact angle, Rutherford backscattering spectrometry, and X-ray photoelectron spectroscopy. The effects of photo-acid generator (PAG) and EUV exposure on polymer properties and selectivity are considered.\nThe organic resist materials studied demonstrate thermal compatibility with TiO<sub>2</sub> ALD (125\u00b0C for 60 min). The TiO<sub>2</sub> ALD process from TiCl<sub>4</sub> and H<sub>2</sub>O proceeds readily on poly(tert-butyl methacrylate), poly(p-hydroxystyrene), and poly(p-hydroxystyrene-random-methacrylic acid) polymers, with and without PAG incorporation, in either the as-formed or EUV exposed state. However, TiO<sub>2</sub> is inhibited on poly(cyclohexyl methacrylate).\nWe demonstrate that as-formed EUV resists can serve as either the growth or nongrowth surface during TiO<sub>2</sub> ASD, thereby enabling resist hardening and tone inversion applications, respectively. These results serve as a basis for further ASD studies on EUV resist materials to improve pattern resolution in next-generation devices."
   },
-  "editorialHistory": {
-    "receivedDates": [
-      "2022-05-09"
-    ],
-    "acceptedDate": "2022-10-11"
-  },
-  "pubDate": {
-    "electrDate": "2022-11-04",
-    "printDate": "2022-10-01"
-  },
-  "publication": {
-    "pubName": "Journal of Micro/Nanopatterning, Materials, and Metrology",
-    "publisher": "Society of Photo-Optical Instrumentation Engineers",
-    "issueNum": "4",
-    "volumeNum": "21",
-    "pubYear": "2022",
-    "ISSN": [
-      {
-        "pubtype": "ppub",
-        "issnString": "1932-5150"
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": "aff1",
+          "affPubRaw": "IMEC, Leuven, Belgium"
+        },
+        {
+          "affPubID": "aff2",
+          "affPubRaw": "KU Leuven (University of Leuven), Leuven, Belgium"
+        },
+        {
+          "affPubID": "aff3",
+          "affPubRaw": "North Carolina State University, Department of Chemical and Biomolecular Engineering, Raleigh, North Carolina, United States"
+        }
+      ],
+      "attrib": {
+        "email": "ranye@ncsu.edu",
+        "orcid": "0000-0003-3233-4251"
       },
-      {
-        "pubtype": "epub",
-        "issnString": "1932-5134"
+      "name": {
+        "given_name": "Rachel A.",
+        "surname": "Nye"
       }
-    ]
-  },
-  "persistentIDs": [
-    {
-      "DOI": "10.1117/1.JMM.21.4.041407"
-    }
-  ],
-  "publisherIDs": [
-    {
-      "attribute": "manuscript",
-      "Identifier": "JM3-22019SS"
     },
     {
-      "attribute": "publisher-id",
-      "Identifier": "22019SS"
+      "affiliation": [
+        {
+          "affPubID": "aff1",
+          "affPubRaw": "IMEC, Leuven, Belgium"
+        },
+        {
+          "affPubID": "aff2",
+          "affPubRaw": "KU Leuven (University of Leuven), Leuven, Belgium"
+        }
+      ],
+      "attrib": {
+        "email": "kaat.vandongen@imec.be",
+        "orcid": "0000-0002-3570-8549"
+      },
+      "name": {
+        "given_name": "Kaat",
+        "surname": "Van Dongen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "aff4",
+          "affPubRaw": "FUJIFILM Corporation Electronic Materials Research Laboratories, Yoshida-Cho, Japan"
+        }
+      ],
+      "attrib": {
+        "email": "hironori.oka.ext@imec.be"
+      },
+      "name": {
+        "given_name": "Hironori",
+        "surname": "Oka"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "aff1",
+          "affPubRaw": "IMEC, Leuven, Belgium"
+        }
+      ],
+      "attrib": {
+        "email": "danilo.desimone@imec.be",
+        "orcid": "0000-0003-3927-5207"
+      },
+      "name": {
+        "given_name": "Danilo",
+        "surname": "De Simone"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "aff3",
+          "affPubRaw": "North Carolina State University, Department of Chemical and Biomolecular Engineering, Raleigh, North Carolina, United States"
+        }
+      ],
+      "attrib": {
+        "email": "gnp@ncsu.edu",
+        "orcid": "0000-0002-0048-5859"
+      },
+      "name": {
+        "given_name": "Gregory N.",
+        "surname": "Parsons"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "aff1",
+          "affPubRaw": "IMEC, Leuven, Belgium"
+        },
+        {
+          "affPubID": "aff2",
+          "affPubRaw": "KU Leuven (University of Leuven), Leuven, Belgium"
+        }
+      ],
+      "attrib": {
+        "email": "Annelies.Delabie@imec.be",
+        "orcid": "0000-0001-9739-7419"
+      },
+      "name": {
+        "given_name": "Annelies",
+        "surname": "Delabie"
+      }
     }
   ],
+  "copyright": {
+    "statement": "\u00a9 2022 Society of Photo-Optical Instrumentation Engineers (SPIE)",
+    "status": true
+  },
+  "editorialHistory": {
+    "acceptedDate": "2022-10-11",
+    "receivedDates": [
+      "2022-05-09"
+    ]
+  },
+  "keywords": [
+    {
+      "keyString": "extreme ultraviolet lithography",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "photoresist",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "area-selective deposition",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "atomic layer deposition",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "TiO<sub>2</sub>",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "polymethacrylate",
+      "keySystem": "misc"
+    }
+  ],
+  "openAccess": {
+    "license": "1932-5150/2022/$28.00 \u00a9 2022 SPIE"
+  },
   "pagination": {
     "firstPage": "041407",
     "lastPage": "041407",
     "pageCount": "14",
     "pageRange": "041407-041407"
   },
-  "authors": [
+  "persistentIDs": [
     {
-      "name": {
-        "surname": "Nye",
-        "given_name": "Rachel A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "IMEC, Leuven, Belgium",
-          "affPubID": "aff1"
-        },
-        {
-          "affPubRaw": "KU Leuven (University of Leuven), Leuven, Belgium",
-          "affPubID": "aff2"
-        },
-        {
-          "affPubRaw": "North Carolina State University, Department of Chemical and Biomolecular Engineering, Raleigh, North Carolina, United States",
-          "affPubID": "aff3"
-        }
-      ],
-      "attrib": {
-        "email": "ranye@ncsu.edu",
-        "orcid": "0000-0003-3233-4251"
-      }
-    },
-    {
-      "name": {
-        "surname": "Van Dongen",
-        "given_name": "Kaat"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "IMEC, Leuven, Belgium",
-          "affPubID": "aff1"
-        },
-        {
-          "affPubRaw": "KU Leuven (University of Leuven), Leuven, Belgium",
-          "affPubID": "aff2"
-        }
-      ],
-      "attrib": {
-        "email": "kaat.vandongen@imec.be",
-        "orcid": "0000-0002-3570-8549"
-      }
-    },
-    {
-      "name": {
-        "surname": "Oka",
-        "given_name": "Hironori"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "FUJIFILM Corporation Electronic Materials Research Laboratories, Yoshida-Cho, Japan",
-          "affPubID": "aff4"
-        }
-      ],
-      "attrib": {
-        "email": "hironori.oka.ext@imec.be"
-      }
-    },
-    {
-      "name": {
-        "surname": "De Simone",
-        "given_name": "Danilo"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "IMEC, Leuven, Belgium",
-          "affPubID": "aff1"
-        }
-      ],
-      "attrib": {
-        "email": "danilo.desimone@imec.be",
-        "orcid": "0000-0003-3927-5207"
-      }
-    },
-    {
-      "name": {
-        "surname": "Parsons",
-        "given_name": "Gregory N."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "North Carolina State University, Department of Chemical and Biomolecular Engineering, Raleigh, North Carolina, United States",
-          "affPubID": "aff3"
-        }
-      ],
-      "attrib": {
-        "email": "gnp@ncsu.edu",
-        "orcid": "0000-0002-0048-5859"
-      }
-    },
-    {
-      "name": {
-        "surname": "Delabie",
-        "given_name": "Annelies"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "IMEC, Leuven, Belgium",
-          "affPubID": "aff1"
-        },
-        {
-          "affPubRaw": "KU Leuven (University of Leuven), Leuven, Belgium",
-          "affPubID": "aff2"
-        }
-      ],
-      "attrib": {
-        "email": "Annelies.Delabie@imec.be",
-        "orcid": "0000-0001-9739-7419"
-      }
+      "DOI": "10.1117/1.JMM.21.4.041407"
     }
   ],
-  "title": {
-    "textEnglish": "Compatibility between polymethacrylate-based extreme ultraviolet resists and <inline-formula><mml:math display=\"inline\"><mml:mrow><mml:msub><mml:mrow><mml:mi>TiO</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> area-selective deposition"
+  "pubDate": {
+    "electrDate": "2022-11-04",
+    "printDate": "2022-10-01"
   },
-  "abstract": {
-    "textEnglish": "Extreme ultraviolet (EUV) lithography is crucial to achieving smaller device sizes for next-generation technology, although organic resists face substantial challenges, such as low etch resistance, which limit the resolution of smaller features.\nEvaluate the potential for area-selective deposition (ASD) to improve EUV pattern resolution (e.g., by increasing etch resistance).\nWe evaluate thermal compatibility, atomic layer deposition growth rate, and selectivity for TiO<sub>2</sub> ASD on various organic EUV resist materials using water contact angle, Rutherford backscattering spectrometry, and X-ray photoelectron spectroscopy. The effects of photo-acid generator (PAG) and EUV exposure on polymer properties and selectivity are considered.\nThe organic resist materials studied demonstrate thermal compatibility with TiO<sub>2</sub> ALD (125\u00b0C for 60 min). The TiO<sub>2</sub> ALD process from TiCl<sub>4</sub> and H<sub>2</sub>O proceeds readily on poly(tert-butyl methacrylate), poly(p-hydroxystyrene), and poly(p-hydroxystyrene-random-methacrylic acid) polymers, with and without PAG incorporation, in either the as-formed or EUV exposed state. However, TiO<sub>2</sub> is inhibited on poly(cyclohexyl methacrylate).\nWe demonstrate that as-formed EUV resists can serve as either the growth or nongrowth surface during TiO<sub>2</sub> ASD, thereby enabling resist hardening and tone inversion applications, respectively. These results serve as a basis for further ASD studies on EUV resist materials to improve pattern resolution in next-generation devices."
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "1932-5150",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "1932-5134",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "4",
+    "pubName": "Journal of Micro/Nanopatterning, Materials, and Metrology",
+    "pubYear": "2022",
+    "publisher": "Society of Photo-Optical Instrumentation Engineers",
+    "volumeNum": "21"
+  },
+  "publisherIDs": [
+    {
+      "Identifier": "JM3-22019SS",
+      "attribute": "manuscript"
+    },
+    {
+      "Identifier": "22019SS",
+      "attribute": "publisher-id"
+    }
+  ],
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<ref id=\"r1\"> <label>1.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <string-name> <given-names>L.</given-names> <surname>Li</surname> </string-name> <etal>et al.</etal> </person-group>, \u201c<article-title>Extreme ultraviolet resist materials for sub-7 nm patterning</article-title>,\u201d <source>Chem. Soc. Rev.</source><volume>46</volume>, <fpage>4855</fpage>\u2013<lpage>4866</lpage> (<year>2017</year>).<pub-id pub-id-type=\"coden\">CSRVBR</pub-id><issn>0306-0012</issn><ext-link ext-link-type=\"doi\" specific-use=\"online\" xlink:href=\"https://doi.org/10.1039/C7CS00080D\">https://doi.org/10.1039/C7CS00080D</ext-link></mixed-citation> </ref>",
@@ -206,37 +236,7 @@
     "<ref id=\"r29\"> <label>29.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <string-name> <given-names>C. A.</given-names> <surname>Wilson</surname> </string-name>, <string-name><given-names>R. K.</given-names><surname>Grubbs</surname></string-name> and <string-name><given-names>S. M.</given-names><surname>George</surname></string-name></person-group>, \u201c<article-title>Nucleation and growth during <inline-formula><mml:math display=\"inline\"><mml:mrow><mml:msub><mml:mrow><mml:mi>Al</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi mathvariant=\"normal\">O</mml:mi></mml:mrow><mml:mrow><mml:mn>3</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> atomic layer deposition on polymers</article-title>,\u201d <source>Chem. Mater.</source><volume>17</volume>, <fpage>5625</fpage>\u2013<lpage>5634</lpage> (<year>2005</year>).<pub-id pub-id-type=\"coden\">CMATEX</pub-id><issn>0897-4756</issn><ext-link ext-link-type=\"doi\" specific-use=\"online\" xlink:href=\"https://doi.org/10.1021/cm050704d\">https://doi.org/10.1021/cm050704d</ext-link></mixed-citation> </ref>",
     "<ref id=\"r30\"> <label>30.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <string-name> <given-names>A.</given-names> <surname>Sinha</surname> </string-name>, <string-name><given-names>D. W.</given-names><surname>Hess</surname></string-name> and <string-name><given-names>C. L.</given-names><surname>Henderson</surname></string-name></person-group>, \u201c<article-title>Transport behavior of atomic layer deposition precursors through polymer masking layers: influence on area selective atomic layer deposition</article-title>,\u201d <source>J. Vac. Sci. Technol. B: Microelectron. Nanometer Struct.</source><volume>25</volume>(<issue>5</issue>), <fpage>1721</fpage> (<year>2007</year>).<ext-link ext-link-type=\"doi\" specific-use=\"online\" xlink:href=\"https://doi.org/10.1116/1.2782546\">https://doi.org/10.1116/1.2782546</ext-link></mixed-citation> </ref>"
   ],
-  "keywords": [
-    {
-      "keyString": "extreme ultraviolet lithography",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "photoresist",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "area-selective deposition",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "atomic layer deposition",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "TiO2",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "polymethacrylate",
-      "keySystem": "misc"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "\u00a9 2022 Society of Photo-Optical Instrumentation Engineers (SPIE)"
-  },
-  "openAccess": {
-    "license": "1932-5150/2022/$28.00 \u00a9 2022 SPIE"
+  "title": {
+    "textEnglish": "Compatibility between polymethacrylate-based extreme ultraviolet resists and <inline-formula><mml:math display=\"inline\"><mml:mrow><mml:msub><mml:mrow><mml:mi>TiO</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> area-selective deposition"
   }
 }

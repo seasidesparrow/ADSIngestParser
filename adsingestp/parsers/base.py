@@ -488,16 +488,17 @@ class BaseBeautifulSoupParser(IngestBase):
         "mml:mover",
         "mml:mn",
         "mml:annotation",
+        "mml:msubsup",
     ]
 
-    HTML_TAGS_HTML = ["sub", "sup", "a", "astrobj"]
+    HTML_TAGS_HTML = ["sub", "sup", "a", "astrobj", "i", "b"]
 
     HTML_TAGSET = {
-        "title": HTML_TAGS_MATH + HTML_TAGS_HTML,
-        "abstract": HTML_TAGS_MATH + HTML_TAGS_HTML + ["pre", "br"],
-        "comments": HTML_TAGS_MATH + HTML_TAGS_HTML + ["pre", "br"],
+        "title": HTML_TAGS_MATH + HTML_TAGS_HTML + ["a"],
+        "abstract": HTML_TAGS_MATH + HTML_TAGS_HTML + ["a", "pre", "br"],
+        "comments": HTML_TAGS_MATH + HTML_TAGS_HTML + ["a", "pre", "br", "p"],
         "affiliations": ["email", "orcid"],
-        "keywords": ["astrobj"],
+        "keywords": HTML_TAGS_HTML,
     }
 
     HTML_TAGS_DANGER = ["php", "script", "css"]
