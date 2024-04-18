@@ -1,50 +1,53 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "OtherXML",
-    "loadLocation": "",
-    "recordOrigin": ""
-  },
-  "pubDate": {
-    "printDate": "1999-03-00"
-  },
-  "publication": {
-    "pubName": "Astronomische Nachrichten",
-    "issueNum": "1",
-    "volumeNum": "320",
-    "pubYear": "1999",
-    "ISSN": [
-      {
-        "pubtype": "print",
-        "issnString": "0004-6337"
-      },
-      {
-        "pubtype": "electronic",
-        "issnString": "1521-3994"
-      }
-    ]
-  },
-  "persistentIDs": [
+  "authors": [
     {
-      "DOI": "10.1002/1521-3994(199903)320:1<1::AID-ASNA1>3.0.CO;2-8"
+      "name": {
+        "given_name": "E.",
+        "surname": "Schmutzer"
+      }
+    }
+  ],
+  "esources": [
+    {
+      "location": "https://onlinelibrary.wiley.com/doi/10.1002/1521-3994(199903)320:1<1::AID-ASNA1>3.0.CO;2-8",
+      "source": "pub_html"
     }
   ],
   "pagination": {
     "firstPage": "1",
     "lastPage": "19"
   },
-  "authors": [
+  "persistentIDs": [
     {
-      "name": {
-        "surname": "Schmutzer",
-        "given_name": "E."
-      }
+      "DOI": "10.1002/1521-3994(199903)320:1<1::AID-ASNA1>3.0.CO;2-8"
     }
   ],
-  "title": {
-    "textEnglish": "Cosmology without Big Bang within the framework of the Projective Unified Field Theory and the influence on the motion of cosmic objects"
+  "pubDate": {
+    "printDate": "1999-03-00"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0004-6337",
+        "pubtype": "print"
+      },
+      {
+        "issnString": "1521-3994",
+        "pubtype": "electronic"
+      }
+    ],
+    "issueNum": "1",
+    "pubName": "Astronomische Nachrichten",
+    "pubYear": "1999",
+    "volumeNum": "320"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<citation key=\"10.1002/1521-3994(199903)320:1<1::AID-ASNA1>3.0.CO;2-8-BIB1\"> <journal_title>Astron. Nachr.</journal_title> <author>Avakian</author> <volume>311</volume> <first_page>343</first_page> <cYear>1990</cYear> <doi provider=\"crossref\">10.1002/asna.2113110604</doi> </citation>",
@@ -64,10 +67,7 @@
     "<citation key=\"10.1002/1521-3994(199903)320:1<1::AID-ASNA1>3.0.CO;2-8-BIB15\"> <author>Schmutzer</author> <cYear>1998</cYear> <unstructured_citation>: 1998, Schriften der Sudetendeutschen Akademie der Wissenschaften und K\u00fcnste in M\u00fcnchen, 19, p. 153; Abstract in: P. Brosche et al. (eds.): \u201cThe Message of the Angles - Astronomy from 1798 to 1998\u201d, H. Deutsch 1998, p. 259 (Conf. Astronomische Gesellschaft, Gotha, May 1998</unstructured_citation> </citation>",
     "<citation key=\"10.1002/1521-3994(199903)320:1<1::AID-ASNA1>3.0.CO;2-8-BIB16\"> <author>Zimmermann</author> <unstructured_citation>and : ABC-Lexikon Astronomie. 8th Edition, Spektrum Address of the author: Ernst Schmutzer Cospedaer Grund 57</unstructured_citation> </citation>"
   ],
-  "esources": [
-    {
-      "source": "pub_html",
-      "location": "https://onlinelibrary.wiley.com/doi/10.1002/1521-3994(199903)320:1<1::AID-ASNA1>3.0.CO;2-8"
-    }
-  ]
+  "title": {
+    "textEnglish": "Cosmology without Big Bang within the framework of the Projective Unified Field Theory and the influence on the motion of cosmic objects"
+  }
 }

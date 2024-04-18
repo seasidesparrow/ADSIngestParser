@@ -1,86 +1,93 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "OtherXML",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "We present the results of a search in LIGO O2 public data for continuous gravitational waves from the neutron star in the low-mass X-ray binary Scorpius X-1. We search for signals with \u2248 constant frequency in the range 40\u2013180 Hz. Thanks to the efficiency of our search pipeline we can use a long coherence time and achieve unprecedented sensitivity, significantly improving on existing results. This is the first search that has been able to probe gravitational wave amplitudes that could balance the accretion torque at the neutron star radius. Our search excludes emission at this level between 67.5 and 131.5 Hz, for an inclination angle 44\u00b0 \u00b1 6\u00b0 derived from radio observations, and assuming that the spin axis is perpendicular to the orbital plane. If the torque arm is \u224826 km\u2014a conservative estimate of the Alfv\u00e9n radius\u2014our results are more constraining than the indirect limit across the band. This allows us to exclude certain mass\u2013radius combinations and to place upper limits on the strength of the star\u2019s magnetic field with a different probe than ever used before. We also correct a mistake that appears in the literature in the equation that gives the gravitational wave amplitude at the torque balance and we re-interpret the associated latest LIGO/Virgo results in light of this."
+  },
+  "authors": [
+    {
+      "name": {
+        "given_name": "Yuanhao",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "attrib": {
+        "orcid": "0000-0002-1007-5298"
+      },
+      "name": {
+        "given_name": "Maria Alessandra",
+        "surname": "Papa"
+      }
+    },
+    {
+      "attrib": {
+        "orcid": "0000-0003-3015-234X"
+      },
+      "name": {
+        "given_name": "Badri",
+        "surname": "Krishnan"
+      }
+    },
+    {
+      "attrib": {
+        "orcid": "0000-0002-1009-2354"
+      },
+      "name": {
+        "given_name": "Anna L.",
+        "surname": "Watts"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 2021. The Author(s). Published by the American Astronomical Society.",
+    "status": true
   },
   "editorialHistory": {
+    "acceptedDate": "2020-12-09",
     "receivedDates": [
       "2020-11-09"
-    ],
-    "acceptedDate": "2020-12-09"
-  },
-  "pubDate": {
-    "electrDate": "2021-01-13",
-    "printDate": "2021-01-01"
-  },
-  "publication": {
-    "pubName": "The Astrophysical Journal Letters",
-    "issueNum": "2",
-    "volumeNum": "906",
-    "pubYear": "2021",
-    "ISSN": [
-      {
-        "pubtype": "print",
-        "issnString": "2041-8205"
-      },
-      {
-        "pubtype": "electronic",
-        "issnString": "2041-8213"
-      }
     ]
+  },
+  "esources": [
+    {
+      "location": "https://iopscience.iop.org/article/10.3847/2041-8213/abd256",
+      "source": "pub_html"
+    }
+  ],
+  "pagination": {
+    "firstPage": "L14"
   },
   "persistentIDs": [
     {
       "DOI": "10.3847/2041-8213/abd256"
     }
   ],
-  "pagination": {
-    "firstPage": "L14"
+  "pubDate": {
+    "electrDate": "2021-01-13",
+    "printDate": "2021-01-01"
   },
-  "authors": [
-    {
-      "name": {
-        "surname": "Zhang",
-        "given_name": "Yuanhao"
-      }
-    },
-    {
-      "name": {
-        "surname": "Papa",
-        "given_name": "Maria Alessandra"
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "2041-8205",
+        "pubtype": "print"
       },
-      "attrib": {
-        "orcid": "0000-0002-1007-5298"
+      {
+        "issnString": "2041-8213",
+        "pubtype": "electronic"
       }
-    },
-    {
-      "name": {
-        "surname": "Krishnan",
-        "given_name": "Badri"
-      },
-      "attrib": {
-        "orcid": "0000-0003-3015-234X"
-      }
-    },
-    {
-      "name": {
-        "surname": "Watts",
-        "given_name": "Anna L."
-      },
-      "attrib": {
-        "orcid": "0000-0002-1009-2354"
-      }
-    }
-  ],
-  "title": {
-    "textEnglish": "Search for Continuous Gravitational Waves from Scorpius X-1 in LIGO O2 Data"
+    ],
+    "issueNum": "2",
+    "pubName": "The Astrophysical Journal Letters",
+    "pubYear": "2021",
+    "volumeNum": "906"
   },
-  "abstract": {
-    "textEnglish": "We present the results of a search in LIGO O2 public data for continuous gravitational waves from the neutron star in the low-mass X-ray binary Scorpius X-1. We search for signals with \u2248 constant frequency in the range 40\u2013180 Hz. Thanks to the efficiency of our search pipeline we can use a long coherence time and achieve unprecedented sensitivity, significantly improving on existing results. This is the first search that has been able to probe gravitational wave amplitudes that could balance the accretion torque at the neutron star radius. Our search excludes emission at this level between 67.5 and 131.5 Hz, for an inclination angle 44\u00b0 \u00b1 6\u00b0 derived from radio observations, and assuming that the spin axis is perpendicular to the orbital plane. If the torque arm is \u224826 km\u2014a conservative estimate of the Alfv\u00e9n radius\u2014our results are more constraining than the indirect limit across the band. This allows us to exclude certain mass\u2013radius combinations and to place upper limits on the strength of the star\u2019s magnetic field with a different probe than ever used before. We also correct a mistake that appears in the literature in the equation that gives the gravitational wave amplitude at the torque balance and we re-interpret the associated latest LIGO/Virgo results in light of this."
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<citation key=\"apjlabd256bib1\"> <journal_title>PhRvD</journal_title> <author>Abbott</author> <doi>10.1103/PhysRevD.100.122002</doi> <volume>100</volume> <first_page>122002</first_page> <cYear>2019a</cYear> </citation>",
@@ -153,14 +160,7 @@
     "<citation key=\"apjlabd256bib67\"> <journal_title>ApJL</journal_title> <author>Woan</author> <doi>10.3847/2041-8213/aad86a</doi> <volume>863</volume> <first_page>L40</first_page> <cYear>2018</cYear> </citation>",
     "<citation key=\"apjlabd256bib68\"> <author>Zhang</author> <cYear>2020</cYear> </citation>"
   ],
-  "esources": [
-    {
-      "source": "pub_html",
-      "location": "https://iopscience.iop.org/article/10.3847/2041-8213/abd256"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "\u00a9 2021. The Author(s). Published by the American Astronomical Society."
+  "title": {
+    "textEnglish": "Search for Continuous Gravitational Waves from Scorpius X-1 in LIGO O2 Data"
   }
 }

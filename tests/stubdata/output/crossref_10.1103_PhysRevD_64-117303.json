@@ -1,55 +1,58 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "OtherXML",
-    "loadLocation": "",
-    "recordOrigin": ""
-  },
-  "pubDate": {
-    "electrDate": "2001-11-08"
-  },
-  "publication": {
-    "pubName": "Physical Review D",
-    "issueNum": "11",
-    "volumeNum": "64",
-    "pubYear": "2001",
-    "ISSN": [
-      {
-        "pubtype": "print",
-        "issnString": "0556-2821"
-      },
-      {
-        "pubtype": "electronic",
-        "issnString": "1089-4918"
+  "authors": [
+    {
+      "name": {
+        "given_name": "Ernest",
+        "surname": "Ma"
       }
-    ]
+    },
+    {
+      "name": {
+        "given_name": "G.",
+        "surname": "Rajasekaran"
+      }
+    }
+  ],
+  "esources": [
+    {
+      "location": "https://link.aps.org/doi/10.1103/PhysRevD.64.117303",
+      "source": "pub_html"
+    }
+  ],
+  "pagination": {
+    "electronicID": "117303"
   },
   "persistentIDs": [
     {
       "DOI": "10.1103/PhysRevD.64.117303"
     }
   ],
-  "pagination": {
-    "electronicID": "117303"
+  "pubDate": {
+    "electrDate": "2001-11-08"
   },
-  "authors": [
-    {
-      "name": {
-        "surname": "Ma",
-        "given_name": "Ernest"
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0556-2821",
+        "pubtype": "print"
+      },
+      {
+        "issnString": "1089-4918",
+        "pubtype": "electronic"
       }
-    },
-    {
-      "name": {
-        "surname": "Rajasekaran",
-        "given_name": "G."
-      }
-    }
-  ],
-  "title": {
-    "textEnglish": "Light unstable sterile neutrino"
+    ],
+    "issueNum": "11",
+    "pubName": "Physical Review D",
+    "pubYear": "2001",
+    "volumeNum": "64"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<citation key=\"PhysRevD.64.117303Cc1R1\"> <journal_title>Phys. Rev. Lett.</journal_title> <author>S. Fukuda</author> <volume>85</volume> <first_page>3999</first_page> <cYear>2000</cYear> <doi provider=\"crossref\">10.1103/PhysRevLett.85.3999</doi> </citation>",
@@ -79,10 +82,7 @@
     "<citation key=\"PhysRevD.64.117303Cc18R1\"> <journal_title>Nucl. Phys.</journal_title> <author>K.A. Olive</author> <volume>B180</volume> <first_page>497</first_page> <cYear>1981</cYear> <doi provider=\"crossref\">10.1016/0550-3213(81)90065-1</doi> </citation>",
     "<citation key=\"PhysRevD.64.117303Cc19R1\"> <journal_title>Phys. Lett.</journal_title> <author>J. Ellis</author> <volume>167B</volume> <first_page>457</first_page> <cYear>1986</cYear> <doi provider=\"crossref\">10.1016/0370-2693(86)91301-8</doi> </citation>"
   ],
-  "esources": [
-    {
-      "source": "pub_html",
-      "location": "https://link.aps.org/doi/10.1103/PhysRevD.64.117303"
-    }
-  ]
+  "title": {
+    "textEnglish": "Light unstable sterile neutrino"
+  }
 }

@@ -1,68 +1,71 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "OtherXML",
-    "loadLocation": "",
-    "recordOrigin": ""
-  },
-  "pubDate": {
-    "printDate": "2003-03-00"
-  },
-  "publication": {
-    "pubName": "Atmosphere-Ocean",
-    "issueNum": "1",
-    "volumeNum": "41",
-    "pubYear": "2003",
-    "ISSN": [
-      {
-        "pubtype": "print",
-        "issnString": "0705-5900"
-      },
-      {
-        "pubtype": "electronic",
-        "issnString": "1480-9214"
-      }
-    ]
-  },
-  "persistentIDs": [
+  "authors": [
     {
-      "DOI": "10.3137/ao.410105"
+      "name": {
+        "given_name": "Survey",
+        "surname": "Article"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Young\u2010Joon",
+        "surname": "Kim"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Stephen D.",
+        "surname": "Eckermann"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Hye\u2010Yeong",
+        "surname": "Chun"
+      }
+    }
+  ],
+  "esources": [
+    {
+      "location": "http://www.tandfonline.com/doi/abs/10.3137/ao.410105",
+      "source": "pub_html"
     }
   ],
   "pagination": {
     "firstPage": "65",
     "lastPage": "98"
   },
-  "authors": [
+  "persistentIDs": [
     {
-      "name": {
-        "surname": "Article",
-        "given_name": "Survey"
-      }
-    },
-    {
-      "name": {
-        "surname": "Kim",
-        "given_name": "Young\u2010Joon"
-      }
-    },
-    {
-      "name": {
-        "surname": "Eckermann",
-        "given_name": "Stephen D."
-      }
-    },
-    {
-      "name": {
-        "surname": "Chun",
-        "given_name": "Hye\u2010Yeong"
-      }
+      "DOI": "10.3137/ao.410105"
     }
   ],
-  "title": {
-    "textEnglish": "An overview of the past, present and future of gravity\u2010wave drag parametrization for numerical climate and weather prediction models"
+  "pubDate": {
+    "printDate": "2003-03-00"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0705-5900",
+        "pubtype": "print"
+      },
+      {
+        "issnString": "1480-9214",
+        "pubtype": "electronic"
+      }
+    ],
+    "issueNum": "1",
+    "pubName": "Atmosphere-Ocean",
+    "pubYear": "2003",
+    "volumeNum": "41"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<citation key=\"CIT0001\"> <doi>10.1029/2000JD900520</doi> </citation>",
@@ -369,10 +372,7 @@
     "<citation key=\"CIT0302\"> <doi>10.1002/qj.49712757702</doi> </citation>",
     "<citation key=\"CIT0303\"> <doi>10.1002/qj.49712253206</doi> </citation>"
   ],
-  "esources": [
-    {
-      "source": "pub_html",
-      "location": "http://www.tandfonline.com/doi/abs/10.3137/ao.410105"
-    }
-  ]
+  "title": {
+    "textEnglish": "An overview of the past, present and future of gravity\u2010wave drag parametrization for numerical climate and weather prediction models"
+  }
 }

@@ -1,103 +1,151 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "We answer the question of whether long-period comet C/1961 T1 (Seki) is the parent body of a meteor shower observed in Earth\u2019s atmosphere. We model discrete parts of a meteoroid stream associated with this comet and follow the orbital evolution of its particles via a numerical integration of their orbits. The gravitational perturbations of major planets and the Poynting\u2013Robertson effect, which influences the motion of the particles, are taken into account. We predict two showers which are related to C/1961 T1. One of these showers was identified with the December &rgr;-Virginids, #502. This identification confirms an earlier suggested relationship between the shower and the comet. The second predicted shower was identified with the \u03b3-Sagittariids, #657. The radiant areas of both showers are symmetrical in respect to the apex of Earth\u2019s heliocentric motion."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajabfdc9af1",
+          "affPubRaw": "Astronomical Institute, Slovak Academy of Science, 05960 Tatransk\u00e1 Lomnica, Slovakia"
+        }
+      ],
+      "attrib": {
+        "email": "ne@ta3.sk",
+        "orcid": "0000-0001-9758-1144"
+      },
+      "name": {
+        "given_name": "Lubo\u0161",
+        "surname": "Neslu\u0161an"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajabfdc9af2",
+          "affPubRaw": "Astronomical Institute, Slovak Academy of Science, D\u00fabravsk\u00e1 cesta 9, 84504 Bratislava, Slovakia"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-7837-2627"
+      },
+      "name": {
+        "given_name": "M\u00e1ria",
+        "surname": "Hajdukov\u00e1"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 2021. The American Astronomical Society. All rights reserved.",
+    "status": true
   },
   "editorialHistory": {
+    "acceptedDate": "2021-05-02",
     "receivedDates": [
       "2020-12-17"
     ],
     "revisedDates": [
       "2021-02-08"
-    ],
-    "acceptedDate": "2021-05-02"
-  },
-  "pubDate": {
-    "electrDate": "2021-06-18",
-    "printDate": "2021-07-00"
-  },
-  "publication": {
-    "pubName": "The Astronomical Journal",
-    "publisher": "The American Astronomical Society",
-    "issueNum": "1",
-    "volumeNum": "162",
-    "pubYear": "2021",
-    "ISSN": [
-      {
-        "pubtype": "ppub",
-        "issnString": "0004-6256"
-      },
-      {
-        "pubtype": "epub",
-        "issnString": "1538-3881"
-      }
     ]
+  },
+  "funding": [
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "https://doi.org/10.13039/501100008530"
+      },
+      "agencyname": "EC &mid; European Regional Development Fund (ERDF)\n",
+      "awardnumber": "ITMS 26230120002"
+    },
+    {
+      "agencyname": "Slovak Research and Development Agency",
+      "awardnumber": "APVV-16-0148"
+    },
+    {
+      "agencyname": "Slovak Grant Agency for Science, VEGA",
+      "awardnumber": "2/0037/18"
+    }
+  ],
+  "keywords": [
+    {
+      "keyID": "280",
+      "keyString": "Comets",
+      "keySystem": "UAT"
+    },
+    {
+      "keyID": "1035",
+      "keyString": "Meteor streams",
+      "keySystem": "UAT"
+    },
+    {
+      "keyID": "1034",
+      "keyString": "Meteor showers",
+      "keySystem": "UAT"
+    },
+    {
+      "keyString": "Comets",
+      "keySystem": "AAS"
+    },
+    {
+      "keyString": "Meteor streams",
+      "keySystem": "AAS"
+    },
+    {
+      "keyString": "Meteor showers",
+      "keySystem": "AAS"
+    }
+  ],
+  "pagination": {
+    "electronicID": "20",
+    "pageCount": "9"
   },
   "persistentIDs": [
     {
       "DOI": "10.3847/1538-3881/abfdc9"
     }
   ],
+  "pubDate": {
+    "electrDate": "2021-06-18",
+    "printDate": "2021-07-00"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0004-6256",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "1538-3881",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "1",
+    "pubName": "The Astronomical Journal",
+    "pubYear": "2021",
+    "publisher": "The American Astronomical Society",
+    "volumeNum": "162"
+  },
   "publisherIDs": [
     {
-      "attribute": "publisher-id",
-      "Identifier": "ajabfdc9"
+      "Identifier": "ajabfdc9",
+      "attribute": "publisher-id"
     },
     {
-      "attribute": "manuscript",
-      "Identifier": "abfdc9"
+      "Identifier": "abfdc9",
+      "attribute": "manuscript"
     },
     {
-      "attribute": "other",
-      "Identifier": "AAS29268"
+      "Identifier": "AAS29268",
+      "attribute": "other"
     }
   ],
-  "pagination": {
-    "pageCount": "9",
-    "electronicID": "20"
-  },
-  "authors": [
-    {
-      "name": {
-        "surname": "Neslu\u0161an",
-        "given_name": "Lubo\u0161"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Astronomical Institute, Slovak Academy of Science, 05960 Tatransk\u00e1 Lomnica, Slovakia",
-          "affPubID": "ajabfdc9af1"
-        }
-      ],
-      "attrib": {
-        "email": "ne@ta3.sk",
-        "orcid": "0000-0001-9758-1144"
-      }
-    },
-    {
-      "name": {
-        "surname": "Hajdukov\u00e1",
-        "given_name": "M\u00e1ria"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Astronomical Institute, Slovak Academy of Science, D\u00fabravsk\u00e1 cesta 9, 84504 Bratislava, Slovakia",
-          "affPubID": "ajabfdc9af2"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-7837-2627"
-      }
-    }
-  ],
-  "title": {
-    "textEnglish": "Meteoroid Stream of Comet C/1961 T1 (Seki) and Its Relation to the December &rgr;-Virginids and \u03b3-Sagittariids"
-  },
-  "abstract": {
-    "textEnglish": "We answer the question of whether long-period comet C/1961 T1 (Seki) is the parent body of a meteor shower observed in Earth\u2019s atmosphere. We model discrete parts of a meteoroid stream associated with this comet and follow the orbital evolution of its particles via a numerical integration of their orbits. The gravitational perturbations of major planets and the Poynting\u2013Robertson effect, which influences the motion of the particles, are taken into account. We predict two showers which are related to C/1961 T1. One of these showers was identified with the December &rgr;-Virginids, #502. This identification confirms an earlier suggested relationship between the shower and the comet. The second predicted shower was identified with the \u03b3-Sagittariids, #657. The radiant areas of both showers are symmetrical in respect to the apex of Earth\u2019s heliocentric motion."
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<ref id=\"ajabfdc9bib1\"> <element-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Abedin</surname> <given-names>A.</given-names> </name> <name> <surname>Spurn\u00fd</surname> <given-names>P.</given-names> </name> <name> <surname>Wiegert</surname> <given-names>P.</given-names> </name> <etal></etal> </person-group> <year>2015</year> <source>Icar</source> <volume>261</volume> <fpage>100</fpage> <ext-link ext-link-type=\"bibcode\">2015Icar..261..100A</ext-link> <pub-id pub-id-type=\"doi\">10.1016/j.icarus.2015.08.016</pub-id> </element-citation> </ref>",
@@ -171,55 +219,7 @@
     "<ref id=\"ajabfdc9bib68\"> <element-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Younger</surname> <given-names>J. P.</given-names> </name> <name> <surname>Reid</surname> <given-names>I. M.</given-names> </name> <name> <surname>Vincent</surname> <given-names>R. A.</given-names> </name> <name> <surname>Holdsworth</surname> <given-names>D. A.</given-names> </name> <name> <surname>Murphy</surname> <given-names>D. J.</given-names> </name> </person-group> <year>2009</year> <source>MNRAS</source> <volume>398</volume> <fpage>350</fpage> <ext-link ext-link-type=\"bibcode\">2009MNRAS.398..350Y</ext-link> <pub-id pub-id-type=\"doi\">10.1111/j.1365-2966.2009.15142.x</pub-id> </element-citation> </ref>",
     "<ref id=\"ajabfdc9bib69\"> <element-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Younger</surname> <given-names>J. P.</given-names> </name> <name> <surname>Reid</surname> <given-names>I. M.</given-names> </name> <name> <surname>Vincent</surname> <given-names>R. A.</given-names> </name> <name> <surname>Murphy</surname> <given-names>D. J.</given-names> </name> </person-group> <year>2012</year> <source>MNRAS</source> <volume>425</volume> <fpage>1473</fpage> <ext-link ext-link-type=\"bibcode\">2012MNRAS.425.1473Y</ext-link> <pub-id pub-id-type=\"doi\">10.1111/j.1365-2966.2012.21632.x</pub-id> </element-citation> </ref>"
   ],
-  "keywords": [
-    {
-      "keyString": "Comets",
-      "keySystem": "UAT",
-      "keyID": "280"
-    },
-    {
-      "keyString": "Meteor streams",
-      "keySystem": "UAT",
-      "keyID": "1035"
-    },
-    {
-      "keyString": "Meteor showers",
-      "keySystem": "UAT",
-      "keyID": "1034"
-    },
-    {
-      "keyString": "Comets",
-      "keySystem": "AAS"
-    },
-    {
-      "keyString": "Meteor streams",
-      "keySystem": "AAS"
-    },
-    {
-      "keyString": "Meteor showers",
-      "keySystem": "AAS"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "\u00a9 2021. The American Astronomical Society. All rights reserved."
-  },
-  "funding": [
-    {
-      "agencyname": "EC &mid; European Regional Development Fund (ERDF)\n",
-      "agencyid": {
-        "idschema": "doi",
-        "idvalue": "https://doi.org/10.13039/501100008530"
-      },
-      "awardnumber": "ITMS 26230120002"
-    },
-    {
-      "agencyname": "Slovak Research and Development Agency",
-      "awardnumber": "APVV-16-0148"
-    },
-    {
-      "agencyname": "Slovak Grant Agency for Science, VEGA",
-      "awardnumber": "2/0037/18"
-    }
-  ]
+  "title": {
+    "textEnglish": "Meteoroid Stream of Comet C/1961 T1 (Seki) and Its Relation to the December &rgr;-Virginids and \u03b3-Sagittariids"
+  }
 }

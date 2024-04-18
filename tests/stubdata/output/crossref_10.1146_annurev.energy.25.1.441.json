@@ -1,65 +1,68 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "OtherXML",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "\u25aa Abstract Water vapor is the dominant greenhouse gas, the most important gaseous source of infrared opacity in the atmosphere. As the concentrations of other greenhouse gases, particularly carbon dioxide, increase because of human activity, it is centrally important to predict how the water vapor distribution will be affected. To the extent that water vapor concentrations increase in a warmer world, the climatic effects of the other greenhouse gases will be amplified. Models of the Earth's climate indicate that this is an important positive feedback that increases the sensitivity of surface temperatures to carbon dioxide by nearly a factor of two when considered in isolation from other feedbacks, and possibly by as much as a factor of three or more when interactions with other feedbacks are considered. Critics of this consensus have attempted to provide reasons why modeling results are overestimating the strength of this feedback. Our uncertainty concerning climate sensitivity is disturbing. The range most often quoted for the equilibrium global mean surface temperature response to a doubling of CO 2 concentrations in the atmosphere is 1.5\u00b0C to 4.5\u00b0C. If the Earth lies near the upper bound of this sensitivity range, climate changes in the twenty-first century will be profound. The range in sensitivity is primarily due to differing assumptions about how the Earth's cloud distribution is maintained; all the models on which these estimates are based possess strong water vapor feedback. If this feedback is, in fact, substantially weaker than predicted in current models, sensitivities in the upper half of this range would be much less likely, a conclusion that would clearly have important policy implications. In this review, we describe the background behind the prevailing view on water vapor feedback and some of the arguments raised by its critics, and attempt to explain why these arguments have not modified the consensus within the climate research community."
   },
-  "pubDate": {
-    "printDate": "2000-11-00"
-  },
-  "publication": {
-    "pubName": "Annual Review of Energy and the Environment",
-    "issueNum": "1",
-    "volumeNum": "25",
-    "pubYear": "2000",
-    "ISSN": [
-      {
-        "pubtype": "print",
-        "issnString": "1056-3466"
-      }
-    ]
-  },
-  "persistentIDs": [
+  "authors": [
     {
-      "DOI": "10.1146/annurev.energy.25.1.441"
+      "affiliation": [
+        {
+          "affPubRaw": "Geophysical Fluid Dynamics Laboratory/National Oceanic and Atmospheric Administration, Princeton, New Jersey 08542"
+        }
+      ],
+      "name": {
+        "given_name": "Isaac M.",
+        "surname": "Held"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Geophysical Fluid Dynamics Laboratory/National Oceanic and Atmospheric Administration, Princeton, New Jersey 08542"
+        }
+      ],
+      "name": {
+        "given_name": "Brian J.",
+        "surname": "Soden"
+      }
+    }
+  ],
+  "esources": [
+    {
+      "location": "https://www.annualreviews.org/doi/10.1146/annurev.energy.25.1.441",
+      "source": "pub_html"
     }
   ],
   "pagination": {
     "firstPage": "441",
     "lastPage": "475"
   },
-  "authors": [
+  "persistentIDs": [
     {
-      "name": {
-        "surname": "Held",
-        "given_name": "Isaac M."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Geophysical Fluid Dynamics Laboratory/National Oceanic and Atmospheric Administration, Princeton, New Jersey 08542"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Soden",
-        "given_name": "Brian J."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Geophysical Fluid Dynamics Laboratory/National Oceanic and Atmospheric Administration, Princeton, New Jersey 08542"
-        }
-      ]
+      "DOI": "10.1146/annurev.energy.25.1.441"
     }
   ],
-  "title": {
-    "textEnglish": "Water Vapor Feedback and Global Warming"
+  "pubDate": {
+    "printDate": "2000-11-00"
   },
-  "abstract": {
-    "textEnglish": "\u25aa Abstract Water vapor is the dominant greenhouse gas, the most important gaseous source of infrared opacity in the atmosphere. As the concentrations of other greenhouse gases, particularly carbon dioxide, increase because of human activity, it is centrally important to predict how the water vapor distribution will be affected. To the extent that water vapor concentrations increase in a warmer world, the climatic effects of the other greenhouse gases will be amplified. Models of the Earth's climate indicate that this is an important positive feedback that increases the sensitivity of surface temperatures to carbon dioxide by nearly a factor of two when considered in isolation from other feedbacks, and possibly by as much as a factor of three or more when interactions with other feedbacks are considered. Critics of this consensus have attempted to provide reasons why modeling results are overestimating the strength of this feedback. Our uncertainty concerning climate sensitivity is disturbing. The range most often quoted for the equilibrium global mean surface temperature response to a doubling of CO 2 concentrations in the atmosphere is 1.5\u00b0C to 4.5\u00b0C. If the Earth lies near the upper bound of this sensitivity range, climate changes in the twenty-first century will be profound. The range in sensitivity is primarily due to differing assumptions about how the Earth's cloud distribution is maintained; all the models on which these estimates are based possess strong water vapor feedback. If this feedback is, in fact, substantially weaker than predicted in current models, sensitivities in the upper half of this range would be much less likely, a conclusion that would clearly have important policy implications. In this review, we describe the background behind the prevailing view on water vapor feedback and some of the arguments raised by its critics, and attempt to explain why these arguments have not modified the consensus within the climate research community."
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "1056-3466",
+        "pubtype": "print"
+      }
+    ],
+    "issueNum": "1",
+    "pubName": "Annual Review of Energy and the Environment",
+    "pubYear": "2000",
+    "volumeNum": "25"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<citation key=\"b1\"> <unstructured_citation>Fourier JB. 1827. Memoire sur les temperatures du globe terrestre et des espaces planetaires. Mem. Acad. R. Sci. Inst. France7:569\u2013604</unstructured_citation> </citation>",
@@ -152,10 +155,7 @@
     "<citation key=\"b88\"> <doi>10.1029/1998GL900169</doi> </citation>",
     "<citation key=\"b89\"> <doi>10.1175/1520-0442(2000)013<3337:DVITWV>2.0.CO;2</doi> </citation>"
   ],
-  "esources": [
-    {
-      "source": "pub_html",
-      "location": "https://www.annualreviews.org/doi/10.1146/annurev.energy.25.1.441"
-    }
-  ]
+  "title": {
+    "textEnglish": "Water Vapor Feedback and Global Warming"
+  }
 }

@@ -1,67 +1,74 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "OtherXML",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "Microlensing of extragalactic sources, in particular the probability of significant amplifications, is a potentially powerful probe of the abundance of compact objects outside the halo of the Milky Way. Accurate experimental constraints require an equally accurate theoretical model for the amplification statistics produced by such a population. In this article, we argue that the simplest (strongest-lens) model does not meet this demanding requirement. We thus propose an elaborate practical modelling scheme for extragalactic microlensing. We derive from first principles an expression for the amplification probability that consistently allows for: (i) the coupling between microlenses; (ii) realistic perturbations from the cosmic large-scale structure; (iii) extended-source corrections. An important conclusion is that the external shear applied on the dominant microlens, both by the other lenses and by the large-scale structure, is practically negligible. Yet, the predictions of our approach can still differ by a factor of a few with respect to existing models of the literature. Updated constraints on the abundance of compact objects accounting for such discrepancies may be required."
+  },
+  "authors": [
+    {
+      "name": {
+        "given_name": "V\u00edctor",
+        "surname": "Bosc\u00e1"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Pierre",
+        "surname": "Fleury"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Juan",
+        "surname": "Garc\u00eda-Bellido"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 2022 IOP Publishing Ltd and Sissa Medialab",
+    "status": true
   },
   "editorialHistory": {
+    "acceptedDate": "2022-10-16",
     "receivedDates": [
       "2022-05-06"
-    ],
-    "acceptedDate": "2022-10-16"
-  },
-  "pubDate": {
-    "electrDate": "2022-10-31",
-    "printDate": "2022-10-01"
-  },
-  "publication": {
-    "pubName": "Journal of Cosmology and Astroparticle Physics",
-    "issueNum": "10",
-    "volumeNum": "2022",
-    "pubYear": "2022",
-    "ISSN": [
-      {
-        "pubtype": "electronic",
-        "issnString": "1475-7516"
-      }
     ]
+  },
+  "esources": [
+    {
+      "location": "https://iopscience.iop.org/article/10.1088/1475-7516/2022/10/098",
+      "source": "pub_html"
+    }
+  ],
+  "pagination": {
+    "firstPage": "098"
   },
   "persistentIDs": [
     {
       "DOI": "10.1088/1475-7516/2022/10/098"
     }
   ],
-  "pagination": {
-    "firstPage": "098"
+  "pubDate": {
+    "electrDate": "2022-10-31",
+    "printDate": "2022-10-01"
   },
-  "authors": [
-    {
-      "name": {
-        "surname": "Bosc\u00e1",
-        "given_name": "V\u00edctor"
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "1475-7516",
+        "pubtype": "electronic"
       }
-    },
-    {
-      "name": {
-        "surname": "Fleury",
-        "given_name": "Pierre"
-      }
-    },
-    {
-      "name": {
-        "surname": "Garc\u00eda-Bellido",
-        "given_name": "Juan"
-      }
-    }
-  ],
-  "title": {
-    "textEnglish": "Accurate modelling of extragalactic microlensing by compact objects"
+    ],
+    "issueNum": "10",
+    "pubName": "Journal of Cosmology and Astroparticle Physics",
+    "pubYear": "2022",
+    "volumeNum": "2022"
   },
-  "abstract": {
-    "textEnglish": "Microlensing of extragalactic sources, in particular the probability of significant amplifications, is a potentially powerful probe of the abundance of compact objects outside the halo of the Milky Way. Accurate experimental constraints require an equally accurate theoretical model for the amplification statistics produced by such a population. In this article, we argue that the simplest (strongest-lens) model does not meet this demanding requirement. We thus propose an elaborate practical modelling scheme for extragalactic microlensing. We derive from first principles an expression for the amplification probability that consistently allows for: (i) the coupling between microlenses; (ii) realistic perturbations from the cosmic large-scale structure; (iii) extended-source corrections. An important conclusion is that the external shear applied on the dominant microlens, both by the other lenses and by the large-scale structure, is practically negligible. Yet, the predictions of our approach can still differ by a factor of a few with respect to existing models of the literature. Updated constraints on the abundance of compact objects accounting for such discrepancies may be required."
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<citation key=\"bc244b7229a82fb205b374b037762db1e\"> <journal_title>Phys. Rev. Lett.</journal_title> <author>Abbott</author> <doi>10.1103/PhysRevLett.116.241103</doi> <volume>116</volume> <cYear>2016</cYear> <article_title>GW151226: Observation of Gravitational Waves from a 22-Solar-Mass Binary Black Hole Coalescence</article_title> </citation>",
@@ -157,14 +164,7 @@
     "<citation key=\"be70709088624a1c6796dc62916fcfc27\"/>",
     "<citation key=\"beb2f428f5c2030a6f8e14ac7e8dd1eca\"/>"
   ],
-  "esources": [
-    {
-      "source": "pub_html",
-      "location": "https://iopscience.iop.org/article/10.1088/1475-7516/2022/10/098"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "\u00a9 2022 IOP Publishing Ltd and Sissa Medialab"
+  "title": {
+    "textEnglish": "Accurate modelling of extragalactic microlensing by compact objects"
   }
 }
