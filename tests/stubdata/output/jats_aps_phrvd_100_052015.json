@@ -1,0 +1,6687 @@
+{
+  "abstract": {
+    "textEnglish": "Using a data sample of <inline-formula><mml:math display=\"inline\"><mml:mrow><mml:mn>1.31</mml:mn><mml:mo>\u00d7</mml:mo><mml:msup><mml:mrow><mml:mn>10</mml:mn></mml:mrow><mml:mrow><mml:mn>9</mml:mn></mml:mrow></mml:msup><mml:mtext> </mml:mtext><mml:mi>J</mml:mi><mml:mo stretchy=\"false\">/</mml:mo><mml:mi>\u03c8</mml:mi></mml:mrow></mml:math></inline-formula> events collected with the BESIII detector, a search for <inline-formula><mml:math display=\"inline\"><mml:msup><mml:mi>\u03b7</mml:mi><mml:mo>\u2032</mml:mo></mml:msup><mml:mo stretchy=\"false\">\u2192</mml:mo><mml:mi>\u03b3</mml:mi><mml:mi>\u03b3</mml:mi><mml:mi>\u03b7</mml:mi></mml:math></inline-formula> via <inline-formula><mml:math display=\"inline\"><mml:mrow><mml:mi>J</mml:mi><mml:mo stretchy=\"false\">/</mml:mo><mml:mi>\u03c8</mml:mi><mml:mo stretchy=\"false\">\u2192</mml:mo><mml:mi>\u03b3</mml:mi><mml:msup><mml:mrow><mml:mi>\u03b7</mml:mi></mml:mrow><mml:mrow><mml:mo>\u2032</mml:mo></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula> is performed for the first time. No significant <inline-formula><mml:math display=\"inline\"><mml:msup><mml:mi>\u03b7</mml:mi><mml:mo>\u2032</mml:mo></mml:msup></mml:math></inline-formula> signal is observed in the <inline-formula><mml:math display=\"inline\"><mml:mi>\u03b3</mml:mi><mml:mi>\u03b3</mml:mi><mml:mi>\u03b7</mml:mi></mml:math></inline-formula> invariant mass spectrum, and the branching fraction of <inline-formula><mml:math display=\"inline\"><mml:msup><mml:mi>\u03b7</mml:mi><mml:mo>\u2032</mml:mo></mml:msup><mml:mo stretchy=\"false\">\u2192</mml:mo><mml:mi>\u03b3</mml:mi><mml:mi>\u03b3</mml:mi><mml:mi>\u03b7</mml:mi></mml:math></inline-formula> is determined to be less than <inline-formula><mml:math display=\"inline\"><mml:mn>1.33</mml:mn><mml:mo>\u00d7</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>-</mml:mo><mml:mn>4</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula> at the 90% confidence level."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Ablikim"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a10",
+          "affPubRaw": "G.I. Budker Institute of Nuclear Physics SB RAS (BINP), Novosibirsk 630090, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009N.",
+        "surname": "Achasov"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "P.",
+        "surname": "Adlarson"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a15",
+          "affPubRaw": "Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Ahmed"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Albrecht"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Alekseev"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Amoroso"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "F.\u2009F.",
+        "surname": "An"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.",
+        "surname": "An"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a42",
+          "affPubRaw": "Southeast University, Nanjing 211100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Bai"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a27",
+          "affPubRaw": "Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "O.",
+        "surname": "Bakina"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a23a",
+          "affPubRaw": "INFN Laboratori Nazionali di Frascati, I-00044 Frascati, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "R. Baldini",
+        "surname": "Ferroli"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a24a",
+          "affPubRaw": "INFN Sezione di Ferrara, I-44122 Ferrara, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "I.",
+        "surname": "Balossino"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a35",
+          "affPubRaw": "Peking University, Beijing 100871, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Ban"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a25",
+          "affPubRaw": "Institute of Physics and Technology, Peace Ave. 54B, Ulaanbaatar 13330, Mongolia"
+        }
+      ],
+      "name": {
+        "given_name": "K.",
+        "surname": "Begzsuren"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a5",
+          "affPubRaw": "Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009V.",
+        "surname": "Bennett"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "N.",
+        "surname": "Berger"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a23a",
+          "affPubRaw": "INFN Laboratori Nazionali di Frascati, I-00044 Frascati, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Bertani"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a24a",
+          "affPubRaw": "INFN Sezione di Ferrara, I-44122 Ferrara, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "D.",
+        "surname": "Bettoni"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "F.",
+        "surname": "Bianchi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Biernat"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a52",
+          "affPubRaw": "University of Muenster, Wilhelm-Klemm-Str. 9, 48149 Muenster, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Bloms"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a27",
+          "affPubRaw": "Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "I.",
+        "surname": "Boyko"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a5",
+          "affPubRaw": "Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA"
+        }
+      ],
+      "name": {
+        "given_name": "R.\u2009A.",
+        "surname": "Briere"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a60",
+          "affPubRaw": "Wuhan University, Wuhan 430072, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.",
+        "surname": "Cai"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.",
+        "surname": "Cai"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a23a",
+          "affPubRaw": "INFN Laboratori Nazionali di Frascati, I-00044 Frascati, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Calcaterra"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.\u2009F.",
+        "surname": "Cao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "N.",
+        "surname": "Cao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a46b",
+          "affPubRaw": "Istanbul Bilgi University, 34060 Eyup, Istanbul, Turkey"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009A.",
+        "surname": "Cetin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Chai"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009F.",
+        "surname": "Chang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.\u2009L.",
+        "surname": "Chang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a27",
+          "affPubRaw": "Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "G.",
+        "surname": "Chelkov"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a6",
+          "affPubRaw": "Central China Normal University, Wuhan 430079, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "D.\u2009Y.",
+        "surname": "Chen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.",
+        "surname": "Chen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009S.",
+        "surname": "Chen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009C.",
+        "surname": "Chen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009L.",
+        "surname": "Chen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009J.",
+        "surname": "Chen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009B.",
+        "surname": "Chen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "W.",
+        "surname": "Cheng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a24a",
+          "affPubRaw": "INFN Sezione di Ferrara, I-44122 Ferrara, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "G.",
+        "surname": "Cibinetto"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "F.",
+        "surname": "Cossio"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009F.",
+        "surname": "Cui"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009L.",
+        "surname": "Dai"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a38",
+          "affPubRaw": "Shanghai Jiao Tong University, Shanghai 200240, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009P.",
+        "surname": "Dai"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009C.",
+        "surname": "Dai"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a15",
+          "affPubRaw": "Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Dbeyssi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a27",
+          "affPubRaw": "Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "D.",
+        "surname": "Dedovich"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009Y.",
+        "surname": "Deng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Denig"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a27",
+          "affPubRaw": "Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "I.",
+        "surname": "Denysenko"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Destefanis"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "F.",
+        "surname": "De Mori"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a31",
+          "affPubRaw": "Liaoning University, Shenyang 110036, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Ding"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.",
+        "surname": "Dong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Dong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009Y.",
+        "surname": "Dong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009Y.",
+        "surname": "Dong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009L.",
+        "surname": "Dou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a63",
+          "affPubRaw": "Zhengzhou University, Zhengzhou 450001, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009X.",
+        "surname": "Du"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a45",
+          "affPubRaw": "Tsinghua University, Beijing 100084, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009Z.",
+        "surname": "Fan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Fang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009S.",
+        "surname": "Fang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Fang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a24a",
+          "affPubRaw": "INFN Sezione di Ferrara, I-44122 Ferrara, Italy"
+        },
+        {
+          "affPubID": "a24b",
+          "affPubRaw": "University of Ferrara, I-44122 Ferrara, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "R.",
+        "surname": "Farinelli"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58b",
+          "affPubRaw": "University of Eastern Piedmont, I-15121 Alessandria, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Fava"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "F.",
+        "surname": "Feldbauer"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a23a",
+          "affPubRaw": "INFN Laboratori Nazionali di Frascati, I-00044 Frascati, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "G.",
+        "surname": "Felici"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009Q.",
+        "surname": "Feng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Fritsch"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009D.",
+        "surname": "Fu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Fu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.",
+        "surname": "Gao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009L.",
+        "surname": "Gao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a56",
+          "affPubRaw": "University of South China, Hengyang 421001, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Gao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a45",
+          "affPubRaw": "Tsinghua University, Beijing 100084, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Gao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a6",
+          "affPubRaw": "Central China Normal University, Wuhan 430079, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009G.",
+        "surname": "Gao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.",
+        "surname": "Gao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "B.",
+        "surname": "Garillon"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a24a",
+          "affPubRaw": "INFN Sezione di Ferrara, I-44122 Ferrara, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "I.",
+        "surname": "Garzia"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a50",
+          "affPubRaw": "University of Manchester, Oxford Road, Manchester M13 9PL, United Kingdom"
+        }
+      ],
+      "name": {
+        "given_name": "E.\u2009M.",
+        "surname": "Gersabeck"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a51",
+          "affPubRaw": "University of Minnesota, Minneapolis, Minnesota 55455, USA"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Gilman"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a11",
+          "affPubRaw": "GSI Helmholtz centre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "K.",
+        "surname": "Goetzen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Gong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.\u2009X.",
+        "surname": "Gong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "W.",
+        "surname": "Gradl"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Greco"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009M.",
+        "surname": "Gu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009H.",
+        "surname": "Gu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a2",
+          "affPubRaw": "Beihang University, Beijing 100191, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Gu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a13",
+          "affPubRaw": "Guangxi University, Nanning 530004, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009T.",
+        "surname": "Gu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a22",
+          "affPubRaw": "Indiana University, Bloomington, Indiana 47405, USA"
+        }
+      ],
+      "name": {
+        "given_name": "A.\u2009Q.",
+        "surname": "Guo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a32",
+          "affPubRaw": "Nanjing Normal University, Nanjing 210023, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009B.",
+        "surname": "Guo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a36",
+          "affPubRaw": "Shandong Normal University, Jinan 250014, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "R.\u2009P.",
+        "surname": "Guo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009P.",
+        "surname": "Guo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a27",
+          "affPubRaw": "Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Guskov"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a60",
+          "affPubRaw": "Wuhan University, Wuhan 430072, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Han"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a16",
+          "affPubRaw": "Henan Normal University, Xinxiang 453007, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Q.",
+        "surname": "Hao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a48",
+          "affPubRaw": "University of Hawaii, Honolulu, Hawaii 96822, USA"
+        }
+      ],
+      "name": {
+        "given_name": "F.\u2009A.",
+        "surname": "Harris"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "K.\u2009L.",
+        "surname": "He"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "F.\u2009H.",
+        "surname": "Heinsius"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Held"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009K.",
+        "surname": "Heng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a11",
+          "affPubRaw": "GSI Helmholtz centre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Himmelreich"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009R.",
+        "surname": "Hou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009L.",
+        "surname": "Hou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009M.",
+        "surname": "Hu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a38",
+          "affPubRaw": "Shanghai Jiao Tong University, Shanghai 200240, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009F.",
+        "surname": "Hu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Hu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Hu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.\u2009S.",
+        "surname": "Huang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a16",
+          "affPubRaw": "Henan Normal University, Xinxiang 453007, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009S.",
+        "surname": "Huang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009T.",
+        "surname": "Huang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Z.",
+        "surname": "Huang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a52",
+          "affPubRaw": "University of Muenster, Wilhelm-Klemm-Str. 9, 48149 Muenster, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "N.",
+        "surname": "Huesken"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a57",
+          "affPubRaw": "University of the Punjab, Lahore-54590, Pakistan"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Hussain"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "W. Ikegami",
+        "surname": "Andersson"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a22",
+          "affPubRaw": "Indiana University, Bloomington, Indiana 47405, USA"
+        }
+      ],
+      "name": {
+        "given_name": "W.",
+        "surname": "Imoehl"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Irshad"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.",
+        "surname": "Ji"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a16",
+          "affPubRaw": "Henan Normal University, Xinxiang 453007, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.\u2009P.",
+        "surname": "Ji"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009B.",
+        "surname": "Ji"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009L.",
+        "surname": "Ji"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009L.",
+        "surname": "Jiang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009S.",
+        "surname": "Jiang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Y.",
+        "surname": "Jiang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009B.",
+        "surname": "Jiao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a18",
+          "affPubRaw": "Huangshan College, Huangshan 245000, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.",
+        "surname": "Jiao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "D.\u2009P.",
+        "surname": "Jin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Jin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a49",
+          "affPubRaw": "University of Jinan, Jinan 250022, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Jin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Johansson"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a29",
+          "affPubRaw": "KVI-CART, University of Groningen, NL-9747 AA Groningen, Netherlands"
+        }
+      ],
+      "name": {
+        "given_name": "N.",
+        "surname": "Kalantar-Nayestanaki"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a31",
+          "affPubRaw": "Liaoning University, Shenyang 110036, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009S.",
+        "surname": "Kang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a29",
+          "affPubRaw": "KVI-CART, University of Groningen, NL-9747 AA Groningen, Netherlands"
+        }
+      ],
+      "name": {
+        "given_name": "R.",
+        "surname": "Kappert"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a29",
+          "affPubRaw": "KVI-CART, University of Groningen, NL-9747 AA Groningen, Netherlands"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Kavatsyuk"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.\u2009C.",
+        "surname": "Ke"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "I.\u2009K.",
+        "surname": "Keshk"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a52",
+          "affPubRaw": "University of Muenster, Wilhelm-Klemm-Str. 9, 48149 Muenster, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Khoukaz"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "P.",
+        "surname": "Kiese"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "R.",
+        "surname": "Kiuchi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a11",
+          "affPubRaw": "GSI Helmholtz centre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "R.",
+        "surname": "Kliemt"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a28",
+          "affPubRaw": "Justus-Liebig-Universitaet Giessen, II. Physikalisches Institut, Heinrich-Buff-Ring 16, D-35392 Giessen, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Koch"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a46b",
+          "affPubRaw": "Istanbul Bilgi University, 34060 Eyup, Istanbul, Turkey"
+        }
+      ],
+      "name": {
+        "given_name": "O.\u2009B.",
+        "surname": "Kolcu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "B.",
+        "surname": "Kopf"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Kuemmel"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Kuessner"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Kupsc"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Kurth"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009G.",
+        "surname": "Kurth"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a28",
+          "affPubRaw": "Justus-Liebig-Universitaet Giessen, II. Physikalisches Institut, Heinrich-Buff-Ring 16, D-35392 Giessen, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "W.",
+        "surname": "K\u00fchn"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a28",
+          "affPubRaw": "Justus-Liebig-Universitaet Giessen, II. Physikalisches Institut, Heinrich-Buff-Ring 16, D-35392 Giessen, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009S.",
+        "surname": "Lange"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a15",
+          "affPubRaw": "Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "P.",
+        "surname": "Larin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Lavezzi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "H.",
+        "surname": "Leithoff"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Lenz"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "C.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Cheng",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a63",
+          "affPubRaw": "Zhengzhou University, Zhengzhou 450001, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "D.\u2009M.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "F.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a35",
+          "affPubRaw": "Peking University, Beijing 100871, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "F.\u2009Y.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009B.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a9",
+          "affPubRaw": "Fudan University, Shanghai 200443, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009J.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009C.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a41",
+          "affPubRaw": "Soochow University, Suzhou 215006, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009W.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Ke",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009K.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a3",
+          "affPubRaw": "Beijing Institute of Petrochemical Technology, Beijing 102617, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Lei",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "P.\u2009L.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a30",
+          "affPubRaw": "Lanzhou University, Lanzhou 730000, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "P.\u2009R.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.\u2009Y.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.\u2009D.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.\u2009G.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009H.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009L.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009N.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a44",
+          "affPubRaw": "Sun Yat-Sen University, Guangzhou 510275, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009B.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a44",
+          "affPubRaw": "Sun Yat-Sen University, Guangzhou 510275, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009Y.",
+        "surname": "Li"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.",
+        "surname": "Liang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.",
+        "surname": "Liang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a40",
+          "affPubRaw": "Sichuan University, Chengdu 610064, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009F.",
+        "surname": "Liang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a28",
+          "affPubRaw": "Justus-Liebig-Universitaet Giessen, II. Physikalisches Institut, Heinrich-Buff-Ring 16, D-35392 Giessen, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009T.",
+        "surname": "Liang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a12",
+          "affPubRaw": "Guangxi Normal University, Guilin 541004, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.\u2009R.",
+        "surname": "Liao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009Z.",
+        "surname": "Liao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a21",
+          "affPubRaw": "Indian Institute of Technology Madras, Chennai 600036, India"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Libby"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a44",
+          "affPubRaw": "Sun Yat-Sen University, Guangzhou 510275, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009X.",
+        "surname": "Lin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a15",
+          "affPubRaw": "Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "D.\u2009X.",
+        "surname": "Lin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a13",
+          "affPubRaw": "Guangxi University, Nanning 530004, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009J.",
+        "surname": "Lin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a38",
+          "affPubRaw": "Shanghai Jiao Tong University, Shanghai 200240, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.\u2009J.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009X.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "D.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a38",
+          "affPubRaw": "Shanghai Jiao Tong University, Shanghai 200240, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "D.\u2009Y.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a39",
+          "affPubRaw": "Shanxi University, Taiyuan 030006, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "F.\u2009H.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Fang",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a6",
+          "affPubRaw": "Central China Normal University, Wuhan 430079, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Feng",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a13",
+          "affPubRaw": "Guangxi University, Nanning 530004, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009B.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009M.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Huanhuan",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a17",
+          "affPubRaw": "Henan University of Science and Technology, Luoyang 471003, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Huihui",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009B.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009Y.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a31",
+          "affPubRaw": "Liaoning University, Shenyang 110036, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "K.\u2009Y.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a6",
+          "affPubRaw": "Central China Normal University, Wuhan 430079, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Ke",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a13",
+          "affPubRaw": "Guangxi University, Nanning 530004, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009Y.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009B.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a30",
+          "affPubRaw": "Lanzhou University, Lanzhou 730000, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Y.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009B.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009A.",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Zhiqing",
+        "surname": "Liu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a35",
+          "affPubRaw": "Peking University, Beijing 100871, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009F.",
+        "surname": "Long"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009C.",
+        "surname": "Lou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a18",
+          "affPubRaw": "Huangshan College, Huangshan 245000, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009J.",
+        "surname": "Lu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009D.",
+        "surname": "Lu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009G.",
+        "surname": "Lu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Lu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009P.",
+        "surname": "Lu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a32",
+          "affPubRaw": "Nanjing Normal University, Nanjing 210023, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009L.",
+        "surname": "Luo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a62",
+          "affPubRaw": "Zhejiang University, Hangzhou 310027, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009X.",
+        "surname": "Luo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a44",
+          "affPubRaw": "Sun Yat-Sen University, Guangzhou 510275, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "P.\u2009W.",
+        "surname": "Luo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a9",
+          "affPubRaw": "Fudan University, Shanghai 200443, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Luo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009L.",
+        "surname": "Luo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Lusso"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009R.",
+        "surname": "Lyu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a31",
+          "affPubRaw": "Liaoning University, Shenyang 110036, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "F.\u2009C.",
+        "surname": "Ma"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009L.",
+        "surname": "Ma"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009L.",
+        "surname": "Ma"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009M.",
+        "surname": "Ma"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.\u2009M.",
+        "surname": "Ma"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009N.",
+        "surname": "Ma"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009X.",
+        "surname": "Ma"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Y.",
+        "surname": "Ma"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009M.",
+        "surname": "Ma"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a15",
+          "affPubRaw": "Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "F.\u2009E.",
+        "surname": "Maas"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Maggiora"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Maldaner"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a53",
+          "affPubRaw": "University of Oxford, Keble Rd, Oxford OX13RH, United Kingdom"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Malde"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a57",
+          "affPubRaw": "University of the Punjab, Lahore-54590, Pakistan"
+        }
+      ],
+      "name": {
+        "given_name": "Q.\u2009A.",
+        "surname": "Malik"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a23b",
+          "affPubRaw": "INFN and University of Perugia, I-06100 Perugia, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Mangoni"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a35",
+          "affPubRaw": "Peking University, Beijing 100871, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009J.",
+        "surname": "Mao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009P.",
+        "surname": "Mao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Marcello"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a49",
+          "affPubRaw": "University of Jinan, Jinan 250022, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009X.",
+        "surname": "Meng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a29",
+          "affPubRaw": "KVI-CART, University of Groningen, NL-9747 AA Groningen, Netherlands"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009G.",
+        "surname": "Messchendorp"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a24a",
+          "affPubRaw": "INFN Sezione di Ferrara, I-44122 Ferrara, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "G.",
+        "surname": "Mezzadri"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Min"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "T.\u2009J.",
+        "surname": "Min"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a22",
+          "affPubRaw": "Indiana University, Bloomington, Indiana 47405, USA"
+        }
+      ],
+      "name": {
+        "given_name": "R.\u2009E.",
+        "surname": "Mitchell"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009H.",
+        "surname": "Mo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a6",
+          "affPubRaw": "Central China Normal University, Wuhan 430079, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009J.",
+        "surname": "Mo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a15",
+          "affPubRaw": "Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "C. Morales",
+        "surname": "Morales"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a10",
+          "affPubRaw": "G.I. Budker Institute of Nuclear Physics SB RAS (BINP), Novosibirsk 630090, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "N.\u2009Yu.",
+        "surname": "Muchnoi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a51",
+          "affPubRaw": "University of Minnesota, Minneapolis, Minnesota 55455, USA"
+        }
+      ],
+      "name": {
+        "given_name": "H.",
+        "surname": "Muramatsu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Mustafa"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a11",
+          "affPubRaw": "GSI Helmholtz centre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Nakhoul"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a27",
+          "affPubRaw": "Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Nefedov"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a11",
+          "affPubRaw": "GSI Helmholtz centre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "F.",
+        "surname": "Nerling"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a10",
+          "affPubRaw": "G.I. Budker Institute of Nuclear Physics SB RAS (BINP), Novosibirsk 630090, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "I.\u2009B.",
+        "surname": "Nikolaev"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.",
+        "surname": "Ning"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a8",
+          "affPubRaw": "COMSATS University Islamabad, Lahore Campus, Defence Road, Off Raiwind Road, 54000 Lahore, Pakistan"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Nisar"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009L.",
+        "surname": "Niu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009L.",
+        "surname": "Olsen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.",
+        "surname": "Ouyang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a23b",
+          "affPubRaw": "INFN and University of Perugia, I-06100 Perugia, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Pacetti"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Pan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Papenbrock"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a23a",
+          "affPubRaw": "INFN Laboratori Nazionali di Frascati, I-00044 Frascati, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "P.",
+        "surname": "Patteri"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Pelizaeus"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009P.",
+        "surname": "Peng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a11",
+          "affPubRaw": "GSI Helmholtz centre for Heavy Ion Research GmbH, D-64291 Darmstadt, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "K.",
+        "surname": "Peters"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Pettersson"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a32",
+          "affPubRaw": "Nanjing Normal University, Nanjing 210023, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009L.",
+        "surname": "Ping"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "R.\u2009G.",
+        "surname": "Ping"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Pitka"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a51",
+          "affPubRaw": "University of Minnesota, Minneapolis, Minnesota 55455, USA"
+        }
+      ],
+      "name": {
+        "given_name": "R.",
+        "surname": "Poling"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "V.",
+        "surname": "Prasad"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a2",
+          "affPubRaw": "Beihang University, Beijing 100191, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009R.",
+        "surname": "Qi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Qi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a2",
+          "affPubRaw": "Beihang University, Beijing 100191, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "T.\u2009Y.",
+        "surname": "Qi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Qian"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009F.",
+        "surname": "Qiao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a60",
+          "affPubRaw": "Wuhan University, Wuhan 430072, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "N.",
+        "surname": "Qin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a13",
+          "affPubRaw": "Guangxi University, Nanning 530004, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009P.",
+        "surname": "Qin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009S.",
+        "surname": "Qin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009H.",
+        "surname": "Qin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009F.",
+        "surname": "Qiu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009Q.",
+        "surname": "Qu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a57",
+          "affPubRaw": "University of the Punjab, Lahore-54590, Pakistan"
+        }
+      ],
+      "name": {
+        "given_name": "K.\u2009H.",
+        "surname": "Rashid"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a21",
+          "affPubRaw": "Indian Institute of Technology Madras, Chennai 600036, India"
+        }
+      ],
+      "name": {
+        "given_name": "K.",
+        "surname": "Ravindran"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009F.",
+        "surname": "Redmer"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Richter"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Rivetti"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a29",
+          "affPubRaw": "KVI-CART, University of Groningen, NL-9747 AA Groningen, Netherlands"
+        }
+      ],
+      "name": {
+        "given_name": "V.",
+        "surname": "Rodin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Rolo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.",
+        "surname": "Rong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a15",
+          "affPubRaw": "Helmholtz Institute Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "Ch.",
+        "surname": "Rosner"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a52",
+          "affPubRaw": "University of Muenster, Wilhelm-Klemm-Str. 9, 48149 Muenster, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Rump"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a27",
+          "affPubRaw": "Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Sarantsev"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a24b",
+          "affPubRaw": "University of Ferrara, I-44122 Ferrara, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Savri\u00e9"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Schelhaas"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "K.",
+        "surname": "Schoenning"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a19",
+          "affPubRaw": "Hunan Normal University, Changsha 410081, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.",
+        "surname": "Shan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Y.",
+        "surname": "Shan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Shao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a2",
+          "affPubRaw": "Beihang University, Beijing 100191, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009P.",
+        "surname": "Shen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "P.\u2009X.",
+        "surname": "Shen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Y.",
+        "surname": "Shen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009Y.",
+        "surname": "Sheng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.",
+        "surname": "Shi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009D.",
+        "surname": "Shi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009J.",
+        "surname": "Song"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.\u2009Q.",
+        "surname": "Song"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Y.",
+        "surname": "Song"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Sosio"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "C.",
+        "surname": "Sowa"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "S.",
+        "surname": "Spataro"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "F.\u2009F.",
+        "surname": "Sui"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.\u2009X.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a16",
+          "affPubRaw": "Henan Normal University, Xinxiang 453007, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009F.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a60",
+          "affPubRaw": "Wuhan University, Wuhan 430072, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009S.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009H.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009J.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009K.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009Z.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009J.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009T.",
+        "surname": "Sun"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009T.",
+        "surname": "Tan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a40",
+          "affPubRaw": "Sichuan University, Chengdu 610064, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009J.",
+        "surname": "Tang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.\u2009Y.",
+        "surname": "Tang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.",
+        "surname": "Tang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "V.",
+        "surname": "Thoren"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a25",
+          "affPubRaw": "Institute of Physics and Technology, Peace Ave. 54B, Ulaanbaatar 13330, Mongolia"
+        }
+      ],
+      "name": {
+        "given_name": "B.",
+        "surname": "Tsednee"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a46d",
+          "affPubRaw": "Near East University, Nicosia, North Cyprus, Mersin 10, Turkey"
+        }
+      ],
+      "name": {
+        "given_name": "I.",
+        "surname": "Uman"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.\u2009L.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009W.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a35",
+          "affPubRaw": "Peking University, Beijing 100871, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "D.\u2009Y.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "K.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009L.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009S.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a35",
+          "affPubRaw": "Peking University, Beijing 100871, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009Z.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Meng",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "P.\u2009L.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a61",
+          "affPubRaw": "Xinyang Normal University, Xinyang 464000, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "R.\u2009M.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.\u2009P.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a35",
+          "affPubRaw": "Peking University, Beijing 100871, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009F.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a9",
+          "affPubRaw": "Fudan University, Shanghai 200443, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009L.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a44",
+          "affPubRaw": "Sun Yat-Sen University, Guangzhou 510275, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009F.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-0719-4755"
+      },
+      "name": {
+        "given_name": "Y.\u2009Q.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009G.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009Y.",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Zongyuan",
+        "surname": "Wang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Weber"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a12",
+          "affPubRaw": "Guangxi Normal University, Guilin 541004, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "D.\u2009H.",
+        "surname": "Wei"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a26",
+          "affPubRaw": "Johannes Gutenberg University of Mainz, Johann-Joachim-Becher-Weg 45, D-55099 Mainz, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "P.",
+        "surname": "Weidenkaff"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a32",
+          "affPubRaw": "Nanjing Normal University, Nanjing 210023, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009W.",
+        "surname": "Wen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009P.",
+        "surname": "Wen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "U.",
+        "surname": "Wiedner"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a53",
+          "affPubRaw": "University of Oxford, Keble Rd, Oxford OX13RH, United Kingdom"
+        }
+      ],
+      "name": {
+        "given_name": "G.",
+        "surname": "Wilkinson"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a59",
+          "affPubRaw": "Uppsala University, Box 516, SE-75120 Uppsala, Sweden"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Wolke"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009H.",
+        "surname": "Wu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009J.",
+        "surname": "Wu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.",
+        "surname": "Wu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Xia"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a20",
+          "affPubRaw": "Hunan University, Changsha 410082, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Xia"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009Y.",
+        "surname": "Xiao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009J.",
+        "surname": "Xiao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a32",
+          "affPubRaw": "Nanjing Normal University, Nanjing 210023, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009J.",
+        "surname": "Xiao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009G.",
+        "surname": "Xie"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a6",
+          "affPubRaw": "Central China Normal University, Wuhan 430079, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009H.",
+        "surname": "Xie"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "T.\u2009Y.",
+        "surname": "Xing"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009A.",
+        "surname": "Xiong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.\u2009L.",
+        "surname": "Xiu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.\u2009F.",
+        "surname": "Xu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009J.",
+        "surname": "Xu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Xu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a14",
+          "affPubRaw": "Hangzhou Normal University, Hangzhou 310036, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.\u2009J.",
+        "surname": "Xu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.",
+        "surname": "Xu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a41",
+          "affPubRaw": "Soochow University, Suzhou 215006, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009P.",
+        "surname": "Xu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a56",
+          "affPubRaw": "University of South China, Hengyang 421001, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "F.",
+        "surname": "Yan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a58a",
+          "affPubRaw": "University of Turin, I-10125 Turin, Italy"
+        },
+        {
+          "affPubID": "a58c",
+          "affPubRaw": "INFN, I-10125 Turin, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Yan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.\u2009B.",
+        "surname": "Yan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a2",
+          "affPubRaw": "Beihang University, Beijing 100191, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.\u2009C.",
+        "surname": "Yan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a20",
+          "affPubRaw": "Hunan University, Changsha 410082, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009H.",
+        "surname": "Yan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a38",
+          "affPubRaw": "Shanghai Jiao Tong University, Shanghai 200240, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009J.",
+        "surname": "Yang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009X.",
+        "surname": "Yang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a60",
+          "affPubRaw": "Wuhan University, Wuhan 430072, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Yang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "R.\u2009X.",
+        "surname": "Yang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009L.",
+        "surname": "Yang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009H.",
+        "surname": "Yang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a12",
+          "affPubRaw": "Guangxi Normal University, Guilin 541004, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009X.",
+        "surname": "Yang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Yifan",
+        "surname": "Yang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a20",
+          "affPubRaw": "Hunan University, Changsha 410082, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009Q.",
+        "surname": "Yang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "Ye"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a7",
+          "affPubRaw": "China Center of Advanced Science and Technology, Beijing 100190, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009H.",
+        "surname": "Ye"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009H.",
+        "surname": "Yin"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a44",
+          "affPubRaw": "Sun Yat-Sen University, Guangzhou 510275, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009Y.",
+        "surname": "You"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.\u2009X.",
+        "surname": "Yu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009X.",
+        "surname": "Yu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a20",
+          "affPubRaw": "Hunan University, Changsha 410082, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009S.",
+        "surname": "Yu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a56",
+          "affPubRaw": "University of South China, Hengyang 421001, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Yu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009Z.",
+        "surname": "Yuan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a35",
+          "affPubRaw": "Peking University, Beijing 100871, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Q.",
+        "surname": "Yuan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Yuan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a46b",
+          "affPubRaw": "Istanbul Bilgi University, 34060 Eyup, Istanbul, Turkey"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Yuncu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a57",
+          "affPubRaw": "University of the Punjab, Lahore-54590, Pakistan"
+        }
+      ],
+      "name": {
+        "given_name": "A.\u2009A.",
+        "surname": "Zafar"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a20",
+          "affPubRaw": "Hunan University, Changsha 410082, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Zeng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.\u2009X.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.\u2009Y.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "C.\u2009C.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "D.\u2009H.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a44",
+          "affPubRaw": "Sun Yat-Sen University, Guangzhou 510275, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009H.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "H.\u2009Y.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a61",
+          "affPubRaw": "Xinyang Normal University, Xinyang 464000, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009L.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a4",
+          "affPubRaw": "Bochum Ruhr-University, D-44780 Bochum, Germany"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009Q.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009W.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009Y.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009Z.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "K.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a45",
+          "affPubRaw": "Tsinghua University, Beijing 100084, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a33",
+          "affPubRaw": "Nanjing University, Nanjing 210093, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009F.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a38",
+          "affPubRaw": "Shanghai Jiao Tong University, Shanghai 200240, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "T.\u2009J.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a37",
+          "affPubRaw": "Shandong University, Jinan 250100, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009Y.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009H.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009T.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Yang",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Yao",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a9",
+          "affPubRaw": "Fudan University, Shanghai 200443, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Yi",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Yu",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a6",
+          "affPubRaw": "Central China Normal University, Wuhan 430079, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009H.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009P.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a60",
+          "affPubRaw": "Wuhan University, Wuhan 430072, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009Y.",
+        "surname": "Zhang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "G.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009W.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009Y.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009Z.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Lei",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Ling",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "M.\u2009G.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a63",
+          "affPubRaw": "Zhengzhou University, Zhengzhou 450001, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009J.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "T.\u2009C.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009B.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009G.",
+        "surname": "Zhao"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a27",
+          "affPubRaw": "Joint Institute for Nuclear Research, 141980 Dubna, Moscow region, Russia"
+        }
+      ],
+      "name": {
+        "given_name": "A.",
+        "surname": "Zhemchugov"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a56",
+          "affPubRaw": "University of South China, Hengyang 421001, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.",
+        "surname": "Zheng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009P.",
+        "surname": "Zheng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a35",
+          "affPubRaw": "Peking University, Beijing 100871, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.",
+        "surname": "Zheng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009H.",
+        "surname": "Zheng"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a32",
+          "affPubRaw": "Nanjing Normal University, Nanjing 210023, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.",
+        "surname": "Zhong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.",
+        "surname": "Zhou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "L.\u2009P.",
+        "surname": "Zhou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Q.",
+        "surname": "Zhou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a60",
+          "affPubRaw": "Wuhan University, Wuhan 430072, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.",
+        "surname": "Zhou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009K.",
+        "surname": "Zhou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009R.",
+        "surname": "Zhou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a20",
+          "affPubRaw": "Hunan University, Changsha 410082, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Xiaoyu",
+        "surname": "Zhou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a20",
+          "affPubRaw": "Hunan University, Changsha 410082, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Xu",
+        "surname": "Zhou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "A.\u2009N.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a44",
+          "affPubRaw": "Sun Yat-Sen University, Guangzhou 510275, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "K.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "K.\u2009J.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a54",
+          "affPubRaw": "University of Science and Technology Liaoning, Anshan 114051, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "S.\u2009H.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a34",
+          "affPubRaw": "Nankai University, Tianjin 300071, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "W.\u2009J.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a45",
+          "affPubRaw": "Tsinghua University, Beijing 100084, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "X.\u2009L.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a55",
+          "affPubRaw": "University of Science and Technology of China, Hefei 230026, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009C.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Y.\u2009S.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a47",
+          "affPubRaw": "University of Chinese Academy of Sciences, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "Z.\u2009A.",
+        "surname": "Zhu"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        },
+        {
+          "affPubID": "a43",
+          "affPubRaw": "State Key Laboratory of Particle Detection and Electronics, Beijing 100049, Hefei 230026, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.",
+        "surname": "Zhuang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "B.\u2009S.",
+        "surname": "Zou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "a1",
+          "affPubRaw": "Institute of High Energy Physics, Beijing 100049, People\u2019s Republic of China"
+        }
+      ],
+      "name": {
+        "given_name": "J.\u2009H.",
+        "surname": "Zou"
+      }
+    },
+    {
+      "attrib": {
+        "collab": true
+      },
+      "name": {
+        "collab": "(BESIII Collaboration)"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "Published by the American Physical Society",
+    "status": true
+  },
+  "funding": [
+    {
+      "agencyname": "BEPCII"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100002856"
+      },
+      "agencyname": "Key Laboratory of Particle Astrophysics, Institute of High Energy Physics"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100012166"
+      },
+      "agencyname": "National Key Basic Research Program of China",
+      "awardnumber": "2015CB856700"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100001809"
+      },
+      "agencyname": "National Natural Science Foundation of China",
+      "awardnumber": "11625523"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100002367"
+      },
+      "agencyname": "Chinese Academy of Sciences",
+      "awardnumber": "U1532257"
+    },
+    {
+      "agencyname": "CAS Key Research Program of Frontier Sciences",
+      "awardnumber": "QYZDJ-SSW-SLH003"
+    },
+    {
+      "agencyname": "100 Talents Program of CAS"
+    },
+    {
+      "agencyname": "INPAC"
+    },
+    {
+      "agencyname": "Shanghai Key Laboratory for Particle Physics and Cosmology"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100001659"
+      },
+      "agencyname": "Deutsche Forschungsgemeinschaft",
+      "awardnumber": "CRC 1044"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100004007"
+      },
+      "agencyname": "Instituto Nazionale di Fisica Nucleare"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100001722"
+      },
+      "agencyname": "Koninklijke Nederlandse Akademie van Wetenschappen",
+      "awardnumber": "530-4CDP03"
+    },
+    {
+      "agencyname": "Ministry of Development of Turkey",
+      "awardnumber": "DPT2006K-120470"
+    },
+    {
+      "agencyname": "National Science and Technology fund"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100004063"
+      },
+      "agencyname": "Knut och Alice Wallenbergs Stiftelse",
+      "awardnumber": "2016.0157"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100000288"
+      },
+      "agencyname": "Royal Society",
+      "awardnumber": "DH160214"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100004359"
+      },
+      "agencyname": "Vetenskapsr\u00e5det"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/100000015"
+      },
+      "agencyname": "U.S. Department of Energy",
+      "awardnumber": "DE-FG02-05ER41374"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100001721"
+      },
+      "agencyname": "Rijksuniversiteit Groningen"
+    },
+    {
+      "agencyid": {
+        "idschema": "doi",
+        "idvalue": "10.13039/501100010958"
+      },
+      "agencyname": "Helmholtzzentrum fuer Schwerionenforschung GmbH"
+    }
+  ],
+  "keywords": [
+    {
+      "keyString": "Particle Physics Experiments",
+      "keySystem": "subject"
+    }
+  ],
+  "openAccess": {
+    "license": "Published by the American Physical Society under the terms of the Creative Commons Attribution 4.0 International license. Further distribution of this work must maintain attribution to the author(s) and the published article\u2019s title, journal citation, and DOI. Funded by SCOAP3.",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "pagination": {
+    "electronicID": "052015",
+    "pageCount": "7"
+  },
+  "persistentIDs": [
+    {
+      "DOI": "10.1103/PhysRevD.100.052015"
+    }
+  ],
+  "pubDate": {
+    "electrDate": "2019-09-30",
+    "printDate": "2019-09-01"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "2470-0010",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "2470-0029",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "5",
+    "pubName": "Physical Review D",
+    "pubYear": "2019",
+    "publisher": "American Physical Society",
+    "volumeNum": "100"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
+  },
+  "references": [
+    "<ref id=\"c1\"><label>[1]</label><mixed-citation id=\"c1a\" publication-type=\"journal\"><object-id>1a</object-id><person-group person-group-type=\"author\"><string-name>J. Steinberger</string-name></person-group>, <source>Phys. Rev.</source> <volume>76</volume>, <page-range>1180</page-range> (<year>1949</year>); <pub-id pub-id-type=\"coden\">PHRVAO</pub-id><issn>0031-899X</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRev.76.1180</pub-id></mixed-citation><mixed-citation id=\"c1b\" publication-type=\"journal\"><object-id>1b</object-id><person-group person-group-type=\"author\"><string-name>S.\u2009L. Adler</string-name></person-group>, <source>Phys. Rev.</source> <volume>177</volume>, <page-range>2426</page-range> (<year>1969</year>); <pub-id pub-id-type=\"coden\">PHRVAO</pub-id><issn>0031-899X</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRev.177.2426</pub-id></mixed-citation><mixed-citation id=\"c1c\" publication-type=\"journal\"><object-id>1c</object-id><person-group person-group-type=\"author\"><string-name>J.\u2009S. Bell</string-name> and <string-name>R. Jackiw</string-name></person-group>, <source>Nuovo Cimento A</source> <volume>60</volume>, <page-range>47</page-range> (<year>1969</year>); <pub-id pub-id-type=\"coden\">NCIAAT</pub-id><issn>0369-3546</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1007/BF02823296</pub-id></mixed-citation><mixed-citation id=\"c1d\" publication-type=\"journal\"><object-id>1d</object-id><person-group person-group-type=\"author\"><string-name>W.\u2009A. Bardeen</string-name></person-group>, <source>Phys. Rev.</source> <volume>184</volume>, <page-range>1848</page-range> (<year>1969</year>).<pub-id pub-id-type=\"coden\">PHRVAO</pub-id><issn>0031-899X</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRev.184.1848</pub-id></mixed-citation></ref>",
+    "<ref id=\"c2\"><label>[2]</label><mixed-citation publication-type=\"journal\"><object-id>2</object-id><person-group person-group-type=\"author\"><string-name>J. Wess</string-name> and <string-name>B. Zumino</string-name></person-group>, <source>Phys. Lett.</source> <volume>37B</volume>, <page-range>95</page-range> (<year>1971</year>).<pub-id pub-id-type=\"coden\">PYLBAJ</pub-id><issn>0370-2693</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1016/0370-2693(71)90582-X</pub-id></mixed-citation></ref>",
+    "<ref id=\"c3\"><label>[3]</label><mixed-citation publication-type=\"journal\"><object-id>3</object-id><person-group person-group-type=\"author\"><string-name>E. Witten</string-name></person-group>, <source>Nucl. Phys.</source> <volume>B223</volume>, <page-range>422</page-range> (<year>1983</year>).<pub-id pub-id-type=\"coden\">NUPBBO</pub-id><issn>0550-3213</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1016/0550-3213(83)90063-9</pub-id></mixed-citation></ref>",
+    "<ref id=\"c4\"><label>[4]</label><mixed-citation publication-type=\"journal\"><object-id>4</object-id><person-group person-group-type=\"author\"><string-name>H.\u2009B. Li</string-name></person-group>, <source>J. Phys. G</source> <volume>36</volume>, <page-range>085009</page-range> (<year>2009</year>).<pub-id pub-id-type=\"coden\">JPGPED</pub-id><issn>0954-3899</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1088/0954-3899/36/8/085009</pub-id></mixed-citation></ref>",
+    "<ref id=\"c5\"><label>[5]</label><mixed-citation publication-type=\"journal\"><object-id>5</object-id><person-group person-group-type=\"author\"><string-name>A. Kupsc</string-name></person-group>, <source>Int. J. Mod. Phys. E</source> <volume>18</volume>, <page-range>1255</page-range> (<year>2009</year>).<pub-id pub-id-type=\"coden\">IMPEER</pub-id><issn>0218-3013</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1142/S0218301309013488</pub-id></mixed-citation></ref>",
+    "<ref id=\"c6\"><label>[6]</label><mixed-citation id=\"c6a\" publication-type=\"journal\"><object-id>6a</object-id><person-group person-group-type=\"author\"><string-name>J. Gasser</string-name> and <string-name>H. Leutwyler</string-name></person-group>, <source>Nucl. Phys.</source> <volume>B250</volume>, <page-range>465</page-range> (<year>1985</year>); <pub-id pub-id-type=\"coden\">NUPBBO</pub-id><issn>0550-3213</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1016/0550-3213(85)90492-4</pub-id></mixed-citation><mixed-citation id=\"c6b\" publication-type=\"journal\"><object-id>6b</object-id><person-group person-group-type=\"author\"><string-name>H. Neufeld</string-name> and <string-name>H. Rupertsberger</string-name></person-group>, <source>Z. Phys. C</source> <volume>68</volume>, <page-range>91</page-range> (<year>1995</year>).<pub-id pub-id-type=\"coden\">ZPCFD2</pub-id><issn>0170-9739</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1007/BF01579808</pub-id></mixed-citation></ref>",
+    "<ref id=\"c7\"><label>[7]</label><mixed-citation publication-type=\"journal\"><object-id>7</object-id><person-group person-group-type=\"author\"><string-name>R. Jora</string-name></person-group>, <source>Nucl. Phys. B, Proc. Suppl.</source> <volume>207</volume>, <page-range>224</page-range> (<year>2010</year>).<pub-id pub-id-type=\"coden\">NPBSE7</pub-id><issn>0920-5632</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1016/j.nuclphysbps.2010.10.058</pub-id></mixed-citation></ref>",
+    "<ref id=\"c8\"><label>[8]</label><mixed-citation publication-type=\"eprint\"><object-id>8</object-id><person-group person-group-type=\"author\"><string-name>R. Escribano</string-name> <etal/></person-group>, <pub-id pub-id-type=\"arxiv\">arXiv:1812.08454</pub-id>.</mixed-citation></ref>",
+    "<ref id=\"c9\"><label>[9]</label><mixed-citation publication-type=\"journal\"><object-id>9</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Phys. Rev. D</source> <volume>96</volume>, <page-range>012005</page-range> (<year>2017</year>).<pub-id pub-id-type=\"coden\">PRVDAQ</pub-id><issn>2470-0010</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevD.96.012005</pub-id></mixed-citation></ref>",
+    "<ref id=\"c10\"><label>[10]</label><mixed-citation publication-type=\"journal\"><object-id>10</object-id><person-group person-group-type=\"author\"><string-name>S.\u2009V. Donskov</string-name>, <string-name>V.\u2009N. Kolosov</string-name>, <string-name>A.\u2009A. Lednev</string-name>, <string-name>Y.\u2009V. Mikhailov</string-name>, <string-name>V.\u2009A. Polyakov</string-name>, <string-name>V.\u2009D. Samoylenko</string-name>, and <string-name>G.\u2009V. Khaustov</string-name></person-group>, <source>Phys. At. Nucl.</source> <volume>78</volume>, <page-range>1043</page-range> (<year>2015</year>).<pub-id pub-id-type=\"coden\">PANUEO</pub-id><issn>1063-7788</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1134/S1063778815090070</pub-id></mixed-citation></ref>",
+    "<ref id=\"c11\"><label>[11]</label><mixed-citation publication-type=\"journal\"><object-id>11</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Phys. Rev. D</source> <volume>97</volume>, <page-range>012003</page-range> (<year>2018</year>).<pub-id pub-id-type=\"coden\">PRVDAQ</pub-id><issn>2470-0010</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevD.97.012003</pub-id></mixed-citation></ref>",
+    "<ref id=\"c12\"><label>[12]</label><mixed-citation publication-type=\"journal\"><object-id>12</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Phys. Rev. Lett.</source> <volume>120</volume>, <page-range>242003</page-range> (<year>2018</year>).<pub-id pub-id-type=\"coden\">PRLTAO</pub-id><issn>0031-9007</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevLett.120.242003</pub-id></mixed-citation></ref>",
+    "<ref id=\"c13\"><label>[13]</label><mixed-citation publication-type=\"journal\"><object-id>13</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Phys. Rev. D</source> <volume>92</volume>, <page-range>012014</page-range> (<year>2015</year>).<pub-id pub-id-type=\"coden\">PRVDAQ</pub-id><issn>1550-7998</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevD.92.012014</pub-id></mixed-citation></ref>",
+    "<ref id=\"c14\"><label>[14]</label><mixed-citation publication-type=\"journal\"><object-id>14</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Phys. Rev. Lett.</source> <volume>118</volume>, <page-range>012001</page-range> (<year>2017</year>).<pub-id pub-id-type=\"coden\">PRLTAO</pub-id><issn>0031-9007</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevLett.118.012001</pub-id></mixed-citation></ref>",
+    "<ref id=\"c15\"><label>[15]</label><mixed-citation publication-type=\"journal\"><object-id>15</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Phys. Rev. D</source> <volume>92</volume>, <page-range>012001</page-range> (<year>2015</year>).<pub-id pub-id-type=\"coden\">PRVDAQ</pub-id><issn>1550-7998</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevD.92.012001</pub-id></mixed-citation></ref>",
+    "<ref id=\"c16\"><label>[16]</label><mixed-citation publication-type=\"journal\"><object-id>16</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Phys. Rev. D</source> <volume>87</volume>, <page-range>092011</page-range> (<year>2013</year>).<pub-id pub-id-type=\"coden\">PRVDAQ</pub-id><issn>1550-7998</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevD.87.092011</pub-id></mixed-citation></ref>",
+    "<ref id=\"c17\"><label>[17]</label><mixed-citation publication-type=\"journal\"><object-id>17</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Phys. Rev. Lett.</source> <volume>112</volume>, <page-range>251801</page-range> (<year>2014</year>).<pub-id pub-id-type=\"coden\">PRLTAO</pub-id><issn>0031-9007</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevLett.112.251801</pub-id></mixed-citation></ref>",
+    "<ref id=\"c18\"><label>[18]</label><mixed-citation publication-type=\"journal\"><object-id>18</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Nucl. Instrum. Methods Phys. Res., Sect. A</source> <volume>614</volume>, <page-range>345</page-range> (<year>2010</year>).<pub-id pub-id-type=\"coden\">NIMAER</pub-id><issn>0168-9002</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1016/j.nima.2009.12.050</pub-id></mixed-citation></ref>",
+    "<ref id=\"c19\"><label>[19]</label><mixed-citation publication-type=\"proc\"><object-id>19</object-id><person-group person-group-type=\"author\"><string-name>C.\u2009H. Yu</string-name> <etal/></person-group>, <source>Proceedings of IPAC2016, Busan, Korea</source> (<year>2016</year>), <ext-link ext-link-type=\"uri\" xlink:href=\"https://dx.doi.org/10.18429/JACoW-IPAC2016-TUYA01\">https://dx.doi.org/10.18429/JACoW-IPAC2016-TUYA01</ext-link>.</mixed-citation></ref>",
+    "<ref id=\"c20\"><label>[20]</label><mixed-citation publication-type=\"journal\"><object-id>20</object-id><person-group person-group-type=\"author\"><string-name>S. Agostinelli</string-name> <etal/> (<collab>GEANT4 Collaboration</collab>)</person-group>, <source>Nucl. Instrum. Methods Phys. Res., Sect. A</source> <volume>506</volume>, <page-range>250</page-range> (<year>2003</year>).<pub-id pub-id-type=\"coden\">NIMAER</pub-id><issn>0168-9002</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1016/S0168-9002(03)01368-8</pub-id></mixed-citation></ref>",
+    "<ref id=\"c21\"><label>[21]</label><mixed-citation publication-type=\"journal\"><object-id>21</object-id><person-group person-group-type=\"author\"><string-name>Z.\u2009Y. Deng</string-name> <etal/></person-group>, <source>Chin. Phys. C</source> <volume>30</volume>, <page-range>371</page-range> (<year>2006</year>).<pub-id pub-id-type=\"coden\">CPCHCQ</pub-id><issn>1674-1137</issn></mixed-citation></ref>",
+    "<ref id=\"c22\"><label>[22]</label><mixed-citation id=\"c22a\" publication-type=\"journal\"><object-id>22a</object-id><person-group person-group-type=\"author\"><string-name>S. Jadach</string-name>, <string-name>B.\u2009F.\u2009L. Ward</string-name>, and <string-name>Z. Was</string-name></person-group>, <source>Comput. Phys. Commun.</source> <volume>130</volume>, <page-range>260</page-range> (<year>2000</year>); <pub-id pub-id-type=\"coden\">CPHCBZ</pub-id><issn>0010-4655</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1016/S0010-4655(00)00048-5</pub-id></mixed-citation><mixed-citation id=\"c22b\" publication-type=\"journal\" specific-use=\"author\"><object-id>22b</object-id><person-group person-group-type=\"author\"><string-name>S. Jadach</string-name>, <string-name>B.\u2009F.\u2009L. Ward</string-name>, and <string-name>Z. Was</string-name></person-group><source>Phys. Rev. D</source> <volume>63</volume>, <page-range>113009</page-range> (<year>2001</year>).<pub-id pub-id-type=\"coden\">PRVDAQ</pub-id><issn>0556-2821</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevD.63.113009</pub-id></mixed-citation></ref>",
+    "<ref id=\"c23\"><label>[23]</label><mixed-citation id=\"c23a\" publication-type=\"journal\"><object-id>23a</object-id><person-group person-group-type=\"author\"><string-name>D.\u2009J. Lange</string-name></person-group>, <source>Nucl. Instrum. Methods Phys. Res., Sect. A</source> <volume>462</volume>, <page-range>152</page-range> (<year>2001</year>); <pub-id pub-id-type=\"coden\">NIMAER</pub-id><issn>0168-9002</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1016/S0168-9002(01)00089-4</pub-id></mixed-citation><mixed-citation id=\"c23b\" publication-type=\"journal\"><object-id>23b</object-id><person-group person-group-type=\"author\"><string-name>R.\u2009G. Ping</string-name></person-group>, <source>Chin. Phys. C</source> <volume>32</volume>, <page-range>599</page-range> (<year>2008</year>).<pub-id pub-id-type=\"coden\">CPCHCQ</pub-id><issn>1674-1137</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1088/1674-1137/32/8/001</pub-id></mixed-citation></ref>",
+    "<ref id=\"c24\"><label>[24]</label><mixed-citation publication-type=\"journal\"><object-id>24</object-id><person-group person-group-type=\"author\"><string-name>M. Tanabashi</string-name> <etal/> (<collab>Particle Data Group</collab>)</person-group>, <source>Phys. Rev. D</source> <volume>98</volume>, <page-range>030001</page-range> (<year>2018</year>).<pub-id pub-id-type=\"coden\">PRVDAQ</pub-id><issn>2470-0010</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevD.98.030001</pub-id></mixed-citation></ref>",
+    "<ref id=\"c25\"><label>[25]</label><mixed-citation publication-type=\"journal\"><object-id>25</object-id><person-group person-group-type=\"author\"><string-name>J.\u2009C. Chen</string-name>, <string-name>G.\u2009S. Huang</string-name>, <string-name>X.\u2009R. Qi</string-name>, <string-name>D.\u2009H. Zhang</string-name>, and <string-name>Y.\u2009S. Zhu</string-name></person-group>, <source>Phys. Rev. D</source> <volume>62</volume>, <page-range>034003</page-range> (<year>2000</year>).<pub-id pub-id-type=\"coden\">PRVDAQ</pub-id><issn>0556-2821</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevD.62.034003</pub-id></mixed-citation></ref>",
+    "<ref id=\"c26\"><label>[26]</label><mixed-citation publication-type=\"proc\"><object-id>26</object-id><person-group person-group-type=\"author\"><string-name>W.\u2009D. Li</string-name> <etal/></person-group>, in <source>Proceeding of CHEP06, Mumbai, India, 2006</source>, edited by <person-group person-group-type=\"editor\"><string-name>Sunanda Banerjee</string-name></person-group> (<publisher-name>Tata Institute of Fundamental Research</publisher-name>, Mumbai, <year>2006</year>).</mixed-citation></ref>",
+    "<ref id=\"c27\"><label>[27]</label><mixed-citation publication-type=\"journal\"><object-id>27</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Phys. Rev. D</source> <volume>96</volume>, <page-range>112012</page-range> (<year>2017</year>).<pub-id pub-id-type=\"coden\">PRVDAQ</pub-id><issn>2470-0010</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1103/PhysRevD.96.112012</pub-id></mixed-citation></ref>",
+    "<ref id=\"c28\"><label>[28]</label><mixed-citation publication-type=\"journal\"><object-id>28</object-id><person-group person-group-type=\"author\"><string-name>M. Ablikim</string-name> <etal/> (<collab>BESIII Collaboration</collab>)</person-group>, <source>Chin. Phys. C</source> <volume>41</volume>, <page-range>013001</page-range> (<year>2017</year>).<pub-id pub-id-type=\"coden\">CPCHCQ</pub-id><issn>1674-1137</issn><pub-id pub-id-type=\"doi\" specific-use=\"suppress-display\">10.1088/1674-1137/41/1/013001</pub-id></mixed-citation></ref>"
+  ],
+  "title": {
+    "textEnglish": "Search for the decay <inline-formula><mml:math display=\"inline\"><mml:msup><mml:mi>\u03b7</mml:mi><mml:mo>\u2032</mml:mo></mml:msup><mml:mo stretchy=\"false\">\u2192</mml:mo><mml:mi>\u03b3</mml:mi><mml:mi>\u03b3</mml:mi><mml:mi>\u03b7</mml:mi></mml:math></inline-formula>"
+  }
+}

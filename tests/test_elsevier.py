@@ -15,6 +15,7 @@ class TestElsevier(unittest.TestCase):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
+        self.maxDiff = None
 
     def test_elsevier(self):
         filenames = [
@@ -63,6 +64,4 @@ class TestElsevier(unittest.TestCase):
             self.assertTrue(abs(time_difference) < datetime.timedelta(seconds=10))
             parsed["recordData"]["parsedTime"] = ""
 
-            print(test_infile)
-            self.maxDiff = None
             self.assertEqual(parsed, output_data)
