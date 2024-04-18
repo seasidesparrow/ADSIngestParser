@@ -489,6 +489,7 @@ class BaseBeautifulSoupParser(IngestBase):
         "mml:mn",
         "mml:annotation",
         "mml:msubsup",
+        "mml:msup",
     ]
 
     HTML_TAGS_HTML = ["sub", "sup", "a", "astrobj", "i", "b"]
