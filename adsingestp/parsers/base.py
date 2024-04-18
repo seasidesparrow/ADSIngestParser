@@ -489,7 +489,17 @@ class BaseBeautifulSoupParser(IngestBase):
         "mml:mn",
         "mml:annotation",
         "mml:msubsup",
+        "mml:msupsub",
         "mml:msup",
+        "mml:mfrac",
+        "mml:munderovers",
+        "mml:msqrt",
+        "mml:mmultiscripts",
+        "mml:prescripts",
+        "mml:mtext",
+        "mml:mfenced",
+        "mml:mstyle",
+        "mml:mspace",
     ]
 
     HTML_TAGS_HTML = ["sub", "sup", "a", "astrobj", "i", "b"]
