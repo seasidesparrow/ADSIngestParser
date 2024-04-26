@@ -34,6 +34,7 @@ class TestElsevier(unittest.TestCase):
             "els_detag_example_1",
             "els_detag_example_2",
             "els_list",
+            "els_phlb_compound_affil",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
