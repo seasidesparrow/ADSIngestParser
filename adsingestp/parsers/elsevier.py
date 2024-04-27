@@ -317,16 +317,16 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 and author.find("ce:e-address").get("type", "") == "email"
             ):
                 author_tmp["email"] = author.find("ce:e-address").get_text()
+            affs = []
+            if affs_xref.get("ALLAUTH"):
+                affs.append(affils_xref.get("ALLAUTH"))
             if author.find("ce:cross-ref") and author.find("ce:cross-ref").find("sup"):
-                affs = []
                 for i in author.find("ce:cross-ref").find_all("sup"):
                     aff_label = i.get_text()
                     # don't append an empty aff
                     if affs_xref.get(aff_label):
                         affs.append(affs_xref[aff_label])
-                author_tmp["aff"] = affs
-            elif affs_xref.get("ALLAUTH"):
-                author_tmp["aff"] = affs_xref["ALLAUTH"]
+            author_tmp["aff"] = affs
             group_author_list.append(author_tmp)
         return group_author_list
 
