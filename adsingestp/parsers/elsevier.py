@@ -17,8 +17,8 @@ def flatten_author_groups(soup):
     # returning a list of flat author groups
     # without any embedded groups
     group_list = []
-    ag = soup.find('ce:author-group').extract()
-    while ag.find('ce:author-group'):
+    ag = soup.find("ce:author-group").extract()
+    while ag.find("ce:author-group"):
         group_list.append(flatten_author_groups(ag))
     g2 = [ag]
     g2.extend(group_list)
@@ -29,7 +29,6 @@ def flatten_author_groups(soup):
         else:
             group_list.append(g)
     return group_list
-
 
 
 class ElsevierParser(BaseBeautifulSoupParser):
@@ -300,7 +299,7 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 affs_xref["ALLAUTH"] = value_list
             else:
                 affs_xref[label] = value
-            
+
         authors_raw = author_group.find_all("ce:author")
         for author in authors_raw:
             author_tmp = {}
@@ -319,7 +318,7 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 author_tmp["email"] = author.find("ce:e-address").get_text()
             affs = []
             if affs_xref.get("ALLAUTH"):
-                affs.append(affils_xref.get("ALLAUTH"))
+                affs.extend(affs_xref.get("ALLAUTH"))
             if author.find("ce:cross-ref") and author.find("ce:cross-ref").find("sup"):
                 for i in author.find("ce:cross-ref").find_all("sup"):
                     aff_label = i.get_text()

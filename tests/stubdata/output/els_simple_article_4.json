@@ -1,6 +1,11 @@
 {
   "authors": [
     {
+      "affiliation": [
+        {
+          "affPubRaw": "Institute for Pulsed Power and Microwave Technology, Karlsruhe Institute of Technology, Germany"
+        }
+      ],
       "attrib": {
         "email": "christian.gusbeth@kit.edu",
         "orcid": "0000-0002-1457-5994"
