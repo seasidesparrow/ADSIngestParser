@@ -118,6 +118,23 @@ class ElsevierParser(BaseBeautifulSoupParser):
             elif regex_yyyy.match(pubdate):
                 year = pubdate
                 self.base_metadata["pubdate_print"] = year + "-00-00"
+            else:
+                pubdate_parts = pubdate.split()
+                year = None
+                month = None
+                day = None
+                if len(pubdate_parts) == 2:
+                    for pp in pubdate_parts:
+                        if regex_yyyy.match(pp):
+                            year = pp
+                        elif utils.MONTH_TO_NUMBER.get(pp[0:3].lower(), None):
+                            month = utils.MONTH_TO_NUMBER.get(pp[0:3].lower(), None)
+                if year:
+                    if not month:
+                        month = "00"
+                    if not day:
+                        day = "00"
+                    self.base_metadata["pubdate_print"] = "%s-%s-%s" % (year, month, day)
 
     def _parse_edhistory(self):
         # key: xml tag, value: self.base_metadata key
