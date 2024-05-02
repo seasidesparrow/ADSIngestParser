@@ -1,6 +1,11 @@
 {
   "authors": [
     {
+      "affiliation": [
+        {
+          "affPubRaw": "Mechanical Engineering, University of Belgrade, 27 Marto 80, 11000 Belgrade, Serbia and Montenegro"
+        }
+      ],
       "attrib": {
         "email": "todorob@eunet.yu"
       },

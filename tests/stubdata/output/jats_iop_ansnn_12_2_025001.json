@@ -1,160 +1,183 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "This study presents a high porous nanocomposite composed of reduced graphene oxide and NiMoS<sub>4</sub> (RGO/NiMoS<sub>4</sub>) for supercapacitor electrode materials. The different morphologies of NiMoS<sub>4</sub> growth on RGO sheets were obtained via a facile one-step microwave-assisted method. The obtained material comprised NiMoS<sub>4</sub> nanoneedles of several nanometers in diameter, which are well attached to the surface of RGO nanosheets. The RGO/NiMoS<sub>4</sub> nanocomposite had a mesoporous structure, high specific surface area, and high electric conductivity. These excellent characteristics yield a fast electron and ion transport, and a large number of electroactive sites. The RGO/NiMoS<sub>4</sub> composite delivered a specific capacitance of 1273 F g<sup>1</sup> at a current density of 1.0 A g<sup>1</sup>, high-rate capability of 71.3 retention from 1 to 6.5 A g<sup>1</sup>. Besides, an asymmetric supercapacitor device had a capacitance of 80 F g<sup>1</sup> at a current density of 1.0 A g<sup>1</sup> and an energy density of 82.5 Wh kg<sup>1</sup> at a power density of 1000 W kg<sup>1</sup> with an operating voltage of 1.6 V. Thus, the current RGO/NiMoS<sub>4</sub> nanocomposite has a great potential for energy storage application."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": "ansnabfa8eaf1",
+          "affPubRaw": "Faculty of Food Technology, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam"
+        },
+        {
+          "affPubID": "ansnabfa8eaf2",
+          "affPubRaw": "Center for Experiments and Practices, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam"
+        }
+      ],
+      "attrib": {
+        "email": "hoadhnt@gmail.com"
+      },
+      "name": {
+        "given_name": "Nguyen",
+        "surname": "Van Hoa"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ansnabfa8eaf1",
+          "affPubRaw": "Faculty of Food Technology, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam"
+        }
+      ],
+      "name": {
+        "given_name": "Pham Anh",
+        "surname": "Dat"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ansnabfa8eaf2",
+          "affPubRaw": "Center for Experiments and Practices, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam"
+        }
+      ],
+      "name": {
+        "given_name": "Tran",
+        "surname": "Ngoc Le"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ansnabfa8eaf3",
+          "affPubRaw": "Institute of Biotechnology and Environment, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam"
+        }
+      ],
+      "name": {
+        "given_name": "Nguyen Cong",
+        "surname": "Minh"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ansnabfa8eaf1",
+          "affPubRaw": "Faculty of Food Technology, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam"
+        }
+      ],
+      "name": {
+        "given_name": "Nguyen",
+        "surname": "Van Tang"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ansnabfa8eaf2",
+          "affPubRaw": "Center for Experiments and Practices, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam"
+        }
+      ],
+      "name": {
+        "given_name": "Dao",
+        "surname": "Thi Nga"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ansnabfa8eaf1",
+          "affPubRaw": "Faculty of Food Technology, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam"
+        }
+      ],
+      "name": {
+        "given_name": "Tran Quang",
+        "surname": "Ngoc"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "2021 Vietnam Academy of Science & Technology",
+    "status": true
   },
   "editorialHistory": {
+    "acceptedDate": "2021-03-17",
     "receivedDates": [
       "2021-01-21"
-    ],
-    "acceptedDate": "2021-03-17"
-  },
-  "pubDate": {
-    "electrDate": "2021-04-30",
-    "printDate": "2021-06-00"
-  },
-  "publication": {
-    "pubName": "Advances in Natural Sciences: Nanoscience and Nanotechnology",
-    "publisher": "IOP Publishing",
-    "issueNum": "2",
-    "volumeNum": "12",
-    "pubYear": "2021",
-    "ISSN": [
-      {
-        "pubtype": "ppub",
-        "issnString": "2043-6262"
-      },
-      {
-        "pubtype": "epub",
-        "issnString": "2043-6262"
-      }
     ]
+  },
+  "keywords": [
+    {
+      "keyString": "supercapacitor",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "graphene",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "molybdate sulfide",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "Nickel sulfide",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "Classification numbers: 2.00, 2.04, 4.00, 5.11, 515",
+      "keySystem": "misc"
+    }
+  ],
+  "pagination": {
+    "electronicID": "025001",
+    "pageCount": "8"
   },
   "persistentIDs": [
     {
       "DOI": "10.1088/2043-6262/abfa8e"
     }
   ],
+  "pubDate": {
+    "electrDate": "2021-04-30",
+    "printDate": "2021-06-00"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "2043-6262",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "2043-6262",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "2",
+    "pubName": "Advances in Natural Sciences: Nanoscience and Nanotechnology",
+    "pubYear": "2021",
+    "publisher": "IOP Publishing",
+    "volumeNum": "12"
+  },
   "publisherIDs": [
     {
-      "attribute": "publisher-id",
-      "Identifier": "ansnabfa8e"
+      "Identifier": "ansnabfa8e",
+      "attribute": "publisher-id"
     },
     {
-      "attribute": "manuscript",
-      "Identifier": "abfa8e"
+      "Identifier": "abfa8e",
+      "attribute": "manuscript"
     },
     {
-      "attribute": "other",
-      "Identifier": "ANSN-1225005"
+      "Identifier": "ANSN-1225005",
+      "attribute": "other"
     }
   ],
-  "pagination": {
-    "pageCount": "8",
-    "electronicID": "025001"
-  },
-  "authors": [
-    {
-      "name": {
-        "surname": "Van Hoa",
-        "given_name": "Nguyen"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Faculty of Food Technology, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam",
-          "affPubID": "ansnabfa8eaf1"
-        },
-        {
-          "affPubRaw": "Center for Experiments and Practices, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam",
-          "affPubID": "ansnabfa8eaf2"
-        }
-      ],
-      "attrib": {
-        "email": "hoadhnt@gmail.com"
-      }
-    },
-    {
-      "name": {
-        "surname": "Dat",
-        "given_name": "Pham Anh"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Faculty of Food Technology, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam",
-          "affPubID": "ansnabfa8eaf1"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Ngoc Le",
-        "given_name": "Tran"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Center for Experiments and Practices, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam",
-          "affPubID": "ansnabfa8eaf2"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Minh",
-        "given_name": "Nguyen Cong"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Institute of Biotechnology and Environment, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam",
-          "affPubID": "ansnabfa8eaf3"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Van Tang",
-        "given_name": "Nguyen"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Faculty of Food Technology, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam",
-          "affPubID": "ansnabfa8eaf1"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Thi Nga",
-        "given_name": "Dao"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Center for Experiments and Practices, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam",
-          "affPubID": "ansnabfa8eaf2"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Ngoc",
-        "given_name": "Tran Quang"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Faculty of Food Technology, Nha Trang University, 2 Nguyen Dinh Chieu, Nha Trang, Vietnam",
-          "affPubID": "ansnabfa8eaf1"
-        }
-      ]
-    }
-  ],
-  "title": {
-    "textEnglish": "Highly porous nanocomposite of NiMoS<sub>4</sub> nanosheets and reduced graphene oxide for energy storage application"
-  },
-  "abstract": {
-    "textEnglish": "This study presents a high porous nanocomposite composed of reduced graphene oxide and NiMoS<sub>4</sub> (RGO/NiMoS<sub>4</sub>) for supercapacitor electrode materials. The different morphologies of NiMoS<sub>4</sub> growth on RGO sheets were obtained via a facile one-step microwave-assisted method. The obtained material comprised NiMoS<sub>4</sub> nanoneedles of several nanometers in diameter, which are well attached to the surface of RGO nanosheets. The RGO/NiMoS<sub>4</sub> nanocomposite had a mesoporous structure, high specific surface area, and high electric conductivity. These excellent characteristics yield a fast electron and ion transport, and a large number of electroactive sites. The RGO/NiMoS<sub>4</sub> composite delivered a specific capacitance of 1273 F g<sup>1</sup> at a current density of 1.0 A g<sup>1</sup>, high-rate capability of 71.3 retention from 1 to 6.5 A g<sup>1</sup>. Besides, an asymmetric supercapacitor device had a capacitance of 80 F g<sup>1</sup> at a current density of 1.0 A g<sup>1</sup> and an energy density of 82.5 Wh kg<sup>1</sup> at a power density of 1000 W kg<sup>1</sup> with an operating voltage of 1.6 V. Thus, the current RGO/NiMoS<sub>4</sub> nanocomposite has a great potential for energy storage application."
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<ref id=\"ansnabfa8ebib1\"> <label>1</label> <element-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Kumar</surname> <given-names>S</given-names> </name> <name> <surname>Saeed</surname> <given-names>G</given-names> </name> <name> <surname>Zhu</surname> <given-names>L</given-names> </name> <name> <surname>Hui</surname> <given-names>K N</given-names> </name> <name> <surname>Kim</surname> <given-names>N H</given-names> </name> <name> <surname>Lee</surname> <given-names>J H</given-names> </name> </person-group> <year>2021</year> <source>Chem. Eng. J.</source> <volume>403</volume> <elocation-id content-type=\"artnum\">115352</elocation-id> <pub-id pub-id-type=\"doi\">10.1016/j.cej.2020.126352</pub-id> </element-citation> </ref>",
@@ -183,30 +206,7 @@
     "<ref id=\"ansnabfa8ebib24\"> <label>24</label> <element-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Han</surname> <given-names>X</given-names> </name> <name> <surname>Tao</surname> <given-names>K</given-names> </name> <name> <surname>Wang</surname> <given-names>D</given-names> </name> <name> <surname>Han</surname> <given-names>L</given-names> </name> </person-group> <year>2018</year> <source>Nanoscale</source> <volume>10</volume> <fpage>2735</fpage> <pub-id pub-id-type=\"doi\">10.1039/C7NR07931A</pub-id> </element-citation> </ref>",
     "<ref id=\"ansnabfa8ebib25\"> <label>25</label> <element-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Hoa</surname> <given-names>N V</given-names> </name> <name> <surname>Dat</surname> <given-names>P A</given-names> </name> <name> <surname>Nghia</surname> <given-names>N H</given-names> </name> </person-group> <year>2021</year> <source>J. Mater. Sci.</source> <volume>56</volume> <fpage>5132</fpage> <pub-id pub-id-type=\"doi\">10.1007/s10853-020-05591-6</pub-id> </element-citation> </ref>"
   ],
-  "keywords": [
-    {
-      "keyString": "supercapacitor",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "graphene",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "molybdate sulfide",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "Nickel sulfide",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "Classification numbers: 2.00, 2.04, 4.00, 5.11, 515",
-      "keySystem": "misc"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "2021 Vietnam Academy of Science & Technology"
+  "title": {
+    "textEnglish": "Highly porous nanocomposite of NiMoS<sub>4</sub> nanosheets and reduced graphene oxide for energy storage application"
   }
 }

@@ -1,6 +1,11 @@
 {
   "authors": [
     {
+      "affiliation": [
+        {
+          "affPubRaw": "Cognitive Electrophysiology Lab, Department of Psychology, University of Milano-Bicocca, Piazza dell'AteneoNuovo, 1, Milan 20162, Italy"
+        }
+      ],
       "attrib": {
         "email": "mado.proverbio@unimib.it",
         "orcid": "0000-0002-5138-1523"

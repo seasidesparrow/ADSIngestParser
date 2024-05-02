@@ -7,15 +7,6 @@ from adsingestschema import ads_schema_validator
 
 from adsingestp.parsers import elsevier
 
-# import logging
-# proj_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, "adsingestp"))
-# logging.basicConfig(
-#     format="%(levelname)s %(asctime)s %(message)s",
-#     filename=os.path.join(proj_dir, "logs", "parser.log"),
-#     level=logging.INFO,
-#     force=True,
-# )
-
 TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
@@ -24,6 +15,7 @@ class TestElsevier(unittest.TestCase):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
+        self.maxDiff = None
 
     def test_elsevier(self):
         filenames = [
@@ -42,6 +34,8 @@ class TestElsevier(unittest.TestCase):
             "els_detag_example_1",
             "els_detag_example_2",
             "els_list",
+            "els_phlb_compound_affil",
+            "els_odd_cover_date",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -72,6 +66,4 @@ class TestElsevier(unittest.TestCase):
             self.assertTrue(abs(time_difference) < datetime.timedelta(seconds=10))
             parsed["recordData"]["parsedTime"] = ""
 
-            print(test_infile)
-            self.maxDiff = None
             self.assertEqual(parsed, output_data)

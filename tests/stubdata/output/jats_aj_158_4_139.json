@@ -1,334 +1,367 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "We obtained the first maps of Jupiter at 13 mm wavelength with the Atacama Large Millimeter/Submillimeter Array (ALMA) on 2017 January 35, just days after an energetic eruption at 165S jovigraphic latitude had been reported by the amateur community, and about two to three months after the detection of similarly energetic eruptions in the northern hemisphere, at 222230N. Our observations, probing below the ammonia cloud deck, show that the erupting plumes in the South Equatorial Belt bring up ammonia gas from the deep atmosphere. While models of plume eruptions that are triggered at the water condensation level explain data taken at uvvisible and mid-infrared wavelengths, our ALMA observations provide a crucial, hitherto missing, link in the moist convection theory by showing that ammonia gas from the deep atmosphere is indeed brought up in these plumes. Contemporaneous Hubble Space Telescope data show that the plumes reach altitudes as high as the tropopause. We suggest that the plumes at 222230N also rise up well above the ammonia cloud deck and that descending air may dry the neighboring belts even more than in quiescent times, which would explain our observations in the north."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af1",
+          "affPubRaw": "Department of Astronomy, 501 Campbell Hall, University of California, Berkeley, CA 94720, USA"
+        }
+      ],
+      "attrib": {
+        "email": "imke@berkeley.edu",
+        "orcid": "0000-0002-4278-3168"
+      },
+      "name": {
+        "given_name": "Imke",
+        "surname": "de Pater"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af2",
+          "affPubRaw": "School of Physics, University of Melbourne, Victoria, 3010, Australia"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-9209-7716"
+      },
+      "name": {
+        "given_name": "R. J.",
+        "surname": "Sault"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af3",
+          "affPubRaw": "Department of Earth and Planetary Sciences, McCone Hall, University of California, Berkeley, CA 94720, USA"
+        }
+      ],
+      "name": {
+        "given_name": "Chris",
+        "surname": "Moeckel"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af4",
+          "affPubRaw": "SOFIA/USRA, NASA Ames Building N232, Moffett Field, CA 94035, USA"
+        }
+      ],
+      "name": {
+        "given_name": "Arielle",
+        "surname": "Moullet"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af1",
+          "affPubRaw": "Department of Astronomy, 501 Campbell Hall, University of California, Berkeley, CA 94720, USA"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-2804-5086"
+      },
+      "name": {
+        "given_name": "Michael H.",
+        "surname": "Wong"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af1",
+          "affPubRaw": "Department of Astronomy, 501 Campbell Hall, University of California, Berkeley, CA 94720, USA"
+        }
+      ],
+      "name": {
+        "given_name": "Charles",
+        "surname": "Goullaud"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af1",
+          "affPubRaw": "Department of Astronomy, 501 Campbell Hall, University of California, Berkeley, CA 94720, USA"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-3197-2294"
+      },
+      "name": {
+        "given_name": "David",
+        "surname": "DeBoer"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af5",
+          "affPubRaw": "National Radio Astronomy Observatory, Socorro, NM 87801, USA"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-5344-820X"
+      },
+      "name": {
+        "given_name": "Bryan J.",
+        "surname": "Butler"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af6",
+          "affPubRaw": "Goddard Space Flight Center, 8800 Greenbelt Road, Greenbelt MD 20771, USA"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-9679-4153"
+      },
+      "name": {
+        "given_name": "Gordon",
+        "surname": "Bjoraker"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af7",
+          "affPubRaw": "Dept. of Physics & Astronomy, Clemson University, Clemson, SC 29634-0978, USA"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-1869-0938"
+      },
+      "name": {
+        "given_name": "Mt",
+        "surname": "dmkovics"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af6",
+          "affPubRaw": "Goddard Space Flight Center, 8800 Greenbelt Road, Greenbelt MD 20771, USA"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-3047-615X"
+      },
+      "name": {
+        "given_name": "Richard",
+        "surname": "Cosentino"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af8",
+          "affPubRaw": "Department of Physics and Astronomy, University of Leicester, University Road, Leicester, LE1 7RH, UK"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-4241-0302"
+      },
+      "name": {
+        "given_name": "Padraig T.",
+        "surname": "Donnelly"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af8",
+          "affPubRaw": "Department of Physics and Astronomy, University of Leicester, University Road, Leicester, LE1 7RH, UK"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-5834-9588"
+      },
+      "name": {
+        "given_name": "Leigh N.",
+        "surname": "Fletcher"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af9",
+          "affPubRaw": "Planetary Plasma and Atmospheric Research Center (PPARC), Tohoku University, Japan"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-8160-3553"
+      },
+      "name": {
+        "given_name": "Yasumasa",
+        "surname": "Kasaba"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af10",
+          "affPubRaw": "Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA 91109, USA"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-7871-2823"
+      },
+      "name": {
+        "given_name": "Glenn S.",
+        "surname": "Orton"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af11",
+          "affPubRaw": "British Astronomical Association, Burlington House, Piccadilly, London W1J 0DU, UK"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-4239-5907"
+      },
+      "name": {
+        "given_name": "John H.",
+        "surname": "Rogers"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af10",
+          "affPubRaw": "Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA 91109, USA"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-5374-4028"
+      },
+      "name": {
+        "given_name": "James A.",
+        "surname": "Sinclair"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "ajab3643af12",
+          "affPubRaw": "Joint ALMA Observatory/ESO, Avenida Alonso de Cordova 3107, Vitacura, Santiago, Chile"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-4314-4947"
+      },
+      "name": {
+        "given_name": "Eric",
+        "surname": "Villard"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "2019. The American Astronomical Society. All rights reserved.",
+    "status": true
   },
   "editorialHistory": {
+    "acceptedDate": "2019-07-25",
     "receivedDates": [
       "2019-04-06"
     ],
     "revisedDates": [
       "2019-07-23"
-    ],
-    "acceptedDate": "2019-07-25"
-  },
-  "pubDate": {
-    "electrDate": "2019-09-09",
-    "printDate": "2019-10-00"
-  },
-  "publication": {
-    "pubName": "The Astronomical Journal",
-    "publisher": "The American Astronomical Society",
-    "issueNum": "4",
-    "volumeNum": "158",
-    "pubYear": "2019",
-    "ISSN": [
-      {
-        "pubtype": "ppub",
-        "issnString": "0004-6256"
-      },
-      {
-        "pubtype": "epub",
-        "issnString": "1538-3881"
-      }
     ]
+  },
+  "funding": [
+    {
+      "agencyname": "NASA",
+      "awardnumber": "80NSSC18K1001"
+    },
+    {
+      "agencyname": "NRAO",
+      "awardnumber": "NRAO Student Observing Support (SOS) Program"
+    }
+  ],
+  "keywords": [
+    {
+      "keyString": "methods: observational",
+      "keySystem": "AAS"
+    },
+    {
+      "keyString": "planets and satellites: atmospheres",
+      "keySystem": "AAS"
+    },
+    {
+      "keyString": "radiative transfer",
+      "keySystem": "AAS"
+    },
+    {
+      "keyString": "radio continuum: planetary systems",
+      "keySystem": "AAS"
+    },
+    {
+      "keyString": "techniques: interferometric",
+      "keySystem": "AAS"
+    }
+  ],
+  "pagination": {
+    "electronicID": "139",
+    "pageCount": "17"
   },
   "persistentIDs": [
     {
       "DOI": "10.3847/1538-3881/ab3643"
     }
   ],
+  "pubDate": {
+    "electrDate": "2019-09-09",
+    "printDate": "2019-10-00"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0004-6256",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "1538-3881",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "4",
+    "pubName": "The Astronomical Journal",
+    "pubYear": "2019",
+    "publisher": "The American Astronomical Society",
+    "volumeNum": "158"
+  },
   "publisherIDs": [
     {
-      "attribute": "publisher-id",
-      "Identifier": "ajab3643"
+      "Identifier": "ajab3643",
+      "attribute": "publisher-id"
     },
     {
-      "attribute": "manuscript",
-      "Identifier": "ab3643"
+      "Identifier": "ab3643",
+      "attribute": "manuscript"
     },
     {
-      "attribute": "other",
-      "Identifier": "AAS17124"
+      "Identifier": "AAS17124",
+      "attribute": "other"
     }
   ],
-  "pagination": {
-    "pageCount": "17",
-    "electronicID": "139"
-  },
-  "authors": [
-    {
-      "name": {
-        "surname": "de Pater",
-        "given_name": "Imke"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Astronomy, 501 Campbell Hall, University of California, Berkeley, CA 94720, USA",
-          "affPubID": "ajab3643af1"
-        }
-      ],
-      "attrib": {
-        "email": "imke@berkeley.edu",
-        "orcid": "0000-0002-4278-3168"
-      }
-    },
-    {
-      "name": {
-        "surname": "Sault",
-        "given_name": "R. J."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "School of Physics, University of Melbourne, Victoria, 3010, Australia",
-          "affPubID": "ajab3643af2"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-9209-7716"
-      }
-    },
-    {
-      "name": {
-        "surname": "Moeckel",
-        "given_name": "Chris"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Earth and Planetary Sciences, McCone Hall, University of California, Berkeley, CA 94720, USA",
-          "affPubID": "ajab3643af3"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Moullet",
-        "given_name": "Arielle"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "SOFIA/USRA, NASA Ames Building N232, Moffett Field, CA 94035, USA",
-          "affPubID": "ajab3643af4"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Wong",
-        "given_name": "Michael H."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Astronomy, 501 Campbell Hall, University of California, Berkeley, CA 94720, USA",
-          "affPubID": "ajab3643af1"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-2804-5086"
-      }
-    },
-    {
-      "name": {
-        "surname": "Goullaud",
-        "given_name": "Charles"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Astronomy, 501 Campbell Hall, University of California, Berkeley, CA 94720, USA",
-          "affPubID": "ajab3643af1"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "DeBoer",
-        "given_name": "David"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Astronomy, 501 Campbell Hall, University of California, Berkeley, CA 94720, USA",
-          "affPubID": "ajab3643af1"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-3197-2294"
-      }
-    },
-    {
-      "name": {
-        "surname": "Butler",
-        "given_name": "Bryan J."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "National Radio Astronomy Observatory, Socorro, NM 87801, USA",
-          "affPubID": "ajab3643af5"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-5344-820X"
-      }
-    },
-    {
-      "name": {
-        "surname": "Bjoraker",
-        "given_name": "Gordon"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Goddard Space Flight Center, 8800 Greenbelt Road, Greenbelt MD 20771, USA",
-          "affPubID": "ajab3643af6"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-9679-4153"
-      }
-    },
-    {
-      "name": {
-        "surname": "dmkovics",
-        "given_name": "Mt"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Dept. of Physics & Astronomy, Clemson University, Clemson, SC 29634-0978, USA",
-          "affPubID": "ajab3643af7"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-1869-0938"
-      }
-    },
-    {
-      "name": {
-        "surname": "Cosentino",
-        "given_name": "Richard"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Goddard Space Flight Center, 8800 Greenbelt Road, Greenbelt MD 20771, USA",
-          "affPubID": "ajab3643af6"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-3047-615X"
-      }
-    },
-    {
-      "name": {
-        "surname": "Donnelly",
-        "given_name": "Padraig T."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Physics and Astronomy, University of Leicester, University Road, Leicester, LE1 7RH, UK",
-          "affPubID": "ajab3643af8"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-4241-0302"
-      }
-    },
-    {
-      "name": {
-        "surname": "Fletcher",
-        "given_name": "Leigh N."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Physics and Astronomy, University of Leicester, University Road, Leicester, LE1 7RH, UK",
-          "affPubID": "ajab3643af8"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-5834-9588"
-      }
-    },
-    {
-      "name": {
-        "surname": "Kasaba",
-        "given_name": "Yasumasa"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Planetary Plasma and Atmospheric Research Center (PPARC), Tohoku University, Japan",
-          "affPubID": "ajab3643af9"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-8160-3553"
-      }
-    },
-    {
-      "name": {
-        "surname": "Orton",
-        "given_name": "Glenn S."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA 91109, USA",
-          "affPubID": "ajab3643af10"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-7871-2823"
-      }
-    },
-    {
-      "name": {
-        "surname": "Rogers",
-        "given_name": "John H."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "British Astronomical Association, Burlington House, Piccadilly, London W1J 0DU, UK",
-          "affPubID": "ajab3643af11"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-4239-5907"
-      }
-    },
-    {
-      "name": {
-        "surname": "Sinclair",
-        "given_name": "James A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA 91109, USA",
-          "affPubID": "ajab3643af10"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-5374-4028"
-      }
-    },
-    {
-      "name": {
-        "surname": "Villard",
-        "given_name": "Eric"
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Joint ALMA Observatory/ESO, Avenida Alonso de Cordova 3107, Vitacura, Santiago, Chile",
-          "affPubID": "ajab3643af12"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-4314-4947"
-      }
-    }
-  ],
-  "title": {
-    "textEnglish": "First ALMA Millimeter-wavelength Maps of Jupiter, with a Multiwavelength Study of Convection"
-  },
-  "abstract": {
-    "textEnglish": "We obtained the first maps of Jupiter at 13 mm wavelength with the Atacama Large Millimeter/Submillimeter Array (ALMA) on 2017 January 35, just days after an energetic eruption at 165S jovigraphic latitude had been reported by the amateur community, and about two to three months after the detection of similarly energetic eruptions in the northern hemisphere, at 222230N. Our observations, probing below the ammonia cloud deck, show that the erupting plumes in the South Equatorial Belt bring up ammonia gas from the deep atmosphere. While models of plume eruptions that are triggered at the water condensation level explain data taken at uvvisible and mid-infrared wavelengths, our ALMA observations provide a crucial, hitherto missing, link in the moist convection theory by showing that ammonia gas from the deep atmosphere is indeed brought up in these plumes. Contemporaneous Hubble Space Telescope data show that the plumes reach altitudes as high as the tropopause. We suggest that the plumes at 222230N also rise up well above the ammonia cloud deck and that descending air may dry the neighboring belts even more than in quiescent times, which would explain our observations in the north."
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<ref id=\"ajab3643bib1\"> <element-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>dmkovics</surname> <given-names>M.</given-names> </name> <name> <surname>Mitchell</surname> <given-names>J. L.</given-names> </name> <name> <surname>Hayes</surname> <given-names>A. G.</given-names> </name> <etal/> </person-group> <year>2016</year> <source>Icar</source> <volume>270</volume> <fpage>376</fpage> <ext-link ext-link-type=\"bibcode\">2016Icar..270..376A</ext-link> <pub-id pub-id-type=\"doi\">10.1016/j.icarus.2015.05.023</pub-id> </element-citation> </ref>",
@@ -388,40 +421,7 @@
     "<ref id=\"ajab3643bib55\"> <element-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Wong</surname> <given-names>M. H.</given-names> </name> <name> <surname>Atreya</surname> <given-names>S. K.</given-names> </name> <name> <surname>Kuhn</surname> <given-names>W. R.</given-names> </name> <name> <surname>Romani</surname> <given-names>P. N.</given-names> </name> <name> <surname>Mihalka</surname> <given-names>K. M.</given-names> </name> </person-group> <year>2015</year> <source>Icar</source> <volume>245</volume> <fpage>273</fpage> <ext-link ext-link-type=\"bibcode\">2015Icar..245..273W</ext-link> <pub-id pub-id-type=\"doi\">10.1016/j.icarus.2014.09.042</pub-id> </element-citation> </ref>",
     "<ref id=\"ajab3643bib56\"> <element-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <name> <surname>Wong</surname> <given-names>M. H.</given-names> </name> <name> <surname>Mahaffy</surname> <given-names>P. R.</given-names> </name> <name> <surname>Atreya</surname> <given-names>S. K.</given-names> </name> <name> <surname>Niemann</surname> <given-names>H. B.</given-names> </name> <name> <surname>Owen</surname> <given-names>T. C.</given-names> </name> </person-group> <year>2004</year> <source>Icar</source> <volume>171</volume> <fpage>153</fpage> <ext-link ext-link-type=\"bibcode\">2004Icar..171..153W</ext-link> <pub-id pub-id-type=\"doi\">10.1016/j.icarus.2004.04.010</pub-id> </element-citation> </ref>"
   ],
-  "keywords": [
-    {
-      "keyString": "methods: observational",
-      "keySystem": "AAS"
-    },
-    {
-      "keyString": "planets and satellites: atmospheres",
-      "keySystem": "AAS"
-    },
-    {
-      "keyString": "radiative transfer",
-      "keySystem": "AAS"
-    },
-    {
-      "keyString": "radio continuum: planetary systems",
-      "keySystem": "AAS"
-    },
-    {
-      "keyString": "techniques: interferometric",
-      "keySystem": "AAS"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "2019. The American Astronomical Society. All rights reserved."
-  },
-  "funding": [
-    {
-      "agencyname": "NASA",
-      "awardnumber": "80NSSC18K1001"
-    },
-    {
-      "agencyname": "NRAO",
-      "awardnumber": "NRAO Student Observing Support (SOS) Program"
-    }
-  ]
+  "title": {
+    "textEnglish": "First ALMA Millimeter-wavelength Maps of Jupiter, with a Multiwavelength Study of Convection"
+  }
 }

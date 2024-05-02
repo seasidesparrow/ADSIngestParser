@@ -1,93 +1,117 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "OtherXML",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "A novel collisionless shock jump condition is suggested by modeling the entropy production at the shock transition region. We also calculate downstream developments of the atomic ionization balance and the ion temperature relaxation in supernova remnants (SNRs). The injection process and subsequent acceleration of cosmic rays (CRs) in the SNR shocks are closely related to the formation process of the collisionless shocks. The formation of the shock is caused by wave\u2013particle interactions. Since the wave\u2013particle interactions result in energy exchanges between electromagnetic fields and charged particles, the randomization of particles associated with the shock transition may occur at a rate given by the scalar product of the electric field and current. We find that order-of-magnitude estimates of the randomization with reasonable strength of the electromagnetic fields in the SNR constrain the amount of CR nuclei and the ion temperatures. The constrained amount of CR nuclei can be sufficient to explain the Galactic CRs. The ion temperature becomes significantly lower than that in the case without CRs. To distinguish the case without CRs, we perform synthetic observations of atomic line emissions from the downstream region of the SNR RCW 86. Future observations by XRISM and Athena can distinguish whether the SNR shock accelerates the CRs or not from the ion temperatures."
   },
-  "pubDate": {
-    "electrDate": "2022-07-19",
-    "printDate": "2022-10-03"
-  },
-  "publication": {
-    "pubName": "Publications of the Astronomical Society of Japan",
-    "issueNum": "5",
-    "volumeNum": "74",
-    "pubYear": "2022",
-    "ISSN": [
-      {
-        "pubtype": "print",
-        "issnString": "0004-6264"
-      },
-      {
-        "pubtype": "electronic",
-        "issnString": "2053-051X"
-      }
-    ]
-  },
-  "persistentIDs": [
+  "authors": [
     {
-      "DOI": "10.1093/pasj/psac053"
+      "attrib": {
+        "orcid": "0000-0003-3383-2279"
+      },
+      "name": {
+        "given_name": "Jiro",
+        "surname": "Shimoda"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Yutaka",
+        "surname": "Ohira"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Aya",
+        "surname": "Bamba"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Yukikatsu",
+        "surname": "Terada"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Ryo",
+        "surname": "Yamazaki"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Tsuyoshi",
+        "surname": "Inoue"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Shuta J",
+        "surname": "Tanaka"
+      }
+    }
+  ],
+  "esources": [
+    {
+      "location": "https://academic.oup.com/pasj/article/74/5/1022/6646725",
+      "source": "pub_html"
+    }
+  ],
+  "funding": [
+    {
+      "agencyid": {
+        "idvalue": "http://dx.doi.org/10.13039/501100001691"
+      },
+      "agencyname": "JSPS",
+      "awardnumber": "20J01086"
+    },
+    {
+      "agencyid": {
+        "idvalue": "http://dx.doi.org/10.13039/501100001700"
+      },
+      "agencyname": "MEXT"
+    },
+    {
+      "agencyid": {
+        "idvalue": "http://dx.doi.org/10.13039/501100004968"
+      },
+      "agencyname": "Aoyama Gakuin University Research Institute"
     }
   ],
   "pagination": {
     "firstPage": "1022",
     "lastPage": "1040"
   },
-  "authors": [
+  "persistentIDs": [
     {
-      "name": {
-        "surname": "Shimoda",
-        "given_name": "Jiro"
-      },
-      "attrib": {
-        "orcid": "0000-0003-3383-2279"
-      }
-    },
-    {
-      "name": {
-        "surname": "Ohira",
-        "given_name": "Yutaka"
-      }
-    },
-    {
-      "name": {
-        "surname": "Bamba",
-        "given_name": "Aya"
-      }
-    },
-    {
-      "name": {
-        "surname": "Terada",
-        "given_name": "Yukikatsu"
-      }
-    },
-    {
-      "name": {
-        "surname": "Yamazaki",
-        "given_name": "Ryo"
-      }
-    },
-    {
-      "name": {
-        "surname": "Inoue",
-        "given_name": "Tsuyoshi"
-      }
-    },
-    {
-      "name": {
-        "surname": "Tanaka",
-        "given_name": "Shuta J"
-      }
+      "DOI": "10.1093/pasj/psac053"
     }
   ],
-  "title": {
-    "textEnglish": "X-ray line diagnostics of ion temperature at cosmic ray accelerating collisionless shocks"
+  "pubDate": {
+    "electrDate": "2022-07-19",
+    "printDate": "2022-10-03"
   },
-  "abstract": {
-    "textEnglish": "A novel collisionless shock jump condition is suggested by modeling the entropy production at the shock transition region. We also calculate downstream developments of the atomic ionization balance and the ion temperature relaxation in supernova remnants (SNRs). The injection process and subsequent acceleration of cosmic rays (CRs) in the SNR shocks are closely related to the formation process of the collisionless shocks. The formation of the shock is caused by wave\u2013particle interactions. Since the wave\u2013particle interactions result in energy exchanges between electromagnetic fields and charged particles, the randomization of particles associated with the shock transition may occur at a rate given by the scalar product of the electric field and current. We find that order-of-magnitude estimates of the randomization with reasonable strength of the electromagnetic fields in the SNR constrain the amount of CR nuclei and the ion temperatures. The constrained amount of CR nuclei can be sufficient to explain the Galactic CRs. The ion temperature becomes significantly lower than that in the case without CRs. To distinguish the case without CRs, we perform synthetic observations of atomic line emissions from the downstream region of the SNR RCW 86. Future observations by XRISM and Athena can distinguish whether the SNR shock accelerates the CRs or not from the ion temperatures."
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0004-6264",
+        "pubtype": "print"
+      },
+      {
+        "issnString": "2053-051X",
+        "pubtype": "electronic"
+      }
+    ],
+    "issueNum": "5",
+    "pubName": "Publications of the Astronomical Society of Japan",
+    "pubYear": "2022",
+    "volumeNum": "74"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<citation key=\"2022101014261863600_bib1\"> <journal_title>ApJ</journal_title> <author>Abdo</author> <volume>736</volume> <first_page>131</first_page> <cYear>2011</cYear> <doi provider=\"crossref\">10.1088/0004-637X/736/2/131</doi> </citation>",
@@ -183,31 +207,7 @@
     "<citation key=\"2022101014261863600_bib90\"> <journal_title>A&A</journal_title> <author>Zatsarinny</author> <volume>412</volume> <first_page>587</first_page> <cYear>2003</cYear> <doi provider=\"crossref\">10.1051/0004-6361:20031462</doi> </citation>",
     "<citation key=\"2022101014261863600_bib91\"> <journal_title>A&A</journal_title> <author>Zatsarinny</author> <volume>417</volume> <first_page>1173</first_page> <cYear>2004</cYear> <doi provider=\"crossref\">10.1051/0004-6361:20034174</doi> </citation>"
   ],
-  "esources": [
-    {
-      "source": "pub_html",
-      "location": "https://academic.oup.com/pasj/article/74/5/1022/6646725"
-    }
-  ],
-  "funding": [
-    {
-      "agencyname": "JSPS",
-      "agencyid": {
-        "idvalue": "http://dx.doi.org/10.13039/501100001691"
-      },
-      "awardnumber": "20J01086"
-    },
-    {
-      "agencyname": "MEXT",
-      "agencyid": {
-        "idvalue": "http://dx.doi.org/10.13039/501100001700"
-      }
-    },
-    {
-      "agencyname": "Aoyama Gakuin University Research Institute",
-      "agencyid": {
-        "idvalue": "http://dx.doi.org/10.13039/501100004968"
-      }
-    }
-  ]
+  "title": {
+    "textEnglish": "X-ray line diagnostics of ion temperature at cosmic ray accelerating collisionless shocks"
+  }
 }

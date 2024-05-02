@@ -11,6 +11,26 @@ from adsingestp.parsers.base import BaseBeautifulSoupParser
 logger = logging.getLogger(__name__)
 
 
+def flatten_author_groups(soup):
+    # takes a beautiful soup object as input
+    # recursively extracts author groups from it
+    # returning a list of flat author groups
+    # without any embedded groups
+    group_list = []
+    ag = soup.find("ce:author-group").extract()
+    while ag.find("ce:author-group"):
+        group_list.append(flatten_author_groups(ag))
+    g2 = [ag]
+    g2.extend(group_list)
+    group_list = []
+    for g in g2:
+        if type(g) == list:
+            group_list.append(g[0])
+        else:
+            group_list.append(g)
+    return group_list
+
+
 class ElsevierParser(BaseBeautifulSoupParser):
     author_collaborations_params = {}
 
@@ -98,6 +118,23 @@ class ElsevierParser(BaseBeautifulSoupParser):
             elif regex_yyyy.match(pubdate):
                 year = pubdate
                 self.base_metadata["pubdate_print"] = year + "-00-00"
+            else:
+                pubdate_parts = pubdate.split()
+                year = None
+                month = None
+                day = None
+                if len(pubdate_parts) == 2:
+                    for pp in pubdate_parts:
+                        if regex_yyyy.match(pp):
+                            year = pp
+                        elif utils.MONTH_TO_NUMBER.get(pp[0:3].lower(), None):
+                            month = utils.MONTH_TO_NUMBER.get(pp[0:3].lower(), None)
+                if year:
+                    if not month:
+                        month = "00"
+                    if not day:
+                        day = "00"
+                    self.base_metadata["pubdate_print"] = "%s-%s-%s" % (year, month, day)
 
     def _parse_edhistory(self):
         # key: xml tag, value: self.base_metadata key
@@ -236,60 +273,85 @@ class ElsevierParser(BaseBeautifulSoupParser):
                 copyright_stub + " Elsevier Science B.V. All rights reserved."
             )
 
+    def _parse_author_group(self, author_group):
+        # build affiliations cross-reference dict
+        group_author_list = []
+        affs_xref = {}
+
+        affs_xref_raw = author_group.find_all("ce:affiliation")
+        for aff in affs_xref_raw:
+            if aff.find("ce:label"):
+                label = aff.find("ce:label").get_text()
+            else:
+                label = "ALLAUTH"
+            if aff.find("ce:textfn"):
+                # formatted affiliation string
+                # note: sa:affiliation contains the parsed affiliation - not useful now but may be in the future
+                value = aff.find("ce:textfn").get_text()
+            elif aff.find("ce:source-text"):
+                # raw affiliation string
+                value = aff.find("ce:source-text").get_text()
+            else:
+                value = ""
+            if label == "ALLAUTH":
+                # collect all of the implicit affiliations in a list
+                value_list = affs_xref.get("ALLAUTH", [])
+                value_list.append(value)
+                affs_xref["ALLAUTH"] = value_list
+            else:
+                affs_xref[label] = value
+
+        affs_footnotes_raw = author_group.find_all("ce:footnote")
+        for aff in affs_footnotes_raw:
+            if aff.find("ce:label"):
+                label = aff.find("ce:label").get_text()
+            else:
+                label = "ALLAUTH"
+            if aff.find("ce:note-para"):
+                value = aff.find("ce:note-para").get_text()
+            if label == "ALLAUTH":
+                # collect all of the implicit affiliations in a list
+                value_list = affs_xref.get("ALLAUTH", [])
+                value_list.append(value)
+                affs_xref["ALLAUTH"] = value_list
+            else:
+                affs_xref[label] = value
+
+        authors_raw = author_group.find_all("ce:author")
+        for author in authors_raw:
+            author_tmp = {}
+            if author.find("ce:surname"):
+                if author.find("ce:given-name"):
+                    author_tmp["given"] = author.find("ce:given-name").get_text()
+                author_tmp["surname"] = author.find("ce:surname").get_text()
+            elif author.find("ce:given-name") and not author.find("ce:surname"):
+                # In case given-name is present, but no surname is available, put the given name in the surname
+                author_tmp["surname"] = author.find("ce:given-name")
+            author_tmp["orcid"] = author.get("orcid", "")
+            if (
+                author.find("ce:e-address")
+                and author.find("ce:e-address").get("type", "") == "email"
+            ):
+                author_tmp["email"] = author.find("ce:e-address").get_text()
+            affs = []
+            if affs_xref.get("ALLAUTH"):
+                affs.extend(affs_xref.get("ALLAUTH"))
+            if author.find("ce:cross-ref") and author.find("ce:cross-ref").find("sup"):
+                for i in author.find("ce:cross-ref").find_all("sup"):
+                    aff_label = i.get_text()
+                    # don't append an empty aff
+                    if affs_xref.get(aff_label):
+                        affs.append(affs_xref[aff_label])
+            author_tmp["aff"] = affs
+            group_author_list.append(author_tmp)
+        return group_author_list
+
     def _parse_authors(self):
         author_list = []
         if self.record_meta.find("ce:author-group"):
-            # build affiliations cross-reference dict
-            affs_xref_raw = self.record_meta.find("ce:author-group").find_all("ce:affiliation")
-            affs_xref = {}
-            for aff in affs_xref_raw:
-                if aff.find("ce:label"):
-                    label = aff.find("ce:label").get_text()
-                else:
-                    label = "ALLAUTH"
-                if aff.find("ce:textfn"):
-                    # formatted affiliation string
-                    # note: sa:affiliation contains the parsed affiliation - not useful now but may be in the future
-                    value = aff.find("ce:textfn").get_text()
-                elif aff.find("ce:source-text"):
-                    # raw affiliation string
-                    value = aff.find("ce:source-text").get_text()
-                else:
-                    value = ""
-                if label == "ALLAUTH":
-                    # collect all of the implicit affiliations in a list
-                    value_list = affs_xref.get("ALLAUTH", [])
-                    value_list.append(value)
-                    affs_xref["ALLAUTH"] = value_list
-                else:
-                    affs_xref[label] = value
-            authors_raw = self.record_meta.find("ce:author-group").find_all("ce:author")
-            for author in authors_raw:
-                author_tmp = {}
-                if author.find("ce:surname"):
-                    if author.find("ce:given-name"):
-                        author_tmp["given"] = author.find("ce:given-name").get_text()
-                    author_tmp["surname"] = author.find("ce:surname").get_text()
-                elif author.find("ce:given-name") and not author.find("ce:surname"):
-                    # In case given-name is present, but no surname is available, put the given name in the surname
-                    author_tmp["surname"] = author.find("ce:given-name")
-                author_tmp["orcid"] = author.get("orcid", "")
-                if (
-                    author.find("ce:e-address")
-                    and author.find("ce:e-address").get("type", "") == "email"
-                ):
-                    author_tmp["email"] = author.find("ce:e-address").get_text()
-                if author.find("ce:cross-ref") and author.find("ce:cross-ref").find("sup"):
-                    affs = []
-                    for i in author.find("ce:cross-ref").find_all("sup"):
-                        aff_label = i.get_text()
-                        # don't append an empty aff
-                        if affs_xref.get(aff_label):
-                            affs.append(affs_xref[aff_label])
-                    author_tmp["aff"] = affs
-                elif affs_xref.get("ALLAUTH"):
-                    author_tmp["aff"] = affs_xref["ALLAUTH"]
-                author_list.append(author_tmp)
+            author_groups = flatten_author_groups(self.record_meta)
+            for ag in author_groups:
+                author_list.extend(self._parse_author_group(ag))
         elif self.record_header.find("dct:creator"):
             name_parser = utils.AuthorNames()
             authors_raw = self.record_header.find_all("dct:creator")

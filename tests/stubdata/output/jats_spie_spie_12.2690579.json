@@ -1,31 +1,59 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "This PDF file contains the front matter associated with SPIE Proceedings Volume 12512, including the Title Page, Copyright information, Table of Contents, and Conference Committee information."
   },
-  "pubDate": {
-    "electrDate": "2023-06-15",
-    "printDate": "2023-06-15"
+  "copyright": {
+    "statement": "COPYRIGHT SPIE. Downloading of the abstract is permitted for personal use only.",
+    "status": true
   },
-  "publication": {
-    "confName": "Defense + Commercial Sensing",
-    "publisher": "SPIE",
-    "issueNum": "None",
-    "volumeNum": "12512",
-    "pubYear": "2023",
-    "ISSN": [
-      {
-        "issnString": "0277-786X"
-      }
-    ]
+  "openAccess": {
+    "open": true
   },
-  "persistentIDs": [
+  "otherContributor": [
     {
-      "DOI": "10.1117/12.2690579"
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": "aff1",
+            "affPubRaw": "Argo AI, LLC (United States)"
+          }
+        ],
+        "name": {
+          "given_name": "Mark A.",
+          "surname": "Itzler"
+        }
+      },
+      "role": "editor"
+    },
+    {
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": "aff2",
+            "affPubRaw": "National Institute of Standards and Technology (United States)"
+          }
+        ],
+        "name": {
+          "given_name": "Joshua C.",
+          "surname": "Bienfang"
+        }
+      },
+      "role": "editor"
+    },
+    {
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": "aff3",
+            "affPubRaw": "MIT Lincoln Lab. (United States)"
+          }
+        ],
+        "name": {
+          "given_name": "K. Alex",
+          "surname": "McIntosh"
+        }
+      },
+      "role": "editor"
     }
   ],
   "pagination": {
@@ -33,64 +61,36 @@
     "lastPage": "1251201-6",
     "pageRange": "1251201-1251201-6"
   },
-  "otherContributor": [
+  "persistentIDs": [
     {
-      "role": "editor",
-      "contrib": {
-        "name": {
-          "surname": "Itzler",
-          "given_name": "Mark A."
-        },
-        "affiliation": [
-          {
-            "affPubRaw": "Argo AI, LLC (United States)",
-            "affPubID": "aff1"
-          }
-        ]
-      }
-    },
-    {
-      "role": "editor",
-      "contrib": {
-        "name": {
-          "surname": "Bienfang",
-          "given_name": "Joshua C."
-        },
-        "affiliation": [
-          {
-            "affPubRaw": "National Institute of Standards and Technology (United States)",
-            "affPubID": "aff2"
-          }
-        ]
-      }
-    },
-    {
-      "role": "editor",
-      "contrib": {
-        "name": {
-          "surname": "McIntosh",
-          "given_name": "K. Alex"
-        },
-        "affiliation": [
-          {
-            "affPubRaw": "MIT Lincoln Lab. (United States)",
-            "affPubID": "aff3"
-          }
-        ]
-      }
+      "DOI": "10.1117/12.2690579"
     }
   ],
+  "pubDate": {
+    "electrDate": "2023-06-15",
+    "printDate": "2023-06-15"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0277-786X"
+      }
+    ],
+    "confName": "Defense + Commercial Sensing",
+    "issueNum": "None",
+    "pubYear": "2023",
+    "publisher": "SPIE",
+    "volumeNum": "12512"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
+  },
   "title": {
     "textEnglish": "Front Matter: Volume 12512"
-  },
-  "abstract": {
-    "textEnglish": "This PDF file contains the front matter associated with SPIE Proceedings Volume 12512, including the Title Page, Copyright information, Table of Contents, and Conference Committee information."
-  },
-  "copyright": {
-    "status": true,
-    "statement": "COPYRIGHT SPIE. Downloading of the abstract is permitted for personal use only."
-  },
-  "openAccess": {
-    "open": true
   }
 }

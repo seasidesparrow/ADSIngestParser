@@ -21,7 +21,10 @@ class TestJATS(unittest.TestCase):
 
     def test_jats(self):
         filenames = [
+            "jats_edp_jnwpu_40_96",
+            "jats_edp_aa_661_70",
             "jats_nature_41467_2023_Article_40261_nlm",
+            "jats_nature_natsd_12_7375",
             "jats_spie_jmnmm_1.JMM.21.4.041407",
             "jats_spie_spie_12.2663387",
             "jats_spie_spie_12.2665113",
@@ -48,14 +51,18 @@ class TestJATS(unittest.TestCase):
             "jats_springer_JHEP_JHEP07_2023_200",
             "jats_springer_AcMSn_s10409-023-23108-x",
             "jats_springer_NatCo_s41467-023-40272-3",
+            "jats_springer_cldy_84_1543",
+            "jats_springer_jhep_2022_05_05",
             "jats_apj_859_2_101",
             "jats_mnras_493_1_141",
             "jats_aj_158_4_139",
             "jats_iop_ansnn_12_2_025001",
             "jats_aip_aipc_2470_040010",
             "jats_aip_amjph_90_286",
+            "jats_iop_jinst_17_05_P05009",
             "jats_phrvd_106_023001",
             "jats_pnas_1715554115",
+            "jats_pnas_119_2201344119",
             "jats_iop_no_contribs",
             "jats_iop_no_orcid_tag",
             "jats_iop_preprint_in_record",
@@ -64,6 +71,12 @@ class TestJATS(unittest.TestCase):
             "jats_a+a_subtitle",
             "jats_iucr_d-60-02355",
             "jats_iucr_d-75-00616",
+            "jats_aps_phrvd_100_052015",
+            "jats_aps_phrvx_12_021031",
+            "mdpi_climate-11-00147",
+            "mdpi_galaxies-11-00090",
+            "mdpi_symmetry-15-00939",
+            "mdpi_universe-08-00651",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -98,6 +111,7 @@ class TestJATS(unittest.TestCase):
         # test parsing with BeautifulSoup parser='lxml'
         filenames = [
             "jats_iop_aj_162_1",
+            "nlm_tf_gapfd_116_38",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -126,7 +140,6 @@ class TestJATS(unittest.TestCase):
             )
             self.assertTrue(abs(time_difference) < datetime.timedelta(seconds=10))
             parsed["recordData"]["parsedTime"] = ""
-            print(test_infile)
 
             self.assertEqual(parsed, output_data)
 
@@ -172,5 +185,4 @@ class TestJATS(unittest.TestCase):
                 output_text = fp.read()
                 output_data_tags = json.loads(output_text)
             cite_context = parser.citation_context(input_data, text_output=False)
-            print(test_infile)
             self.assertEqual(cite_context, output_data_tags)

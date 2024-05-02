@@ -1,116 +1,123 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "OtherXML",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "Motivated by the measured velocity profile of the M87 jet using the Korean very-long-baseline interferometry (VLBI) network (KVN) and VLBI Exploration of Radio Astrometry (VERA) Array (KaVA) by Park et al. indicating that the starting position of the jet acceleration is farther from the central engine of the jet than predicted in general relativistic magnetohydrodynamic simulations, we explore how to mitigate the apparent discrepancy between the simulations and the KaVA observation. We use a semi-analytic jet model proposed by Tomimatsu & Takahashi consistently solving the transmagnetic field structure but neglecting any dissipation effects. By comparing the jet model with the observed M87 jet velocity profile, we find that the model can reproduce the logarithmic feature of the velocity profile and can fit the observed data when choosing c /(100 r g ) \u2272 \u03a9 F \u2272 c /(70 r g ), where r g is the gravitational radius. While a total specific energy ( \ue231 ) of the jet changes the terminal bulk Lorentz factor of the jet, a slower angular velocity of the black hole magnetosphere (\u03a9 F ) makes a light-cylinder radius ( r lc ) larger, and it consequently pushes out a location of a starting point of the jet acceleration. Using the estimated \u03a9 F we further estimate the magnetic field strength on the event horizon scale in M87 by assuming Blandford\u2013Znajek process is in action. The corresponding magnetic flux threading the event horizon of M87 is in good agreement with a magnetically arrested disk regime."
+  },
+  "authors": [
+    {
+      "attrib": {
+        "orcid": "0000-0002-2709-7338"
+      },
+      "name": {
+        "given_name": "Motoki",
+        "surname": "Kino"
+      }
+    },
+    {
+      "attrib": {
+        "orcid": "0000-0001-9360-0846"
+      },
+      "name": {
+        "given_name": "Masaaki",
+        "surname": "Takahashi"
+      }
+    },
+    {
+      "attrib": {
+        "orcid": "0000-0001-8527-0496"
+      },
+      "name": {
+        "given_name": "Tomohisa",
+        "surname": "Kawashima"
+      }
+    },
+    {
+      "attrib": {
+        "orcid": "0000-0001-6558-9053"
+      },
+      "name": {
+        "given_name": "Jongho",
+        "surname": "Park"
+      }
+    },
+    {
+      "attrib": {
+        "orcid": "0000-0001-6906-772X"
+      },
+      "name": {
+        "given_name": "Kazuhiro",
+        "surname": "Hada"
+      }
+    },
+    {
+      "attrib": {
+        "orcid": "0000-0002-7322-6436"
+      },
+      "name": {
+        "given_name": "Hyunwook",
+        "surname": "Ro"
+      }
+    },
+    {
+      "attrib": {
+        "orcid": "0000-0001-6311-4345"
+      },
+      "name": {
+        "given_name": "Yuzhu",
+        "surname": "Cui"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 2022. The Author(s). Published by the American Astronomical Society.",
+    "status": true
   },
   "editorialHistory": {
+    "acceptedDate": "2022-08-22",
     "receivedDates": [
       "2022-04-05"
-    ],
-    "acceptedDate": "2022-08-22"
-  },
-  "pubDate": {
-    "electrDate": "2022-11-08",
-    "printDate": "2022-11-01"
-  },
-  "publication": {
-    "pubName": "The Astrophysical Journal",
-    "issueNum": "2",
-    "volumeNum": "939",
-    "pubYear": "2022",
-    "ISSN": [
-      {
-        "pubtype": "print",
-        "issnString": "0004-637X"
-      },
-      {
-        "pubtype": "electronic",
-        "issnString": "1538-4357"
-      }
     ]
+  },
+  "esources": [
+    {
+      "location": "https://iopscience.iop.org/article/10.3847/1538-4357/ac8c2f",
+      "source": "pub_html"
+    }
+  ],
+  "pagination": {
+    "firstPage": "83"
   },
   "persistentIDs": [
     {
       "DOI": "10.3847/1538-4357/ac8c2f"
     }
   ],
-  "pagination": {
-    "firstPage": "83"
+  "pubDate": {
+    "electrDate": "2022-11-08",
+    "printDate": "2022-11-01"
   },
-  "authors": [
-    {
-      "name": {
-        "surname": "Kino",
-        "given_name": "Motoki"
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0004-637X",
+        "pubtype": "print"
       },
-      "attrib": {
-        "orcid": "0000-0002-2709-7338"
+      {
+        "issnString": "1538-4357",
+        "pubtype": "electronic"
       }
-    },
-    {
-      "name": {
-        "surname": "Takahashi",
-        "given_name": "Masaaki"
-      },
-      "attrib": {
-        "orcid": "0000-0001-9360-0846"
-      }
-    },
-    {
-      "name": {
-        "surname": "Kawashima",
-        "given_name": "Tomohisa"
-      },
-      "attrib": {
-        "orcid": "0000-0001-8527-0496"
-      }
-    },
-    {
-      "name": {
-        "surname": "Park",
-        "given_name": "Jongho"
-      },
-      "attrib": {
-        "orcid": "0000-0001-6558-9053"
-      }
-    },
-    {
-      "name": {
-        "surname": "Hada",
-        "given_name": "Kazuhiro"
-      },
-      "attrib": {
-        "orcid": "0000-0001-6906-772X"
-      }
-    },
-    {
-      "name": {
-        "surname": "Ro",
-        "given_name": "Hyunwook"
-      },
-      "attrib": {
-        "orcid": "0000-0002-7322-6436"
-      }
-    },
-    {
-      "name": {
-        "surname": "Cui",
-        "given_name": "Yuzhu"
-      },
-      "attrib": {
-        "orcid": "0000-0001-6311-4345"
-      }
-    }
-  ],
-  "title": {
-    "textEnglish": "Implications from the Velocity Profile of the M87 Jet: A Possibility of a Slowly Rotating Black Hole Magnetosphere"
+    ],
+    "issueNum": "2",
+    "pubName": "The Astrophysical Journal",
+    "pubYear": "2022",
+    "volumeNum": "939"
   },
-  "abstract": {
-    "textEnglish": "Motivated by the measured velocity profile of the M87 jet using the Korean very-long-baseline interferometry (VLBI) network (KVN) and VLBI Exploration of Radio Astrometry (VERA) Array (KaVA) by Park et al. indicating that the starting position of the jet acceleration is farther from the central engine of the jet than predicted in general relativistic magnetohydrodynamic simulations, we explore how to mitigate the apparent discrepancy between the simulations and the KaVA observation. We use a semi-analytic jet model proposed by Tomimatsu & Takahashi consistently solving the transmagnetic field structure but neglecting any dissipation effects. By comparing the jet model with the observed M87 jet velocity profile, we find that the model can reproduce the logarithmic feature of the velocity profile and can fit the observed data when choosing c /(100 r g ) \u2272 \u03a9 F \u2272 c /(70 r g ), where r g is the gravitational radius. While a total specific energy ( \ue231 ) of the jet changes the terminal bulk Lorentz factor of the jet, a slower angular velocity of the black hole magnetosphere (\u03a9 F ) makes a light-cylinder radius ( r lc ) larger, and it consequently pushes out a location of a starting point of the jet acceleration. Using the estimated \u03a9 F we further estimate the magnetic field strength on the event horizon scale in M87 by assuming Blandford\u2013Znajek process is in action. The corresponding magnetic flux threading the event horizon of M87 is in good agreement with a magnetically arrested disk regime."
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<citation key=\"apjac8c2fbib1\"> <journal_title>ApJ</journal_title> <author>Abramowski</author> <doi>10.1088/0004-637X/746/2/151</doi> <volume>746</volume> <first_page>151</first_page> <cYear>2012</cYear> </citation>",
@@ -227,14 +234,7 @@
     "<citation key=\"apjac8c2fbib112\"> <journal_title>Natur</journal_title> <author>Zamaninasab</author> <doi>10.1038/nature13399</doi> <volume>510</volume> <first_page>126</first_page> <cYear>2014</cYear> </citation>",
     "<citation key=\"apjac8c2fbib113\"> <journal_title>MNRAS</journal_title> <author>Znajek</author> <doi>10.1093/mnras/179.3.457</doi> <volume>179</volume> <first_page>457</first_page> <cYear>1977</cYear> </citation>"
   ],
-  "esources": [
-    {
-      "source": "pub_html",
-      "location": "https://iopscience.iop.org/article/10.3847/1538-4357/ac8c2f"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "\u00a9 2022. The Author(s). Published by the American Astronomical Society."
+  "title": {
+    "textEnglish": "Implications from the Velocity Profile of the M87 Jet: A Possibility of a Slowly Rotating Black Hole Magnetosphere"
   }
 }

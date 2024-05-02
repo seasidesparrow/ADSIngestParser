@@ -1,664 +1,704 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "JATS",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "The study of the properties of galaxies in the first billion years after the Big Bang is one of the major topics of current astrophysics. Optical and near-infrared spectroscopy of the afterglows of long gamma-ray bursts (GRBs) provides a powerful diagnostic tool to probe the interstellar medium (ISM) of their host galaxies and foreground absorbers, even up to the highest redshifts. We analyze the VLT/X-shooter afterglow spectrum of GRB 210905A, triggered by the Neil Gehrels Swift Observatory, and detect neutral hydrogen, low-ionization, high-ionization, and fine-structure absorption lines from a complex system at z = 6.3118, which we associate with the GRB host galaxy. We use them to study the ISM properties of the host system, revealing the metallicity, kinematics, and chemical abundance pattern of its gas along the GRB line of sight. We also detect absorption lines from at least two foreground absorbers at z = 5.7390 and z = 2.8296. The total metallicity of the z \u223c 6.3 system is [M/H]<sub>tot</sub> = \u22121.72 \u00b1 0.13, after correcting for dust depletion and taking \u03b1-element enhancement into account, as suggested by our analysis. This is consistent with the values found for the other two GRBs at z \u223c 6 with spectroscopic data showing metal absorption lines (GRB 050904 and GRB 130606A), and it is at the higher end of the metallicity distribution of quasar damped Lyman-\u03b1 systems (QSO-DLAs) extrapolated to such a high redshift. In addition, we determine the overall amount of dust and dust-to-metal mass ratio (DTM) ([Zn/Fe]<sub>fit</sub> = 0.33 \u00b1 0.09 and DTM = 0.18 \u00b1 0.03). We find indications of nucleosynthesis due to massive stars and, for some of the components of the gas clouds, we find evidence of peculiar nucleosynthesis, with an overabundance of aluminum (as also found for GRB 130606A). From the analysis of fine-structure lines, we determine distances of several kiloparsecs for the low-ionization gas clouds closest to the GRB. Those are farther distances than usually found for GRB host absorption systems, possibly due to the very high number of ionizing photons produced by the GRB that could ionize the line of sight up to several hundreds of parsecs. Using the HST/F140W image of the GRB field, we show the GRB host galaxy (with a possible afterglow contamination) as well as multiple objects within 2\u2033 from the GRB position. We discuss the galaxy structure and kinematics that could explain our observations, also taking into account a tentative detection of Lyman-\u03b1 emission at z = 6.3449 (\u223c1200 km s<sup>\u22121</sup> from the GRB redshift in velocity space), and the observational properties of Lyman-\u03b1 emitters at very high redshift. This study shows the amazing potential of GRBs to access detailed information on the properties (metal enrichment, gas kinematic, dust content, nucleosynthesis...) of very high-redshift galaxies, independently of the galaxy luminosity. Deep spectroscopic observations with VLT/MUSE and JWST will offer the unique possibility of combining the information presented in this paper with the properties of the ionized gas, with the goal of better understanding how galaxies in the reionization era form and evolve."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF1",
+          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190 Meudon, France"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-6950-4587"
+      },
+      "name": {
+        "given_name": "A.",
+        "surname": "Saccardi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF1",
+          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190 Meudon, France"
+        },
+        {
+          "affPubID": "AFF2",
+          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807 Merate, LC, Italy"
+        },
+        {
+          "affPubID": "AFF3",
+          "affPubRaw": "Institut d\u2019Astrophysique de Paris, UMR 7095, CNRS-SU, 98 bis boulevard Arago, 75014 Paris, France"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-9398-4907"
+      },
+      "name": {
+        "given_name": "S. D.",
+        "surname": "Vergani"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF4",
+          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290 Versoix, Switzerland"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-2082-1626"
+      },
+      "name": {
+        "given_name": "A.",
+        "surname": "De Cia"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF5",
+          "affPubRaw": "Space Science Data Center (SSDC) \u2013 Agenzia Spaziale Italiana (ASI), 00133 Roma, Italy"
+        },
+        {
+          "affPubID": "AFF6",
+          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Roma, Via Frascati 33, 00040 Monte Porzio Catone, Italy"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-3703-4418"
+      },
+      "name": {
+        "given_name": "V.",
+        "surname": "D\u2019Elia"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF7",
+          "affPubRaw": "Centre for Astrophysics and Cosmology, Science Institute, University of Iceland, Dunhagi 5, 107 Reykjav\u00edk, Iceland"
+        },
+        {
+          "affPubID": "AFF8",
+          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
+        },
+        {
+          "affPubID": "AFF9",
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+        }
+      ],
+      "name": {
+        "given_name": "K. E.",
+        "surname": "Heintz"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF10",
+          "affPubRaw": "DARK, Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen, Denmark"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-9695-8472"
+      },
+      "name": {
+        "given_name": "L.",
+        "surname": "Izzo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF1",
+          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190 Meudon, France"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-9408-1563"
+      },
+      "name": {
+        "given_name": "J. T.",
+        "surname": "Palmerio"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF3",
+          "affPubRaw": "Institut d\u2019Astrophysique de Paris, UMR 7095, CNRS-SU, 98 bis boulevard Arago, 75014 Paris, France"
+        }
+      ],
+      "name": {
+        "given_name": "P.",
+        "surname": "Petitjean"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF11",
+          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-8860-6538"
+      },
+      "name": {
+        "given_name": "A.",
+        "surname": "Rossi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF12",
+          "affPubRaw": "Artemis, Observatoire de la C\u00f4te d\u2019Azur, Universit\u00e9 C\u00f4te d\u2019Azur, CNRS, 06304 Nice, France"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-7717-5085"
+      },
+      "name": {
+        "given_name": "A.",
+        "surname": "de Ugarte Postigo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF8",
+          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
+        },
+        {
+          "affPubID": "AFF9",
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-8415-7547"
+      },
+      "name": {
+        "given_name": "L.",
+        "surname": "Christensen"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF4",
+          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290 Versoix, Switzerland"
+        }
+      ],
+      "name": {
+        "given_name": "C.",
+        "surname": "Konstantopoulou"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF13",
+          "affPubRaw": "Department of Astrophysics/IMAPP, Radboud University, 6525 AJ, Nijmegen, The Netherlands"
+        }
+      ],
+      "name": {
+        "given_name": "A. J.",
+        "surname": "Levan"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF13",
+          "affPubRaw": "Department of Astrophysics/IMAPP, Radboud University, 6525 AJ, Nijmegen, The Netherlands"
+        },
+        {
+          "affPubID": "AFF8",
+          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
+        },
+        {
+          "affPubID": "AFF9",
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-7517-326X"
+      },
+      "name": {
+        "given_name": "D. B.",
+        "surname": "Malesani"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF9",
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+        },
+        {
+          "affPubID": "AFF14",
+          "affPubRaw": "European Southern Observatory, Karl-Schwarzschildstrasse 2, 85748 Garching bei M\u00fcnchen, Germany"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-9994-505X"
+      },
+      "name": {
+        "given_name": "P.",
+        "surname": "M\u00f8ller"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF4",
+          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290 Versoix, Switzerland"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Ramburuth-Hurt"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF15",
+          "affPubRaw": "INAF IASF-Milano, Via Alfonso Corti 12, 20133 Milano, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "R.",
+        "surname": "Salvaterra"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF16",
+          "affPubRaw": "School of Physics and Astronomy, University of Leicester, University Road, Leicester LE1 7RH, UK"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-3274-6336"
+      },
+      "name": {
+        "given_name": "N. R.",
+        "surname": "Tanvir"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF17",
+          "affPubRaw": "Astronomical Institute (ASU CAS), Ondejov, Czech Republic"
+        }
+      ],
+      "name": {
+        "given_name": "C. C.",
+        "surname": "Th\u00f6ne"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF8",
+          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
+        },
+        {
+          "affPubID": "AFF9",
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-0471-5647"
+      },
+      "name": {
+        "given_name": "S.",
+        "surname": "Vejlgaard"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF8",
+          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
+        },
+        {
+          "affPubID": "AFF9",
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-8149-8298"
+      },
+      "name": {
+        "given_name": "J. P. U.",
+        "surname": "Fynbo"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF18",
+          "affPubRaw": "Instituto de Astrof\u00edsica de Andaluc\u00eda (IAA-CSIC), Glorieta de la Astronom\u00eda s/n, 18008 Granada, Spain"
+        }
+      ],
+      "name": {
+        "given_name": "D. A.",
+        "surname": "Kann"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF19",
+          "affPubRaw": "Department of Physics, University of Bath, Bath BA2 7AY, UK"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-1214-770X"
+      },
+      "name": {
+        "given_name": "P.",
+        "surname": "Schady"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF8",
+          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
+        },
+        {
+          "affPubID": "AFF9",
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-4465-8264"
+      },
+      "name": {
+        "given_name": "D. J.",
+        "surname": "Watson"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF20",
+          "affPubRaw": "Physics Department, Lancaster University, Lancaster LA1 4YB, UK"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-9133-7957"
+      },
+      "name": {
+        "given_name": "K.",
+        "surname": "Wiersema"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF2",
+          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807 Merate, LC, Italy"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-6278-1576"
+      },
+      "name": {
+        "given_name": "S.",
+        "surname": "Campana"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF2",
+          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807 Merate, LC, Italy"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-9078-5507"
+      },
+      "name": {
+        "given_name": "S.",
+        "surname": "Covino"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF21",
+          "affPubRaw": "Universit\u00e0 degli Studi di Messina \u2013 Dipartimento MIFT, Polo Papardo, Via F. S. D\u2019Alcontres 31, 98166 Messina, Italy"
+        }
+      ],
+      "name": {
+        "given_name": "M.",
+        "surname": "De Pasquale"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF22",
+          "affPubRaw": "Department of Physics, the George Washington University, 725 21st Street NW, Washington, DC 20052, USA"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-2927-2398"
+      },
+      "name": {
+        "given_name": "H.",
+        "surname": "Fausey"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF23",
+          "affPubRaw": "Department of Physics and Astronomy, Clemson University, Kinard Lab of Physics, Clemson, SC 29634-0978, USA"
+        }
+      ],
+      "name": {
+        "given_name": "D. H.",
+        "surname": "Hartmann"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF22",
+          "affPubRaw": "Department of Physics, the George Washington University, 725 21st Street NW, Washington, DC 20052, USA"
+        },
+        {
+          "affPubID": "AFF24",
+          "affPubRaw": "Astronomy, Physics and Statistics Institute of Sciences (APSIS), 725 21st Street NW, Washington, DC 20052, USA"
+        }
+      ],
+      "name": {
+        "given_name": "A. J.",
+        "surname": "van der Horst"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF7",
+          "affPubRaw": "Centre for Astrophysics and Cosmology, Science Institute, University of Iceland, Dunhagi 5, 107 Reykjav\u00edk, Iceland"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-9404-5650"
+      },
+      "name": {
+        "given_name": "P.",
+        "surname": "Jakobsson"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF11",
+          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0002-8691-7666"
+      },
+      "name": {
+        "given_name": "E.",
+        "surname": "Palazzi"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF25",
+          "affPubRaw": "Anton Pannekoek Institute for Astronomy, University of Amsterdam, Science Park 904, 1098 XH, Amsterdam, The Netherlands"
+        },
+        {
+          "affPubID": "AFF26",
+          "affPubRaw": "Leiden Observatory, University of Leiden, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-3457-9375"
+      },
+      "name": {
+        "given_name": "G.",
+        "surname": "Pugliese"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF11",
+          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy"
+        },
+        {
+          "affPubID": "AFF27",
+          "affPubRaw": "Physics Department, University of Calabria, 87036 Arcavacata di Rende, CS, Italy"
+        },
+        {
+          "affPubID": "AFF28",
+          "affPubRaw": "INFN \u2013 Laboratori Nazionali di Frascati, Frascati, Italy"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-2354-3238"
+      },
+      "name": {
+        "given_name": "S.",
+        "surname": "Savaglio"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF16",
+          "affPubRaw": "School of Physics and Astronomy, University of Leicester, University Road, Leicester LE1 7RH, UK"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0001-5803-2038"
+      },
+      "name": {
+        "given_name": "R. L. C.",
+        "surname": "Starling"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF11",
+          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy"
+        }
+      ],
+      "attrib": {
+        "orcid": "0000-0003-1055-7980"
+      },
+      "name": {
+        "given_name": "G.",
+        "surname": "Stratta"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": "AFF29",
+          "affPubRaw": "Australian Astronomical Optics, Macquarie University, 105 Delhi Road, North Ryde, NSW 2113, Australia"
+        }
+      ],
+      "name": {
+        "given_name": "T.",
+        "surname": "Zafar"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 The Authors 2023",
+    "status": true
   },
   "editorialHistory": {
+    "acceptedDate": "2022-11-28",
     "receivedDates": [
       "2022-06-07"
-    ],
-    "acceptedDate": "2022-11-28"
-  },
-  "pubDate": {
-    "electrDate": "2023-03-00"
-  },
-  "publication": {
-    "pubName": "Astronomy & Astrophysics",
-    "publisher": "EDP Sciences",
-    "issueNum": "None",
-    "volumeNum": "671",
-    "pubYear": "2023",
-    "ISSN": [
-      {
-        "pubtype": "ppub",
-        "issnString": "0004-6361"
-      },
-      {
-        "pubtype": "epub",
-        "issnString": "1432-0746"
-      }
     ]
+  },
+  "esources": [
+    {
+      "location": "https://www.aanda.org/articles/aa/full_html/2023/03/aa44205-22/aa44205-22.html",
+      "source": "pub_html"
+    },
+    {
+      "location": "https://www.aanda.org/articles/aa/pdf/2023/03/aa44205-22.pdf",
+      "source": "pub_pdf"
+    }
+  ],
+  "keywords": [
+    {
+      "keyString": "gamma-ray burst: general",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "gamma-ray burst: individual: GRB 210905A",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "galaxies: abundances",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "galaxies: ISM",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "dust",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "extinction",
+      "keySystem": "misc"
+    },
+    {
+      "keyString": "galaxies: high-redshift",
+      "keySystem": "misc"
+    }
+  ],
+  "openAccess": {
+    "license": "Open Access article, published by EDP Sciences, under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+    "licenseURL": "https://www.edpsciences.org",
+    "open": true
+  },
+  "pagination": {
+    "electronicID": "A84",
+    "pageCount": "21"
   },
   "persistentIDs": [
     {
       "DOI": "10.1051/0004-6361/202244205"
     }
   ],
+  "pubDate": {
+    "electrDate": "2023-03-00"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0004-6361",
+        "pubtype": "ppub"
+      },
+      {
+        "issnString": "1432-0746",
+        "pubtype": "epub"
+      }
+    ],
+    "issueNum": "None",
+    "pubName": "Astronomy & Astrophysics",
+    "pubYear": "2023",
+    "publisher": "EDP Sciences",
+    "volumeNum": "671"
+  },
   "publisherIDs": [
     {
-      "attribute": "publisher-id",
-      "Identifier": "aa44205-22"
+      "Identifier": "aa44205-22",
+      "attribute": "publisher-id"
     }
   ],
-  "pagination": {
-    "pageCount": "21",
-    "electronicID": "A84"
-  },
-  "authors": [
-    {
-      "name": {
-        "surname": "Saccardi",
-        "given_name": "A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190 Meudon, France",
-          "affPubID": "AFF1"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-6950-4587"
-      }
-    },
-    {
-      "name": {
-        "surname": "Vergani",
-        "given_name": "S. D."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190 Meudon, France",
-          "affPubID": "AFF1"
-        },
-        {
-          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807 Merate, LC, Italy",
-          "affPubID": "AFF2"
-        },
-        {
-          "affPubRaw": "Institut d\u2019Astrophysique de Paris, UMR 7095, CNRS-SU, 98 bis boulevard Arago, 75014 Paris, France",
-          "affPubID": "AFF3"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-9398-4907"
-      }
-    },
-    {
-      "name": {
-        "surname": "De Cia",
-        "given_name": "A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290 Versoix, Switzerland",
-          "affPubID": "AFF4"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-2082-1626"
-      }
-    },
-    {
-      "name": {
-        "surname": "D\u2019Elia",
-        "given_name": "V."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Space Science Data Center (SSDC) \u2013 Agenzia Spaziale Italiana (ASI), 00133 Roma, Italy",
-          "affPubID": "AFF5"
-        },
-        {
-          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Roma, Via Frascati 33, 00040 Monte Porzio Catone, Italy",
-          "affPubID": "AFF6"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-3703-4418"
-      }
-    },
-    {
-      "name": {
-        "surname": "Heintz",
-        "given_name": "K. E."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Centre for Astrophysics and Cosmology, Science Institute, University of Iceland, Dunhagi 5, 107 Reykjav\u00edk, Iceland",
-          "affPubID": "AFF7"
-        },
-        {
-          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark",
-          "affPubID": "AFF8"
-        },
-        {
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark",
-          "affPubID": "AFF9"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Izzo",
-        "given_name": "L."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "DARK, Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen, Denmark",
-          "affPubID": "AFF10"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-9695-8472"
-      }
-    },
-    {
-      "name": {
-        "surname": "Palmerio",
-        "given_name": "J. T."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190 Meudon, France",
-          "affPubID": "AFF1"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-9408-1563"
-      }
-    },
-    {
-      "name": {
-        "surname": "Petitjean",
-        "given_name": "P."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Institut d\u2019Astrophysique de Paris, UMR 7095, CNRS-SU, 98 bis boulevard Arago, 75014 Paris, France",
-          "affPubID": "AFF3"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Rossi",
-        "given_name": "A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy",
-          "affPubID": "AFF11"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-8860-6538"
-      }
-    },
-    {
-      "name": {
-        "surname": "de Ugarte Postigo",
-        "given_name": "A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Artemis, Observatoire de la C\u00f4te d\u2019Azur, Universit\u00e9 C\u00f4te d\u2019Azur, CNRS, 06304 Nice, France",
-          "affPubID": "AFF12"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-7717-5085"
-      }
-    },
-    {
-      "name": {
-        "surname": "Christensen",
-        "given_name": "L."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark",
-          "affPubID": "AFF8"
-        },
-        {
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark",
-          "affPubID": "AFF9"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-8415-7547"
-      }
-    },
-    {
-      "name": {
-        "surname": "Konstantopoulou",
-        "given_name": "C."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290 Versoix, Switzerland",
-          "affPubID": "AFF4"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Levan",
-        "given_name": "A. J."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Astrophysics/IMAPP, Radboud University, 6525 AJ, Nijmegen, The Netherlands",
-          "affPubID": "AFF13"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Malesani",
-        "given_name": "D. B."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Astrophysics/IMAPP, Radboud University, 6525 AJ, Nijmegen, The Netherlands",
-          "affPubID": "AFF13"
-        },
-        {
-          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark",
-          "affPubID": "AFF8"
-        },
-        {
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark",
-          "affPubID": "AFF9"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-7517-326X"
-      }
-    },
-    {
-      "name": {
-        "surname": "M\u00f8ller",
-        "given_name": "P."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark",
-          "affPubID": "AFF9"
-        },
-        {
-          "affPubRaw": "European Southern Observatory, Karl-Schwarzschildstrasse 2, 85748 Garching bei M\u00fcnchen, Germany",
-          "affPubID": "AFF14"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-9994-505X"
-      }
-    },
-    {
-      "name": {
-        "surname": "Ramburuth-Hurt",
-        "given_name": "T."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290 Versoix, Switzerland",
-          "affPubID": "AFF4"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Salvaterra",
-        "given_name": "R."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "INAF IASF-Milano, Via Alfonso Corti 12, 20133 Milano, Italy",
-          "affPubID": "AFF15"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Tanvir",
-        "given_name": "N. R."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "School of Physics and Astronomy, University of Leicester, University Road, Leicester LE1 7RH, UK",
-          "affPubID": "AFF16"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-3274-6336"
-      }
-    },
-    {
-      "name": {
-        "surname": "Th\u00f6ne",
-        "given_name": "C. C."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Astronomical Institute (ASU CAS), Ondejov, Czech Republic",
-          "affPubID": "AFF17"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Vejlgaard",
-        "given_name": "S."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark",
-          "affPubID": "AFF8"
-        },
-        {
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark",
-          "affPubID": "AFF9"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-0471-5647"
-      }
-    },
-    {
-      "name": {
-        "surname": "Fynbo",
-        "given_name": "J. P. U."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark",
-          "affPubID": "AFF8"
-        },
-        {
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark",
-          "affPubID": "AFF9"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-8149-8298"
-      }
-    },
-    {
-      "name": {
-        "surname": "Kann",
-        "given_name": "D. A."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Instituto de Astrof\u00edsica de Andaluc\u00eda (IAA-CSIC), Glorieta de la Astronom\u00eda s/n, 18008 Granada, Spain",
-          "affPubID": "AFF18"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Schady",
-        "given_name": "P."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Physics, University of Bath, Bath BA2 7AY, UK",
-          "affPubID": "AFF19"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-1214-770X"
-      }
-    },
-    {
-      "name": {
-        "surname": "Watson",
-        "given_name": "D. J."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark",
-          "affPubID": "AFF8"
-        },
-        {
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark",
-          "affPubID": "AFF9"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-4465-8264"
-      }
-    },
-    {
-      "name": {
-        "surname": "Wiersema",
-        "given_name": "K."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Physics Department, Lancaster University, Lancaster LA1 4YB, UK",
-          "affPubID": "AFF20"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-9133-7957"
-      }
-    },
-    {
-      "name": {
-        "surname": "Campana",
-        "given_name": "S."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807 Merate, LC, Italy",
-          "affPubID": "AFF2"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-6278-1576"
-      }
-    },
-    {
-      "name": {
-        "surname": "Covino",
-        "given_name": "S."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807 Merate, LC, Italy",
-          "affPubID": "AFF2"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-9078-5507"
-      }
-    },
-    {
-      "name": {
-        "surname": "De Pasquale",
-        "given_name": "M."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Universit\u00e0 degli Studi di Messina \u2013 Dipartimento MIFT, Polo Papardo, Via F. S. D\u2019Alcontres 31, 98166 Messina, Italy",
-          "affPubID": "AFF21"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Fausey",
-        "given_name": "H."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Physics, the George Washington University, 725 21st Street NW, Washington, DC 20052, USA",
-          "affPubID": "AFF22"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-2927-2398"
-      }
-    },
-    {
-      "name": {
-        "surname": "Hartmann",
-        "given_name": "D. H."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Physics and Astronomy, Clemson University, Kinard Lab of Physics, Clemson, SC 29634-0978, USA",
-          "affPubID": "AFF23"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "van der Horst",
-        "given_name": "A. J."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Department of Physics, the George Washington University, 725 21st Street NW, Washington, DC 20052, USA",
-          "affPubID": "AFF22"
-        },
-        {
-          "affPubRaw": "Astronomy, Physics and Statistics Institute of Sciences (APSIS), 725 21st Street NW, Washington, DC 20052, USA",
-          "affPubID": "AFF24"
-        }
-      ]
-    },
-    {
-      "name": {
-        "surname": "Jakobsson",
-        "given_name": "P."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Centre for Astrophysics and Cosmology, Science Institute, University of Iceland, Dunhagi 5, 107 Reykjav\u00edk, Iceland",
-          "affPubID": "AFF7"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-9404-5650"
-      }
-    },
-    {
-      "name": {
-        "surname": "Palazzi",
-        "given_name": "E."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy",
-          "affPubID": "AFF11"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0002-8691-7666"
-      }
-    },
-    {
-      "name": {
-        "surname": "Pugliese",
-        "given_name": "G."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Anton Pannekoek Institute for Astronomy, University of Amsterdam, Science Park 904, 1098 XH, Amsterdam, The Netherlands",
-          "affPubID": "AFF25"
-        },
-        {
-          "affPubRaw": "Leiden Observatory, University of Leiden, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands",
-          "affPubID": "AFF26"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-3457-9375"
-      }
-    },
-    {
-      "name": {
-        "surname": "Savaglio",
-        "given_name": "S."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy",
-          "affPubID": "AFF11"
-        },
-        {
-          "affPubRaw": "Physics Department, University of Calabria, 87036 Arcavacata di Rende, CS, Italy",
-          "affPubID": "AFF27"
-        },
-        {
-          "affPubRaw": "INFN \u2013 Laboratori Nazionali di Frascati, Frascati, Italy",
-          "affPubID": "AFF28"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-2354-3238"
-      }
-    },
-    {
-      "name": {
-        "surname": "Starling",
-        "given_name": "R. L. C."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "School of Physics and Astronomy, University of Leicester, University Road, Leicester LE1 7RH, UK",
-          "affPubID": "AFF16"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0001-5803-2038"
-      }
-    },
-    {
-      "name": {
-        "surname": "Stratta",
-        "given_name": "G."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy",
-          "affPubID": "AFF11"
-        }
-      ],
-      "attrib": {
-        "orcid": "0000-0003-1055-7980"
-      }
-    },
-    {
-      "name": {
-        "surname": "Zafar",
-        "given_name": "T."
-      },
-      "affiliation": [
-        {
-          "affPubRaw": "Australian Astronomical Optics, Macquarie University, 105 Delhi Road, North Ryde, NSW 2113, Australia",
-          "affPubID": "AFF29"
-        }
-      ]
-    }
-  ],
-  "title": {
-    "textEnglish": "Dissecting the interstellar medium of a z = 6.3 galaxy"
-  },
-  "subtitle": {
-    "textEnglish": "X-shooter spectroscopy and HST imaging of the afterglow and environment of the Swift GRB 210905A",
-    "textNotes": [
-      "\u22c6 Based on observations carried out under ESO prog. ID 106.21T6.010 and ID 106.21T6.015 (PI: N. Tanvir) with the X-shooter spectrograph installed at the Cassegrain focus of the Very Large Telescope (VLT), Unit 3 \u2013 Melipal, operated by the European Southern Observatory (ESO) on Cerro Paranal, Chile. Partly based on observations with the NASA/ESA Hubble Space Telescope, obtained at the Space Telescope Science Institute, which is operated by the Association of Universities for Research in Astronomy (AURA). This observation is primarily associated with proposal GO 16918, PI: N. Tanvir."
-    ]
-  },
-  "abstract": {
-    "textEnglish": "The study of the properties of galaxies in the first billion years after the Big Bang is one of the major topics of current astrophysics. Optical and near-infrared spectroscopy of the afterglows of long gamma-ray bursts (GRBs) provides a powerful diagnostic tool to probe the interstellar medium (ISM) of their host galaxies and foreground absorbers, even up to the highest redshifts. We analyze the VLT/X-shooter afterglow spectrum of GRB 210905A, triggered by the Neil Gehrels Swift Observatory, and detect neutral hydrogen, low-ionization, high-ionization, and fine-structure absorption lines from a complex system at z = 6.3118, which we associate with the GRB host galaxy. We use them to study the ISM properties of the host system, revealing the metallicity, kinematics, and chemical abundance pattern of its gas along the GRB line of sight. We also detect absorption lines from at least two foreground absorbers at z = 5.7390 and z = 2.8296. The total metallicity of the z \u223c 6.3 system is [M/H]<sub>tot</sub> = \u22121.72 \u00b1 0.13, after correcting for dust depletion and taking \u03b1-element enhancement into account, as suggested by our analysis. This is consistent with the values found for the other two GRBs at z \u223c 6 with spectroscopic data showing metal absorption lines (GRB 050904 and GRB 130606A), and it is at the higher end of the metallicity distribution of quasar damped Lyman-\u03b1 systems (QSO-DLAs) extrapolated to such a high redshift. In addition, we determine the overall amount of dust and dust-to-metal mass ratio (DTM) ([Zn/Fe]<sub>fit</sub> = 0.33 \u00b1 0.09 and DTM = 0.18 \u00b1 0.03). We find indications of nucleosynthesis due to massive stars and, for some of the components of the gas clouds, we find evidence of peculiar nucleosynthesis, with an overabundance of aluminum (as also found for GRB 130606A). From the analysis of fine-structure lines, we determine distances of several kiloparsecs for the low-ionization gas clouds closest to the GRB. Those are farther distances than usually found for GRB host absorption systems, possibly due to the very high number of ionizing photons produced by the GRB that could ionize the line of sight up to several hundreds of parsecs. Using the HST/F140W image of the GRB field, we show the GRB host galaxy (with a possible afterglow contamination) as well as multiple objects within 2\u2033 from the GRB position. We discuss the galaxy structure and kinematics that could explain our observations, also taking into account a tentative detection of Lyman-\u03b1 emission at z = 6.3449 (\u223c1200 km s<sup>\u22121</sup> from the GRB redshift in velocity space), and the observational properties of Lyman-\u03b1 emitters at very high redshift. This study shows the amazing potential of GRBs to access detailed information on the properties (metal enrichment, gas kinematic, dust content, nucleosynthesis...) of very high-redshift galaxies, independently of the galaxy luminosity. Deep spectroscopic observations with VLT/MUSE and JWST will offer the unique possibility of combining the information presented in this paper with the properties of the ionized gas, with the goal of better understanding how galaxies in the reionization era form and evolve."
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<ref id=\"R1\"> <mixed-citation publication-type=\"journal\"> <string-name><surname>Alves-Brito</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Mel\u00e9ndez</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Asplund</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Ram\u00edrez</surname>, <given-names>I.</given-names></string-name>, & <string-name><surname>Yong</surname>, <given-names>D.</given-names></string-name> <year>2010</year>, <source>A&A</source>, <volume>513</volume>, <fpage>A35</fpage> </mixed-citation> </ref>",
@@ -794,53 +834,13 @@
     "<ref id=\"R131\"> <mixed-citation publication-type=\"journal\"> <string-name><surname>Zafar</surname>, <given-names>T.</given-names></string-name>, & <string-name><surname>M\u00f8ller</surname>, <given-names>P.</given-names></string-name> <year>2019</year>, <source>MNRAS</source>, <volume>482</volume>, <fpage>2731</fpage> </mixed-citation> </ref>",
     "<ref id=\"R132\"> <mixed-citation publication-type=\"journal\"> <string-name><surname>Zafar</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>P\u00e9roux</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Popping</surname>, <given-names>A.</given-names></string-name>, et al. <year>2013</year>, <source>A&A</source>, <volume>556</volume>, <fpage>A141</fpage> </mixed-citation> </ref>"
   ],
-  "esources": [
-    {
-      "source": "pub_html",
-      "location": "https://www.aanda.org/articles/aa/full_html/2023/03/aa44205-22/aa44205-22.html"
-    },
-    {
-      "source": "pub_pdf",
-      "location": "https://www.aanda.org/articles/aa/pdf/2023/03/aa44205-22.pdf"
-    }
-  ],
-  "keywords": [
-    {
-      "keyString": "gamma-ray burst: general",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "gamma-ray burst: individual: GRB 210905A",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "galaxies: abundances",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "galaxies: ISM",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "dust",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "extinction",
-      "keySystem": "misc"
-    },
-    {
-      "keyString": "galaxies: high-redshift",
-      "keySystem": "misc"
-    }
-  ],
-  "copyright": {
-    "status": true,
-    "statement": "\u00a9 The Authors 2023"
+  "subtitle": {
+    "textEnglish": "X-shooter spectroscopy and HST imaging of the afterglow and environment of the Swift GRB 210905A",
+    "textNotes": [
+      "\u22c6 Based on observations carried out under ESO prog. ID 106.21T6.010 and ID 106.21T6.015 (PI: N. Tanvir) with the X-shooter spectrograph installed at the Cassegrain focus of the Very Large Telescope (VLT), Unit 3 \u2013 Melipal, operated by the European Southern Observatory (ESO) on Cerro Paranal, Chile. Partly based on observations with the NASA/ESA Hubble Space Telescope, obtained at the Space Telescope Science Institute, which is operated by the Association of Universities for Research in Astronomy (AURA). This observation is primarily associated with proposal GO 16918, PI: N. Tanvir."
+    ]
   },
-  "openAccess": {
-    "open": true,
-    "license": "Open Access article, published by EDP Sciences, under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
-    "licenseURL": "https://www.edpsciences.org"
+  "title": {
+    "textEnglish": "Dissecting the interstellar medium of a z = 6.3 galaxy"
   }
 }

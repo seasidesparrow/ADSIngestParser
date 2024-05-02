@@ -1,48 +1,9 @@
 {
-  "recordData": {
-    "createdTime": "",
-    "parsedTime": "",
-    "loadType": "fromFile",
-    "loadFormat": "OtherXML",
-    "loadLocation": "",
-    "recordOrigin": ""
+  "abstract": {
+    "textEnglish": "Saharan dust outbreaks have profound effects on ecosystems, climate, human health, and the cryosphere in Europe. However, the spatial deposition pattern of Saharan dust is poorly known due to a sparse network of ground measurements. Following the extreme dust deposition event of February 2021 across Europe, a citizen science campaign was launched to sample dust on snow over the Pyrenees and the European Alps. This somewhat improvised campaign triggered wide interest since 152 samples were collected from the snow in the Pyrenees, the French Alps, and the Swiss Alps in less than 4 weeks. Among the 152 samples, 113 in total could be analysed, corresponding to 70 different locations. The analysis of the samples showed a large variability in the dust properties and amount. We found a decrease in the deposited mass and particle sizes with distance from the source along the transport path. This spatial trend was also evident in the elemental composition of the dust as the iron mass fraction decreased from 11 % in the Pyrenees to 2 % in the Swiss Alps. At the local scale, we found a higher dust mass on south-facing slopes, in agreement with estimates from high-resolution remote sensing data. This unique dataset, which resulted from the collaboration of several research laboratories and citizens, is provided as an open dataset to benefit a large community and to enable further scientific investigations. Data presented in this study are available at https://doi.org/10.5281/zenodo.7969515 (Dumont et al., 2022a)."
   },
-  "pubDate": {
-    "electrDate": "2023-07-20",
-    "printDate": "2023-07-20"
-  },
-  "publication": {
-    "pubName": "Earth System Science Data",
-    "volumeNum": "15",
-    "pubYear": "2023",
-    "ISSN": [
-      {
-        "pubtype": "print",
-        "issnString": "1866-3508"
-      },
-      {
-        "pubtype": "electronic",
-        "issnString": "1866-3516"
-      }
-    ]
-  },
-  "pagination": {
-    "electronicID": "145",
-    "firstPage": "3075",
-    "lastPage": "3094"
-  },
-  "persistentIDs": [
-    {
-      "DOI": "10.5194/essd-15-3075-2023"
-    }
-  ],
   "authors": [
     {
-      "name": {
-        "surname": "Dumont",
-        "given_name": "Marie",
-        "pubraw": "Marie Dumont"
-      },
       "affiliation": [
         {
           "affPubRaw": "Univ. Grenoble Alpes, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, CNRM, Centre d\u2019\u00c9tudes de la Neige, 38000 Grenoble, France"
@@ -51,14 +12,14 @@
       "attrib": {
         "email": "marie.dumont@meteo.fr",
         "orcid": "0000-0002-4002-5873"
+      },
+      "name": {
+        "given_name": "Marie",
+        "pubraw": "Marie Dumont",
+        "surname": "Dumont"
       }
     },
     {
-      "name": {
-        "surname": "Gascoin",
-        "given_name": "Simon",
-        "pubraw": "Simon Gascoin"
-      },
       "affiliation": [
         {
           "affPubRaw": "CESBIO, Universit\u00e9 de Toulouse, CNES/CNRS/INRA/IRD/UPS, Toulouse, France"
@@ -67,14 +28,14 @@
       "attrib": {
         "email": "sgascoin@gmail.com",
         "orcid": "0000-0002-4996-6768"
+      },
+      "name": {
+        "given_name": "Simon",
+        "pubraw": "Simon Gascoin",
+        "surname": "Gascoin"
       }
     },
     {
-      "name": {
-        "surname": "R\u00e9veillet",
-        "given_name": "Marion",
-        "pubraw": "Marion R\u00e9veillet"
-      },
       "affiliation": [
         {
           "affPubRaw": "Univ. Grenoble Alpes, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, CNRM, Centre d\u2019\u00c9tudes de la Neige, 38000 Grenoble, France"
@@ -86,14 +47,14 @@
       "attrib": {
         "email": "marion.reveillet@univ-grenoble-alpes.fr",
         "orcid": "0000-0001-9802-4649"
+      },
+      "name": {
+        "given_name": "Marion",
+        "pubraw": "Marion R\u00e9veillet",
+        "surname": "R\u00e9veillet"
       }
     },
     {
-      "name": {
-        "surname": "Voisin",
-        "given_name": "Didier",
-        "pubraw": "Didier Voisin"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, IRD, G-INP, IGE, Grenoble, France"
@@ -102,14 +63,14 @@
       "attrib": {
         "email": "didier.voisin@univ-grenoble-alpes.fr",
         "orcid": "0000-0003-1317-7561"
+      },
+      "name": {
+        "given_name": "Didier",
+        "pubraw": "Didier Voisin",
+        "surname": "Voisin"
       }
     },
     {
-      "name": {
-        "surname": "Tuzet",
-        "given_name": "Fran\u00e7ois",
-        "pubraw": "Fran\u00e7ois Tuzet"
-      },
       "affiliation": [
         {
           "affPubRaw": "Univ. Grenoble Alpes, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, CNRM, Centre d\u2019\u00c9tudes de la Neige, 38000 Grenoble, France"
@@ -117,14 +78,14 @@
       ],
       "attrib": {
         "email": "francois.tuzet@gmail.com"
+      },
+      "name": {
+        "given_name": "Fran\u00e7ois",
+        "pubraw": "Fran\u00e7ois Tuzet",
+        "surname": "Tuzet"
       }
     },
     {
-      "name": {
-        "surname": "Arnaud",
-        "given_name": "Laurent",
-        "pubraw": "Laurent Arnaud"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, IRD, G-INP, IGE, Grenoble, France"
@@ -133,14 +94,14 @@
       "attrib": {
         "email": "laurent.arnaud@univ-grenoble-alpes.fr",
         "orcid": "0000-0002-4432-4205"
+      },
+      "name": {
+        "given_name": "Laurent",
+        "pubraw": "Laurent Arnaud",
+        "surname": "Arnaud"
       }
     },
     {
-      "name": {
-        "surname": "Bonnefoy",
-        "given_name": "Myl\u00e8ne",
-        "pubraw": "Myl\u00e8ne Bonnefoy"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, INRAE, UR ETGR, Grenoble, France"
@@ -148,14 +109,14 @@
       ],
       "attrib": {
         "email": "mylene.bonnefoy@inrae.fr"
+      },
+      "name": {
+        "given_name": "Myl\u00e8ne",
+        "pubraw": "Myl\u00e8ne Bonnefoy",
+        "surname": "Bonnefoy"
       }
     },
     {
-      "name": {
-        "surname": "Bacardit Pe\u00f1arroya",
-        "given_name": "Montse",
-        "pubraw": "Montse Bacardit Pe\u00f1arroya"
-      },
       "affiliation": [
         {
           "affPubRaw": "Centre de Lauegi d'Aran, Conselh Generau d'Aran, Viella, Spain"
@@ -163,14 +124,14 @@
       ],
       "attrib": {
         "email": "m.bacardit@aran.org"
+      },
+      "name": {
+        "given_name": "Montse",
+        "pubraw": "Montse Bacardit Pe\u00f1arroya",
+        "surname": "Bacardit Pe\u00f1arroya"
       }
     },
     {
-      "name": {
-        "surname": "Carmagnola",
-        "given_name": "Carlo",
-        "pubraw": "Carlo Carmagnola"
-      },
       "affiliation": [
         {
           "affPubRaw": "Univ. Grenoble Alpes, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, CNRM, Centre d\u2019\u00c9tudes de la Neige, 38000 Grenoble, France"
@@ -178,14 +139,14 @@
       ],
       "attrib": {
         "email": "carlo.carmagnola@meteo.fr"
+      },
+      "name": {
+        "given_name": "Carlo",
+        "pubraw": "Carlo Carmagnola",
+        "surname": "Carmagnola"
       }
     },
     {
-      "name": {
-        "surname": "Deguine",
-        "given_name": "Alexandre",
-        "pubraw": "Alexandre Deguine"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 de Lille, CNRS, UMR 8518 \u2013 LOA \u2013 Laboratoire d'Optique Atmosph\u00e9rique, 59000 Lille, France"
@@ -197,14 +158,14 @@
       "attrib": {
         "email": "alexandre.deguine@univ-lille.fr",
         "orcid": "0000-0001-7125-3759"
+      },
+      "name": {
+        "given_name": "Alexandre",
+        "pubraw": "Alexandre Deguine",
+        "surname": "Deguine"
       }
     },
     {
-      "name": {
-        "surname": "Diacre",
-        "given_name": "Aur\u00e9lie",
-        "pubraw": "Aur\u00e9lie Diacre"
-      },
       "affiliation": [
         {
           "affPubRaw": "Commissariat \u00c0 L\u2019Energie Atomique Et aux \u00c9nergies Alternatives (CEA, DAM, DIF), 91297 Arpajon, France"
@@ -213,14 +174,14 @@
       "attrib": {
         "email": "aurelie.diacre@lsce.ipsl.fr",
         "orcid": "0000-0001-6988-1828"
+      },
+      "name": {
+        "given_name": "Aur\u00e9lie",
+        "pubraw": "Aur\u00e9lie Diacre",
+        "surname": "Diacre"
       }
     },
     {
-      "name": {
-        "surname": "D\u00fcrr",
-        "given_name": "Lukas",
-        "pubraw": "Lukas D\u00fcrr"
-      },
       "affiliation": [
         {
           "affPubRaw": "WSL Institute for Snow and Avalanche Research SLF, Fl\u00fcelastr. 11, 7260 Davos, Switzerland"
@@ -228,14 +189,14 @@
       ],
       "attrib": {
         "email": "duerr@slf.ch"
+      },
+      "name": {
+        "given_name": "Lukas",
+        "pubraw": "Lukas D\u00fcrr",
+        "surname": "D\u00fcrr"
       }
     },
     {
-      "name": {
-        "surname": "Evrard",
-        "given_name": "Olivier",
-        "pubraw": "Olivier Evrard"
-      },
       "affiliation": [
         {
           "affPubRaw": "LSCE \u2013 IPSL \u2013 Laboratoire des Sciences du Climat et de l'Environnement, CEA, CNRS, UVSQ, Universit\u00e9 Paris-Saclay, Gif-sur-Yvette, France"
@@ -244,14 +205,14 @@
       "attrib": {
         "email": "olivier.evrard@lsce.ipsl.fr",
         "orcid": "0000-0002-3503-6543"
+      },
+      "name": {
+        "given_name": "Olivier",
+        "pubraw": "Olivier Evrard",
+        "surname": "Evrard"
       }
     },
     {
-      "name": {
-        "surname": "Fontaine",
-        "given_name": "Firmin",
-        "pubraw": "Firmin Fontaine"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, INRAE, UR ETGR, Grenoble, France"
@@ -259,14 +220,14 @@
       ],
       "attrib": {
         "email": "firmin.fontaine@inrae.fr"
+      },
+      "name": {
+        "given_name": "Firmin",
+        "pubraw": "Firmin Fontaine",
+        "surname": "Fontaine"
       }
     },
     {
-      "name": {
-        "surname": "Frankl",
-        "given_name": "Amaury",
-        "pubraw": "Amaury Frankl"
-      },
       "affiliation": [
         {
           "affPubRaw": "INRAE, AMAP, IRD, CIRAD, CNRS, University Montpellier, Bld de la Lironde, 34398, Montpellier CEDEX 5, France"
@@ -278,14 +239,14 @@
       "attrib": {
         "email": "amaury.frankl@ugent.be",
         "orcid": "0000-0002-1685-2780"
+      },
+      "name": {
+        "given_name": "Amaury",
+        "pubraw": "Amaury Frankl",
+        "surname": "Frankl"
       }
     },
     {
-      "name": {
-        "surname": "Fructus",
-        "given_name": "Mathieu",
-        "pubraw": "Mathieu Fructus"
-      },
       "affiliation": [
         {
           "affPubRaw": "Univ. Grenoble Alpes, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, CNRM, Centre d\u2019\u00c9tudes de la Neige, 38000 Grenoble, France"
@@ -293,14 +254,14 @@
       ],
       "attrib": {
         "email": "mathieu.fructus@meteo.fr"
+      },
+      "name": {
+        "given_name": "Mathieu",
+        "pubraw": "Mathieu Fructus",
+        "surname": "Fructus"
       }
     },
     {
-      "name": {
-        "surname": "Gandois",
-        "given_name": "Laure",
-        "pubraw": "Laure Gandois"
-      },
       "affiliation": [
         {
           "affPubRaw": "Laboratoire Ecologie Fonctionnelle et Environnement, Universit\u00e9 de Toulouse, CNRS, INPT, UPS, Toulouse, France"
@@ -308,14 +269,14 @@
       ],
       "attrib": {
         "email": "laure.gandois@toulouse-inp.fr"
+      },
+      "name": {
+        "given_name": "Laure",
+        "pubraw": "Laure Gandois",
+        "surname": "Gandois"
       }
     },
     {
-      "name": {
-        "surname": "Gouttevin",
-        "given_name": "Isabelle",
-        "pubraw": "Isabelle Gouttevin"
-      },
       "affiliation": [
         {
           "affPubRaw": "Univ. Grenoble Alpes, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, CNRM, Centre d\u2019\u00c9tudes de la Neige, 38000 Grenoble, France"
@@ -324,14 +285,14 @@
       "attrib": {
         "email": "isabelle.gouttevin@meteo.fr",
         "orcid": "0000-0002-1801-684X"
+      },
+      "name": {
+        "given_name": "Isabelle",
+        "pubraw": "Isabelle Gouttevin",
+        "surname": "Gouttevin"
       }
     },
     {
-      "name": {
-        "surname": "Gherab",
-        "given_name": "Abdelfateh",
-        "pubraw": "Abdelfateh Gherab"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, IRD, G-INP, IGE, Grenoble, France"
@@ -339,14 +300,14 @@
       ],
       "attrib": {
         "email": "abdelfateh.gherab@gmail.com"
+      },
+      "name": {
+        "given_name": "Abdelfateh",
+        "pubraw": "Abdelfateh Gherab",
+        "surname": "Gherab"
       }
     },
     {
-      "name": {
-        "surname": "Hagenmuller",
-        "given_name": "Pascal",
-        "pubraw": "Pascal Hagenmuller"
-      },
       "affiliation": [
         {
           "affPubRaw": "Univ. Grenoble Alpes, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, CNRM, Centre d\u2019\u00c9tudes de la Neige, 38000 Grenoble, France"
@@ -355,14 +316,14 @@
       "attrib": {
         "email": "pascal.hagenmuller@meteo.fr",
         "orcid": "0000-0002-6581-2048"
+      },
+      "name": {
+        "given_name": "Pascal",
+        "pubraw": "Pascal Hagenmuller",
+        "surname": "Hagenmuller"
       }
     },
     {
-      "name": {
-        "surname": "Hansson",
-        "given_name": "Sophia",
-        "pubraw": "Sophia Hansson"
-      },
       "affiliation": [
         {
           "affPubRaw": "Laboratoire Ecologie Fonctionnelle et Environnement, Universit\u00e9 de Toulouse, CNRS, INPT, UPS, Toulouse, France"
@@ -370,14 +331,14 @@
       ],
       "attrib": {
         "email": "sophia.hansson@toulouse-inp.fr"
+      },
+      "name": {
+        "given_name": "Sophia",
+        "pubraw": "Sophia Hansson",
+        "surname": "Hansson"
       }
     },
     {
-      "name": {
-        "surname": "Herbin",
-        "given_name": "Herv\u00e9",
-        "pubraw": "Herv\u00e9 Herbin"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 de Lille, CNRS, UMR 8518 \u2013 LOA \u2013 Laboratoire d'Optique Atmosph\u00e9rique, 59000 Lille, France"
@@ -385,14 +346,14 @@
       ],
       "attrib": {
         "email": "herve.herbin@univ-lille.fr"
+      },
+      "name": {
+        "given_name": "Herv\u00e9",
+        "pubraw": "Herv\u00e9 Herbin",
+        "surname": "Herbin"
       }
     },
     {
-      "name": {
-        "surname": "Josse",
-        "given_name": "B\u00e9atrice",
-        "pubraw": "B\u00e9atrice Josse"
-      },
       "affiliation": [
         {
           "affPubRaw": "CNRM, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, Toulouse, France"
@@ -400,14 +361,14 @@
       ],
       "attrib": {
         "email": "beatrice.josse@meteo.fr"
+      },
+      "name": {
+        "given_name": "B\u00e9atrice",
+        "pubraw": "B\u00e9atrice Josse",
+        "surname": "Josse"
       }
     },
     {
-      "name": {
-        "surname": "Jourdain",
-        "given_name": "Bruno",
-        "pubraw": "Bruno Jourdain"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, IRD, G-INP, IGE, Grenoble, France"
@@ -415,14 +376,14 @@
       ],
       "attrib": {
         "email": "bruno.jourdain@univ-grenoble-alpes.fr"
+      },
+      "name": {
+        "given_name": "Bruno",
+        "pubraw": "Bruno Jourdain",
+        "surname": "Jourdain"
       }
     },
     {
-      "name": {
-        "surname": "Lefevre",
-        "given_name": "Irene",
-        "pubraw": "Irene Lefevre"
-      },
       "affiliation": [
         {
           "affPubRaw": "LSCE \u2013 IPSL \u2013 Laboratoire des Sciences du Climat et de l'Environnement, CEA, CNRS, UVSQ, Universit\u00e9 Paris-Saclay, Gif-sur-Yvette, France"
@@ -430,14 +391,14 @@
       ],
       "attrib": {
         "email": "irene.lefevre@lsce.ipsl.fr"
+      },
+      "name": {
+        "given_name": "Irene",
+        "pubraw": "Irene Lefevre",
+        "surname": "Lefevre"
       }
     },
     {
-      "name": {
-        "surname": "Le Roux",
-        "given_name": "Ga\u00ebl",
-        "pubraw": "Ga\u00ebl Le Roux"
-      },
       "affiliation": [
         {
           "affPubRaw": "Laboratoire Ecologie Fonctionnelle et Environnement, Universit\u00e9 de Toulouse, CNRS, INPT, UPS, Toulouse, France"
@@ -446,14 +407,14 @@
       "attrib": {
         "email": "gael.leroux@ensat.fr",
         "orcid": "0000-0002-1579-0178"
+      },
+      "name": {
+        "given_name": "Ga\u00ebl",
+        "pubraw": "Ga\u00ebl Le Roux",
+        "surname": "Le Roux"
       }
     },
     {
-      "name": {
-        "surname": "Libois",
-        "given_name": "Quentin",
-        "pubraw": "Quentin Libois"
-      },
       "affiliation": [
         {
           "affPubRaw": "CNRM, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, Toulouse, France"
@@ -462,14 +423,14 @@
       "attrib": {
         "email": "quentin.libois@meteo.fr",
         "orcid": "0000-0001-8963-4170"
+      },
+      "name": {
+        "given_name": "Quentin",
+        "pubraw": "Quentin Libois",
+        "surname": "Libois"
       }
     },
     {
-      "name": {
-        "surname": "Liger",
-        "given_name": "Lucie",
-        "pubraw": "Lucie Liger"
-      },
       "affiliation": [
         {
           "affPubRaw": "Jardin du Lautaret, CNRS, Universit\u00e9 Grenoble Alpes, Grenoble, France"
@@ -477,14 +438,14 @@
       ],
       "attrib": {
         "email": "lucie.liger@univ-grenoble-alpes.fr"
+      },
+      "name": {
+        "given_name": "Lucie",
+        "pubraw": "Lucie Liger",
+        "surname": "Liger"
       }
     },
     {
-      "name": {
-        "surname": "Morin",
-        "given_name": "Samuel",
-        "pubraw": "Samuel Morin"
-      },
       "affiliation": [
         {
           "affPubRaw": "CNRM, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, Toulouse, France"
@@ -493,14 +454,14 @@
       "attrib": {
         "email": "samuel.morin@meteo.fr",
         "orcid": "0000-0002-1781-687X"
+      },
+      "name": {
+        "given_name": "Samuel",
+        "pubraw": "Samuel Morin",
+        "surname": "Morin"
       }
     },
     {
-      "name": {
-        "surname": "Petitprez",
-        "given_name": "Denis",
-        "pubraw": "Denis Petitprez"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 de Lille, CNRS, UMR 8522 \u2013 PC2A \u2013 Physicochimie des Processus de Combustion et de l\u2019Atmosph\u00e8re, 59000 Lille, France"
@@ -508,14 +469,14 @@
       ],
       "attrib": {
         "email": "denis.petitprez@univ-lille.fr"
+      },
+      "name": {
+        "given_name": "Denis",
+        "pubraw": "Denis Petitprez",
+        "surname": "Petitprez"
       }
     },
     {
-      "name": {
-        "surname": "Robledano",
-        "given_name": "Alvaro",
-        "pubraw": "Alvaro Robledano"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, IRD, G-INP, IGE, Grenoble, France"
@@ -527,14 +488,14 @@
       "attrib": {
         "email": "alvaro.robledano-perez@univ-grenoble-alpes.fr",
         "orcid": "0000-0002-4046-7065"
+      },
+      "name": {
+        "given_name": "Alvaro",
+        "pubraw": "Alvaro Robledano",
+        "surname": "Robledano"
       }
     },
     {
-      "name": {
-        "surname": "Schneebeli",
-        "given_name": "Martin",
-        "pubraw": "Martin Schneebeli"
-      },
       "affiliation": [
         {
           "affPubRaw": "WSL Institute for Snow and Avalanche Research SLF, Fl\u00fcelastr. 11, 7260 Davos, Switzerland"
@@ -543,14 +504,14 @@
       "attrib": {
         "email": "schneebeli@slf.ch",
         "orcid": "0000-0003-2872-4409"
+      },
+      "name": {
+        "given_name": "Martin",
+        "pubraw": "Martin Schneebeli",
+        "surname": "Schneebeli"
       }
     },
     {
-      "name": {
-        "surname": "Salze",
-        "given_name": "Pascal",
-        "pubraw": "Pascal Salze"
-      },
       "affiliation": [
         {
           "affPubRaw": "Jardin du Lautaret, CNRS, Universit\u00e9 Grenoble Alpes, Grenoble, France"
@@ -558,14 +519,14 @@
       ],
       "attrib": {
         "email": "pascal.salze@univ-grenoble-alpes.fr"
+      },
+      "name": {
+        "given_name": "Pascal",
+        "pubraw": "Pascal Salze",
+        "surname": "Salze"
       }
     },
     {
-      "name": {
-        "surname": "Six",
-        "given_name": "Delphine",
-        "pubraw": "Delphine Six"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, IRD, G-INP, IGE, Grenoble, France"
@@ -573,14 +534,14 @@
       ],
       "attrib": {
         "email": "delphine.six@univ-grenoble-alpes.fr"
+      },
+      "name": {
+        "given_name": "Delphine",
+        "pubraw": "Delphine Six",
+        "surname": "Six"
       }
     },
     {
-      "name": {
-        "surname": "Thibert",
-        "given_name": "Emmanuel",
-        "pubraw": "Emmanuel Thibert"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, INRAE, UR ETGR, Grenoble, France"
@@ -589,14 +550,14 @@
       "attrib": {
         "email": "emmanuel.thibert@inrae.fr",
         "orcid": "0000-0003-2843-5367"
+      },
+      "name": {
+        "given_name": "Emmanuel",
+        "pubraw": "Emmanuel Thibert",
+        "surname": "Thibert"
       }
     },
     {
-      "name": {
-        "surname": "Trachsel",
-        "given_name": "J\u00fcrg",
-        "pubraw": "J\u00fcrg Trachsel"
-      },
       "affiliation": [
         {
           "affPubRaw": "WSL Institute for Snow and Avalanche Research SLF, Fl\u00fcelastr. 11, 7260 Davos, Switzerland"
@@ -605,14 +566,14 @@
       "attrib": {
         "email": "juerg.trachsel@slf.ch",
         "orcid": "0000-0003-2560-9907"
+      },
+      "name": {
+        "given_name": "J\u00fcrg",
+        "pubraw": "J\u00fcrg Trachsel",
+        "surname": "Trachsel"
       }
     },
     {
-      "name": {
-        "surname": "Vernay",
-        "given_name": "Matthieu",
-        "pubraw": "Matthieu Vernay"
-      },
       "affiliation": [
         {
           "affPubRaw": "Univ. Grenoble Alpes, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, CNRM, Centre d\u2019\u00c9tudes de la Neige, 38000 Grenoble, France"
@@ -620,14 +581,14 @@
       ],
       "attrib": {
         "email": "matthieu.vernay@meteo.fr"
+      },
+      "name": {
+        "given_name": "Matthieu",
+        "pubraw": "Matthieu Vernay",
+        "surname": "Vernay"
       }
     },
     {
-      "name": {
-        "surname": "Viallon-Galinier",
-        "given_name": "L\u00e9o",
-        "pubraw": "L\u00e9o Viallon-Galinier"
-      },
       "affiliation": [
         {
           "affPubRaw": "Univ. Grenoble Alpes, Universit\u00e9 de Toulouse, M\u00e9t\u00e9o-France, CNRS, CNRM, Centre d\u2019\u00c9tudes de la Neige, 38000 Grenoble, France"
@@ -635,14 +596,14 @@
       ],
       "attrib": {
         "email": "leo.viallon@meteo.fr"
+      },
+      "name": {
+        "given_name": "L\u00e9o",
+        "pubraw": "L\u00e9o Viallon-Galinier",
+        "surname": "Viallon-Galinier"
       }
     },
     {
-      "name": {
-        "surname": "Voiron",
-        "given_name": "C\u00e9line",
-        "pubraw": "C\u00e9line Voiron"
-      },
       "affiliation": [
         {
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, IRD, G-INP, IGE, Grenoble, France"
@@ -650,14 +611,60 @@
       ],
       "attrib": {
         "email": "celine.voiron@ird.fr"
+      },
+      "name": {
+        "given_name": "C\u00e9line",
+        "pubraw": "C\u00e9line Voiron",
+        "surname": "Voiron"
       }
     }
   ],
-  "title": {
-    "textEnglish": "Spatial Variability Of Saharan Dust Deposition Revealed Through A Citizen Science Campaign"
+  "esources": [
+    {
+      "location": "https://essd.copernicus.org/articles/15/3075/2023/essd-15-3075-2023.pdf",
+      "source": "pub_pdf"
+    },
+    {
+      "location": "https://essd.copernicus.org/articles/15/3075/2023/essd-15-3075-2023.html",
+      "source": "pub_html"
+    }
+  ],
+  "pagination": {
+    "electronicID": "145",
+    "firstPage": "3075",
+    "lastPage": "3094"
   },
-  "abstract": {
-    "textEnglish": "Saharan dust outbreaks have profound effects on ecosystems, climate, human health, and the cryosphere in Europe. However, the spatial deposition pattern of Saharan dust is poorly known due to a sparse network of ground measurements. Following the extreme dust deposition event of February 2021 across Europe, a citizen science campaign was launched to sample dust on snow over the Pyrenees and the European Alps. This somewhat improvised campaign triggered wide interest since 152 samples were collected from the snow in the Pyrenees, the French Alps, and the Swiss Alps in less than 4 weeks. Among the 152 samples, 113 in total could be analysed, corresponding to 70 different locations. The analysis of the samples showed a large variability in the dust properties and amount. We found a decrease in the deposited mass and particle sizes with distance from the source along the transport path. This spatial trend was also evident in the elemental composition of the dust as the iron mass fraction decreased from 11 % in the Pyrenees to 2 % in the Swiss Alps. At the local scale, we found a higher dust mass on south-facing slopes, in agreement with estimates from high-resolution remote sensing data. This unique dataset, which resulted from the collaboration of several research laboratories and citizens, is provided as an open dataset to benefit a large community and to enable further scientific investigations. Data presented in this study are available at https://doi.org/10.5281/zenodo.7969515 (Dumont et al., 2022a)."
+  "persistentIDs": [
+    {
+      "DOI": "10.5194/essd-15-3075-2023"
+    }
+  ],
+  "pubDate": {
+    "electrDate": "2023-07-20",
+    "printDate": "2023-07-20"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "1866-3508",
+        "pubtype": "print"
+      },
+      {
+        "issnString": "1866-3516",
+        "pubtype": "electronic"
+      }
+    ],
+    "pubName": "Earth System Science Data",
+    "pubYear": "2023",
+    "volumeNum": "15"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
   },
   "references": [
     "<reference content_type=\"text\" numeration=\"1\">Adebiyi, A., Kok, J. F., Murray, B. J., Ryder, C. L., Stuut, J.-B. W., Kahn, R. A., Knippertz, P., Formenti, P., Mahowald, N. M., P\u00e9rez Garc\u00eda-Pando, C., Klose, M., Ansmann, A., Samset, B. H., Ito, A., Balkanski, Y., Di Biagio, C., Romanias, M. N., Huang, Y., and Meng, J.: A review of coarse mineral dust in the Earth system, Aeolian Res., 60, 100849, <a href=\"https://doi.org/10.1016/j.aeolia.2022.100849\">https://doi.org/10.1016/j.aeolia.2022.100849</a>, 2023.\u2002<a href=\"#xref_paren.41\">a</a></reference>",
@@ -710,14 +717,7 @@
     "<reference content_type=\"text\" numeration=\"48\">Vernay, M., Lafaysse, M., Monteiro, D., Hagenmuller, P., Nheili, R., Samaco\u00efts, R., Verfaillie, D., and Morin, S.: The S2M meteorological and snow cover reanalysis over the French mountainous areas: description and evaluation (1958\u20132021), Earth Syst. Sci. Data, 14, 1707\u20131733, <a href=\"https://doi.org/10.5194/essd-14-1707-2022\">https://doi.org/10.5194/essd-14-1707-2022</a>, 2022. \u2002<a href=\"#xref_paren.20\">a</a></reference>",
     "<reference content_type=\"text\" numeration=\"49\">Yu, H., Chin, M., Yuan, T., Bian, H., Remer, L. A., Prospero, J. M., Omar, A., Winker, D., Yang, Y., Zhang, Y., Zhang, Z., and Zhao, C.: The fertilizing role of African dust in the Amazon rainforest: A first multiyear assessment based on data from Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observations, Geophys. Res. Lett., 42, 1984\u20131991, <a href=\"https://doi.org/10.1002/2015GL063040\">https://doi.org/10.1002/2015GL063040</a>, 2015.\u2002<a href=\"#xref_paren.4\">a</a></reference>"
   ],
-  "esources": [
-    {
-      "source": "pub_pdf",
-      "location": "https://essd.copernicus.org/articles/15/3075/2023/essd-15-3075-2023.pdf"
-    },
-    {
-      "source": "pub_html",
-      "location": "https://essd.copernicus.org/articles/15/3075/2023/essd-15-3075-2023.html"
-    }
-  ]
+  "title": {
+    "textEnglish": "Spatial Variability Of Saharan Dust Deposition Revealed Through A Citizen Science Campaign"
+  }
 }
