@@ -77,7 +77,10 @@ class TestJATS(unittest.TestCase):
             "mdpi_galaxies-11-00090",
             "mdpi_symmetry-15-00939",
             "mdpi_universe-08-00651",
+            "jats_springer_SoPh_s11207-023-02231-5_mathtex",
+            "jats_apj_967_1_35",
         ]
+
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
             test_outfile = os.path.join(self.outputdir, f + ".json")
