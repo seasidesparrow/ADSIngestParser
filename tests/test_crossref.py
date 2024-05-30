@@ -38,10 +38,13 @@ class TestCrossref(unittest.TestCase):
             "crossref_preprint_10.31223-X55K7G",
             "crossref_preprint_10.31223-X5FW25",
             "crossref_preprint_10.31223-X5WD2C",
+            "crossref_no_contrib_10.4213_im9580e",
+            "crossref_no_contrib_10.3367_UFNe.2022.11.039660",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
             test_outfile = os.path.join(self.outputdir, f + ".json")
+
             parser = crossref.CrossrefParser()
 
             with open(test_infile, "rb") as fp:
