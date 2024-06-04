@@ -240,8 +240,11 @@ class CrossrefParser(BaseBeautifulSoupParser):
             )
 
     def _parse_contrib(self):
-        contribs_section = self.record_meta.find("contributors").extract()
-        contribs_raw = contribs_section.find_all("person_name")
+        if self.record_meta.find("contributors"):
+            contribs_section = self.record_meta.find("contributors").extract()
+            contribs_raw = contribs_section.find_all("person_name")
+        else:
+            contribs_raw = []
 
         authors_out = []
         contribs_out = []
