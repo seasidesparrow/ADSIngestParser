@@ -79,6 +79,8 @@ class TestJATS(unittest.TestCase):
             "mdpi_universe-08-00651",
             "jats_springer_SoPh_s11207-023-02231-5_mathtex",
             "jats_apj_967_1_35",
+            "jats_nature_roman_num_1",
+            "jats_springer_roman_num_1",
         ]
 
         for f in filenames:
@@ -115,6 +117,7 @@ class TestJATS(unittest.TestCase):
         filenames = [
             "jats_iop_aj_162_1",
             "nlm_tf_gapfd_116_38",
+            "nlm_tf_roman_num_1",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -124,11 +127,11 @@ class TestJATS(unittest.TestCase):
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
 
+            parsed = parser.parse(input_data, bsparser="lxml")
+
             with open(test_outfile, "rb") as fp:
                 output_text = fp.read()
                 output_data = json.loads(output_text)
-
-            parsed = parser.parse(input_data, bsparser="lxml")
 
             # make sure this is valid schema
             try:

@@ -57,24 +57,13 @@ class ElsevierParser(BaseBeautifulSoupParser):
             self.base_metadata["issue"] = self.record_header.find("prism:number").get_text()
 
     def _parse_page(self):
-        regex_roman = re.compile(r"[ivxIVX]+")
         # TODO the perl has some code for first/last pages that start with L, e, CO, IFC - add that
         # TODO there's also some regex in the perl checking for - or , - check/add that
         if self.record_header.find("prism:startingPage"):
             fpage = self.record_header.find("prism:startingPage").get_text()
-            if regex_roman.match(fpage):
-                try:
-                    fpage = utils.ROMAN_TO_NUMBER[fpage.lower()]
-                except KeyError:
-                    logger.warning("Can't convert Roman numeral %s to a number", fpage)
             self.base_metadata["page_first"] = fpage
         if self.record_header.find("prism:endingPage"):
             lpage = self.record_header.find("prism:endingPage").get_text()
-            if regex_roman.match(lpage):
-                try:
-                    lpage = utils.ROMAN_TO_NUMBER[lpage.lower()]
-                except KeyError:
-                    logger.warning("Can't convert Roman numeral %s to a number", lpage)
             self.base_metadata["page_last"] = lpage
         if self.record_meta.find("ce:article-number"):
             self.base_metadata["electronic_id"] = self.record_meta.find(

@@ -36,6 +36,8 @@ class TestElsevier(unittest.TestCase):
             "els_list",
             "els_phlb_compound_affil",
             "els_odd_cover_date",
+            "els_roman_num_1",
+            "els_roman_num_2",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -45,11 +47,11 @@ class TestElsevier(unittest.TestCase):
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
 
+            parsed = parser.parse(input_data)
+
             with open(test_outfile, "rb") as fp:
                 output_text = fp.read()
                 output_data = json.loads(output_text)
-
-            parsed = parser.parse(input_data)
 
             # make sure this is valid schema
             try:
