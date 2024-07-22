@@ -303,10 +303,7 @@ class IngestBase(object):
                     "collab": i.get("collab", ""),
                 },
                 "affiliation": [
-                    {
-                        "affPubRaw": j,
-                        "affPubID": i.get("affid") if i.get("affid") else []
-                    }
+                    {"affPubRaw": j, "affPubID": i.get("affid") if i.get("affid") else []}
                     for idx, j in enumerate(i.get("aff", []))
                 ],
                 "attrib": {
@@ -336,10 +333,7 @@ class IngestBase(object):
                         "collab": i.get("collab", ""),
                     },
                     "affiliation": [
-                        {
-                            "affPubRaw": j,
-                            "affPubID": i.get("affid")[idx] if i.get("affid") else []
-                        }
+                        {"affPubRaw": j, "affPubID": i.get("affid")[idx] if i.get("affid") else []}
                         for idx, j in enumerate(i.get("aff", []))
                     ],
                     "attrib": {

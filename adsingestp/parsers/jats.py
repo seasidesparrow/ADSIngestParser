@@ -1,4 +1,3 @@
-
 import logging
 import re
 from collections import OrderedDict
@@ -139,7 +138,6 @@ class JATSAffils(object):
                         for k, v in d.items():
                             affid_tmp.append({"affIDType": k, "affID": v})
                     auth["affid"] = affid_tmp
-        
 
     def _match_xref_clean(self):
         """
@@ -365,7 +363,6 @@ class JATSAffils(object):
                 xrefs = contrib.find_all("xref")
                 xref_aff = []
                 xref_email = []
-                xref_extids = []
                 for x in xrefs:
                     if x.get("ref-type", "") == "aff":
                         xref_aff.append(x["rid"])
@@ -512,6 +509,7 @@ class JATSAffils(object):
         self._reformat_affids()
 
         return self.contrib_dict
+
 
 class JATSParser(BaseBeautifulSoupParser):
     def __init__(self):
