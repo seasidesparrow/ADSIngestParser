@@ -6,12 +6,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF1",
-          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an 710072, China"
+          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an, 710072, China"
         },
         {
-          "affPubID": "AFF2",
-          "affPubRaw": "Xi'an Aeronautical University, Xi'an 710077, China"
+          "affPubRaw": "Xi'an Aeronautical University, Xi'an, 710077, China"
         }
       ],
       "attrib": {
@@ -25,8 +23,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF1",
-          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an 710072, China"
+          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an, 710072, China"
         }
       ],
       "name": {
@@ -37,8 +34,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF3",
-          "affPubRaw": "College of Art and Design, Shaanxi University of Science and Technology, Xi'an 710021, China"
+          "affPubRaw": "College of Art and Design, Shaanxi University of Science and Technology, Xi'an, 710021, China"
         }
       ],
       "name": {
@@ -49,8 +45,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF1",
-          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an 710072, China"
+          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an, 710072, China"
         }
       ],
       "name": {
@@ -61,8 +56,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF4",
-          "affPubRaw": "Xi'an Children's Hospital, Xi'an 710003, China"
+          "affPubRaw": "Xi'an Children's Hospital, Xi'an, 710003, China"
         }
       ],
       "name": {

@@ -6,8 +6,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -18,8 +27,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences S\u00e3o Paulo State University (UNESP) Mar\u00edlia S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences, S\u00e3o Paulo State University (UNESP), Mar\u00edlia, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -30,8 +48,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -42,8 +69,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -54,8 +90,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -66,12 +111,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.411087.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0723 2494",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
-          "affPubID": "Aff4",
-          "affPubRaw": "Department of Structural and Functional Biology, Institute of Biology (IB), UNICAMP University of Campinas (UNICAMP) Campinas S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.411087.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0723 2494",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Structural and Functional Biology, Institute of Biology (IB), UNICAMP, University of Campinas (UNICAMP), Campinas, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -82,8 +161,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff5",
-          "affPubRaw": "University of Mar\u00edlia (UNIMAR) Mar\u00edlia S\u00e3o Paulo Brazil"
+          "affPubRaw": "University of Mar\u00edlia (UNIMAR), Mar\u00edlia, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -94,8 +172,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff6",
-          "affPubRaw": "Human Embryology Laboratory Mar\u00edlia Medical School (FAMEMA) Mar\u00edlia S\u00e3o Paulo Brazil"
+          "affPubRaw": "Human Embryology Laboratory, Mar\u00edlia Medical School (FAMEMA), Mar\u00edlia, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -106,12 +183,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.415155.1",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2039 9627",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Pravara Institute of Medical Sciences (Deemed to be University) Loni, Rahata Taluk 413736 Ahmednagar District Maharashtra India"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.415155.1",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2039 9627",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Pravara Institute of Medical Sciences (Deemed to be University), Loni, Rahata Taluk, 413736, Ahmednagar District, Maharashtra, India"
         }
       ],
       "name": {
@@ -122,24 +233,229 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
-          "affPubID": "Aff8",
-          "affPubRaw": "Cellular and Molecular Physiology Laboratory (CMPL), Department of Obstetrics, Division of Obstetrics and Gynaecology, School of Medicine, Faculty of Medicine Pontificia Universidad Cat\u00f3lica de Chile 8330024 Santiago Chile"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Cellular and Molecular Physiology Laboratory (CMPL), Department of Obstetrics, Division of Obstetrics and Gynaecology, School of Medicine, Faculty of Medicine, Pontificia Universidad Cat\u00f3lica de Chile, 8330024, Santiago, Chile"
         },
         {
-          "affPubID": "Aff9",
-          "affPubRaw": "Department of Physiology, Faculty of Pharmacy Universidad de Sevilla 41012 Seville Spain"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physiology, Faculty of Pharmacy, Universidad de Sevilla, 41012, Seville, Spain"
         },
         {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Queensland Centre for Clinical Research (UQCCR), Faculty of Medicine and Biomedical Sciences University of Queensland 4029 Herston QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Queensland Centre for Clinical Research (UQCCR), Faculty of Medicine and Biomedical Sciences, University of Queensland, 4029, Herston, QLD, Australia"
         },
         {
-          "affPubID": "Aff11",
-          "affPubRaw": "Division of Pathology, Department of Pathology and Medical Biology University of Groningen, University Medical Center Groningen (UMCG) 9713GZ Groningen The Netherlands"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Division of Pathology, Department of Pathology and Medical Biology, University of Groningen, University Medical Center Groningen (UMCG), 9713GZ, Groningen, The Netherlands"
         }
       ],
       "name": {
@@ -150,8 +466,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -162,8 +487,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -174,12 +508,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences S\u00e3o Paulo State University (UNESP) Mar\u00edlia S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences, S\u00e3o Paulo State University (UNESP), Mar\u00edlia, S\u00e3o Paulo, Brazil"
         }
       ],
       "name": {
@@ -190,8 +558,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -213,8 +590,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -229,12 +615,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences S\u00e3o Paulo State University (UNESP) Mar\u00edlia S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences, S\u00e3o Paulo State University (UNESP), Mar\u00edlia, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -249,8 +669,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -265,24 +694,229 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
-          "affPubID": "Aff8",
-          "affPubRaw": "Cellular and Molecular Physiology Laboratory (CMPL), Department of Obstetrics, Division of Obstetrics and Gynaecology, School of Medicine, Faculty of Medicine Pontificia Universidad Cat\u00f3lica de Chile 8330024 Santiago Chile"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Cellular and Molecular Physiology Laboratory (CMPL), Department of Obstetrics, Division of Obstetrics and Gynaecology, School of Medicine, Faculty of Medicine, Pontificia Universidad Cat\u00f3lica de Chile, 8330024, Santiago, Chile"
         },
         {
-          "affPubID": "Aff9",
-          "affPubRaw": "Department of Physiology, Faculty of Pharmacy Universidad de Sevilla 41012 Seville Spain"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physiology, Faculty of Pharmacy, Universidad de Sevilla, 41012, Seville, Spain"
         },
         {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Queensland Centre for Clinical Research (UQCCR), Faculty of Medicine and Biomedical Sciences University of Queensland 4029 Herston QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Queensland Centre for Clinical Research (UQCCR), Faculty of Medicine and Biomedical Sciences, University of Queensland, 4029, Herston, QLD, Australia"
         },
         {
-          "affPubID": "Aff11",
-          "affPubRaw": "Division of Pathology, Department of Pathology and Medical Biology University of Groningen, University Medical Center Groningen (UMCG) 9713GZ Groningen The Netherlands"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.7870.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2157 0406",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.9224.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 1229",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4494.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9558 4598",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Division of Pathology, Department of Pathology and Medical Biology, University of Groningen, University Medical Center Groningen (UMCG), 9713GZ, Groningen, The Netherlands"
         }
       ],
       "attrib": {
@@ -297,8 +931,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff12",
-          "affPubRaw": "Department of Physics, Institute of Biosciences, Letters and Exact Sciences (IBILCE), Multiuser Center for Biomolecular Innovation (CMIB) S\u00e3o Paulo State University \u201cJ\u00falio de Mesquita Filho\u201d (UNESP) 15054-000 S\u00e3o Jos\u00e9 do Rio Preto S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Institute of Biosciences, Letters and Exact Sciences (IBILCE), Multiuser Center for Biomolecular Innovation (CMIB), S\u00e3o Paulo State University \u201cJ\u00falio de Mesquita Filho\u201d (UNESP), 15054-000, S\u00e3o Jos\u00e9 do Rio Preto, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -313,8 +956,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff13",
-          "affPubRaw": "Pelvic Care Center Maastricht Maastricht University Medical Center Maastricht The Netherlands"
+          "affPubID": [
+            {
+              "affID": "grid.412966.e",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0480 1382",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Pelvic Care Center Maastricht, Maastricht University Medical Center, Maastricht, The Netherlands"
         }
       ],
       "attrib": {
@@ -329,8 +981,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Department of Clinical Epidemiology and Biostatistics McMaster University Hamilton ON Canada"
+          "affPubID": [
+            {
+              "affID": "grid.25073.33",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1936 8227",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Clinical Epidemiology and Biostatistics, McMaster University, Hamilton, ON, Canada"
         }
       ],
       "attrib": {
@@ -345,8 +1006,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff15",
-          "affPubRaw": "Department of Gynecology, Pelvic Floor Center Charit\u00e9 Charit\u00e9 University Hospital Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.6363.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2218 4662",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Gynecology, Pelvic Floor Center Charit\u00e9, Charit\u00e9 University Hospital, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -361,8 +1031,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff16",
-          "affPubRaw": "POSMAT-Post-Graduate Program in Materials Science and Technology, School of Sciences S\u00e3o Paulo State University (UNESP) Bauru S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "POSMAT-Post-Graduate Program in Materials Science and Technology, School of Sciences, S\u00e3o Paulo State University (UNESP), Bauru, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -377,8 +1056,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff17",
-          "affPubRaw": "Medical School of Botucatu S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Medical School of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -393,8 +1081,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -409,8 +1106,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff18",
-          "affPubRaw": "Department of Nursing, Botucatu Medical School (FMB) S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Nursing, Botucatu Medical School (FMB), S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -425,8 +1131,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff19",
-          "affPubRaw": "Stricto Sensu Graduate Program in Nursing at UNIVERITAS, Guarulhos University (UNG) Guarulhos S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.411869.3",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9186 527X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Stricto Sensu Graduate Program in Nursing at UNIVERITAS, Guarulhos University (UNG), Guarulhos, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -441,8 +1156,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -457,8 +1181,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff20",
-          "affPubRaw": "Department of Clinical Medicine, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Av. Prof. M\u00e1rio Rubens Guimar\u00e3es Montenegro, s/n-UNESP Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Clinical Medicine, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Av. Prof. M\u00e1rio Rubens Guimar\u00e3es Montenegro, s/n-UNESP, Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -473,8 +1206,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff17",
-          "affPubRaw": "Medical School of Botucatu S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Medical School of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -489,8 +1231,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -505,8 +1256,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff21",
-          "affPubRaw": "Department of Biostatistics, Botucatu Institute of Biosciences S\u00e3o Paulo State University/UNESP S\u00e3o Paulo tistics, Botucatu Institute of Biosciences Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Biostatistics, Botucatu Institute of Biosciences, S\u00e3o Paulo State University/UNESP, S\u00e3o Paulo, tistics, Botucatu Institute of Biosciences, Brazil"
         }
       ],
       "attrib": {
@@ -521,8 +1281,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff17",
-          "affPubRaw": "Medical School of Botucatu S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Medical School of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -537,8 +1306,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff17",
-          "affPubRaw": "Medical School of Botucatu S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Medical School of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -553,8 +1331,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences S\u00e3o Paulo State University (UNESP) Mar\u00edlia S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences, S\u00e3o Paulo State University (UNESP), Mar\u00edlia, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -569,8 +1356,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences S\u00e3o Paulo State University (UNESP) Mar\u00edlia S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences, S\u00e3o Paulo State University (UNESP), Mar\u00edlia, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -585,8 +1381,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff22",
-          "affPubRaw": "Discipline of Evidence-Based Medicine, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP) S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.411249.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0514 7202",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Discipline of Evidence-Based Medicine, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -601,8 +1406,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff23",
-          "affPubRaw": "Department of Gynecology Federal University of S\u00e3o Paulo, UNIFESP S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.411249.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0514 7202",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Gynecology, Federal University of S\u00e3o Paulo, UNIFESP, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -617,8 +1431,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff24",
-          "affPubRaw": "Department of Physical Therapy Universidade Cat\u00f3lica de Pernambuco (UNICAP) Recife PE Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.441972.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 8867",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physical Therapy, Universidade Cat\u00f3lica de Pernambuco (UNICAP), Recife, PE, Brazil"
         }
       ],
       "attrib": {
@@ -633,8 +1456,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff25",
-          "affPubRaw": "Department of Operative Dentistry, Endodontics and Dental Materials, Bauru School of Dentistry University of S\u00e3o Paulo S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.11899.38",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1937 0722",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Operative Dentistry, Endodontics and Dental Materials, Bauru School of Dentistry, University of S\u00e3o Paulo, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -649,8 +1481,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff26",
-          "affPubRaw": "University of Western S\u00e3o Paulo (UNOESTE) Presidente Prudente S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.412294.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9007 5698",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Western S\u00e3o Paulo (UNOESTE), Presidente Prudente, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -665,8 +1506,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff27",
-          "affPubRaw": "Department of Anatomy, CCB State University of Londrina (UEL) Caixa Postal 10011 Campus Universit\u00e1rio s/n 86057-970 Londrina Parana Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.411400.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2193 3537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anatomy, CCB, State University of Londrina (UEL), Caixa Postal 10011, Campus Universit\u00e1rio s/n, 86057-970, Londrina, Parana, Brazil"
         }
       ],
       "attrib": {
@@ -681,12 +1531,30 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff28",
-          "affPubRaw": "University Center of Associated Colleges S\u00e3o Jo\u00e3o da Boa Vista S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.441751.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 8820 7559",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University Center of Associated Colleges, S\u00e3o Jo\u00e3o da Boa Vista, S\u00e3o Paulo, Brazil"
         },
         {
-          "affPubID": "Aff29",
-          "affPubRaw": "Regional University Center of Esp\u00edrito Santo do Pinhal, UNIPINHAL Esp\u00edrito Santo do Pinhal S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.441751.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 8820 7559",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Regional University Center of Esp\u00edrito Santo do Pinhal, UNIPINHAL, Esp\u00edrito Santo do Pinhal, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -701,12 +1569,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.415155.1",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2039 9627",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Pravara Institute of Medical Sciences (Deemed to be University) Loni, Rahata Taluk 413736 Ahmednagar District Maharashtra India"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.415155.1",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2039 9627",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Pravara Institute of Medical Sciences (Deemed to be University), Loni, Rahata Taluk, 413736, Ahmednagar District, Maharashtra, India"
         }
       ],
       "attrib": {
@@ -721,8 +1623,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -737,8 +1648,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -753,8 +1673,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -769,8 +1698,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -785,8 +1723,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -801,8 +1748,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -817,8 +1773,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -833,8 +1798,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -849,8 +1823,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -865,8 +1848,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -881,8 +1873,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -897,8 +1898,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -913,8 +1923,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -929,8 +1948,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -945,8 +1973,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -961,8 +1998,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -977,8 +2023,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -993,8 +2048,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1009,8 +2073,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1025,8 +2098,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1041,8 +2123,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1057,8 +2148,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences S\u00e3o Paulo State University (UNESP) Mar\u00edlia S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physiotherapy and Occupational Therapy, School of Philosophy and Sciences, S\u00e3o Paulo State University (UNESP), Mar\u00edlia, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1073,8 +2173,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1089,8 +2198,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1105,8 +2223,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1121,8 +2248,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1137,8 +2273,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1153,12 +2298,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.411087.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0723 2494",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
-          "affPubID": "Aff4",
-          "affPubRaw": "Department of Structural and Functional Biology, Institute of Biology (IB), UNICAMP University of Campinas (UNICAMP) Campinas S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.411087.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0723 2494",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Structural and Functional Biology, Institute of Biology (IB), UNICAMP, University of Campinas (UNICAMP), Campinas, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1173,8 +2352,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff12",
-          "affPubRaw": "Department of Physics, Institute of Biosciences, Letters and Exact Sciences (IBILCE), Multiuser Center for Biomolecular Innovation (CMIB) S\u00e3o Paulo State University \u201cJ\u00falio de Mesquita Filho\u201d (UNESP) 15054-000 S\u00e3o Jos\u00e9 do Rio Preto S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Institute of Biosciences, Letters and Exact Sciences (IBILCE), Multiuser Center for Biomolecular Innovation (CMIB), S\u00e3o Paulo State University \u201cJ\u00falio de Mesquita Filho\u201d (UNESP), 15054-000, S\u00e3o Jos\u00e9 do Rio Preto, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1189,8 +2377,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff12",
-          "affPubRaw": "Department of Physics, Institute of Biosciences, Letters and Exact Sciences (IBILCE), Multiuser Center for Biomolecular Innovation (CMIB) S\u00e3o Paulo State University \u201cJ\u00falio de Mesquita Filho\u201d (UNESP) 15054-000 S\u00e3o Jos\u00e9 do Rio Preto S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Institute of Biosciences, Letters and Exact Sciences (IBILCE), Multiuser Center for Biomolecular Innovation (CMIB), S\u00e3o Paulo State University \u201cJ\u00falio de Mesquita Filho\u201d (UNESP), 15054-000, S\u00e3o Jos\u00e9 do Rio Preto, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1205,8 +2402,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff12",
-          "affPubRaw": "Department of Physics, Institute of Biosciences, Letters and Exact Sciences (IBILCE), Multiuser Center for Biomolecular Innovation (CMIB) S\u00e3o Paulo State University \u201cJ\u00falio de Mesquita Filho\u201d (UNESP) 15054-000 S\u00e3o Jos\u00e9 do Rio Preto S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Institute of Biosciences, Letters and Exact Sciences (IBILCE), Multiuser Center for Biomolecular Innovation (CMIB), S\u00e3o Paulo State University \u201cJ\u00falio de Mesquita Filho\u201d (UNESP), 15054-000, S\u00e3o Jos\u00e9 do Rio Preto, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1221,8 +2427,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff30",
-          "affPubRaw": "Universidade do Sagrado Cora\u00e7\u00e3o (USC) Bauru S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.412296.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1484 3840",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Universidade do Sagrado Cora\u00e7\u00e3o (USC), Bauru, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1237,8 +2452,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School S\u00e3o Paulo State University (UNESP) Botucatu S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1253,8 +2477,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff31",
-          "affPubRaw": "Department of Physical Education, Institute of Biosciences of Rio Claro S\u00e3o Paulo State University (UNESP) Rio Claro S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physical Education, Institute of Biosciences of Rio Claro, S\u00e3o Paulo State University (UNESP), Rio Claro, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1269,8 +2502,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff32",
-          "affPubRaw": "Independent Researcher Assis S\u00e3o Paulo Brazil"
+          "affPubRaw": "Independent Researcher, Assis, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1285,8 +2517,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff33",
-          "affPubRaw": "Department of Morphology and Pediatric Dentistry, Araraquara School of Dentistry S\u00e3o Paulo State University (UNESP) Rua Humait\u00e1, 1680 14801-903 Araraquara S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Morphology and Pediatric Dentistry, Araraquara School of Dentistry, S\u00e3o Paulo State University (UNESP), Rua Humait\u00e1, 1680, 14801-903, Araraquara, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1301,8 +2542,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff33",
-          "affPubRaw": "Department of Morphology and Pediatric Dentistry, Araraquara School of Dentistry S\u00e3o Paulo State University (UNESP) Rua Humait\u00e1, 1680 14801-903 Araraquara S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.410543.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2188 478X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Morphology and Pediatric Dentistry, Araraquara School of Dentistry, S\u00e3o Paulo State University (UNESP), Rua Humait\u00e1, 1680, 14801-903, Araraquara, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1317,8 +2567,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff32",
-          "affPubRaw": "Independent Researcher Assis S\u00e3o Paulo Brazil"
+          "affPubRaw": "Independent Researcher, Assis, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1333,8 +2582,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff34",
-          "affPubRaw": "Independent Researcher Botucatu SP Brazil"
+          "affPubRaw": "Independent Researcher, Botucatu, SP, Brazil"
         }
       ],
       "attrib": {
@@ -1349,8 +2597,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff35",
-          "affPubRaw": "Health Sciences Center University of the Sacred Heart (USC) Bauru S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.412296.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1484 3840",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Health Sciences Center, University of the Sacred Heart (USC), Bauru, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {
@@ -1365,8 +2622,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff36",
-          "affPubRaw": "Universidade de Mar\u00edlia (UNIMAR) Mar\u00edlia S\u00e3o Paulo Brazil"
+          "affPubID": [
+            {
+              "affID": "grid.441895.5",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9898 9056",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Universidade de Mar\u00edlia (UNIMAR), Mar\u00edlia, S\u00e3o Paulo, Brazil"
         }
       ],
       "attrib": {

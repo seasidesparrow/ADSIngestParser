@@ -6,7 +6,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -18,7 +17,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -30,7 +28,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -42,7 +39,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -54,7 +50,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -66,7 +61,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "STMicroelectronics S.A. (United Kingdom)"
         }
       ],
@@ -78,7 +72,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -90,7 +83,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -102,7 +94,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "STMicroelectronics S.A. (United Kingdom)"
         }
       ],
@@ -114,7 +105,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -126,7 +116,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -138,7 +127,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "STMicroelectronics S.A. (United Kingdom)"
         }
       ],
@@ -150,7 +138,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "STMicroelectronics S.A. (United Kingdom)"
         }
       ],
@@ -162,7 +149,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "STMicroelectronics S.A. (United Kingdom)"
         }
       ],
@@ -174,7 +160,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff3",
           "affPubRaw": "Univ. de Strasbourg (France)"
         }
       ],
@@ -186,7 +171,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff3",
           "affPubRaw": "Univ. de Strasbourg (France)"
         }
       ],
@@ -198,7 +182,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "STMicroelectronics S.A. (France)"
         }
       ],
@@ -217,7 +200,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff4",
             "affPubRaw": "Argo AI, LLC (United States)"
           }
         ],
@@ -232,7 +214,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff5",
             "affPubRaw": "National Institute of Standards and Technology (United States)"
           }
         ],
@@ -247,7 +228,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff6",
             "affPubRaw": "MIT Lincoln Lab. (United States)"
           }
         ],

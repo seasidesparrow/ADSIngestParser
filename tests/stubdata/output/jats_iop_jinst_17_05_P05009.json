@@ -14,7 +14,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -26,7 +25,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -38,7 +36,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -50,7 +47,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -62,7 +58,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -74,7 +69,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -86,7 +80,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation85",
           "affPubRaw": "University of Michigan, Ann Arbor, United States, associated to 68"
         }
       ],
@@ -98,7 +91,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "INFN Sezione di Milano, Milano, Italy"
         }
       ],
@@ -110,7 +102,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -122,7 +113,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "University of Cincinnati, Cincinnati, OH, United States"
         }
       ],
@@ -134,7 +124,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -146,7 +135,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -158,7 +146,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom"
         }
       ],
@@ -170,7 +157,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "ICCUB, Universitat de Barcelona, Barcelona, Spain"
         }
       ],
@@ -182,7 +168,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -194,7 +179,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -206,7 +190,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -218,7 +201,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -230,7 +212,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -242,7 +223,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -254,7 +234,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "INFN Sezione di Firenze, Firenze, Italy"
         }
       ],
@@ -266,7 +245,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -278,7 +256,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -290,7 +267,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -302,7 +278,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -314,7 +289,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -326,7 +300,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Yandex School of Data Analysis, Moscow, Russia"
         }
       ],
@@ -338,7 +311,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -350,7 +322,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -362,7 +333,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation12",
           "affPubRaw": "Laboratoire Leprince-Ringuet, CNRS/IN2P3, Ecole Polytechnique, Institut Polytechnique de Paris, Palaiseau, France"
         }
       ],
@@ -374,7 +344,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -386,7 +355,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -398,7 +366,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -410,7 +377,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -422,7 +388,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation12",
           "affPubRaw": "Laboratoire Leprince-Ringuet, CNRS/IN2P3, Ecole Polytechnique, Institut Polytechnique de Paris, Palaiseau, France"
         }
       ],
@@ -434,7 +399,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -446,7 +410,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Centro Brasileiro de Pesquisas F\u00edsicas (CBPF), Rio de Janeiro, Brazil"
         }
       ],
@@ -458,7 +421,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -470,7 +432,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -482,7 +443,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -494,7 +454,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -506,7 +465,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -518,7 +476,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "INFN Sezione di Pisa, Pisa, Italy"
         }
       ],
@@ -530,7 +487,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -542,7 +498,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -554,7 +509,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -566,7 +520,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -578,7 +531,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "INFN Sezione di Pisa, Pisa, Italy"
         }
       ],
@@ -590,7 +542,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Centro Brasileiro de Pesquisas F\u00edsicas (CBPF), Rio de Janeiro, Brazil"
         }
       ],
@@ -602,7 +553,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -614,7 +564,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Yandex School of Data Analysis, Moscow, Russia"
         }
       ],
@@ -626,7 +575,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -638,7 +586,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -650,7 +597,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -662,7 +608,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Institute of Nuclear Physics, Moscow State University (SINP MSU), Moscow, Russia"
         }
       ],
@@ -674,7 +619,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -686,7 +630,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -698,7 +641,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -710,7 +652,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Institute of Nuclear Physics, Moscow State University (SINP MSU), Moscow, Russia"
         }
       ],
@@ -722,7 +663,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -734,7 +674,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -746,7 +685,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -758,7 +696,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -770,7 +707,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation28",
           "affPubRaw": "Universita degli Studi di Padova, Universita e INFN, Padova, Padova, Italy"
         }
       ],
@@ -782,7 +718,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -794,7 +729,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -806,7 +740,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -818,7 +751,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -830,7 +762,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -842,7 +773,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "School of Physics and Technology, Wuhan University, Wuhan, China, associated to 3"
         }
       ],
@@ -854,7 +784,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -866,7 +795,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "University of Birmingham, Birmingham, United Kingdom"
         }
       ],
@@ -878,7 +806,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -890,7 +817,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -902,7 +828,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -914,7 +839,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -926,7 +850,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -938,7 +861,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -950,7 +872,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -962,7 +883,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -974,7 +894,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -986,7 +905,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom"
         }
       ],
@@ -998,7 +916,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -1010,7 +927,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -1022,7 +938,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "University of Cincinnati, Cincinnati, OH, United States"
         }
       ],
@@ -1034,7 +949,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation81",
           "affPubRaw": "National Research University Higher School of Economics, Moscow, Russia, associated to 42"
         }
       ],
@@ -1046,7 +960,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation43",
           "affPubRaw": "Budker Institute of Nuclear Physics (SB RAS), Novosibirsk, Russia"
         }
       ],
@@ -1058,7 +971,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -1070,7 +982,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Yandex School of Data Analysis, Moscow, Russia"
         }
       ],
@@ -1082,7 +993,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -1094,7 +1004,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -1106,7 +1015,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -1118,7 +1026,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -1130,7 +1037,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1142,7 +1048,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -1154,7 +1059,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -1166,7 +1070,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation66",
           "affPubRaw": "University of Maryland, College Park, MD, United States"
         }
       ],
@@ -1178,7 +1081,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -1190,7 +1092,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1202,7 +1103,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -1214,7 +1114,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -1226,7 +1125,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -1238,7 +1136,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -1250,7 +1147,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1262,7 +1158,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation72",
           "affPubRaw": "Guangdong Provincial Key Laboratory of Nuclear Science, Guangdong-Hong Kong Joint Laboratory of Quantum Matter, Institute of Quantum Matter, South China Normal University, Guangzhou, China, associated to 3"
         }
       ],
@@ -1274,7 +1169,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "Institute for Nuclear Research of the Russian Academy of Sciences (INR RAS), Moscow, Russia"
         }
       ],
@@ -1286,7 +1180,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -1298,7 +1191,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1310,7 +1202,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1322,7 +1213,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -1334,7 +1224,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "School of Physics and Technology, Wuhan University, Wuhan, China, associated to 3"
         }
       ],
@@ -1346,7 +1235,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -1358,7 +1246,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -1370,7 +1257,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "University of Birmingham, Birmingham, United Kingdom"
         }
       ],
@@ -1382,7 +1268,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation84",
           "affPubRaw": "DS4DS, La Salle, Universitat Ramon Llull, Barcelona, Spain, associated to 45"
         }
       ],
@@ -1394,7 +1279,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -1406,7 +1290,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -1418,7 +1301,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -1430,7 +1312,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "INFN Sezione di Roma Tor Vergata, Roma, Italy"
         }
       ],
@@ -1442,7 +1323,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -1454,7 +1334,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -1466,7 +1345,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -1478,7 +1356,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -1490,7 +1367,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -1502,7 +1378,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -1514,7 +1389,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1526,7 +1400,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1538,7 +1411,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -1550,7 +1422,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -1562,7 +1433,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -1574,7 +1444,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -1586,7 +1455,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -1598,7 +1466,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1610,7 +1477,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "University of Birmingham, Birmingham, United Kingdom"
         }
       ],
@@ -1622,7 +1488,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -1634,7 +1499,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -1646,7 +1510,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -1658,7 +1521,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -1670,7 +1532,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -1682,7 +1543,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -1694,7 +1554,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -1706,7 +1565,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -1718,7 +1576,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -1730,7 +1587,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -1742,7 +1598,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -1754,7 +1609,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -1766,7 +1620,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -1778,7 +1631,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1790,7 +1642,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -1802,7 +1653,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1814,7 +1664,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -1826,7 +1675,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1838,7 +1686,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -1850,7 +1697,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1862,7 +1708,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -1874,7 +1719,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -1886,7 +1730,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -1898,7 +1741,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation37",
           "affPubRaw": "Horia Hulubei National Institute of Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -1910,7 +1752,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1922,7 +1763,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1934,7 +1774,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -1946,7 +1785,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "University of Birmingham, Birmingham, United Kingdom"
         }
       ],
@@ -1958,7 +1796,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom"
         }
       ],
@@ -1970,7 +1807,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -1982,7 +1818,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -1994,7 +1829,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -2006,7 +1840,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation64",
           "affPubRaw": "Massachusetts Institute of Technology, Cambridge, MA, United States"
         }
       ],
@@ -2018,7 +1851,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation67",
           "affPubRaw": "Los Alamos National Laboratory (LANL), Los Alamos, United States"
         }
       ],
@@ -2030,7 +1862,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Centro Brasileiro de Pesquisas F\u00edsicas (CBPF), Rio de Janeiro, Brazil"
         }
       ],
@@ -2042,7 +1873,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -2054,7 +1884,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation67",
           "affPubRaw": "Los Alamos National Laboratory (LANL), Los Alamos, United States"
         }
       ],
@@ -2066,7 +1895,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -2078,7 +1906,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -2090,7 +1917,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -2102,7 +1928,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -2114,7 +1939,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -2126,7 +1950,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -2138,7 +1961,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -2150,7 +1972,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation78",
           "affPubRaw": "Van Swinderen Institute, University of Groningen, Groningen, Netherlands, associated to 32"
         }
       ],
@@ -2162,7 +1983,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -2174,7 +1994,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -2186,7 +2005,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Centro Brasileiro de Pesquisas F\u00edsicas (CBPF), Rio de Janeiro, Brazil"
         }
       ],
@@ -2198,7 +2016,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -2210,7 +2027,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -2222,7 +2038,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -2234,7 +2049,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation79",
           "affPubRaw": "Universiteit Maastricht, Maastricht, Netherlands, associated to 32"
         }
       ],
@@ -2246,7 +2060,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation67",
           "affPubRaw": "Los Alamos National Laboratory (LANL), Los Alamos, United States"
         }
       ],
@@ -2258,7 +2071,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -2270,7 +2082,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -2282,7 +2093,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -2294,7 +2104,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -2306,7 +2115,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -2318,7 +2126,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -2330,7 +2137,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation81",
           "affPubRaw": "National Research University Higher School of Economics, Moscow, Russia, associated to 42"
         }
       ],
@@ -2342,7 +2148,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -2354,7 +2159,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -2366,7 +2170,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "School of Physics and Technology, Wuhan University, Wuhan, China, associated to 3"
         }
       ],
@@ -2378,7 +2181,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -2390,7 +2192,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -2402,7 +2203,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -2414,7 +2214,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -2426,7 +2225,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation52",
           "affPubRaw": "Institute for Nuclear Research of the National Academy of Sciences (KINR), Kyiv, Ukraine"
         }
       ],
@@ -2438,7 +2236,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "School of Physics, University College Dublin, Dublin, Ireland"
         }
       ],
@@ -2450,7 +2247,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -2462,7 +2258,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Centro Brasileiro de Pesquisas F\u00edsicas (CBPF), Rio de Janeiro, Brazil"
         }
       ],
@@ -2474,7 +2269,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom"
         }
       ],
@@ -2486,7 +2280,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation51",
           "affPubRaw": "NSC Kharkiv Institute of Physics and Technology (NSC KIPT), Kharkiv, Ukraine"
         }
       ],
@@ -2498,7 +2291,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -2510,7 +2302,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -2522,7 +2313,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -2534,7 +2324,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -2546,7 +2335,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation77",
           "affPubRaw": "INFN Sezione di Perugia, Perugia, Italy, associated to 21"
         }
       ],
@@ -2558,7 +2346,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -2570,7 +2357,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation67",
           "affPubRaw": "Los Alamos National Laboratory (LANL), Los Alamos, United States"
         }
       ],
@@ -2582,7 +2368,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -2594,7 +2379,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -2606,7 +2390,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -2618,7 +2401,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation57",
           "affPubRaw": "STFC Rutherford Appleton Laboratory, Didcot, United Kingdom"
         }
       ],
@@ -2630,7 +2412,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation69",
           "affPubRaw": "School of Physics and Astronomy, Monash University, Melbourne, Australia, associated to 56"
         }
       ],
@@ -2642,7 +2423,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -2654,7 +2434,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -2666,7 +2445,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -2678,7 +2456,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -2690,7 +2467,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation37",
           "affPubRaw": "Horia Hulubei National Institute of Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -2702,7 +2478,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation67",
           "affPubRaw": "Los Alamos National Laboratory (LANL), Los Alamos, United States"
         }
       ],
@@ -2714,7 +2489,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -2726,7 +2500,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -2738,7 +2511,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -2750,7 +2522,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -2762,7 +2533,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation20",
           "affPubRaw": "INFN Sezione di Bologna, Bologna, Italy"
         }
       ],
@@ -2774,7 +2544,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -2786,7 +2555,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -2798,7 +2566,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "School of Physics and Technology, Wuhan University, Wuhan, China, associated to 3"
         }
       ],
@@ -2810,7 +2577,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -2822,7 +2588,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -2834,7 +2599,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -2846,7 +2610,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation66",
           "affPubRaw": "University of Maryland, College Park, MD, United States"
         }
       ],
@@ -2858,7 +2621,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -2870,7 +2632,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -2882,7 +2643,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -2894,7 +2654,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -2906,7 +2665,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -2918,7 +2676,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "Institute for Nuclear Research of the Russian Academy of Sciences (INR RAS), Moscow, Russia"
         }
       ],
@@ -2930,7 +2687,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "INFN Sezione di Bari, Bari, Italy"
         }
       ],
@@ -2942,7 +2698,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -2954,7 +2709,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -2966,7 +2720,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation85",
           "affPubRaw": "University of Michigan, Ann Arbor, United States, associated to 68"
         }
       ],
@@ -2978,7 +2731,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -2990,7 +2742,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -3002,7 +2753,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation12",
           "affPubRaw": "Laboratoire Leprince-Ringuet, CNRS/IN2P3, Ecole Polytechnique, Institut Polytechnique de Paris, Palaiseau, France"
         }
       ],
@@ -3014,7 +2764,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -3026,7 +2775,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3038,7 +2786,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -3050,7 +2797,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation66",
           "affPubRaw": "University of Maryland, College Park, MD, United States"
         }
       ],
@@ -3062,7 +2808,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3074,7 +2819,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -3086,7 +2830,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -3098,7 +2841,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3110,7 +2852,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom"
         }
       ],
@@ -3122,7 +2863,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "INFN Sezione di Milano, Milano, Italy"
         }
       ],
@@ -3134,7 +2874,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -3146,7 +2885,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3158,7 +2896,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -3170,7 +2907,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Yandex School of Data Analysis, Moscow, Russia"
         }
       ],
@@ -3182,7 +2918,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -3194,7 +2929,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -3206,7 +2940,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -3218,7 +2951,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "INFN Sezione di Milano, Milano, Italy"
         }
       ],
@@ -3230,7 +2962,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "School of Physics State Key Laboratory of Nuclear Physics and Technology, Peking University, Beijing, China"
         }
       ],
@@ -3242,7 +2973,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -3254,7 +2984,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -3266,7 +2995,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "ICCUB, Universitat de Barcelona, Barcelona, Spain"
         }
       ],
@@ -3278,7 +3006,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -3290,7 +3017,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation12",
           "affPubRaw": "Laboratoire Leprince-Ringuet, CNRS/IN2P3, Ecole Polytechnique, Institut Polytechnique de Paris, Palaiseau, France"
         }
       ],
@@ -3302,7 +3028,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "ICCUB, Universitat de Barcelona, Barcelona, Spain"
         }
       ],
@@ -3314,7 +3039,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3326,7 +3050,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -3338,7 +3061,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -3350,7 +3072,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -3362,7 +3083,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -3374,7 +3094,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -3386,7 +3105,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -3398,7 +3116,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -3410,7 +3127,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -3422,7 +3138,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -3434,7 +3149,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "National Center for Nuclear Research (NCBJ), Warsaw, Poland"
         }
       ],
@@ -3446,7 +3160,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -3458,7 +3171,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "ICCUB, Universitat de Barcelona, Barcelona, Spain"
         }
       ],
@@ -3470,7 +3182,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation37",
           "affPubRaw": "Horia Hulubei National Institute of Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -3482,7 +3193,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -3494,7 +3204,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3506,7 +3215,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -3518,7 +3226,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation70",
           "affPubRaw": "Pontif\u00edcia Universidade Cat\u00f3lica do Rio de Janeiro (PUC-Rio), Rio de Janeiro, Brazil, associated to 2"
         }
       ],
@@ -3530,7 +3237,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation84",
           "affPubRaw": "DS4DS, La Salle, Universitat Ramon Llull, Barcelona, Spain, associated to 45"
         }
       ],
@@ -3542,7 +3248,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -3554,7 +3259,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "ICCUB, Universitat de Barcelona, Barcelona, Spain"
         }
       ],
@@ -3566,7 +3270,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -3578,7 +3281,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -3590,7 +3292,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -3602,7 +3303,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -3614,7 +3314,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Institute of Nuclear Physics, Moscow State University (SINP MSU), Moscow, Russia"
         }
       ],
@@ -3626,7 +3325,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation26",
           "affPubRaw": "INFN Sezione di Milano-Bicocca, Milano, Italy"
         }
       ],
@@ -3638,7 +3336,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3650,7 +3347,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -3662,7 +3358,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -3674,7 +3369,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3686,7 +3380,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "ICCUB, Universitat de Barcelona, Barcelona, Spain"
         }
       ],
@@ -3698,7 +3391,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -3710,7 +3402,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "INFN Sezione di Firenze, Firenze, Italy"
         }
       ],
@@ -3722,7 +3413,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation37",
           "affPubRaw": "Horia Hulubei National Institute of Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -3734,7 +3424,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -3746,7 +3435,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -3758,7 +3446,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -3770,7 +3457,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -3782,7 +3468,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -3794,7 +3479,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -3806,7 +3490,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -3818,7 +3501,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "Institute for Nuclear Research of the Russian Academy of Sciences (INR RAS), Moscow, Russia"
         }
       ],
@@ -3830,7 +3512,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -3842,7 +3523,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -3854,7 +3534,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3866,7 +3545,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation69",
           "affPubRaw": "School of Physics and Astronomy, Monash University, Melbourne, Australia, associated to 56"
         }
       ],
@@ -3878,7 +3556,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -3890,7 +3567,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3902,7 +3578,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -3914,7 +3589,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -3926,7 +3600,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation66",
           "affPubRaw": "University of Maryland, College Park, MD, United States"
         }
       ],
@@ -3938,7 +3611,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China"
         }
       ],
@@ -3950,7 +3622,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -3962,7 +3633,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -3974,7 +3644,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -3986,7 +3655,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -3998,7 +3666,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -4010,7 +3677,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4022,7 +3688,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4034,7 +3699,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -4046,7 +3710,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -4058,7 +3721,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -4070,7 +3732,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4082,7 +3743,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -4094,7 +3754,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -4106,7 +3765,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -4118,7 +3776,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -4130,7 +3787,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -4142,7 +3798,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -4154,7 +3809,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -4166,7 +3820,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation72",
           "affPubRaw": "Guangdong Provincial Key Laboratory of Nuclear Science, Guangdong-Hong Kong Joint Laboratory of Quantum Matter, Institute of Quantum Matter, South China Normal University, Guangzhou, China, associated to 3"
         }
       ],
@@ -4178,7 +3831,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China"
         }
       ],
@@ -4190,7 +3842,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -4202,7 +3853,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "School of Physics and Technology, Wuhan University, Wuhan, China, associated to 3"
         }
       ],
@@ -4214,7 +3864,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -4226,7 +3875,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -4238,7 +3886,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation81",
           "affPubRaw": "National Research University Higher School of Economics, Moscow, Russia, associated to 42"
         }
       ],
@@ -4250,7 +3897,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -4262,7 +3908,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -4274,7 +3919,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -4286,7 +3930,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -4298,7 +3941,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -4310,7 +3952,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "University of Cincinnati, Cincinnati, OH, United States"
         }
       ],
@@ -4322,7 +3963,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -4334,7 +3974,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -4346,7 +3985,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -4358,7 +3996,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4370,7 +4007,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4382,7 +4018,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -4394,7 +4029,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation47",
           "affPubRaw": "Instituto de Fisica Corpuscular, Centro Mixto Universidad de Valencia\u2014 CSIC, Valencia, Spain"
         }
       ],
@@ -4406,7 +4040,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation66",
           "affPubRaw": "University of Maryland, College Park, MD, United States"
         }
       ],
@@ -4418,7 +4051,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -4430,7 +4062,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -4442,7 +4073,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -4454,7 +4084,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4466,7 +4095,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -4478,7 +4106,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -4490,7 +4117,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4502,7 +4128,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4514,7 +4139,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation51",
           "affPubRaw": "NSC Kharkiv Institute of Physics and Technology (NSC KIPT), Kharkiv, Ukraine"
         }
       ],
@@ -4526,7 +4150,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -4538,7 +4161,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4550,7 +4172,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation81",
           "affPubRaw": "National Research University Higher School of Economics, Moscow, Russia, associated to 42"
         }
       ],
@@ -4562,7 +4183,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4574,7 +4194,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -4586,7 +4205,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation33",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics and VU University Amsterdam, Amsterdam, Netherlands"
         }
       ],
@@ -4598,7 +4216,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -4610,7 +4227,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation83",
           "affPubRaw": "National Research Tomsk Polytechnic University, Tomsk, Russia, associated to 41"
         }
       ],
@@ -4622,7 +4238,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -4634,7 +4249,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -4646,7 +4260,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -4658,7 +4271,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation64",
           "affPubRaw": "Massachusetts Institute of Technology, Cambridge, MA, United States"
         }
       ],
@@ -4670,7 +4282,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -4682,7 +4293,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "National Center for Nuclear Research (NCBJ), Warsaw, Poland"
         }
       ],
@@ -4694,7 +4304,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation52",
           "affPubRaw": "Institute for Nuclear Research of the National Academy of Sciences (KINR), Kyiv, Ukraine"
         }
       ],
@@ -4706,7 +4315,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -4718,7 +4326,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -4730,7 +4337,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -4742,7 +4348,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -4754,7 +4359,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -4766,7 +4370,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Institute of Nuclear Physics, Moscow State University (SINP MSU), Moscow, Russia"
         }
       ],
@@ -4778,7 +4381,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation52",
           "affPubRaw": "Institute for Nuclear Research of the National Academy of Sciences (KINR), Kyiv, Ukraine"
         }
       ],
@@ -4790,7 +4392,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -4802,7 +4403,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "Institute for Nuclear Research of the Russian Academy of Sciences (INR RAS), Moscow, Russia"
         }
       ],
@@ -4814,7 +4414,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4826,7 +4425,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -4838,7 +4436,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -4850,7 +4447,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -4862,7 +4458,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -4874,7 +4469,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "National Center for Nuclear Research (NCBJ), Warsaw, Poland"
         }
       ],
@@ -4886,7 +4480,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -4898,7 +4491,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation67",
           "affPubRaw": "Los Alamos National Laboratory (LANL), Los Alamos, United States"
         }
       ],
@@ -4910,7 +4502,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -4922,7 +4513,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -4934,7 +4524,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -4946,7 +4535,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -4958,7 +4546,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -4970,7 +4557,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -4982,7 +4568,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -4994,7 +4579,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -5006,7 +4590,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -5018,7 +4601,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -5030,7 +4612,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -5042,7 +4623,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -5054,7 +4634,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -5066,7 +4645,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -5078,7 +4656,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation85",
           "affPubRaw": "University of Michigan, Ann Arbor, United States, associated to 68"
         }
       ],
@@ -5090,7 +4667,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -5102,7 +4678,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Institute of Nuclear Physics, Moscow State University (SINP MSU), Moscow, Russia"
         }
       ],
@@ -5114,7 +4689,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -5126,7 +4700,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -5138,7 +4711,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -5150,7 +4722,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -5162,7 +4733,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation72",
           "affPubRaw": "Guangdong Provincial Key Laboratory of Nuclear Science, Guangdong-Hong Kong Joint Laboratory of Quantum Matter, Institute of Quantum Matter, South China Normal University, Guangzhou, China, associated to 3"
         }
       ],
@@ -5174,7 +4744,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -5186,7 +4755,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -5198,7 +4766,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China"
         }
       ],
@@ -5210,7 +4777,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -5222,7 +4788,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -5234,7 +4799,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -5246,7 +4810,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -5258,7 +4821,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -5270,7 +4832,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -5282,7 +4843,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -5294,7 +4854,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -5306,7 +4865,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation72",
           "affPubRaw": "Guangdong Provincial Key Laboratory of Nuclear Science, Guangdong-Hong Kong Joint Laboratory of Quantum Matter, Institute of Quantum Matter, South China Normal University, Guangzhou, China, associated to 3"
         }
       ],
@@ -5318,7 +4876,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -5330,7 +4887,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -5342,7 +4898,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -5354,7 +4909,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -5366,7 +4920,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -5378,7 +4931,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom"
         }
       ],
@@ -5390,7 +4942,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -5402,7 +4953,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -5414,7 +4964,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -5426,7 +4975,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "Institute for Nuclear Research of the Russian Academy of Sciences (INR RAS), Moscow, Russia"
         }
       ],
@@ -5438,7 +4986,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -5450,7 +4997,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -5462,7 +5008,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -5474,7 +5019,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -5486,7 +5030,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -5498,7 +5041,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -5510,7 +5052,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -5522,7 +5063,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -5534,7 +5074,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation37",
           "affPubRaw": "Horia Hulubei National Institute of Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -5546,7 +5085,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -5558,7 +5096,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -5570,7 +5107,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -5582,7 +5118,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -5594,7 +5129,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -5606,7 +5140,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -5618,7 +5151,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation81",
           "affPubRaw": "National Research University Higher School of Economics, Moscow, Russia, associated to 42"
         }
       ],
@@ -5630,7 +5162,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -5642,7 +5173,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -5654,7 +5184,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -5666,7 +5195,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -5678,7 +5206,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -5690,7 +5217,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation80",
           "affPubRaw": "National Research Centre Kurchatov Institute, Moscow, Russia, associated to 41"
         }
       ],
@@ -5702,7 +5228,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -5714,7 +5239,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -5726,7 +5250,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -5738,7 +5261,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation20",
           "affPubRaw": "INFN Sezione di Bologna, Bologna, Italy"
         }
       ],
@@ -5750,7 +5272,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -5762,7 +5283,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -5774,7 +5294,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -5786,7 +5305,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -5798,7 +5316,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -5810,7 +5327,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation30",
           "affPubRaw": "INFN Sezione di Roma La Sapienza, Roma, Italy"
         }
       ],
@@ -5822,7 +5338,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -5834,7 +5349,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation47",
           "affPubRaw": "Instituto de Fisica Corpuscular, Centro Mixto Universidad de Valencia\u2014 CSIC, Valencia, Spain"
         }
       ],
@@ -5846,7 +5360,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Centro Brasileiro de Pesquisas F\u00edsicas (CBPF), Rio de Janeiro, Brazil"
         }
       ],
@@ -5858,7 +5371,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -5870,7 +5382,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -5882,7 +5393,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -5894,7 +5404,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -5906,7 +5415,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -5918,7 +5426,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation26",
           "affPubRaw": "INFN Sezione di Milano-Bicocca, Milano, Italy"
         }
       ],
@@ -5930,7 +5437,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation85",
           "affPubRaw": "University of Michigan, Ann Arbor, United States, associated to 68"
         }
       ],
@@ -5942,7 +5448,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -5954,7 +5459,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation12",
           "affPubRaw": "Laboratoire Leprince-Ringuet, CNRS/IN2P3, Ecole Polytechnique, Institut Polytechnique de Paris, Palaiseau, France"
         }
       ],
@@ -5966,7 +5470,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "ICCUB, Universitat de Barcelona, Barcelona, Spain"
         }
       ],
@@ -5978,7 +5481,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -5990,7 +5492,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -6002,7 +5503,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "School of Physics, University College Dublin, Dublin, Ireland"
         }
       ],
@@ -6014,7 +5514,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -6026,7 +5525,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -6038,7 +5536,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "School of Physics, University College Dublin, Dublin, Ireland"
         }
       ],
@@ -6050,7 +5547,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -6062,7 +5558,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "University of Cincinnati, Cincinnati, OH, United States"
         }
       ],
@@ -6074,7 +5569,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -6086,7 +5580,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -6098,7 +5591,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation76",
           "affPubRaw": "Institut f\u00fcr Physik, Universit\u00e4t Rostock, Rostock, Germany, associated to 17"
         }
       ],
@@ -6110,7 +5602,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "National Center for Nuclear Research (NCBJ), Warsaw, Poland"
         }
       ],
@@ -6122,7 +5613,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "INFN Sezione di Milano, Milano, Italy"
         }
       ],
@@ -6134,7 +5624,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -6146,7 +5635,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -6158,7 +5646,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation74",
           "affPubRaw": "Departamento de Fisica, Universidad Nacional de Colombia, Bogota, Colombia, associated to 13"
         }
       ],
@@ -6170,7 +5657,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -6182,7 +5668,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -6194,7 +5679,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -6206,7 +5690,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -6218,7 +5701,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -6230,7 +5712,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -6242,7 +5723,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -6254,7 +5734,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -6266,7 +5745,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -6278,7 +5756,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -6290,7 +5767,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -6302,7 +5778,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation74",
           "affPubRaw": "Departamento de Fisica, Universidad Nacional de Colombia, Bogota, Colombia, associated to 13"
         }
       ],
@@ -6314,7 +5789,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -6326,7 +5800,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation28",
           "affPubRaw": "Universita degli Studi di Padova, Universita e INFN, Padova, Padova, Italy"
         }
       ],
@@ -6338,7 +5811,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -6350,7 +5822,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -6362,7 +5833,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation75",
           "affPubRaw": "Universit\u00e4t Bonn\u2014 Helmholtz-Institut f\u00fcr Strahlen und Kernphysik, Bonn, Germany, associated to 17"
         }
       ],
@@ -6374,7 +5844,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -6386,7 +5855,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -6398,7 +5866,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -6410,7 +5877,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -6422,7 +5888,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -6434,7 +5899,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -6446,7 +5910,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -6458,7 +5921,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -6470,7 +5932,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -6482,7 +5943,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -6494,7 +5954,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation57",
           "affPubRaw": "STFC Rutherford Appleton Laboratory, Didcot, United Kingdom"
         }
       ],
@@ -6506,7 +5965,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -6518,7 +5976,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -6530,7 +5987,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -6542,7 +5998,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -6554,7 +6009,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation75",
           "affPubRaw": "Universit\u00e4t Bonn\u2014 Helmholtz-Institut f\u00fcr Strahlen und Kernphysik, Bonn, Germany, associated to 17"
         }
       ],
@@ -6566,7 +6020,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -6578,7 +6031,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -6590,7 +6042,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -6602,7 +6053,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -6614,7 +6064,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -6626,7 +6075,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Institute of Nuclear Physics, Moscow State University (SINP MSU), Moscow, Russia"
         }
       ],
@@ -6638,7 +6086,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -6650,7 +6097,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation85",
           "affPubRaw": "University of Michigan, Ann Arbor, United States, associated to 68"
         }
       ],
@@ -6662,7 +6108,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -6674,7 +6119,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -6686,7 +6130,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -6698,7 +6141,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -6710,7 +6152,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation78",
           "affPubRaw": "Van Swinderen Institute, University of Groningen, Groningen, Netherlands, associated to 32"
         }
       ],
@@ -6722,7 +6163,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -6734,7 +6174,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -6746,7 +6185,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -6758,7 +6196,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -6770,7 +6207,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation47",
           "affPubRaw": "Instituto de Fisica Corpuscular, Centro Mixto Universidad de Valencia\u2014 CSIC, Valencia, Spain"
         }
       ],
@@ -6782,7 +6218,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -6794,7 +6229,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -6806,7 +6240,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -6818,7 +6251,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "INFN Sezione di Bari, Bari, Italy"
         }
       ],
@@ -6830,7 +6262,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -6842,7 +6273,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -6854,7 +6284,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation83",
           "affPubRaw": "National Research Tomsk Polytechnic University, Tomsk, Russia, associated to 41"
         }
       ],
@@ -6866,7 +6295,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation57",
           "affPubRaw": "STFC Rutherford Appleton Laboratory, Didcot, United Kingdom"
         }
       ],
@@ -6878,7 +6306,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "University of Cincinnati, Cincinnati, OH, United States"
         }
       ],
@@ -6890,7 +6317,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation66",
           "affPubRaw": "University of Maryland, College Park, MD, United States"
         }
       ],
@@ -6902,7 +6328,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -6914,7 +6339,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -6926,7 +6350,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -6938,7 +6361,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "INFN Sezione di Firenze, Firenze, Italy"
         }
       ],
@@ -6950,7 +6372,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "INFN Sezione di Bari, Bari, Italy"
         }
       ],
@@ -6962,7 +6383,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -6974,7 +6394,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation79",
           "affPubRaw": "Universiteit Maastricht, Maastricht, Netherlands, associated to 32"
         }
       ],
@@ -6986,7 +6405,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -6998,7 +6416,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -7010,7 +6427,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -7022,7 +6438,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation20",
           "affPubRaw": "INFN Sezione di Bologna, Bologna, Italy"
         }
       ],
@@ -7034,7 +6449,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -7046,7 +6460,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -7058,7 +6471,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -7070,7 +6482,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation80",
           "affPubRaw": "National Research Centre Kurchatov Institute, Moscow, Russia, associated to 41"
         }
       ],
@@ -7082,7 +6493,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -7094,7 +6504,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "INFN Sezione di Milano, Milano, Italy"
         }
       ],
@@ -7106,7 +6515,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -7118,7 +6526,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Yandex School of Data Analysis, Moscow, Russia"
         }
       ],
@@ -7130,7 +6537,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation77",
           "affPubRaw": "INFN Sezione di Perugia, Perugia, Italy, associated to 21"
         }
       ],
@@ -7142,7 +6548,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -7154,7 +6559,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -7166,7 +6570,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -7178,7 +6581,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation30",
           "affPubRaw": "INFN Sezione di Roma La Sapienza, Roma, Italy"
         }
       ],
@@ -7190,7 +6592,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -7202,7 +6603,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -7214,7 +6614,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation37",
           "affPubRaw": "Horia Hulubei National Institute of Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -7226,7 +6625,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "University of Birmingham, Birmingham, United Kingdom"
         }
       ],
@@ -7238,7 +6636,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -7250,7 +6647,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -7262,7 +6658,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -7274,7 +6669,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -7286,7 +6680,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -7298,7 +6691,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -7310,7 +6702,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -7322,7 +6713,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -7334,7 +6724,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -7346,7 +6735,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Yandex School of Data Analysis, Moscow, Russia"
         }
       ],
@@ -7358,7 +6746,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -7370,7 +6757,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -7382,7 +6768,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -7394,7 +6779,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -7406,7 +6790,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation52",
           "affPubRaw": "Institute for Nuclear Research of the National Academy of Sciences (KINR), Kyiv, Ukraine"
         }
       ],
@@ -7418,7 +6801,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -7430,7 +6812,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -7442,7 +6823,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -7454,7 +6834,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -7466,7 +6845,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -7478,7 +6856,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "School of Physics, University College Dublin, Dublin, Ireland"
         }
       ],
@@ -7490,7 +6867,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -7502,7 +6878,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -7514,7 +6889,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -7526,7 +6900,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "INFN Sezione di Pisa, Pisa, Italy"
         }
       ],
@@ -7538,7 +6911,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -7550,7 +6922,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -7562,7 +6933,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation33",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics and VU University Amsterdam, Amsterdam, Netherlands"
         }
       ],
@@ -7574,7 +6944,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -7586,7 +6955,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -7598,7 +6966,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -7610,7 +6977,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation47",
           "affPubRaw": "Instituto de Fisica Corpuscular, Centro Mixto Universidad de Valencia\u2014 CSIC, Valencia, Spain"
         }
       ],
@@ -7622,7 +6988,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -7634,7 +6999,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -7646,7 +7010,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "INFN Sezione di Pisa, Pisa, Italy"
         }
       ],
@@ -7658,7 +7021,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation57",
           "affPubRaw": "STFC Rutherford Appleton Laboratory, Didcot, United Kingdom"
         }
       ],
@@ -7670,7 +7032,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -7682,7 +7043,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -7694,7 +7054,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -7706,7 +7065,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -7718,7 +7076,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -7730,7 +7087,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation74",
           "affPubRaw": "Departamento de Fisica, Universidad Nacional de Colombia, Bogota, Colombia, associated to 13"
         }
       ],
@@ -7742,7 +7098,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -7754,7 +7109,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -7766,7 +7120,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -7778,7 +7131,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -7790,7 +7142,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -7802,7 +7153,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation85",
           "affPubRaw": "University of Michigan, Ann Arbor, United States, associated to 68"
         }
       ],
@@ -7814,7 +7164,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -7826,7 +7175,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -7838,7 +7186,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -7850,7 +7197,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation47",
           "affPubRaw": "Instituto de Fisica Corpuscular, Centro Mixto Universidad de Valencia\u2014 CSIC, Valencia, Spain"
         }
       ],
@@ -7862,7 +7208,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation81",
           "affPubRaw": "National Research University Higher School of Economics, Moscow, Russia, associated to 42"
         }
       ],
@@ -7874,7 +7219,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -7886,7 +7230,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -7898,7 +7241,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -7910,7 +7252,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -7922,7 +7263,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -7934,7 +7274,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -7946,7 +7285,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation30",
           "affPubRaw": "INFN Sezione di Roma La Sapienza, Roma, Italy"
         }
       ],
@@ -7958,7 +7296,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -7970,7 +7307,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -7982,7 +7318,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -7994,7 +7329,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -8006,7 +7340,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation75",
           "affPubRaw": "Universit\u00e4t Bonn\u2014 Helmholtz-Institut f\u00fcr Strahlen und Kernphysik, Bonn, Germany, associated to 17"
         }
       ],
@@ -8018,7 +7351,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation30",
           "affPubRaw": "INFN Sezione di Roma La Sapienza, Roma, Italy"
         }
       ],
@@ -8030,7 +7362,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "INFN Sezione di Roma Tor Vergata, Roma, Italy"
         }
       ],
@@ -8042,7 +7373,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -8054,7 +7384,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -8066,7 +7395,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -8078,7 +7406,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "I. Physikalisches Institut, RWTH Aachen University, Aachen, Germany"
         }
       ],
@@ -8090,7 +7417,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -8102,7 +7428,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom"
         }
       ],
@@ -8114,7 +7439,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8126,7 +7450,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation16",
           "affPubRaw": "Max-Planck-Institut f\u00fcr Kernphysik (MPIK), Heidelberg, Germany"
         }
       ],
@@ -8138,7 +7461,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8150,7 +7472,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -8162,7 +7483,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8174,7 +7494,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -8186,7 +7505,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -8198,7 +7516,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -8210,7 +7527,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8222,7 +7538,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "INFN Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -8234,7 +7549,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -8246,7 +7560,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -8258,7 +7571,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation33",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics and VU University Amsterdam, Amsterdam, Netherlands"
         }
       ],
@@ -8270,7 +7582,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -8282,7 +7593,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation28",
           "affPubRaw": "Universita degli Studi di Padova, Universita e INFN, Padova, Padova, Italy"
         }
       ],
@@ -8294,7 +7604,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -8306,7 +7615,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8318,7 +7626,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "School of Physics State Key Laboratory of Nuclear Physics and Technology, Peking University, Beijing, China"
         }
       ],
@@ -8330,7 +7637,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation85",
           "affPubRaw": "University of Michigan, Ann Arbor, United States, associated to 68"
         }
       ],
@@ -8342,7 +7648,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -8354,7 +7659,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -8366,7 +7670,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -8378,7 +7681,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -8390,7 +7692,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "School of Physics State Key Laboratory of Nuclear Physics and Technology, Peking University, Beijing, China"
         }
       ],
@@ -8402,7 +7703,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation80",
           "affPubRaw": "National Research Centre Kurchatov Institute, Moscow, Russia, associated to 41"
         }
       ],
@@ -8414,7 +7714,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -8426,7 +7725,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -8438,7 +7736,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -8450,7 +7747,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -8462,7 +7758,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation28",
           "affPubRaw": "Universita degli Studi di Padova, Universita e INFN, Padova, Padova, Italy"
         }
       ],
@@ -8474,7 +7769,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -8486,7 +7780,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -8498,7 +7791,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "University of Birmingham, Birmingham, United Kingdom"
         }
       ],
@@ -8510,7 +7802,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -8522,7 +7813,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -8534,7 +7824,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "Institute of Theoretical and Experimental Physics NRC Kurchatov Institute (ITEP NRC KI), Moscow, Russia"
         }
       ],
@@ -8546,7 +7835,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -8558,7 +7846,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -8570,7 +7857,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -8582,7 +7868,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation20",
           "affPubRaw": "INFN Sezione di Bologna, Bologna, Italy"
         }
       ],
@@ -8594,7 +7879,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -8606,7 +7890,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "University of Cincinnati, Cincinnati, OH, United States"
         }
       ],
@@ -8618,7 +7901,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom"
         }
       ],
@@ -8630,7 +7912,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -8642,7 +7923,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -8654,7 +7934,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -8666,7 +7945,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil"
         }
       ],
@@ -8678,7 +7956,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -8690,7 +7967,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom"
         }
       ],
@@ -8702,7 +7978,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8714,7 +7989,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "University of Cincinnati, Cincinnati, OH, United States"
         }
       ],
@@ -8726,7 +8000,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8738,7 +8011,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -8750,7 +8022,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -8762,7 +8033,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -8774,7 +8044,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -8786,7 +8055,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation37",
           "affPubRaw": "Horia Hulubei National Institute of Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -8798,7 +8066,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -8810,7 +8077,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -8822,7 +8088,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "INFN Sezione di Cagliari, Monserrato, Italy"
         }
       ],
@@ -8834,7 +8099,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "School of Physics and Technology, Wuhan University, Wuhan, China, associated to 3"
         }
       ],
@@ -8846,7 +8110,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation66",
           "affPubRaw": "University of Maryland, College Park, MD, United States"
         }
       ],
@@ -8858,7 +8121,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -8870,7 +8132,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "University of Birmingham, Birmingham, United Kingdom"
         }
       ],
@@ -8882,7 +8143,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -8894,7 +8154,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "National Center for Nuclear Research (NCBJ), Warsaw, Poland"
         }
       ],
@@ -8906,7 +8165,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "AGH\u2014 University of Science and Technology, Faculty of Physics and Applied Computer Science, Krak\u00f3w, Poland"
         }
       ],
@@ -8918,7 +8176,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8930,7 +8187,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -8942,7 +8198,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8954,7 +8209,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -8966,7 +8220,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -8978,7 +8231,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         }
       ],
@@ -8990,7 +8242,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Univ. Savoie Mont Blanc, CNRS, IN2P3-LAPP, Annecy, France"
         }
       ],
@@ -9002,7 +8253,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -9014,7 +8264,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Centro Brasileiro de Pesquisas F\u00edsicas (CBPF), Rio de Janeiro, Brazil"
         }
       ],
@@ -9026,7 +8275,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -9038,7 +8286,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -9050,7 +8297,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -9062,7 +8308,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -9074,7 +8319,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -9086,7 +8330,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "National Center for Nuclear Research (NCBJ), Warsaw, Poland"
         }
       ],
@@ -9098,7 +8341,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -9110,7 +8352,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -9122,7 +8363,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -9134,7 +8374,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -9146,7 +8385,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation83",
           "affPubRaw": "National Research Tomsk Polytechnic University, Tomsk, Russia, associated to 41"
         }
       ],
@@ -9158,7 +8396,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation20",
           "affPubRaw": "INFN Sezione di Bologna, Bologna, Italy"
         }
       ],
@@ -9170,7 +8407,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -9182,7 +8418,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation20",
           "affPubRaw": "INFN Sezione di Bologna, Bologna, Italy"
         }
       ],
@@ -9194,7 +8429,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation84",
           "affPubRaw": "DS4DS, La Salle, Universitat Ramon Llull, Barcelona, Spain, associated to 45"
         }
       ],
@@ -9206,7 +8440,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -9218,7 +8451,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -9230,7 +8462,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "National University of Science and Technology \u201cMISIS\u201d, Moscow, Russia, associated to 41"
         }
       ],
@@ -9242,7 +8473,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "School of Physics, University College Dublin, Dublin, Ireland"
         }
       ],
@@ -9254,7 +8484,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation78",
           "affPubRaw": "Van Swinderen Institute, University of Groningen, Groningen, Netherlands, associated to 32"
         }
       ],
@@ -9266,7 +8495,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -9278,7 +8506,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -9290,7 +8517,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -9302,7 +8528,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "INFN Sezione di Ferrara, Ferrara, Italy"
         }
       ],
@@ -9314,7 +8539,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -9326,7 +8550,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -9338,7 +8561,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "Nikhef National Institute for Subatomic Physics, Amsterdam, Netherlands"
         }
       ],
@@ -9350,7 +8572,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Department of Physics, University of Warwick, Coventry, United Kingdom"
         }
       ],
@@ -9362,7 +8583,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "University of Cincinnati, Cincinnati, OH, United States"
         }
       ],
@@ -9374,7 +8594,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -9386,7 +8605,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation76",
           "affPubRaw": "Institut f\u00fcr Physik, Universit\u00e4t Rostock, Rostock, Germany, associated to 17"
         }
       ],
@@ -9398,7 +8616,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation84",
           "affPubRaw": "DS4DS, La Salle, Universitat Ramon Llull, Barcelona, Spain, associated to 45"
         }
       ],
@@ -9410,7 +8627,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -9422,7 +8638,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -9434,7 +8649,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France"
         }
       ],
@@ -9446,7 +8660,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -9458,7 +8671,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Petersburg Nuclear Physics Institute NRC Kurchatov Institute (PNPI NRC KI), Gatchina, Russia"
         }
       ],
@@ -9470,7 +8682,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -9482,7 +8693,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "INFN Sezione di Pisa, Pisa, Italy"
         }
       ],
@@ -9494,7 +8704,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -9506,7 +8715,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "School of Physics State Key Laboratory of Nuclear Physics and Technology, Peking University, Beijing, China"
         }
       ],
@@ -9518,7 +8726,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -9530,7 +8737,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -9542,7 +8748,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "School of Physics and Technology, Wuhan University, Wuhan, China, associated to 3"
         }
       ],
@@ -9554,7 +8759,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -9566,7 +8770,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -9578,7 +8781,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China"
         }
       ],
@@ -9590,7 +8792,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Physik-Institut, Universit\u00e4t Z\u00fcrich, Z\u00fcrich, Switzerland"
         }
       ],
@@ -9602,7 +8803,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -9614,7 +8814,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -9626,7 +8825,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "University of Birmingham, Birmingham, United Kingdom"
         }
       ],
@@ -9638,7 +8836,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "LPNHE, Sorbonne Universit\u00e9, Paris Diderot Sorbonne Paris Cit\u00e9, CNRS/IN2P3, Paris, France"
         }
       ],
@@ -9650,7 +8847,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Imperial College London, London, United Kingdom"
         }
       ],
@@ -9662,7 +8858,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation64",
           "affPubRaw": "Massachusetts Institute of Technology, Cambridge, MA, United States"
         }
       ],
@@ -9674,7 +8869,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -9686,7 +8880,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],
@@ -9698,7 +8891,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom"
         }
       ],
@@ -9710,7 +8902,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Fakult\u00e4t Physik, Technische Universit\u00e4t Dortmund, Dortmund, Germany"
         }
       ],
@@ -9722,7 +8913,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -9734,7 +8924,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -9746,7 +8935,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -9758,7 +8946,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation64",
           "affPubRaw": "Massachusetts Institute of Technology, Cambridge, MA, United States"
         }
       ],
@@ -9770,7 +8957,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -9782,7 +8968,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation57",
           "affPubRaw": "STFC Rutherford Appleton Laboratory, Didcot, United Kingdom"
         }
       ],
@@ -9794,7 +8979,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "National Center for Nuclear Research (NCBJ), Warsaw, Poland"
         }
       ],
@@ -9806,7 +8990,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -9818,7 +9001,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -9830,7 +9012,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -9842,7 +9023,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom"
         }
       ],
@@ -9854,7 +9034,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -9866,7 +9045,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -9878,7 +9056,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -9890,7 +9067,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China"
         }
       ],
@@ -9902,7 +9078,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China"
         }
       ],
@@ -9914,7 +9089,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "School of Physics State Key Laboratory of Nuclear Physics and Technology, Peking University, Beijing, China"
         }
       ],
@@ -9926,7 +9100,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -9938,7 +9111,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -9950,7 +9122,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China"
         }
       ],
@@ -9962,7 +9133,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -9974,7 +9144,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "School of Physics State Key Laboratory of Nuclear Physics and Technology, Peking University, Beijing, China"
         }
       ],
@@ -9986,7 +9155,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -9998,7 +9166,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -10010,7 +9177,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -10022,7 +9188,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -10034,7 +9199,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -10046,7 +9210,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation66",
           "affPubRaw": "University of Maryland, College Park, MD, United States"
         }
       ],
@@ -10058,7 +9221,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -10070,7 +9232,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom"
         }
       ],
@@ -10082,7 +9243,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China"
         }
       ],
@@ -10094,7 +9254,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation71",
           "affPubRaw": "Physics and Micro Electronic College, Hunan University, Changsha City, China, associated to 7"
         }
       ],
@@ -10106,7 +9265,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "Syracuse University, Syracuse, NY, United States"
         }
       ],
@@ -10118,7 +9276,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "Institute for High Energy Physics NRC Kurchatov Institute (IHEP NRC KI), Protvino, Russia, Protvino, Russia"
         }
       ],
@@ -10130,7 +9287,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Institute of Physics, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL), Lausanne, Switzerland"
         }
       ],
@@ -10142,7 +9298,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak\u00f3w, Poland"
         }
       ],
@@ -10154,7 +9309,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         }
       ],
@@ -10166,7 +9320,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -10178,7 +9331,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China"
         }
       ],
@@ -10190,7 +9342,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -10202,7 +9353,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "School of Physics State Key Laboratory of Nuclear Physics and Technology, Peking University, Beijing, China"
         }
       ],
@@ -10214,7 +9364,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "School of Physics State Key Laboratory of Nuclear Physics and Technology, Peking University, Beijing, China"
         }
       ],
@@ -10226,7 +9375,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Department of Physics, University of Oxford, Oxford, United Kingdom"
         }
       ],
@@ -10238,7 +9386,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Physikalisches Institut, Ruprecht-Karls-Universit\u00e4t Heidelberg, Heidelberg, Germany"
         }
       ],
@@ -10250,7 +9397,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -10262,7 +9408,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -10274,7 +9419,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -10286,7 +9430,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Center for High Energy Physics, Tsinghua University, Beijing, China"
         }
       ],
@@ -10298,7 +9441,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "University of Chinese Academy of Sciences, Beijing, China"
         }
       ],
@@ -10310,7 +9452,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom"
         }
       ],
@@ -10322,7 +9463,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Institute Of High Energy Physics (IHEP), Beijing, China"
         }
       ],
@@ -10334,7 +9474,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation28",
           "affPubRaw": "Universita degli Studi di Padova, Universita e INFN, Padova, Padova, Italy"
         }
       ],
@@ -10346,7 +9485,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Department of Physics and Astronomy, University of Manchester, Manchester, United Kingdom"
         }
       ],

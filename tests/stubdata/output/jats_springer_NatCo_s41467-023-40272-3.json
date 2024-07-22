@@ -6,12 +6,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN), Universidad Nacional de San Mart\u00edn, San Mart\u00edn (1650), Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -26,12 +60,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN), Universidad Nacional de San Mart\u00edn, San Mart\u00edn (1650), Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -45,8 +113,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.7345.5",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0056 1981",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET, Facultad de Medicina UBA, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -57,8 +134,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.7345.5",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0056 1981",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET, Facultad de Medicina UBA, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -69,8 +155,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff4",
-          "affPubRaw": "Fundaci\u00f3n Pablo Cassar\u00e1 - Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Fundaci\u00f3n Pablo Cassar\u00e1 - Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -81,12 +166,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN), Universidad Nacional de San Mart\u00edn, San Mart\u00edn (1650), Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -97,12 +216,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN), Universidad Nacional de San Mart\u00edn, San Mart\u00edn (1650), Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -113,12 +266,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN), Universidad Nacional de San Mart\u00edn, San Mart\u00edn (1650), Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -129,12 +316,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN), Universidad Nacional de San Mart\u00edn, San Mart\u00edn (1650), Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -145,8 +366,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.7345.5",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0056 1981",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET, Facultad de Medicina UBA, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -157,8 +387,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.7345.5",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0056 1981",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET, Facultad de Medicina UBA, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -169,8 +408,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff5",
-          "affPubRaw": "Ministerio de Salud de la Provincia de Buenos Aires Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.494271.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0639 0062",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Ministerio de Salud de la Provincia de Buenos Aires, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -181,8 +429,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff5",
-          "affPubRaw": "Ministerio de Salud de la Provincia de Buenos Aires Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.494271.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0639 0062",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Ministerio de Salud de la Provincia de Buenos Aires, Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -196,8 +453,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET Facultad de Medicina UBA Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.7345.5",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0056 1981",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biom\u00e9dicas en Retrovirus y SIDA, INBIRS-CONICET, Facultad de Medicina UBA, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -208,12 +474,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN), Universidad Nacional de San Mart\u00edn, San Mart\u00edn (1650), Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -232,8 +532,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -248,12 +547,30 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "Aff4",
-          "affPubRaw": "Fundaci\u00f3n Pablo Cassar\u00e1 - Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Fundaci\u00f3n Pablo Cassar\u00e1 - Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -268,8 +585,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -284,8 +600,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -300,8 +625,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -316,8 +640,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -332,8 +655,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -348,8 +670,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -364,8 +685,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -380,8 +700,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -396,8 +715,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -412,8 +730,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -428,8 +745,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -444,8 +760,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -460,8 +775,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -476,8 +790,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -492,8 +805,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff6",
-          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina"
+          "affPubRaw": "FP CLINICAL PHARMA, Ciudad Aut\u00f3noma de Buenos Aires, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -504,8 +816,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff6",
-          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina"
+          "affPubRaw": "FP CLINICAL PHARMA, Ciudad Aut\u00f3noma de Buenos Aires, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -516,8 +827,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff6",
-          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina"
+          "affPubRaw": "FP CLINICAL PHARMA, Ciudad Aut\u00f3noma de Buenos Aires, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -528,8 +838,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -540,8 +849,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -552,8 +860,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff8",
-          "affPubRaw": "Nobeltri Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Nobeltri, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -564,8 +871,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff6",
-          "affPubRaw": "FP CLINICAL PHARMA Ciudad Aut\u00f3noma de Buenos Aires Buenos Aires Argentina"
+          "affPubRaw": "FP CLINICAL PHARMA, Ciudad Aut\u00f3noma de Buenos Aires, Buenos Aires, Argentina"
         }
       ],
       "name": {
@@ -576,8 +882,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos Saladillo 2452 C1440FFX Ciudad Aut\u00f3noma de Buenos Aires Argentina"
+          "affPubRaw": "Laboratorio Pablo Cassar\u00e1 \u2013 Unidad de I + D de Biof\u00e1rmacos, Saladillo 2452 C1440FFX, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
         }
       ],
       "attrib": {
@@ -591,12 +896,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Instituto de Investigaciones Biotecnol\u00f3gicas, Universidad Nacional de San Mart\u00edn (UNSAM) \u2013 Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET), San Mart\u00edn (1650), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN) Universidad Nacional de San Mart\u00edn San Mart\u00edn (1650) Buenos Aires Argentina"
+          "affPubID": [
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.108365.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2105 0048",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Escuela de Bio y Nanotecnolog\u00edas (EByN), Universidad Nacional de San Mart\u00edn, San Mart\u00edn (1650), Buenos Aires, Argentina"
         }
       ],
       "attrib": {

@@ -6,7 +6,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Institut Franco-Allemand de Recherches de Saint-Louis (France)"
         }
       ],
@@ -18,7 +17,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Institut Franco-Allemand de Recherches de Saint-Louis (France)"
         }
       ],
@@ -30,7 +28,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "Univ. of Wisconsin-Madison (United States)"
         }
       ],
@@ -42,7 +39,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff3",
           "affPubRaw": "Portland State Univ. (United States)"
         }
       ],
@@ -54,7 +50,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "Univ. of Wisconsin-Madison (United States)"
         }
       ],
@@ -66,7 +61,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Institut Franco-Allemand de Recherches de Saint-Louis (France)"
         }
       ],
@@ -85,7 +79,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff4",
             "affPubRaw": "Argo AI, LLC (United States)"
           }
         ],
@@ -100,7 +93,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff5",
             "affPubRaw": "National Institute of Standards and Technology (United States)"
           }
         ],
@@ -115,7 +107,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff6",
             "affPubRaw": "MIT Lincoln Lab. (United States)"
           }
         ],

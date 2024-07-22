@@ -6,7 +6,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "ONERA/DOTA, Univ. of Toulouse (France)"
         }
       ],
@@ -18,7 +17,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "ONERA/DOTA, Univ. of Toulouse (France)"
         }
       ],
@@ -30,7 +28,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "ONERA/DOTA, Univ. of Toulouse (France)"
         }
       ],
@@ -42,7 +39,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "ONERA/DOTA, Univ. of Toulouse (France)"
         }
       ],
@@ -54,7 +50,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "ONERA/DOTA, Univ. of Toulouse (France)"
         }
       ],
@@ -73,7 +68,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff2",
             "affPubRaw": "Argo AI, LLC (United States)"
           }
         ],
@@ -88,7 +82,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff3",
             "affPubRaw": "National Institute of Standards and Technology (United States)"
           }
         ],
@@ -103,7 +96,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff4",
             "affPubRaw": "MIT Lincoln Lab. (United States)"
           }
         ],

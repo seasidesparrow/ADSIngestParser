@@ -14,7 +14,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff1",
             "affPubRaw": "Argo AI, LLC (United States)"
           }
         ],
@@ -29,7 +28,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff2",
             "affPubRaw": "National Institute of Standards and Technology (United States)"
           }
         ],
@@ -44,7 +42,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff3",
             "affPubRaw": "MIT Lincoln Lab. (United States)"
           }
         ],

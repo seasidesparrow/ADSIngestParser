@@ -3,8 +3,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "attrib": {
@@ -19,8 +28,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "name": {
@@ -31,8 +49,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "School of Mathematics and Physics The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "School of Mathematics and Physics, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "name": {
@@ -43,8 +70,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "name": {
@@ -55,8 +91,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "attrib": {
@@ -70,8 +115,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "name": {
@@ -82,8 +136,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Queensland Brain Institute The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Queensland Brain Institute, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "name": {
@@ -94,12 +157,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute, The University of Queensland, 4072, Brisbane, QLD, Australia"
         },
         {
-          "affPubID": "Aff5",
-          "affPubRaw": "Australian Institute for Bioengineering and Nanotechnology The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Australian Institute for Bioengineering and Nanotechnology, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "attrib": {
@@ -113,8 +210,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "School of Mathematics and Physics The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "School of Mathematics and Physics, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "attrib": {
@@ -128,8 +234,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "School of Mathematics and Physics The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "School of Mathematics and Physics, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "name": {
@@ -140,8 +255,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "attrib": {
@@ -156,12 +280,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute, The University of Queensland, 4072, Brisbane, QLD, Australia"
         },
         {
-          "affPubID": "Aff4",
-          "affPubRaw": "School of Biomedical Sciences The University of Queensland 4072 Brisbane QLD Australia"
+          "affPubID": [
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.1003.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9320 7537",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "School of Biomedical Sciences, The University of Queensland, 4072, Brisbane, QLD, Australia"
         }
       ],
       "attrib": {

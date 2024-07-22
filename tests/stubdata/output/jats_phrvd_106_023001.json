@@ -6,11 +6,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "a1",
           "affPubRaw": "Department of Applied Mathematics and Theoretical Physics, Centre for Mathematical Sciences, University of Cambridge, Wilberforce Road, Cambridge CB3 0WA, United Kingdom"
         },
         {
-          "affPubID": "a2",
           "affPubRaw": "Department of Physics and Astronomy, The University of Mississippi, University, Mississippi 38677, USA"
         }
       ],
@@ -25,7 +23,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "a2",
           "affPubRaw": "Department of Physics and Astronomy, The University of Mississippi, University, Mississippi 38677, USA"
         }
       ],
@@ -40,7 +37,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "a2",
           "affPubRaw": "Department of Physics and Astronomy, The University of Mississippi, University, Mississippi 38677, USA"
         }
       ],

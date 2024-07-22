@@ -6,8 +6,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF1",
-          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190 Meudon, France"
+          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190, Meudon, France"
         }
       ],
       "attrib": {
@@ -21,16 +20,13 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF1",
-          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190 Meudon, France"
+          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190, Meudon, France"
         },
         {
-          "affPubID": "AFF2",
-          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807 Merate, LC, Italy"
+          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807, Merate, LC, Italy"
         },
         {
-          "affPubID": "AFF3",
-          "affPubRaw": "Institut d\u2019Astrophysique de Paris, UMR 7095, CNRS-SU, 98 bis boulevard Arago, 75014 Paris, France"
+          "affPubRaw": "Institut d\u2019Astrophysique de Paris, UMR 7095, CNRS-SU, 98 bis boulevard Arago, 75014, Paris, France"
         }
       ],
       "attrib": {
@@ -44,8 +40,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF4",
-          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290 Versoix, Switzerland"
+          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290, Versoix, Switzerland"
         }
       ],
       "attrib": {
@@ -59,12 +54,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF5",
-          "affPubRaw": "Space Science Data Center (SSDC) \u2013 Agenzia Spaziale Italiana (ASI), 00133 Roma, Italy"
+          "affPubRaw": "Space Science Data Center (SSDC) \u2013 Agenzia Spaziale Italiana (ASI), 00133, Roma, Italy"
         },
         {
-          "affPubID": "AFF6",
-          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Roma, Via Frascati 33, 00040 Monte Porzio Catone, Italy"
+          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Roma, Via Frascati 33, 00040, Monte Porzio Catone, Italy"
         }
       ],
       "attrib": {
@@ -78,16 +71,13 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF7",
-          "affPubRaw": "Centre for Astrophysics and Cosmology, Science Institute, University of Iceland, Dunhagi 5, 107 Reykjav\u00edk, Iceland"
+          "affPubRaw": "Centre for Astrophysics and Cosmology, Science Institute, University of Iceland, Dunhagi 5, 107, Reykjav\u00edk, Iceland"
         },
         {
-          "affPubID": "AFF8",
           "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
         },
         {
-          "affPubID": "AFF9",
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200, Copenhagen N, Denmark"
         }
       ],
       "name": {
@@ -98,8 +88,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF10",
-          "affPubRaw": "DARK, Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen, Denmark"
+          "affPubRaw": "DARK, Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200, Copenhagen, Denmark"
         }
       ],
       "attrib": {
@@ -113,8 +102,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF1",
-          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190 Meudon, France"
+          "affPubRaw": "GEPI, Observatoire de Paris, Universit\u00e9 PSL, CNRS, 5 place Jules Janssen, 92190, Meudon, France"
         }
       ],
       "attrib": {
@@ -128,8 +116,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF3",
-          "affPubRaw": "Institut d\u2019Astrophysique de Paris, UMR 7095, CNRS-SU, 98 bis boulevard Arago, 75014 Paris, France"
+          "affPubRaw": "Institut d\u2019Astrophysique de Paris, UMR 7095, CNRS-SU, 98 bis boulevard Arago, 75014, Paris, France"
         }
       ],
       "name": {
@@ -140,8 +127,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF11",
-          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy"
+          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129, Bologna, Italy"
         }
       ],
       "attrib": {
@@ -155,8 +141,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF12",
-          "affPubRaw": "Artemis, Observatoire de la C\u00f4te d\u2019Azur, Universit\u00e9 C\u00f4te d\u2019Azur, CNRS, 06304 Nice, France"
+          "affPubRaw": "Artemis, Observatoire de la C\u00f4te d\u2019Azur, Universit\u00e9 C\u00f4te d\u2019Azur, CNRS, 06304, Nice, France"
         }
       ],
       "attrib": {
@@ -170,12 +155,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF8",
           "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
         },
         {
-          "affPubID": "AFF9",
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200, Copenhagen N, Denmark"
         }
       ],
       "attrib": {
@@ -189,8 +172,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF4",
-          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290 Versoix, Switzerland"
+          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290, Versoix, Switzerland"
         }
       ],
       "name": {
@@ -201,8 +183,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF13",
-          "affPubRaw": "Department of Astrophysics/IMAPP, Radboud University, 6525 AJ, Nijmegen, The Netherlands"
+          "affPubRaw": "Department of Astrophysics/IMAPP, Radboud University, 6525, AJ, Nijmegen, The Netherlands"
         }
       ],
       "name": {
@@ -213,16 +194,13 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF13",
-          "affPubRaw": "Department of Astrophysics/IMAPP, Radboud University, 6525 AJ, Nijmegen, The Netherlands"
+          "affPubRaw": "Department of Astrophysics/IMAPP, Radboud University, 6525, AJ, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "AFF8",
           "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
         },
         {
-          "affPubID": "AFF9",
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200, Copenhagen N, Denmark"
         }
       ],
       "attrib": {
@@ -236,12 +214,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF9",
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200, Copenhagen N, Denmark"
         },
         {
-          "affPubID": "AFF14",
-          "affPubRaw": "European Southern Observatory, Karl-Schwarzschildstrasse 2, 85748 Garching bei M\u00fcnchen, Germany"
+          "affPubRaw": "European Southern Observatory, Karl-Schwarzschildstrasse 2, 85748, Garching bei M\u00fcnchen, Germany"
         }
       ],
       "attrib": {
@@ -255,8 +231,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF4",
-          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290 Versoix, Switzerland"
+          "affPubRaw": "Department of Astronomy, University of Geneva, Chemin Pegasi 51, 1290, Versoix, Switzerland"
         }
       ],
       "name": {
@@ -267,8 +242,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF15",
-          "affPubRaw": "INAF IASF-Milano, Via Alfonso Corti 12, 20133 Milano, Italy"
+          "affPubRaw": "INAF IASF-Milano, Via Alfonso Corti 12, 20133, Milano, Italy"
         }
       ],
       "name": {
@@ -279,8 +253,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF16",
-          "affPubRaw": "School of Physics and Astronomy, University of Leicester, University Road, Leicester LE1 7RH, UK"
+          "affPubRaw": "School of Physics and Astronomy, University of Leicester, University Road, Leicester, LE1 7RH, UK"
         }
       ],
       "attrib": {
@@ -294,7 +267,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF17",
           "affPubRaw": "Astronomical Institute (ASU CAS), Ondejov, Czech Republic"
         }
       ],
@@ -306,12 +278,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF8",
           "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
         },
         {
-          "affPubID": "AFF9",
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200, Copenhagen N, Denmark"
         }
       ],
       "attrib": {
@@ -325,12 +295,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF8",
           "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
         },
         {
-          "affPubID": "AFF9",
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200, Copenhagen N, Denmark"
         }
       ],
       "attrib": {
@@ -344,8 +312,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF18",
-          "affPubRaw": "Instituto de Astrof\u00edsica de Andaluc\u00eda (IAA-CSIC), Glorieta de la Astronom\u00eda s/n, 18008 Granada, Spain"
+          "affPubRaw": "Instituto de Astrof\u00edsica de Andaluc\u00eda (IAA-CSIC), Glorieta de la Astronom\u00eda s/n, 18008, Granada, Spain"
         }
       ],
       "name": {
@@ -356,8 +323,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF19",
-          "affPubRaw": "Department of Physics, University of Bath, Bath BA2 7AY, UK"
+          "affPubRaw": "Department of Physics, University of Bath, Bath, BA2 7AY, UK"
         }
       ],
       "attrib": {
@@ -371,12 +337,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF8",
           "affPubRaw": "Cosmic Dawn Center (DAWN), Copenhagen, Denmark"
         },
         {
-          "affPubID": "AFF9",
-          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200 Copenhagen N, Denmark"
+          "affPubRaw": "Niels Bohr Institute, University of Copenhagen, Jagtvej 128, 2200, Copenhagen N, Denmark"
         }
       ],
       "attrib": {
@@ -390,8 +354,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF20",
-          "affPubRaw": "Physics Department, Lancaster University, Lancaster LA1 4YB, UK"
+          "affPubRaw": "Physics Department, Lancaster University, Lancaster, LA1 4YB, UK"
         }
       ],
       "attrib": {
@@ -405,8 +368,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF2",
-          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807 Merate, LC, Italy"
+          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807, Merate, LC, Italy"
         }
       ],
       "attrib": {
@@ -420,8 +382,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF2",
-          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807 Merate, LC, Italy"
+          "affPubRaw": "INAF \u2013 Osservatorio Astronomico di Brera, Via E. Bianchi 46, 23807, Merate, LC, Italy"
         }
       ],
       "attrib": {
@@ -435,8 +396,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF21",
-          "affPubRaw": "Universit\u00e0 degli Studi di Messina \u2013 Dipartimento MIFT, Polo Papardo, Via F. S. D\u2019Alcontres 31, 98166 Messina, Italy"
+          "affPubRaw": "Universit\u00e0 degli Studi di Messina \u2013 Dipartimento MIFT, Polo Papardo, Via F. S. D\u2019Alcontres 31, 98166, Messina, Italy"
         }
       ],
       "name": {
@@ -447,8 +407,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF22",
-          "affPubRaw": "Department of Physics, the George Washington University, 725 21st Street NW, Washington, DC 20052, USA"
+          "affPubRaw": "Department of Physics, the George Washington University, 725 21st Street NW, Washington, DC, 20052, USA"
         }
       ],
       "attrib": {
@@ -462,8 +421,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF23",
-          "affPubRaw": "Department of Physics and Astronomy, Clemson University, Kinard Lab of Physics, Clemson, SC 29634-0978, USA"
+          "affPubRaw": "Department of Physics and Astronomy, Clemson University, Kinard Lab of Physics, Clemson, SC, 29634-0978, USA"
         }
       ],
       "name": {
@@ -474,12 +432,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF22",
-          "affPubRaw": "Department of Physics, the George Washington University, 725 21st Street NW, Washington, DC 20052, USA"
+          "affPubRaw": "Department of Physics, the George Washington University, 725 21st Street NW, Washington, DC, 20052, USA"
         },
         {
-          "affPubID": "AFF24",
-          "affPubRaw": "Astronomy, Physics and Statistics Institute of Sciences (APSIS), 725 21st Street NW, Washington, DC 20052, USA"
+          "affPubRaw": "Astronomy, Physics and Statistics Institute of Sciences (APSIS), 725 21st Street NW, Washington, DC, 20052, USA"
         }
       ],
       "name": {
@@ -490,8 +446,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF7",
-          "affPubRaw": "Centre for Astrophysics and Cosmology, Science Institute, University of Iceland, Dunhagi 5, 107 Reykjav\u00edk, Iceland"
+          "affPubRaw": "Centre for Astrophysics and Cosmology, Science Institute, University of Iceland, Dunhagi 5, 107, Reykjav\u00edk, Iceland"
         }
       ],
       "attrib": {
@@ -505,8 +460,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF11",
-          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy"
+          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129, Bologna, Italy"
         }
       ],
       "attrib": {
@@ -520,12 +474,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF25",
-          "affPubRaw": "Anton Pannekoek Institute for Astronomy, University of Amsterdam, Science Park 904, 1098 XH, Amsterdam, The Netherlands"
+          "affPubRaw": "Anton Pannekoek Institute for Astronomy, University of Amsterdam, Science Park 904, 1098, XH, Amsterdam, The Netherlands"
         },
         {
-          "affPubID": "AFF26",
-          "affPubRaw": "Leiden Observatory, University of Leiden, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands"
+          "affPubRaw": "Leiden Observatory, University of Leiden, Niels Bohrweg 2, 2333 CA, Leiden, The Netherlands"
         }
       ],
       "attrib": {
@@ -539,15 +491,12 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF11",
-          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy"
+          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129, Bologna, Italy"
         },
         {
-          "affPubID": "AFF27",
-          "affPubRaw": "Physics Department, University of Calabria, 87036 Arcavacata di Rende, CS, Italy"
+          "affPubRaw": "Physics Department, University of Calabria, 87036, Arcavacata di Rende, CS, Italy"
         },
         {
-          "affPubID": "AFF28",
           "affPubRaw": "INFN \u2013 Laboratori Nazionali di Frascati, Frascati, Italy"
         }
       ],
@@ -562,8 +511,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF16",
-          "affPubRaw": "School of Physics and Astronomy, University of Leicester, University Road, Leicester LE1 7RH, UK"
+          "affPubRaw": "School of Physics and Astronomy, University of Leicester, University Road, Leicester, LE1 7RH, UK"
         }
       ],
       "attrib": {
@@ -577,8 +525,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF11",
-          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129 Bologna, Italy"
+          "affPubRaw": "INAF \u2013 Osservatorio di Astrofisica e Scienza dello Spazio, Via Piero Gobetti 93/3, 40129, Bologna, Italy"
         }
       ],
       "attrib": {
@@ -592,8 +539,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "AFF29",
-          "affPubRaw": "Australian Astronomical Optics, Macquarie University, 105 Delhi Road, North Ryde, NSW 2113, Australia"
+          "affPubRaw": "Australian Astronomical Optics, Macquarie University, 105 Delhi Road, North Ryde, NSW, 2113, Australia"
         }
       ],
       "name": {

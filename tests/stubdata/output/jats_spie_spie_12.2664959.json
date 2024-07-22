@@ -6,7 +6,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Leonardo DRS-EOIS (United States)"
         }
       ],
@@ -18,7 +17,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Leonardo DRS-EOIS (United States)"
         }
       ],
@@ -30,7 +28,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Leonardo DRS-EOIS (United States)"
         }
       ],
@@ -42,7 +39,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Leonardo DRS-EOIS (United States)"
         }
       ],
@@ -54,7 +50,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Leonardo DRS-EOIS (United States)"
         }
       ],
@@ -66,7 +61,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Leonardo DRS-EOIS (United States)"
         }
       ],
@@ -78,7 +72,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "NASA Goddard Space Flight Ctr. (United States)"
         }
       ],
@@ -90,7 +83,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Leonardo DRS-EOIS (United States)"
         }
       ],
@@ -109,7 +101,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff3",
             "affPubRaw": "Argo AI, LLC (United States)"
           }
         ],
@@ -124,7 +115,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff4",
             "affPubRaw": "National Institute of Standards and Technology (United States)"
           }
         ],
@@ -139,7 +129,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff5",
             "affPubRaw": "MIT Lincoln Lab. (United States)"
           }
         ],

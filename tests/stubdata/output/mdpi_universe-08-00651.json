@@ -6,7 +6,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "af1-universe-08-00651",
           "affPubRaw": "Blue Marble Space Institute of Science, Seattle, WA 98154, USA"
         }
       ],
@@ -21,11 +20,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "af2-universe-08-00651",
           "affPubRaw": "Sellers Exoplanetary Environments Collaboration, NASA Goddard Space Flight Center, Greenbelt, MD 20771, USA"
         },
         {
-          "affPubID": "af3-universe-08-00651",
           "affPubRaw": "Department of Physics, American University, Washington, DC 20016, USA"
         }
       ],
@@ -37,7 +34,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "af4-universe-08-00651",
           "affPubRaw": "School of Science, Western Sydney University, Locked Bag 1797, Penrith South Dc, NSW 2751, Australia"
         }
       ],
@@ -49,7 +45,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "af5-universe-08-00651",
           "affPubRaw": "Sydney Institute for Astronomy, School of Physics, A28, The University of Sydney, NSW 2006, Australia"
         }
       ],
@@ -61,7 +56,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "af6-universe-08-00651",
           "affPubRaw": "Department of Earth and Environmental Science, University of Pennsylvania, Philadelphia, PA 19104, USA"
         }
       ],

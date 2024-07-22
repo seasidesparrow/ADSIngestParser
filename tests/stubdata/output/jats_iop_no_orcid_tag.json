@@ -6,7 +6,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "University of Adelaide, Adelaide, SA, Australia"
         }
       ],
@@ -21,7 +20,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -36,11 +34,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Osservatorio Astrofisico di Torino (INAF), Torino, Italy"
         }
       ],
@@ -55,7 +51,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "Centro At\u00f3mico Bariloche and Instituto Balseiro (CNEA-UNCuyo-CONICET), San Carlos de Bariloche, Argentina"
         }
       ],
@@ -70,7 +65,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "Ohio State University, Columbus, OH, USA"
         }
       ],
@@ -82,7 +76,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Nuclear Physics PAN, Krakow, Poland"
         }
       ],
@@ -97,11 +90,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universidad Tecnol\u00f3gica Nacional\u2014Facultad Regional Buenos Aires, Buenos Aires, Argentina"
         }
       ],
@@ -116,7 +107,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -131,7 +121,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -146,11 +135,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Osservatorio Astrofisico di Torino (INAF), Torino, Italy"
         }
       ],
@@ -165,7 +152,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Department of Physics and Astronomy, Lehman College, City University of New York, Bronx, NY, USA"
         }
       ],
@@ -180,7 +166,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -192,7 +177,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -207,7 +191,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation12",
           "affPubRaw": "INFN, Sezione di Napoli, Napoli, Italy"
         }
       ],
@@ -222,7 +205,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -237,11 +219,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "Universit\u00e0 Torino, Dipartimento di Fisica, Torino, Italy"
         }
       ],
@@ -256,7 +236,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation15",
           "affPubRaw": "Universidad Michoacana de San Nicol\u00e1s de Hidalgo, Morelia, Michoac\u00e1n, Mexico"
         }
       ],
@@ -268,7 +247,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -283,7 +261,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -298,7 +275,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation16",
           "affPubRaw": "Universidade de S\u00e3o Paulo, Instituto de F\u00edsica de S\u00e3o Carlos, S\u00e3o Carlos, SP, Brazil"
         }
       ],
@@ -310,7 +286,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Observatorio Pierre Auger and Comisi\u00f3n Nacional de Energ\u00eda At\u00f3mica, Malarg\u00fce, Argentina"
         }
       ],
@@ -322,11 +297,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "Universit\u00e0 dell\u2019Aquila, Dipartimento di Scienze Fisiche e Chimiche, L\u2019Aquila, Italy"
         }
       ],
@@ -341,7 +314,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation20",
           "affPubRaw": "University Politehnica of Bucharest, Bucharest, Romania"
         }
       ],
@@ -356,7 +328,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -371,7 +342,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "\u201cHoria Hulubei\u201d National Institute for Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -386,11 +356,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "Gran Sasso Science Institute, L\u2019Aquila, Italy"
         }
       ],
@@ -405,7 +373,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "Ohio State University, Columbus, OH, USA"
         }
       ],
@@ -417,11 +384,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "University of Adelaide, Adelaide, SA, Australia"
         },
         {
-          "affPubID": "affiliation24",
           "affPubRaw": "Universidad Nacional de San Agustin de Arequipa, Facultad de Ciencias Naturales y Formales, Arequipa, Peru"
         }
       ],
@@ -436,7 +401,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, Grenoble Institute of Engineering, LPSC-IN2P3, F-38000 Grenoble, France"
         }
       ],
@@ -451,11 +415,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "Universit\u00e0 Torino, Dipartimento di Fisica, Torino, Italy"
         }
       ],
@@ -470,7 +432,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "Centro At\u00f3mico Bariloche and Instituto Balseiro (CNEA-UNCuyo-CONICET), San Carlos de Bariloche, Argentina"
         }
       ],
@@ -482,7 +443,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Nuclear Physics PAN, Krakow, Poland"
         }
       ],
@@ -497,7 +457,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation26",
           "affPubRaw": "Max-Planck-Institut f\u00fcr Radioastronomie, Bonn, Germany"
         }
       ],
@@ -512,7 +471,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "Laboratoire de Physique Nucl\u00e9aire et de Hautes Energies (LPNHE), Sorbonne Universit\u00e9, Universit\u00e9 de Paris, CNRS-IN2P3, Paris, France"
         }
       ],
@@ -524,8 +482,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation28",
-          "affPubRaw": "Instituto de F\u00edsica de Rosario (IFIR)\u2014CONICET/U.N.R. and Facultad de Ciencias Bioqu\u00edmicas y Farmac\u00e9uticas U.N.R., Rosario, Argentina"
+          "affPubRaw": "Instituto de F\u00edsica de Rosario (IFIR),\u2014CONICET/U.N.R. and Facultad de Ciencias Bioqu\u00edmicas y Farmac\u00e9uticas U.N.R., Rosario, Argentina"
         }
       ],
       "name": {
@@ -536,11 +493,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         }
       ],
@@ -555,7 +510,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -570,7 +524,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation30",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -585,7 +538,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -600,7 +552,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, Grenoble Institute of Engineering, LPSC-IN2P3, F-38000 Grenoble, France"
         }
       ],
@@ -615,7 +566,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -630,7 +580,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -645,11 +594,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "Universit\u00e0 dell\u2019Aquila, Dipartimento di Scienze Fisiche e Chimiche, L\u2019Aquila, Italy"
         }
       ],
@@ -664,11 +611,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation32",
           "affPubRaw": "International Center of Advanced Studies and Instituto de Ciencias F\u00edsicas, ECyT-UNSAM and CONICET, Campus Miguelete\u2014San Mart\u00edn, Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation33",
           "affPubRaw": "Universidade Federal do Rio de Janeiro, Instituto de F\u00edsica, Rio de Janeiro, RJ, Brazil"
         }
       ],
@@ -683,7 +628,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "Universidade Estadual de Campinas, IFGW, Campinas, SP, Brazil"
         }
       ],
@@ -698,7 +642,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Nuclear Physics PAN, Krakow, Poland"
         }
       ],
@@ -713,7 +656,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Colorado State University, Fort Collins, CO, USA"
         }
       ],
@@ -728,7 +670,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -740,7 +681,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -752,7 +692,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -764,7 +703,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "Universit\u00e4t Siegen, Department Physik\u2014Experimentelle Teilchenphysik, Siegen, Germany"
         }
       ],
@@ -776,8 +714,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation37",
-          "affPubRaw": "Universidad de Granada and C.A.F.P.E., Granada, Spain"
+          "affPubRaw": "Universidad de Granada, and C.A.F.P.E., Granada, Spain"
         }
       ],
       "attrib": {
@@ -791,7 +728,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Vrije Universiteit Brussels, Brussels, Belgium"
         }
       ],
@@ -806,11 +742,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "INFN, Sezione di Catania, Catania, Italy"
         },
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Universit\u00e0 di Catania, Dipartimento di Fisica e Astronomia \u201cEttore Majorana\u201d, Catania, Italy"
         }
       ],
@@ -825,11 +759,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         }
       ],
@@ -844,11 +776,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), Science Park, Amsterdam, The Netherlands"
         }
       ],
@@ -863,7 +793,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation43",
           "affPubRaw": "Universidad Aut\u00f3noma de Chiapas, Tuxtla Guti\u00e9rrez, Chiapas, Mexico"
         }
       ],
@@ -878,11 +807,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "INFN, Sezione di Milano, Milano, Italy"
         },
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "Universit\u00e0 di Milano, Dipartimento di Fisica, Milano, Italy"
         }
       ],
@@ -897,7 +824,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -909,11 +835,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "INFN, Sezione di Catania, Catania, Italy"
         },
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Universit\u00e0 di Catania, Dipartimento di Fisica e Astronomia \u201cEttore Majorana\u201d, Catania, Italy"
         }
       ],
@@ -928,11 +852,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Osservatorio Astrofisico di Torino (INAF), Torino, Italy"
         }
       ],
@@ -947,7 +869,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation47",
           "affPubRaw": "Universidade de S\u00e3o Paulo, Escola de Engenharia de Lorena, Lorena, SP, Brazil"
         }
       ],
@@ -962,7 +883,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "INFN, Sezione di Lecce, Lecce, Italy"
         }
       ],
@@ -977,7 +897,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -992,7 +911,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Observatorio Pierre Auger, Malarg\u00fce, Argentina"
         }
       ],
@@ -1004,11 +922,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "Universit\u00e0 Torino, Dipartimento di Fisica, Torino, Italy"
         }
       ],
@@ -1020,7 +936,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "Universidade Estadual de Campinas, IFGW, Campinas, SP, Brazil"
         }
       ],
@@ -1035,7 +950,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Michigan Technological University, Houghton, MI, USA"
         }
       ],
@@ -1047,7 +961,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -1062,7 +975,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation51",
           "affPubRaw": "Palacky University, RCPTM, Olomouc, Czech Republic"
         }
       ],
@@ -1077,7 +989,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "University of Adelaide, Adelaide, SA, Australia"
         }
       ],
@@ -1092,11 +1003,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation52",
           "affPubRaw": "Universidad Tecnol\u00f3gica Nacional\u2014Facultad Regional Mendoza (CONICET/CNEA), Mendoza, Argentina"
         }
       ],
@@ -1111,11 +1020,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation12",
           "affPubRaw": "INFN, Sezione di Napoli, Napoli, Italy"
         },
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "Universit\u00e0 di Napoli \u201cFederico II\u201d, Dipartimento di Fisica \u201cEttore Pancini\u201d, Napoli, Italy"
         }
       ],
@@ -1130,7 +1037,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "University of Delaware, Department of Physics and Astronomy, Bartol Research Institute, Newark, DE, USA"
         }
       ],
@@ -1145,7 +1051,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "INFN, Sezione di Lecce, Lecce, Italy"
         }
       ],
@@ -1160,7 +1065,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -1175,11 +1079,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "Gran Sasso Science Institute, L\u2019Aquila, Italy"
         },
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         }
       ],
@@ -1194,11 +1096,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "INFN, Sezione di Milano, Milano, Italy"
         },
         {
-          "affPubID": "affiliation55",
           "affPubRaw": "Politecnico di Milano, Dipartimento di Scienze e Tecnologie Aerospaziali, Milano, Italy"
         }
       ],
@@ -1213,7 +1113,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Observatorio Pierre Auger and Comisi\u00f3n Nacional de Energ\u00eda At\u00f3mica, Malarg\u00fce, Argentina"
         }
       ],
@@ -1225,7 +1124,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -1240,7 +1138,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Universidade Federal Fluminense, EEIMVR, Volta Redonda, RJ, Brazil"
         }
       ],
@@ -1255,7 +1152,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation57",
           "affPubRaw": "Case Western Reserve University, Cleveland, OH, USA"
         }
       ],
@@ -1270,7 +1166,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "Universit\u00e4t Siegen, Department Physik\u2014Experimentelle Teilchenphysik, Siegen, Germany"
         }
       ],
@@ -1285,7 +1180,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "IFLP, Universidad Nacional de La Plata and CONICET, La Plata, Argentina"
         }
       ],
@@ -1297,11 +1191,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation59",
           "affPubRaw": "Departamento de F\u00edsica and Departamento de Ciencias de la Atm\u00f3sfera y los Oc\u00e9anos, FCEyN, Universidad de Buenos Aires and CONICET, Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Instituto de Astronom\u00eda y F\u00edsica del Espacio (IAFE, CONICET-UBA), Buenos Aires, Argentina"
         }
       ],
@@ -1316,7 +1208,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -1331,7 +1222,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "University of Adelaide, Adelaide, SA, Australia"
         }
       ],
@@ -1346,7 +1236,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation56",
           "affPubRaw": "Universidade Federal Fluminense, EEIMVR, Volta Redonda, RJ, Brazil"
         }
       ],
@@ -1358,11 +1247,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -1374,11 +1261,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), Science Park, Amsterdam, The Netherlands"
         }
       ],
@@ -1393,11 +1278,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation33",
           "affPubRaw": "Universidade Federal do Rio de Janeiro, Instituto de F\u00edsica, Rio de Janeiro, RJ, Brazil"
         },
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Observat\u00f3rio do Valongo, Rio de Janeiro, RJ, Brazil"
         }
       ],
@@ -1412,11 +1295,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "Gran Sasso Science Institute, L\u2019Aquila, Italy"
         }
       ],
@@ -1431,7 +1312,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation62",
           "affPubRaw": "Instituto Federal de Educa\u00e7\u00e3o, Ci\u00eancia e Tecnologia do Rio de Janeiro (IFRJ), Brazil"
         }
       ],
@@ -1443,7 +1323,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "Universidade Estadual de Campinas, IFGW, Campinas, SP, Brazil"
         }
       ],
@@ -1455,11 +1334,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "INFN, Sezione di Lecce, Lecce, Italy"
         },
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Universit\u00e0 del Salento, Dipartimento di Matematica e Fisica \u201cE. De Giorgi\u201d, Lecce, Italy"
         }
       ],
@@ -1474,7 +1351,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation16",
           "affPubRaw": "Universidade de S\u00e3o Paulo, Instituto de F\u00edsica de S\u00e3o Carlos, S\u00e3o Carlos, SP, Brazil"
         }
       ],
@@ -1489,11 +1365,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "INFN, Sezione di Lecce, Lecce, Italy"
         },
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Universit\u00e0 del Salento, Dipartimento di Matematica e Fisica \u201cE. De Giorgi\u201d, Lecce, Italy"
         }
       ],
@@ -1508,11 +1382,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "INFN, Sezione di Catania, Catania, Italy"
         },
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Universit\u00e0 di Catania, Dipartimento di Fisica e Astronomia \u201cEttore Majorana\u201d, Catania, Italy"
         }
       ],
@@ -1527,7 +1399,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation64",
           "affPubRaw": "CNRS/IN2P3, IJCLab, Universit\u00e9 Paris-Saclay, Orsay, France"
         }
       ],
@@ -1542,11 +1413,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -1558,7 +1427,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         }
       ],
@@ -1573,7 +1441,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "\u201cHoria Hulubei\u201d National Institute for Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -1588,7 +1455,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "Universidade Estadual de Campinas, IFGW, Campinas, SP, Brazil"
         }
       ],
@@ -1603,7 +1469,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "Universidad Nacional Aut\u00f3noma de M\u00e9xico, M\u00e9xico, D.F., Mexico"
         }
       ],
@@ -1615,7 +1480,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -1630,7 +1494,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Colorado State University, Fort Collins, CO, USA"
         }
       ],
@@ -1642,7 +1505,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation66",
           "affPubRaw": "Universidade Federal do Paran\u00e1, Setor Palotina, Palotina, Brazil"
         }
       ],
@@ -1657,7 +1519,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -1672,11 +1533,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), Science Park, Amsterdam, The Netherlands"
         }
       ],
@@ -1691,11 +1550,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -1711,11 +1568,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "INFN, Sezione di Lecce, Lecce, Italy"
         },
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Universit\u00e0 del Salento, Dipartimento di Matematica e Fisica \u201cE. De Giorgi\u201d, Lecce, Italy"
         }
       ],
@@ -1730,7 +1585,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -1745,11 +1599,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universidad Tecnol\u00f3gica Nacional\u2014Facultad Regional Buenos Aires, Buenos Aires, Argentina"
         }
       ],
@@ -1764,15 +1616,12 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), Science Park, Amsterdam, The Netherlands"
         },
         {
-          "affPubID": "affiliation67",
           "affPubRaw": "Stichting Astronomisch Onderzoek in Nederland (ASTRON), Dwingeloo, The Netherlands"
         }
       ],
@@ -1787,7 +1636,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "University of Chicago, Enrico Fermi Institute, Chicago, IL, USA"
         }
       ],
@@ -1799,7 +1647,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation69",
           "affPubRaw": "New York University, New York, NY, USA"
         }
       ],
@@ -1814,7 +1661,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "Universidade Estadual de Campinas, IFGW, Campinas, SP, Brazil"
         }
       ],
@@ -1829,7 +1675,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Colorado State University, Fort Collins, CO, USA"
         }
       ],
@@ -1841,7 +1686,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation70",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institut f\u00fcr Prozessdatenverarbeitung und Elektronik, Karlsruhe, Germany"
         }
       ],
@@ -1853,11 +1697,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "Universit\u00e0 Torino, Dipartimento di Fisica, Torino, Italy"
         }
       ],
@@ -1872,7 +1714,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Michigan Technological University, Houghton, MI, USA"
         }
       ],
@@ -1884,7 +1725,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -1899,11 +1739,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation71",
           "affPubRaw": "Center for Astrophysics and Cosmology (CAC), University of Nova Gorica, Nova Gorica, Slovenia"
         },
         {
-          "affPubID": "affiliation72",
           "affPubRaw": "Experimental Particle Physics Department, J. Stefan Institute, Ljubljana, Slovenia"
         }
       ],
@@ -1918,7 +1756,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -1933,7 +1770,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "University of Delaware, Department of Physics and Astronomy, Bartol Research Institute, Newark, DE, USA"
         }
       ],
@@ -1945,7 +1781,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         }
       ],
@@ -1957,7 +1792,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "University of Chicago, Enrico Fermi Institute, Chicago, IL, USA"
         }
       ],
@@ -1972,11 +1806,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation09",
           "affPubRaw": "Universidad Tecnol\u00f3gica Nacional\u2014Facultad Regional Buenos Aires, Buenos Aires, Argentina"
         }
       ],
@@ -1991,7 +1823,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         }
       ],
@@ -2006,11 +1837,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "INFN, Sezione di Milano, Milano, Italy"
         },
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "Universit\u00e0 di Milano, Dipartimento di Fisica, Milano, Italy"
         }
       ],
@@ -2025,11 +1854,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation52",
           "affPubRaw": "Universidad Tecnol\u00f3gica Nacional\u2014Facultad Regional Mendoza (CONICET/CNEA), Mendoza, Argentina"
         }
       ],
@@ -2044,7 +1871,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation70",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institut f\u00fcr Prozessdatenverarbeitung und Elektronik, Karlsruhe, Germany"
         }
       ],
@@ -2056,11 +1882,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -2075,7 +1899,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "\u201cHoria Hulubei\u201d National Institute for Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -2090,7 +1913,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation64",
           "affPubRaw": "CNRS/IN2P3, IJCLab, Universit\u00e9 Paris-Saclay, Orsay, France"
         }
       ],
@@ -2105,7 +1927,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         }
       ],
@@ -2117,7 +1938,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "INFN, Sezione di Milano, Milano, Italy"
         }
       ],
@@ -2129,7 +1949,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -2144,7 +1963,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Observatorio Pierre Auger, Malarg\u00fce, Argentina"
         }
       ],
@@ -2156,7 +1974,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -2171,7 +1988,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "Centro At\u00f3mico Bariloche and Instituto Balseiro (CNEA-UNCuyo-CONICET), San Carlos de Bariloche, Argentina"
         }
       ],
@@ -2186,7 +2002,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "Centro At\u00f3mico Bariloche and Instituto Balseiro (CNEA-UNCuyo-CONICET), San Carlos de Bariloche, Argentina"
         }
       ],
@@ -2201,7 +2016,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Observatorio Pierre Auger and Comisi\u00f3n Nacional de Energ\u00eda At\u00f3mica, Malarg\u00fce, Argentina"
         }
       ],
@@ -2216,7 +2030,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Observatorio Pierre Auger and Comisi\u00f3n Nacional de Energ\u00eda At\u00f3mica, Malarg\u00fce, Argentina"
         }
       ],
@@ -2228,7 +2041,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "Centro At\u00f3mico Bariloche and Instituto Balseiro (CNEA-UNCuyo-CONICET), San Carlos de Bariloche, Argentina"
         }
       ],
@@ -2243,7 +2055,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "Universit\u00e9 Libre de Bruxelles (ULB), Brussels, Belgium"
         }
       ],
@@ -2258,7 +2069,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "Centro At\u00f3mico Bariloche and Instituto Balseiro (CNEA-UNCuyo-CONICET), San Carlos de Bariloche, Argentina"
         }
       ],
@@ -2270,7 +2080,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Nuclear Physics PAN, Krakow, Poland"
         }
       ],
@@ -2285,11 +2094,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Osservatorio Astrofisico di Torino (INAF), Torino, Italy"
         }
       ],
@@ -2304,7 +2111,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -2316,7 +2122,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "University of Adelaide, Adelaide, SA, Australia"
         }
       ],
@@ -2328,11 +2133,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation12",
           "affPubRaw": "INFN, Sezione di Napoli, Napoli, Italy"
         },
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "Universit\u00e0 di Napoli \u201cFederico II\u201d, Dipartimento di Fisica \u201cEttore Pancini\u201d, Napoli, Italy"
         }
       ],
@@ -2347,7 +2150,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation74",
           "affPubRaw": "Universidade Estadual de Feira de Santana, Feira de Santana, Brazil"
         }
       ],
@@ -2359,7 +2161,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "Universit\u00e4t Siegen, Department Physik\u2014Experimentelle Teilchenphysik, Siegen, Germany"
         }
       ],
@@ -2374,11 +2175,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -2390,7 +2189,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -2405,7 +2203,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -2420,7 +2217,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "IFLP, Universidad Nacional de La Plata and CONICET, La Plata, Argentina"
         }
       ],
@@ -2435,7 +2231,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "Centro At\u00f3mico Bariloche and Instituto Balseiro (CNEA-UNCuyo-CONICET), San Carlos de Bariloche, Argentina"
         }
       ],
@@ -2450,7 +2245,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation35",
           "affPubRaw": "Colorado State University, Fort Collins, CO, USA"
         }
       ],
@@ -2462,7 +2256,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "University of Adelaide, Adelaide, SA, Australia"
         }
       ],
@@ -2477,7 +2270,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -2492,7 +2284,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -2507,7 +2298,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -2519,7 +2309,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation75",
           "affPubRaw": "Fermi National Accelerator Laboratory, Fermilab, Batavia, IL, USA"
         }
       ],
@@ -2534,11 +2323,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), Science Park, Amsterdam, The Netherlands"
         }
       ],
@@ -2553,7 +2340,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation51",
           "affPubRaw": "Palacky University, RCPTM, Olomouc, Czech Republic"
         }
       ],
@@ -2568,7 +2354,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation51",
           "affPubRaw": "Palacky University, RCPTM, Olomouc, Czech Republic"
         }
       ],
@@ -2583,11 +2368,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         },
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Vrije Universiteit Brussels, Brussels, Belgium"
         }
       ],
@@ -2602,11 +2385,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "INFN, Sezione di Catania, Catania, Italy"
         },
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Universit\u00e0 di Catania, Dipartimento di Fisica e Astronomia \u201cEttore Majorana\u201d, Catania, Italy"
         }
       ],
@@ -2621,7 +2402,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation76",
           "affPubRaw": "Institute of Space Science, Bucharest-Magurele, Romania"
         }
       ],
@@ -2636,7 +2416,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -2651,7 +2430,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation77",
           "affPubRaw": "Colorado School of Mines, Golden, CO, USA"
         }
       ],
@@ -2663,7 +2441,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -2678,7 +2455,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -2693,7 +2469,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -2708,7 +2483,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -2723,7 +2497,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         }
       ],
@@ -2738,11 +2511,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -2757,7 +2528,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -2772,7 +2542,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation70",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institut f\u00fcr Prozessdatenverarbeitung und Elektronik, Karlsruhe, Germany"
         }
       ],
@@ -2787,7 +2556,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Observatorio Pierre Auger, Malarg\u00fce, Argentina"
         }
       ],
@@ -2799,7 +2567,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         }
       ],
@@ -2811,7 +2578,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation78",
           "affPubRaw": "School of Physics and Astronomy, University of Leeds, Leeds, UK"
         }
       ],
@@ -2823,7 +2589,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation70",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institut f\u00fcr Prozessdatenverarbeitung und Elektronik, Karlsruhe, Germany"
         }
       ],
@@ -2835,8 +2600,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation79",
-          "affPubRaw": "Laboratoire AstroParticule et Cosmologie (APC), Universit\u00e9 Paris 7, CNRS-IN2P3, Paris, France"
+          "affPubRaw": "Laboratoire AstroParticule et Cosmologie (APC), Universit\u00e9 Paris, 7, CNRS-IN2P3, Paris, France"
         }
       ],
       "name": {
@@ -2847,7 +2611,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation80",
           "affPubRaw": "Centro Federal de Educa\u00e7\u00e3o Tecnol\u00f3gica Celso Suckow da Fonseca, Nova Friburgo, Brazil"
         }
       ],
@@ -2862,7 +2625,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -2877,7 +2639,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation81",
           "affPubRaw": "Universidade Federal do ABC, Santo Andr\u00e9, SP, Brazil"
         }
       ],
@@ -2889,7 +2650,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         }
       ],
@@ -2904,7 +2664,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation27",
           "affPubRaw": "Laboratoire de Physique Nucl\u00e9aire et de Hautes Energies (LPNHE), Sorbonne Universit\u00e9, Universit\u00e9 de Paris, CNRS-IN2P3, Paris, France"
         }
       ],
@@ -2919,7 +2678,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation64",
           "affPubRaw": "CNRS/IN2P3, IJCLab, Universit\u00e9 Paris-Saclay, Orsay, France"
         }
       ],
@@ -2934,11 +2692,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "INFN, Sezione di Catania, Catania, Italy"
         },
         {
-          "affPubID": "affiliation40",
           "affPubRaw": "Universit\u00e0 di Catania, Dipartimento di Fisica e Astronomia \u201cEttore Majorana\u201d, Catania, Italy"
         }
       ],
@@ -2953,7 +2709,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -2968,7 +2723,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "Benem\u00e9rita Universidad Aut\u00f3noma de Puebla, Puebla, Mexico"
         }
       ],
@@ -2980,7 +2734,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation83",
           "affPubRaw": "University of Wisconsin\u2013Madison, Department of Physics and WIPAC, Madison, WI, USA"
         }
       ],
@@ -2995,7 +2748,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         }
       ],
@@ -3010,7 +2762,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation71",
           "affPubRaw": "Center for Astrophysics and Cosmology (CAC), University of Nova Gorica, Nova Gorica, Slovenia"
         }
       ],
@@ -3025,7 +2776,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation34",
           "affPubRaw": "Universidade Estadual de Campinas, IFGW, Campinas, SP, Brazil"
         }
       ],
@@ -3040,7 +2790,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -3055,7 +2804,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "University of Adelaide, Adelaide, SA, Australia"
         }
       ],
@@ -3067,7 +2815,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation84",
           "affPubRaw": "Universit\u00e4t Hamburg, II. Institut f\u00fcr Theoretische Physik, Hamburg, Germany"
         }
       ],
@@ -3079,7 +2826,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation75",
           "affPubRaw": "Fermi National Accelerator Laboratory, Fermilab, Batavia, IL, USA"
         }
       ],
@@ -3094,7 +2840,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation64",
           "affPubRaw": "CNRS/IN2P3, IJCLab, Universit\u00e9 Paris-Saclay, Orsay, France"
         }
       ],
@@ -3109,11 +2854,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "INFN, Sezione di Milano, Milano, Italy"
         },
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "Universit\u00e0 di Milano, Dipartimento di Fisica, Milano, Italy"
         }
       ],
@@ -3128,7 +2871,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "IFLP, Universidad Nacional de La Plata and CONICET, La Plata, Argentina"
         }
       ],
@@ -3143,7 +2885,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "Universit\u00e9 Libre de Bruxelles (ULB), Brussels, Belgium"
         }
       ],
@@ -3158,11 +2899,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "INFN, Sezione di Catania, Catania, Italy"
         },
         {
-          "affPubID": "affiliation85",
           "affPubRaw": "Universit\u00e0 di Palermo, Dipartimento di Fisica e Chimica \u201cE. Segr\u00e8\u201d, Palermo, Italy"
         }
       ],
@@ -3177,11 +2916,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "INFN, Sezione di Lecce, Lecce, Italy"
         },
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Universit\u00e0 del Salento, Dipartimento di Matematica e Fisica \u201cE. De Giorgi\u201d, Lecce, Italy"
         }
       ],
@@ -3196,11 +2933,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -3212,7 +2947,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "Benem\u00e9rita Universidad Aut\u00f3noma de Puebla, Puebla, Mexico"
         }
       ],
@@ -3227,7 +2961,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -3242,11 +2975,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "Universit\u00e0 dell\u2019Aquila, Dipartimento di Scienze Fisiche e Chimiche, L\u2019Aquila, Italy"
         }
       ],
@@ -3258,7 +2989,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -3273,7 +3003,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation86",
           "affPubRaw": "Louisiana State University, Baton Rouge, LA, USA"
         }
       ],
@@ -3288,11 +3017,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation87",
           "affPubRaw": "INFN, Sezione di Roma \u201cTor Vergata\u201d, Roma, Italy"
         },
         {
-          "affPubID": "affiliation88",
           "affPubRaw": "Universit\u00e0 di Roma \u201cTor Vergata\u201d, Dipartimento di Fisica, Roma, Italy"
         }
       ],
@@ -3307,11 +3034,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         },
         {
-          "affPubID": "affiliation77",
           "affPubRaw": "Colorado School of Mines, Golden, CO, USA"
         }
       ],
@@ -3326,7 +3051,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation77",
           "affPubRaw": "Colorado School of Mines, Golden, CO, USA"
         }
       ],
@@ -3341,7 +3065,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation75",
           "affPubRaw": "Fermi National Accelerator Laboratory, Fermilab, Batavia, IL, USA"
         }
       ],
@@ -3356,7 +3079,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "Universidad Nacional Aut\u00f3noma de M\u00e9xico, M\u00e9xico, D.F., Mexico"
         }
       ],
@@ -3371,7 +3093,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -3383,7 +3104,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -3395,7 +3115,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation70",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institut f\u00fcr Prozessdatenverarbeitung und Elektronik, Karlsruhe, Germany"
         }
       ],
@@ -3407,7 +3126,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation51",
           "affPubRaw": "Palacky University, RCPTM, Olomouc, Czech Republic"
         }
       ],
@@ -3419,8 +3137,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation28",
-          "affPubRaw": "Instituto de F\u00edsica de Rosario (IFIR)\u2014CONICET/U.N.R. and Facultad de Ciencias Bioqu\u00edmicas y Farmac\u00e9uticas U.N.R., Rosario, Argentina"
+          "affPubRaw": "Instituto de F\u00edsica de Rosario (IFIR),\u2014CONICET/U.N.R. and Facultad de Ciencias Bioqu\u00edmicas y Farmac\u00e9uticas U.N.R., Rosario, Argentina"
         }
       ],
       "name": {
@@ -3431,11 +3148,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation44",
           "affPubRaw": "INFN, Sezione di Milano, Milano, Italy"
         },
         {
-          "affPubID": "affiliation45",
           "affPubRaw": "Universit\u00e0 di Milano, Dipartimento di Fisica, Milano, Italy"
         }
       ],
@@ -3450,7 +3165,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "Centro At\u00f3mico Bariloche and Instituto Balseiro (CNEA-UNCuyo-CONICET), San Carlos de Bariloche, Argentina"
         }
       ],
@@ -3465,7 +3179,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, Grenoble Institute of Engineering, LPSC-IN2P3, F-38000 Grenoble, France"
         }
       ],
@@ -3480,7 +3193,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -3495,11 +3207,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Osservatorio Astrofisico di Torino (INAF), Torino, Italy"
         }
       ],
@@ -3511,7 +3221,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -3526,11 +3235,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), Science Park, Amsterdam, The Netherlands"
         }
       ],
@@ -3545,7 +3252,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         }
       ],
@@ -3560,7 +3266,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation69",
           "affPubRaw": "New York University, New York, NY, USA"
         }
       ],
@@ -3575,7 +3280,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -3587,7 +3291,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -3599,7 +3302,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "Universidad Nacional Aut\u00f3noma de M\u00e9xico, M\u00e9xico, D.F., Mexico"
         }
       ],
@@ -3614,7 +3316,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation89",
           "affPubRaw": "Centro de Investigaciones en L\u00e1seres y Aplicaciones, CITEDEF and CONICET, Villa Martelli, Argentina"
         }
       ],
@@ -3629,7 +3330,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "\u201cHoria Hulubei\u201d National Institute for Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -3641,7 +3341,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "Universit\u00e4t Siegen, Department Physik\u2014Experimentelle Teilchenphysik, Siegen, Germany"
         }
       ],
@@ -3656,7 +3355,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Michigan Technological University, Houghton, MI, USA"
         }
       ],
@@ -3671,7 +3369,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Michigan Technological University, Houghton, MI, USA"
         }
       ],
@@ -3683,7 +3380,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation90",
           "affPubRaw": "Charles University, Faculty of Mathematics and Physics, Institute of Particle and Nuclear Physics, Prague, Czech Republic"
         }
       ],
@@ -3698,7 +3394,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation90",
           "affPubRaw": "Charles University, Faculty of Mathematics and Physics, Institute of Particle and Nuclear Physics, Prague, Czech Republic"
         }
       ],
@@ -3713,7 +3408,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation51",
           "affPubRaw": "Palacky University, RCPTM, Olomouc, Czech Republic"
         }
       ],
@@ -3728,11 +3422,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "INFN, Sezione di Lecce, Lecce, Italy"
         },
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Universit\u00e0 del Salento, Dipartimento di Matematica e Fisica \u201cE. De Giorgi\u201d, Lecce, Italy"
         }
       ],
@@ -3747,7 +3439,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation91",
           "affPubRaw": "Universidad Industrial de Santander, Bucaramanga, Colombia"
         }
       ],
@@ -3762,7 +3453,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation16",
           "affPubRaw": "Universidade de S\u00e3o Paulo, Instituto de F\u00edsica de S\u00e3o Carlos, S\u00e3o Carlos, SP, Brazil"
         }
       ],
@@ -3774,7 +3464,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -3789,7 +3478,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation89",
           "affPubRaw": "Centro de Investigaciones en L\u00e1seres y Aplicaciones, CITEDEF and CONICET, Villa Martelli, Argentina"
         }
       ],
@@ -3804,7 +3492,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -3819,7 +3506,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "Benem\u00e9rita Universidad Aut\u00f3noma de Puebla, Puebla, Mexico"
         }
       ],
@@ -3831,7 +3517,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -3843,7 +3528,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -3858,7 +3542,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Nuclear Physics PAN, Krakow, Poland"
         }
       ],
@@ -3873,7 +3556,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation92",
           "affPubRaw": "Unidad Profesional Interdisciplinaria en Ingenier\u00eda y Tecnolog\u00edas Avanzadas del Instituto Polit\u00e9cnico Nacional (UPIITA-IPN), M\u00e9xico, D.F., Mexico"
         }
       ],
@@ -3888,11 +3570,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         }
       ],
@@ -3907,7 +3587,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation93",
           "affPubRaw": "Universidade de S\u00e3o Paulo, Instituto de F\u00edsica, S\u00e3o Paulo, SP, Brazil"
         }
       ],
@@ -3919,11 +3598,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -3938,11 +3615,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "INFN, Sezione di Lecce, Lecce, Italy"
         },
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Universit\u00e0 del Salento, Dipartimento di Matematica e Fisica \u201cE. De Giorgi\u201d, Lecce, Italy"
         }
       ],
@@ -3957,11 +3632,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation23",
           "affPubRaw": "Gran Sasso Science Institute, L\u2019Aquila, Italy"
         }
       ],
@@ -3976,11 +3649,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "Universit\u00e0 dell\u2019Aquila, Dipartimento di Scienze Fisiche e Chimiche, L\u2019Aquila, Italy"
         }
       ],
@@ -3995,7 +3666,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4010,7 +3680,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -4025,7 +3694,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -4040,7 +3708,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         }
       ],
@@ -4055,11 +3722,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), Science Park, Amsterdam, The Netherlands"
         }
       ],
@@ -4071,11 +3736,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "INFN, Sezione di Catania, Catania, Italy"
         },
         {
-          "affPubID": "affiliation85",
           "affPubRaw": "Universit\u00e0 di Palermo, Dipartimento di Fisica e Chimica \u201cE. Segr\u00e8\u201d, Palermo, Italy"
         }
       ],
@@ -4087,7 +3750,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "University of Chicago, Enrico Fermi Institute, Chicago, IL, USA"
         }
       ],
@@ -4102,7 +3764,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -4117,7 +3778,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation50",
           "affPubRaw": "Michigan Technological University, Houghton, MI, USA"
         }
       ],
@@ -4132,7 +3792,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -4147,7 +3806,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -4159,7 +3817,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -4174,7 +3831,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4186,7 +3842,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -4201,7 +3856,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -4216,7 +3870,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "Universit\u00e4t Siegen, Department Physik\u2014Experimentelle Teilchenphysik, Siegen, Germany"
         }
       ],
@@ -4231,11 +3884,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "Universit\u00e0 dell\u2019Aquila, Dipartimento di Scienze Fisiche e Chimiche, L\u2019Aquila, Italy"
         }
       ],
@@ -4250,7 +3901,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         }
       ],
@@ -4265,7 +3915,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Observatorio Pierre Auger and Comisi\u00f3n Nacional de Energ\u00eda At\u00f3mica, Malarg\u00fce, Argentina"
         }
       ],
@@ -4277,7 +3926,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -4289,7 +3937,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation84",
           "affPubRaw": "Universit\u00e4t Hamburg, II. Institut f\u00fcr Theoretische Physik, Hamburg, Germany"
         }
       ],
@@ -4301,7 +3948,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4316,7 +3962,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "Centro At\u00f3mico Bariloche and Instituto Balseiro (CNEA-UNCuyo-CONICET), San Carlos de Bariloche, Argentina"
         }
       ],
@@ -4331,7 +3976,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation60",
           "affPubRaw": "Instituto de Astronom\u00eda y F\u00edsica del Espacio (IAFE, CONICET-UBA), Buenos Aires, Argentina"
         }
       ],
@@ -4346,7 +3990,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation36",
           "affPubRaw": "Universit\u00e4t Siegen, Department Physik\u2014Experimentelle Teilchenphysik, Siegen, Germany"
         }
       ],
@@ -4361,7 +4004,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "\u201cHoria Hulubei\u201d National Institute for Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -4376,7 +4018,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         }
       ],
@@ -4391,11 +4032,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "Universit\u00e0 dell\u2019Aquila, Dipartimento di Scienze Fisiche e Chimiche, L\u2019Aquila, Italy"
         }
       ],
@@ -4410,7 +4049,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "Benem\u00e9rita Universidad Aut\u00f3noma de Puebla, Puebla, Mexico"
         }
       ],
@@ -4425,7 +4063,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation87",
           "affPubRaw": "INFN, Sezione di Roma \u201cTor Vergata\u201d, Roma, Italy"
         }
       ],
@@ -4437,7 +4074,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation91",
           "affPubRaw": "Universidad Industrial de Santander, Bucaramanga, Colombia"
         }
       ],
@@ -4449,7 +4085,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -4464,7 +4099,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation93",
           "affPubRaw": "Universidade de S\u00e3o Paulo, Instituto de F\u00edsica, S\u00e3o Paulo, SP, Brazil"
         }
       ],
@@ -4479,7 +4113,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -4494,7 +4127,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation77",
           "affPubRaw": "Colorado School of Mines, Golden, CO, USA"
         }
       ],
@@ -4509,7 +4141,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -4524,7 +4155,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation17",
           "affPubRaw": "Observatorio Pierre Auger and Comisi\u00f3n Nacional de Energ\u00eda At\u00f3mica, Malarg\u00fce, Argentina"
         }
       ],
@@ -4536,7 +4166,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation83",
           "affPubRaw": "University of Wisconsin\u2013Madison, Department of Physics and WIPAC, Madison, WI, USA"
         }
       ],
@@ -4551,7 +4180,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4566,11 +4194,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation48",
           "affPubRaw": "INFN, Sezione di Lecce, Lecce, Italy"
         },
         {
-          "affPubID": "affiliation63",
           "affPubRaw": "Universit\u00e0 del Salento, Dipartimento di Matematica e Fisica \u201cE. De Giorgi\u201d, Lecce, Italy"
         }
       ],
@@ -4585,7 +4211,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4600,7 +4225,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4615,7 +4239,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -4630,11 +4253,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4649,7 +4270,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4664,7 +4284,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation38",
           "affPubRaw": "Vrije Universiteit Brussels, Brussels, Belgium"
         }
       ],
@@ -4679,11 +4298,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), Science Park, Amsterdam, The Netherlands"
         }
       ],
@@ -4698,7 +4315,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -4713,11 +4329,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         },
         {
-          "affPubID": "affiliation54",
           "affPubRaw": "University of Delaware, Department of Physics and Astronomy, Bartol Research Institute, Newark, DE, USA"
         }
       ],
@@ -4732,7 +4346,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -4747,7 +4360,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4762,7 +4374,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "IFLP, Universidad Nacional de La Plata and CONICET, La Plata, Argentina"
         }
       ],
@@ -4777,11 +4388,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -4796,11 +4405,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation39",
           "affPubRaw": "INFN, Sezione di Catania, Catania, Italy"
         },
         {
-          "affPubID": "affiliation94",
           "affPubRaw": "Istituto di Astrofisica Spaziale e Fisica Cosmica di Palermo (INAF), Palermo, Italy"
         }
       ],
@@ -4815,7 +4422,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -4830,7 +4436,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation71",
           "affPubRaw": "Center for Astrophysics and Cosmology (CAC), University of Nova Gorica, Nova Gorica, Slovenia"
         }
       ],
@@ -4842,7 +4447,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation84",
           "affPubRaw": "Universit\u00e4t Hamburg, II. Institut f\u00fcr Theoretische Physik, Hamburg, Germany"
         }
       ],
@@ -4857,7 +4461,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -4869,7 +4472,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "\u201cHoria Hulubei\u201d National Institute for Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -4881,7 +4483,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "\u201cHoria Hulubei\u201d National Institute for Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -4896,7 +4497,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation68",
           "affPubRaw": "University of Chicago, Enrico Fermi Institute, Chicago, IL, USA"
         }
       ],
@@ -4911,7 +4511,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation95",
           "affPubRaw": "Pennsylvania State University, University Park, PA, USA"
         }
       ],
@@ -4926,7 +4525,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation11",
           "affPubRaw": "Department of Physics and Astronomy, Lehman College, City University of New York, Bronx, NY, USA"
         }
       ],
@@ -4941,7 +4539,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Observatorio Pierre Auger, Malarg\u00fce, Argentina"
         }
       ],
@@ -4953,7 +4550,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -4968,7 +4564,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation22",
           "affPubRaw": "\u201cHoria Hulubei\u201d National Institute for Physics and Nuclear Engineering, Bucharest-Magurele, Romania"
         }
       ],
@@ -4983,7 +4578,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation71",
           "affPubRaw": "Center for Astrophysics and Cosmology (CAC), University of Nova Gorica, Nova Gorica, Slovenia"
         }
       ],
@@ -4998,7 +4592,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Nuclear Physics PAN, Krakow, Poland"
         }
       ],
@@ -5013,7 +4606,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, Grenoble Institute of Engineering, LPSC-IN2P3, F-38000 Grenoble, France"
         }
       ],
@@ -5028,7 +4620,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation13",
           "affPubRaw": "RWTH Aachen University, III. Physikalisches Institut A, Aachen, Germany"
         }
       ],
@@ -5040,11 +4631,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         },
         {
-          "affPubID": "affiliation29",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Experimental Particle Physics, Karlsruhe, Germany"
         }
       ],
@@ -5056,7 +4645,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "Universit\u00e9 Libre de Bruxelles (ULB), Brussels, Belgium"
         }
       ],
@@ -5071,7 +4659,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "University of Adelaide, Adelaide, SA, Australia"
         }
       ],
@@ -5083,7 +4670,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation30",
           "affPubRaw": "Universit\u00e9 Paris-Saclay, CNRS/IN2P3, IJCLab, Orsay, France"
         }
       ],
@@ -5098,7 +4684,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -5113,7 +4698,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation96",
           "affPubRaw": "University of \u0141\u00f3d\u017a, Faculty of High-Energy Astrophysics, \u0141\u00f3d\u017a, Poland"
         }
       ],
@@ -5128,7 +4712,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation97",
           "affPubRaw": "Universidad de Medell\u00edn, Medell\u00edn, Colombia"
         }
       ],
@@ -5143,11 +4726,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "INFN, Sezione di Torino, Torino, Italy"
         },
         {
-          "affPubID": "affiliation14",
           "affPubRaw": "Universit\u00e0 Torino, Dipartimento di Fisica, Torino, Italy"
         }
       ],
@@ -5162,11 +4743,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation41",
           "affPubRaw": "IMAPP, Radboud University Nijmegen, Nijmegen, The Netherlands"
         },
         {
-          "affPubID": "affiliation42",
           "affPubRaw": "Nationaal Instituut voor Kernfysica en Hoge Energie Fysica (NIKHEF), Science Park, Amsterdam, The Netherlands"
         }
       ],
@@ -5181,7 +4760,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -5196,7 +4774,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -5211,7 +4788,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation47",
           "affPubRaw": "Universidade de S\u00e3o Paulo, Escola de Engenharia de Lorena, Lorena, SP, Brazil"
         }
       ],
@@ -5226,7 +4802,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "Laborat\u00f3rio de Instrumenta\u00e7\u00e3o e F\u00edsica Experimental de Part\u00edculas (LIP) and Instituto Superior T\u00e9cnico (IST), Universidade de Lisboa (UL), Lisboa, Portugal"
         }
       ],
@@ -5241,7 +4816,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation25",
           "affPubRaw": "Universit\u00e9 Grenoble Alpes, CNRS, Grenoble Institute of Engineering, LPSC-IN2P3, F-38000 Grenoble, France"
         }
       ],
@@ -5256,7 +4830,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation49",
           "affPubRaw": "Observatorio Pierre Auger, Malarg\u00fce, Argentina"
         }
       ],
@@ -5271,7 +4844,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -5286,11 +4858,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation18",
           "affPubRaw": "INFN Laboratori Nazionali del Gran Sasso, Assergi (L\u2019Aquila), Italy"
         },
         {
-          "affPubID": "affiliation19",
           "affPubRaw": "Universit\u00e0 dell\u2019Aquila, Dipartimento di Scienze Fisiche e Chimiche, L\u2019Aquila, Italy"
         }
       ],
@@ -5305,7 +4875,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "IFLP, Universidad Nacional de La Plata and CONICET, La Plata, Argentina"
         }
       ],
@@ -5320,7 +4889,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -5335,7 +4903,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -5350,7 +4917,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation51",
           "affPubRaw": "Palacky University, RCPTM, Olomouc, Czech Republic"
         }
       ],
@@ -5365,7 +4931,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation51",
           "affPubRaw": "Palacky University, RCPTM, Olomouc, Czech Republic"
         }
       ],
@@ -5380,7 +4945,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation65",
           "affPubRaw": "Universidad Nacional Aut\u00f3noma de M\u00e9xico, M\u00e9xico, D.F., Mexico"
         }
       ],
@@ -5395,11 +4959,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation12",
           "affPubRaw": "INFN, Sezione di Napoli, Napoli, Italy"
         },
         {
-          "affPubID": "affiliation53",
           "affPubRaw": "Universit\u00e0 di Napoli \u201cFederico II\u201d, Dipartimento di Fisica \u201cEttore Pancini\u201d, Napoli, Italy"
         }
       ],
@@ -5414,7 +4976,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "Benem\u00e9rita Universidad Aut\u00f3noma de Puebla, Puebla, Mexico"
         }
       ],
@@ -5429,7 +4990,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation91",
           "affPubRaw": "Universidad Industrial de Santander, Bucaramanga, Colombia"
         }
       ],
@@ -5444,7 +5004,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -5459,7 +5018,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation61",
           "affPubRaw": "Universidade Federal do Rio de Janeiro (UFRJ), Observat\u00f3rio do Valongo, Rio de Janeiro, RJ, Brazil"
         }
       ],
@@ -5474,7 +5032,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation58",
           "affPubRaw": "IFLP, Universidad Nacional de La Plata and CONICET, La Plata, Argentina"
         }
       ],
@@ -5489,7 +5046,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation87",
           "affPubRaw": "INFN, Sezione di Roma \u201cTor Vergata\u201d, Roma, Italy"
         }
       ],
@@ -5504,7 +5060,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -5519,7 +5074,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation82",
           "affPubRaw": "Benem\u00e9rita Universidad Aut\u00f3noma de Puebla, Puebla, Mexico"
         }
       ],
@@ -5531,7 +5085,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation98",
           "affPubRaw": "Universiteit van Amsterdam, Faculty of Science, Amsterdam, The Netherlands"
         }
       ],
@@ -5546,7 +5099,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation71",
           "affPubRaw": "Center for Astrophysics and Cosmology (CAC), University of Nova Gorica, Nova Gorica, Slovenia"
         }
       ],
@@ -5561,7 +5113,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation33",
           "affPubRaw": "Universidade Federal do Rio de Janeiro, Instituto de F\u00edsica, Rio de Janeiro, RJ, Brazil"
         }
       ],
@@ -5573,7 +5124,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation78",
           "affPubRaw": "School of Physics and Astronomy, University of Leeds, Leeds, UK"
         }
       ],
@@ -5588,7 +5138,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation31",
           "affPubRaw": "Karlsruhe Institute of Technology (KIT), Institute for Astroparticle Physics, Karlsruhe, Germany"
         }
       ],
@@ -5603,7 +5152,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation77",
           "affPubRaw": "Colorado School of Mines, Golden, CO, USA"
         }
       ],
@@ -5618,7 +5166,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Institute of Nuclear Physics PAN, Krakow, Poland"
         }
       ],
@@ -5633,7 +5180,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation46",
           "affPubRaw": "Bergische Universit\u00e4t Wuppertal, Department of Physics, Wuppertal, Germany"
         }
       ],
@@ -5645,7 +5191,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation08",
           "affPubRaw": "Instituto de Tecnolog\u00edas en Detecci\u00f3n y Astropart\u00edculas (CNEA, CONICET, UNSAM), Buenos Aires, Argentina"
         }
       ],
@@ -5660,7 +5205,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation99",
           "affPubRaw": "Los Alamos National Laboratory, Los Alamos, NM, USA"
         }
       ],
@@ -5672,7 +5216,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation21",
           "affPubRaw": "Institute of Physics of the Czech Academy of Sciences, Prague, Czech Republic"
         }
       ],
@@ -5687,7 +5230,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation73",
           "affPubRaw": "Universit\u00e9 Libre de Bruxelles (ULB), Brussels, Belgium"
         }
       ],
@@ -5702,7 +5244,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation10",
           "affPubRaw": "Instituto Galego de F\u00edsica de Altas Enerx\u00edas (IGFAE), Universidade de Santiago de Compostela, Santiago de Compostela, Spain"
         }
       ],
@@ -5717,11 +5258,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation71",
           "affPubRaw": "Center for Astrophysics and Cosmology (CAC), University of Nova Gorica, Nova Gorica, Slovenia"
         },
         {
-          "affPubID": "affiliation72",
           "affPubRaw": "Experimental Particle Physics Department, J. Stefan Institute, Ljubljana, Slovenia"
         }
       ],
@@ -5736,11 +5275,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation71",
           "affPubRaw": "Center for Astrophysics and Cosmology (CAC), University of Nova Gorica, Nova Gorica, Slovenia"
         },
         {
-          "affPubID": "affiliation72",
           "affPubRaw": "Experimental Particle Physics Department, J. Stefan Institute, Ljubljana, Slovenia"
         }
       ],

@@ -6,11 +6,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Xinjiang Astronomical Observatory, CAS, 150 Science-1 Street, Urumqi 830011, People's Republic of China"
         },
         {
-          "affPubID": "affiliation02",
           "affPubRaw": "College of Astronomy and Space Science, University of Chinese Academy of Sciences, No.1 Yanqihu East Road, Beijing 101408, People's Republic of China"
         }
       ],
@@ -22,7 +20,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Xinjiang Astronomical Observatory, CAS, 150 Science-1 Street, Urumqi 830011, People's Republic of China"
         }
       ],
@@ -37,15 +34,12 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Xinjiang Astronomical Observatory, CAS, 150 Science-1 Street, Urumqi 830011, People's Republic of China"
         },
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Key Laboratory of Radio Astronomy, CAS, 150 Science 1-Street, Urumqi 830011, People's Republic of China"
         },
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Xinjiang Key Laboratory of Radio Astrophysics, 150 Science 1-Street, Urumqi 830011, People's Republic of China"
         }
       ],
@@ -61,11 +55,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Xinjiang Astronomical Observatory, CAS, 150 Science-1 Street, Urumqi 830011, People's Republic of China"
         },
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "George P. and Cynthia Woods Mitchell Institute for Fundamental Physics and Astronomy, Texas A&M University, College Station, TX 77843-4242, USA"
         }
       ],
@@ -80,11 +72,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "School of Astronomy and Space Science, Nanjing University, Nanjing 210023, People's Republic of China"
         },
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "Key Laboratory of Modern Astronomy and Astrophysics (Nanjing University), Ministry of Education, Nanjing 210023, People's Republic of China"
         }
       ],
@@ -99,15 +89,12 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Xinjiang Astronomical Observatory, CAS, 150 Science-1 Street, Urumqi 830011, People's Republic of China"
         },
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "Key Laboratory of Radio Astronomy, CAS, 150 Science 1-Street, Urumqi 830011, People's Republic of China"
         },
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "Xinjiang Key Laboratory of Radio Astrophysics, 150 Science 1-Street, Urumqi 830011, People's Republic of China"
         }
       ],

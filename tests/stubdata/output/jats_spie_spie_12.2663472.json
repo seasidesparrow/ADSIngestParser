@@ -6,7 +6,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "ONERA, Univ. of Toulouse (France)"
         }
       ],
@@ -18,7 +17,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "ONERA, Univ. of Toulouse (France)"
         }
       ],
@@ -30,7 +28,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "ONERA, Univ. of Toulouse (France)"
         }
       ],
@@ -42,7 +39,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "Institut de Math\u00e9matiques de Toulouse CNRS, Univ. of Toulouse (France)"
         }
       ],
@@ -61,7 +57,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff3",
             "affPubRaw": "Argo AI, LLC (United States)"
           }
         ],
@@ -76,7 +71,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff4",
             "affPubRaw": "National Institute of Standards and Technology (United States)"
           }
         ],
@@ -91,7 +85,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff5",
             "affPubRaw": "MIT Lincoln Lab. (United States)"
           }
         ],

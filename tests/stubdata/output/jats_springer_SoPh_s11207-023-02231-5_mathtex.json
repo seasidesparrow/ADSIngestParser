@@ -6,8 +6,21 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Physics Aberystwyth University SY23 3BZ Ceredigion Cymru UK"
+          "affPubID": [
+            {
+              "affID": "https://ror.org/015m2p889",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8186.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 2483",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Aberystwyth University, SY23 3BZ, Ceredigion, Cymru, UK"
         }
       ],
       "attrib": {
@@ -22,8 +35,21 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Physics Aberystwyth University SY23 3BZ Ceredigion Cymru UK"
+          "affPubID": [
+            {
+              "affID": "https://ror.org/015m2p889",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8186.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 2483",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Aberystwyth University, SY23 3BZ, Ceredigion, Cymru, UK"
         }
       ],
       "name": {
@@ -34,8 +60,21 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Physics Aberystwyth University SY23 3BZ Ceredigion Cymru UK"
+          "affPubID": [
+            {
+              "affID": "https://ror.org/015m2p889",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8186.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 2483",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Aberystwyth University, SY23 3BZ, Ceredigion, Cymru, UK"
         }
       ],
       "attrib": {
@@ -49,8 +88,21 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Physics Aberystwyth University SY23 3BZ Ceredigion Cymru UK"
+          "affPubID": [
+            {
+              "affID": "https://ror.org/015m2p889",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8186.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 2483",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Aberystwyth University, SY23 3BZ, Ceredigion, Cymru, UK"
         }
       ],
       "attrib": {
@@ -64,8 +116,21 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Department of Computer Science Aberystwyth University SY23 3DB Ceredigion Cymru UK"
+          "affPubID": [
+            {
+              "affID": "https://ror.org/015m2p889",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8186.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 2483",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Computer Science, Aberystwyth University, SY23 3DB, Ceredigion, Cymru, UK"
         }
       ],
       "attrib": {
@@ -79,8 +144,21 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Physics Aberystwyth University SY23 3BZ Ceredigion Cymru UK"
+          "affPubID": [
+            {
+              "affID": "https://ror.org/015m2p889",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8186.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 2483",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Aberystwyth University, SY23 3BZ, Ceredigion, Cymru, UK"
         }
       ],
       "name": {
@@ -91,12 +169,62 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Physics Aberystwyth University SY23 3BZ Ceredigion Cymru UK"
+          "affPubID": [
+            {
+              "affID": "https://ror.org/015m2p889",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8186.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 2483",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "https://ror.org/05dxps055",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.20861.3d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0706 8890",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Aberystwyth University, SY23 3BZ, Ceredigion, Cymru, UK"
         },
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Space Radiation Lab California Institute of Technology 91125 Pasadena CA USA"
+          "affPubID": [
+            {
+              "affID": "https://ror.org/015m2p889",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8186.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 2483",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "https://ror.org/05dxps055",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.20861.3d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0706 8890",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Space Radiation Lab, California Institute of Technology, 91125, Pasadena, CA, USA"
         }
       ],
       "attrib": {
@@ -110,8 +238,21 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Physics Aberystwyth University SY23 3BZ Ceredigion Cymru UK"
+          "affPubID": [
+            {
+              "affID": "https://ror.org/015m2p889",
+              "affIDType": "ROR"
+            },
+            {
+              "affID": "grid.8186.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2168 2483",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, Aberystwyth University, SY23 3BZ, Ceredigion, Cymru, UK"
         }
       ],
       "attrib": {
