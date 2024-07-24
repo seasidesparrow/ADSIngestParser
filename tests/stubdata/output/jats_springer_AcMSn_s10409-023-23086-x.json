@@ -6,8 +6,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Modern Mechanics University of Science and Technology of China 230026 Hefei China"
+          "affPubID": [
+            {
+              "affID": "grid.59053.3a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000121679639",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Modern Mechanics, University of Science and Technology of China, 230026, Hefei, China"
         }
       ],
       "name": {
@@ -18,8 +27,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Modern Mechanics University of Science and Technology of China 230026 Hefei China"
+          "affPubID": [
+            {
+              "affID": "grid.59053.3a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000121679639",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Modern Mechanics, University of Science and Technology of China, 230026, Hefei, China"
         }
       ],
       "name": {
@@ -30,8 +48,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Modern Mechanics University of Science and Technology of China 230026 Hefei China"
+          "affPubID": [
+            {
+              "affID": "grid.59053.3a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000121679639",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Modern Mechanics, University of Science and Technology of China, 230026, Hefei, China"
         }
       ],
       "attrib": {

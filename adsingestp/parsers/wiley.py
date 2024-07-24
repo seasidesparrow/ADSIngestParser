@@ -171,7 +171,7 @@ class WileyParser(BaseBeautifulSoupParser):
                         akey = a
                     elif aff_dict.get(a.replace("#", "")):
                         akey = a.replace("#", "")
-                    xaffs.append(akey)
+                    # xaffs.append(akey)
                     affs.append(aff_dict[akey])
                 author_tmp["aff"] = affs
                 author_tmp["xaff"] = xaffs

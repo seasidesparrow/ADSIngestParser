@@ -6,12 +6,10 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
         },
         {
-          "affPubID": "affiliation02",
-          "affPubRaw": "Graduate School of Physics, University of Szeged, Dom t\u00e9r 9, Szeged, 6720 Hungary"
+          "affPubRaw": "Graduate School of Physics, University of Szeged, Dom t\u00e9r 9, Szeged, 6720, Hungary"
         }
       ],
       "attrib": {
@@ -25,7 +23,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
         }
       ],
@@ -37,11 +34,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
         },
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "School of Physics and Astronomy, Monash University, VIC 3800, Australia"
         }
       ],
@@ -53,19 +48,15 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
         },
         {
-          "affPubID": "affiliation04",
           "affPubRaw": "E.A. Milne Centre for Astrophysics, Department of Physics and Mathematics, University of Hull, HU6 7RX, UK"
         },
         {
-          "affPubID": "affiliation05",
           "affPubRaw": "NuGrid Collaboration, http://nugridstars.org"
         },
         {
-          "affPubID": "affiliation06",
           "affPubRaw": "Joint Institute for Nuclear Astrophysics, Center for the Evolution of the Elements, Michigan State University, 640 South Shaw Lane, East Lansing, MI 48824, USA"
         }
       ],
@@ -80,15 +71,12 @@
     {
       "affiliation": [
         {
-          "affPubID": "affiliation01",
           "affPubRaw": "Konkoly Observatory, Research Centre for Astronomy and Earth Sciences (CSFK), E\u00f6tv\u00f6s Lor\u00e1nd Research Network (ELKH), Konkoly Thege Mikl\u00f3s \u00fat 15-17, H-1121 Budapest, Hungary"
         },
         {
-          "affPubID": "affiliation03",
           "affPubRaw": "School of Physics and Astronomy, Monash University, VIC 3800, Australia"
         },
         {
-          "affPubID": "affiliation07",
           "affPubRaw": "ELTE E\u00f6tv\u00f6s Lor\u00e1nd University, Institute of Physics, Budapest 1117, P\u00e1zm\u00e1ny P\u00e9ter s\u00e9t\u00e1ny 1/A, Hungary"
         }
       ],

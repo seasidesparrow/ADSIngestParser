@@ -6,15 +6,12 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "IMEC, Leuven, Belgium"
         },
         {
-          "affPubID": "aff2",
           "affPubRaw": "KU Leuven (University of Leuven), Leuven, Belgium"
         },
         {
-          "affPubID": "aff3",
           "affPubRaw": "North Carolina State University, Department of Chemical and Biomolecular Engineering, Raleigh, North Carolina, United States"
         }
       ],
@@ -30,11 +27,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "IMEC, Leuven, Belgium"
         },
         {
-          "affPubID": "aff2",
           "affPubRaw": "KU Leuven (University of Leuven), Leuven, Belgium"
         }
       ],
@@ -50,7 +45,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff4",
           "affPubRaw": "FUJIFILM Corporation Electronic Materials Research Laboratories, Yoshida-Cho, Japan"
         }
       ],
@@ -65,7 +59,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "IMEC, Leuven, Belgium"
         }
       ],
@@ -81,7 +74,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff3",
           "affPubRaw": "North Carolina State University, Department of Chemical and Biomolecular Engineering, Raleigh, North Carolina, United States"
         }
       ],
@@ -97,11 +89,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "IMEC, Leuven, Belgium"
         },
         {
-          "affPubID": "aff2",
           "affPubRaw": "KU Leuven (University of Leuven), Leuven, Belgium"
         }
       ],

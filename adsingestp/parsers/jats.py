@@ -20,6 +20,7 @@ class JATSAffils(object):
         self.contrib_dict = {}
         self.collab = {}
         self.xref_dict = OrderedDict()
+        self.xref_xid_dict = OrderedDict()
         self.email_xref = OrderedDict()
         self.output = None
 
@@ -35,6 +36,21 @@ class JATSAffils(object):
 
         return soup
 
+    def _get_inst_identifiers(self, aff):
+        """
+        Takes a single affiliation in soup form, removes any institution-ids from the text, places them in the aff_id array, and returns the soup sans ids and the aff_id array
+        :param aff: BeautifulSoup object/tree
+        :return: BeautifulSoup object/tree, aff_ids array
+        """
+        aff_ids = []
+        aff_external_ids = aff.find_all("institution-id")
+        for ident in aff_external_ids:
+            idtype = ident.get("institution-id-type", "")
+            idvalue = ident.get_text()
+            aff_ids.append({idtype: idvalue})
+            ident.decompose()
+        return aff, aff_ids
+
     def _fix_affil(self, affstring):
         """
         Separate email addresses from affiliations in a given input affiliation string
@@ -47,15 +63,20 @@ class JATSAffils(object):
         emails = []
         for a in aff_list:
             a = a.strip()
-            if self.regex_email.match(a):
-                emails.append(a)
-            else:
-                # check for empty strings with commas
-                check_a = a.replace(",", "")
-                if check_a:
-                    a = a.replace(" —", "—")
-                    a = a.replace(" , ", ", ")
-                    a = re.sub("\\s+", " ", a)
+            # check for empty strings with commas
+            check_a = a.replace(",", "")
+            if check_a:
+                a = a.replace("\\n", ",")
+                a = a.replace(" —", "—")
+                a = a.replace(" , ", ", ")
+                a = re.sub(",+", ",", a)
+                a = re.sub("\\s+", " ", a)
+                a = re.sub("^(\\s*,+\\s*)+", "", a)
+                a = re.sub("(\\s*,\\s+)+", ", ", a)
+                a = re.sub("(,\\s*)+$", "", a)
+                if self.regex_email.match(a):
+                    emails.append(a)
+                else:
                     new_aff.append(a)
 
         newaffstr = "; ".join(new_aff)
@@ -108,6 +129,16 @@ class JATSAffils(object):
                     orcid_new.add(orcid_format.search(o).group(0))
         return list(orcid_new)
 
+    def _reformat_affids(self):
+        for contribs in self.contrib_dict.values():
+            for auth in contribs:
+                if auth.get("affid", None):
+                    affid_tmp = []
+                    for d in auth["affid"]:
+                        for k, v in d.items():
+                            affid_tmp.append({"affIDType": k, "affID": v})
+                    auth["affid"] = affid_tmp
+
     def _match_xref_clean(self):
         """
         Matches crossreferenced affiliations and emails; cleans emails and ORCIDs
@@ -117,22 +148,32 @@ class JATSAffils(object):
         for contrib_type, contribs in self.contrib_dict.items():
             for auth in contribs:
                 # contents of xaff field aren't always properly separated - fix that here
-                xaff_tmp = []
                 for item in auth.get("xaff", []):
+                    xaff_xid_tmp = []
                     xi = re.split("\\s*,\\s*|\\s+", item)
                     for x in xi:
                         try:
                             auth["aff"].append(self.xref_dict[x])
-                            xaff_tmp.append(x)
                         except KeyError as err:
                             logger.info("Key is missing from xaff. Missing key: %s", err)
                             pass
-
+                        try:
+                            for dx in self.xref_xid_dict[x]:
+                                for k, v in dx.items():
+                                    xaff_xid_tmp.append({k: v})
+                        except KeyError as err:
+                            logger.info("Key is missing from xaff. Missing key: %s" % err)
                     # if you found any emails in an affstring, add them
                     # to the email field
                     if item in self.email_xref:
                         auth["email"].append(self.email_xref[item])
-                auth["xaff"] = xaff_tmp
+                    if xaff_xid_tmp:
+                        if auth.get("affid", None):
+                            auth["affid"].extend(xaff_xid_tmp)
+                        else:
+                            auth["affid"] = xaff_xid_tmp
+                    elif not auth.get("affid", None):
+                        auth["affid"] = []
 
                 # Check for 'ALLAUTH'/'ALLCONTRIB' affils (global affils without a key), and assign them to all authors/contributors
                 if contrib_type == "authors" and "ALLAUTH" in self.xref_dict:
@@ -221,6 +262,7 @@ class JATSAffils(object):
                     self.collab = {
                         "collab": collab_name,
                         "aff": collab_affil,
+                        "affid": [],
                         "xaff": [],
                         "xemail": [],
                         "email": [],
@@ -259,6 +301,7 @@ class JATSAffils(object):
                     self.collab = {
                         "collab": collab_name,
                         "aff": collab_affil,
+                        "affid": [],
                         "xaff": [],
                         "xemail": [],
                         "email": [],
@@ -287,25 +330,33 @@ class JATSAffils(object):
 
                 # NOTE: institution-id is actually useful, but at
                 # at the moment, strip it
-                contrib = self._decompose(soup=contrib, tag="institution-id")
+                # contrib = self._decompose(soup=contrib, tag="institution-id")
 
                 # get named affiliations within the contrib block
                 affs = contrib.find_all("aff")
                 aff_text = []
                 email_list = []
+                aff_extids = []
                 for i in affs:
                     # special case: some pubs label affils with <sup>label</sup>, strip them
                     i = self._decompose(soup=i, tag="sup")
-                    affstr = i.get_text(separator=" ").strip()
+                    i, aff_extids_tmp = self._get_inst_identifiers(i)
+                    affstr = i.get_text(separator=", ").strip()
                     (affstr, email_list) = self._fix_affil(affstr)
                     aff_text.append(affstr)
+                    aff_extids.extend(aff_extids_tmp)
                     i.decompose()
 
                 # special case (e.g. AIP) - one author per contrib group, aff stored at contrib group level
                 if num_contribs == 1 and art_contrib_group.find("aff"):
                     aff_list = art_contrib_group.find_all("aff")
                     for aff in aff_list:
-                        aff_text.append(aff.get_text(separator=" ").strip())
+                        aff, aff_extids_tmp = self._get_inst_identifiers(aff)
+                        aff_fix = aff.get_text(separator=", ").strip()
+                        (affstr, email_fix) = self._fix_affil(aff_fix)
+                        email_list.extend(email_fix)
+                        aff_text.append(affstr)
+                        aff_extids.extend(aff_extids_tmp)
                         aff.decompose()
 
                 # get xrefs...
@@ -355,6 +406,7 @@ class JATSAffils(object):
                 auth["surname"] = surname
                 auth["given"] = given
                 auth["aff"] = aff_text
+                auth["affid"] = aff_extids
                 auth["xaff"] = xref_aff
                 auth["xemail"] = xref_email
                 auth["orcid"] = orcid_out
@@ -399,16 +451,18 @@ class JATSAffils(object):
                     key = aff.get("id", default_key)
                     # special case: get rid of <sup>...
                     aff = self._decompose(soup=aff, tag="sup")
-                    aff = self._decompose(soup=aff, tag="institution-id")
+                    aff, aff_extids_tmp = self._get_inst_identifiers(aff)
+
                     # getting rid of ext-link eliminates *all* emails,
                     # so this is not the place to fix the iop thing
                     # a = self._decompose(soup=a, tag='ext-link')
 
-                    affstr = aff.get_text(separator=" ").strip()
+                    affstr = aff.get_text(separator=", ").strip()
                     (affstr, email_list) = self._fix_affil(affstr)
                     if email_list:
                         self.email_xref[key] = email_list
                     self.xref_dict[key] = affstr
+                    self.xref_xid_dict[key] = aff_extids_tmp
 
         self.contrib_dict = {"authors": authors_out, "contributors": contribs_out}
 
@@ -423,12 +477,15 @@ class JATSAffils(object):
                 continue
             # special case: get rid of <sup>...
             aff = self._decompose(soup=aff, tag="sup")
-            # NOTE: institution-id is actually useful, but at
-            # at the moment, strip it
-            aff = self._decompose(soup=aff, tag="institution-id")
-            affstr = aff.get_text(separator=" ").strip()
+
+            aff, aff_extids_tmp = self._get_inst_identifiers(aff)
+            affstr = aff.get_text(separator=", ").strip()
             (aff_list, email_list) = self._fix_affil(affstr)
             self.xref_dict[key] = aff_list
+            if self.xref_xid_dict.get(key, None):
+                self.xref_xid_dict[key].extend(aff_extids_tmp)
+            else:
+                self.xref_xid_dict[key] = aff_extids_tmp
             aff.decompose()
 
         # author-notes xrefs...
@@ -449,6 +506,7 @@ class JATSAffils(object):
 
         # finishing up
         self._match_xref_clean()
+        self._reformat_affids()
 
         return self.contrib_dict
 
@@ -995,8 +1053,8 @@ class JATSParser(BaseBeautifulSoupParser):
             d = self.bsstrtodict(text, parser=bsparser)
         except Exception as err:
             raise XmlLoadException(err)
-        document = d.article
 
+        document = d.article
         front_meta = document.front
         self.back_meta = document.back
 

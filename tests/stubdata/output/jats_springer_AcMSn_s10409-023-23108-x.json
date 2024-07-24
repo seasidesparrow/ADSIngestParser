@@ -6,12 +6,38 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "School of Civil Engineering Sun Yat-sen University 510275 Guangzhou China"
+          "affPubID": [
+            {
+              "affID": "grid.12981.33",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2360 039X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.511004.1",
+              "affIDType": "GRID"
+            }
+          ],
+          "affPubRaw": "School of Civil Engineering, Sun Yat-sen University, 510275, Guangzhou, China"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Southern Marine Science and Engineering Guangdong Laboratory (Zhuhai) 519082 Zhuhai China"
+          "affPubID": [
+            {
+              "affID": "grid.12981.33",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2360 039X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.511004.1",
+              "affIDType": "GRID"
+            }
+          ],
+          "affPubRaw": "Southern Marine Science and Engineering Guangdong Laboratory (Zhuhai), 519082, Zhuhai, China"
         }
       ],
       "attrib": {
@@ -25,12 +51,38 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "School of Civil Engineering Sun Yat-sen University 510275 Guangzhou China"
+          "affPubID": [
+            {
+              "affID": "grid.12981.33",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2360 039X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.511004.1",
+              "affIDType": "GRID"
+            }
+          ],
+          "affPubRaw": "School of Civil Engineering, Sun Yat-sen University, 510275, Guangzhou, China"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Southern Marine Science and Engineering Guangdong Laboratory (Zhuhai) 519082 Zhuhai China"
+          "affPubID": [
+            {
+              "affID": "grid.12981.33",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2360 039X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.511004.1",
+              "affIDType": "GRID"
+            }
+          ],
+          "affPubRaw": "Southern Marine Science and Engineering Guangdong Laboratory (Zhuhai), 519082, Zhuhai, China"
         }
       ],
       "attrib": {
@@ -44,8 +96,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Qinghai Communications Technical College 810016 Xining China"
+          "affPubRaw": "Qinghai Communications Technical College, 810016, Xining, China"
         }
       ],
       "name": {

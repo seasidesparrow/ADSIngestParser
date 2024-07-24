@@ -123,10 +123,10 @@ class IngestBase(object):
                                   'pubraw': string,
                                   'collab': string,
                                   'aff': [string],
+                                  'affid': [[affid_string]],
                                   'corresp': bool,
                                   'email': string,
                                   'orcid': string,
-                                  'xaff': [string],
                                   'xemail': [string]}
                                  ],
                      'contributors': [{'given': string,
@@ -137,14 +137,14 @@ class IngestBase(object):
                                        'pubraw': string,
                                        'collab': string,
                                        'aff': [string],
+                                       'affid': [[affid_string]],
                                        'corresp': bool,
                                        'email': string,
                                        'orcid': string,
-                                       'xaff': [string],
                                        'xemail': [string]}
                                       ],
                      'comments': [{'origin': string,
-                                   'text': string}]
+                                   'text': string}],
                      'conf_name': string,
                      'conf_location': string,
                      'conf_date': string,
@@ -303,11 +303,7 @@ class IngestBase(object):
                     "collab": i.get("collab", ""),
                 },
                 "affiliation": [
-                    {
-                        "affPubRaw": j,
-                        "affPubID": i.get("xaff")[idx] if i.get("xaff") else "",
-                        # "affPubIDType": "XXX" # TODO ask MT
-                    }
+                    {"affPubRaw": j, "affPubID": i.get("affid") if i.get("affid") else []}
                     for idx, j in enumerate(i.get("aff", []))
                 ],
                 "attrib": {
@@ -337,11 +333,7 @@ class IngestBase(object):
                         "collab": i.get("collab", ""),
                     },
                     "affiliation": [
-                        {
-                            "affPubRaw": j,
-                            "affPubID": i.get("xaff")[idx] if i.get("xaff") else ""
-                            # "affPubIDType": "XXX"
-                        }
+                        {"affPubRaw": j, "affPubID": i.get("affid")[idx] if i.get("affid") else []}
                         for idx, j in enumerate(i.get("aff", []))
                     ],
                     "attrib": {

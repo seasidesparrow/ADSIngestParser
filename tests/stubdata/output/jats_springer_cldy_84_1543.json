@@ -6,12 +6,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Centrum Bada\u0144 Kosmicznych Polskiej Akademii Nauk (CBK PAN) Bartycka 18A 00-716 Warszawa, Warsaw Poland"
+          "affPubID": [
+            {
+              "affID": "grid.423929.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2109 661X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4989.c",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2348 0746",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Centrum Bada\u0144 Kosmicznych Polskiej Akademii Nauk (CBK PAN), Bartycka 18A, 00-716, Warszawa, Warsaw, Poland"
         },
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Laboratoire G-Time, Department of Geosciences, Environment and Society Universit\u00e9 Libre de Bruxelles Brussels Belgium"
+          "affPubID": [
+            {
+              "affID": "grid.423929.7",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2109 661X",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4989.c",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2348 0746",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Laboratoire G-Time, Department of Geosciences, Environment and Society, Universit\u00e9 Libre de Bruxelles, Brussels, Belgium"
         }
       ],
       "attrib": {
@@ -26,12 +60,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Geological Fluid Dynamics Laboratory, Department of Earth, Ocean and Atmospheric Sciences University of British Columbia Vancouver Canada"
+          "affPubID": [
+            {
+              "affID": "grid.17091.3e",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2288 9830",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.170202.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1936 8008",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Geological Fluid Dynamics Laboratory, Department of Earth, Ocean and Atmospheric Sciences, University of British Columbia, Vancouver, Canada"
         },
         {
-          "affPubID": "Aff4",
-          "affPubRaw": "Department of Earth Sciences University of Oregon Eugene OR USA"
+          "affPubID": [
+            {
+              "affID": "grid.17091.3e",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2288 9830",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.170202.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1936 8008",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Earth Sciences, University of Oregon, Eugene, OR, USA"
         }
       ],
       "name": {
@@ -42,12 +110,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff4",
-          "affPubRaw": "Department of Earth Sciences University of Oregon Eugene OR USA"
+          "affPubID": [
+            {
+              "affID": "grid.170202.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1936 8008",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4305.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1936 7988",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Earth Sciences, University of Oregon, Eugene, OR, USA"
         },
         {
-          "affPubID": "Aff5",
-          "affPubRaw": "School of Geosciences University of Edinburgh, The King\u2019s Building Edinburgh UK"
+          "affPubID": [
+            {
+              "affID": "grid.170202.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1936 8008",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.4305.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1936 7988",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "School of Geosciences, University of Edinburgh, The King\u2019s Building, Edinburgh, UK"
         }
       ],
       "attrib": {
@@ -61,8 +163,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff6",
-          "affPubRaw": "Department of Earth and Environmental Sciences University of Missouri Kansas City Kansas City MO USA"
+          "affPubID": [
+            {
+              "affID": "grid.266756.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2179 926X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Earth and Environmental Sciences, University of Missouri Kansas City, Kansas City, MO, USA"
         }
       ],
       "attrib": {
@@ -76,8 +187,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Earth Science Durham University Durham UK"
+          "affPubID": [
+            {
+              "affID": "grid.8250.f",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 8700 0572",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Earth Science, Durham University, Durham, UK"
         }
       ],
       "attrib": {

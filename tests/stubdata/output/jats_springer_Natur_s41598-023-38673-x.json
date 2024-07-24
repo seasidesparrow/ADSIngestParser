@@ -6,8 +6,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.7468.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2248 7639",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -22,12 +31,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "Faculty of Health/School of Medicine Witten/Herdecke University Witten Germany"
+          "affPubID": [
+            {
+              "affID": "grid.412581.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9024 6397",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.419491.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1014 0849",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Faculty of Health/School of Medicine, Witten/Herdecke University, Witten, Germany"
         },
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Molecular Epidemiology Research Group Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.412581.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9024 6397",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.419491.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1014 0849",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Molecular Epidemiology Research Group, Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC), Berlin, Germany"
         }
       ],
       "attrib": {
@@ -41,8 +84,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.7468.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2248 7639",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -56,16 +108,91 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Molecular Epidemiology Research Group Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.419491.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1014 0849",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.419491.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1014 0849",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.484013.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 6879 971X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Molecular Epidemiology Research Group, Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC), Berlin, Germany"
         },
         {
-          "affPubID": "Aff4",
-          "affPubRaw": "Biobank Technology Platform Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC) Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.419491.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1014 0849",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.419491.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1014 0849",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.484013.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 6879 971X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Biobank Technology Platform, Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC), Berlin, Germany"
         },
         {
-          "affPubID": "Aff5",
-          "affPubRaw": "Core Facility Biobank Berlin Institute of Health at Charit\u00e9 - Universit\u00e4tsmedizin Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.419491.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1014 0849",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.419491.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1014 0849",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.484013.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 6879 971X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Core Facility Biobank, Berlin Institute of Health at Charit\u00e9 - Universit\u00e4tsmedizin Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -79,8 +206,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.7468.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2248 7639",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -94,12 +230,38 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.7468.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2248 7639",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.518749.6",
+              "affIDType": "GRID"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         },
         {
-          "affPubID": "Aff6",
-          "affPubRaw": "Pharmaimage Biomarker Solutions GmbH Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.7468.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2248 7639",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.518749.6",
+              "affIDType": "GRID"
+            }
+          ],
+          "affPubRaw": "Pharmaimage Biomarker Solutions GmbH, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -113,12 +275,38 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.7468.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2248 7639",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.518749.6",
+              "affIDType": "GRID"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         },
         {
-          "affPubID": "Aff6",
-          "affPubRaw": "Pharmaimage Biomarker Solutions GmbH Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.7468.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2248 7639",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.518749.6",
+              "affIDType": "GRID"
+            }
+          ],
+          "affPubRaw": "Pharmaimage Biomarker Solutions GmbH, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -140,8 +328,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.6363.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2218 4662",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -156,8 +353,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.6363.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2218 4662",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -172,8 +378,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.6363.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2218 4662",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -188,8 +403,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.6363.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2218 4662",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -204,8 +428,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.6363.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2218 4662",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -220,8 +453,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.6363.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2218 4662",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -236,8 +478,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.6363.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2218 4662",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -252,8 +503,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff7",
-          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK) Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.6363.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2218 4662",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -268,8 +528,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff8",
-          "affPubRaw": "University Medical Center Hamburg Hamburg Germany"
+          "affPubID": [
+            {
+              "affID": "grid.13648.38",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2180 3484",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University Medical Center Hamburg, Hamburg, Germany"
         }
       ],
       "attrib": {
@@ -284,8 +553,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff8",
-          "affPubRaw": "University Medical Center Hamburg Hamburg Germany"
+          "affPubID": [
+            {
+              "affID": "grid.13648.38",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2180 3484",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University Medical Center Hamburg, Hamburg, Germany"
         }
       ],
       "attrib": {
@@ -300,8 +578,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
+          "affPubID": [
+            {
+              "affID": "grid.7692.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000090126352",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University Medical Center Utrecht, Utrecht, The Netherlands"
         }
       ],
       "attrib": {
@@ -316,8 +603,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
+          "affPubID": [
+            {
+              "affID": "grid.7692.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000090126352",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University Medical Center Utrecht, Utrecht, The Netherlands"
         }
       ],
       "attrib": {
@@ -332,8 +628,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
+          "affPubID": [
+            {
+              "affID": "grid.7692.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000090126352",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University Medical Center Utrecht, Utrecht, The Netherlands"
         }
       ],
       "attrib": {
@@ -348,8 +653,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
+          "affPubID": [
+            {
+              "affID": "grid.7692.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000090126352",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University Medical Center Utrecht, Utrecht, The Netherlands"
         }
       ],
       "attrib": {
@@ -364,8 +678,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
+          "affPubID": [
+            {
+              "affID": "grid.7692.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000090126352",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University Medical Center Utrecht, Utrecht, The Netherlands"
         }
       ],
       "attrib": {
@@ -380,8 +703,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff9",
-          "affPubRaw": "University Medical Center Utrecht Utrecht The Netherlands"
+          "affPubID": [
+            {
+              "affID": "grid.7692.a",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000090126352",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University Medical Center Utrecht, Utrecht, The Netherlands"
         }
       ],
       "attrib": {
@@ -396,8 +728,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
+          "affPubID": [
+            {
+              "affID": "grid.5335.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000121885934",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Cambridge, Cambridge, UK"
         }
       ],
       "attrib": {
@@ -412,8 +753,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
+          "affPubID": [
+            {
+              "affID": "grid.5335.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000121885934",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Cambridge, Cambridge, UK"
         }
       ],
       "attrib": {
@@ -428,8 +778,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
+          "affPubID": [
+            {
+              "affID": "grid.5335.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000121885934",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Cambridge, Cambridge, UK"
         }
       ],
       "attrib": {
@@ -444,8 +803,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
+          "affPubID": [
+            {
+              "affID": "grid.5335.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000121885934",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Cambridge, Cambridge, UK"
         }
       ],
       "attrib": {
@@ -460,8 +828,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff10",
-          "affPubRaw": "University of Cambridge Cambridge UK"
+          "affPubID": [
+            {
+              "affID": "grid.5335.0",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000000121885934",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Cambridge, Cambridge, UK"
         }
       ],
       "attrib": {
@@ -476,8 +853,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff11",
-          "affPubRaw": "National Research Council Napoli Naples Italy"
+          "affPubID": [
+            {
+              "affID": "grid.5326.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1940 4177",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "National Research Council Napoli, Naples, Italy"
         }
       ],
       "attrib": {
@@ -492,8 +878,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff11",
-          "affPubRaw": "National Research Council Napoli Naples Italy"
+          "affPubID": [
+            {
+              "affID": "grid.5326.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1940 4177",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "National Research Council Napoli, Naples, Italy"
         }
       ],
       "attrib": {
@@ -508,8 +903,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff11",
-          "affPubRaw": "National Research Council Napoli Naples Italy"
+          "affPubID": [
+            {
+              "affID": "grid.5326.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1940 4177",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "National Research Council Napoli, Naples, Italy"
         }
       ],
       "attrib": {
@@ -524,8 +928,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff11",
-          "affPubRaw": "National Research Council Napoli Naples Italy"
+          "affPubID": [
+            {
+              "affID": "grid.5326.2",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 1940 4177",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "National Research Council Napoli, Naples, Italy"
         }
       ],
       "attrib": {
@@ -540,8 +953,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff12",
-          "affPubRaw": "University of Luxembourg Esch-sur-Alzette Luxembourg"
+          "affPubID": [
+            {
+              "affID": "grid.16008.3f",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2295 9843",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Luxembourg, Esch-sur-Alzette, Luxembourg"
         }
       ],
       "attrib": {
@@ -556,8 +978,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff12",
-          "affPubRaw": "University of Luxembourg Esch-sur-Alzette Luxembourg"
+          "affPubID": [
+            {
+              "affID": "grid.16008.3f",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2295 9843",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Luxembourg, Esch-sur-Alzette, Luxembourg"
         }
       ],
       "attrib": {
@@ -572,8 +1003,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff13",
-          "affPubRaw": "ATLAS Biolabs GmBH Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.431916.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0533 937X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "ATLAS Biolabs GmBH, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -588,8 +1028,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff13",
-          "affPubRaw": "ATLAS Biolabs GmBH Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.431916.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0533 937X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "ATLAS Biolabs GmBH, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -604,8 +1053,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -620,8 +1078,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -636,8 +1103,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -652,8 +1128,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -668,8 +1153,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -684,8 +1178,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -700,8 +1203,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -716,8 +1228,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -732,8 +1253,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -748,8 +1278,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff14",
-          "affPubRaw": "Immundiagnostik AG Bensheim Germany"
+          "affPubID": [
+            {
+              "affID": "grid.491844.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0622 3037",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Immundiagnostik AG, Bensheim, Germany"
         }
       ],
       "attrib": {
@@ -764,8 +1303,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff15",
-          "affPubRaw": "Cellogic GmbH Berlin Germany"
+          "affPubRaw": "Cellogic GmbH, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -780,8 +1318,7 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff15",
-          "affPubRaw": "Cellogic GmbH Berlin Germany"
+          "affPubRaw": "Cellogic GmbH, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -796,8 +1333,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff16",
-          "affPubRaw": "Physikalisch-Technische Bundesanstalt Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.4764.1",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2186 1887",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Physikalisch-Technische Bundesanstalt, Berlin, Germany"
         }
       ],
       "attrib": {
@@ -812,8 +1358,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff16",
-          "affPubRaw": "Physikalisch-Technische Bundesanstalt Berlin Germany"
+          "affPubID": [
+            {
+              "affID": "grid.4764.1",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2186 1887",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Physikalisch-Technische Bundesanstalt, Berlin, Germany"
         }
       ],
       "attrib": {

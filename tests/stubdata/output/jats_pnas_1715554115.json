@@ -6,7 +6,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         }
       ],
@@ -18,15 +17,12 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubID": "aff2",
           "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China"
         },
         {
-          "affPubID": "aff3",
           "affPubRaw": "The Brain Cognition and Brain Disease Institute, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, 518055 Guangdong, China"
         }
       ],
@@ -38,11 +34,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubID": "aff4",
           "affPubRaw": "Department of Molecular Neuroscience, University College London Institute of Neurology, London WC1N 3BG, United Kingdom"
         }
       ],
@@ -54,7 +48,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff5",
           "affPubRaw": "Department of Neurology, Huashan Hospital, Fudan University, 200040 Shanghai, China"
         }
       ],
@@ -66,7 +59,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff5",
           "affPubRaw": "Department of Neurology, Huashan Hospital, Fudan University, 200040 Shanghai, China"
         }
       ],
@@ -78,15 +70,12 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubID": "aff2",
           "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China"
         },
         {
-          "affPubID": "aff3",
           "affPubRaw": "The Brain Cognition and Brain Disease Institute, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, 518055 Guangdong, China"
         }
       ],
@@ -98,7 +87,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff4",
           "affPubRaw": "Department of Molecular Neuroscience, University College London Institute of Neurology, London WC1N 3BG, United Kingdom"
         }
       ],
@@ -110,16 +98,13 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff6",
-          "affPubRaw": "Department of Genetics, University of North Carolina, Chapel Hill, NC 27599"
+          "affPubRaw": "Department of Genetics, University of North Carolina, Chapel Hill, NC, 27599"
         },
         {
-          "affPubID": "aff7",
-          "affPubRaw": "Department of Biostatistics, University of North Carolina, Chapel Hill, NC 27599"
+          "affPubRaw": "Department of Biostatistics, University of North Carolina, Chapel Hill, NC, 27599"
         },
         {
-          "affPubID": "aff8",
-          "affPubRaw": "Department of Computer Science, University of North Carolina, Chapel Hill, NC 27599"
+          "affPubRaw": "Department of Computer Science, University of North Carolina, Chapel Hill, NC, 27599"
         }
       ],
       "name": {
@@ -130,11 +115,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubID": "aff2",
           "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China"
         }
       ],
@@ -146,7 +129,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff5",
           "affPubRaw": "Department of Neurology, Huashan Hospital, Fudan University, 200040 Shanghai, China"
         }
       ],
@@ -161,11 +143,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "Division of Life Science, State Key Laboratory of Molecular Neuroscience and Molecular Neuroscience Center, The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong, China"
         },
         {
-          "affPubID": "aff2",
           "affPubRaw": "Guangdong Provincial Key Laboratory of Brain Science, Disease, and Drug Development, Hong Kong University of Science and Technology Shenzhen Research Institute, Shenzhen, 518057 Guangdong, China"
         }
       ],

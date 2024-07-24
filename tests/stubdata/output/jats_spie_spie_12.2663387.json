@@ -6,7 +6,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "DEVCOM Army Research Lab. (United States)"
         }
       ],
@@ -18,7 +17,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "DEVCOM Army Research Lab. (United States)"
         }
       ],
@@ -30,7 +28,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "DEVCOM Army Research Lab. (United States)"
         }
       ],
@@ -42,7 +39,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "DEVCOM Army Research Lab. (United States)"
         }
       ],
@@ -54,7 +50,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "DEVCOM Army Research Lab. (United States)"
         }
       ],
@@ -66,7 +61,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "DEVCOM Army Research Lab. (United States)"
         }
       ],
@@ -78,7 +72,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "DEVCOM Army Research Lab. (United States)"
         }
       ],
@@ -90,7 +83,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "GE Research Ctr. (United States)"
         }
       ],
@@ -102,7 +94,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff2",
           "affPubRaw": "GE Research Ctr. (United States)"
         }
       ],
@@ -114,7 +105,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff3",
           "affPubRaw": "National Institute of Standards and Technology (United States)"
         }
       ],
@@ -126,7 +116,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff3",
           "affPubRaw": "National Institute of Standards and Technology (United States)"
         }
       ],
@@ -138,7 +127,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff4",
           "affPubRaw": "Boston Univ. (United States)"
         }
       ],
@@ -150,7 +138,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "aff1",
           "affPubRaw": "DEVCOM Army Research Lab. (United States)"
         }
       ],
@@ -169,7 +156,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff5",
             "affPubRaw": "Argo AI, LLC (United States)"
           }
         ],
@@ -184,7 +170,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff3",
             "affPubRaw": "National Institute of Standards and Technology (United States)"
           }
         ],
@@ -199,7 +184,6 @@
       "contrib": {
         "affiliation": [
           {
-            "affPubID": "aff6",
             "affPubRaw": "MIT Lincoln Lab. (United States)"
           }
         ],

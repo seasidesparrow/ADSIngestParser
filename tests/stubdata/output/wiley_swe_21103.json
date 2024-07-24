@@ -6,11 +6,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0001",
           "affPubRaw": "Space Research Institute, Austrian Academy of Sciences, Graz, Austria"
         },
         {
-          "affPubID": "swe21103-aff-0002",
           "affPubRaw": "Institute of Physics, University of Graz, Graz, Austria"
         }
       ],
@@ -26,7 +24,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0001",
           "affPubRaw": "Space Research Institute, Austrian Academy of Sciences, Graz, Austria"
         }
       ],
@@ -41,11 +38,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0001",
           "affPubRaw": "Space Research Institute, Austrian Academy of Sciences, Graz, Austria"
         },
         {
-          "affPubID": "swe21103-aff-0003",
           "affPubRaw": "Institute of Geodesy, Graz University of Technology, Graz, Austria"
         }
       ],
@@ -60,11 +55,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0001",
           "affPubRaw": "Space Research Institute, Austrian Academy of Sciences, Graz, Austria"
         },
         {
-          "affPubID": "swe21103-aff-0003",
           "affPubRaw": "Institute of Geodesy, Graz University of Technology, Graz, Austria"
         }
       ],
@@ -79,7 +72,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0002",
           "affPubRaw": "Institute of Physics, University of Graz, Graz, Austria"
         }
       ],
@@ -94,11 +86,9 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0001",
           "affPubRaw": "Space Research Institute, Austrian Academy of Sciences, Graz, Austria"
         },
         {
-          "affPubID": "swe21103-aff-0002",
           "affPubRaw": "Institute of Physics, University of Graz, Graz, Austria"
         }
       ],
@@ -113,7 +103,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0001",
           "affPubRaw": "Space Research Institute, Austrian Academy of Sciences, Graz, Austria"
         }
       ],
@@ -128,7 +117,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0004",
           "affPubRaw": "Conrad Observatory, Zentralanstalt f\u00fcr Meteorologie und Geodynamik, Vienna, Austria"
         }
       ],
@@ -143,15 +131,12 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0001",
           "affPubRaw": "Space Research Institute, Austrian Academy of Sciences, Graz, Austria"
         },
         {
-          "affPubID": "swe21103-aff-0002",
           "affPubRaw": "Institute of Physics, University of Graz, Graz, Austria"
         },
         {
-          "affPubID": "swe21103-aff-0003",
           "affPubRaw": "Institute of Geodesy, Graz University of Technology, Graz, Austria"
         }
       ],
@@ -166,7 +151,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0005",
           "affPubRaw": "RAL Space, Rutherford Appleton Laboratory, Didcot, UK"
         }
       ],
@@ -181,7 +165,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0006",
           "affPubRaw": "Department of Meteorology, University of Reading, Reading, UK"
         }
       ],
@@ -196,7 +179,6 @@
     {
       "affiliation": [
         {
-          "affPubID": "swe21103-aff-0006",
           "affPubRaw": "Department of Meteorology, University of Reading, Reading, UK"
         }
       ],

@@ -6,8 +6,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "School of Sciences Nantong University 226019 Nantong People\u2019s Republic of China"
+          "affPubID": [
+            {
+              "affID": "grid.260483.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9530 8833",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "School of Sciences, Nantong University, 226019, Nantong, People\u2019s Republic of China"
         }
       ],
       "name": {
@@ -18,8 +27,17 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff1",
-          "affPubRaw": "School of Sciences Nantong University 226019 Nantong People\u2019s Republic of China"
+          "affPubID": [
+            {
+              "affID": "grid.260483.b",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9530 8833",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "School of Sciences, Nantong University, 226019, Nantong, People\u2019s Republic of China"
         }
       ],
       "name": {
@@ -30,12 +48,46 @@
     {
       "affiliation": [
         {
-          "affPubID": "Aff2",
-          "affPubRaw": "School of Mathematical Sciences Anhui University 230601 Hefei People\u2019s Republic of China"
+          "affPubID": [
+            {
+              "affID": "grid.252245.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0085 4987",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.252245.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0085 4987",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "School of Mathematical Sciences, Anhui University, 230601, Hefei, People\u2019s Republic of China"
         },
         {
-          "affPubID": "Aff3",
-          "affPubRaw": "Centre of Pure Mathematics, School of Mathematical Sciences Anhui University 230601 Hefei People\u2019s Republic of China"
+          "affPubID": [
+            {
+              "affID": "grid.252245.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0085 4987",
+              "affIDType": "ISNI"
+            },
+            {
+              "affID": "grid.252245.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0085 4987",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Centre of Pure Mathematics, School of Mathematical Sciences, Anhui University, 230601, Hefei, People\u2019s Republic of China"
         }
       ],
       "attrib": {
