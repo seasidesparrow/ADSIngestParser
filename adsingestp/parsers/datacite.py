@@ -191,7 +191,7 @@ class DataciteParser(BaseBeautifulSoupParser):
                     k.get("subjectScheme", "")
                 ).lower() or "uat" in k.get("schemeURI", ""):
                     # extract the numeric keyID from the URI
-                    keyid = [int(x) for x in k.get("valueURI").split("/") if x.isdigit()]
+                    keyid = [int(x) for x in k.get("valueURI", "").split("/") if x.isdigit()]
 
                     if keyid:
                         keywords.append(

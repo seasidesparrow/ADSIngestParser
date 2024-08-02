@@ -23,6 +23,7 @@ class TestDatacite(unittest.TestCase):
             "datacite_schema3.1_example-full",
             "datacite_schema4.1_example-software",
             "datacite_schema4_example-habanero-pdsdataset",
+            "datacite_null_valueuri",
             "zenodo_test",
             "zenodo_test2",
             "zenodo_test3",
