@@ -245,7 +245,8 @@ class JATSAffils(object):
                 # note: IOP, APS get affil data within each contrib block,
                 #       OUP, AIP, Springer, etc get them via xrefs.
                 auth = {}
-                # cycle through <contrib> to check if a <collab> is listed in the same level as an author an has multiple authors nested under it; targeted for Springer
+                # cycle through <contrib> to check if a <collab> is listed in the same level as an author an has multiple authors nested under it;
+                # targeted for Springer
 
                 if contrib.find("collab"):
                     # Springer collab info for nested authors is given as <institution>
@@ -267,6 +268,7 @@ class JATSAffils(object):
                         "xemail": [],
                         "email": [],
                         "corresp": False,
+                        "rid": None,
                     }
                     if self.collab:
                         # add collab in the correct author position
@@ -278,11 +280,28 @@ class JATSAffils(object):
 
                     nested_idx = idx + 1
                     for nested_contrib in nested_contribs:
-                        # add new collab tag to each unnested author
-                        collabtag = copy(contrib.find("collab").find("institution"))
-                        nested_contrib.append(collabtag)
-                        contribs_raw.insert(nested_idx, nested_contrib.extract())
-                        nested_idx += 1
+                        if "rid" in nested_contrib.attrs:
+                            rid_match = next(
+                                (
+                                    (rid_ndx, author)
+                                    for rid_ndx, author in enumerate(authors_out)
+                                    if author.get("rid") == nested_contrib["rid"]
+                                ),
+                                None,
+                            )
+                            if rid_match:
+                                author_tmp = rid_match[1]
+                                if contrib.find("collab").find("institution", None):
+                                    author_tmp["collab"] = (
+                                        contrib.find("collab").find("institution").get_text()
+                                    )
+                                    authors_out[rid_match[0]] = author_tmp
+                        else:
+                            # add new collab tag to each unnested author
+                            collabtag = copy(contrib.find("collab").find("institution"))
+                            nested_contrib.append(collabtag)
+                            contribs_raw.insert(nested_idx, nested_contrib.extract())
+                            nested_idx += 1
 
                     continue
 
@@ -306,6 +325,7 @@ class JATSAffils(object):
                         "xemail": [],
                         "email": [],
                         "corresp": False,
+                        "rid": None,
                     }
 
                 l_correspondent = False
@@ -411,6 +431,7 @@ class JATSAffils(object):
                 auth["xemail"] = xref_email
                 auth["orcid"] = orcid_out
                 auth["email"] = email_list
+                auth["rid"] = contrib.get("id", None)
 
                 # this is a list of author dicts
                 if auth:
