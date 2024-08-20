@@ -603,6 +603,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 # all title footnotes:
                 for df in title_group.find_all("fn"):
                     key = df.get("id", None)
+                    df = self._remove_latex(df)
                     note = self._detag(df, self.HTML_TAGSET["abstract"]).strip()
                     if key and note:
                         title_fn_dict[key] = note
@@ -613,7 +614,10 @@ class JATSParser(BaseBeautifulSoupParser):
                     if title_fn_dict.get(key, None):
                         title_fn_list.append(title_fn_dict.get(key, None))
                     dx.decompose()
+                # strip latex out of title
+                title = self._remove_latex(title)
                 art_title = self._detag(title, self.HTML_TAGSET["title"]).strip()
+
                 title_notes = []
                 if title_fn_list:
                     title_notes.extend(title_fn_list)
@@ -626,6 +630,7 @@ class JATSParser(BaseBeautifulSoupParser):
                         if title_fn_dict.get(key, None):
                             subtitle_fn_list.append(title_fn_dict.get(key, None))
                         dx.decompose()
+                    subtitle = self._remove_latex(subtitle)
                     sub_title = self._detag(subtitle, self.HTML_TAGSET["title"]).strip()
                 subtitle_notes = []
                 if subtitle_fn_list:
@@ -644,6 +649,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 abstract_all = self.article_meta.find("abstract").find_all("p")
                 abstract_paragraph_list = list()
                 for paragraph in abstract_all:
+                    paragraph = self._remove_latex(paragraph)
                     para = self._detag(paragraph, self.HTML_TAGSET["abstract"])
                     abstract_paragraph_list.append(para)
                 self.base_metadata["abstract"] = "\n".join(abstract_paragraph_list)
@@ -651,6 +657,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
             else:
                 abs_raw = self.article_meta.find("abstract")
+                abs_raw = self._remove_latex(abs_raw)
                 abs_txt = self._detag(abs_raw, self.HTML_TAGSET["abstract"])
                 self.base_metadata["abstract"] = abs_txt
 
@@ -720,8 +727,10 @@ class JATSParser(BaseBeautifulSoupParser):
                     for kk in keys_uat_test:
                         # Check for UAT first:
                         if kk["content-type"] == "uat-code":
+                            kk = self._remove_latex(kk)
                             keyid = self._detag(kk, self.HTML_TAGSET["keywords"])
                         if kk["content-type"] == "term":
+                            kk = self._remove_latex(kk)
                             keystring = self._detag(kk, self.HTML_TAGSET["keywords"])
 
                     if keyid or keystring:
@@ -730,18 +739,21 @@ class JATSParser(BaseBeautifulSoupParser):
                     if not keys_uat:
                         keys_misc_test = kg.find_all("kwd")
                         for kk in keys_misc_test:
+                            kk = self._remove_latex(kk)
                             keys_misc.append(self._detag(kk, self.HTML_TAGSET["keywords"]))
 
             # Then check for AAS:
             if kg.get("kwd-group-type", "") == "AAS":
                 keys_aas_test = kg.find_all("kwd")
                 for kk in keys_aas_test:
+                    kk = self._remove_latex(kk)
                     keys_aas.append(self._detag(kk, self.HTML_TAGSET["keywords"]))
 
             # If all else fails, just search for 'kwd'
             if (not keys_uat) and (not keys_aas):
                 keys_misc_test = kg.find_all("kwd")
                 for kk in keys_misc_test:
+                    kk = self._remove_latex(kk)
                     keys_misc.append(self._detag(kk, self.HTML_TAGSET["keywords"]))
 
         if keys_uat:
@@ -772,6 +784,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     subjects = sg.find_all("subject")
 
                 for k in subjects:
+                    k = self._remove_latex(k)
                     keys_out.append(
                         {
                             "system": "subject",
@@ -789,13 +802,16 @@ class JATSParser(BaseBeautifulSoupParser):
         event_meta = self.article_meta.find("conference")
 
         if event_meta.find("conf-name"):
-            self.base_metadata["conf_name"] = self._detag(event_meta.find("conf-name"), [])
+            conf_name = self._remove_latex(event_meta.find("conf-name", ""))
+            self.base_metadata["conf_name"] = self._detag(conf_name, [])
 
         if event_meta.find("conf-loc"):
-            self.base_metadata["conf_location"] = self._detag(event_meta.find("conf-loc"), [])
+            conf_loc = self._remove_latex(event_meta.find("conf-loc", ""))
+            self.base_metadata["conf_location"] = self._detag(conf_loc, [])
 
         if event_meta.find("conf-date"):
-            self.base_metadata["conf_date"] = self._detag(event_meta.find("conf-date"), [])
+            conf_date = self._remove_latex(event_meta.find("conf-date", ""))
+            self.base_metadata["conf_date"] = self._detag(conf_date, [])
 
     def _parse_pub(self):
         journal = None
@@ -807,14 +823,16 @@ class JATSParser(BaseBeautifulSoupParser):
             journal = self.journal_meta.find("journal-title")
 
         if journal:
+            journal = self._remove_latex(journal)
             self.base_metadata["publication"] = self._detag(journal, [])
 
         if self.journal_meta.find("publisher") and self.journal_meta.find("publisher").find(
             "publisher-name"
         ):
-            self.base_metadata["publisher"] = self._detag(
-                self.journal_meta.find("publisher").find("publisher-name"), []
+            publisher_name = self._remove_latex(
+                self.journal_meta.find("publisher").find("publisher-name")
             )
+            self.base_metadata["publisher"] = self._detag(publisher_name, [])
 
         issn_all = self.journal_meta.find_all("issn")
         issns = []

@@ -516,6 +516,24 @@ class BaseBeautifulSoupParser(IngestBase):
 
         return bs4.BeautifulSoup(input_xml, parser)
 
+    def _remove_latex(self, r):
+        """
+        Removes LaTeX markup inside <tex-math> tags from input BeautifulSoup object
+        :param r: BeautifulSoup object
+        :return: newr: string with LaTeX removed
+        """
+        math_elements = r.find_all("tex-math")
+        for e in math_elements:
+            text = e.get_text()
+            begin = text.find("\\begin{document}")
+            end = text.find("\\end{document}")
+            begin_len = len("\\begin{document}")
+            if begin == -1 or end == -1:
+                continue
+            newtext = text[begin + begin_len : end]
+            e.string = newtext
+        return r
+
     def _detag(self, r, tags_keep):
         """
         Removes tags from input BeautifulSoup object
