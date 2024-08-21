@@ -299,7 +299,7 @@ class IngestBase(object):
                     "prefix": i.get("prefix", ""),
                     "suffix": i.get("suffix", ""),
                     "pubraw": i.get("nameraw", ""),
-                    # "native_lang": "XXX",
+                    "native_lang": i.get("native_lang", ""),
                     "collab": i.get("collab", ""),
                 },
                 "affiliation": [

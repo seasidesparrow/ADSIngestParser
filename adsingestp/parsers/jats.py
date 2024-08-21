@@ -339,6 +339,7 @@ class JATSAffils(object):
                     surname = contrib.find("string-name").find("surname").get_text()
                 else:
                     surname = ""
+
                 if contrib.find("name") and contrib.find("name").find("given-names"):
                     given = contrib.find("name").find("given-names").get_text()
                 elif contrib.find("string-name") and contrib.find("string-name").find(
@@ -347,6 +348,12 @@ class JATSAffils(object):
                     given = contrib.find("string-name").find("given-names").get_text()
                 else:
                     given = ""
+
+                # get native language author name
+                if contrib.find("name-alternatives"):
+                    native_lang = contrib.find("name-alternatives").get_text().strip()
+                else:
+                    native_lang = ""
 
                 # NOTE: institution-id is actually useful, but at
                 # at the moment, strip it
@@ -425,6 +432,7 @@ class JATSAffils(object):
                 auth["corresp"] = l_correspondent
                 auth["surname"] = surname
                 auth["given"] = given
+                auth["native_lang"] = native_lang
                 auth["aff"] = aff_text
                 auth["affid"] = aff_extids
                 auth["xaff"] = xref_aff
