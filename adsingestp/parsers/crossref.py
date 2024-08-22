@@ -16,7 +16,6 @@ re_issn = re.compile(r"^\d{4}-?\d{3}[0-9X]$")  # XXXX-XXXX
 
 
 class CrossrefParser(BaseBeautifulSoupParser):
-
     def __init__(self):
         super(BaseBeautifulSoupParser, self).__init__()
         self.base_metadata = {}

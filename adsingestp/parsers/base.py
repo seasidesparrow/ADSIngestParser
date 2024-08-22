@@ -19,9 +19,9 @@ class IngestBase(object):
         "loadLocation",
         "recordOrigin",
     ]
-    def __init__(self, xml_ref=True):
-        self.xml_ref=xml_ref
 
+    def __init__(self, xml_ref=True):
+        self.xml_ref = xml_ref
 
     def _clean_empty(self, input_to_clean, keys_to_keep=required_keys):
         """
@@ -57,7 +57,7 @@ class IngestBase(object):
 
     def _entity_convert(self, input):
         for k, v in input.items():
-            if k=="references" and self.xml_ref:
+            if k == "references" and self.xml_ref:
                 pass
             else:
                 if isinstance(v, str):
