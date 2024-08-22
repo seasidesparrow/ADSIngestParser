@@ -35,6 +35,7 @@ class ElsevierParser(BaseBeautifulSoupParser):
     author_collaborations_params = {}
 
     def __init__(self):
+        super(BaseBeautifulSoupParser, self).__init__()
         self.base_metadata = {}
         self.record_header = None
         self.record_meta = None
