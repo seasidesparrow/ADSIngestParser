@@ -23,6 +23,7 @@ class TestCopernicus(unittest.TestCase):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
+        self.maxDiff = None
 
     def test_copernicus(self):
         filenames = [
@@ -41,6 +42,9 @@ class TestCopernicus(unittest.TestCase):
                 input_data = fp.read()
 
             parsed = parser.parse(input_data)
+            test_newout = test_outfile.split('/')[-1]+".new"
+            with open(test_newout, "w") as fj:
+                fj.write("%s\n" % json.dumps(parsed, indent=2, sort_keys=True))
 
             with open(test_outfile, "rb") as fp:
                 output_text = fp.read()
