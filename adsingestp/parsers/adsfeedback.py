@@ -9,6 +9,7 @@ logger = logging.getLogger(__name__)
 
 class ADSFeedbackParser(BaseBeautifulSoupParser):
     def __init__(self, json_string=None):
+        super(BaseBeautifulSoupParser, self).__init__()
         if json_string:
             self.data = json.loads(json_string)
 

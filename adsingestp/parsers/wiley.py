@@ -11,6 +11,7 @@ orcid_format = re.compile(r"(\d{4}-){3}\d{3}(\d|X)")
 
 class WileyParser(BaseBeautifulSoupParser):
     def __init__(self):
+        super(BaseBeautifulSoupParser, self).__init__()
         self.base_metadata = {}
         self.pubmeta_prod = None
         self.pubmeta_part = None
