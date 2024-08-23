@@ -22,6 +22,7 @@ class CopernicusParser(BaseBeautifulSoupParser):
     }
 
     def __init__(self):
+        super(BaseBeautifulSoupParser, self).__init__()
         self.base_metadata = {}
         self.input_header = None
         self.input_metadata = None

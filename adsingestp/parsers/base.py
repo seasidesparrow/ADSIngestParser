@@ -20,6 +20,9 @@ class IngestBase(object):
         "recordOrigin",
     ]
 
+    def __init__(self, xml_ref=True):
+        self.xml_ref = xml_ref
+
     def _clean_empty(self, input_to_clean, keys_to_keep=required_keys):
         """
 
@@ -54,17 +57,20 @@ class IngestBase(object):
 
     def _entity_convert(self, input):
         for k, v in input.items():
-            if isinstance(v, str):
-                v = html.unescape(v)
-            elif isinstance(v, list):
-                newv = []
-                for i in v:
-                    if isinstance(i, str):
-                        i = html.unescape(i)
-                    newv.append(i)
-                v = newv
-            else:
+            if k == "references" and self.xml_ref:
                 pass
+            else:
+                if isinstance(v, str):
+                    v = html.unescape(v)
+                elif isinstance(v, list):
+                    newv = []
+                    for i in v:
+                        if isinstance(i, str):
+                            i = html.unescape(i)
+                        newv.append(i)
+                    v = newv
+                else:
+                    pass
             input[k] = v
 
         return input
@@ -505,6 +511,9 @@ class BaseBeautifulSoupParser(IngestBase):
     }
 
     HTML_TAGS_DANGER = ["php", "script", "css"]
+
+    def __init__(self):
+        super(IngestBase, self).__init__()
 
     def bsstrtodict(self, input_xml, parser="lxml-xml"):
         """
