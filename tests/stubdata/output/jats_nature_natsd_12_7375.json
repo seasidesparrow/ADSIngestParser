@@ -119,28 +119,12 @@
             {
               "affID": "0000 0001 2188 478X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411087.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0723 2494",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411087.b",
               "affIDType": "GRID"
@@ -191,28 +175,12 @@
             {
               "affID": "0000 0001 2188 478X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.415155.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2039 9627",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.415155.1",
               "affIDType": "GRID"
@@ -241,38 +209,6 @@
             {
               "affID": "0000 0001 2188 478X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7870.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9224.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.1003.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4494.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9558 4598",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
@@ -280,43 +216,11 @@
         {
           "affPubID": [
             {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.7870.8",
               "affIDType": "GRID"
             },
             {
               "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9224.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.1003.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4494.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9558 4598",
               "affIDType": "ISNI"
             }
           ],
@@ -325,43 +229,11 @@
         {
           "affPubID": [
             {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7870.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.9224.d",
               "affIDType": "GRID"
             },
             {
               "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.1003.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4494.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9558 4598",
               "affIDType": "ISNI"
             }
           ],
@@ -370,43 +242,11 @@
         {
           "affPubID": [
             {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7870.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9224.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.1003.2",
               "affIDType": "GRID"
             },
             {
               "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4494.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9558 4598",
               "affIDType": "ISNI"
             }
           ],
@@ -414,38 +254,6 @@
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7870.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9224.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.1003.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4494.d",
               "affIDType": "GRID"
@@ -516,28 +324,12 @@
             {
               "affID": "0000 0001 2188 478X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.410543.7",
               "affIDType": "GRID"
@@ -623,28 +415,12 @@
             {
               "affID": "0000 0001 2188 478X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.410543.7",
               "affIDType": "GRID"
@@ -702,38 +478,6 @@
             {
               "affID": "0000 0001 2188 478X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7870.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9224.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.1003.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4494.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9558 4598",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
@@ -741,43 +485,11 @@
         {
           "affPubID": [
             {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.7870.8",
               "affIDType": "GRID"
             },
             {
               "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9224.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.1003.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4494.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9558 4598",
               "affIDType": "ISNI"
             }
           ],
@@ -786,43 +498,11 @@
         {
           "affPubID": [
             {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7870.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.9224.d",
               "affIDType": "GRID"
             },
             {
               "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.1003.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4494.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9558 4598",
               "affIDType": "ISNI"
             }
           ],
@@ -831,43 +511,11 @@
         {
           "affPubID": [
             {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7870.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9224.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.1003.2",
               "affIDType": "GRID"
             },
             {
               "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4494.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9558 4598",
               "affIDType": "ISNI"
             }
           ],
@@ -875,38 +523,6 @@
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7870.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2157 0406",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9224.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2168 1229",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.1003.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9320 7537",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4494.d",
               "affIDType": "GRID"
@@ -1531,16 +1147,6 @@
     {
       "affiliation": [
         {
-          "affPubID": [
-            {
-              "affID": "grid.441751.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 8820 7559",
-              "affIDType": "ISNI"
-            }
-          ],
           "affPubRaw": "University Center of Associated Colleges, S\u00e3o Jo\u00e3o da Boa Vista, S\u00e3o Paulo, Brazil"
         },
         {
@@ -1577,28 +1183,12 @@
             {
               "affID": "0000 0001 2188 478X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.415155.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2039 9627",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Postgraduate Program on Tocogynecology, Department of Gynecology and Obstetrics, Botucatu Medical School, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.415155.1",
               "affIDType": "GRID"
@@ -2306,28 +1896,12 @@
             {
               "affID": "0000 0001 2188 478X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411087.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0723 2494",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Laboratory of Extracellular Matrix Biology, Department of Structural and Functional Biology, Institute of Biosciences of Botucatu, S\u00e3o Paulo State University (UNESP), Botucatu, S\u00e3o Paulo, Brazil"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.410543.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 478X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411087.b",
               "affIDType": "GRID"

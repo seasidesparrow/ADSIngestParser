@@ -2175,24 +2175,12 @@
             {
               "affID": "0000 0004 1762 5736",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Dipartimento di Fisica, Universit\u00e0 di Pavia, Pavia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8982.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1762 5736",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
@@ -2372,24 +2360,12 @@
             {
               "affID": "0000000417571846",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Brescia, Brescia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7637.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000417571846",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
@@ -2609,28 +2585,12 @@
             {
               "affID": "0000 0001 0578 5482",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7644.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0120 3326",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Politecnico di Bari and Sezione INFN, Bari, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.4466.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0578 5482",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7644.1",
               "affIDType": "GRID"
@@ -2770,28 +2730,12 @@
             {
               "affID": "0000 0001 0696 719X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.11951.3d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1937 1135",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "iThemba LABS, National Research Foundation, Somerset West, South Africa"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.462638.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0696 719X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.11951.3d",
               "affIDType": "GRID"
@@ -3114,28 +3058,12 @@
             {
               "affID": "0000 0001 2336 6580",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470222.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9712",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Dipartimento di Fisica dell\u2019Universit\u00e0 and Sezione INFN, Turin, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7605.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2336 6580",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470222.1",
               "affIDType": "GRID"
@@ -3338,28 +3266,12 @@
             {
               "affID": "0000 0000 9127 4365",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411407.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1760 2614",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Research Division and ExtreMe Matter Institute EMMI, GSI Helmholtzzentrum f\u00fcr Schwerionenforschung GmbH, Darmstadt, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.159791.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9127 4365",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411407.7",
               "affIDType": "GRID"
@@ -3472,28 +3384,12 @@
             {
               "affID": "0000 0001 2375 0603",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.6936.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000123222966",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Max-Planck-Institut f\u00fcr Physik, Munich, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.435824.c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2375 0603",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.6936.a",
               "affIDType": "GRID"
@@ -3749,28 +3645,12 @@
             {
               "affID": "0000 0000 9864 2490",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Italian National Agency for New Technologies, Energy and Sustainable Economic Development (ENEA), Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.5196.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9864 2490",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -3837,28 +3717,12 @@
             {
               "affID": "0000 0001 0578 5482",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7644.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0120 3326",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Politecnico di Bari and Sezione INFN, Bari, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.4466.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0578 5482",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7644.1",
               "affIDType": "GRID"
@@ -3908,28 +3772,12 @@
             {
               "affID": "0000 0004 1937 0343",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470222.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9712",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Dipartimento DET del Politecnico di Torino, Turin, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.4800.c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1937 0343",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470222.1",
               "affIDType": "GRID"
@@ -4080,28 +3928,12 @@
             {
               "affID": "0000000121663741",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470222.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9712",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Piemonte Orientale, Vercelli, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.16563.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121663741",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470222.1",
               "affIDType": "GRID"
@@ -4172,24 +4004,12 @@
             {
               "affID": "0000 0004 1762 5736",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Dipartimento di Fisica, Universit\u00e0 di Pavia, Pavia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8982.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1762 5736",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
@@ -4887,28 +4707,12 @@
             {
               "affID": "0000 0001 2172 4233",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411407.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1760 2614",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e9 de Lyon, CNRS/IN2P3, Institut de Physique des 2 Infinis de Lyon, Lyon, France"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.25697.3f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2172 4233",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411407.7",
               "affIDType": "GRID"
@@ -6406,28 +6210,12 @@
             {
               "affID": "0000 0000 9127 4365",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470222.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9712",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Research Division and ExtreMe Matter Institute EMMI, GSI Helmholtzzentrum f\u00fcr Schwerionenforschung GmbH, Darmstadt, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.159791.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9127 4365",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470222.1",
               "affIDType": "GRID"
@@ -8516,28 +8304,12 @@
             {
               "affID": "0000 0001 2156 142X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.159791.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9127 4365",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.159791.2",
               "affIDType": "GRID"
@@ -8650,28 +8422,12 @@
             {
               "affID": "0000 0001 2156 142X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.1035.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000099214842",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.1035.7",
               "affIDType": "GRID"
@@ -9020,28 +8776,12 @@
             {
               "affID": "0000 0001 2106 0692",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411340.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1937 0765",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Kansas, Lawrence, Kansas, United States"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.266515.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2106 0692",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411340.3",
               "affIDType": "GRID"
@@ -9301,28 +9041,12 @@
             {
               "affID": "0000 0001 2181 7878",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7700.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2190 4373",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Physics, University of California, Berkeley, California, United States"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.47840.3f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 7878",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7700.0",
               "affIDType": "GRID"
@@ -9969,28 +9693,12 @@
             {
               "affID": "0000 0004 1936 7486",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.419303.c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2180 9405",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "School of Physics and Astronomy, University of Birmingham, Birmingham, United Kingdom"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6572.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7486",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.419303.c",
               "affIDType": "GRID"
@@ -10631,28 +10339,12 @@
             {
               "affID": "0000 0001 2156 142X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.6936.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000123222966",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.6936.a",
               "affIDType": "GRID"
@@ -10708,24 +10400,12 @@
             {
               "affID": "0000000417571846",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Brescia, Brescia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7637.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000417571846",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
@@ -11044,28 +10724,12 @@
             {
               "affID": "0000 0001 2336 6580",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.262229.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0719 8572",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Dipartimento di Fisica dell\u2019Universit\u00e0 and Sezione INFN, Turin, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7605.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2336 6580",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.262229.f",
               "affIDType": "GRID"
@@ -11409,28 +11073,12 @@
             {
               "affID": "0000 0000 9127 4365",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.59053.3a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121679639",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Research Division and ExtreMe Matter Institute EMMI, GSI Helmholtzzentrum f\u00fcr Schwerionenforschung GmbH, Darmstadt, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.159791.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9127 4365",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.59053.3a",
               "affIDType": "GRID"
@@ -11777,28 +11425,12 @@
             {
               "affID": "0000 0001 2178 8421",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Dipartimento di Scienze MIFT, Universit\u00e0 di Messina, Messina, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.10438.3e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2178 8421",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -12136,24 +11768,12 @@
             {
               "affID": "0000000121049995",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470190.b",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 degli Studi di Foggia, Foggia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.10796.39",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121049995",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470190.b",
               "affIDType": "GRID"
@@ -12409,28 +12029,12 @@
             {
               "affID": "0000 0000 9532 5705",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470211.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7696",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Stefan Meyer Institut f\u00fcr Subatomare Physik (SMI), Vienna, Austria"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.475784.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9532 5705",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470211.1",
               "affIDType": "GRID"
@@ -12501,28 +12105,12 @@
             {
               "affID": "0000 0004 1937 1151",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.462638.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0696 719X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Cape Town, Cape Town, South Africa"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7836.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1937 1151",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.462638.d",
               "affIDType": "GRID"
@@ -12746,28 +12334,12 @@
             {
               "affID": "0000 0004 1937 0765",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411340.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1937 0765",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Applied Physics, Aligarh Muslim University, Aligarh, India"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.411340.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1937 0765",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411340.3",
               "affIDType": "GRID"
@@ -13928,24 +13500,12 @@
             {
               "affID": "0000000417571846",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Brescia, Brescia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7637.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000417571846",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
@@ -14358,28 +13918,12 @@
             {
               "affID": "0000 0001 0475 7658",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.8532.c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2200 7498",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "SUBATECH, IMT Atlantique, Nantes Universit\u00e9, CNRS-IN2P3, Nantes, France"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.463940.c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0475 7658",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.8532.c",
               "affIDType": "GRID"
@@ -14471,28 +14015,12 @@
             {
               "affID": "0000 0004 8343 7610",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "INFN, Sezione di Bologna, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.9132.9",
               "affIDType": "GRID"
@@ -15022,28 +14550,12 @@
             {
               "affID": "0000 0004 1936 8876",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.6572.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7486",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Creighton University, Omaha, Nebraska, United States"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.254748.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 8876",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.6572.6",
               "affIDType": "GRID"
@@ -15093,28 +14605,12 @@
             {
               "affID": "0000000121663741",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470222.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9712",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Piemonte Orientale, Vercelli, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.16563.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121663741",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470222.1",
               "affIDType": "GRID"
@@ -15311,28 +14807,12 @@
             {
               "affID": "0000 0004 0446 2659",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411461.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2315 1184",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Oak Ridge National Laboratory, Oak Ridge, Tennessee, United States"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.135519.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0446 2659",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411461.7",
               "affIDType": "GRID"
@@ -15403,28 +14883,12 @@
             {
               "affID": "0000 0001 1010 5103",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.450295.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0941 0848",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Institute of Theoretical Physics, University of Wroclaw, Wroclaw, Poland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8505.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 1010 5103",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.450295.f",
               "affIDType": "GRID"
@@ -15899,28 +15363,12 @@
             {
               "affID": "0000 0001 2178 8421",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Dipartimento di Scienze MIFT, Universit\u00e0 di Messina, Messina, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.10438.3e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2178 8421",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -16071,28 +15519,12 @@
             {
               "affID": "0000 0004 1569 9707",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4514.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0930 2361",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Houston, Houston, Texas, United States"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.266436.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1569 9707",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4514.4",
               "affIDType": "GRID"
@@ -16666,28 +16098,12 @@
             {
               "affID": "0000 0001 2156 142X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.6936.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000123222966",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.6936.a",
               "affIDType": "GRID"
@@ -18110,28 +17526,12 @@
             {
               "affID": "0000000121663741",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470222.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9712",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Piemonte Orientale, Vercelli, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.16563.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121663741",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470222.1",
               "affIDType": "GRID"
@@ -18847,28 +18247,12 @@
             {
               "affID": "0000000115480420",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411407.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1760 2614",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e9 Clermont Auvergne, CNRS/IN2P3, LPC, Clermont-Ferrand, France"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.494717.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000115480420",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411407.7",
               "affIDType": "GRID"
@@ -19388,28 +18772,12 @@
             {
               "affID": "0000 0001 2178 8421",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Dipartimento di Scienze MIFT, Universit\u00e0 di Messina, Messina, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.10438.3e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2178 8421",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -19438,28 +18806,12 @@
             {
               "affID": "0000 0001 2178 8421",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Dipartimento di Scienze MIFT, Universit\u00e0 di Messina, Messina, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.10438.3e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2178 8421",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -19717,24 +19069,12 @@
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.7637.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000417571846",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "INFN, Sezione di Pavia, Pavia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.7637.5",
               "affIDType": "GRID"
@@ -21114,28 +20454,12 @@
             {
               "affID": "0000 0001 2156 142X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.6572.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7486",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "European Organization for Nuclear Research (CERN), Geneva, Switzerland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.6572.6",
               "affIDType": "GRID"
@@ -21419,28 +20743,12 @@
             {
               "affID": "0000 0000 9127 4365",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411407.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1760 2614",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Research Division and ExtreMe Matter Institute EMMI, GSI Helmholtzzentrum f\u00fcr Schwerionenforschung GmbH, Darmstadt, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.159791.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9127 4365",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411407.7",
               "affIDType": "GRID"
@@ -21511,24 +20819,12 @@
             {
               "affID": "0000000417571846",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Brescia, Brescia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7637.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000417571846",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"

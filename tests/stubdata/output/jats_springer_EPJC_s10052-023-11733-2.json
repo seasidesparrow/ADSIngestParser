@@ -14,28 +14,12 @@
             {
               "affID": "0000 0001 2156 142X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.10025.36",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 8470",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "CERN, The European Organization for Nuclear Research, 1211, Meyrin, Switzerland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.10025.36",
               "affIDType": "GRID"
@@ -375,28 +359,12 @@
             {
               "affID": "0000 0004 1757 1969",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Catania, 2, 95131, Catania, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8158.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1969",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -551,28 +519,12 @@
             {
               "affID": "0000 0001 2178 9889",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.11794.3a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000109410645",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Instituto de F\u00edsica Corpuscular, CSIC and Universitat de Val\u00e8ncia, 46980, Paterna, Valencia, Spain"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470047.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2178 9889",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.11794.3a",
               "affIDType": "GRID"
@@ -622,28 +574,12 @@
             {
               "affID": "0000 0004 1936 8470",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.76978.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2296 6998",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Liverpool, L69 7ZE, Liverpool, UK"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.10025.36",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 8470",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.76978.37",
               "affIDType": "GRID"
@@ -672,28 +608,12 @@
             {
               "affID": "0000 0004 1757 2064",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470200.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1765 4414",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Ferrara, Ferrara, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8484.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2064",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470200.1",
               "affIDType": "GRID"
@@ -1386,24 +1306,12 @@
             {
               "affID": "0000 0001 2181 4263",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.420929.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Instituto Superior T\u00e9cnico-IST, Universidade de Lisboa, 1049-001, Lisbon, Portugal"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9983.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 4263",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.420929.4",
               "affIDType": "GRID"
@@ -1575,24 +1483,12 @@
             {
               "affID": "0000 0001 2181 4263",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.420929.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Faculdade de Ci\u00eancias da Universidade de Lisboa-FCUL, 1749-016, Lisbon, Portugal"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9983.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 4263",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.420929.4",
               "affIDType": "GRID"
@@ -1924,24 +1820,12 @@
             {
               "affID": "grid.470216.6",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.5395.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 3729",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Laboratori Nazionali di Pisa, Pisa, PI, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470216.6",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.5395.a",
               "affIDType": "GRID"
@@ -1970,28 +1854,12 @@
             {
               "affID": "0000 0004 1757 1969",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Catania, 2, 95131, Catania, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8158.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1969",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -2142,28 +2010,12 @@
             {
               "affID": "0000 0004 1761 7699",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9906.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2289 7785",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Lecce, 73100, Lecce, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470680.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1761 7699",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.9906.6",
               "affIDType": "GRID"
@@ -2230,28 +2082,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -2616,28 +2452,12 @@
             {
               "affID": "0000 0000 9013 6155",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.214572.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 8294",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Beykent University, Istanbul, Turkey"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.449464.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9013 6155",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.214572.7",
               "affIDType": "GRID"
@@ -2855,28 +2675,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.18147.3b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121724807",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.18147.3b",
               "affIDType": "GRID"
@@ -2905,28 +2709,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -3312,28 +3100,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -3425,28 +3197,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -3559,28 +3315,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -3651,28 +3391,12 @@
             {
               "affID": "0000 0004 1757 2064",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470200.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1765 4414",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Ferrara, Ferrara, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8484.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2064",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470200.1",
               "affIDType": "GRID"
@@ -4880,28 +4604,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -5168,28 +4876,12 @@
             {
               "affID": "0000 0004 7471 9720",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.10383.39",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1758 0937",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano, 20133, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470206.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9720",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.10383.39",
               "affIDType": "GRID"
@@ -5533,28 +5225,12 @@
             {
               "affID": "0000 0001 0675 0679",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.21100.32",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 9430",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Fermi National Accelerator Laboratory, 60510, Batavia, IL, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.417851.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0675 0679",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.21100.32",
               "affIDType": "GRID"
@@ -5733,28 +5409,12 @@
             {
               "affID": "0000000084992262",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.420012.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0646 2193",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Amsterdam, 1098 XG, Amsterdam, The Netherlands"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7177.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000084992262",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.420012.5",
               "affIDType": "GRID"
@@ -5867,28 +5527,12 @@
             {
               "affID": "0000000084992262",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.420012.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0646 2193",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Amsterdam, 1098 XG, Amsterdam, The Netherlands"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7177.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000084992262",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.420012.5",
               "affIDType": "GRID"
@@ -5934,20 +5578,12 @@
             {
               "affID": "grid.470218.8",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.7841.a",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Roma, 00185, Rome, RM, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470218.8",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.7841.a",
               "affIDType": "GRID"
@@ -5993,28 +5629,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -6064,28 +5684,12 @@
             {
               "affID": "0000 0004 7471 9720",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.10383.39",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1758 0937",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano, 20133, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470206.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9720",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.10383.39",
               "affIDType": "GRID"
@@ -6408,28 +6012,12 @@
             {
               "affID": "0000 0004 8343 7696",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4691.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0790 385X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Napoli, 80126, Naples, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470211.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7696",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4691.a",
               "affIDType": "GRID"
@@ -6454,20 +6042,12 @@
             {
               "affID": "grid.470218.8",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.7841.a",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Roma, 00185, Rome, RM, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470218.8",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.7841.a",
               "affIDType": "GRID"
@@ -6492,24 +6072,12 @@
             {
               "affID": "0000 0001 2151 3065",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470205.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 degli Studi di Genova, Genoa, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.5606.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2151 3065",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470205.4",
               "affIDType": "GRID"
@@ -6576,24 +6144,12 @@
             {
               "affID": "0000 0001 2151 3065",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470205.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 degli Studi di Genova, Genoa, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.5606.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2151 3065",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470205.4",
               "affIDType": "GRID"
@@ -6971,28 +6527,12 @@
             {
               "affID": "0000 0001 0675 0679",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4991.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 8948",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Fermi National Accelerator Laboratory, 60510, Batavia, IL, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.417851.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0675 0679",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4991.5",
               "affIDType": "GRID"
@@ -7231,28 +6771,12 @@
             {
               "affID": "0000000121662407",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4372.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2105 1091",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Manchester, M13 9PL, Manchester, UK"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.5379.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121662407",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4372.2",
               "affIDType": "GRID"
@@ -7512,28 +7036,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -7726,24 +7234,12 @@
             {
               "affID": "0000 0001 2151 3065",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470205.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 degli Studi di Genova, Genoa, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.5606.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2151 3065",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470205.4",
               "affIDType": "GRID"
@@ -7810,28 +7306,12 @@
             {
               "affID": "0000 0004 0646 2193",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.5590.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000122931605",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Nikhef National Institute of Subatomic Physics, 1098 XG, Amsterdam, The Netherlands"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.420012.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0646 2193",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.5590.9",
               "affIDType": "GRID"
@@ -7881,28 +7361,12 @@
             {
               "affID": "0000 0004 8343 7696",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4691.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0790 385X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Napoli, 80126, Naples, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470211.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7696",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4691.a",
               "affIDType": "GRID"
@@ -7931,28 +7395,12 @@
             {
               "affID": "0000 0004 1757 2064",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470200.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1765 4414",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Ferrara, Ferrara, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8484.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2064",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470200.1",
               "affIDType": "GRID"
@@ -8401,28 +7849,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -8531,28 +7963,12 @@
             {
               "affID": "0000 0004 7471 9720",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4708.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2822",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano, 20133, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470206.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9720",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4708.b",
               "affIDType": "GRID"
@@ -8850,20 +8266,12 @@
             {
               "affID": "grid.470218.8",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.7841.a",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Roma, 00185, Rome, RM, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470218.8",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.7841.a",
               "affIDType": "GRID"
@@ -9027,28 +8435,12 @@
             {
               "affID": "0000 0004 1757 2064",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470200.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1765 4414",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Ferrara, Ferrara, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8484.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2064",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470200.1",
               "affIDType": "GRID"
@@ -9094,24 +8486,12 @@
             {
               "affID": "grid.470212.2",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.5608.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 3470",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Padova, 35131, Padua, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470212.2",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.5608.b",
               "affIDType": "GRID"
@@ -9749,28 +9129,12 @@
             {
               "affID": "0000 0001 2181 7878",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.184769.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2231 4551",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of California Berkeley, 94720, Berkeley, CA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.47840.3f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 7878",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.184769.5",
               "affIDType": "GRID"
@@ -10009,28 +9373,12 @@
             {
               "affID": "0000 0004 1757 2064",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470200.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1765 4414",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Ferrara, Ferrara, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8484.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2064",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470200.1",
               "affIDType": "GRID"
@@ -10059,28 +9407,12 @@
             {
               "affID": "000000041936754X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.5379.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121662407",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Harvard University, 02138, Cambridge, MA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.5379.8",
               "affIDType": "GRID"
@@ -10147,28 +9479,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -10592,28 +9908,12 @@
             {
               "affID": "0000 0001 0675 0679",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.21100.32",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 9430",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Fermi National Accelerator Laboratory, 60510, Batavia, IL, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.417851.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0675 0679",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.21100.32",
               "affIDType": "GRID"
@@ -11535,28 +10835,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -11812,28 +11096,12 @@
             {
               "affID": "0000 0001 0789 9563",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.214572.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 8294",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Chung-Ang University, 06974, Seoul, South Korea"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.254224.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0789 9563",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.214572.7",
               "affIDType": "GRID"
@@ -11988,24 +11256,12 @@
             {
               "affID": "0000 0001 2181 4263",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.420929.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Instituto Superior T\u00e9cnico-IST, Universidade de Lisboa, 1049-001, Lisbon, Portugal"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9983.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 4263",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.420929.4",
               "affIDType": "GRID"
@@ -12198,28 +11454,12 @@
             {
               "affID": "0000 0001 2188 881X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.76978.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2296 6998",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Royal Holloway College, TW20 0EX, London, UK"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.4970.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2188 881X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.76978.37",
               "affIDType": "GRID"
@@ -12975,28 +12215,12 @@
             {
               "affID": "0000 0001 2181 7878",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.184769.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2231 4551",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of California Berkeley, 94720, Berkeley, CA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.47840.3f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 7878",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.184769.5",
               "affIDType": "GRID"
@@ -13924,28 +13148,12 @@
             {
               "affID": "0000 0004 7471 9720",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4708.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2822",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano, 20133, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470206.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9720",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4708.b",
               "affIDType": "GRID"
@@ -14667,28 +13875,12 @@
             {
               "affID": "0000 0001 2181 7878",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.184769.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2231 4551",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of California Berkeley, 94720, Berkeley, CA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.47840.3f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 7878",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.184769.5",
               "affIDType": "GRID"
@@ -14759,28 +13951,12 @@
             {
               "affID": "0000 0004 1757 2064",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470200.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1765 4414",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Ferrara, Ferrara, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8484.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2064",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470200.1",
               "affIDType": "GRID"
@@ -15015,28 +14191,12 @@
             {
               "affID": "0000 0001 2181 7878",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.184769.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2231 4551",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of California Berkeley, 94720, Berkeley, CA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.47840.3f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 7878",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.184769.5",
               "affIDType": "GRID"
@@ -15107,24 +14267,12 @@
             {
               "affID": "0000 0001 2181 4263",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.420929.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Faculdade de Ci\u00eancias da Universidade de Lisboa-FCUL, 1749-016, Lisbon, Portugal"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9983.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 4263",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.420929.4",
               "affIDType": "GRID"
@@ -15233,24 +14381,12 @@
             {
               "affID": "0000 0001 2181 4263",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.420929.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Faculdade de Ci\u00eancias da Universidade de Lisboa-FCUL, 1749-016, Lisbon, Portugal"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9983.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2181 4263",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.420929.4",
               "affIDType": "GRID"
@@ -15817,28 +14953,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.18147.3b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121724807",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.18147.3b",
               "affIDType": "GRID"
@@ -15993,28 +15113,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -16417,24 +15521,12 @@
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.8982.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1762 5736",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Pavia, 27100, Pavia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.8982.b",
               "affIDType": "GRID"
@@ -16732,28 +15824,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -16967,28 +16043,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -17122,28 +16182,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -17193,18 +16237,6 @@
             {
               "affID": "0000 0001 0675 0679",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.8982.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1762 5736",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Fermi National Accelerator Laboratory, 60510, Batavia, IL, USA"
@@ -17212,42 +16244,14 @@
         {
           "affPubID": [
             {
-              "affID": "grid.417851.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0675 0679",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.8982.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1762 5736",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Pavia, 27100, Pavia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.417851.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0675 0679",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.8982.b",
               "affIDType": "GRID"
@@ -17297,28 +16301,12 @@
             {
               "affID": "0000 0004 1761 7699",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.9906.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2289 7785",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Lecce, 73100, Lecce, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470680.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1761 7699",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.9906.6",
               "affIDType": "GRID"
@@ -18725,24 +17713,12 @@
             {
               "affID": "0000 0001 2151 3065",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470205.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 degli Studi di Genova, Genoa, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.5606.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2151 3065",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470205.4",
               "affIDType": "GRID"
@@ -18956,28 +17932,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -19048,28 +18008,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.8250.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 8700 0572",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.8250.f",
               "affIDType": "GRID"
@@ -19098,28 +18042,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -19190,28 +18118,12 @@
             {
               "affID": "0000 0004 1936 7988",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.83440.3b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121901201",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Edinburgh, EH8 9YL, Edinburgh, UK"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.4305.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7988",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.83440.3b",
               "affIDType": "GRID"
@@ -19650,28 +18562,12 @@
             {
               "affID": "0000 0004 1757 1969",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Catania, 2, 95131, Catania, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8158.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1969",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -19721,28 +18617,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -19813,24 +18693,12 @@
             {
               "affID": "0000 0001 2156 142X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470212.2",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "CERN, The European Organization for Nuclear Research, 1211, Meyrin, Switzerland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470212.2",
               "affIDType": "GRID"
@@ -19855,28 +18723,12 @@
             {
               "affID": "0000 0001 0723 2494",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.456610.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0442 5452",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universidade Estadual de Campinas, 13083-970, Campinas, SP, Brazil"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.411087.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0723 2494",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.456610.0",
               "affIDType": "GRID"
@@ -20031,28 +18883,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -20165,28 +19001,12 @@
             {
               "affID": "0000 0004 1757 1969",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Catania, 2, 95131, Catania, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8158.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1969",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -20257,28 +19077,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"
@@ -20744,24 +19548,12 @@
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.8982.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1762 5736",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Pavia, 27100, Pavia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.8982.b",
               "affIDType": "GRID"
@@ -20786,24 +19578,12 @@
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.8982.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1762 5736",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Pavia, 27100, Pavia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.8982.b",
               "affIDType": "GRID"
@@ -20958,28 +19738,12 @@
             {
               "affID": "0000 0001 0675 0679",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.14003.36",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2167 3675",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Fermi National Accelerator Laboratory, 60510, Batavia, IL, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.417851.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0675 0679",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.14003.36",
               "affIDType": "GRID"
@@ -21626,24 +20390,12 @@
             {
               "affID": "grid.470213.3",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.8982.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1762 5736",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Pavia, 27100, Pavia, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470213.3",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.8982.b",
               "affIDType": "GRID"
@@ -21914,28 +20666,12 @@
             {
               "affID": "0000 0001 2156 142X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470206.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 7471 9720",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "CERN, The European Organization for Nuclear Research, 1211, Meyrin, Switzerland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470206.7",
               "affIDType": "GRID"
@@ -22296,28 +21032,12 @@
             {
               "affID": "0000 0001 0675 0679",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4391.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2112 1969",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Fermi National Accelerator Laboratory, 60510, Batavia, IL, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.417851.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0675 0679",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4391.f",
               "affIDType": "GRID"
@@ -22346,28 +21066,12 @@
             {
               "affID": "0000 0004 1757 2064",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470200.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1765 4414",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Ferrara, Ferrara, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8484.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2064",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470200.1",
               "affIDType": "GRID"
@@ -23774,28 +22478,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -23904,24 +22592,12 @@
             {
               "affID": "grid.470212.2",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.5608.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 3470",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Padova, 35131, Padua, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470212.2",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.5608.b",
               "affIDType": "GRID"
@@ -24349,28 +23025,12 @@
             {
               "affID": "0000 0004 1757 1969",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Catania, 2, 95131, Catania, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8158.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1969",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -24399,28 +23059,12 @@
             {
               "affID": "0000 0004 8343 7696",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4691.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0790 385X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Napoli, 80126, Naples, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470211.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7696",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4691.a",
               "affIDType": "GRID"
@@ -24739,24 +23383,12 @@
             {
               "affID": "grid.512465.1",
               "affIDType": "GRID"
-            },
-            {
-              "affID": "grid.184769.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2231 4551",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Antalya Bilim University, 07190, D\u00f6\u015femealt\u0131/Antalya, Turkey"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.512465.1",
-              "affIDType": "GRID"
-            },
             {
               "affID": "grid.184769.5",
               "affIDType": "GRID"
@@ -24848,28 +23480,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -25020,28 +23636,12 @@
             {
               "affID": "0000 0004 1757 2064",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470200.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1765 4414",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "University of Ferrara, Ferrara, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8484.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 2064",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470200.1",
               "affIDType": "GRID"
@@ -25102,28 +23702,12 @@
             {
               "affID": "0000 0004 8390 4143",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.7563.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2174 1754",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Istituto Nazionale di Fisica Nucleare Sezione di Milano Bicocca, 3, 20126, Milan, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.470207.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8390 4143",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.7563.7",
               "affIDType": "GRID"
@@ -25173,28 +23757,12 @@
             {
               "affID": "0000 0004 1757 1969",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470198.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1755 400X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 di Catania, 2, 95131, Catania, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.8158.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1969",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470198.3",
               "affIDType": "GRID"
@@ -25727,24 +24295,12 @@
             {
               "affID": "0000 0001 0668 7243",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.440880.0",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "University of California Irvine, 92697, Irvine, CA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.266093.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0668 7243",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.440880.0",
               "affIDType": "GRID"
@@ -26307,24 +24863,12 @@
             {
               "affID": "0000 0001 2151 3065",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470205.4",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Universit\u00e0 degli Studi di Genova, Genoa, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.5606.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2151 3065",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470205.4",
               "affIDType": "GRID"
@@ -26801,28 +25345,12 @@
             {
               "affID": "0000 0001 2296 6998",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.12082.39",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7590",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "STFC Rutherford Appleton Laboratory, OX11 0QX, Didcot, UK"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.76978.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2296 6998",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.12082.39",
               "affIDType": "GRID"
@@ -26872,28 +25400,12 @@
             {
               "affID": "0000 0001 0675 0679",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.5802.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 1941 7111",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Fermi National Accelerator Laboratory, 60510, Batavia, IL, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.417851.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0675 0679",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.5802.f",
               "affIDType": "GRID"
@@ -28140,28 +26652,12 @@
             {
               "affID": "0000 0004 1757 1758",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.470193.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 8343 7610",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Universit\u00e0 del Bologna, 40127, Bologna, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.6292.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1757 1758",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.470193.8",
               "affIDType": "GRID"

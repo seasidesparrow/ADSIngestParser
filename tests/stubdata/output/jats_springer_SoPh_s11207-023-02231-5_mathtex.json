@@ -181,36 +181,12 @@
             {
               "affID": "0000 0001 2168 2483",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/05dxps055",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.20861.3d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0706 8890",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Physics, Aberystwyth University, SY23 3BZ, Ceredigion, Cymru, UK"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/015m2p889",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.8186.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2168 2483",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/05dxps055",
               "affIDType": "ROR"

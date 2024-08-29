@@ -39,28 +39,12 @@
             {
               "affID": "0000 0000 9024 6397",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.419491.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 1014 0849",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Faculty of Health/School of Medicine, Witten/Herdecke University, Witten, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.412581.b",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9024 6397",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.419491.0",
               "affIDType": "GRID"
@@ -116,22 +100,6 @@
             {
               "affID": "0000 0001 1014 0849",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.419491.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 1014 0849",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.484013.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 6879 971X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Molecular Epidemiology Research Group, Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC), Berlin, Germany"
@@ -145,44 +113,12 @@
             {
               "affID": "0000 0001 1014 0849",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.419491.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 1014 0849",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.484013.a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 6879 971X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Biobank Technology Platform, Max-Delbrueck-Center for Molecular Medicine in the Helmholtz Association (MDC), Berlin, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.419491.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 1014 0849",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.419491.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 1014 0849",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.484013.a",
               "affIDType": "GRID"
@@ -238,24 +174,12 @@
             {
               "affID": "0000 0001 2248 7639",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.518749.6",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7468.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2248 7639",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.518749.6",
               "affIDType": "GRID"
@@ -283,24 +207,12 @@
             {
               "affID": "0000 0001 2248 7639",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.518749.6",
-              "affIDType": "GRID"
             }
           ],
           "affPubRaw": "Department of Anesthesiology and Operative Intensive Care Medicine (CCM, CVK), Charit\u00e9\u2013Universit\u00e4tsmedizin Berlin, Corporate Member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7468.d",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2248 7639",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.518749.6",
               "affIDType": "GRID"

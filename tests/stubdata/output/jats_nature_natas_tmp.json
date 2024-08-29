@@ -177,28 +177,12 @@
             {
               "affID": "0000 0001 2312 1970",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.5371.0",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0775 6028",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Leiden Observatory, Leiden University, Leiden, the Netherlands"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.5132.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2312 1970",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.5371.0",
               "affIDType": "GRID"
@@ -248,28 +232,12 @@
             {
               "affID": "0000 0004 0385 4466",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.440392.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0478 8990",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Departamento de Astronom\u00eda, Universidad de Chile, Santiago, Chile"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.443909.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0385 4466",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.440392.8",
               "affIDType": "GRID"
@@ -429,28 +397,12 @@
             {
               "affID": "0000 0004 0491 677X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.11355.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2192 3275",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Max Planck Institut f\u00fcr Astronomie, Heidelberg, Germany"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.429508.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0491 677X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.11355.33",
               "affIDType": "GRID"
@@ -593,22 +545,6 @@
             {
               "affID": "0000 0001 2341 2786",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.116068.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2341 2786",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.116068.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2341 2786",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Physics and Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA, USA"
@@ -622,44 +558,12 @@
             {
               "affID": "0000 0001 2341 2786",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.116068.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2341 2786",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.116068.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2341 2786",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Earth, Atmospheric and Planetary Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.116068.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2341 2786",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.116068.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2341 2786",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.116068.8",
               "affIDType": "GRID"
@@ -832,28 +736,12 @@
             {
               "affID": "0000 0004 1767 6621",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.10041.34",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121060879",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Instituto de Astrof\u00edsica de Canarias (IAC), La Laguna, Spain"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.17423.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1767 6621",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.10041.34",
               "affIDType": "GRID"
@@ -954,28 +842,12 @@
             {
               "affID": "0000 0001 2336 6580",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.440503.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0646 0278",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Dipartimento di Fisica, Universit\u00e0 degli Studi di Torino, Turin, Italy"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.7605.4",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2336 6580",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.440503.6",
               "affIDType": "GRID"
@@ -1094,28 +966,12 @@
             {
               "affID": "0000 0004 1767 6621",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.10041.34",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121060879",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Instituto de Astrof\u00edsica de Canarias (IAC), La Laguna, Spain"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.17423.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1767 6621",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.10041.34",
               "affIDType": "GRID"
@@ -1165,28 +1021,12 @@
             {
               "affID": "0000 0004 1767 6621",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.10041.34",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121060879",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Instituto de Astrof\u00edsica de Canarias (IAC), La Laguna, Spain"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.17423.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1767 6621",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.10041.34",
               "affIDType": "GRID"
@@ -1242,28 +1082,12 @@
             {
               "affID": "0000 0004 1767 6621",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.10041.34",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000000121060879",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Instituto de Astrof\u00edsica de Canarias (IAC), La Laguna, Spain"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.17423.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1767 6621",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.10041.34",
               "affIDType": "GRID"
@@ -1388,28 +1212,12 @@
             {
               "affID": "0000 0001 1955 7990",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.422128.f",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2115 2810",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "NASA Ames Research Center, Moffett Field, CA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.419075.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 1955 7990",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.422128.f",
               "affIDType": "GRID"

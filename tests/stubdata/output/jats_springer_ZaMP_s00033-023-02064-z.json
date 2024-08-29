@@ -56,28 +56,12 @@
             {
               "affID": "0000 0001 0085 4987",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.252245.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0085 4987",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "School of Mathematical Sciences, Anhui University, 230601, Hefei, People\u2019s Republic of China"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.252245.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0085 4987",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.252245.6",
               "affIDType": "GRID"

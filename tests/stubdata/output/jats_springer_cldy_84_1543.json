@@ -14,28 +14,12 @@
             {
               "affID": "0000 0001 2109 661X",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4989.c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2348 0746",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Centrum Bada\u0144 Kosmicznych Polskiej Akademii Nauk (CBK PAN), Bartycka 18A, 00-716, Warszawa, Warsaw, Poland"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.423929.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2109 661X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4989.c",
               "affIDType": "GRID"
@@ -68,28 +52,12 @@
             {
               "affID": "0000 0001 2288 9830",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.170202.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 8008",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Geological Fluid Dynamics Laboratory, Department of Earth, Ocean and Atmospheric Sciences, University of British Columbia, Vancouver, Canada"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.17091.3e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2288 9830",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.170202.6",
               "affIDType": "GRID"
@@ -118,28 +86,12 @@
             {
               "affID": "0000 0004 1936 8008",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.4305.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7988",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Earth Sciences, University of Oregon, Eugene, OR, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.170202.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 8008",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.4305.2",
               "affIDType": "GRID"

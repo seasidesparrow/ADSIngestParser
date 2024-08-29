@@ -43,12 +43,14 @@ class JATSAffils(object):
         :return: BeautifulSoup object/tree, aff_ids array
         """
         aff_ids = []
-        aff_external_ids = aff.find_all("institution-id")
+        aff_external_ids = aff.find_all("institution-id", [])
         for ident in aff_external_ids:
             idtype = ident.get("institution-id-type", "")
             idvalue = ident.get_text()
             aff_ids.append({idtype: idvalue})
             ident.decompose()
+        if not aff_external_ids:
+            aff_ids.append({})
         return aff, aff_ids
 
     def _fix_affil(self, affstring):
@@ -134,9 +136,12 @@ class JATSAffils(object):
             for auth in contribs:
                 if auth.get("affid", None):
                     affid_tmp = []
-                    for d in auth["affid"]:
-                        for k, v in d.items():
-                            affid_tmp.append({"affIDType": k, "affID": v})
+                    for ids in auth.get("affid", None):
+                        ids_tmp = []
+                        for d in ids:
+                            for k, v in d.items():
+                                ids_tmp.append({"affIDType": k, "affID": v})
+                        affid_tmp.append((ids_tmp))
                     auth["affid"] = affid_tmp
 
     def _match_xref_clean(self):
@@ -148,32 +153,35 @@ class JATSAffils(object):
         for contrib_type, contribs in self.contrib_dict.items():
             for auth in contribs:
                 # contents of xaff field aren't always properly separated - fix that here
+                xaff_list = []
                 for item in auth.get("xaff", []):
-                    xaff_xid_tmp = []
                     xi = re.split("\\s*,\\s*|\\s+", item)
                     for x in xi:
-                        try:
-                            auth["aff"].append(self.xref_dict[x])
-                        except KeyError as err:
-                            logger.info("Key is missing from xaff. Missing key: %s", err)
-                            pass
-                        try:
-                            for dx in self.xref_xid_dict[x]:
-                                for k, v in dx.items():
-                                    xaff_xid_tmp.append({k: v})
-                        except KeyError as err:
-                            logger.info("Key is missing from xaff. Missing key: %s" % err)
+                        xaff_list.append(x)
+
                     # if you found any emails in an affstring, add them
                     # to the email field
                     if item in self.email_xref:
                         auth["email"].append(self.email_xref[item])
-                    if xaff_xid_tmp:
-                        if auth.get("affid", None):
-                            auth["affid"].extend(xaff_xid_tmp)
+
+                xaff_xid_tmp = []
+                for x in xaff_list:
+                    try:
+                        auth["aff"].append(self.xref_dict[x])
+                    except KeyError as err:
+                        logger.info("Key is missing from xaff. Missing key: %s", err)
+                        pass
+                    try:
+                        if self.xref_xid_dict[x]:
+                            xaff_xid_tmp.append(self.xref_xid_dict[x])
                         else:
-                            auth["affid"] = xaff_xid_tmp
-                    elif not auth.get("affid", None):
-                        auth["affid"] = []
+                            xaff_xid_tmp.append([{}])
+                    except KeyError as err:
+                        logger.info("Key is missing from xaff. Missing key: %s" % err)
+                if xaff_xid_tmp:
+                    auth["affid"] = xaff_xid_tmp
+                if not auth.get("affid", None) or not xaff_xid_tmp:
+                    auth["affid"] = []
 
                 # Check for 'ALLAUTH'/'ALLCONTRIB' affils (global affils without a key), and assign them to all authors/contributors
                 if contrib_type == "authors" and "ALLAUTH" in self.xref_dict:

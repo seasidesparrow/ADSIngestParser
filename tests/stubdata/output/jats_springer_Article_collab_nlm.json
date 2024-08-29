@@ -18,26 +18,6 @@
             {
               "affID": "0000 0004 0378 8294",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04drvxt59",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.239395.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9011 8547",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Medicine, Brigham and Women\u2019s Hospital, Boston, MA, USA"
@@ -45,35 +25,11 @@
         {
           "affPubID": [
             {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.38142.3c",
               "affIDType": "GRID"
             },
             {
               "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04drvxt59",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.239395.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9011 8547",
               "affIDType": "ISNI"
             }
           ],
@@ -81,26 +37,6 @@
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/04drvxt59",
               "affIDType": "ROR"
@@ -162,32 +98,12 @@
             {
               "affID": "0000 0004 0378 8294",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Medicine, Brigham and Women\u2019s Hospital, Boston, MA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.38142.3c",
               "affIDType": "GRID"
@@ -316,36 +232,12 @@
             {
               "affID": "0000 0001 2179 1997",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/01jdpyv68",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.11749.3a",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2167 7588",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Epidemiology & Population Health, Albert Einstein College of Medicine, Bronx, NY, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/05cf8a891",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.251993.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2179 1997",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/01jdpyv68",
               "affIDType": "ROR"
@@ -407,84 +299,12 @@
             {
               "affID": "0000 0001 2298 6657",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Medicine, University of Washington, Seattle, WA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/00cvxb145",
               "affIDType": "ROR"
@@ -513,84 +333,12 @@
             {
               "affID": "0000 0001 2298 6657",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Cardiovascular Health Research Unit, University of Washington, Seattle, WA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/00cvxb145",
               "affIDType": "ROR"
@@ -710,32 +458,12 @@
             {
               "affID": "0000 0001 2293 4638",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/031grv205",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.510954.c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0444 3861",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "The Population Sciences Branch of the National Heart, Lung and Blood Institute, Bethesda, MD, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.279885.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2293 4638",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/031grv205",
               "affIDType": "ROR"
@@ -822,36 +550,12 @@
             {
               "affID": "0000 0001 2298 6657",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Medicine, University of Washington, Seattle, WA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/00cvxb145",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.34477.33",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2298 6657",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/00cvxb145",
               "affIDType": "ROR"
@@ -892,36 +596,12 @@
             {
               "affID": "0000 0004 1936 7347",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00jmfr291",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.214458.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7347",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Epidemiology, School of Public Health, University of Michigan, Ann Arbor, MI, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/00jmfr291",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.214458.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7347",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/00jmfr291",
               "affIDType": "ROR"
@@ -991,38 +671,6 @@
             {
               "affID": "0000 0004 0378 8294",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04v00sg98",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.410370.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 4657 1992",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Medicine, Brigham and Women\u2019s Hospital, Boston, MA, USA"
@@ -1030,47 +678,11 @@
         {
           "affPubID": [
             {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.38142.3c",
               "affIDType": "GRID"
             },
             {
               "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04v00sg98",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.410370.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 4657 1992",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
               "affIDType": "ISNI"
             }
           ],
@@ -1079,26 +691,6 @@
         {
           "affPubID": [
             {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "https://ror.org/04v00sg98",
               "affIDType": "ROR"
             },
@@ -1108,18 +700,6 @@
             },
             {
               "affID": "0000 0004 4657 1992",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
               "affIDType": "ISNI"
             }
           ],
@@ -1127,38 +707,6 @@
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04v00sg98",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.410370.1",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 4657 1992",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/04b6nzv94",
               "affIDType": "ROR"
@@ -1195,32 +743,12 @@
             {
               "affID": "0000 0000 9206 2401",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/03gds6c39",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.267308.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9206 2401",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Epidemiology, School of Public Health, Human Genetics Center, The University of Texas Health Science Center at Houston, Houston, TX, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.267308.8",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9206 2401",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/03gds6c39",
               "affIDType": "ROR"
@@ -1286,32 +814,12 @@
             {
               "affID": "0000 0004 0378 8294",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Medicine, Brigham and Women\u2019s Hospital, Boston, MA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.38142.3c",
               "affIDType": "GRID"
@@ -1402,36 +910,12 @@
             {
               "affID": "0000 0001 2179 1997",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/007ps6h72",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.270240.3",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2180 1622",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Epidemiology & Population Health, Albert Einstein College of Medicine, Bronx, NY, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/05cf8a891",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.251993.5",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2179 1997",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/007ps6h72",
               "affIDType": "ROR"
@@ -1472,32 +956,12 @@
             {
               "affID": "0000 0001 0670 2351",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.5254.6",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0674 042X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "The Charles Bronfman Institute for Personalized Medicine, Icahn School of Medicine at Mount Sinai, New York, NY, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/04a9tmd77",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.59734.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 0670 2351",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.5254.6",
               "affIDType": "GRID"
@@ -1592,26 +1056,6 @@
             {
               "affID": "0000 0004 0378 8294",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Medicine, Brigham and Women\u2019s Hospital, Boston, MA, USA"
@@ -1619,35 +1063,11 @@
         {
           "affPubID": [
             {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "grid.38142.3c",
               "affIDType": "GRID"
             },
             {
               "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
               "affIDType": "ISNI"
             }
           ],
@@ -1655,26 +1075,6 @@
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/04b6nzv94",
               "affIDType": "ROR"
@@ -1732,22 +1132,6 @@
             {
               "affID": "0000 0001 2175 4264",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411024.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2175 4264",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411024.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2175 4264",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Medicine, University of Maryland School of Medicine, Baltimore, MD, USA"
@@ -1761,44 +1145,12 @@
             {
               "affID": "0000 0001 2175 4264",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411024.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2175 4264",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411024.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2175 4264",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Institute for Genome Sciences, University of Maryland School of Medicine, Baltimore, MD, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "grid.411024.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2175 4264",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.411024.2",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2175 4264",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.411024.2",
               "affIDType": "GRID"
@@ -1835,36 +1187,12 @@
             {
               "affID": "0000 0004 1936 7347",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/00jmfr291",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.214458.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7347",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Epidemiology, School of Public Health, University of Michigan, Ann Arbor, MI, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/00jmfr291",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.214458.e",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 1936 7347",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "https://ror.org/00jmfr291",
               "affIDType": "ROR"
@@ -2000,72 +1328,12 @@
             {
               "affID": "0000 0004 0378 8294",
               "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04drvxt59",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.239395.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9011 8547",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
             }
           ],
           "affPubRaw": "Department of Medicine, Brigham and Women\u2019s Hospital, Boston, MA, USA"
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04drvxt59",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.239395.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9011 8547",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.38142.3c",
               "affIDType": "GRID"
@@ -2080,26 +1348,6 @@
         {
           "affPubID": [
             {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
               "affID": "https://ror.org/04drvxt59",
               "affIDType": "ROR"
             },
@@ -2109,14 +1357,6 @@
             },
             {
               "affID": "0000 0000 9011 8547",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
               "affIDType": "ISNI"
             }
           ],
@@ -2124,38 +1364,6 @@
         },
         {
           "affPubID": [
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04drvxt59",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.239395.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9011 8547",
-              "affIDType": "ISNI"
-            },
             {
               "affID": "grid.38142.3c",
               "affIDType": "GRID"
@@ -2168,48 +1376,6 @@
           "affPubRaw": "Department of Biostatistics, Harvard T.H. Chan School of Public Health, Boston, MA, USA"
         },
         {
-          "affPubID": [
-            {
-              "affID": "https://ror.org/04b6nzv94",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.62560.37",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0004 0378 8294",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "https://ror.org/04drvxt59",
-              "affIDType": "ROR"
-            },
-            {
-              "affID": "grid.239395.7",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0000 9011 8547",
-              "affIDType": "ISNI"
-            },
-            {
-              "affID": "grid.38142.3c",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "000000041936754X",
-              "affIDType": "ISNI"
-            }
-          ],
           "affPubRaw": "Center for Life Sciences CLS-934, 3 Blackfan St., 02115, Boston, MA, USA"
         }
       ],
