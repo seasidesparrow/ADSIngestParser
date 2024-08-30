@@ -115,8 +115,9 @@ AIP_DISCARD_KEYWORDS = [
     "ERRATA",
     "FAST TRACK",
     "COMMUNICATIONS",
-    "LETTERS"
+    "LETTERS",
 ]
+
 
 class AuthorNames(object):
     """

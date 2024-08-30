@@ -18,7 +18,7 @@
             <article-id pub-id-type="publisher-id:aipkey">5.0206772</article-id>
             <article-id pub-id-type="doi">10.1063/5.0206772</article-id>
             <article-id pub-id-type="manuscript">ADV24-AR-01046</article-id>
-            
+
             <article-categories><subj-group subj-group-type="toc-heading">
                     <subject>REGULAR ARTICLES</subject>
                 </subj-group></article-categories>
@@ -33,12 +33,12 @@
                         <surname>Wan</surname>
                         <given-names>Wenchen</given-names>
                     </name>
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
                     <xref ref-type="aff" rid="a1">1</xref>
                 </contrib>
                 <contrib contrib-type="author" corresp="yes">
@@ -47,49 +47,49 @@
                         <surname>Wu</surname>
                         <given-names>Chen</given-names>
                     </name>
-                    
-                    
-                    
+
+
+
                     <xref ref-type="aff" rid="a1 a2">1,2</xref>
                     <xref ref-type="corresp" rid="cor1">a)</xref>
                     <email specific-use="metadata" xlink:href="mailto:chen_wu@zju.edu.cn"/>
                 </contrib>
-                
-                
-                
+
+
+
                 <contrib contrib-type="author">
                     <contrib-id contrib-id-type="orcid">https://orcid.org/0009-0000-7665-9491</contrib-id>
                     <name>
                         <surname>Liu</surname>
                         <given-names>Guang</given-names>
                     </name>
-                    
-                    
-                    
+
+
+
                     <xref ref-type="aff" rid="a1 a3">1,3</xref>
                 </contrib>
-                
-                
-                
+
+
+
                 <contrib contrib-type="author" corresp="yes">
                     <name>
                         <surname>Chen</surname>
                         <given-names>Qiming</given-names>
                     </name>
-                    
-                    
+
+
                     <xref ref-type="aff" rid="a1">1</xref>
                 </contrib>
-                
-                
+
+
                 <contrib contrib-type="author" corresp="yes">
                     <name>
                         <surname>Yan</surname>
                         <given-names>Mi</given-names>
                     </name>
-                    
-                    
-                    
+
+
+
                     <xref ref-type="aff" rid="a1">1</xref>
                     <xref ref-type="corresp" rid="cor1">a)</xref>
                     <email specific-use="metadata" xlink:href="mailto:mse_yanmi@zju.edu.cn"/>
@@ -133,7 +133,7 @@
             <abstract>
                 <p>Soft magnetic composites (SMCs) play a crucial role in modern electronics and electrical devices, for which challenges remain in maintaining magnetic performance and reducing loss at megahertz (MHz) frequencies. Here, CeFeCo/FeSiAl@ polyurethane (PU) SMCs have been rationally designed with the simultaneous achievement of large relative permeability, high domain-wall resonance frequency, and low power loss. As a rare-earth soft magnetic alloy, the CeFeCo is promising for high-frequency applications due to its easy-plane anisotropy, whereas FeSiAl is advantageous with increased electrical resistivity as well as approaching-zero magnetocrystalline anisotropy and magnetostriction. Hot pressing has been adopted to achieve a dense and homogeneous distribution of CeFeCo and FeSiAl powders in the PU for reduced magnetic dilution and eddy current loss. The resultant SMCs exhibit optional soft magnetic performance with large relative permeability of 21.0, low power loss of 3677.5 kW·m<sup>−3</sup> at 5 MHz, and high domain-wall resonance frequency of 386.1 MHz. As such this work provides insights into the design of high-frequency SMCs incorporating novel rare-earth soft magnetic alloys.</p>
             </abstract>
-            
+
             <funding-group specific-use="FundRef">
                 <award-group>
                     <funding-source>
