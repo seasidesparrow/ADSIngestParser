@@ -61,6 +61,8 @@ class TestJATS(unittest.TestCase):
             "jats_iop_ansnn_12_2_025001",
             "jats_aip_aipc_2470_040010",
             "jats_aip_amjph_90_286",
+            "jats_aip_key_headings",
+            "jats_aip_key_headings2",
             "jats_iop_jinst_17_05_P05009",
             "jats_phrvd_106_023001",
             "jats_pnas_1715554115",

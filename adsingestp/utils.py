@@ -97,6 +97,26 @@ related_trans_dict = {
     "Erratum": "errata",
 }
 
+AIP_DISCARD_KEYWORDS = [
+    "ARTICLES",
+    "REGULAR ARTICLES",
+    "SOFTWARE",
+    "PERSPECTIVES",
+    "EDITORIALS",
+    "PAPERS",
+    "AWARDS",
+    "NOTES AND DISCUSSIONS",
+    "PAPERS",
+    "LETTERS TO THE EDITOR",
+    "REVIEWS",
+    "REVIEW ARTICLE",
+    "NEW PRODUCTS",
+    "AWARDS",
+    "ERRATA",
+    "FAST TRACK",
+    "COMMUNICATIONS",
+    "LETTERS"
+]
 
 class AuthorNames(object):
     """
