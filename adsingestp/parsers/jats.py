@@ -1006,10 +1006,9 @@ class JATSParser(BaseBeautifulSoupParser):
         if self.article_meta.find("counts") and self.article_meta.find("counts").find(
             "page-count"
         ):
-            if str(self.article_meta.find("counts").find("page-count").get("count", "")).isdigit():
-                self.base_metadata["numpages"] = (
-                    self.article_meta.find("counts").find("page-count").get("count", "")
-                )
+            pagecount = self.article_meta.find("counts").find("page-count").get("count", "")
+            if str(pagecount).isdigit() and pagecount != "0":
+                self.base_metadata["numpages"] = pagecount
 
     def _parse_references(self):
         if self.back_meta is not None:
@@ -1126,11 +1125,13 @@ class JATSParser(BaseBeautifulSoupParser):
 
         # Volume:
         volume = self.article_meta.volume
-        self.base_metadata["volume"] = self._detag(volume, [])
+        if volume:
+            self.base_metadata["volume"] = self._detag(volume, [])
 
         # Issue:
         issue = self.article_meta.issue
-        self.base_metadata["issue"] = self._detag(issue, [])
+        if issue:
+            self.base_metadata["issue"] = self._detag(issue, [])
 
         if self.article_meta.find("conference"):
             self._parse_conference()
