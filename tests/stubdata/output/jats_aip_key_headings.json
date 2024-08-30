@@ -1,6 +1,6 @@
 {
   "abstract": {
-    "textEnglish": "The FurnaSEM microfurnace was installed in the chamber of a scanning electron microscope to carry out in situ experiments at high temperatures and test its limits. The microfurnace was used in combination with different types of detectors (Everhart\u2013Thornley for the collection of secondary electrons in a high vacuum, gas secondary electron detector for the specific collection of secondary electrons in the presence of gas, and Karmen<sup>\u00a9</sup> detector for the collection of backscattered electrons at high temperature). Experiments carried out on various samples (metal alloys and ceramics) show that the microfurnace operates in both high-vacuum and low-vacuum modes. Temperature ramp rates during temperature cycles applied to the sample range from 1 to 120 \u00b0C/min (temperature rise) and 1 to 480 \u00b0C/min (controlled and natural cooling). The maximum temperature at which images were recorded up to 25 k \u00d7 magnification was 1340 \u00b0C, with a residual air atmosphere of 120 Pa. The choice of a flat furnace with the sample placed directly above it has enabled innovative experiments to be carried out, such as low-voltage imaging (using a shorter working distance\u2014up to 10 mm\u2014than is possible with conventional furnaces), 3D imaging (by tilting the stage by up to 10\u00b0), and high-temperature backscattered electron imaging (using a dedicated detector)."
+    "textEnglish": "The FurnaSEM microfurnace was installed in the chamber of a scanning electron microscope to carry out in situ experiments at high temperatures and test its limits. The microfurnace was used in combination with different types of detectors (Everhart\u2013Thornley for the collection of secondary electrons in a high vacuum, gas secondary electron detector for the specific collection of secondary electrons in the presence of gas, and Karmen <sup>\u00a9</sup> detector for the collection of backscattered electrons at high temperature). Experiments carried out on various samples (metal alloys and ceramics) show that the microfurnace operates in both high-vacuum and low-vacuum modes. Temperature ramp rates during temperature cycles applied to the sample range from 1 to 120 \u00b0C/min (temperature rise) and 1 to 480 \u00b0C/min (controlled and natural cooling). The maximum temperature at which images were recorded up to 25 k \u00d7 magnification was 1340 \u00b0C, with a residual air atmosphere of 120 Pa. The choice of a flat furnace with the sample placed directly above it has enabled innovative experiments to be carried out, such as low-voltage imaging (using a shorter working distance\u2014up to 10 mm\u2014than is possible with conventional furnaces), 3D imaging (by tilting the stage by up to 10\u00b0), and high-temperature backscattered electron imaging (using a dedicated detector)."
   },
   "authors": [
     {
@@ -90,12 +90,14 @@
       "agencyid": {
         "idvalue": "Region Occitanie"
       },
+      "agencyname": "\n\n",
       "awardnumber": "Readynov"
     },
     {
       "agencyid": {
         "idvalue": "ANRT"
       },
+      "agencyname": "\n\n",
       "awardnumber": "PhD thesis grant"
     }
   ],
