@@ -795,19 +795,20 @@ class JATSParser(BaseBeautifulSoupParser):
                 subj_groups = []
             for sg in subj_groups:
                 subjects = []
-                if sg.get("subj-group-type", "") == "toc-minor":
-                    subjects = sg.find_all("subject")
-                elif sg.get("subj-group-type", "") == "toc-heading":
+                if sg.get("subj-group-type", "") in ["toc-minor", "toc-heading"]:
                     subjects = sg.find_all("subject")
 
                 for k in subjects:
                     k = self._remove_latex(k)
-                    keys_out.append(
-                        {
-                            "system": "subject",
-                            "string": self._detag(k, self.HTML_TAGSET["keywords"]),
-                        }
-                    )
+                    key = self._detag(k, self.HTML_TAGSET["keywords"])
+                    # AIP special handling
+                    if key not in utils.AIP_DISCARD_KEYWORDS:
+                        keys_out.append(
+                            {
+                                "system": "subject",
+                                "string": key,
+                            }
+                        )
 
                 for k in sg.find_all("subject"):
                     if k.string == "Errata" or k.string == "Corrigendum":
