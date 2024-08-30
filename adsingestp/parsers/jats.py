@@ -79,7 +79,8 @@ class JATSAffils(object):
                 if self.regex_email.match(a):
                     emails.append(a)
                 else:
-                    new_aff.append(a)
+                    if a:
+                        new_aff.append(a)
 
         newaffstr = "; ".join(new_aff)
         return newaffstr, emails
