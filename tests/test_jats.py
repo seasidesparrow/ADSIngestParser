@@ -71,6 +71,8 @@ class TestJATS(unittest.TestCase):
             "jats_iop_no_orcid_tag",
             "jats_iop_preprint_in_record",
             "jats_iop_apj_923_1_47",
+            "jats_iop_blank_affil_removed",
+            "jats_iop_blank_affil_removed2",
             "jats_a+a_multiparagraph_abstract",
             "jats_a+a_subtitle",
             "jats_iucr_d-60-02355",
