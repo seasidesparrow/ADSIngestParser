@@ -164,6 +164,24 @@
       "2022-08-26"
     ]
   },
+  "keywords": [
+    {
+      "keyString": "magnetic reconnection",
+      "keySystem": "Wiley"
+    },
+    {
+      "keyString": "whistler wave",
+      "keySystem": "Wiley"
+    },
+    {
+      "keyString": "Landau resonance",
+      "keySystem": "Wiley"
+    },
+    {
+      "keyString": "cyclotron resonance",
+      "keySystem": "Wiley"
+    }
+  ],
   "pagination": {
     "electronicID": "e2022JA030882",
     "firstPage": "2022JA030882",

@@ -19,6 +19,20 @@
     "statement": "\u00a92012. American Geophysical Union. All Rights Reserved.",
     "status": true
   },
+  "keywords": [
+    {
+      "keyString": "Space Weather",
+      "keySystem": "Wiley"
+    },
+    {
+      "keyString": "Space Physics",
+      "keySystem": "Wiley"
+    },
+    {
+      "keyString": "Textbook Review",
+      "keySystem": "Wiley"
+    }
+  ],
   "pagination": {
     "firstPage": "S08004",
     "pageCount": "2"

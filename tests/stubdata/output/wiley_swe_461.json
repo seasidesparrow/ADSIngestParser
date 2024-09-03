@@ -19,6 +19,12 @@
     "statement": "Copyright 2011 by the American Geophysical Union.",
     "status": true
   },
+  "keywords": [
+    {
+      "keyString": "geomagnetically induced currents",
+      "keySystem": "Wiley"
+    }
+  ],
   "pagination": {
     "firstPage": "S07007",
     "pageCount": "2"
