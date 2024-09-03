@@ -186,6 +186,9 @@ class WileyParser(BaseBeautifulSoupParser):
         for k in self.content_meta.find_all("keyword"):
             keywords.append({"system": "Wiley", "string": k.get_text()})
 
+        if keywords:
+            self.base_metadata["keywords"] = keywords
+
     def _parse_references(self):
         references = []
         if self.bib:
