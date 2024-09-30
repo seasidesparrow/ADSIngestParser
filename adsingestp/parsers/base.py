@@ -508,6 +508,7 @@ class BaseBeautifulSoupParser(IngestBase):
         "comments": HTML_TAGS_MATH + HTML_TAGS_HTML + ["a", "pre", "br", "p"],
         "affiliations": ["email", "orcid"],
         "keywords": HTML_TAGS_HTML,
+        "license": HTML_TAGS_MATH + HTML_TAGS_HTML + ["a", "pre", "br"],
     }
 
     HTML_TAGS_DANGER = ["php", "script", "css"]

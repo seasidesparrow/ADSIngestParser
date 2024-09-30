@@ -91,6 +91,8 @@ class TestJATS(unittest.TestCase):
             "jats_springer_badmarkup_1",
             "jats_aps_native_authors_1",
             "jats_no_issue_pagecount",
+            "jats_nature_article_pubdatetype_1",
+            "jats_springer_article_pubdatetype_2",
         ]
 
         for f in filenames:

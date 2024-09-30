@@ -172,7 +172,13 @@
     }
   ],
   "pubDate": {
-    "electrDate": "2024-00-00"
+    "electrDate": "2024-07-17",
+    "otherDate": [
+      {
+        "otherDateType": "collection",
+        "otherDateValue": "2024-00-00"
+      }
+    ]
   },
   "publication": {
     "ISSN": [

@@ -938,20 +938,26 @@ class JATSParser(BaseBeautifulSoupParser):
         for d in pub_dates:
             pub_format = d.get("publication-format", "")
             pub_type = d.get("pub-type", "")
+            date_type = d.get("date-type", "")
+            accepted_date_types = ["pub", "", "first_release"]
             pubdate = self._get_date(d)
             if (
                 pub_format == "print"
                 or pub_type == "ppub"
                 or pub_type == "cover"
                 or (pub_type == "" and pub_format == "")
-            ):
+            ) and (date_type == "pub" or date_type == ""):
                 self.base_metadata["pubdate_print"] = pubdate
+
             if (
                 pub_format == "electronic"
                 or pub_type == "epub"
                 or (pub_type == "" and pub_format == "")
-            ):
+            ) and (date_type in accepted_date_types):
                 self.base_metadata["pubdate_electronic"] = pubdate
+
+            elif (date_type != "pub") and (date_type != ""):
+                self.base_metadata["pubdate_other"] = [{"type": date_type, "date": pubdate}]
 
             if pub_type == "open-access":
                 self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
@@ -969,7 +975,8 @@ class JATSParser(BaseBeautifulSoupParser):
                 license_text = p.find("license-p")
                 if license_text:
                     self.base_metadata.setdefault("openAccess", {}).setdefault(
-                        "license", license_text.get_text()
+                        "license",
+                        self._detag(license_text.get_text(), self.HTML_TAGSET["license"]).strip(),
                     )
                     license_uri = license_text.find("ext-link")
                     if license_uri:
