@@ -71,6 +71,7 @@ class JATSAffils(object):
                 a = a.replace("\\n", ",")
                 a = a.replace(" —", "—")
                 a = a.replace(" , ", ", ")
+                a = a.replace(", .", ".")
                 a = re.sub(",+", ",", a)
                 a = re.sub("\\s+", " ", a)
                 a = re.sub("^(\\s*,+\\s*)+", "", a)
@@ -436,7 +437,7 @@ class JATSAffils(object):
                     orcid_out = orcid_out[0]
                 else:
                     orcid_out = ""
-
+                
                 # create the author dict
                 auth["corresp"] = l_correspondent
                 auth["surname"] = surname
@@ -517,6 +518,8 @@ class JATSAffils(object):
             aff = self._decompose(soup=aff, tag="sup")
 
             aff, aff_extids_tmp = self._get_inst_identifiers(aff)
+            # import pdb
+            # pdb.set_trace()
             affstr = aff.get_text(separator=", ").strip()
             (aff_list, email_list) = self._fix_affil(affstr)
             self.xref_dict[key] = aff_list
