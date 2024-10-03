@@ -153,8 +153,11 @@
 				</label>
 				<addr-line>Sauvage Laboratory for Smart Materials, Shenzhen Key Laboratory of Flexible Printed Electronics Technology</addr-line>,
 
-				<institution>Harbin Institute of Technology (Shenzhen)</institution>, Shenzhen, 
+
+				<institution>Harbin Institute of Technology (Shenzhen)</institution>, Shenzhen,
+
 				<country>China</country>.
+
 			</aff>
 			<aff id="aff2">
 				<label>
@@ -162,12 +165,16 @@
 				</label>
 				<addr-line>State Key Laboratory of Advanced Welding and Joining (Shenzhen)</addr-line>,
 
-				<institution>Harbin Institute of Technology (Shenzhen)</institution>, Shenzhen, 
+
+				<institution>Harbin Institute of Technology (Shenzhen)</institution>, Shenzhen,
+
 				<country>China</country>.
+
 			</aff>
 			<author-notes>
 				<corresp id="corr1">
-					<label>*</label>Address correspondence to: 
+					<label>*</label>Address correspondence to:
+
 					<email xlink:href="mailto:fenghuanhuan@hit.edu.cn">fenghuanhuan@hit.edu.cn</email>
 				</corresp>
 				<fn id="afn1" fn-type="equal">
@@ -207,15 +214,19 @@
 				<copyright-year>2024</copyright-year>
 				<copyright-holder>Shuaishuai Meng et al.</copyright-holder>
 				<license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by/4.0/">
-					<license-p>Exclusive licensee Beijing Institute of Aerospace Control Devices. No claim to original U.S. Government Works. Distributed under a 
+					<license-p>Exclusive licensee Beijing Institute of Aerospace Control Devices. No claim to original U.S. Government Works. Distributed under a
+
 						<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License 4.0 (CC BY 4.0)</ext-link>.
+
 					</license-p>
 				</license>
 			</permissions>
 			<self-uri xlink:href="adi.0052.pdf" content-type="pdf" />
 			<abstract>
 				<p>Flexible electronics have attracted increasing attention and are extensively used in medical care and health monitoring applications. However, research on their applications in low-temperature environments is limited, mainly owing to material intrinsic limitation. In this work, a cryogenic pressure sensor using low-melting (−71 °C) ionic liquid 1-butyl-3-methylimidazolium tetrafluoroborate ([BMIM]BF4) is fabricated via the template removal method. The sensor unit can function at temperatures ranging from −50 to 30 °C, with improved sensing performance at lower temperatures. At −50 °C, it demonstrates an ultralow detection limit of 0.5 Pa and a high sensitivity of 2.0 × 10
+
 					<sup>5</sup> Ω/kPa, thereby enabling the detection of dynamic pressure loads with different frequencies (0.2 to 2 Hz) and waveforms (sine and triangle). Subsequently, these units are integrated into a 3 × 3 array and embedded into a bionic thumb. The sensor can accurately identify up to 9 independent touch points and recognize dynamic sliding with velocities in the range of 0.31 to 4.42 cm/s at an extremely low temperature (−50 °C), thus demonstrating remarkable multitouch and sliding trajectory recognition capabilities. Furthermore, the proposed sensor unit is expected to contribute to the research on the human–machine interface of space suits.
+
 				</p>
 			</abstract>
 			<abstract abstract-type="key-image-no-article-view">
@@ -257,39 +268,71 @@
 		<sec id="sec1">
 			<title>Introduction</title>
 			<p>In recent years, electronic skin has attracted extensive research interest owing to its efficient emulation of human skin characteristics such as static and dynamic pressure sensing and high stretchability [
+
 				<xref ref-type="bibr" rid="B1">1</xref>–
+
 				<xref ref-type="bibr" rid="B10">10</xref>]. As electronic skin is a multifunctional sensor, it should satisfy the requirements of good sensitivity, high detection limits, low response time, high stretchability, and high mechanical strength [
+
 				<xref ref-type="bibr" rid="B3">3</xref>–
+
 				<xref ref-type="bibr" rid="B11">11</xref>] in addition to covering irregular surfaces [
+
 				<xref ref-type="bibr" rid="B9">9</xref>–
+
 				<xref ref-type="bibr" rid="B12">12</xref>]. Thus far, materials such as liquid metal and conductive hydrogel have been used as the conductive medium of flexible electronics, exhibiting excellent sensitivity and response time [
+
 				<xref ref-type="bibr" rid="B13">13</xref>–
+
 				<xref ref-type="bibr" rid="B18">18</xref>]. Liquid metal is used in various fields because of its good conductivity, high thermal conductivity, excellent mechanical properties, and low viscosity [
+
 				<xref ref-type="bibr" rid="B19">19</xref>–
+
 				<xref ref-type="bibr" rid="B21">21</xref>]. The metal-liquid-based flexible electronics are essential components of the functional human–machine interface and E skin [
+
 				<xref ref-type="bibr" rid="B22">22</xref>–
+
 				<xref ref-type="bibr" rid="B24">24</xref>]. Hydrogels, characterized by their unique 3-dimensional polymer networks containing water molecules structures, have emerged as highly prospective candidates for flexible electronics [
+
 				<xref ref-type="bibr" rid="B25">25</xref>–
+
 				<xref ref-type="bibr" rid="B28">28</xref>]. Several soft electronics, such as actuators and touchpads containing hydrogels, exhibit excellent performance [
+
 				<xref ref-type="bibr" rid="B29">29</xref>–
+
 				<xref ref-type="bibr" rid="B31">31</xref>]. Another common conductive material is 2-dimensional (2D) materials. 2D materials have demonstrated important potential in flexible electronics due to their unique electrical and mechanical properties [
+
 				<xref ref-type="bibr" rid="B32">32</xref>]. Research on 2D-material sensing devices has emerged in recent years, showing promising applications in various areas such as healthcare and intelligent screens [
+
 				<xref ref-type="bibr" rid="B33">33</xref>–
+
 				<xref ref-type="bibr" rid="B35">35</xref>]. However, as the melting point of common liquid metal is approximately 10 to 30 °C [
+
 				<xref ref-type="bibr" rid="B36">36</xref>], it may freeze at low temperatures; hydrogels are also prone to freezing in a cryogenic environment. Therefore, sensors based on these materials are difficult to apply in harsh environments. Meanwhile, research on 2D-material sensors for use in low-temperature environments is nearly blank. Recently, ionic liquids have become a new conducting medium for electronic skin [
+
 				<xref ref-type="bibr" rid="B37">37</xref>–
+
 				<xref ref-type="bibr" rid="B39">39</xref>]. Ionic liquids are composed entirely of positively and negatively charged ions [
+
 				<xref ref-type="bibr" rid="B40">40</xref>]. Their properties include nonvolatility, low vapor pressure, noninflammability, wide electrochemical windows, high thermal stability, and excellent conductivity [
+
 				<xref ref-type="bibr" rid="B37">37</xref>–
+
 				<xref ref-type="bibr" rid="B41">41</xref>]. Ionic liquids are also referred to as “designer solvents” as their thermophysical properties can be tailored by adjusting the composition of the ions to fit practical needs [
+
 				<xref ref-type="bibr" rid="B41">41</xref>]. By selecting appropriate cation-anion combinations, ionic liquids with melting points as low as −87 °C can be obtained [
+
 				<xref ref-type="bibr" rid="B42">42</xref>], thus ensuring their retention in a liquid state even at extremely low temperatures and maintaining outstanding conductivity performance.
+
 			</p>
 			<p>At present, research on ionic liquid as a conductive medium is still limited. Jiang et al. [
+
 				<xref ref-type="bibr" rid="B43">43</xref>] encapsulated ionic liquid in the tailored cavity with a stretchable polydimethylsiloxane thin film to design stretchable and transparent multifunctional sensors. The designed ionic-liquid-based sensor exhibits high sensitivity and good linearity for strain and temperature, accurately detecting the density of these stimuli in real-time. However, this sensor performs poorly under low temperatures and is unable to detect sliding pressure.
+
 			</p>
 			<p>This study employs a low-melting-point (−87 °C) ionic liquid, 1-butyl-3-methylimidazolium tetrafluoroborate ([BMIM]BF4), as the sensing medium to successfully fabricate a cryogenic pressure sensor capable of operating at low temperatures. Our flexible electronics can maintain extraordinary performance under low environments (−50 °C) as they have the lowest sensing temperature among the sensors of the same type. The functionality of the fabricated sensing element is demonstrated within the temperature range of −50 to 30 °C, with an enhanced sensing performance with decreasing temperature. At −50 °C, it exhibits ultrasensitive detection limits (0.5 Pa) and remarkably high sensitivity (2.0 × 10
+
 				<sup>5</sup> Ω/kPa), allowing for dynamic pressure load detection of different waveforms (sinusoidal and triangular) at frequencies ranging from 0.2 to 2 Hz. Subsequently, the sensing elements are integrated into a 3 × 3 array and embedded in a biomimetic thumb to simulate the sensor performance of a thumb under extremely low temperatures. The biomimetic thumb accurately identifies the load at 9 different positions and recognizes the sliding trajectories and velocities between these positions at low temperatures (−50 °C), demonstrating excellent multitouch sensing and sliding trajectory recognition capabilities.
+
 			</p>
 		</sec>
 		<sec id="sec2">
@@ -325,9 +368,12 @@
 		</sec>
 		<sec id="sec3">
 			<title>Results and Discussion</title>
-			<p>The sensor unit is fabricated using the template removal method. As shown in Fig. 
-				<xref rid="F1" ref-type="fig">1</xref>A, the upper-layer template is printed using a BMF S130 printer, and the blank template is printed using an X400 3D printer. The 1-butyl-3-methylimidazolium tetrafluoroborate ([BMIM]BF4) ionic liquid is injected into the shell from the microchannel outlet using a medical syringe. Mechanical properties are tested in Fig. 
+			<p>The sensor unit is fabricated using the template removal method. As shown in Fig.
+
+				<xref rid="F1" ref-type="fig">1</xref>A, the upper-layer template is printed using a BMF S130 printer, and the blank template is printed using an X400 3D printer. The 1-butyl-3-methylimidazolium tetrafluoroborate ([BMIM]BF4) ionic liquid is injected into the shell from the microchannel outlet using a medical syringe. Mechanical properties are tested in Fig.
+
 				<xref ref-type="supplementary-material" rid="supplementary-material-1">S1</xref>. The results show that the sensor exhibits excellent stability, thereby satisfying the practical requirements.
+
 			</p>
 			<fig position="float" id="F1" orientation="portrait">
 				<label>Fig. 1.</label>
@@ -336,12 +382,17 @@
 				</caption>
 				<graphic xlink:href="adi.0052.fig.001.jpg" position="float" orientation="portrait" />
 			</fig>
-			<p>The flexible sensor can accurately identify static and dynamic pressure at low temperatures, exhibiting excellent performance (Fig. 
-				<xref rid="F1" ref-type="fig">1</xref>B to D). Moreover, the touch performance of the sensor embedded in the bionic thumb is comparable to human skin (Fig. 
+			<p>The flexible sensor can accurately identify static and dynamic pressure at low temperatures, exhibiting excellent performance (Fig.
+
+				<xref rid="F1" ref-type="fig">1</xref>B to D). Moreover, the touch performance of the sensor embedded in the bionic thumb is comparable to human skin (Fig.
+
 				<xref rid="F1" ref-type="fig">1</xref>E).
+
 			</p>
-			<p>To determine the optimal parameters, the resistance drift of the sensor unit is first investigated. Resistance drift refers to the unwanted resistance changes that occur independent of the input quantity in response to external environmental interference; this can significantly affect the sensor’s performance. In this work, the resistance drift can be controlled by adjusting the cross-sectional area of the microchannel (Fig. 
+			<p>To determine the optimal parameters, the resistance drift of the sensor unit is first investigated. Resistance drift refers to the unwanted resistance changes that occur independent of the input quantity in response to external environmental interference; this can significantly affect the sensor’s performance. In this work, the resistance drift can be controlled by adjusting the cross-sectional area of the microchannel (Fig.
+
 				<xref rid="F2" ref-type="fig">2</xref>A and B). The minimum print limit of the Mankati S130 printer is 10 μm; however, when the channel’s height is less than 80 μm, the upper and lower surfaces of the channel may adhere to each other, resulting in channel blockage. Therefore, the minimum print size of the channel is set to 80 μm × 80 μm. As the microchannel is compressed, the resistance drift rate and critical drift time of the sensor decrease. This can be attributed to the fact that under external load pressure, a smaller cross-sectional area leads to a higher shear stress in the ionic liquid and reduces the diffusion distance, thereby reducing its resistance drift rate and critical drift time. When the cross-sectional area of the channel reaches the minimum, the impact of resistance drift can be neglected, ensuring the accuracy of the sensor.
+
 			</p>
 			<fig position="float" id="F2" orientation="portrait">
 				<label>Fig. 2.</label>
@@ -350,27 +401,43 @@
 				</caption>
 				<graphic xlink:href="adi.0052.fig.002.jpg" position="float" orientation="portrait" />
 			</fig>
-			<p>Subsequently, experiments are performed to analyze the impact of varying design parameters on the sensitivity. Sensitivity is considered as a critical parameter for the sensor, which is influenced by several factors. First, the influence of the microchannel cross-sectional size is examined, and the results are shown in Fig. 
+			<p>Subsequently, experiments are performed to analyze the impact of varying design parameters on the sensitivity. Sensitivity is considered as a critical parameter for the sensor, which is influenced by several factors. First, the influence of the microchannel cross-sectional size is examined, and the results are shown in Fig.
+
 				<xref rid="F2" ref-type="fig">2</xref>C. Under the same external load pressure, the detection sensitivity increases as the microchannel cross-sectional size decreases. This can be attributed to the deformation of the channels caused by the squeeze of Ecoflex flexible substrate. A smaller cross-sectional area leads to a lower relative deformation, resulting in a smaller change in resistance.
+
 			</p>
-			<p>Subsequently, the impact of the upper passivation layer thickness is examined (Fig. 
+			<p>Subsequently, the impact of the upper passivation layer thickness is examined (Fig.
+
 				<xref rid="F2" ref-type="fig">2</xref>D). The resistance under the same pressure increases with increasing thickness, reaching its maximum at a thickness of 2.5 mm and decreasing thereafter. However, further analysis of the second half of the curve indicates that a 2.5-mm-thick unit only has a detection limit of 50 Pa, whereas a 1.0-mm-thick unit can reach 0.5 Pa. Therefore, the sensing unit with a passivation layer thickness of 1.0 mm gives the best performance.
+
 			</p>
-			<p>Finally, the impact of different circuit complexities are explored (Fig. 
+			<p>Finally, the impact of different circuit complexities are explored (Fig.
+
 				<xref rid="F2" ref-type="fig">2</xref>E and F). As the circuit becomes more complex, the resistance change under the same pressure rises, and the slope of the linear fit curve increases from 5.51 × 10
+
 				<sup>−1</sup> to 7.54 × 10
+
 				<sup>−1</sup>, thus indicating improved sensitivity.
+
 			</p>
 			<p>Based on the test results, the optimal sensing unit adopts a cross-sectional size of 80 μm × 80 μm, a 1.00-mm passivation layer thickness, and a design with 5 channels. The detection limit at 30 °C is 0.5 Pa, with a detection range of 98 to 9,800 Pa, and a detection sensitivity of up to 2.0 × 10
+
 				<sup>5</sup> Ω/kPa.
+
 			</p>
-			<p>The sensor designed for use in electronic skin should fit irregular curved surfaces. To evaluate the performance of the proposed sensor under such conditions, 4 curved surface models with different bending radii ranging from ∞ to 6 mm are fabricated (Fig. 
-				<xref rid="F2" ref-type="fig">2</xref>G). The sensitivity test results are shown in Fig. 
+			<p>The sensor designed for use in electronic skin should fit irregular curved surfaces. To evaluate the performance of the proposed sensor under such conditions, 4 curved surface models with different bending radii ranging from ∞ to 6 mm are fabricated (Fig.
+
+				<xref rid="F2" ref-type="fig">2</xref>G). The sensitivity test results are shown in Fig.
+
 				<xref rid="F2" ref-type="fig">2</xref>H and I. The resistance response curve indicates consistent behavior, and the fitting curve exhibits a linear relationship. Therefore, the sensing performance of the ion liquid sensor fabricated in this study can maintain its functionality under different curved surface environments, thus satisfying the requirements for practical application.
+
 			</p>
-			<p>Before the integration, experiments are conducted to assess the units’ performance at varying temperatures to ensure the proposed sensor’s functionality in low-temperature environments. First, the impact of temperature on sensitivity is evaluated. As depicted in Fig. 
-				<xref rid="F3" ref-type="fig">3</xref>A and B, the sensing unit exhibits a performance at par with that of human skin at a near-room temperature of 30 °C. As the temperature decreases to −50 °C, the resistance change gradually increases, and the slope of the fitting curve increases from 0.754 to 1.024, indicating a higher sensitivity at low temperatures. The resistance response time at different temperatures is presented in Fig. 
+			<p>Before the integration, experiments are conducted to assess the units’ performance at varying temperatures to ensure the proposed sensor’s functionality in low-temperature environments. First, the impact of temperature on sensitivity is evaluated. As depicted in Fig.
+
+				<xref rid="F3" ref-type="fig">3</xref>A and B, the sensing unit exhibits a performance at par with that of human skin at a near-room temperature of 30 °C. As the temperature decreases to −50 °C, the resistance change gradually increases, and the slope of the fitting curve increases from 0.754 to 1.024, indicating a higher sensitivity at low temperatures. The resistance response time at different temperatures is presented in Fig.
+
 				<xref rid="F3" ref-type="fig">3</xref>C and D. The sensor’s response time to a 1-g weight is 0.125 s at 30 °C; however, it gradually increases with decreasing temperature. However, it still meets the requirements in low-temperature environments.
+
 			</p>
 			<fig position="float" id="F3" orientation="portrait">
 				<label>Fig. 3.</label>
@@ -379,14 +446,21 @@
 				</caption>
 				<graphic xlink:href="adi.0052.fig.003.jpg" position="float" orientation="portrait" />
 			</fig>
-			<p>Further, the relationship between temperature and the low-frequency response is investigated to ensure its performance in real-time detection and diagnosis of physiological signals of livings in harsh environments (Fig. 
-				<xref rid="F3" ref-type="fig">3</xref>E). The results show that the sensing unit can accurately detect the applied sinusoidal vibration signal with almost no distortion under various temperatures and that its resistance change increases at lower temperatures. This indicates that the sensing unit can effectively detect deformation of vibration signals of different frequencies in varying environments; thereby exhibiting superior detection performance at low temperatures. As described in Fig. 
+			<p>Further, the relationship between temperature and the low-frequency response is investigated to ensure its performance in real-time detection and diagnosis of physiological signals of livings in harsh environments (Fig.
+
+				<xref rid="F3" ref-type="fig">3</xref>E). The results show that the sensing unit can accurately detect the applied sinusoidal vibration signal with almost no distortion under various temperatures and that its resistance change increases at lower temperatures. This indicates that the sensing unit can effectively detect deformation of vibration signals of different frequencies in varying environments; thereby exhibiting superior detection performance at low temperatures. As described in Fig.
+
 				<xref ref-type="supplementary-material" rid="supplementary-material-1">S2</xref>, tests are conducted on dynamic pressure loads of triangular waveforms with the same frequency, successfully differentiating between different waveform loads.
+
 			</p>
-			<p>Subsequently, the optimal units are integrated into a 3 × 3 array. The pressure sensor comprising 9 sensing units demonstrates remarkable detection ability for static multitouch at low temperatures (Fig. 
+			<p>Subsequently, the optimal units are integrated into a 3 × 3 array. The pressure sensor comprising 9 sensing units demonstrates remarkable detection ability for static multitouch at low temperatures (Fig.
+
 				<xref rid="F4" ref-type="fig">4</xref>A to F). Three-point touch, 5-point touch, and 9-point touch are simulated using 9 different weights at an environmental temperature of −50 °C. The sensing units can respond accurately to touch, and a relatively strong linear relationship (
+
 				<italic toggle="yes">y</italic> = 0.06
+
 				<italic toggle="yes">x</italic>) exists between the resistance increment and the loading weight, enabling the direct conversion of resistance increment into weight load on the unit. Therefore, the unit has great perception ability for static multitouch.
+
 			</p>
 			<fig position="float" id="F4" orientation="portrait">
 				<label>Fig. 4.</label>
@@ -395,10 +469,14 @@
 				</caption>
 				<graphic xlink:href="adi.0052.fig.004.jpg" position="float" orientation="portrait" />
 			</fig>
-			<p>Furthermore, the sensor exhibits proficient detection capabilities during dynamic sliding. The results of the sliding velocity are shown in Fig. 
-				<xref rid="F4" ref-type="fig">4</xref>G and H. The prepared sensing unit is around 4 mm × 4 mm, and the spacing between adjacent units is 
-				<italic toggle="yes">d</italic> = 1.4 mm; therefore, the distance between the center points of adjacent units is 
-				<italic toggle="yes">d</italic> = 5.4 mm. Under an environment of −50 °C, a metal ball weighing 19.20 g is used to roll along the first row of 3 sensing units. When the sliding load is applied, a peak appears and is recorded. The average time interval between adjacent peaks is calculated as 
+			<p>Furthermore, the sensor exhibits proficient detection capabilities during dynamic sliding. The results of the sliding velocity are shown in Fig.
+
+				<xref rid="F4" ref-type="fig">4</xref>G and H. The prepared sensing unit is around 4 mm × 4 mm, and the spacing between adjacent units is
+
+				<italic toggle="yes">d</italic> = 1.4 mm; therefore, the distance between the center points of adjacent units is
+
+				<italic toggle="yes">d</italic> = 5.4 mm. Under an environment of −50 °C, a metal ball weighing 19.20 g is used to roll along the first row of 3 sensing units. When the sliding load is applied, a peak appears and is recorded. The average time interval between adjacent peaks is calculated as
+
 				<inline-formula>
 					<mml:math display="inline" overflow="scroll">
 						<mml:msub>
@@ -421,7 +499,8 @@
 							<mml:mn>2</mml:mn>
 						</mml:mfrac>
 					</mml:math>
-				</inline-formula>s, and the velocity is calculated as 
+				</inline-formula>s, and the velocity is calculated as
+
 				<inline-formula>
 					<mml:math display="inline" overflow="scroll">
 						<mml:msub>
@@ -456,7 +535,8 @@
 							</mml:mrow>
 						</mml:mfrac>
 					</mml:math>
-				</inline-formula> cm/s. Similarly, 
+				</inline-formula> cm/s. Similarly,
+
 				<inline-formula>
 					<mml:math display="inline" overflow="scroll">
 						<mml:msub>
@@ -479,7 +559,8 @@
 							<mml:mn>2</mml:mn>
 						</mml:mfrac>
 					</mml:math>
-				</inline-formula>s, and 
+				</inline-formula>s, and
+
 				<inline-formula>
 					<mml:math display="inline" overflow="scroll">
 						<mml:msub>
@@ -514,7 +595,8 @@
 							</mml:mrow>
 						</mml:mfrac>
 					</mml:math>
-				</inline-formula> cm/s. Thus, the average velocity is obtained as 
+				</inline-formula> cm/s. Thus, the average velocity is obtained as
+
 				<inline-formula>
 					<mml:math display="inline" overflow="scroll">
 						<mml:mi>v</mml:mi>
@@ -535,10 +617,13 @@
 						</mml:mfrac>
 					</mml:math>
 				</inline-formula> cm/s. The proposed sensor can effectively detect a rolling speed of 0.31 to 4.4 cm/s, and the average resistance value corresponding to different rolling speeds can be obtained; therefore, the equivalent load during rolling can be determined.
+
 			</p>
 			<p>Meanwhile, the calculation reveals that the accuracy of pattern recognition is closely tied to the response time. A smaller response time ensures that the resistance reaches its peak before the ball moves through, thereby enhancing accuracy. In our work, we demonstrate that response time decreases when the temperature gets higher. Therefore, speed recognition ranging from 0.31 to 4.42 cm/s at −50 °C is only the lowest detection range. Our device is able to recognize wider speed range when temperature rises.</p>
-			<p>Subsequently, sliding trajectory experiments are conducted at −50 °C. A weight of 10 g is used to slide along “□” and “Z” shapes on the surface. The response results show that each sensing unit can respond in sequence and successfully present the preset trajectory. Moreover, the applied pressure can be evaluated using the reference value. In addition, 3 identical iron rods are used for 3-point sliding detection. The sensing units 4, 5, and 6 are subjected to pressure of approximately 26 kPa during sliding, and the pressure on both sides is relatively small. The sensor array accurately responds to multipoint sliding and has good response capability for both static touch and dynamic sliding at low temperatures. Therefore, it can provide precise pressure sensing in low-temperature environments. The detailed results of the experiments are presented in Fig. 
+			<p>Subsequently, sliding trajectory experiments are conducted at −50 °C. A weight of 10 g is used to slide along “□” and “Z” shapes on the surface. The response results show that each sensing unit can respond in sequence and successfully present the preset trajectory. Moreover, the applied pressure can be evaluated using the reference value. In addition, 3 identical iron rods are used for 3-point sliding detection. The sensing units 4, 5, and 6 are subjected to pressure of approximately 26 kPa during sliding, and the pressure on both sides is relatively small. The sensor array accurately responds to multipoint sliding and has good response capability for both static touch and dynamic sliding at low temperatures. Therefore, it can provide precise pressure sensing in low-temperature environments. The detailed results of the experiments are presented in Fig.
+
 				<xref rid="F5" ref-type="fig">5</xref>A to C.
+
 			</p>
 			<fig position="float" id="F5" orientation="portrait">
 				<label>Fig. 5.</label>
@@ -547,20 +632,30 @@
 				</caption>
 				<graphic xlink:href="adi.0052.fig.005.jpg" position="float" orientation="portrait" />
 			</fig>
-			<p>Further, a bionic thumb model is fabricated with an embedded 3 × 3 array of sensing units on its surface based on Ecoflex. The 3-point touch and dynamic sliding experiments are conducted at −50 °C, and the results are presented in Fig. 
-				<xref rid="F6" ref-type="fig">6</xref>A to L and Tables 
-				<xref rid="T1" ref-type="table">1</xref> and 
-				<xref rid="T2" ref-type="table">2</xref>. In the static touch test, the maximum pressure is observed on sensing unit No.4 at approximately 19.30 kPa, and the minimum pressure is observed on sensing unit No.9 at approximately 17.40 kPa. In the sliding experiment, the sensing array displays clear and accurate detection of the preset “1”, “2”, “3”, “H”, “I”, and “T” sliding trajectories, providing information on the applied pressure. Thus, the proposed cryogenic sensor can respond to the position and pressure of both static touch and dynamic sliding on curved surfaces in low-temperature environments; furthermore, it outperforms other sensors of the same type (Fig. 
+			<p>Further, a bionic thumb model is fabricated with an embedded 3 × 3 array of sensing units on its surface based on Ecoflex. The 3-point touch and dynamic sliding experiments are conducted at −50 °C, and the results are presented in Fig.
+
+				<xref rid="F6" ref-type="fig">6</xref>A to L and Tables
+
+				<xref rid="T1" ref-type="table">1</xref> and
+
+				<xref rid="T2" ref-type="table">2</xref>. In the static touch test, the maximum pressure is observed on sensing unit No.4 at approximately 19.30 kPa, and the minimum pressure is observed on sensing unit No.9 at approximately 17.40 kPa. In the sliding experiment, the sensing array displays clear and accurate detection of the preset “1”, “2”, “3”, “H”, “I”, and “T” sliding trajectories, providing information on the applied pressure. Thus, the proposed cryogenic sensor can respond to the position and pressure of both static touch and dynamic sliding on curved surfaces in low-temperature environments; furthermore, it outperforms other sensors of the same type (Fig.
+
 				<xref rid="F6" ref-type="fig">6</xref>M). These results highlight the potential of the proposed sensor for diverse applications and provide new ideas for the application of electronic skin in low-temperature environments.
+
 			</p>
 			<fig position="float" id="F6" orientation="portrait">
 				<label>Fig. 6.</label>
 				<caption>
 					<p>Response of the bionic thumb model and performance comparison. (A to D) Three-point static touch. (E to H) “1”, “2” “3” - track slide test. (I to L) “H”, “I”, “T” - track slide test. (M) Performance comparison [
+
 						<xref ref-type="bibr" rid="B1">1</xref>,
+
 						<xref ref-type="bibr" rid="B5">5</xref>–
+
 						<xref ref-type="bibr" rid="B7">7</xref>,
+
 						<xref ref-type="bibr" rid="B38">38</xref>].
+
 					</p>
 				</caption>
 				<graphic xlink:href="adi.0052.fig.006.jpg" position="float" orientation="portrait" />
@@ -707,7 +802,9 @@
 		<sec id="sec4">
 			<title>Conclusion</title>
 			<p>This study fabricated a cryogenic electronic skin based on ionic liquid using the template removal method. The skin can operate over a wide temperature range (−50 to 30 °C) with a low detection limit (0.5 Pa) and high sensitivity (2.0 × 10
+
 				<sup>5</sup> Ω/kPa), enabling the detection of deformations at different frequencies (0.2 to 2 Hz) at various temperatures. The skin exhibits excellent performance in multipoint touch sensing and dynamic slide recognition, can accurately identify the location and magnitude of loaded pressure, and can sense dynamic sliding speeds ranging from 0.31 to 4.42 cm/s. This study provides a new approach for manufacturing cryogenic flexible electronics for sensing under low-temperature environments, thus broadening the application of flexible electronic sensors in low and low-temperature environments, such as the human–machine interface of space suits.
+
 			</p>
 		</sec>
 	</body>
@@ -716,12 +813,15 @@
 			<title>Acknowledgments</title>
 			<p>
 				<bold>Funding:</bold> This research was funded by the Shenzhen Science and Technology Planning Project (Grant Number ZDSYS20190902093220279) and the Shenzhen Peacock Group (Grant Numbers KQTD20170809110344233 and KQTD20200820113045083).
+
 			</p>
 			<p content-type="COI-statement">
 				<bold>Author contributions:</bold> S.M.: Conceptualization, investigation, data curation, visualization, methodology, funding acquisition, and writing—original draft. H.Y.: Investigation, data curation, formal analysis, validation, visualization, methodology, and writing—original draft, review and editing. K.G.: Investigation, data curation, and methodology. L.Z.: Investigation, data curation, and methodology. Y.G.: Investigation, data curation, formal analysis, and methodology. Z.L.: Formal analysis and visualization. H.J.: Resources, supervision, and validation. M.L.: Resources, supervision, and validation. H.F.: Conceptualization, methodology, funding acquisition, project administration, resources, supervision, and validation.
+
 			</p>
 			<p content-type="COI-statement">
 				<bold> Competing interests:</bold> There are no conflicts to declare.
+
 			</p>
 		</ack>
 		<sec sec-type="data-availability">
@@ -748,44 +848,59 @@
 						<string-name name-style="western">
 							<surname>Zhan</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Cao</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Gao</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Meng</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Ji</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wei</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Feng</surname>
 							<given-names>H</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Additively fabricated electronic skin with high performance in dynamic sensing as human skin</article-title>. 
-					<source>ACS Appl Electron Mater</source>. 
+
+					<article-title>Additively fabricated electronic skin with high performance in dynamic sensing as human skin</article-title>.
+
+					<source>ACS Appl Electron Mater</source>.
+
 					<year>2023</year>;
+
 					<volume>5</volume>(
+
 					<issue>4</issue>):
+
 					<fpage>2017</fpage>–
+
 					<lpage>2025</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B2">
@@ -795,50 +910,65 @@
 						<string-name name-style="western">
 							<surname>Feng</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Feng</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhan</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Meng</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Ji</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>He</surname>
 							<given-names>P</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhao</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<etal>et al.</etal>
 					</person-group>
-					<article-title>Additively manufactured flexible electronics with Ultrabroad range and high sensitivity for multiple physiological Signals’ detection</article-title>. 
-					<source>Research</source>. 
+					<article-title>Additively manufactured flexible electronics with Ultrabroad range and high sensitivity for multiple physiological Signals’ detection</article-title>.
+
+					<source>Research</source>.
+
 					<year>2022</year>;
+
 					<volume>2022</volume>:
+
 					<fpage>9871489</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B3">
@@ -848,28 +978,39 @@
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xia</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Cai</surname>
 							<given-names>K</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>A review of electronic skin: Soft electronics and sensors for human health</article-title>. 
-					<source>J Mater Chem B</source>. 
+
+					<article-title>A review of electronic skin: Soft electronics and sensors for human health</article-title>.
+
+					<source>J Mater Chem B</source>.
+
 					<year>2020</year>;
+
 					<volume>8</volume>(
+
 					<issue>5</issue>):
+
 					<fpage>852</fpage>–
+
 					<lpage>862</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B4">
@@ -879,40 +1020,54 @@
 						<string-name name-style="western">
 							<surname>Chen</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Lin</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Mo</surname>
 							<given-names>D</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xia</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Gong</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Lian</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Luo</surname>
 							<given-names>Y</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>High-sensitivity, fast-response flexible pressure sensor for electronic skin using direct writing printing</article-title>. 
-					<source>RSC Adv</source>. 
+
+					<article-title>High-sensitivity, fast-response flexible pressure sensor for electronic skin using direct writing printing</article-title>.
+
+					<source>RSC Adv</source>.
+
 					<year>2020</year>;
+
 					<volume>10</volume>(
+
 					<issue>44</issue>):
+
 					<fpage>26188</fpage>–
+
 					<lpage>26196</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B5">
@@ -922,43 +1077,56 @@
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Tebyetekerwa</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhu</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xu</surname>
 							<given-names>J</given-names>
 						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>C</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>T</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Extremely stretchable and healable ionic conductive hydrogels fabricated by surface competitive coordination for human-motion detection</article-title>. 
-					<source>Chem Eng J</source>. 
+
+					<article-title>Extremely stretchable and healable ionic conductive hydrogels fabricated by surface competitive coordination for human-motion detection</article-title>.
+
+					<source>Chem Eng J</source>.
+
 					<year>2021</year>;
+
 					<volume>420</volume>:
 
+
 					<elocation-id>Article 127637</elocation-id>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B6">
@@ -968,44 +1136,59 @@
 						<string-name name-style="western">
 							<surname>Duan</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Jiang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Huang</surname>
 							<given-names>Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yuan</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhao</surname>
 							<given-names>Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Tai</surname>
 							<given-names>H</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>A do-it-yourself approach to achieving a flexible pressure sensor using daily use materials</article-title>. 
-					<source>J Mater Chem C</source>. 
+
+					<article-title>A do-it-yourself approach to achieving a flexible pressure sensor using daily use materials</article-title>.
+
+					<source>J Mater Chem C</source>.
+
 					<year>2021</year>;
+
 					<volume>9</volume>(
+
 					<issue>39</issue>):
+
 					<fpage>13659</fpage>–
+
 					<lpage>13667</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B7">
@@ -1015,51 +1198,67 @@
 						<string-name name-style="western">
 							<surname>Yang</surname>
 							<given-names>G</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Tian</surname>
 							<given-names>M-Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Huang</surname>
 							<given-names>P</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Fu</surname>
 							<given-names>Y-F</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>Y-Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Fu</surname>
 							<given-names>Y-Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>X-Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Hu</surname>
 							<given-names>N</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Fu</surname>
 							<given-names>S-Y</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Flexible pressure sensor with a tunable pressure-detecting range for various human motions</article-title>. 
-					<source>Carbon</source>. 
+
+					<article-title>Flexible pressure sensor with a tunable pressure-detecting range for various human motions</article-title>.
+
+					<source>Carbon</source>.
+
 					<year>2021</year>;
+
 					<volume>173</volume>:
+
 					<fpage>736</fpage>–
+
 					<lpage>743</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B8">
@@ -1069,40 +1268,54 @@
 						<string-name name-style="western">
 							<surname>Ge</surname>
 							<given-names>G</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Cai</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Dong</surname>
 							<given-names>Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Shao</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Huang</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Dong</surname>
 							<given-names>X</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>A flexible pressure sensor based on rGO/polyaniline wrapped sponge with tunable sensitivity for human motion detection</article-title>. 
-					<source>Nanoscale</source>. 
+
+					<article-title>A flexible pressure sensor based on rGO/polyaniline wrapped sponge with tunable sensitivity for human motion detection</article-title>.
+
+					<source>Nanoscale</source>.
+
 					<year>2018</year>;
+
 					<volume>10</volume>(
+
 					<issue>21</issue>):
+
 					<fpage>10033</fpage>–
+
 					<lpage>10040</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B9">
@@ -1112,48 +1325,64 @@
 						<string-name name-style="western">
 							<surname>Ge</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Sun</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>FR</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Shi</surname>
 							<given-names>LA</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhao</surname>
 							<given-names>HY</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhu</surname>
 							<given-names>HW</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Jiang</surname>
 							<given-names>HL</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yu</surname>
 							<given-names>SH</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>A stretchable electronic fabric artificial skin with pressure-, lateral strain-, and flexion-sensitive properties</article-title>. 
-					<source>Adv Mater</source>. 
+
+					<article-title>A stretchable electronic fabric artificial skin with pressure-, lateral strain-, and flexion-sensitive properties</article-title>.
+
+					<source>Adv Mater</source>.
+
 					<year>2016</year>;
+
 					<volume>28</volume>(
+
 					<issue>4</issue>):
+
 					<fpage>722</fpage>–
+
 					<lpage>728</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B10">
@@ -1163,43 +1392,57 @@
 						<string-name name-style="western">
 							<surname>Han</surname>
 							<given-names>ST</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Peng</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Sun</surname>
 							<given-names>Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Venkatesh</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Chung</surname>
 							<given-names>KS</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Lau</surname>
 							<given-names>SC</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhou</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Roy</surname>
 							<given-names>VAL</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>An overview of the development of flexible sensors</article-title>. 
-					<source>Adv Mater</source>. 
+
+					<article-title>An overview of the development of flexible sensors</article-title>.
+
+					<source>Adv Mater</source>.
+
 					<year>2017</year>;
+
 					<volume>29</volume>(
+
 					<issue>33</issue>):
+
 					<fpage>1700375</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B11">
@@ -1209,48 +1452,64 @@
 						<string-name name-style="western">
 							<surname>Mannsfeld</surname>
 							<given-names>SCB</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Tee</surname>
 							<given-names>BC-K</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Stoltenberg</surname>
 							<given-names>RM</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Chen</surname>
 							<given-names>CVH-H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Barman</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Muir</surname>
 							<given-names>BVO</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Sokolov</surname>
 							<given-names>AN</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Reese</surname>
 							<given-names>C</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Bao</surname>
 							<given-names>Z</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Highly sensitive flexible pressure sensors with microstructured rubber dielectric layers</article-title>. 
-					<source>Nat Mater</source>. 
+
+					<article-title>Highly sensitive flexible pressure sensors with microstructured rubber dielectric layers</article-title>.
+
+					<source>Nat Mater</source>.
+
 					<year>2010</year>;
+
 					<volume>9</volume>(
+
 					<issue>10</issue>):
+
 					<fpage>859</fpage>–
+
 					<lpage>864</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B12">
@@ -1260,24 +1519,34 @@
 						<string-name name-style="western">
 							<surname>Rogers</surname>
 							<given-names>JA</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Someya</surname>
 							<given-names>T</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Huang</surname>
 							<given-names>Y</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Materials and mechanics for stretchable electronics</article-title>. 
-					<source>Science</source>. 
+
+					<article-title>Materials and mechanics for stretchable electronics</article-title>.
+
+					<source>Science</source>.
+
 					<year>2010</year>;
+
 					<volume>327</volume>(
+
 					<issue>5973</issue>):
+
 					<fpage>1603</fpage>–
+
 					<lpage>1607</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B13">
@@ -1287,27 +1556,37 @@
 						<string-name name-style="western">
 							<surname>Xu</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zong</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Ma</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>L</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>A multifunctional skin-like sensor based on liquid metal activated gelatin organohydrogel</article-title>. 
-					<source>Adv Mater Interfaces</source>. 
+
+					<article-title>A multifunctional skin-like sensor based on liquid metal activated gelatin organohydrogel</article-title>.
+
+					<source>Adv Mater Interfaces</source>.
+
 					<year>2022</year>;
+
 					<volume>9</volume>(
+
 					<issue>30</issue>):
+
 					<fpage>2201212</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B14">
@@ -1317,35 +1596,47 @@
 						<string-name name-style="western">
 							<surname>Gao</surname>
 							<given-names>Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xie</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>L</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Microchannel structural design for a room-temperature liquid metal based super-stretchable sensor</article-title>. 
-					<source>Sci Rep</source>. 
+
+					<article-title>Microchannel structural design for a room-temperature liquid metal based super-stretchable sensor</article-title>.
+
+					<source>Sci Rep</source>.
+
 					<year>2019</year>;
+
 					<volume>9</volume>(
+
 					<issue>1</issue>):
+
 					<fpage>5908</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B15">
@@ -1355,43 +1646,57 @@
 						<string-name name-style="western">
 							<surname>Kim</surname>
 							<given-names>K</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Choi</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Jeong</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Cho</surname>
 							<given-names>I</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Kim</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Kim</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Oh</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Park</surname>
 							<given-names>I</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Highly sensitive and wearable liquid metal-based pressure sensor for health monitoring applications: Integration of a 3D-printed microbump array with the microchannel</article-title>. 
-					<source>Adv Healthc Mater</source>. 
+
+					<article-title>Highly sensitive and wearable liquid metal-based pressure sensor for health monitoring applications: Integration of a 3D-printed microbump array with the microchannel</article-title>.
+
+					<source>Adv Healthc Mater</source>.
+
 					<year>2019</year>;
+
 					<volume>8</volume>(
+
 					<issue>22</issue>):
+
 					<fpage>1900978</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B16">
@@ -1401,51 +1706,66 @@
 						<string-name name-style="western">
 							<surname>Zhou</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhao</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>P</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Jiang</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Song</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Ding</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>G</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Sun</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<etal>et al.</etal>
 					</person-group>
-					<article-title>Gel-based strain/pressure sensors for underwater sensing: Sensing mechanisms, design strategies and applications</article-title>. 
-					<source>Compos Part B</source>. 
+					<article-title>Gel-based strain/pressure sensors for underwater sensing: Sensing mechanisms, design strategies and applications</article-title>.
+
+					<source>Compos Part B</source>.
+
 					<year>2023</year>;
+
 					<volume>255</volume>:
 
+
 					<elocation-id>Article 110631</elocation-id>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B17">
@@ -1455,39 +1775,52 @@
 						<string-name name-style="western">
 							<surname>Jing</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Mi</surname>
 							<given-names>HY</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>YJ</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Feng</surname>
 							<given-names>PY</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Tan</surname>
 							<given-names>YM</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Turng</surname>
 							<given-names>LS</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Highly transparent, stretchable, and rapid self-healing polyvinyl alcohol/cellulose nanofibril hydrogel sensors for sensitive pressure sensing and human motion detection</article-title>. 
-					<source>Sensors Actuators B Chem</source>. 
+
+					<article-title>Highly transparent, stretchable, and rapid self-healing polyvinyl alcohol/cellulose nanofibril hydrogel sensors for sensitive pressure sensing and human motion detection</article-title>.
+
+					<source>Sensors Actuators B Chem</source>.
+
 					<year>2019</year>;
+
 					<volume>295</volume>:
+
 					<fpage>159</fpage>–
+
 					<lpage>167</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B18">
@@ -1497,28 +1830,39 @@
 						<string-name name-style="western">
 							<surname>Gao</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Gu</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Jia</surname>
 							<given-names>F</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Gao</surname>
 							<given-names>G</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>A skin-matchable, recyclable and biofriendly strain sensor based on a hydrolyzed keratin-containing hydrogel</article-title>. 
-					<source>J Mater Chem A</source>. 
+
+					<article-title>A skin-matchable, recyclable and biofriendly strain sensor based on a hydrolyzed keratin-containing hydrogel</article-title>.
+
+					<source>J Mater Chem A</source>.
+
 					<year>2020</year>;
+
 					<volume>8</volume>(
+
 					<issue>45</issue>):
+
 					<fpage>24175</fpage>–
+
 					<lpage>24183</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B19">
@@ -1528,45 +1872,60 @@
 						<string-name name-style="western">
 							<surname>Daeneke</surname>
 							<given-names>T</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Khoshmanesh</surname>
 							<given-names>K</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Mahmood</surname>
 							<given-names>N</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<prefix>de</prefix>
 							<surname>Castro</surname>
 							<given-names>IA</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Esrafilzadeh</surname>
 							<given-names>D</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Barrow</surname>
 							<given-names>SJ</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Dickey</surname>
 							<given-names>MD</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Kalantar-zadeh</surname>
 							<given-names>K</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Liquid metals: Fundamentals and applications in chemistry</article-title>. 
-					<source>Chem Soc Rev</source>. 
+
+					<article-title>Liquid metals: Fundamentals and applications in chemistry</article-title>.
+
+					<source>Chem Soc Rev</source>.
+
 					<year>2018</year>;
+
 					<volume>47</volume>(
+
 					<issue>11</issue>):
+
 					<fpage>4073</fpage>–
+
 					<lpage>4111</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B20">
@@ -1576,20 +1935,28 @@
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>P</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>J</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Self-driven electronic cooling based on thermosyphon effect of room temperature liquid metal</article-title>. 
-					<source>J Electron Packag</source>. 
+
+					<article-title>Self-driven electronic cooling based on thermosyphon effect of room temperature liquid metal</article-title>.
+
+					<source>J Electron Packag</source>.
+
 					<year>2011</year>;
+
 					<volume>133</volume>(
+
 					<issue>4</issue>):
 
+
 					<elocation-id>Article 041009</elocation-id>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B21">
@@ -1599,23 +1966,32 @@
 						<string-name name-style="western">
 							<surname>Lin</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Genzer</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Dickey</surname>
 							<given-names>MD</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Attributes, fabrication, and applications of gallium-based liquid metal particles</article-title>. 
-					<source>Adv Sci</source>. 
+
+					<article-title>Attributes, fabrication, and applications of gallium-based liquid metal particles</article-title>.
+
+					<source>Adv Sci</source>.
+
 					<year>2020</year>;
+
 					<volume>7</volume>(
+
 					<issue>12</issue>):
+
 					<fpage>2000192</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B22">
@@ -1625,51 +2001,67 @@
 						<string-name name-style="western">
 							<surname>Xiang</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>D</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Jiang</surname>
 							<given-names>C</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhou</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Ling</surname>
 							<given-names>D</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zheng</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Sun</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Mao</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Shan</surname>
 							<given-names>C</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Liquid-metal-based dynamic thermoregulating and self-powered electronic skin</article-title>. 
-					<source>Adv Funct Mater</source>. 
+
+					<article-title>Liquid-metal-based dynamic thermoregulating and self-powered electronic skin</article-title>.
+
+					<source>Adv Funct Mater</source>.
+
 					<year>2021</year>;
+
 					<volume>31</volume>(
+
 					<issue>26</issue>):
+
 					<fpage>2100940</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B23">
@@ -1679,35 +2071,47 @@
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>C</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Huang</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Guo</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wu</surname>
 							<given-names>H</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>A stretchable dual-mode sensor array for multifunctional robotic electronic skin</article-title>. 
-					<source>Nano Energy</source>. 
+
+					<article-title>A stretchable dual-mode sensor array for multifunctional robotic electronic skin</article-title>.
+
+					<source>Nano Energy</source>.
+
 					<year>2019</year>;
+
 					<volume>62</volume>:
+
 					<fpage>164</fpage>–
+
 					<lpage>170</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B24">
@@ -1717,20 +2121,29 @@
 						<string-name name-style="western">
 							<surname>Jung</surname>
 							<given-names>T</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yang</surname>
 							<given-names>S</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Highly stable liquid metal-based pressure sensor integrated with a Microfluidic Channel</article-title>. 
-					<source>Sensors</source>. 
+
+					<article-title>Highly stable liquid metal-based pressure sensor integrated with a Microfluidic Channel</article-title>.
+
+					<source>Sensors</source>.
+
 					<year>2015</year>;
+
 					<volume>15</volume>(
+
 					<issue>5</issue>):
+
 					<fpage>11823</fpage>–
+
 					<lpage>11835</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B25">
@@ -1740,43 +2153,56 @@
 						<string-name name-style="western">
 							<surname>Yu</surname>
 							<given-names>D</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Teng</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhou</surname>
 							<given-names>N</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Lin</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xue</surname>
 							<given-names>C</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>A low-modulus, adhesive, and highly transparent hydrogel for multi-use flexible wearable sensors</article-title>. 
-					<source>Colloids Surf A Physicochem Eng Asp</source>. 
+
+					<article-title>A low-modulus, adhesive, and highly transparent hydrogel for multi-use flexible wearable sensors</article-title>.
+
+					<source>Colloids Surf A Physicochem Eng Asp</source>.
+
 					<year>2023</year>;
+
 					<volume>659</volume>:
 
+
 					<elocation-id>Article 130752</elocation-id>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B26">
@@ -1786,44 +2212,59 @@
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yang</surname>
 							<given-names>T</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhou</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Kong</surname>
 							<given-names>T</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Soft ionic devices by perfusable all-hydrogel microfluidics</article-title>. 
-					<source>J Mater Chem C</source>. 
+
+					<article-title>Soft ionic devices by perfusable all-hydrogel microfluidics</article-title>.
+
+					<source>J Mater Chem C</source>.
+
 					<year>2020</year>;
+
 					<volume>8</volume>(
+
 					<issue>7</issue>):
+
 					<fpage>2320</fpage>–
+
 					<lpage>2325</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B27">
@@ -1833,39 +2274,52 @@
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yang</surname>
 							<given-names>T</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Qu</surname>
 							<given-names>G</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wei</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Kong</surname>
 							<given-names>T</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Ultrastretchable and wireless bioelectronics based on all-hydrogel microfluidics</article-title>. 
-					<source>Adv Mater</source>. 
+
+					<article-title>Ultrastretchable and wireless bioelectronics based on all-hydrogel microfluidics</article-title>.
+
+					<source>Adv Mater</source>.
+
 					<year>2019</year>;
+
 					<volume>31</volume>(
+
 					<issue>39</issue>):
+
 					<fpage>e1902783</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B28">
@@ -1875,52 +2329,69 @@
 						<string-name name-style="western">
 							<surname>Ni</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Lin</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Qin</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Veysset</surname>
 							<given-names>D</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Sun</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Hsieh</surname>
 							<given-names>AJ</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Radovitzky</surname>
 							<given-names>R</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Nelson</surname>
 							<given-names>KA</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhao</surname>
 							<given-names>X</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Strong fatigue-resistant nanofibrous hydrogels inspired by lobster underbelly</article-title>. 
-					<source>Matter</source>. 
+
+					<article-title>Strong fatigue-resistant nanofibrous hydrogels inspired by lobster underbelly</article-title>.
+
+					<source>Matter</source>.
+
 					<year>2021</year>;
+
 					<volume>4</volume>(
+
 					<issue>6</issue>):
+
 					<fpage>1919</fpage>–
+
 					<lpage>1934</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B29">
@@ -1930,27 +2401,37 @@
 						<string-name name-style="western">
 							<surname>Le</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Lu</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Chen</surname>
 							<given-names>T</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Recent progress in biomimetic anisotropic hydrogel actuators</article-title>. 
-					<source>Adv Sci</source>. 
+
+					<article-title>Recent progress in biomimetic anisotropic hydrogel actuators</article-title>.
+
+					<source>Adv Sci</source>.
+
 					<year>2019</year>;
+
 					<volume>6</volume>(
+
 					<issue>5</issue>):
+
 					<fpage>1801584</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B30">
@@ -1960,52 +2441,69 @@
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Mi</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhao</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Qi</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Sun</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Peng</surname>
 							<given-names>B</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xu</surname>
 							<given-names>Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Niu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhou</surname>
 							<given-names>Y</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Transparent stretchable hydrogel sensors: Materials, design and applications</article-title>. 
-					<source>J Mater Chem C</source>. 
+
+					<article-title>Transparent stretchable hydrogel sensors: Materials, design and applications</article-title>.
+
+					<source>J Mater Chem C</source>.
+
 					<year>2022</year>;
+
 					<volume>10</volume>(
+
 					<issue>37</issue>):
+
 					<fpage>13351</fpage>–
+
 					<lpage>13371</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B31">
@@ -2015,51 +2513,67 @@
 						<string-name name-style="western">
 							<surname>Hu</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Chee</surname>
 							<given-names>PL</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Sugiarto</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Shi</surname>
 							<given-names>C</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yan</surname>
 							<given-names>R</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yao</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Shi</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhi</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Kai</surname>
 							<given-names>D</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<etal>et al.</etal>
 					</person-group>
-					<article-title>Hydrogel-based flexible electronics</article-title>. 
-					<source>Adv Mater</source>. 
+					<article-title>Hydrogel-based flexible electronics</article-title>.
+
+					<source>Adv Mater</source>.
+
 					<year>2023</year>;
+
 					<volume>35</volume>(
+
 					<issue>14</issue>):
+
 					<fpage>2205326</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B32">
@@ -2069,28 +2583,39 @@
 						<string-name name-style="western">
 							<surname>Jiang</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zheng</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>X</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Two-dimensional materials: From mechanical properties to flexible mechanical sensors</article-title>. 
-					<source>InfoMat</source>. 
+
+					<article-title>Two-dimensional materials: From mechanical properties to flexible mechanical sensors</article-title>.
+
+					<source>InfoMat</source>.
+
 					<year>2020</year>;
+
 					<volume>2</volume>(
+
 					<issue>6</issue>):
+
 					<fpage>1077</fpage>–
+
 					<lpage>1094</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B33">
@@ -2100,50 +2625,65 @@
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wei</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zheng</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Luo</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Gao</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Jiang</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Song</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xu</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<etal>et al.</etal>
 					</person-group>
-					<article-title>The soft-strain effect enabled high-performance flexible pressure sensor and its application in monitoring pulse waves</article-title>. 
-					<source>Research</source>. 
+					<article-title>The soft-strain effect enabled high-performance flexible pressure sensor and its application in monitoring pulse waves</article-title>.
+
+					<source>Research</source>.
+
 					<year>2022</year>;
+
 					<volume>2022</volume>:
+
 					<fpage>0002</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B34">
@@ -2153,51 +2693,67 @@
 						<string-name name-style="western">
 							<surname>Gao</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Fan</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>Q</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Luo</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Hu</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Song</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Jiang</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Gao</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zheng</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<etal>et al.</etal>
 					</person-group>
-					<article-title>Ultra-robust and extensible fibrous mechanical sensors for wearable smart healthcare</article-title>. 
-					<source>Adv Mater</source>. 
+					<article-title>Ultra-robust and extensible fibrous mechanical sensors for wearable smart healthcare</article-title>.
+
+					<source>Adv Mater</source>.
+
 					<year>2022</year>;
+
 					<volume>34</volume>(
+
 					<issue>20</issue>):
+
 					<fpage>2107511</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B35">
@@ -2207,53 +2763,71 @@
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xu</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Gao</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Huang</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhao</surname>
 							<given-names>R</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhu</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yang</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Luo</surname>
 							<given-names>L</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Chen</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<etal>et al.</etal>
 					</person-group>
 					<article-title>Large-scale ultra-robust MoS
+
 						<sub>2</sub> patterns directly synthesized on polymer substrate for flexible sensing electronics
-					</article-title>. 
-					<source>Adv Mater</source>. 
+
+					</article-title>.
+
+					<source>Adv Mater</source>.
+
 					<year>2023</year>;
+
 					<volume>35</volume>(
+
 					<issue>8</issue>):
+
 					<fpage>2207447</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B36">
@@ -2263,36 +2837,48 @@
 						<string-name name-style="western">
 							<surname>Assael</surname>
 							<given-names>MJ</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Armyra</surname>
 							<given-names>IJ</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Brillo</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Stankus</surname>
 							<given-names>SV</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wu</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wakeham</surname>
 							<given-names>WA</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Reference data for the density and viscosity of liquid cadmium, cobalt, gallium, indium, mercury, silicon, thallium, and zinc</article-title>. 
-					<source>J Phys Chem Ref Data</source>. 
+
+					<article-title>Reference data for the density and viscosity of liquid cadmium, cobalt, gallium, indium, mercury, silicon, thallium, and zinc</article-title>.
+
+					<source>J Phys Chem Ref Data</source>.
+
 					<year>2012</year>;
+
 					<volume>41</volume>(
+
 					<issue>3</issue>):
 
+
 					<elocation-id>Article 033101</elocation-id>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B37">
@@ -2302,20 +2888,28 @@
 						<string-name name-style="western">
 							<surname>Rogers</surname>
 							<given-names>RD</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Seddon</surname>
 							<given-names>KR</given-names>
 						</string-name>
 					</person-group>.
 
+
 					<article-title>Chemistry. Ionic liquids--solvents of the future?</article-title>
-					<source>Science</source>. 
+					<source>Science</source>.
+
 					<year>2003</year>;
+
 					<volume>302</volume>(
+
 					<issue>5646</issue>):
+
 					<fpage>792</fpage>–
+
 					<lpage>793</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B38">
@@ -2325,52 +2919,69 @@
 						<string-name name-style="western">
 							<surname>Ma</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Yue</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhang</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Cheng</surname>
 							<given-names>F</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhao</surname>
 							<given-names>W</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Rao</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Luo</surname>
 							<given-names>S</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wang</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Jiang</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Liu</surname>
 							<given-names>Z</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<etal>et al.</etal>
 					</person-group>
-					<article-title>3D synergistical MXene/reduced graphene oxide aerogel for a piezoresistive sensor</article-title>. 
-					<source>ACS Nano</source>. 
+					<article-title>3D synergistical MXene/reduced graphene oxide aerogel for a piezoresistive sensor</article-title>.
+
+					<source>ACS Nano</source>.
+
 					<year>2018</year>;
+
 					<volume>12</volume>(
+
 					<issue>4</issue>):
+
 					<fpage>3209</fpage>–
+
 					<lpage>3216</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B39">
@@ -2380,22 +2991,30 @@
 						<string-name name-style="western">
 							<surname>Kaur</surname>
 							<given-names>G</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Kumar</surname>
 							<given-names>H</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Singla</surname>
 							<given-names>M</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Diverse applications of ionic liquids: A comprehensive review</article-title>. 
-					<source>J Mol Liq</source>. 
+
+					<article-title>Diverse applications of ionic liquids: A comprehensive review</article-title>.
+
+					<source>J Mol Liq</source>.
+
 					<year>2022</year>;
+
 					<volume>351</volume>:
+
 					<fpage>118556</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B40">
@@ -2405,27 +3024,37 @@
 						<string-name name-style="western">
 							<surname>Tiago</surname>
 							<given-names>GAO</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Matias</surname>
 							<given-names>IAS</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Ribeiro</surname>
 							<given-names>APC</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Martins</surname>
 							<given-names>LMDRS</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Application of ionic liquids in electrochemistry—Recent advances</article-title>. 
-					<source>Molecules</source>. 
+
+					<article-title>Application of ionic liquids in electrochemistry—Recent advances</article-title>.
+
+					<source>Molecules</source>.
+
 					<year>2020</year>;
+
 					<volume>25</volume>(
+
 					<issue>24</issue>):
+
 					<fpage>5812</fpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B41">
@@ -2435,19 +3064,26 @@
 						<string-name name-style="western">
 							<surname>Kobzar</surname>
 							<given-names>YL</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Fatyeyeva</surname>
 							<given-names>K</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Ionic liquids as green and sustainable steel corrosion inhibitors: Recent developments</article-title>. 
-					<source>Chem Eng J</source>. 
+
+					<article-title>Ionic liquids as green and sustainable steel corrosion inhibitors: Recent developments</article-title>.
+
+					<source>Chem Eng J</source>.
+
 					<year>2021</year>;
+
 					<volume>425</volume>:
 
+
 					<elocation-id>Article 131480</elocation-id>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B42">
@@ -2457,28 +3093,39 @@
 						<string-name name-style="western">
 							<surname>Valkenburg</surname>
 							<given-names>MEV</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Vaughn</surname>
 							<given-names>RL</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Williams</surname>
 							<given-names>M</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Wilkes</surname>
 							<given-names>JS</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Thermochemistry of ionic liquid heat-transfer fluids</article-title>. 
-					<source>Thermochim Acta</source>. 
+
+					<article-title>Thermochemistry of ionic liquid heat-transfer fluids</article-title>.
+
+					<source>Thermochim Acta</source>.
+
 					<year>2005</year>;
+
 					<volume>425</volume>(
+
 					<issue>1–2</issue>):
+
 					<fpage>181</fpage>–
+
 					<lpage>188</lpage>.
+
 				</mixed-citation>
 			</ref>
 			<ref id="B43">
@@ -2488,44 +3135,59 @@
 						<string-name name-style="western">
 							<surname>Jiang</surname>
 							<given-names>N</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Hu</surname>
 							<given-names>D</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Xu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Chen</surname>
 							<given-names>J</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Chang</surname>
 							<given-names>X</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Zhu</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Li</surname>
 							<given-names>Y</given-names>
-						</string-name>, 
+						</string-name>,
+
 						<string-name name-style="western">
 							<surname>Guo</surname>
 							<given-names>Z</given-names>
 						</string-name>
 					</person-group>.
 
-					<article-title>Ionic liquid enabled flexible transparent polydimethylsiloxane sensors for both strain and temperature sensing</article-title>. 
-					<source>Adv Compos Hybrid Mater</source>. 
+
+					<article-title>Ionic liquid enabled flexible transparent polydimethylsiloxane sensors for both strain and temperature sensing</article-title>.
+
+					<source>Adv Compos Hybrid Mater</source>.
+
 					<year>2021</year>;
+
 					<volume>4</volume>(
+
 					<issue>3</issue>):
+
 					<fpage>574</fpage>–
+
 					<lpage>583</lpage>.
+
 				</mixed-citation>
 			</ref>
 		</ref-list>
