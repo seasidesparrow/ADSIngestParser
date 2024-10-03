@@ -94,6 +94,7 @@ class TestJATS(unittest.TestCase):
             "jats_nature_article_pubdatetype_1",
             "jats_springer_article_pubdatetype_2",
             "jats_springer_affil_punctuation_1",
+            "jats_ees_affil_punctuation_2",
         ]
 
         for f in filenames:
