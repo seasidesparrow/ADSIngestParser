@@ -93,6 +93,9 @@ class TestJATS(unittest.TestCase):
             "jats_no_issue_pagecount",
             "jats_nature_article_pubdatetype_1",
             "jats_springer_article_pubdatetype_2",
+            "jats_versita_index_tags_1",
+            "jats_versita_index_tags_2",
+            "jats_versita_index_tags_3",
         ]
 
         for f in filenames:
