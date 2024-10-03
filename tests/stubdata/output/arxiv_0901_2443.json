@@ -86,6 +86,10 @@
   },
   "publisherIDs": [
     {
+      "Identifier": "oai:arXiv.org:0901.2443",
+      "attribute": "urn"
+    },
+    {
       "Identifier": "http://arxiv.org/abs/0901.2443",
       "attribute": "publisher-id"
     }
