@@ -53,6 +53,12 @@ class DublinCoreParser(BaseBeautifulSoupParser):
         self.base_metadata["ids"] = {}
         self.base_metadata["ids"]["pub-id"] = []
 
+        if self.input_header.find("identifier"):
+            for dc_id in self.input_header.find_all("identifier"):
+                self.base_metadata["ids"]["pub-id"].append(
+                    {"attribute": "urn", "Identifier": dc_id.get_text()}
+                )
+
         if self.input_metadata.find("dc:identifier"):
             for dc_id in self.input_metadata.find_all("dc:identifier"):
                 self.base_metadata["ids"]["pub-id"].append(

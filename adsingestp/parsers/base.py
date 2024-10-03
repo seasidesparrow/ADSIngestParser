@@ -554,10 +554,24 @@ class BaseBeautifulSoupParser(IngestBase):
         # note that parser=lxml is recommended here - if the more stringent lxml-xml is used,
         # the output is slightly different and the code will need to be modified
         newr = self.bsstrtodict(str(r), "lxml")
+
+        # list of all tags in the object
         if newr.find_all():
             tag_list = list(set([x.name for x in newr.find_all()]))
         else:
             tag_list = []
+
+        # list of all processing instructions in the object like <?index>
+        if newr.find_all(string=True):
+            instruction_list = newr.find_all(string=True)
+        else:
+            instruction_list = []
+        for ins in instruction_list:
+            if ins.startswith("index"):
+                # Remove preceding white-space
+                if ins.previous_sibling and isinstance(ins.previous_sibling, str):
+                    ins.previous_sibling.replace_with(ins.previous_sibling.rstrip())
+                ins.extract()
         for t in tag_list:
             elements = newr.find_all(t)
             for e in elements:

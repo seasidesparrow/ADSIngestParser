@@ -93,3 +93,6 @@ json.dumps(output, indent=2)
 ## Documentation
 
 [documentation](https://adsingestp.readthedocs.io)
+
+## Maintained by
+Mugdha, Matt

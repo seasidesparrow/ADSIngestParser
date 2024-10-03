@@ -32,11 +32,11 @@ class TestDublinCore(unittest.TestCase):
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
 
+            parsed = parser.parse(input_data)
+
             with open(test_outfile, "rb") as fp:
                 output_text = fp.read()
                 output_data = json.loads(output_text)
-
-            parsed = parser.parse(input_data)
 
             # make sure this is valid schema
             try:
@@ -53,6 +53,7 @@ class TestDublinCore(unittest.TestCase):
             self.assertTrue(abs(time_difference) < datetime.timedelta(seconds=10))
             parsed["recordData"]["parsedTime"] = ""
 
+            self.maxDiff = None
             self.assertEqual(parsed, output_data)
 
 
@@ -77,11 +78,12 @@ class TextDublinCoreMulti(unittest.TestCase):
             with open(test_infile, "r") as fp:
                 input_data = fp.read()
 
+            parsed = parser.parse(input_data, header=True)
+
             with open(test_outfile_header, "r") as fp:
                 output_text = fp.read()
                 output_data_header = output_text.strip().split("\n\n")
 
-            parsed = parser.parse(input_data, header=True)
             self.assertEqual(parsed, output_data_header)
 
             with open(test_outfile_noheader, "r") as fp:
