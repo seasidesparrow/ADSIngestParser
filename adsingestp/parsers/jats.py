@@ -53,6 +53,31 @@ class JATSAffils(object):
             aff_ids.append({})
         return aff, aff_ids
 
+    def _remove_unbalanced_parentheses(self, affstr):
+        # Stack to track balanced parentheses
+        stack = []
+        to_remove = set()
+
+        for i, char in enumerate(affstr):
+            # Track the index of opening parentheses
+            if char == "(":
+                stack.append(i)
+            elif char == ")":
+                if stack:
+                    # Pop if there's a matching opening parenthesis
+                    stack.pop()
+                else:
+                    # Mark unbalanced closing parenthesis
+                    to_remove.add(i)
+
+        # Mark remaining unbalanced opening parentheses
+        to_remove.update(stack)
+
+        # Create a new string without the unbalanced parentheses
+        new_affstr = "".join([char for i, char in enumerate(affstr) if i not in to_remove])
+
+        return new_affstr
+
     def _fix_affil(self, affstring):
         """
         Separate email addresses from affiliations in a given input affiliation string
@@ -71,6 +96,7 @@ class JATSAffils(object):
                 a = a.replace("\\n", ",")
                 a = a.replace(" —", "—")
                 a = a.replace(" , ", ", ")
+                a = a.replace(", .", ".")
                 a = re.sub(",+", ",", a)
                 a = re.sub("\\s+", " ", a)
                 a = re.sub("^(\\s*,+\\s*)+", "", a)
@@ -80,6 +106,7 @@ class JATSAffils(object):
                     emails.append(a)
                 else:
                     if a:
+                        a = self._remove_unbalanced_parentheses(a)
                         new_aff.append(a)
 
         newaffstr = "; ".join(new_aff)

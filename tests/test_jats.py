@@ -96,6 +96,8 @@ class TestJATS(unittest.TestCase):
             "jats_versita_index_tags_1",
             "jats_versita_index_tags_2",
             "jats_versita_index_tags_3",
+            "jats_springer_affil_punctuation_1",
+            "jats_ees_affil_punctuation_2",
         ]
 
         for f in filenames:
