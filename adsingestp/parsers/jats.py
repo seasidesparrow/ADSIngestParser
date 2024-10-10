@@ -865,6 +865,19 @@ class JATSParser(BaseBeautifulSoupParser):
             "journal-title-group"
         ).find("journal-title"):
             journal = self.journal_meta.find("journal-title-group").find("journal-title")
+        elif self.journal_meta.find("journal-title-group") and self.journal_meta.find(
+            "journal-title-group"
+        ).find("abbrev-journal-title"):
+            if self.journal_meta.find("journal-title-group").find(
+                "abbrev-journal-title", {"abbrev-type": "pubmed"}
+            ):
+                journal = self.journal_meta.find("journal-title-group").find(
+                    "abbrev-journal-title", {"abbrev-type": "pubmed"}
+                )
+            else:
+                journal = self.journal_meta.find("journal-title-group").find(
+                    "abbrev-journal-title"
+                )
         elif self.journal_meta.find("journal-title"):
             journal = self.journal_meta.find("journal-title")
 
