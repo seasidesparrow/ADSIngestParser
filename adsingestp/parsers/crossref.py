@@ -138,12 +138,6 @@ class CrossrefParser(BaseBeautifulSoupParser):
                     meta.find("journal_volume").find("volume").get_text()
                 )
 
-        elif self.record_type == "book":
-            meta = self.record_meta
-
-            if meta.find("volume"):
-                self.base_metadata["volume"] = meta.find("volume").get_text()
-
         else:
             # no handling here for conferences yet
             meta = None
@@ -183,8 +177,9 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
     def _parse_book_series(self):
         series_meta = self.record_meta.find("series_metadata")
-
         if series_meta.find("title"):
+            self.base_metadata["series_title"] = series_meta.find("title").get_text()
+        elif series_meta.find("titles"):
             self.base_metadata["series_title"] = series_meta.find("title").get_text()
 
         # TODO need to add logic for other ID types
@@ -219,8 +214,12 @@ class CrossrefParser(BaseBeautifulSoupParser):
             self.base_metadata["pubdate_electronic"] = pubdate
 
     def _parse_title_abstract(self):
+        # Only parse title for non book series metadata
         if self.record_meta.find("titles") and self.record_meta.find("titles").find("title"):
-            self.base_metadata["title"] = self.record_meta.find("titles").find("title").get_text()
+            title = self.record_meta.find("titles", recursive=False).find("title").get_text()
+            if not title:
+                title = self.record_meta.find("titles").find("title").get_text()
+            self.base_metadata["title"] = title
 
         if self.record_meta.find("titles") and self.record_meta.find("titles").find("subtitle"):
             self.base_metadata["subtitle"] = (
@@ -449,6 +448,30 @@ class CrossrefParser(BaseBeautifulSoupParser):
                     self.record_meta = self.input_metadata.find("book_series_metadata").extract()
                 else:
                     self.record_meta = None
+
+                # Parse metadata related to the book
+                if self.record_meta.find("publisher") and self.record_meta.find("publisher").find(
+                    "publisher_name"
+                ):
+                    self.base_metadata["publisher"] = self.record_meta.find(
+                        "publisher_name"
+                    ).get_text()
+
+                if self.record_meta.find("isbn"):
+                    self.base_metadata["isbn"] = self._get_isbn(self.record_meta.find_all("isbn"))
+
+                if self.record_meta.find("volume"):
+                    self.base_metadata["volume"] = self.record_meta.find("volume").get_text()
+                if self.record_meta.find("series_metadata"):
+                    self._parse_book_series()
+
+                # Parse metadata related to the book chapter
+                if (
+                    self.input_metadata.find("content_item")
+                    and self.input_metadata.find("content_item").get("component_type") == "chapter"
+                ):
+                    self.record_type = "book_chapter"
+                    self.record_meta = self.input_metadata.find("content_item")
         if self.input_metadata.find("posted_content"):
             if type_found:
                 raise WrongSchemaException("Too many document types found in CrossRef record")
@@ -474,20 +497,6 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
         if self.record_type == "conference":
             self._parse_conf_event_proceedings()
-
-        if self.record_type == "book":
-            if self.record_meta.find("publisher") and self.record_meta.find("publisher").find(
-                "publisher_name"
-            ):
-                self.base_metadata["publisher"] = self.record_meta.find(
-                    "publisher_name"
-                ).get_text()
-
-            if self.record_meta.find("isbn"):
-                self.base_metadata["isbn"] = self._get_isbn(self.record_meta.find_all("isbn"))
-
-            if self.record_meta.find("series_metadata"):
-                self._parse_book_series()
 
         if self.record_type == "posted_content":
             self._parse_posted_content()
