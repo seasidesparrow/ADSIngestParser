@@ -292,10 +292,19 @@ class JATSAffils(object):
                         collab = contrib.find("collab")
 
                     collab_affil = ""
-                    collab_name = collab.get_text()
+                    #in EDP (A&A) this is going to dump both the collab name *and all nested contribs* into the collab name!
+                    # collab_name = collab.get_text()
+
+                    collab_contribs = collab.find_all("contrib")
+                    test_nested_contribs = []
+                    for ncontrib in collab_contribs:
+                        if ncontrib:
+                            test_nested_contribs.append(copy(ncontrib))
+                            ncontrib.decompose()
                     if collab.find("address"):
                         collab_affil = collab.find("address").get_text()
 
+                    collab_name = collab.get_text()
                     self.collab = {
                         "collab": collab_name,
                         "aff": collab_affil,
@@ -312,7 +321,10 @@ class JATSAffils(object):
                             authors_out.append(self.collab)
 
                     # find nested collab authors and unnest them
-                    nested_contribs = contrib.find_all("contrib")
+                    if test_nested_contribs:
+                        nested_contribs = test_nested_contribs
+                    else:
+                        nested_contribs = contrib.find_all("contrib")
 
                     nested_idx = idx + 1
                     for nested_contrib in nested_contribs:
@@ -335,6 +347,9 @@ class JATSAffils(object):
                         else:
                             # add new collab tag to each unnested author
                             collabtag = copy(contrib.find("collab").find("institution"))
+                            if not collabtag:
+                                collabtag="ALLAUTH"
+
                             if collabtag:
                                 nested_contrib.append(collabtag)
                                 contribs_raw.insert(nested_idx, nested_contrib.extract())
