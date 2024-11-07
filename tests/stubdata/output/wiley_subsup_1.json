@@ -58,6 +58,11 @@
       "keySystem": "Wiley"
     }
   ],
+  "openAccess": {
+    "license": "creativeCommonsBy",
+    "licenseURL": "http://creativecommons.org/licenses/by/4.0/",
+    "open": true
+  },
   "pagination": {
     "electronicID": "e2024GC011718",
     "firstPage": "2024GC011718",
