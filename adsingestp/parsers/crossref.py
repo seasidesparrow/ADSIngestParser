@@ -149,6 +149,8 @@ class CrossrefParser(BaseBeautifulSoupParser):
         # conferences only, parses event-level and proceedings-level metadata, not conference paper-level metadata
         event_meta = self.input_metadata.find("conference").find("event_metadata")
         proc_meta = self.input_metadata.find("conference").find("proceedings_metadata")
+        if not proc_meta:
+            proc_meta = self.input_metadata.find("conference").find("proceedings_series_metadata")
 
         if event_meta.find("conference_name"):
             self.base_metadata["conf_name"] = event_meta.find("conference_name").get_text()
