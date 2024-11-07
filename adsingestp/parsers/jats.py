@@ -387,7 +387,15 @@ class JATSAffils(object):
 
                 # get native language author name
                 if contrib.find("name-alternatives"):
-                    native_lang = contrib.find("name-alternatives").get_text().strip()
+                    if contrib.find("name-alternatives").find("string-name"):
+                        native_lang = (
+                            contrib.find("name-alternatives")
+                            .find("string-name")
+                            .get_text()
+                            .strip()
+                        )
+                    else:
+                        native_lang = contrib.find("name-alternatives").get_text().strip()
                 else:
                     native_lang = ""
 

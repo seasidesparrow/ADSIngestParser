@@ -17,7 +17,7 @@
       },
       "name": {
         "given_name": "Xin",
-        "native_lang": "\u5468\u6b23\n\nZHOU\nXin",
+        "native_lang": "\u5468\u6b23",
         "surname": "ZHOU"
       }
     },
@@ -29,7 +29,7 @@
       ],
       "name": {
         "given_name": "Geng",
-        "native_lang": "\u5218\u66f4\n\nLIU\nGeng",
+        "native_lang": "\u5218\u66f4",
         "surname": "LIU"
       }
     },
@@ -41,7 +41,7 @@
       ],
       "name": {
         "given_name": "Yunqi",
-        "native_lang": "\u6c64\u8fd0\u542f\n\nTANG\nYunqi",
+        "native_lang": "\u6c64\u8fd0\u542f",
         "surname": "TANG"
       }
     },
@@ -53,7 +53,7 @@
       ],
       "name": {
         "given_name": "Bing",
-        "native_lang": "\u97e9\u51b0\n\nHAN\nBing",
+        "native_lang": "\u97e9\u51b0",
         "surname": "HAN"
       }
     },
@@ -65,7 +65,7 @@
       ],
       "name": {
         "given_name": "Xiaoli",
-        "native_lang": "\u5218\u6653\u4e3d\n\nLIU\nXiaoli",
+        "native_lang": "\u5218\u6653\u4e3d",
         "surname": "LIU"
       }
     }
