@@ -136,8 +136,32 @@ class WileyParser(BaseBeautifulSoupParser):
                     self.base_metadata["abstract"] = self._clean_output(a.get_text())
 
     def _parse_copyright(self):
+        # Check for copyright license information
         if self.pubmeta_unit.find("copyright"):
             self.base_metadata["copyright"] = self.pubmeta_unit.find("copyright").get_text()
+
+    def _parse_permissions(self):
+        # Check for open-access and permissions information
+
+        if self.pubmeta_unit:
+            if self.pubmeta_unit.get("accessType", "") == "open":
+                self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
+
+            if self.pubmeta_unit.find("legalStatement"):
+                license_type = self.pubmeta_unit.find("legalStatement").get("type", "")
+                self.base_metadata.setdefault("openAccess", {}).setdefault(
+                    "license",
+                    self._detag(license_type, self.HTML_TAGSET["license"]).strip(),
+                )
+
+                license_text = self.pubmeta_unit.find("legalStatement")
+                license_uri = license_text.find("link")
+                if license_uri:
+                    if license_uri.get("href", None):
+                        license_uri_value = license_uri.get("href", None)
+                        self.base_metadata.setdefault("openAccess", {}).setdefault(
+                            "licenseURL", self._detag(license_uri_value, [])
+                        )
 
     def _parse_authors(self):
         aff_dict = {}
@@ -228,6 +252,7 @@ class WileyParser(BaseBeautifulSoupParser):
         self._parse_edhistory()
         self._parse_title_abstract()
         self._parse_copyright()
+        self._parse_permissions()
         self._parse_authors()
         self._parse_keywords()
         self._parse_references()

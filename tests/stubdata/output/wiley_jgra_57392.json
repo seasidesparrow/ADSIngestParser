@@ -182,6 +182,11 @@
       "keySystem": "Wiley"
     }
   ],
+  "openAccess": {
+    "license": "creativeCommonsBy",
+    "licenseURL": "http://creativecommons.org/licenses/by/4.0/",
+    "open": true
+  },
   "pagination": {
     "electronicID": "e2022JA030882",
     "firstPage": "2022JA030882",

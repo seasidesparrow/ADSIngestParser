@@ -25,6 +25,7 @@ class TestWiley(unittest.TestCase):
             "wiley_swe_461",
             "wiley_swe_539",
             "wiley_swe_21103",
+            "wiley_missing_open_attr",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -34,11 +35,11 @@ class TestWiley(unittest.TestCase):
             with open(test_infile, "rb") as fp:
                 input_data = fp.read()
 
+            parsed = parser.parse(input_data)
+
             with open(test_outfile, "rb") as fp:
                 output_text = fp.read()
                 output_data = json.loads(output_text)
-
-            parsed = parser.parse(input_data)
 
             # make sure this is valid schema
             try:

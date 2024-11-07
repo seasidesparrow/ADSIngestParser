@@ -204,6 +204,11 @@
       "2020-12-23"
     ]
   },
+  "openAccess": {
+    "license": "creativeCommonsBy",
+    "licenseURL": "http://creativecommons.org/licenses/by/4.0/",
+    "open": true
+  },
   "pagination": {
     "electronicID": "e2020SW002674",
     "firstPage": "2020SW002674",
