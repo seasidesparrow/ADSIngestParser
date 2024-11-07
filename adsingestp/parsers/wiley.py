@@ -38,7 +38,9 @@ class WileyParser(BaseBeautifulSoupParser):
     def _parse_pub(self):
         for t in self.pubmeta_prod.find_all("title"):
             if t["type"] == "main":
-                self.base_metadata["publication"] = t.get_text()
+                self.base_metadata["publication"] = self._clean_output(
+                    self._detag(t, self.HTML_TAGSET["title"]).strip()
+                )
 
         for n in self.pubmeta_part.find_all("numbering"):
             if n["type"] == "journalVolume":
@@ -126,19 +128,22 @@ class WileyParser(BaseBeautifulSoupParser):
         if self.content_meta.find("titleGroup"):
             for t in self.content_meta.find("titleGroup").find_all("title"):
                 if t["type"] == "main":
-                    self.base_metadata["title"] = t.get_text()
-
+                    self.base_metadata["title"] = self._detag(t, self.HTML_TAGSET["title"]).strip()
         # TODO subtitles?
 
         if self.content_meta.find("abstractGroup"):
             for a in self.content_meta.find("abstractGroup").find_all("abstract"):
                 if a["type"] == "main":
-                    self.base_metadata["abstract"] = self._clean_output(a.get_text())
+                    self.base_metadata["abstract"] = self._clean_output(
+                        self._detag(a, self.HTML_TAGSET["abstract"]).strip()
+                    )
 
     def _parse_copyright(self):
         # Check for copyright license information
         if self.pubmeta_unit.find("copyright"):
-            self.base_metadata["copyright"] = self.pubmeta_unit.find("copyright").get_text()
+            self.base_metadata["copyright"] = self._detag(
+                self.pubmeta_unit.find("copyright"), self.HTML_TAGSET["license"]
+            ).strip()
 
     def _parse_permissions(self):
         # Check for open-access and permissions information
@@ -208,7 +213,14 @@ class WileyParser(BaseBeautifulSoupParser):
     def _parse_keywords(self):
         keywords = []
         for k in self.content_meta.find_all("keyword"):
-            keywords.append({"system": "Wiley", "string": k.get_text()})
+            keywords.append(
+                {
+                    "system": "Wiley",
+                    "string": self._clean_output(
+                        self._detag(k, self.HTML_TAGSET["keywords"]).strip()
+                    ),
+                }
+            )
 
         if keywords:
             self.base_metadata["keywords"] = keywords
