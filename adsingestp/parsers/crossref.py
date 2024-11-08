@@ -188,6 +188,10 @@ class CrossrefParser(BaseBeautifulSoupParser):
         if series_meta.find("issn"):
             self.base_metadata["series_id"] = series_meta.find("issn").get_text()
             self.base_metadata["series_id_description"] = "issn"
+        elif series_meta.find("isbn"):
+            isbn_list = series_meta.find_all("isbn")
+            self.base_metadata["series_id"] = ", ".join(isbn_list)
+            self.base_metadata["series_id_description"] = "issn"
 
     def _parse_posted_content(self):
         if self.record_meta.find("institution"):
@@ -397,6 +401,16 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
         self.base_metadata["esources"] = links
 
+    def _dedup_titles(self):
+        pubname = self.base_metadata.get("publication", None)
+        title = self.base_metadata.get("title", None)
+        seriestitle = self.base_metadata.get("series_title", None)
+        proctitle = self.base_metadata.get("proceedings_title", None)
+        titles = [title, seriestitle, proctitle]
+        if pubname in titles:
+            self.base_metadata["publication"] = None
+
+
     def parse(self, text):
         """
         Parse Crossref XML into standard JSON format
@@ -426,6 +440,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
             self.record_type = "journal"
             if self.input_metadata.find("journal_article"):
                 self.record_meta = self.input_metadata.find("journal_article").extract()
+                self.base_metadata["doctype"] = "article"
             else:
                 self.record_meta = None
         if self.input_metadata.find("conference"):
@@ -436,8 +451,10 @@ class CrossrefParser(BaseBeautifulSoupParser):
                 self.record_type = "conference"
                 if self.input_metadata.find("conference_paper"):
                     self.record_meta = self.input_metadata.find("conference_paper").extract()
+                    self.base_metadata["doctype"] = "inproceedings"
                 else:
                     self.record_meta = None
+                    self.base_metadata["doctype"] = "proceedings"
         if self.input_metadata.find("book"):
             if type_found:
                 raise WrongSchemaException("Too many document types found in CrossRef record")
@@ -464,8 +481,15 @@ class CrossrefParser(BaseBeautifulSoupParser):
 
                 if self.record_meta.find("volume"):
                     self.base_metadata["volume"] = self.record_meta.find("volume").get_text()
+
                 if self.record_meta.find("series_metadata"):
                     self._parse_book_series()
+
+                if self.record_meta.find("contributors"):
+                    self._parse_contrib()
+
+                if self.record_meta.find("title"):
+                    self.base_metadata["publication"] = self.record_meta.find("title").get_text()
 
                 # Parse metadata related to the book chapter
                 if (
@@ -474,6 +498,9 @@ class CrossrefParser(BaseBeautifulSoupParser):
                 ):
                     self.record_type = "book_chapter"
                     self.record_meta = self.input_metadata.find("content_item")
+                    self.base_metadata["doctype"] = "inbook"
+                else:
+                    self.base_metadata["doctype"] = "book"
         if self.input_metadata.find("posted_content"):
             if type_found:
                 raise WrongSchemaException("Too many document types found in CrossRef record")
@@ -481,6 +508,8 @@ class CrossrefParser(BaseBeautifulSoupParser):
                 type_found = True
                 self.record_type = "posted_content"
                 if self.input_metadata.find("posted_content"):
+                    if self.input_metadata.find("posted_content").get("type", None) == 'preprint':
+                        self.base_metadata["doctype"] = "eprint"
                     self.record_meta = self.input_metadata.find("posted_content").extract()
                 else:
                     self.record_meta = None
@@ -513,6 +542,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
         self._parse_ids()
         self._parse_references()
         self._parse_esources()
+        self._dedup_titles()
 
         self.base_metadata = self._entity_convert(self.base_metadata)
 

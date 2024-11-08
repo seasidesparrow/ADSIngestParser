@@ -42,6 +42,7 @@ class TestCrossref(unittest.TestCase):
             "crossref_no_contrib_10.3367_UFNe.2022.11.039660",
             "crossref_book_chapter_10.1016_B978-0-12-037311-6.50008-9",
             "crossref_gsa_conf",
+            "crossref_editors_encyc_astrobio",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")

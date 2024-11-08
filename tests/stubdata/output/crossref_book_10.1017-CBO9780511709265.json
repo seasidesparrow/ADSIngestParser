@@ -7,6 +7,7 @@
       }
     }
   ],
+  "doctype": "book",
   "esources": [
     {
       "location": "http://ebooks.cambridge.org/ref/id/CBO9780511709265",
