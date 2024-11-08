@@ -99,6 +99,7 @@ class TestJATS(unittest.TestCase):
             "jats_springer_affil_punctuation_1",
             "jats_ees_affil_punctuation_2",
             "jats_liebert_no_journal_title",
+            "jats_liebert_atypon",
             "jats_aip_native_strip",
         ]
 
