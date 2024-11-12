@@ -410,7 +410,6 @@ class CrossrefParser(BaseBeautifulSoupParser):
         if pubname in titles:
             self.base_metadata["publication"] = None
 
-
     def parse(self, text):
         """
         Parse Crossref XML into standard JSON format
@@ -508,7 +507,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
                 type_found = True
                 self.record_type = "posted_content"
                 if self.input_metadata.find("posted_content"):
-                    if self.input_metadata.find("posted_content").get("type", None) == 'preprint':
+                    if self.input_metadata.find("posted_content").get("type", None) == "preprint":
                         self.base_metadata["doctype"] = "eprint"
                     self.record_meta = self.input_metadata.find("posted_content").extract()
                 else:
