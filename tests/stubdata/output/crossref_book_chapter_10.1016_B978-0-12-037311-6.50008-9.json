@@ -19,6 +19,7 @@
       }
     }
   ],
+  "doctype": "inbook",
   "esources": [
     {
       "location": "https://linkinghub.elsevier.com/retrieve/pii/B9780120373116500089",

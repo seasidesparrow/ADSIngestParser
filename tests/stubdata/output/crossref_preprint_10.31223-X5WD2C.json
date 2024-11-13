@@ -43,6 +43,7 @@
       }
     }
   ],
+  "doctype": "eprint",
   "esources": [
     {
       "location": "http://eartharxiv.org/repository/view/3263/",

@@ -145,6 +145,7 @@
       }
     }
   ],
+  "doctype": "eprint",
   "esources": [
     {
       "location": "https://essopenarchive.org/doi/full/10.1002/essoar.10511074.2",

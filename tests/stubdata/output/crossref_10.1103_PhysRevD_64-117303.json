@@ -13,6 +13,7 @@
       }
     }
   ],
+  "doctype": "article",
   "esources": [
     {
       "location": "https://link.aps.org/doi/10.1103/PhysRevD.64.117303",
