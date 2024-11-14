@@ -16,6 +16,26 @@
         {
           "affPubID": [
             {
+              "affID": "grid.9132.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2156 142X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "CERN, CH-1211, Geneva 23, Switzerland"
+        }
+      ],
+      "attrib": {
+        "email": "ALICE-publications@cern.ch"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
               "affID": "grid.494717.8",
               "affIDType": "GRID"
             },

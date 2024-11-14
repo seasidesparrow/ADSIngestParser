@@ -16,6 +16,39 @@
         {
           "affPubID": [
             {
+              "affID": "grid.11696.39",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1937 0351",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Universit\u00e0 di Trento, Trento, Italy"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.9132.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2156 142X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "CERN, CH-1211, Geneva 23, Switzerland"
+        }
+      ],
+      "attrib": {
+        "email": "cms-publication-committee-chair@cern.ch"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
               "affID": "grid.48507.3e",
               "affIDType": "GRID"
             },

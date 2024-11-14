@@ -3,6 +3,7 @@ import re
 from collections import OrderedDict
 from copy import copy
 
+import bs4
 import validators
 from ordered_set import OrderedSet
 
@@ -291,28 +292,48 @@ class JATSAffils(object):
                     else:
                         collab = contrib.find("collab")
 
-                    collab_affil = ""
-                    collab_name = collab.get_text()
-                    if collab.find("address"):
-                        collab_affil = collab.find("address").get_text()
+                    # This is checking if a collaboration is listed as an author
+                    if collab:
+                        if type(collab.contents[0].get_text()) == str:
+                            collab_name = collab.contents[0].get_text().strip()
+                        else:
+                            collab_name = collab.get_text().strip()
 
-                    self.collab = {
-                        "collab": collab_name,
-                        "aff": collab_affil,
-                        "affid": [],
-                        "xaff": [],
-                        "xemail": [],
-                        "email": [],
-                        "corresp": False,
-                        "rid": None,
-                    }
+                        if collab.find("address"):
+                            collab_affil = collab.find("address").get_text()
+                        else:
+                            collab_affil = []
+
+                        self.collab = {
+                            "collab": collab_name,
+                            "aff": collab_affil,
+                            "affid": [],
+                            "xaff": [],
+                            "xemail": [],
+                            "email": [],
+                            "corresp": False,
+                            "rid": None,
+                            "surname": "",
+                            "given": "",
+                            "native_lang": "",
+                            "orcid": "",
+                        }
+
                     if self.collab:
                         # add collab in the correct author position
                         if self.collab not in authors_out:
                             authors_out.append(self.collab)
 
                     # find nested collab authors and unnest them
-                    nested_contribs = contrib.find_all("contrib")
+                    collab_contribs = collab.find_all("contrib")
+                    nested_contribs = []
+                    for ncontrib in collab_contribs:
+                        if ncontrib:
+                            nested_contribs.append(copy(ncontrib))
+                            ncontrib.decompose()
+
+                    if not nested_contribs:
+                        nested_contribs = contrib.find_all("contrib")
 
                     nested_idx = idx + 1
                     for nested_contrib in nested_contribs:
@@ -334,13 +355,26 @@ class JATSAffils(object):
                                     authors_out[rid_match[0]] = author_tmp
                         else:
                             # add new collab tag to each unnested author
-                            collabtag = copy(contrib.find("collab").find("institution"))
-                            nested_contrib.append(collabtag)
-                            contribs_raw.insert(nested_idx, nested_contrib.extract())
-                            nested_idx += 1
+                            if contrib.find("collab") and contrib.find("collab").find(
+                                "institution"
+                            ):
+                                collabtag = copy(contrib.find("collab").find("institution"))
+                            else:
+                                collabtag = None
 
-                    continue
+                            if not collabtag and collab_name:
+                                collabtag_string = "<collab>" + collab_name + "</collab>"
+                                collabtag = bs4.BeautifulSoup(collabtag_string, "xml").collab
 
+                            if not collabtag:
+                                collabtag = "ALLAUTH"
+
+                            if collabtag:
+                                nested_contrib.insert(0, collabtag)
+                                contribs_raw.insert(nested_idx, nested_contrib.extract())
+                                nested_idx += 1
+
+                # check if collabtag is present in the author author attributes
                 collab = contrib.find("collab")
 
                 # Springer collab info for nested authors is given as <institution>
@@ -348,21 +382,31 @@ class JATSAffils(object):
                     collab = contrib.find("institution")
 
                 if collab:
-                    collab_affil = ""
-                    collab_name = collab.get_text()
+                    if type(collab.contents[0].get_text()) == str:
+                        collab_name = collab.contents[0].get_text().strip()
+                    else:
+                        collab_name = collab.get_text().strip()
+
                     if collab.find("address"):
                         collab_affil = collab.find("address").get_text()
+                    else:
+                        collab_affil = ""
 
-                    self.collab = {
-                        "collab": collab_name,
-                        "aff": collab_affil,
-                        "affid": [],
-                        "xaff": [],
-                        "xemail": [],
-                        "email": [],
-                        "corresp": False,
-                        "rid": None,
-                    }
+                    if not self.collab:
+                        self.collab = {
+                            "collab": collab_name,
+                            "aff": collab_affil,
+                            "affid": [],
+                            "xaff": [],
+                            "xemail": [],
+                            "email": [],
+                            "corresp": False,
+                            "rid": None,
+                            "surname": "",
+                            "given": "",
+                            "native_lang": "",
+                            "orcid": "",
+                        }
 
                 l_correspondent = False
                 if contrib.get("corresp", None) == "yes":
@@ -452,7 +496,7 @@ class JATSAffils(object):
                 contrib_id = contrib.find_all("contrib-id")
                 orcid = []
                 for c in contrib_id:
-                    if c.get("contrib-id-type", "") == "orcid":
+                    if (c.get("contrib-id-type", "") == "orcid") or ("orcid" in c.get_text()):
                         orcid.append(c.get_text(separator=" ").strip())
                     c.decompose()
 
@@ -489,6 +533,16 @@ class JATSAffils(object):
                 if auth:
                     if collab:
                         auth["collab"] = collab_name
+
+                    # Check if author is a duplicate of a collaboration
+                    if auth["surname"] == "" and auth["collab"]:
+                        # delete email and correspondence info for collabs
+                        auth["email"] = []
+                        auth["xemail"] = []
+                        auth["corresp"] = False
+                        # if the collab is already in author list, skip
+                        if auth in authors_out:
+                            continue
 
                     if contrib.get("contrib-type", "author") == "author":
                         authors_out.append(auth)

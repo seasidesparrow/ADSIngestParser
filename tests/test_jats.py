@@ -101,6 +101,7 @@ class TestJATS(unittest.TestCase):
             "jats_liebert_no_journal_title",
             "jats_liebert_atypon",
             "jats_aip_native_strip",
+            "jats_a+a_nested_collab",
         ]
 
         for f in filenames:

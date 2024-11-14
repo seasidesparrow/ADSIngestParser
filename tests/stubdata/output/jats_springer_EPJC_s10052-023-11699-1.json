@@ -73016,6 +73016,139 @@
       "name": {
         "collab": "ATLAS Collaboration"
       }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubID": [
+            {
+              "affID": "grid.47840.3f",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2181 7878",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of California, Berkeley, CA, USA"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.5100.4",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2322 497X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Faculty of Physics, University of Bucharest, Bucharest, Romania"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.462638.d",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0696 719X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "iThemba Labs, Western Cape, South Africa"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.412801.e",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 0610 3238",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Department of Physics, University of South Africa, Pretoria, South Africa"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.442325.6",
+              "affIDType": "GRID"
+            }
+          ],
+          "affPubRaw": "University of Zululand, KwaDlangezwa, South Africa"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.411840.8",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 0664 9298",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Facult\u00e9 des Sciences Semlalia, Universit\u00e9 Cadi Ayyad, LPHEA-Marrakech, Marrakech, Morocco"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.501615.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 6007 5493",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "Institute of Applied Physics, Mohammed VI Polytechnic University, Ben Guerir, Morocco"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.440573.1",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0004 1755 5934",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "New York University Abu Dhabi, Abu Dhabi, United Arab Emirates"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.264978.6",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0000 9564 9822",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "University of Georgia, Tbilisi, Georgia"
+        },
+        {
+          "affPubID": [
+            {
+              "affID": "grid.9132.9",
+              "affIDType": "GRID"
+            },
+            {
+              "affID": "0000 0001 2156 142X",
+              "affIDType": "ISNI"
+            }
+          ],
+          "affPubRaw": "CERN, 1211, Geneva 23, Switzerland"
+        }
+      ],
+      "attrib": {
+        "email": "atlas.publications@cern.ch"
+      }
     }
   ],
   "copyright": {
