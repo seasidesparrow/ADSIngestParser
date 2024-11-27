@@ -1237,7 +1237,10 @@ class JATSParser(BaseBeautifulSoupParser):
             raise XmlLoadException(err)
 
         document = d.article
-        front_meta = document.front
+        #front_meta = document.front
+        front_meta = document.get("front", None)
+        if not front_meta:
+            raise XmlLoadException("No front matter found, stopping")
         self.back_meta = document.back
 
         self.article_meta = front_meta.find("article-meta")
