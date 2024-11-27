@@ -569,11 +569,12 @@ class JATSAffils(object):
                     nested_email_list = aff.find_all("ext-link")
                     for e in nested_email_list:
                         if e.get("ext-link-type", None) == "email":
-                            key = e["id"]
-                            value = e.text
-                            # build the cross-reference dictionary to be used later
-                            self.email_xref[key] = value
-                            e.decompose()
+                            if e.get("id", None):
+                                key = e["id"]
+                                value = e.text
+                                # build the cross-reference dictionary to be used later
+                                self.email_xref[key] = value
+                                e.decompose()
 
                     key = aff.get("id", default_key)
                     # special case: get rid of <sup>...
@@ -1026,6 +1027,10 @@ class JATSParser(BaseBeautifulSoupParser):
             elif id_type == "manuscript":
                 self.base_metadata["ids"]["pub-id"].append(
                     {"attribute": "manuscript", "Identifier": self._detag(d, [])}
+                )
+            elif id_type == "url":
+                self.base_metadata["ids"]["pub-id"].append(
+                    {"attribute": "url", "Identifier": self._detag(d, [])}
                 )
             elif id_type == "other":
                 self.base_metadata["ids"]["pub-id"].append(
