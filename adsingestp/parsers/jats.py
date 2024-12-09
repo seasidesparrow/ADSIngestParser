@@ -95,6 +95,7 @@ class JATSAffils(object):
             # check for empty strings with commas
             check_a = a.replace(",", "")
             if check_a:
+                a = re.sub("\\(e-*mail:\\s*,+\\s*\\)", "", a)
                 a = a.replace("\\n", ",")
                 a = a.replace(" —", "—")
                 a = a.replace(" , ", ", ")
@@ -104,7 +105,7 @@ class JATSAffils(object):
                 a = re.sub("^(\\s*,+\\s*)+", "", a)
                 a = re.sub("(\\s*,\\s+)+", ", ", a)
                 a = re.sub("(,\\s*)+$", "", a)
-                a = re.sub("(e-*mail:\\s*,+\\s*)", "", a)
+                a = re.sub("\\s+$", "", a)
                 if self.regex_email.match(a):
                     emails.append(a)
                 else:
