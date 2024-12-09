@@ -16,6 +16,7 @@ logger = logging.getLogger(__name__)
 
 class JATSAffils(object):
     regex_email = re.compile(r"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+")
+    regex_auth_xid = re.compile(r"^A[0-9]+$")
 
     def __init__(self):
         self.contrib_dict = {}
@@ -103,6 +104,7 @@ class JATSAffils(object):
                 a = re.sub("^(\\s*,+\\s*)+", "", a)
                 a = re.sub("(\\s*,\\s+)+", ", ", a)
                 a = re.sub("(,\\s*)+$", "", a)
+                a = re.sub("(e-*mail:\\s*,+\\s*)", "", a)
                 if self.regex_email.match(a):
                     emails.append(a)
                 else:
@@ -567,16 +569,18 @@ class JATSAffils(object):
                 for aff in contrib_aff:
                     # check and see if the publisher defined an email tag inside an affil (like IOP does)
                     nested_email_list = aff.find_all("ext-link")
+                    key = aff.get("id", default_key)
                     for e in nested_email_list:
                         if e.get("ext-link-type", None) == "email":
                             if e.get("id", None):
-                                key = e["id"]
-                                value = e.text
-                                # build the cross-reference dictionary to be used later
-                                self.email_xref[key] = value
-                                e.decompose()
+                                ekey = e["id"]
+                            else:
+                                ekey = key
+                            value = e.text
+                            # build the cross-reference dictionary to be used later
+                            self.email_xref[ekey] = value
+                            e.decompose()
 
-                    key = aff.get("id", default_key)
                     # special case: get rid of <sup>...
                     aff = self._decompose(soup=aff, tag="sup")
                     aff, aff_extids_tmp = self._get_inst_identifiers(aff)
@@ -587,10 +591,24 @@ class JATSAffils(object):
 
                     affstr = aff.get_text(separator=", ").strip()
                     (affstr, email_list) = self._fix_affil(affstr)
-                    if email_list:
-                        self.email_xref[key] = email_list
+                    if not self.email_xref.get(key, None):
+                        if email_list:
+                            self.email_xref[key] = email_list
+                        else:
+                            self.email_xref[key] = ""
                     self.xref_dict[key] = affstr
                     self.xref_xid_dict[key] = aff_extids_tmp
+
+        # special case: publisher defined aff/email xrefs, but the xids aren't
+        # assigned to authors; xid is typically of the form "A\d+"
+        # publisher example: Geol. Soc. London (gsl)
+        count_auth = len(authors_out)
+        count_xref = len(self.xref_dict.keys())
+        if count_auth == count_xref:
+            for auth, xref in zip(authors_out, self.xref_dict.keys()):
+                if self.regex_auth_xid.match(xref):
+                    if not auth.get("aff", []) and not auth.get("xaff", []):
+                        auth["xaff"] = [xref]
 
         self.contrib_dict = {"authors": authors_out, "contributors": contribs_out}
 
@@ -1237,11 +1255,11 @@ class JATSParser(BaseBeautifulSoupParser):
             raise XmlLoadException(err)
 
         document = d.article
-        #front_meta = document.front
+        # front_meta = document.front
         try:
             front_meta = document.front
         except Exception as err:
-            raise XmlLoadException("No front matter found, stopping")
+            raise XmlLoadException("No front matter found, stopping: %s" % err)
         self.back_meta = document.back
 
         self.article_meta = front_meta.find("article-meta")

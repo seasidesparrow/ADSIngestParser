@@ -4,12 +4,25 @@
   },
   "authors": [
     {
+      "affiliation": [
+        {
+          "affPubRaw": "Neural Mining Solutions, 1 Alfred Street, Sydney, NSW 2000, Australia"
+        }
+      ],
       "name": {
         "given_name": "A. P.",
         "surname": "Clare"
       }
     },
     {
+      "affiliation": [
+        {
+          "affPubRaw": "School of Geology, University of New South Wales, Sydney, NSW 2052, Australia ()"
+        }
+      ],
+      "attrib": {
+        "email": "d.cohen@unsw.edu.au"
+      },
       "name": {
         "given_name": "D. R.",
         "surname": "Cohen"
