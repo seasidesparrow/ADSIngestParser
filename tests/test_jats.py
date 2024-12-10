@@ -102,6 +102,8 @@ class TestJATS(unittest.TestCase):
             "jats_liebert_atypon",
             "jats_aip_native_strip",
             "jats_a+a_nested_collab",
+            "jats_indersci_url_ident",
+            "jats_gsl_unkeyed_xref",
         ]
 
         for f in filenames:
