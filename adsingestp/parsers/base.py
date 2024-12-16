@@ -589,7 +589,8 @@ class BaseBeautifulSoupParser(IngestBase):
                     continue
                 else:
                     if t.lower() == "sc":
-                        e.string = e.string.upper()
+                        if e.string:
+                            e.string = e.string.upper()
                     e.unwrap()
 
         # Note: newr is converted from a bs4 object to a string here.
