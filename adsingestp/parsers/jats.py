@@ -992,7 +992,12 @@ class JATSParser(BaseBeautifulSoupParser):
         isbn_all = self.article_meta.find_all("isbn")
         isbns = []
         for i in isbn_all:
-            isbns.append({"type": i["content-type"], "isbn_str": self._detag(i, [])})
+            content_type = None
+            if i.get("content-type", ""):
+                content_type = i.get("content-type")
+            elif i.get("publication-format", ""):
+                content_type = i.get("publication-format")
+            isbns.append({"type": content_type, "isbn_str": self._detag(i, [])})
 
         self.base_metadata["isbn"] = isbns
 
