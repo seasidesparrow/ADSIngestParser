@@ -134,7 +134,7 @@ class JATSAffils(object):
                             email_new.add(email_format.search(e).group(0))
                             email_parsed = True
                     except Exception as err:
-                        pass
+                        logger.warning("Bad format in _fix_email: %s" % err)
             else:
                 try:
                     if type(em) == str:
@@ -147,7 +147,7 @@ class JATSAffils(object):
                                 email_new.add(email_format.search(e).group(0))
                                 email_parsed = True
                 except Exception as err:
-                    pass
+                    logger.warning("Bad format in _fix_email: %s" % err)
 
         if not email_parsed:
             logger.warning("Email not verified as valid. Input email list: %s", str(email))

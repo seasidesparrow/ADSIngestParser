@@ -1,9 +1,9 @@
 import html
 import re
+import warnings
 from datetime import datetime
 
 import bs4
-import warnings
 from bs4 import MarkupResemblesLocatorWarning
 
 from adsingestp.ingest_exceptions import WrongFormatException
