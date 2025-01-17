@@ -129,13 +129,25 @@ class JATSAffils(object):
         for em in email:
             if " " in em:
                 for e in em.strip().split():
-                    if email_format.search(e):
-                        email_new.add(email_format.search(e).group(0))
-                        email_parsed = True
+                    try:
+                        if email_format.search(e):
+                            email_new.add(email_format.search(e).group(0))
+                            email_parsed = True
+                    except Exception as err:
+                        pass
             else:
-                if email_format.search(em):
-                    email_new.add(email_format.search(em).group(0))
-                    email_parsed = True
+                try:
+                    if type(em) == str:
+                        if email_format.search(em):
+                            email_new.add(email_format.search(em).group(0))
+                            email_parsed = True
+                    elif type(em) == list:
+                        for e in em:
+                            if email_format.search(e):
+                                email_new.add(email_format.search(e).group(0))
+                                email_parsed = True
+                except Exception as err:
+                    pass
 
         if not email_parsed:
             logger.warning("Email not verified as valid. Input email list: %s", str(email))
