@@ -376,24 +376,15 @@ class ElsevierParser(BaseBeautifulSoupParser):
             self.base_metadata["keywords"] = keywords
 
     def _parse_references(self):
-        if self.record_meta.find("ce:bibliography") and self.record_meta.find(
-            "ce:bibliography"
-        ).find("sb:reference"):
+        bibsoup = self.record_meta.find("ce:bibliography")
+        if bibsoup:
+            refs = bibsoup.find_all(["sb:reference", "ce:other-ref"])
             references = []
-            for ref in self.record_meta.find("ce:bibliography").find_all("sb:reference"):
+            for ref in refs:
                 # output raw XML for reference service to parse later
                 ref_xml = str(ref.extract()).replace("\n", " ")
                 references.append(ref_xml)
             self.base_metadata["references"] = references
-        if self.record_meta.find("ce:bib-reference"):
-            bibreferences = []
-            for ref in self.record_meta.find_all("ce:bib-reference"):
-                bibref_xml = str(ref.extract()).replace("\n", " ")
-                bibreferences.append(bibref_xml)
-            if self.base_metadata.get("references", None):
-                self.base_metadata["references"].extend(bibreferences)
-            else:
-                self.base_metadata["references"] = bibreferences
 
     def _parse_esources(self):
         links = []
