@@ -75,6 +75,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "chenzzandu@163.com",
         "orcid": "0000-0002-4062-3267"
       },

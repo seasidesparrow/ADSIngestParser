@@ -166,6 +166,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "youtaosong@sina.com"
       },
       "name": {

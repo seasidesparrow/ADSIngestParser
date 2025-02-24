@@ -109,6 +109,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "wangsz@lnm.imech.ac.cn"
       },
       "name": {

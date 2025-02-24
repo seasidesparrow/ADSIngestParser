@@ -73147,6 +73147,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "atlas.publications@cern.ch"
       }
     }

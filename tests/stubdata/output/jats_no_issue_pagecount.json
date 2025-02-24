@@ -125,6 +125,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "fenghuanhuan@hit.edu.cn",
         "orcid": "0000-0002-1036-1227"
       },

@@ -41,6 +41,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "cms-publication-committee-chair@cern.ch"
       }
     },

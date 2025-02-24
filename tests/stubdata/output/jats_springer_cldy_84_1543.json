@@ -33,6 +33,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "sampoppe@cbk.waw.pl",
         "orcid": "0000-0002-8787-8590"
       },

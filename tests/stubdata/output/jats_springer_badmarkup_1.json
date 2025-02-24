@@ -24,6 +24,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "bob-v-vzz@rambler.ru"
       },
       "name": {

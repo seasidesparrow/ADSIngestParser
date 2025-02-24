@@ -79,6 +79,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "isel@fbio.uh.cu"
       },
       "name": {

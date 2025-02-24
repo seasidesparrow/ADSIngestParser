@@ -23,6 +23,9 @@
           "affPubRaw": "School of Physics, University of Melbourne, Parkville, Victoria 3010, Australia; Centre for Astrophysics and Supercomputing, Swinburne University of Technology, Hawthorn, Victoria 3122, Australia; OzGrav-Melbourne, Australian Research Council Centre of Excellence for Gravitational Wave Discovery, Parkville, Victoria 3010, Australia; and School of Physics and Astronomy and Institute for Gravitational Wave Astronomy, University of Birmingham, Edgbaston, Birmingham, B15 9TT, United Kingdom"
         }
       ],
+      "attrib": {
+        "corresp": true
+      },
       "name": {
         "given_name": "Hannah",
         "surname": "Middleton"

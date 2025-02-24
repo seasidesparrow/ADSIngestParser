@@ -28,6 +28,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "ALICE-publications@cern.ch"
       }
     },

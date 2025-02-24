@@ -215,6 +215,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "ruffini@icra.it",
         "orcid": "0000-0003-0829-8318"
       },

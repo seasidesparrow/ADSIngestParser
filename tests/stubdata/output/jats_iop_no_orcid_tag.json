@@ -1557,6 +1557,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "spokespersons@auger.org",
         "orcid": "0000-0003-2924-8889"
       },
@@ -1575,6 +1576,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0002-6408-1335"
       },
       "name": {
@@ -1589,6 +1591,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0002-1653-1303"
       },
       "name": {
@@ -1606,6 +1609,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0001-6989-2404"
       },
       "name": {
@@ -1665,6 +1669,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0001-7239-0288"
       },
       "name": {
@@ -1704,6 +1709,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0002-0313-8852"
       },
       "name": {
@@ -1729,6 +1735,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0002-6768-5214"
       },
       "name": {
@@ -1746,6 +1753,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0001-5671-1555"
       },
       "name": {
@@ -1760,6 +1768,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0001-9473-9356"
       },
       "name": {
@@ -1813,6 +1822,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0002-6575-7958"
       },
       "name": {
@@ -5128,6 +5138,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0002-3727-6786"
       },
       "name": {
@@ -5142,6 +5153,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0003-4929-6191"
       },
       "name": {
@@ -5170,6 +5182,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0003-2652-9685"
       },
       "name": {
@@ -5195,6 +5208,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0003-3121-7037"
       },
       "name": {
@@ -5220,6 +5234,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0001-5107-9116"
       },
       "name": {
@@ -5234,6 +5249,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0002-8839-4715"
       },
       "name": {
@@ -5248,6 +5264,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0002-4430-8117"
       },
       "name": {
@@ -5265,6 +5282,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0002-4596-1521"
       },
       "name": {
@@ -5282,6 +5300,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "orcid": "0000-0001-5606-6912"
       },
       "name": {

@@ -1380,6 +1380,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "tsofer@bidmc.harvard.edu"
       },
       "name": {

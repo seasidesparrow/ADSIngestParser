@@ -20,6 +20,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "mengyi.zhu@ntnu.no"
       },
       "name": {
@@ -53,6 +54,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "g.wu@fz-juelich.de"
       },
       "name": {

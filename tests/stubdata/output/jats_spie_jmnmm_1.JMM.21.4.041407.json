@@ -96,6 +96,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "Annelies.Delabie@imec.be",
         "orcid": "0000-0001-9739-7419"
       },

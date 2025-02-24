@@ -133,6 +133,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "dr.guoqihao@126.com"
       },
       "name": {
@@ -150,6 +151,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "dr.guoqihao@126.com",
         "orcid": "0000-0002-2763-8907"
       },

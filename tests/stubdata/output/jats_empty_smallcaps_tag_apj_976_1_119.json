@@ -13,6 +13,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "ycwang19@stanford.edu",
         "orcid": "0000-0001-8913-626X"
       },

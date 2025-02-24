@@ -27,6 +27,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "chen_wu@zju.edu.cn",
         "orcid": "0000-0001-7995-6264"
       },
@@ -58,6 +59,9 @@
           "affPubRaw": "School of Materials Science and Engineering, State Key Laboratory of Silicon and Advanced Semiconductor Materials, Zhejiang University, Hangzhou 310027, China"
         }
       ],
+      "attrib": {
+        "corresp": true
+      },
       "name": {
         "given_name": "Qiming",
         "surname": "Chen"
@@ -70,6 +74,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "chen_wu@zju.edu.cn"
       },
       "name": {

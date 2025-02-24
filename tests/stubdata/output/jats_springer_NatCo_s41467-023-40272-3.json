@@ -33,6 +33,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "kpasquevich@iib.unsam.edu.ar",
         "orcid": "0000-0003-4448-0977"
       },
@@ -801,6 +802,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "jucassataro@iib.unsam.edu.ar",
         "orcid": "0000-0002-7122-869X"
       },

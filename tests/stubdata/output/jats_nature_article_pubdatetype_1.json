@@ -123,6 +123,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "xupf@lzu.edu.cn",
         "orcid": "0000-0002-5746-758X"
       },
@@ -152,6 +153,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "haow@nwu.edu.cn",
         "orcid": "0000-0002-7951-683X"
       },

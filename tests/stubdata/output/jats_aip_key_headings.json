@@ -66,6 +66,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "renaud.podor@cea.fr",
         "orcid": "0000-0002-8103-1743"
       },

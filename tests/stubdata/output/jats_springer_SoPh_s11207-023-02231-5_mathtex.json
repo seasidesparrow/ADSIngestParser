@@ -24,6 +24,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "lie6@aber.ac.uk",
         "orcid": "0000-0002-9222-8648"
       },

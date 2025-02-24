@@ -29,6 +29,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "changd@mail.sysu.edu.cn"
       },
       "name": {
@@ -62,6 +63,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "liujiank@mail.sysu.edu.cn"
       },
       "name": {

@@ -62,6 +62,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "tsi@ustc.edu.cn"
       },
       "name": {

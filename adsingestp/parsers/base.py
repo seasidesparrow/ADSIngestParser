@@ -317,6 +317,7 @@ class IngestBase(object):
                 ],
                 "attrib": {
                     "collab": True if i.get("collab", "") else False,
+                    "corresp": True if i.get("corresp", "") else False,
                     # "deceased": True or False, # TODO need an example
                     # "coauthor": True or False, # TODO need an example
                     "email": i.get("email", ""),

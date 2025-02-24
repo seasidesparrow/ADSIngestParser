@@ -20,6 +20,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "luisamaria.serrano@unito.it",
         "orcid": "0000-0001-9211-3691"
       },

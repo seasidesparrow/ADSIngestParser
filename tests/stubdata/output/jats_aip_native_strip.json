@@ -28,6 +28,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "liujf@imde.ac.cn",
         "orcid": "0000-0002-5542-827X"
       },

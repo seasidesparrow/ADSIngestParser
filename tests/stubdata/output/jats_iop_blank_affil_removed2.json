@@ -45,6 +45,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "fengwang@gzhu.edu.cn",
         "orcid": "0000-0002-9847-7805"
       },
