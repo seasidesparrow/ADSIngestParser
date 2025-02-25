@@ -209,7 +209,7 @@ class IngestBase(object):
         :return: serialized JSON that follows our internal data model
         """
 
-        if format not in ["JATS", "OtherXML", "HTML", "Text"]:
+        if format not in ["JATS", "OtherXML", "HTML", "Text", "Copernicus", "Elsevier", "IEEE", "Wiley"]:
             raise WrongFormatException
 
         output = {}
