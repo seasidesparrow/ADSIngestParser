@@ -107,6 +107,7 @@ class TestJATS(unittest.TestCase):
             "jats_gsl_unkeyed_xref",
             "jats_gsl_egsp_isbn_type",
             "jats_iop_list_embedded_email",
+            "jats_cjes_2014_0180",
         ]
 
         for f in filenames:
