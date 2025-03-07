@@ -178,7 +178,11 @@ class JATSAffils(object):
     def _reformat_affids(self):
         for contribs in self.contrib_dict.values():
             for auth in contribs:
-                if auth.get("affid", None):
+                # Initialize affid if not present
+                if not auth.get("affid"):
+                    auth["affid"] = []
+                # Process existing affids
+                if auth["affid"]:
                     affid_tmp = []
                     for ids in auth.get("affid", None):
                         ids_tmp = []
@@ -193,7 +197,6 @@ class JATSAffils(object):
         Matches crossreferenced affiliations and emails; cleans emails and ORCIDs
         :return: none (updates class variable auth_list)
         """
-
         for contrib_type, contribs in self.contrib_dict.items():
             for auth in contribs:
                 # contents of xaff field aren't always properly separated - fix that here
@@ -208,10 +211,15 @@ class JATSAffils(object):
                     if item in self.email_xref:
                         auth["email"].append(self.email_xref[item])
 
+                if auth.get("xref", None):
+                    if not auth.get("affid"):
+                        auth["affid"] = []
+
                 xaff_xid_tmp = []
                 for x in xaff_list:
                     try:
-                        auth["aff"].append(self.xref_dict[x])
+                        if self.xref_dict[x] not in auth["aff"]:
+                            auth["aff"].append(self.xref_dict[x])
                     except KeyError as err:
                         logger.info("Key is missing from xaff. Missing key: %s", err)
                         pass

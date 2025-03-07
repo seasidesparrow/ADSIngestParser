@@ -18868,19 +18868,6 @@
             }
           ],
           "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
-        },
-        {
-          "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            }
-          ],
-          "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
         }
       ],
       "attrib": {
@@ -34088,19 +34075,6 @@
             }
           ],
           "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
-        },
-        {
-          "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            }
-          ],
-          "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
         }
       ],
       "attrib": {
@@ -44075,19 +44049,6 @@
             }
           ],
           "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
-        },
-        {
-          "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            }
-          ],
-          "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
         }
       ],
       "attrib": {
@@ -45329,19 +45290,6 @@
     },
     {
       "affiliation": [
-        {
-          "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            }
-          ],
-          "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
-        },
         {
           "affPubID": [
             {
@@ -58827,19 +58775,6 @@
             }
           ],
           "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
-        },
-        {
-          "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            }
-          ],
-          "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
         }
       ],
       "attrib": {
@@ -63108,19 +63043,6 @@
     },
     {
       "affiliation": [
-        {
-          "affPubID": [
-            {
-              "affID": "grid.9132.9",
-              "affIDType": "GRID"
-            },
-            {
-              "affID": "0000 0001 2156 142X",
-              "affIDType": "ISNI"
-            }
-          ],
-          "affPubRaw": "Affiliated with an Institute Covered by a Cooperation Agreement with CERN, Geneva, Switzerland"
-        },
         {
           "affPubID": [
             {
