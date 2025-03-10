@@ -1,6 +1,6 @@
 {
   "abstract": {
-    "textEnglish": "The kinematics of about 40 single stars belonging to the <inline-formula id=\"IEq3\"> <tex-math id=\"IEq3_TeX\">$$\\beta$$</tex-math> </inline-formula> Pictoris moving group is studied. The age of the <inline-formula id=\"IEq4\"> <tex-math id=\"IEq4_TeX\">$$\\beta$$</tex-math> </inline-formula> Pictoris moving group is estimated from these stars with ground-based line-of-sight velocity determinations by two methods. Both estimates are kinematic. In the first method we considered the traceback trajectories of the stars, giving an estimate of <inline-formula id=\"IEq5\"> <tex-math id=\"IEq5_TeX\">$$t=13.2\\pm 1.4$$</tex-math> </inline-formula> Myr. In the second method, by analyzing the instantaneous velocities of the stars, we show that there is an expansion of the stellar system occurring in the Galactic <inline-formula id=\"IEq6\"> <tex-math id=\"IEq6_TeX\">$$xy$$</tex-math> </inline-formula> plane. Based on this effect, we find the time interval elapsed from the beginning of the expansion of the <inline-formula id=\"IEq7\"> <tex-math id=\"IEq7_TeX\">$$\\beta$$</tex-math> </inline-formula> Pictoris moving group to the present day, <inline-formula id=\"IEq8\"> <tex-math id=\"IEq8_TeX\">$$t=20\\pm 2$$</tex-math> </inline-formula> Myr."
+    "textEnglish": "The kinematics of about 40 single stars belonging to the <inline-formula> <tex-math>$$\\beta$$</tex-math> </inline-formula> Pictoris moving group is studied. The age of the <inline-formula> <tex-math>$$\\beta$$</tex-math> </inline-formula> Pictoris moving group is estimated from these stars with ground-based line-of-sight velocity determinations by two methods. Both estimates are kinematic. In the first method we considered the traceback trajectories of the stars, giving an estimate of <inline-formula> <tex-math>$$t=13.2\\pm 1.4$$</tex-math> </inline-formula> Myr. In the second method, by analyzing the instantaneous velocities of the stars, we show that there is an expansion of the stellar system occurring in the Galactic <inline-formula> <tex-math>$$xy$$</tex-math> </inline-formula> plane. Based on this effect, we find the time interval elapsed from the beginning of the expansion of the <inline-formula> <tex-math>$$\\beta$$</tex-math> </inline-formula> Pictoris moving group to the present day, <inline-formula> <tex-math>$$t=20\\pm 2$$</tex-math> </inline-formula> Myr."
   },
   "authors": [
     {
@@ -174,6 +174,6 @@
     "<ref id=\"CR29\"> <label>29</label> <mixed-citation publication-type=\"other\">The HIPPARCOS and Tycho Catalogues, ESA SP-1200 (1997). </mixed-citation> </ref>"
   ],
   "title": {
-    "textEnglish": "Estimation of the Kinematic Age of the <inline-formula id=\"IEq1\"> <tex-math id=\"IEq1_TeX\">$$\\boldsymbol{\\beta}$$</tex-math> </inline-formula> Pictoris Moving Group from Up-to-date Data"
+    "textEnglish": "Estimation of the Kinematic Age of the <inline-formula> <tex-math>$$\\boldsymbol{\\beta}$$</tex-math> </inline-formula> Pictoris Moving Group from Up-to-date Data"
   }
 }

@@ -228,6 +228,6 @@
     "<ref id=\"r30\"> <label>30.</label> <mixed-citation publication-type=\"journal\"> <person-group person-group-type=\"author\"> <string-name> <given-names>A.</given-names> <surname>Sinha</surname> </string-name>, <string-name><given-names>D. W.</given-names><surname>Hess</surname></string-name> and <string-name><given-names>C. L.</given-names><surname>Henderson</surname></string-name></person-group>, \u201c<article-title>Transport behavior of atomic layer deposition precursors through polymer masking layers: influence on area selective atomic layer deposition</article-title>,\u201d <source>J. Vac. Sci. Technol. B: Microelectron. Nanometer Struct.</source><volume>25</volume>(<issue>5</issue>), <fpage>1721</fpage> (<year>2007</year>).<ext-link ext-link-type=\"doi\" specific-use=\"online\" xlink:href=\"https://doi.org/10.1116/1.2782546\">https://doi.org/10.1116/1.2782546</ext-link></mixed-citation> </ref>"
   ],
   "title": {
-    "textEnglish": "Compatibility between polymethacrylate-based extreme ultraviolet resists and <inline-formula><mml:math display=\"inline\"><mml:mrow><mml:msub><mml:mrow><mml:mi>TiO</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> area-selective deposition"
+    "textEnglish": "Compatibility between polymethacrylate-based extreme ultraviolet resists and <inline-formula><mml:math><mml:mrow><mml:msub><mml:mrow><mml:mi>TiO</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> area-selective deposition"
   }
 }

@@ -1,6 +1,6 @@
 {
   "abstract": {
-    "textEnglish": "In this issue of <i>Chem</i>, Nagib and co-workers report an operationally simple approach for direct C\u2013H halogenation of arenes and (hetero)arenes through <i>in situ</i> activation of commercially available PhI(OAc)<sub loc=\"post\">2</sub>. The resulting non-symmetrical iodanes offer chemists new tools for the mild halogenation of arene scaffolds with exquisite selectivity and tunability."
+    "textEnglish": "In this issue of <i>Chem</i>, Nagib and co-workers report an operationally simple approach for direct C\u2013H halogenation of arenes and (hetero)arenes through <i>in situ</i> activation of commercially available PhI(OAc)<sub>2</sub>. The resulting non-symmetrical iodanes offer chemists new tools for the mild halogenation of arene scaffolds with exquisite selectivity and tunability."
   },
   "authors": [
     {
@@ -80,6 +80,6 @@
     "<sb:reference id=\"sref6\"><sb:contribution langtype=\"en\"><sb:authors><sb:author><ce:given-name>R.</ce:given-name><ce:surname>Weiss</ce:surname></sb:author><sb:author><ce:given-name>J.</ce:given-name><ce:surname>Seubert</ce:surname></sb:author></sb:authors><sb:title><sb:maintitle>Electrostatic\u00a0activation of organo-iodine compounds: bis(onio)-substituted aryliodine\u00a0(III) salts</sb:maintitle></sb:title></sb:contribution><sb:host><sb:issue><sb:series><sb:title><sb:maintitle>Angew. Chem. Int. Ed.</sb:maintitle></sb:title><sb:volume-nr>33</sb:volume-nr></sb:series><sb:date>1994</sb:date></sb:issue><sb:pages><sb:first-page>891</sb:first-page><sb:last-page>893</sb:last-page></sb:pages></sb:host></sb:reference>"
   ],
   "title": {
-    "textEnglish": "More Than Just Acetates: PhI(OAc)<sub loc=\"post\">2</sub> Enables C\u2013H Halogenation of Arenes"
+    "textEnglish": "More Than Just Acetates: PhI(OAc)<sub>2</sub> Enables C\u2013H Halogenation of Arenes"
   }
 }
