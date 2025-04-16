@@ -1,7 +1,6 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 exclude: "CHANGELOG.md"
-uses: pre-commit/action@v3.0.1
 
 ci:
   autofix_commit_msg: "chore(pre-commit.ci): auto fixes"
