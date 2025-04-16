@@ -109,6 +109,7 @@ class TestJATS(unittest.TestCase):
             "jats_iop_list_embedded_email",
             "jats_cjes_2014_0180",
             "jats_mnras_inst_1",
+            "jats_springer_running_title_in_subtitle",
         ]
 
         for f in filenames:
