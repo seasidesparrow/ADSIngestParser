@@ -770,14 +770,15 @@ class JATSParser(BaseBeautifulSoupParser):
 
                 if title_group.find("subtitle"):
                     subtitle = title_group.find("subtitle")
-                    # subtitle xrefs
-                    for dx in subtitle.find_all("xref"):
-                        key = dx.get("rid", None)
-                        if title_fn_dict.get(key, None):
-                            subtitle_fn_list.append(title_fn_dict.get(key, None))
-                        dx.decompose()
-                    subtitle = self._remove_latex(subtitle)
-                    sub_title = self._detag(subtitle, self.HTML_TAGSET["title"]).strip()
+                    if subtitle.get("content-type", "") != "running-title":
+                        # subtitle xrefs
+                        for dx in subtitle.find_all("xref"):
+                            key = dx.get("rid", None)
+                            if title_fn_dict.get(key, None):
+                                subtitle_fn_list.append(title_fn_dict.get(key, None))
+                            dx.decompose()
+                        subtitle = self._remove_latex(subtitle)
+                        sub_title = self._detag(subtitle, self.HTML_TAGSET["title"]).strip()
                 subtitle_notes = []
                 if subtitle_fn_list:
                     subtitle_notes.extend(subtitle_fn_list)
