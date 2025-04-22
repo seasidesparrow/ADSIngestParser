@@ -13,9 +13,9 @@ logger = logging.getLogger(__name__)
 
 
 class DataciteParser(BaseBeautifulSoupParser):
-    """Compatible with DataCite schema versions 3 and 4"""
+    """Compatible with DataCite schema versions 2, 3 and 4"""
 
-    DC_SCHEMAS = ["http://datacite.org/schema/kernel-3", "http://datacite.org/schema/kernel-4"]
+    # DC_SCHEMAS = ["http://datacite.org/schema/kernel-2", "http://datacite.org/schema/kernel-3", "http://datacite.org/schema/kernel-4"]
 
     author_collaborations_params = {
         "keywords": ["group", "team", "collaboration"],
@@ -294,9 +294,9 @@ class DataciteParser(BaseBeautifulSoupParser):
             self.input_metadata = d.find("resource")
 
         # check for namespace to make sure it's a compatible datacite schema
-        schema = self.input_metadata.get("xmlns", "")
-        if schema not in self.DC_SCHEMAS:
-            raise WrongSchemaException('Unexpected XML schema "%s"' % schema)
+        #schema = self.input_metadata.get("xmlns", "")
+        #if schema not in self.DC_SCHEMAS:
+        #    raise WrongSchemaException('Unexpected XML schema "%s"' % schema)
 
         self._parse_contrib(author=True)
         self._parse_contrib(author=False)
