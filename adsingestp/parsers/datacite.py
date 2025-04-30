@@ -4,7 +4,6 @@ from adsingestp import utils
 from adsingestp.ingest_exceptions import (
     MissingDoiException,
     MissingTitleException,
-    WrongSchemaException,
     XmlLoadException,
 )
 from adsingestp.parsers.base import BaseBeautifulSoupParser
@@ -294,8 +293,8 @@ class DataciteParser(BaseBeautifulSoupParser):
             self.input_metadata = d.find("resource")
 
         # check for namespace to make sure it's a compatible datacite schema
-        #schema = self.input_metadata.get("xmlns", "")
-        #if schema not in self.DC_SCHEMAS:
+        # schema = self.input_metadata.get("xmlns", "")
+        # if schema not in self.DC_SCHEMAS:
         #    raise WrongSchemaException('Unexpected XML schema "%s"' % schema)
 
         self._parse_contrib(author=True)
