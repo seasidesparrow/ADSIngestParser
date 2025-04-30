@@ -381,12 +381,15 @@ class JATSAffils(object):
                             if contrib.find("collab") and contrib.find("collab").find(
                                 "institution"
                             ):
-                                collabtag = copy(contrib.find("collab").find("institution"))
+                                collab_text = (
+                                    contrib.find("collab").find("institution").decode_contents()
+                                )
+                            elif collab_name:
+                                collab_text = collab_name
                             else:
-                                collabtag = None
-
-                            if not collabtag and collab_name:
-                                collabtag_string = "<collab>" + collab_name + "</collab>"
+                                collab_text = None
+                            if collab_text:
+                                collabtag_string = "<collab>" + collab_text + "</collab>"
                                 collabtag = bs4.BeautifulSoup(collabtag_string, "xml").collab
 
                             if not collabtag:
@@ -399,10 +402,6 @@ class JATSAffils(object):
 
                 # check if collabtag is present in the author author attributes
                 collab = contrib.find("collab")
-
-                # Springer collab info for nested authors is given as <institution>
-                if not collab:
-                    collab = contrib.find("institution")
 
                 if collab:
                     if type(collab.contents[0].get_text()) == str:
@@ -771,14 +770,15 @@ class JATSParser(BaseBeautifulSoupParser):
 
                 if title_group.find("subtitle"):
                     subtitle = title_group.find("subtitle")
-                    # subtitle xrefs
-                    for dx in subtitle.find_all("xref"):
-                        key = dx.get("rid", None)
-                        if title_fn_dict.get(key, None):
-                            subtitle_fn_list.append(title_fn_dict.get(key, None))
-                        dx.decompose()
-                    subtitle = self._remove_latex(subtitle)
-                    sub_title = self._detag(subtitle, self.HTML_TAGSET["title"]).strip()
+                    if subtitle.get("content-type", "") != "running-title":
+                        # subtitle xrefs
+                        for dx in subtitle.find_all("xref"):
+                            key = dx.get("rid", None)
+                            if title_fn_dict.get(key, None):
+                                subtitle_fn_list.append(title_fn_dict.get(key, None))
+                            dx.decompose()
+                        subtitle = self._remove_latex(subtitle)
+                        sub_title = self._detag(subtitle, self.HTML_TAGSET["title"]).strip()
                 subtitle_notes = []
                 if subtitle_fn_list:
                     subtitle_notes.extend(subtitle_fn_list)

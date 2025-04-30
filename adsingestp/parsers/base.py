@@ -594,6 +594,8 @@ class BaseBeautifulSoupParser(IngestBase):
         for t in tag_list:
             elements = newr.find_all(t)
             for e in elements:
+                if e.attrs:
+                    e.attrs.clear()
                 if t in self.HTML_TAGS_DANGER:
                     e.decompose()
                 elif (t == "alternatives") or (t == "inline-formula"):
