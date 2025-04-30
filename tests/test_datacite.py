@@ -24,6 +24,8 @@ class TestDatacite(unittest.TestCase):
             "datacite_schema4.1_example-software",
             "datacite_schema4_example-habanero-pdsdataset",
             "datacite_null_valueuri",
+            "datacite-metadata-sample-v2.0",
+            "datacite-ornldaac-kernel2.2-0010",
             "zenodo_test",
             "zenodo_test2",
             "zenodo_test3",
