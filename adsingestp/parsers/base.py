@@ -315,8 +315,6 @@ class IngestBase(object):
                     {"affPubRaw": j, "affPubID": i.get("affid")[idx] if i.get("affid") else []}
                     for idx, j in enumerate(i.get("aff", []))
                 ],
-                #                "affiliation": [
-                #                    {"affPubRaw": j} for idx, j in enumerate(i.get("aff", []))],
                 "attrib": {
                     "collab": True if i.get("collab", "") else False,
                     "corresp": True if i.get("corresp", "") else False,
