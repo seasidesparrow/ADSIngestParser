@@ -595,6 +595,11 @@ class JATSAffils(object):
             # special case: affs defined in contrib-group, but not in individual contrib
             if art_contrib_group:
                 contrib_aff = art_contrib_group.find_all("aff")
+                contrib_aff_new = []
+                for a in contrib_aff:
+                    if not a.get("specific-use", None):
+                        contrib_aff_new.append(a)
+                contrib_aff = contrib_aff_new
                 for aff in contrib_aff:
                     # check and see if the publisher defined an email tag inside an affil (like IOP does)
                     nested_email_list = aff.find_all("ext-link")
@@ -644,6 +649,11 @@ class JATSAffils(object):
         # now get the xref keys outside of contrib-group:
         # aff xrefs...
         aff_glob = article_metadata.find_all("aff")
+        aff_glob_new = []
+        for a in aff_glob:
+            if not a.get("specific-use", None):
+                aff_glob_new.append(a)
+        aff_glob = aff_glob_new
         for aff in aff_glob:
             try:
                 key = aff["id"]
