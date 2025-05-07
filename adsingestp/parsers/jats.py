@@ -178,6 +178,8 @@ class JATSAffils(object):
     def _reformat_affids(self):
         for contribs in self.contrib_dict.values():
             for auth in contribs:
+                if auth.get("affid", None) == [[{}]]:
+                    del auth["affid"]
                 # Initialize affid if not present
                 if not auth.get("affid"):
                     auth["affid"] = []
@@ -190,7 +192,10 @@ class JATSAffils(object):
                             for k, v in d.items():
                                 ids_tmp.append({"affIDType": k, "affID": v})
                         affid_tmp.append((ids_tmp))
-                    auth["affid"] = affid_tmp
+                    if affid_tmp:
+                        auth["affid"] = affid_tmp
+                    else:
+                        del auth["affid"]
 
     def _match_xref_clean(self):
         """
@@ -475,26 +480,30 @@ class JATSAffils(object):
                 email_list = []
                 aff_extids = []
                 for i in affs:
-                    # special case: some pubs label affils with <sup>label</sup>, strip them
-                    i = self._decompose(soup=i, tag="sup")
-                    i, aff_extids_tmp = self._get_inst_identifiers(i)
-                    affstr = i.get_text(separator=", ").strip()
-                    (affstr, email_list) = self._fix_affil(affstr)
-                    aff_text.append(affstr)
-                    aff_extids.extend(aff_extids_tmp)
-                    i.decompose()
+                    if not i.get("specific-use", None):
+                        # special case: some pubs label affils with <sup>label</sup>, strip them
+                        i = self._decompose(soup=i, tag="sup")
+                        i, aff_extids_tmp = self._get_inst_identifiers(i)
+                        affstr = i.get_text(separator=", ").strip()
+                        (affstr, email_list) = self._fix_affil(affstr)
+                        aff_text.append(affstr)
+                        aff_extids.extend(aff_extids_tmp)
+                        i.decompose()
+                    else:
+                        i.decompose()
 
                 # special case (e.g. AIP) - one author per contrib group, aff stored at contrib group level
                 if num_contribs == 1 and art_contrib_group.find("aff"):
                     aff_list = art_contrib_group.find_all("aff")
-                    for aff in aff_list:
-                        aff, aff_extids_tmp = self._get_inst_identifiers(aff)
-                        aff_fix = aff.get_text(separator=", ").strip()
-                        (affstr, email_fix) = self._fix_affil(aff_fix)
-                        email_list.extend(email_fix)
-                        aff_text.append(affstr)
-                        aff_extids.extend(aff_extids_tmp)
-                        aff.decompose()
+                    if aff_list:
+                        for aff in aff_list:
+                            aff, aff_extids_tmp = self._get_inst_identifiers(aff)
+                            aff_fix = aff.get_text(separator=", ").strip()
+                            (affstr, email_fix) = self._fix_affil(aff_fix)
+                            email_list.extend(email_fix)
+                            aff_text.append(affstr)
+                            aff_extids.extend(aff_extids_tmp)
+                            aff.decompose()
 
                 # get xrefs...
                 xrefs = contrib.find_all("xref")
@@ -586,6 +595,11 @@ class JATSAffils(object):
             # special case: affs defined in contrib-group, but not in individual contrib
             if art_contrib_group:
                 contrib_aff = art_contrib_group.find_all("aff")
+                contrib_aff_new = []
+                for a in contrib_aff:
+                    if not a.get("specific-use", None):
+                        contrib_aff_new.append(a)
+                contrib_aff = contrib_aff_new
                 for aff in contrib_aff:
                     # check and see if the publisher defined an email tag inside an affil (like IOP does)
                     nested_email_list = aff.find_all("ext-link")
@@ -635,6 +649,11 @@ class JATSAffils(object):
         # now get the xref keys outside of contrib-group:
         # aff xrefs...
         aff_glob = article_metadata.find_all("aff")
+        aff_glob_new = []
+        for a in aff_glob:
+            if not a.get("specific-use", None):
+                aff_glob_new.append(a)
+        aff_glob = aff_glob_new
         for aff in aff_glob:
             try:
                 key = aff["id"]
