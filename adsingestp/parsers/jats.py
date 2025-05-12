@@ -25,6 +25,40 @@ class JATSAffils(object):
         self.xref_xid_dict = OrderedDict()
         self.email_xref = OrderedDict()
         self.output = None
+        self.affdict = {}
+
+    def _prefetch_affdict(self, soup=None):
+        # find all <aff> tags before you do anything else...
+        try:
+            afftags = soup.find_all("aff")
+            for a in afftags:
+                afftext = a.text
+                aid = a.get("id", None)
+                xid = a.get("xid", None)
+                rid = a.get("rid", None)
+                if aid:
+                    affkey = aid
+                    keypair = {"type": "id", "aff": afftext}
+                    if not self.affdict.get(affkey, None):
+                        self.affdict[affkey] = [keypair]
+                    else:
+                        self.affdict[affkey].append(keypair)
+                elif xid:
+                    affkey = xid
+                    keypair = {"type": "xid", "aff": afftext}
+                    if not self.affdict.get(affkey, None):
+                        self.affdict[affkey] = [keypair]
+                    else:
+                        self.affdict[affkey].append(keypair)
+                elif rid:
+                    affkey = rid
+                    keypair = {"type": "rid", "aff": afftext}
+                    if not self.affdict.get(affkey, None):
+                        self.affdict[affkey] = [keypair]
+                    else:
+                        self.affdict[affkey].append(keypair)
+        except Exception as err:
+            print("hoopty doooo...")
 
     def _decompose(self, soup=None, tag=None):
         """
@@ -287,6 +321,7 @@ class JATSAffils(object):
         :return: auth_list: list of dicts, one per author
         """
         article_metadata = self._decompose(soup=article_metadata, tag="label")
+        self._prefetch_affdict(article_metadata)
 
         art_contrib_groups = []
         if article_metadata.find("contrib-group"):
