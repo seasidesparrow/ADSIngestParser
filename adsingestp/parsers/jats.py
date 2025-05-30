@@ -25,6 +25,7 @@ class JATSAffils(object):
         self.xref_xid_dict = OrderedDict()
         self.email_xref = OrderedDict()
         self.output = None
+        self.language = None
 
     def _decompose(self, soup=None, tag=None):
         """
@@ -542,7 +543,9 @@ class JATSAffils(object):
                 # note that the ingest schema allows a single orcid, but we've extracted all
                 # here in case that changes to allow more than one
                 if orcid:
+                    print("bippy!",orcid)
                     orcid_out = self._fix_orcid(orcid)
+                    print("flippy!",orcid_out)
                     orcid_out = orcid_out[0]
                 else:
                     orcid_out = ""
@@ -704,6 +707,7 @@ class JATSParser(BaseBeautifulSoupParser):
         self.article_meta = None
         self.journal_meta = None
         self.isErratum = False
+        self.language = None
 
     def _get_date(self, d):
         """
@@ -755,6 +759,7 @@ class JATSParser(BaseBeautifulSoupParser):
         subtitle_fn_list = []
         self.titledoi = None
         title_group = self.article_meta.find("title-group")
+        trans_title_group = self.article_meta.find("trans-title-group")
         art_title = None
         sub_title = None
         if title_group:
@@ -1299,8 +1304,12 @@ class JATSParser(BaseBeautifulSoupParser):
         except Exception as err:
             raise XmlLoadException(err)
 
+        # check for language declaration, assume english if none
+        if d.find("article", None):
+            self.language = d.find("article").get("xml:lang", "en")
+
         document = d.article
-        # front_meta = document.front
+
         try:
             front_meta = document.front
         except Exception as err:
