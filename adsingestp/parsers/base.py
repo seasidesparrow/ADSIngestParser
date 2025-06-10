@@ -258,7 +258,7 @@ class IngestBase(object):
             if "pubdate_print" in input_dict
             else (
                 input_dict["pubdate_electronic"][0:4] if "pubdate_electronic" in input_dict else (
-                    input_dict["pubdate_other"]["date"][0:4] if "pubdate_other" in input_dict else ""
+                    input_dict.get("pubdate_other", {})[0].get("date", "")[0:4] if "pubdate_other" in input_dict else ""
                 )
             ),
             "bookSeries": {
