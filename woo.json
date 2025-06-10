@@ -1,0 +1,246 @@
+{
+  "otherContributor": [
+    {
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": [
+              {
+                "affID": "https://ror.org/04t3en479",
+                "affIDType": "ROR"
+              },
+              {
+                "affID": "grid.7892.4",
+                "affIDType": "GRID"
+              },
+              {
+                "affID": "0000 0001 0075 5874",
+                "affIDType": "ISNI"
+              }
+            ],
+            "affPubRaw": "Karlsruhe Institute of Technology, Karlsruhe, Germany"
+          }
+        ],
+        "name": {
+          "given_name": "Gerhard",
+          "surname": "Goos"
+        }
+      },
+      "role": "Series Editor"
+    },
+    {
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": [
+              {
+                "affID": "https://ror.org/05bnh6r87",
+                "affIDType": "ROR"
+              },
+              {
+                "affID": "grid.5386.8",
+                "affIDType": "GRID"
+              },
+              {
+                "affID": "0000 0004 1936 877X",
+                "affIDType": "ISNI"
+              }
+            ],
+            "affPubRaw": "Cornell University, Ithaca, USA"
+          }
+        ],
+        "name": {
+          "given_name": "Juris",
+          "surname": "Hartmanis"
+        }
+      },
+      "role": "Founding Editor"
+    },
+    {
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": [
+              {
+                "affID": "https://ror.org/04t3en479",
+                "affIDType": "ROR"
+              },
+              {
+                "affID": "grid.7892.4",
+                "affIDType": "GRID"
+              },
+              {
+                "affID": "0000 0001 0075 5874",
+                "affIDType": "ISNI"
+              }
+            ],
+            "affPubRaw": "Karlsruhe Institute of Technology, Karlsruhe, Germany"
+          }
+        ],
+        "name": {
+          "given_name": "Gerhard",
+          "surname": "Goos"
+        }
+      },
+      "role": "Founding Editor"
+    },
+    {
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": [
+              {
+                "affID": "https://ror.org/02dqehb95",
+                "affIDType": "ROR"
+              },
+              {
+                "affID": "grid.169077.e",
+                "affIDType": "GRID"
+              },
+              {
+                "affID": "0000 0004 1937 2197",
+                "affIDType": "ISNI"
+              }
+            ],
+            "affPubRaw": "Purdue University, West Lafayette, USA"
+          }
+        ],
+        "name": {
+          "given_name": "Elisa",
+          "surname": "Bertino"
+        }
+      },
+      "role": "Editorial Board Member"
+    },
+    {
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": [
+              {
+                "affID": "https://ror.org/02v51f717",
+                "affIDType": "ROR"
+              },
+              {
+                "affID": "grid.11135.37",
+                "affIDType": "GRID"
+              },
+              {
+                "affID": "0000 0001 2256 9319",
+                "affIDType": "ISNI"
+              }
+            ],
+            "affPubRaw": "Peking University, Beijing, China"
+          }
+        ],
+        "name": {
+          "given_name": "Wen",
+          "surname": "Gao"
+        }
+      },
+      "role": "Editorial Board Member"
+    },
+    {
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": [
+              {
+                "affID": "https://ror.org/01k97gp34",
+                "affIDType": "ROR"
+              },
+              {
+                "affID": "grid.5675.1",
+                "affIDType": "GRID"
+              },
+              {
+                "affID": "0000 0001 0416 9637",
+                "affIDType": "ISNI"
+              }
+            ],
+            "affPubRaw": "TU Dortmund University, Dortmund, Germany"
+          }
+        ],
+        "attrib": {
+          "orcid": "0000-0001-9619-1558"
+        },
+        "name": {
+          "given_name": "Bernhard",
+          "surname": "Steffen"
+        }
+      },
+      "role": "Editorial Board Member"
+    },
+    {
+      "contrib": {
+        "affiliation": [
+          {
+            "affPubID": [
+              {
+                "affID": "https://ror.org/00hj8s172",
+                "affIDType": "ROR"
+              },
+              {
+                "affID": "grid.21729.3f",
+                "affIDType": "GRID"
+              },
+              {
+                "affID": "0000 0004 1936 8729",
+                "affIDType": "ISNI"
+              }
+            ],
+            "affPubRaw": "Columbia University, New York, USA"
+          }
+        ],
+        "attrib": {
+          "orcid": "0000-0003-0848-0873"
+        },
+        "name": {
+          "given_name": "Moti",
+          "surname": "Yung"
+        }
+      },
+      "role": "Editorial Board Member"
+    }
+  ],
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "0302-9743"
+      },
+      {
+        "issnString": "1611-3349"
+      }
+    ]
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "2025-05-30T14:22:23.780992Z",
+    "recordOrigin": ""
+  },
+  "references": [
+    "<ref id=\"CR1\"><label>1.</label><mixed-citation publication-type=\"other\">Asperti, A.: Sparsity in variational autoencoders. arXiv e-prints <ext-link ext-link-type=\"uri\" xlink:href=\"http://arxiv.org/abs/1812.07238\">arXiv:1812.07238</ext-link> (2018)</mixed-citation></ref>",
+    "<ref id=\"CR2\"><label>2.</label><mixed-citation publication-type=\"book\"><person-group person-group-type=\"author\"><name><surname>Bellman</surname><given-names>RE</given-names></name></person-group><source>Adaptive Control Processes : A Guided Tour</source><year>1961</year><publisher-loc>Princeton</publisher-loc><publisher-name>Princeton University Press</publisher-name><pub-id pub-id-type=\"doi\">10.1515/9781400874668</pub-id></mixed-citation></ref>",
+    "<ref id=\"CR3\"><label>3.</label><mixed-citation publication-type=\"other\">Bertalan, T., Dietrich, F., Mezi\u0107, I., Kevrekidis, I.G.: On learning Hamiltonian systems from data. Chaos: Interdisc. J. Nonlinear Sci. <bold>29</bold>(12), 121107 (2019)</mixed-citation></ref>",
+    "<ref id=\"CR4\"><label>4.</label><mixed-citation publication-type=\"book\"><person-group person-group-type=\"author\"><name><surname>Chavelli</surname><given-names>F</given-names></name><name><surname>Zi-Yu</surname><given-names>K</given-names></name><name><surname>Low</surname><given-names>J</given-names></name><name><surname>Bressan</surname><given-names>S</given-names></name></person-group><person-group person-group-type=\"editor\"><name><surname>Strauss</surname><given-names>C</given-names></name><name><surname>Amagasa</surname><given-names>T</given-names></name><name><surname>Kotsis</surname><given-names>G</given-names></name><name><surname>Tjoa</surname><given-names>AM</given-names></name><name><surname>Khalil</surname><given-names>I</given-names></name></person-group><article-title xml:lang=\"en\">Assessing the effectiveness of intrinsic dimension estimators for uncovering the phase space dimensionality of dynamical systems from state observations</article-title><source>Database and Expert Systems Applications</source><year>2023</year><publisher-loc>Cham</publisher-loc><publisher-name>Springer</publisher-name><fpage>259</fpage><lpage>265</lpage><pub-id pub-id-type=\"doi\">10.1007/978-3-031-39847-6_18</pub-id></mixed-citation></ref>",
+    "<ref id=\"CR5\"><label>5.</label><mixed-citation publication-type=\"journal\"><person-group person-group-type=\"author\"><name><surname>Chen</surname><given-names>B</given-names></name><name><surname>Huang</surname><given-names>K</given-names></name><name><surname>Raghupathi</surname><given-names>S</given-names></name><name><surname>Chandratreya</surname><given-names>I</given-names></name><name><surname>Du</surname><given-names>Q</given-names></name><name><surname>Lipson</surname><given-names>H</given-names></name></person-group><article-title xml:lang=\"en\">Automated discovery of fundamental variables hidden in experimental data</article-title><source>Nat. Comput. Sci.</source><year>2022</year><volume>2</volume><fpage>433</fpage><lpage>442</lpage><pub-id pub-id-type=\"doi\">10.1038/s43588-022-00281-6</pub-id></mixed-citation></ref>",
+    "<ref id=\"CR6\"><label>6.</label><mixed-citation publication-type=\"other\">Gao, L.M., Kutz, J.N.: Bayesian autoencoders for data-driven discovery of coordinates, governing equations and fundamental constants (2022)</mixed-citation></ref>",
+    "<ref id=\"CR7\"><label>7.</label><mixed-citation publication-type=\"other\">Gao, Z., Tan, C., Wu, L., Li, S.Z.: SimVP: simpler yet better video prediction. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 3170\u20133180 (2022)</mixed-citation></ref>",
+    "<ref id=\"CR8\"><label>8.</label><mixed-citation publication-type=\"other\">Ginsberg, J.: Engineering Dynamics, vol. 10, pp. 397\u2013400. Cambridge University Press (2008)</mixed-citation></ref>",
+    "<ref id=\"CR9\"><label>9.</label><mixed-citation publication-type=\"other\">Goodfellow, I.J., Bengio, Y., Courville, A.: Deep Learning. MIT Press, Cambridge (2016). <ext-link ext-link-type=\"uri\" xlink:href=\"http://www.deeplearningbook.org\">http://www.deeplearningbook.org</ext-link></mixed-citation></ref>",
+    "<ref id=\"CR10\"><label>10.</label><mixed-citation publication-type=\"other\">Greydanus, S., Dzamba, M., Yosinski, J.: Hamiltonian neural networks. In: Wallach, H., Larochelle, H., Beygelzimer, A., d\u2019 Alch\u00e9-Buc, F., Fox, E., Garnett, R. (eds.) Advances in Neural Information Processing Systems, vol. 32. Curran Associates, Inc. (2019)</mixed-citation></ref>",
+    "<ref id=\"CR11\"><label>11.</label><mixed-citation publication-type=\"journal\"><person-group person-group-type=\"author\"><name><surname>Karniadakis</surname><given-names>GE</given-names></name><name><surname>Kevrekidis</surname><given-names>IG</given-names></name><name><surname>Lu</surname><given-names>L</given-names></name><name><surname>Perdikaris</surname><given-names>P</given-names></name><name><surname>Wang</surname><given-names>S</given-names></name><name><surname>Yang</surname><given-names>L</given-names></name></person-group><article-title xml:lang=\"en\">Physics-informed machine learning</article-title><source>Nat. Rev. Phys.</source><year>2021</year><volume>3</volume><issue>6</issue><fpage>422</fpage><lpage>440</lpage><pub-id pub-id-type=\"doi\">10.1038/s42254-021-00314-5</pub-id></mixed-citation></ref>",
+    "<ref id=\"CR12\"><label>12.</label><mixed-citation publication-type=\"other\">Khoo, Z.Y., Wu, D., Low, J.S.C., Bressan, S.: Separable Hamiltonian neural networks. Phys. Rev. E <bold>110</bold>, 044205 (2024). <ext-link ext-link-type=\"doi\" xlink:href=\"10.1103/PhysRevE.110.044205\">https://doi.org/10.1103/PhysRevE.110.044205</ext-link></mixed-citation></ref>",
+    "<ref id=\"CR13\"><label>13.</label><mixed-citation publication-type=\"other\">Khoo, Z.Y., Wu, D., Low, J.S.C., Bressan, S.: Periodic Hamiltonian neural networks. IEEE Trans. Artif. Intell. <bold>1</bold>(01), 1\u20139 (5555). <ext-link ext-link-type=\"doi\" xlink:href=\"10.1109/TAI.2024.3515934\">https://doi.org/10.1109/TAI.2024.3515934</ext-link></mixed-citation></ref>",
+    "<ref id=\"CR14\"><label>14.</label><mixed-citation publication-type=\"other\">Kingma, D.P., Welling, M.: Auto-encoding variational bayes. In: 2nd International Conference on Learning Representations, ICLR 2014, Banff, AB, Canada, 14\u201316 April 2014, Conference Track Proceedings (2014)</mixed-citation></ref>",
+    "<ref id=\"CR15\"><label>15.</label><mixed-citation publication-type=\"other\">Levina, E., Bickel, P.: Maximum likelihood estimation of intrinsic dimension. In: Advances in Neural Information Processing Systems, vol. 17 (2004)</mixed-citation></ref>",
+    "<ref id=\"CR16\"><label>16.</label><mixed-citation publication-type=\"other\">Meyer, K.R., Hall, G.R.: Hamiltonian Differential Equations and the N-Body Problem, pp. 1\u201332. Springer, New York, (1992)</mixed-citation></ref>",
+    "<ref id=\"CR17\"><label>17.</label><mixed-citation publication-type=\"other\">Nolte, D.D.: The tangled tale of phase space. In: Galileo Unbound: A Path Across Life, the Universe and Everything. Oxford University Press (2018)</mixed-citation></ref>",
+    "<ref id=\"CR18\"><label>18.</label><mixed-citation publication-type=\"confproc\"><person-group person-group-type=\"author\"><name><surname>Sasaki</surname><given-names>R</given-names></name><name><surname>Takeishi</surname><given-names>N</given-names></name><name><surname>Yairi</surname><given-names>T</given-names></name><name><surname>Hori</surname><given-names>K</given-names></name></person-group><person-group person-group-type=\"editor\"><name><surname>Nayak</surname><given-names>AC</given-names></name><name><surname>Sharma</surname><given-names>A</given-names></name></person-group><article-title xml:lang=\"en\">Neural gray-box identification of nonlinear partial differential equations</article-title><source>PRICAI 2019: Trends in Artificial Intelligence</source><year>2019</year><publisher-loc>Cham</publisher-loc><publisher-name>Springer</publisher-name><fpage>309</fpage><lpage>321</lpage><pub-id pub-id-type=\"doi\">10.1007/978-3-030-29911-8_24</pub-id><volume content-type=\"number-in-series\">11671</volume></mixed-citation></ref>",
+    "<ref id=\"CR19\"><label>19.</label><mixed-citation publication-type=\"journal\"><person-group person-group-type=\"author\"><name><surname>Wang</surname><given-names>Y</given-names></name><etal/></person-group><article-title xml:lang=\"en\">PredRNN: a recurrent neural network for spatiotemporal predictive learning</article-title><source>IEEE Trans. Pattern Anal. Mach. Intell.</source><year>2023</year><volume>45</volume><issue>2</issue><fpage>2208</fpage><lpage>2225</lpage><pub-id pub-id-type=\"doi\">10.1109/TPAMI.2022.3165153</pub-id></mixed-citation></ref>",
+    "<ref id=\"CR20\"><label>20.</label><mixed-citation publication-type=\"other\">Wu, H., et al.: Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model. In: Thirty-Eighth AAAI Conference on Artificial Intelligence (2024)</mixed-citation></ref>"
+  ]
+}
