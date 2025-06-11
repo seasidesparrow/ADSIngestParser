@@ -111,6 +111,7 @@ class TestJATS(unittest.TestCase):
             "jats_mnras_inst_1",
             "jats_springer_running_title_in_subtitle",
             "jats_csp_weird_affil_problem",
+            "ieee_jats_omit_western_name_alternatives",
         ]
 
         for f in filenames:
