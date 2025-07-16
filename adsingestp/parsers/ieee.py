@@ -273,6 +273,6 @@ class IEEEParser(BaseBeautifulSoupParser):
         self._parse_references()
         self._parse_funding()
 
-        output = self.format(self.base_metadata, format="OtherXML")
+        output = self.format(self.base_metadata, format="IEEE")
 
         return output
