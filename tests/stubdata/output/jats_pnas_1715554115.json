@@ -256,6 +256,7 @@
       "contrib": {
         "name": {
           "given_name": "Clifford R.",
+          "suffix": "Jr.",
           "surname": "Jack"
         }
       },
@@ -1300,6 +1301,7 @@
       "contrib": {
         "name": {
           "given_name": "Daniel",
+          "suffix": "II",
           "surname": "D\u2019Agostino"
         }
       },
@@ -1453,6 +1455,7 @@
       "contrib": {
         "name": {
           "given_name": "Rob",
+          "prefix": "Dr",
           "surname": "Bartha"
         }
       },
