@@ -134,7 +134,7 @@
   ],
   "recordData": {
     "createdTime": "",
-    "loadFormat": "OtherXML",
+    "loadFormat": "IEEE",
     "loadLocation": "",
     "loadType": "fromFile",
     "parsedTime": "",
