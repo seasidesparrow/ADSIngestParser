@@ -269,6 +269,6 @@ class WileyParser(BaseBeautifulSoupParser):
         self._parse_keywords()
         self._parse_references()
 
-        output = self.format(self.base_metadata, format="OtherXML")
+        output = self.format(self.base_metadata, format="Wiley")
 
         return output

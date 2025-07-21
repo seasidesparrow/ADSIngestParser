@@ -478,5 +478,5 @@ class ElsevierParser(BaseBeautifulSoupParser):
         self._parse_references()
         self._parse_esources()
         self.base_metadata = self._entity_convert(self.base_metadata)
-        output = self.format(self.base_metadata, format="OtherXML")
+        output = self.format(self.base_metadata, format="Elsevier")
         return output

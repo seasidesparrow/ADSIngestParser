@@ -314,12 +314,15 @@ class JATSAffils(object):
                 # cycle through <contrib> to check if a <collab> is listed in the same level as an author an has multiple authors nested under it;
                 # targeted for Springer
 
-                if contrib.find("collab"):
+                if contrib.find("collab") or contrib.find("collab-name"):
                     # Springer collab info for nested authors is given as <institution>
-                    if contrib.find("collab").find("institution"):
-                        collab = contrib.find("collab").find("institution")
+                    if contrib.find("collab"):
+                        if contrib.find("collab").find("institution"):
+                            collab = contrib.find("collab").find("institution")
+                        else:
+                            collab = contrib.find("collab")
                     else:
-                        collab = contrib.find("collab")
+                        collab = contrib.find("collab-name")
 
                     # This is checking if a collaboration is listed as an author
                     if collab:
@@ -344,6 +347,8 @@ class JATSAffils(object):
                             "rid": None,
                             "surname": "",
                             "given": "",
+                            "prefix": "",
+                            "suffix": "",
                             "native_lang": "",
                             "orcid": "",
                         }
@@ -432,6 +437,8 @@ class JATSAffils(object):
                             "rid": None,
                             "surname": "",
                             "given": "",
+                            "prefix": "",
+                            "suffix": "",
                             "native_lang": "",
                             "orcid": "",
                         }
@@ -457,15 +464,37 @@ class JATSAffils(object):
                 else:
                     given = ""
 
+                if contrib.find("name") and contrib.find("name").find("suffix"):
+                    suffix = contrib.find("name").find("suffix").get_text()
+                elif contrib.find("string-name") and contrib.find("string-name").find("suffix"):
+                    suffix = contrib.find("string-name").find("suffix").get_text()
+                else:
+                    suffix = ""
+
+                if contrib.find("name") and contrib.find("name").find("prefix"):
+                    prefix = contrib.find("name").find("prefix").get_text()
+                elif contrib.find("string-name") and contrib.find("string-name").find("prefix"):
+                    prefix = contrib.find("string-name").find("prefix").get_text()
+                else:
+                    prefix = ""
+
                 # get native language author name
                 if contrib.find("name-alternatives"):
                     if contrib.find("name-alternatives").find("string-name"):
-                        native_lang = (
+                        if (
                             contrib.find("name-alternatives")
                             .find("string-name")
-                            .get_text()
-                            .strip()
-                        )
+                            .get("name-style", "")
+                            != "western"
+                        ):
+                            native_lang = (
+                                contrib.find("name-alternatives")
+                                .find("string-name")
+                                .get_text()
+                                .strip()
+                            )
+                        else:
+                            native_lang = ""
                     else:
                         native_lang = contrib.find("name-alternatives").get_text().strip()
                 else:
@@ -543,10 +572,11 @@ class JATSAffils(object):
                 # note that the ingest schema allows a single orcid, but we've extracted all
                 # here in case that changes to allow more than one
                 if orcid:
-                    print("bippy!",orcid)
                     orcid_out = self._fix_orcid(orcid)
-                    print("flippy!",orcid_out)
-                    orcid_out = orcid_out[0]
+                    if orcid_out:
+                        orcid_out = orcid_out[0]
+                    else:
+                        orcid_out = ""
                 else:
                     orcid_out = ""
 
@@ -554,6 +584,8 @@ class JATSAffils(object):
                 auth["corresp"] = l_correspondent
                 auth["surname"] = surname
                 auth["given"] = given
+                auth["suffix"] = suffix
+                auth["prefix"] = prefix
                 auth["native_lang"] = native_lang
                 auth["aff"] = aff_text
                 auth["affid"] = aff_extids
@@ -569,7 +601,7 @@ class JATSAffils(object):
                         auth["collab"] = collab_name
 
                     # Check if author is a duplicate of a collaboration
-                    if auth["surname"] == "" and auth["collab"]:
+                    if auth.get("surname", "") == "" and auth.get("collab", ""):
                         # delete email and correspondence info for collabs
                         auth["email"] = []
                         auth["xemail"] = []
@@ -1122,7 +1154,7 @@ class JATSParser(BaseBeautifulSoupParser):
             pub_format = d.get("publication-format", "")
             pub_type = d.get("pub-type", "")
             date_type = d.get("date-type", "")
-            accepted_date_types = ["pub", "", "first_release"]
+            accepted_date_types = ["pub", "", "first_release", "epub-ppub", "ppub-epub"]
             pubdate = self._get_date(d)
             if (
                 pub_format == "print"
@@ -1135,6 +1167,8 @@ class JATSParser(BaseBeautifulSoupParser):
             if (
                 pub_format == "electronic"
                 or pub_type == "epub"
+                or pub_type == "epub-ppub"
+                or pub_type == "ppub-epub"
                 or (pub_type == "" and pub_format == "")
             ) and (date_type in accepted_date_types):
                 self.base_metadata["pubdate_electronic"] = pubdate
