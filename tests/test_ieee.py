@@ -22,6 +22,7 @@ class TestIEEE(unittest.TestCase):
         filenames = [
             "ieee_example_1",
             "ieee_example_2",
+            "ieee_idams",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")

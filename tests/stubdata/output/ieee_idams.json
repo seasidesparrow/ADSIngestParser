@@ -1,0 +1,156 @@
+{
+  "abstract": {
+    "textEnglish": "Synthetic aperture radar (SAR) imaging provides a method for increasing the resolution of small and low-cost frequency-modulated continuous-wave multiple-input multiple-output radar sensors. SAR images provide a dense representation of the environment, which may be used for scan matching in a simultaneous localization and mapping (SLAM) system. This article presents the details of an indoor SLAM system that utilizes SAR images for loop closure detection and scan matching. The obtained trajectory accuracy is compared against a laboratory reference system, and SAR imaging results are presented."
+  },
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Corporate Sector Research and Advance Engineering, Robert Bosch GmbH, Renningen, Germany"
+        }
+      ],
+      "attrib": {
+        "email": "yumaelia.ritterbusch@de.bosch.com",
+        "orcid": "0009-0004-0095-0118"
+      },
+      "name": {
+        "given_name": "Yuma Elia",
+        "surname": "Ritterbusch"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Corporate Sector Research and Advance Engineering, Robert Bosch GmbH, Renningen, Germany"
+        }
+      ],
+      "attrib": {
+        "email": "johannes.fink@de.bosch.com"
+      },
+      "name": {
+        "given_name": "Johannes",
+        "surname": "Fink"
+      }
+    },
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Institute of Microwave Engineering, Ulm University, Germany"
+        }
+      ],
+      "attrib": {
+        "email": "christian.waldschmidt@uni-ulm.de",
+        "orcid": "0000-0003-2090-6136"
+      },
+      "name": {
+        "given_name": "Christian",
+        "surname": "Waldschmidt"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "2024 Authors. \u00a9 2024 The Authors. This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see https://creativecommons.org/licenses/by/4.0/",
+    "status": true
+  },
+  "keywords": [
+    {
+      "keyString": "Radar polarimetry",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Radar imaging",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Radar",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Trajectory",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Simultaneous localization and mapping",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Odometry",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Synthetic aperture radar",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Robots",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Sensors",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Vectors",
+      "keySystem": "IEEE"
+    },
+    {
+      "keyString": "Automotive radar",
+      "keySystem": "IEEEFree"
+    },
+    {
+      "keyString": "radar imaging",
+      "keySystem": "IEEEFree"
+    },
+    {
+      "keyString": "sensor data fusion",
+      "keySystem": "IEEEFree"
+    },
+    {
+      "keyString": "simultaneous localization and mapping (SLAM)",
+      "keySystem": "IEEEFree"
+    },
+    {
+      "keyString": "synthetic aperture radar (SAR)",
+      "keySystem": "IEEEFree"
+    }
+  ],
+  "openAccess": {
+    "open": true
+  },
+  "pagination": {
+    "firstPage": "1",
+    "lastPage": "12"
+  },
+  "pubDate": {
+    "electrDate": "2024-12-30",
+    "printDate": "2025-00-00"
+  },
+  "publication": {
+    "ISSN": [
+      {
+        "issnString": "2832-7322",
+        "pubtype": "Electronic"
+      }
+    ],
+    "pubName": "IEEE Journal of Indoor and Seamless Positioning and Navigation",
+    "pubYear": "2025",
+    "volumeNum": "3"
+  },
+  "publisherIDs": [
+    {
+      "Identifier": "10.1109/JISPIN.9955032",
+      "attribute": "doi"
+    }
+  ],
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "IEEE",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
+  },
+  "title": {
+    "textEnglish": "Simultaneous Localization and Mapping for Indoor Mobile Robots Using Synthetic Aperture Radar Images"
+  }
+}

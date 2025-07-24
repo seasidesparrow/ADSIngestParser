@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE publication PUBLIC "-//IEEE//IDAMS Exchange V2.0.0//EN" "ieee_idams_exchange.dtd">
+<publication>
+  <title><![CDATA[IEEE Journal of Indoor and Seamless Positioning and Navigation]]></title>
+  <titleabbrev><![CDATA[J. Ind. Sea. Pos. Nav.]]></titleabbrev>
+  <normtitle><![CDATA[Indoor and Seamless Positioning and Navigation, IEEE Journal of]]></normtitle>
+  <publicationinfo>
+    <idamsid>0b0000649047e23c</idamsid>
+    <pubsourceid>0079800</pubsourceid>
+    <publicationdoi>10.1109/JISPIN.9955032</publicationdoi>
+    <publicationtype>Periodical</publicationtype>
+    <publicationsubtype>IEEE Journal</publicationsubtype>
+    <ieeeabbrev>JISPIN</ieeeabbrev>
+    <acronym acronymtype="PIMS">JISPIN</acronym>
+    <pubstatus>Active</pubstatus>
+    <publicationopenaccess>T</publicationopenaccess>
+    <issn mediatype="Electronic">2832-7322</issn>
+    <bms_product_number>PER496</bms_product_number>
+    <pubtopicalbrowseset>
+      <pubtopicalbrowse>Aerospace</pubtopicalbrowse>
+      <pubtopicalbrowse>Transportation</pubtopicalbrowse>
+      <pubtopicalbrowse>Robotics and Control Systems</pubtopicalbrowse>
+      <pubtopicalbrowse>Communication, Networking and Broadcast Technologies</pubtopicalbrowse>
+      <pubtopicalbrowse>General Topics for Engineers</pubtopicalbrowse>
+      <pubtopicalbrowse>Components, Circuits, Devices and Systems</pubtopicalbrowse>
+      <pubtopicalbrowse>Signal Processing and Analysis</pubtopicalbrowse>
+    </pubtopicalbrowseset>
+    <copyrightgroup>
+      <copyright>
+        <year>2023</year>
+        <holder>CCBY</holder>
+      </copyright>
+    </copyrightgroup>
+    <publisher>
+      <publishername>IEEE</publishername>
+    </publisher>
+    <holdstatus>Publish</holdstatus>
+    <confgroup>
+      <doi_permission>F</doi_permission>
+    </confgroup>
+    <amsid>9955032</amsid>
+    <coden>ISPNDR</coden>
+  </publicationinfo>
+  <volume>
+    <volumeinfo>
+      <year>2025</year>
+      <volumenum>3</volumenum>
+      <idamsid>0b000064937fcc8a</idamsid>
+      <issue>
+        <amsid>10856386</amsid>
+        <issuestatus>Complete</issuestatus>
+      </issue>
+    </volumeinfo>
+    <article>
+      <title><![CDATA[Simultaneous Localization and Mapping for Indoor Mobile Robots Using Synthetic Aperture Radar Images]]></title>
+      <articleinfo>
+        <articleseqnum>10</articleseqnum>
+        <articledoi>10.1109/JISPIN.2024.3524487</articledoi>
+        <articlemancentralid>ISPIN-0010-Nov-2024</articlemancentralid>
+        <idamsid>0b0000649365331b</idamsid>
+        <articlestatus>Active</articlestatus>
+        <contenttype>orig-research</contenttype>
+        <articleopenaccess>T</articleopenaccess>
+        <articleshowflag>T</articleshowflag>
+        <articleplagiarizedflag>F</articleplagiarizedflag>
+        <articlenodoiflag>F</articlenodoiflag>
+        <articlecoverimageflag>F</articlecoverimageflag>
+        <articlereferenceflag>F</articlereferenceflag>
+        <articlepeerreviewflag>F</articlepeerreviewflag>
+        <holdstatus>Publish</holdstatus>
+        <articlecopyright holderisieee="Yes" year="2024">Authors</articlecopyright>
+        <article_copyright_statement>© 2024 The Authors. This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see https://creativecommons.org/licenses/by/4.0/</article_copyright_statement>
+        <articlelicense>CCBY</articlelicense>
+        <article_license_uri>https://creativecommons.org/licenses/by/4.0/legalcode</article_license_uri>
+        <abstract abstracttype="Regular"><![CDATA[Synthetic aperture radar (SAR) imaging provides a method for increasing the resolution of small and low-cost frequency-modulated continuous-wave multiple-input multiple-output radar sensors. SAR images provide a dense representation of the environment, which may be used for scan matching in a simultaneous localization and mapping (SLAM) system. This article presents the details of an indoor SLAM system that utilizes SAR images for loop closure detection and scan matching. The obtained trajectory accuracy is compared against a laboratory reference system, and SAR imaging results are presented.]]></abstract>
+        <authorgroup>
+          <author role="primary-corresponding">
+            <amsid>126836025</amsid>
+            <authororder>1</authororder>
+            <orcid>0009-0004-0095-0118</orcid>
+            <normname><![CDATA[Ritterbusch, Y.E.]]></normname>
+            <nonnormname><![CDATA[Yuma Elia Ritterbusch]]></nonnormname>
+            <firstname><![CDATA[Yuma Elia]]></firstname>
+            <unicodefirstname><![CDATA[Yuma Elia]]></unicodefirstname>
+            <surname><![CDATA[Ritterbusch]]></surname>
+            <unicodesurname><![CDATA[Ritterbusch]]></unicodesurname>
+            <affiliation><![CDATA[Corporate Sector Research and Advance Engineering, Robert Bosch GmbH, Renningen, Germany]]></affiliation>
+            <affgrp>
+              <affn>
+                <amsid>223865924</amsid>
+                <orgname><![CDATA[Robert Bosch GmbH]]></orgname>
+                <orgdiv><![CDATA[Corporate Sector Research and Advance Engineering]]></orgdiv>
+                <address>
+                  <city><![CDATA[Renningen]]></city>
+                  <country><![CDATA[Germany]]></country>
+                  <postcode>71272</postcode>
+                </address>
+              </affn>
+            </affgrp>
+            <authortype>Author</authortype>
+            <authorbio><![CDATA[Yuma Elia Ritterbusch received the Dipl.-Ing. (M.Sc.) degree in electrical engineering from the Dresden University of Technology, Dresden, Germany, in 2021. He is currently working toward the Ph.D. degree in electrical engineering with Robert Bosch GmbH, Renningen, Germany, in cooperation with the Institute of Microwave Engineering, Ulm University, Ulm, Germany. Since 2021, he has been with the Corporate Sector Research and Advance Engineering Division, Robert Bosch GmbH. His research interests include radar signal processing, feature extraction, state estimation, and simultaneous localization and mapping.]]></authorbio>
+            <email><![CDATA[yumaelia.ritterbusch@de.bosch.com]]></email>
+          </author>
+          <author role="coauthor">
+            <amsid>126836026</amsid>
+            <authororder>2</authororder>
+            <normname><![CDATA[Fink, J.]]></normname>
+            <nonnormname><![CDATA[Johannes Fink]]></nonnormname>
+            <firstname><![CDATA[Johannes]]></firstname>
+            <unicodefirstname><![CDATA[Johannes]]></unicodefirstname>
+            <surname><![CDATA[Fink]]></surname>
+            <unicodesurname><![CDATA[Fink]]></unicodesurname>
+            <affiliation><![CDATA[Corporate Sector Research and Advance Engineering, Robert Bosch GmbH, Renningen, Germany]]></affiliation>
+            <affgrp>
+              <affn>
+                <amsid>223865925</amsid>
+                <orgname><![CDATA[Robert Bosch GmbH]]></orgname>
+                <orgdiv><![CDATA[Corporate Sector Research and Advance Engineering]]></orgdiv>
+                <address>
+                  <city><![CDATA[Renningen]]></city>
+                  <country><![CDATA[Germany]]></country>
+                  <postcode>71272</postcode>
+                </address>
+              </affn>
+            </affgrp>
+            <authortype>Author</authortype>
+            <authorbio><![CDATA[Johannes Fink received the Dipl.-Ing. (M.Sc.) and Dr.-Ing. (Ph.D.) degrees in electrical engineering and information technology from the Karlsruhe Institute of Technology, Karlsruhe, Germany, in 2011 and 2017, respectively. From 2011 to 2017, he was with the Communication Engineering Lab, Karlsruhe Institute of Technology. Since 2017, he has been with the Corporate Sector Research and Advance Engineering Division, Robert Bosch GmbH, Renningen, Germany, where he is involved in the field of radar systems and signal processing. His research interests include radar signal processing and radar system design for automotive applications and beyond.]]></authorbio>
+            <email><![CDATA[johannes.fink@de.bosch.com]]></email>
+          </author>
+          <author role="coauthor">
+            <amsid>126836027</amsid>
+            <authororder>3</authororder>
+            <orcid>0000-0003-2090-6136</orcid>
+            <normname><![CDATA[Waldschmidt, C.]]></normname>
+            <nonnormname><![CDATA[Christian Waldschmidt]]></nonnormname>
+            <firstname><![CDATA[Christian]]></firstname>
+            <unicodefirstname><![CDATA[Christian]]></unicodefirstname>
+            <surname><![CDATA[Waldschmidt]]></surname>
+            <unicodesurname><![CDATA[Waldschmidt]]></unicodesurname>
+            <affiliation><![CDATA[Institute of Microwave Engineering, Ulm University, Germany]]></affiliation>
+            <affgrp>
+              <affn>
+                <amsid>223865926</amsid>
+                <orgname><![CDATA[Ulm University]]></orgname>
+                <orgdiv><![CDATA[Institute of Microwave Engineering]]></orgdiv>
+                <address>
+                  <country><![CDATA[Germany]]></country>
+                  <postcode>Ulm89081</postcode>
+                </address>
+              </affn>
+            </affgrp>
+            <authortype>Author</authortype>
+            <authorbio><![CDATA[Christian Waldschmidt (Fellow, IEEE) received the Dipl.-Ing. (M.S.E.E.) and Dr.-Ing. (Ph.D.E.E.) degrees in electrical engineering from Universität Karlsruhe, Karlsruhe, Germany, in 2001 and 2004, respectively. From 2001 to 2004, he was a Research Assistant with the Institut für Höchstfrequenztechnik and Elektronik, Universität Karlsruhe. Since 2004, he has been with in the Corporate Research and Chassis Systems business units, Robert Bosch GmbH, Renningen, Germany. He was heading different research and development teams in microwave engineering, RF sensing, and automotive radar. In 2013, he returned to academia. He was appointed as the Director of the Institute of Microwave Engineering, Ulm University, Ulm, Germany, as a Full Professor. He authored or coauthored more than 320 scientific publications and more than 25 patents. His research interests include radar and RF sensing, millimeter-wave and submillimeter-wave engineering, antennas and antenna arrays, RF, and array signal processing. Dr. Waldschmidt served as the Chair of the IEEE MTT-29 Technical Committee on Microwave Aerospace Systems and the MTT-27 Technical Committee on Wireless Enabled Automotive and Vehicular Applications. He was a two-time Technical Program Committee Chair and the General Chair of the IEEE MTT International Conference on Microwaves for Intelligent Mobility. He was a General Chair of the German Microwave Conference in 2022 and a General Chair of the European Radar Conference in 2023. He was a three-time Guest Editor for IEEE Microwave Magazine and IEEE Microwave and Wireless Components Letters. From 2018 to 2022, he was an Associate Editor for IEEE Microwave and Wireless Components Letters. He is a Reviewer for multiple IEEE Transactions and many IEEE conferences in the field of microwaves. He has been a corecipient of more than 15 best paper awards since 2015. Since 2020, he has been a Member of the Heidelberg Academy of Sciences and Humanities.]]></authorbio>
+            <email><![CDATA[christian.waldschmidt@uni-ulm.de]]></email>
+          </author>
+        </authorgroup>
+        <date datetype="OriginalPub">
+          <year>2025</year>
+        </date>
+        <date datetype="accepteddate">
+          <year>2024</year>
+          <month>12</month>
+          <day>23</day>
+        </date>
+        <date datetype="preprintdate">
+          <year>2024</year>
+          <month>12</month>
+          <day>30</day>
+        </date>
+        <date datetype="ePub">
+          <year>2024</year>
+          <month>12</month>
+          <day>30</day>
+        </date>
+        <size>4674152</size>
+        <filename docpartition="8" filetype="MainPDF">10818650.pdf</filename>
+        <filename filetype="Graphical-Abstract-Cover-Image">jispin-gagraphic-3524487.jpg</filename>
+        <filename filetype="Graphical-Abstract-Filename">jispin-gagraphic-3524487.jpg</filename>
+        <artpagenums endpage="12" startpage="1">1-12</artpagenums>
+        <article-graphical-abstract>
+          <graphical-abstract-summary>This system block diagrams shows the interaction between all proposed subsystems to enable indoor SLAM for mobile robots using SAR images.</graphical-abstract-summary>
+          <graphical-abstract-type>graphic</graphical-abstract-type>
+        </article-graphical-abstract>
+        <amsid>10818650</amsid>
+        <keywordset keywordtype="IEEE">
+          <keyword>
+            <keywordterm><![CDATA[Radar polarimetry]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[Radar imaging]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[Radar]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[Trajectory]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[Simultaneous localization and mapping]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[Odometry]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[Synthetic aperture radar]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[Robots]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[Sensors]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[Vectors]]></keywordterm>
+          </keyword>
+        </keywordset>
+        <keywordset keywordtype="IEEEFree">
+          <keyword>
+            <keywordterm><![CDATA[Automotive radar]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[radar imaging]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[sensor data fusion]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[simultaneous localization and mapping (SLAM)]]></keywordterm>
+          </keyword>
+          <keyword>
+            <keywordterm><![CDATA[synthetic aperture radar (SAR)]]></keywordterm>
+          </keyword>
+        </keywordset>
+      </articleinfo>
+    </article>
+  </volume>
+</publication>

@@ -24,7 +24,8 @@ class IEEEParser(BaseBeautifulSoupParser):
 
         self.base_metadata["issn"] = []
         for i in self.publicationinfo.find_all("issn"):
-            self.base_metadata["issn"].append((i["mediatype"], i.get_text()))
+            if i.get("mediatype", None):
+                self.base_metadata["issn"].append((i["mediatype"], i.get_text()))
 
         if self.article.find("doi"):
             self.base_metadata["ids"]["doi"] = self.article.find("doi").get_text()
@@ -41,18 +42,21 @@ class IEEEParser(BaseBeautifulSoupParser):
     def _parse_pub(self):
         if self.publication.find("title"):
             t = self.publication.find("title")
-            self.base_metadata["publication"] = self._clean_output(
-                self._detag(t, self.HTML_TAGSET["title"]).strip()
-            )
+            if t:
+                self.base_metadata["publication"] = self._clean_output(
+                    self._detag(t, self.HTML_TAGSET["title"]).strip()
+                )
 
         if self.volumeinfo:
-            self.base_metadata["volume"] = self.volumeinfo.find("volumenum").get_text()
-            self.base_metadata["issue"] = self.volumeinfo.find("issue").find("issuenum").get_text()
+            if self.volumeinfo.find("volumenum"):
+                self.base_metadata["volume"] = self.volumeinfo.find("volumenum").get_text()
+            if self.volumeinfo.find("issue") and self.volumeinfo.find("issue").find("issuenum"):
+                self.base_metadata["issue"] = self.volumeinfo.find("issue").find("issuenum").get_text()
 
     def _parse_page(self):
         n = self.article.find("artpagenums", None)
         if n:
-            self.base_metadata["page_first"] = self.base_metadata["page_first"] = self._detag(
+            self.base_metadata["page_first"] = self._detag(
                 n.get("startpage", None), []
             )
             self.base_metadata["page_last"] = self.base_metadata["page_last"] = self._detag(
@@ -78,7 +82,7 @@ class IEEEParser(BaseBeautifulSoupParser):
                     month_name = month_raw[0:3].lower()
                     month = utils.MONTH_TO_NUMBER[month_name]
             else:
-                month_raw == "00"
+                month = "00"
 
             if date.find("day"):
                 day = date.find("day").get_text()
@@ -104,7 +108,7 @@ class IEEEParser(BaseBeautifulSoupParser):
         # Parse abstract from articleinfo section
         if self.article.find("articleinfo"):
             for abstract in self.article.find("articleinfo").find_all("abstract"):
-                if abstract.get("abstracttype") == "Regular":
+                if abstract.get("abstracttype", None) == "Regular":
                     self.base_metadata["abstract"] = self._clean_output(
                         self._detag(abstract, self.HTML_TAGSET["abstract"]).strip()
                     )
@@ -119,10 +123,13 @@ class IEEEParser(BaseBeautifulSoupParser):
                 copyright = articleinfo.find("articlecopyright")
                 copyright_holder = self._clean_output(copyright.get_text())
                 copyright_year = copyright.get("year", "")
-                copyright_statement = self._detag(
-                    articleinfo.find("article_copyright_statement").get_text(),
-                    self.HTML_TAGSET["license"],
-                )
+                if articleinfo.find("article_copyright_statement"):
+                    copyright_statement = self._detag(
+                        articleinfo.find("article_copyright_statement").get_text(),
+                        self.HTML_TAGSET["license"],
+                    )
+                else:
+                    copyright_statement = ""
 
                 # Format copyright string
                 copyright_text = (
