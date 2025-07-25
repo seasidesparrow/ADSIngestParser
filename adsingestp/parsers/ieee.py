@@ -27,8 +27,8 @@ class IEEEParser(BaseBeautifulSoupParser):
             if i.get("mediatype", None):
                 self.base_metadata["issn"].append((i["mediatype"], i.get_text()))
 
-        if self.article.find("doi"):
-            self.base_metadata["ids"]["doi"] = self.article.find("doi").get_text()
+        if self.article.find("articledoi"):
+            self.base_metadata["ids"]["doi"] = self.article.find("articledoi").get_text()
 
         self.base_metadata["ids"]["pub-id"] = []
         if self.publicationinfo.find("publicationdoi"):

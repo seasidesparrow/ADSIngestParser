@@ -121,6 +121,11 @@
     "firstPage": "1",
     "lastPage": "12"
   },
+  "persistentIDs": [
+    {
+      "DOI": "10.1109/JISPIN.2024.3524487"
+    }
+  ],
   "pubDate": {
     "electrDate": "2024-12-30",
     "printDate": "2025-00-00"

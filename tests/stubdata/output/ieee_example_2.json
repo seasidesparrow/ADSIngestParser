@@ -90,6 +90,11 @@
     "firstPage": "398",
     "lastPage": "403"
   },
+  "persistentIDs": [
+    {
+      "DOI": "10.1109/LCSYS.2018.2887241"
+    }
+  ],
   "pubDate": {
     "electrDate": "2019-1-4",
     "printDate": "2019-04-00"
