@@ -1,0 +1,125 @@
+[
+  {
+    "copyright": {
+      "statement": "\u00a9 The Editor(s) (if applicable) and The Author(s), under exclusive license to Springer Nature Singapore Pte Ltd. 2024",
+      "status": true
+    },
+    "otherContributor": [
+      {
+        "contrib": {
+          "affiliation": [
+            {
+              "affPubID": [
+                {
+                  "affID": "https://ror.org/01wjejq96",
+                  "affIDType": "ROR"
+                },
+                {
+                  "affID": "grid.15444.30",
+                  "affIDType": "GRID"
+                },
+                {
+                  "affID": "0000 0004 0470 5454",
+                  "affIDType": "ISNI"
+                }
+              ],
+              "affPubRaw": "Department of Physics, Yonsei University, Seoul, Korea (Republic of)"
+            }
+          ],
+          "name": {
+            "given_name": "Hyoung Joon",
+            "surname": "Choi"
+          }
+        },
+        "role": "editor"
+      },
+      {
+        "contrib": {
+          "affiliation": [
+            {
+              "affPubID": [
+                {
+                  "affID": "https://ror.org/04h9pn542",
+                  "affIDType": "ROR"
+                },
+                {
+                  "affID": "grid.31501.36",
+                  "affIDType": "GRID"
+                },
+                {
+                  "affID": "0000 0004 0470 5905",
+                  "affIDType": "ISNI"
+                }
+              ],
+              "affPubRaw": "Department of Physics and Astronomy, Seoul National University, Seoul, Korea (Republic of)"
+            }
+          ],
+          "name": {
+            "given_name": "Takhee",
+            "surname": "Lee"
+          }
+        },
+        "role": "editor"
+      },
+      {
+        "contrib": {
+          "affiliation": [
+            {
+              "affPubID": [
+                {
+                  "affID": "grid.49100.3c",
+                  "affIDType": "GRID"
+                },
+                {
+                  "affID": "https://ror.org/04xysgw12",
+                  "affIDType": "ROR"
+                },
+                {
+                  "affID": "0000 0001 0742 4007",
+                  "affIDType": "ISNI"
+                }
+              ],
+              "affPubRaw": "Department of Physics, Pohang University of Science and Technology, Pohang, Korea (Republic of)"
+            }
+          ],
+          "name": {
+            "given_name": "Woo-Sung",
+            "surname": "Jung"
+          }
+        },
+        "role": "editor"
+      }
+    ],
+    "persistentIDs": [
+      {
+        "ISBN": [
+          {
+            "isbnString": "978-981-96-0190-5",
+            "pubtype": "ppub"
+          },
+          {
+            "isbnString": "978-981-96-0191-2",
+            "pubtype": "epub"
+          }
+        ]
+      }
+    ],
+    "publication": {
+      "confDates": "August 21, 2022 - August 26, 2022",
+      "confLocation": "Gyeongju, Korea (Republic of)",
+      "confName": "Asia Pacific Physics Conference",
+      "publisher": "Springer Nature Singapore"
+    },
+    "recordData": {
+      "createdTime": "",
+      "loadFormat": "JATS",
+      "loadLocation": "",
+      "loadType": "fromFile",
+      "parsedTime": "2025-07-29T13:16:35.022876Z",
+      "recordOrigin": ""
+    },
+    "title": {
+      "textEnglish": "Proceedings of the 15th Asia Pacific Physics Conference"
+    }
+  }
+]

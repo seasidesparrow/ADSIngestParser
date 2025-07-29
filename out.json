@@ -1,0 +1,53 @@
+{
+  "authors": [
+    {
+      "affiliation": [
+        {
+          "affPubRaw": "Universit\u00e0 degli Studi Roma TRE, Roma, Italy"
+        }
+      ],
+      "attrib": {
+        "corresp": true
+      },
+      "name": {
+        "given_name": "Florestano",
+        "surname": "Evangelisti"
+      }
+    }
+  ],
+  "copyright": {
+    "statement": "\u00a9 The Editor(s) (if applicable) and The Author(s), under exclusive license to Springer Nature Switzerland AG 2025",
+    "status": true
+  },
+  "persistentIDs": [
+    {
+      "ISBN": [
+        {
+          "isbnString": "978-3-031-83564-3",
+          "pubtype": "ppub"
+        },
+        {
+          "isbnString": "978-3-031-83565-0",
+          "pubtype": "epub"
+        }
+      ]
+    }
+  ],
+  "publication": {
+    "publisher": "Springer Nature Switzerland"
+  },
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "JATS",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "2025-07-29T17:04:38.049750Z",
+    "recordOrigin": ""
+  },
+  "subtitle": {
+    "textEnglish": "Dal mondo antico al mondo dei quanti"
+  },
+  "title": {
+    "textEnglish": "Il concetto di materia"
+  }
+}
