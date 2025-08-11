@@ -123,7 +123,9 @@ class IngestBase(object):
         Converts parsed metadata dictionary into formal data model. Parsed metadata dictionary should be
         of the following format:
 
-        input_dict: {'abstract': string,
+        input_dict: {'abstract': {'textEnglish': string,
+                                  'textNative': string,
+                                  'langNative': string},
                      'authors': [{'given': string,
                                   'middle': string,
                                   'surname': string,
@@ -388,13 +390,7 @@ class IngestBase(object):
             "textNotes": input_dict.get("subtitle_notes", []),
         }
 
-        output["abstract"] = {
-            "textEnglish": input_dict.get(
-                "abstract", ""
-            ),  # TODO need to tweak for case of foreign language abstract
-            # "textNative": "XXX", # TODO
-            # "langNative": "XXX" # TODO
-        }
+        output["abstract"] = input_dict.get("abstract", {})
 
         output["comments"] = [
             {"commentOrigin": i.get("origin", ""), "commentText": i.get("text", "")}

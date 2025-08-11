@@ -785,6 +785,29 @@ class JATSParser(BaseBeautifulSoupParser):
 
         return pubdate
 
+    def _normalize_abstract(self, abstract):
+        try:
+            abs_output = None
+            if abstract.find("p"):
+                abstract_all = abstract.find_all("p")
+                abstract_paragraph_list = list()
+               
+                for paragraph in abstract_all:
+                    paragraph = self._remove_latex(paragraph)
+                    para = self._detag(paragraph, self.HTML_TAGSET["abstract"])
+                    abstract_paragraph_list.append(para)
+
+                abs_output = "\n".join(abstract_paragraph_list)
+
+            else:
+                abs_raw = self.article_meta.find("abstract")
+                abs_raw = self._remove_latex(abs_raw)
+                abs_txt = self._detag(abs_raw, self.HTML_TAGSET["abstract"])
+                abs_output = abs_txt
+            return abs_output
+        except Exception as err:
+            logger.warning("Failed in _normalize_abstract: %s" % err)
+
     def _parse_title_abstract(self):
         title_fn_dict = {}
         title_fn_list = []
@@ -847,22 +870,44 @@ class JATSParser(BaseBeautifulSoupParser):
                 if subtitle_notes:
                     self.base_metadata["subtitle_notes"] = subtitle_notes
 
-        if self.article_meta.find("abstract"):
-            if self.article_meta.find("abstract").find("p"):
-                abstract_all = self.article_meta.find("abstract").find_all("p")
-                abstract_paragraph_list = list()
-                for paragraph in abstract_all:
-                    paragraph = self._remove_latex(paragraph)
-                    para = self._detag(paragraph, self.HTML_TAGSET["abstract"])
-                    abstract_paragraph_list.append(para)
-                self.base_metadata["abstract"] = "\n".join(abstract_paragraph_list)
-                if title_fn_list:
-                    self.base_metadata["abstract"] += "  " + " ".join(title_fn_list)
+        # get abstract, translation, decide which is textEnglish/textNative
+        abstract = self.article_meta.find("abstract")
+        trans_abstract = self.article_meta.find("trans-abstract")
+        doc_lang = self.language
+        abs_lang = None
+        abs_text = None
+        trans_lang = None
+        trans_text = None
+        abs_dict = {}
+        if abstract:
+            abs_lang = abstract.get("xml:lang", None)
+            abs_text = self._normalize_abstract(abstract)
+        if trans_abstract:
+            trans_lang = trans_abstract.get("xml:lang", None)
+            trans_text = self._normalize_abstract(trans_abstract)
+        if abs_text or trans_text:
+            # if the translation is english, need to swap English/Native
+            if trans_lang == "en":
+                abs_dict["textEnglish"] = trans_text
+            elif trans_lang and trans_lang != "en":
+                abs_dict["textNative"] = trans_text
+                abs_dict["langNative"] = trans_lang
+            if abs_lang == "en" or doc_lang == "en":
+                abs_dict["textEnglish"] = abs_text
+            elif abs_lang and abs_lang != "en":
+                abs_dict["textNative"] = abs_text
+                abs_dict["langNative"] = abs_lang
+            elif doc_lang and doc_lang != "en":
+                abs_dict["textNative"] = abs_text
+                abs_dict["langNative"] = doc_lang
             else:
-                abs_raw = self.article_meta.find("abstract")
-                abs_raw = self._remove_latex(abs_raw)
-                abs_txt = self._detag(abs_raw, self.HTML_TAGSET["abstract"])
-                self.base_metadata["abstract"] = abs_txt
+                abs_dict["textEnglish"] = abs_text
+                
+            if title_fn_list:
+                if abs_dict["textEnglish"]:
+                    abs_dict["textEnglish"] = abs_dict.get("textEnglish") + "  " + " ".join(title_fn_list)
+        if abs_dict:
+            self.base_metadata["abstract"] = abs_dict
 
     def _parse_author(self):
         auth_affil = JATSAffils()
@@ -1389,9 +1434,6 @@ class JATSParser(BaseBeautifulSoupParser):
         output = self.format(self.base_metadata, format="JATS")
 
         return output
-
-    def add_fulltext(self):
-        pass
 
     def citation_context(
         self,
