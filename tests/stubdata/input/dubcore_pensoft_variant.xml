@@ -1,0 +1,35 @@
+<record>
+<header>
+<identifier>10.3897/BDJ.2.e1069</identifier>
+<datestamp>2014-05-13</datestamp>
+<setSpec>bdj</setSpec>
+</header>
+<metadata>
+<oai-dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai-dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title>Chromosome studies in the aquatic monocots of Myanmar: A brief review with additional records</dc:title>
+<dc:creator>Ito,Yu</dc:creator>
+<dc:creator>Tanaka,Nobuyuki</dc:creator>
+<dc:subject>Aquatic plants</dc:subject>
+<dc:subject>chromosome counts</dc:subject>
+<dc:subject>Limnocharis</dc:subject>
+<dc:subject>Myanmar</dc:subject>
+<dc:subject>Potamogeton</dc:subject>
+<dc:subject>Sagittaria</dc:subject>
+<dc:source>Biodiversity Data Journal 2: e1069</dc:source>
+<dc:description>Myanmar (Burma) constitutes a significant component of the Indo-Myanmar biodiversity hotspot, with elements of the Indian, the Indochina, and the Sino-Japanese floristic regions, yet thus far only a few reliable sources of the country's flora have been available. As a part of a contribution for the floristic inventory of Myanmar, since it is important in a floristic survey to obtain as much information as possible, in addition to previous two reports, here we present three more chromosome counts in the aquatic monocots of Myanmar: Limnocharis flava with 2n = 20, Sagittaria trifolia with 2n = 22 (Alismataceae), and Potamogeton distinctus × P. nodosus with 2n = 52 (Potamogetonaceae); the third one is new to science. A brief review of cytological researches in the floristic regions' 45 non-hybrid aquatic monocots plus well investigated two inter-specific hybrids that are recorded in Myanmar is given, indicating that the further works with a focus on species in Myanmar that has infra-specific chromosome variation in the floristic regions will address the precise evolutionary history of the aquatic flora of Myanmar.</dc:description>
+<dc:relation>info:eu-repo/semantics/altIdentifier/eissn/1314-2828</dc:relation>
+<dc:relation>info:eu-repo/semantics/altIdentifier/pissn/1314-2836</dc:relation>
+<dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+<dc:rights>CC BY 4.0</dc:rights>
+<dc:publisher>Pensoft Publishers</dc:publisher>
+<dc:date>2014</dc:date>
+<dc:type>Taxonomy &amp; Inventories</dc:type>
+<dc:format>text/html</dc:format>
+<dc:identifier>info:doi:10.3897/BDJ.2.e1069</dc:identifier>
+<dc:identifier>https://doi.org/10.3897/BDJ.2.e1069</dc:identifier>
+<dc:identifier>https://bdj.pensoft.net/article/1069/</dc:identifier>
+<dc:identifier>https://bdj.pensoft.net/article/1069/download/pdf/</dc:identifier>
+<dc:language>en</dc:language>
+</oai-dc:dc>
+</metadata>
+</record>

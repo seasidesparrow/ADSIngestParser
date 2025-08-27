@@ -1,0 +1,81 @@
+{
+  "abstract": {
+    "textEnglish": "Myanmar (Burma) constitutes a significant component of the Indo-Myanmar biodiversity hotspot, with elements of the Indian, the Indochina, and the Sino-Japanese floristic regions, yet thus far only a few reliable sources of the country's flora have been available. As a part of a contribution for the floristic inventory of Myanmar, since it is important in a floristic survey to obtain as much information as possible, in addition to previous two reports, here we present three more chromosome counts in the aquatic monocots of Myanmar: Limnocharis flava with 2n = 20, Sagittaria trifolia with 2n = 22 (Alismataceae), and Potamogeton distinctus \u00c3\u2014 P. nodosus with 2n = 52 (Potamogetonaceae); the third one is new to science. A brief review of cytological researches in the floristic regions' 45 non-hybrid aquatic monocots plus well investigated two inter-specific hybrids that are recorded in Myanmar is given, indicating that the further works with a focus on species in Myanmar that has infra-specific chromosome variation in the floristic regions will address the precise evolutionary history of the aquatic flora of Myanmar."
+  },
+  "authors": [
+    {
+      "name": {
+        "given_name": "Yu",
+        "pubraw": "Ito,Yu",
+        "surname": "Ito"
+      }
+    },
+    {
+      "name": {
+        "given_name": "Nobuyuki",
+        "pubraw": "Tanaka,Nobuyuki",
+        "surname": "Tanaka"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "keyString": "Aquatic plants"
+    },
+    {
+      "keyString": "chromosome counts"
+    },
+    {
+      "keyString": "Limnocharis"
+    },
+    {
+      "keyString": "Myanmar"
+    },
+    {
+      "keyString": "Potamogeton"
+    },
+    {
+      "keyString": "Sagittaria"
+    }
+  ],
+  "pubDate": {
+    "electrDate": "2014"
+  },
+  "publication": {
+    "pubYear": "2014",
+    "publisher": "Pensoft Publishers"
+  },
+  "publisherIDs": [
+    {
+      "Identifier": "10.3897/BDJ.2.e1069",
+      "attribute": "urn"
+    },
+    {
+      "Identifier": "info:doi:10.3897/BDJ.2.e1069",
+      "attribute": "publisher-id"
+    },
+    {
+      "Identifier": "https://doi.org/10.3897/BDJ.2.e1069",
+      "attribute": "publisher-id"
+    },
+    {
+      "Identifier": "https://bdj.pensoft.net/article/1069/",
+      "attribute": "publisher-id"
+    },
+    {
+      "Identifier": "https://bdj.pensoft.net/article/1069/download/pdf/",
+      "attribute": "publisher-id"
+    }
+  ],
+  "recordData": {
+    "createdTime": "",
+    "loadFormat": "OtherXML",
+    "loadLocation": "",
+    "loadType": "fromFile",
+    "parsedTime": "",
+    "recordOrigin": ""
+  },
+  "title": {
+    "textEnglish": "Chromosome studies in the aquatic monocots of Myanmar: A brief review with additional records"
+  }
+}

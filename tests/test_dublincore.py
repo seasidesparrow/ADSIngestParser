@@ -23,6 +23,7 @@ class TestDublinCore(unittest.TestCase):
             "arxiv_0901_2443",
             "arxiv_1711_04702",
             "arxiv_math_0306266",
+            "dubcore_pensoft_variant",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")

@@ -142,11 +142,15 @@ class DublinCoreParser(BaseBeautifulSoupParser):
             self.input_header = d.find("record").find("header")
         if d.find("record") and d.find("record").find("metadata"):
             self.input_metadata = d.find("record").find("metadata").find("oai_dc:dc")
+            if not self.input_metadata:
+                self.input_metadata = d.find("record").find("metadata").find("oai-dc:dc")
 
         schema_spec = self.input_metadata.get("xmlns:oai_dc", "")
         if not schema_spec:
-            raise NoSchemaException("Unknown record schema.")
-        elif schema_spec not in self.DUBCORE_SCHEMA:
+            schema_spec = self.input_metadata.get("xmlns:oai-dc", "")
+            if not schema_spec:
+                raise NoSchemaException("Unknown record schema.")
+        if schema_spec not in self.DUBCORE_SCHEMA:
             raise WrongSchemaException("Wrong schema.")
 
         self._parse_ids()
