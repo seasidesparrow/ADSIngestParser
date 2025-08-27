@@ -892,11 +892,11 @@ class JATSParser(BaseBeautifulSoupParser):
             elif trans_lang and trans_lang != "en":
                 abs_dict["textNative"] = trans_text
                 abs_dict["langNative"] = trans_lang
-            if abs_lang == "en" or doc_lang == "en":
-                abs_dict["textEnglish"] = abs_text
-            elif abs_lang and abs_lang != "en":
+            if abs_lang and abs_lang != "en":
                 abs_dict["textNative"] = abs_text
                 abs_dict["langNative"] = abs_lang
+            elif abs_lang == "en" or doc_lang == "en":
+                abs_dict["textEnglish"] = abs_text
             elif doc_lang and doc_lang != "en":
                 abs_dict["textNative"] = abs_text
                 abs_dict["langNative"] = doc_lang
