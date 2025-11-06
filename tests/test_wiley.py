@@ -21,13 +21,13 @@ class TestWiley(unittest.TestCase):
     def test_wiley(self):
         filenames = [
             "wiley_jgra_12057",
-            #"wiley_jgra_57392",
-            #"wiley_swe_461",
-            #"wiley_swe_539",
-            #"wiley_swe_21103",
-            #"wiley_subsup_1",
+            "wiley_jgra_57392",
+            "wiley_swe_461",
+            "wiley_swe_539",
+            "wiley_swe_21103",
+            "wiley_subsup_1",
             #"wiley_subsup_2",
-            #"wiley_missing_open_attr",
+            "wiley_missing_open_attr",
             #"wiley_jgra_58674",
         ]
         for f in filenames:
