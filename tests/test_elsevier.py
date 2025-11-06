@@ -65,8 +65,8 @@ class TestElsevier(unittest.TestCase):
 
             # this field won't match the test data, so check and then discard
             time_difference = (
-                datetime.datetime.strptime(parsed["recordData"]["parsedTime"], TIMESTAMP_FMT)
-                - datetime.datetime.utcnow()
+                datetime.datetime.strptime(parsed["recordData"]["parsedTime"], TIMESTAMP_FMT).replace(tzinfo=datetime.UTC)
+                - datetime.datetime.now(datetime.UTC)
             )
             self.assertTrue(abs(time_difference) < datetime.timedelta(seconds=10))
             parsed["recordData"]["parsedTime"] = ""

@@ -1,7 +1,7 @@
 import html
 import re
 import warnings
-from datetime import datetime
+import datetime
 
 import bs4
 from bs4 import MarkupResemblesLocatorWarning
@@ -225,7 +225,7 @@ class IngestBase(object):
 
         output["recordData"] = {
             "createdTime": "",
-            "parsedTime": datetime.utcnow().strftime(self.TIMESTAMP_FMT),
+            "parsedTime": datetime.datetime.now(datetime.UTC).strftime(self.TIMESTAMP_FMT),
             "loadType": "fromURL" if format == "HTML" else "fromFile",
             "loadFormat": format,
             "loadLocation": "",

@@ -1011,15 +1011,15 @@ class JATSParser(BaseBeautifulSoupParser):
         event_meta = self.article_meta.find("conference")
 
         if event_meta.find("conf-name"):
-            conf_name = self._remove_latex(event_meta.find("conf-name", ""))
+            conf_name = self._remove_latex(event_meta.find("conf-name"))
             self.base_metadata["conf_name"] = self._detag(conf_name, [])
 
         if event_meta.find("conf-loc"):
-            conf_loc = self._remove_latex(event_meta.find("conf-loc", ""))
+            conf_loc = self._remove_latex(event_meta.find("conf-loc"))
             self.base_metadata["conf_location"] = self._detag(conf_loc, [])
 
         if event_meta.find("conf-date"):
-            conf_date = self._remove_latex(event_meta.find("conf-date", ""))
+            conf_date = self._remove_latex(event_meta.find("conf-date"))
             self.base_metadata["conf_date"] = self._detag(conf_date, [])
 
     def _parse_pub(self):
