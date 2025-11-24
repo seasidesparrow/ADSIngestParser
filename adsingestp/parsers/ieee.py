@@ -1,13 +1,88 @@
+import html
 import logging
 import re
 
 from adsingestp import utils
 from adsingestp.ingest_exceptions import XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
+from adsingestp.parsers.jats import JATSParser, JATSAffilParser
 
 logger = logging.getLogger(__name__)
 
 orcid_format = re.compile(r"(\d{4}-){3}\d{3}(\d|X)")
+
+
+class IEEEJournalParser(JATSParser):
+    def __init__(self):
+        super(JATSParser, self).__init__()
+
+    def parse(self, text, bsparser='lxml'):
+        """
+        Parse JATS XML into standard JSON format
+        :param text: string, contents of XML file
+        :return: parsed file contents in JSON format
+        """
+        # IEEE needs to have HTML entities converted to unicode to
+        # deal with Turkish charset translation issues
+        try:
+            text = html.unencode(text)
+            d = self.bsstrtodict(text, parser=bsparser)
+        except Exception as err:
+            raise XmlLoadException(err)
+            
+        document = d.article
+        # front_meta = document.front
+        try:
+            front_meta = document.front
+        except Exception as err:
+            raise XmlLoadException("No front matter found, stopping: %s" % err)
+        self.back_meta = document.back
+
+        self.article_meta = front_meta.find("article-meta")
+        self.journal_meta = front_meta.find("journal-meta")
+
+        # parse individual pieces
+        self._parse_title_abstract()
+        self._parse_author()
+        self._parse_copyright()
+        self._parse_keywords()
+
+        # Volume:
+        volume = self.article_meta.volume
+        if volume:
+            self.base_metadata["volume"] = self._detag(volume, [])
+
+        # Issue:
+        issue = self.article_meta.issue
+        if issue:
+            self.base_metadata["issue"] = self._detag(issue, [])
+
+        if self.article_meta.find("conference"):
+            self._parse_conference()
+
+        self._parse_pub()
+        self._parse_related()
+        self._parse_ids()
+        self._parse_pubdate()
+        self._parse_edhistory()
+        self._parse_permissions()
+        self._parse_page()
+        self._parse_esources()
+        self._parse_funding()
+
+        self._parse_references()
+
+        self.base_metadata = self._entity_convert(self.base_metadata)
+
+        output = self.format(self.base_metadata, format="IEEE")
+
+        return output
+
+
+
+
+
+
 
 
 class IEEEParser(BaseBeautifulSoupParser):
