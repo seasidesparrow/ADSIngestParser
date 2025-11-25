@@ -18,6 +18,42 @@ class TestIEEE(unittest.TestCase):
         self.inputdir = os.path.join(stubdata_dir, "input")
         self.outputdir = os.path.join(stubdata_dir, "output")
 
+    def test_ieee_journals(self):
+        filenames = [
+            "ieee_jats_omit_western_name_alternatives",
+            "ieee_jats_disappearing_html_entities",
+        ]
+        for f in filenames:
+            test_infile = os.path.join(self.inputdir, f + ".xml")
+            test_outfile = os.path.join(self.outputdir, f + ".json")
+            parser = ieee.IEEEJournalParser()
+
+            with open(test_infile, "r") as fp:
+                input_data = fp.read()
+
+            parsed = parser.parse(input_data)
+
+            with open(test_outfile, "r") as fp:
+                output_text = fp.read()
+                output_data = json.loads(output_text)
+
+            # make sure this is valid schema
+            try:
+                ads_schema_validator().validate(parsed)
+            except Exception:
+                self.fail("Schema validation failed")
+                pass
+
+            # this field won't match the test data, so check and then discard
+            time_difference = (
+                datetime.datetime.strptime(parsed["recordData"]["parsedTime"], TIMESTAMP_FMT)
+                - datetime.datetime.utcnow()
+            )
+            self.assertTrue(abs(time_difference) < datetime.timedelta(seconds=10))
+            parsed["recordData"]["parsedTime"] = ""
+
+            self.assertEqual(parsed, output_data)
+
     def test_ieee(self):
         filenames = [
             "ieee_example_1",

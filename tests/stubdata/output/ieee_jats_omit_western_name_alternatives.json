@@ -57,7 +57,7 @@
     }
   ],
   "copyright": {
-    "statement": "1557-9662 2024 IEEE. Personal use is permitted, but republication/redistribution requires IEEE permission. See https://www.ieee.org/publications/rights/index.html for more information.",
+    "statement": "1557-9662 \u00a9 2024 IEEE. Personal use is permitted, but republication/redistribution requires IEEE permission. See https://www.ieee.org/publications/rights/index.html for more information.",
     "status": true
   },
   "funding": [
@@ -133,7 +133,7 @@
   ],
   "recordData": {
     "createdTime": "",
-    "loadFormat": "JATS",
+    "loadFormat": "IEEE",
     "loadLocation": "",
     "loadType": "fromFile",
     "parsedTime": "",
