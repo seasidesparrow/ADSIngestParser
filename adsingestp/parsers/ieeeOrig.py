@@ -1,10 +1,3 @@
-# IEEE parser for metadata-only (not full-text) conference XML files
-# /proj/ads_abstracts/sources/IEEE/IEEEcnf/MetadataXML/*
-
-# Parser assumes XML structured per:
-# IEEE XML documentation v.5.14, July 2024
-# https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/ieee-data-delivery-documentation.pdf
-
 import logging
 import re
 
@@ -27,19 +20,15 @@ class IEEEParser(BaseBeautifulSoupParser):
         self.article = None
 
     def _parse_ids(self):
-        # ISSN
+        self.base_metadata["ids"] = {}
+
         self.base_metadata["issn"] = []
         for i in self.publicationinfo.find_all("issn"):
             self.base_metadata["issn"].append((i["mediatype"], i.get_text()))
 
-        # IDs
-        self.base_metadata["ids"] = {}
+        if self.article.find("doi"):
+            self.base_metadata["ids"]["doi"] = self.article.find("doi").get_text()
 
-        # DOI for article
-        if self.article.find("articledoi"):
-            self.base_metadata["ids"]["doi"] = self.article.find("articledoi").get_text()
-
-        # DOI for Conference
         self.base_metadata["ids"]["pub-id"] = []
         if self.publicationinfo.find("publicationdoi"):
             self.base_metadata["ids"]["pub-id"].append(
@@ -49,98 +38,26 @@ class IEEEParser(BaseBeautifulSoupParser):
                 }
             )
 
-        # IEEE unique ID for article
-        if self.article.find("articleinfo"):
-            articleinfo = self.article.find("articleinfo")
-            # Article sequence number
-            if articleinfo.find("articleseqnum"):
-                articleid = articleinfo.find("articleseqnum").get_text()
-                self.base_metadata["electronic_id"] = articleid
-                # This next bit probably unnecessary? Unlikely to be >9999 articles in a conf proceedings
-                #if len(articleid) > 4:
-                #    self.base_metadata["page_first"] = articleid[-4:]  # rightmost 4 chars
-                #else:
-                #    self.base_metadata["page_first"] = articleid
-
     def _parse_pub(self):
-        # Conference name
         if self.publication.find("title"):
             t = self.publication.find("title")
-            title = self._clean_output(
+            self.base_metadata["publication"] = self._clean_output(
                 self._detag(t, self.HTML_TAGSET["title"]).strip()
             )
-        self.base_metadata["publication"] = title
 
-        # Conference volume number
         if self.volumeinfo:
-            if self.volumeinfo.find("volumenum"):
-                self.base_metadata["volume"] = self.volumeinfo.find("volumenum").text
-            else:
-                self.base_metadata["volume"] = ""
-
-        # Conferences don't have an issue number
-
-        # Conference abbreviation
-        self.base_metadata["comments"] = []
-        ieeeabbrev = self.publicationinfo.find("ieeeabbrev").text or ""
-        if ieeeabbrev:
-            cleanabbrev = re.sub(r"[^A-Za-z]", "", ieeeabbrev)
-            confabbrev = cleanabbrev[:4].ljust(4, '.')  # leftmost 4 chars, or pad if <4
-            self.base_metadata["comments"].append({"text": confabbrev})
-        else:
-            self.base_metadata["comments"].append({"text": "ieee."})
-
-        # Conference location
-        if self.publicationinfo.find("conflocation") is not None:
-            confloc = self.publicationinfo.find("conflocation").text
-        self.base_metadata["conf_location"] = confloc
-
-        # Conference dates
-        confdate = ""
-        if self.publicationinfo.find("confdate", {"confdatetype": "End"}) is not None:
-            confend = self.publicationinfo.find("confdate", {"confdatetype": "End"}) 
-            end_year = confend.find("year").text if confend.find("year") else None
-            end_month = confend.find("month").text if confend.find("month") else None
-            end_day = confend.find("day").text if confend.find("day") else None
-        if self.publicationinfo.find("confdate", {"confdatetype": "Start"}) is not None:
-            confstart = self.publicationinfo.find("confdate", {"confdatetype": "Start"})
-            start_year = confstart.find("year").text if confstart.find("year") else None
-            start_month = confstart.find("month").text if confstart.find("month") else None
-            start_day = confstart.find("day").text if confstart.find("day") else None
-            confdate = f"{start_day} {start_month} {start_year} - {end_day} {end_month} {end_year}"
-            self.base_metadata["conf_date"] = confdate
-
-        # Conference topics
-        # Use for %W
-        collections = []
-        for pubtopicset in self.publicationinfo.find_all("pubtopicalbrowseset"):
-            for pubtopic in pubtopicset.find_all("pubtopicalbrowse"):
-                if pubtopic.get_text() == "Aerospace":
-                    collections.append("astronomy")
-                elif pubtopic.get_text() == "Geoscience":
-                    collections.append("earthscience")
-                else:
-                    collections.append("physics")  # Default for IEEE pubs is collection = physics
-        colls_uniq = list(set(collections))
-        # We don't yet have a JSON object in the ingest data model in which to pass the collection
-        #if colls_uniq:
-        #    self.base_metadata["collection"] = colls_uniq
-
-        # TO DO: append confDates & confLocation to %J
-        if confdate:
-            self.base_metadata["publication"] = f"{title}, {confdate}, {confloc}"
-        else:
-            self.base_metadata["publication"] = f"{title}, {confloc}"
+            self.base_metadata["volume"] = self.volumeinfo.find("volumenum").get_text()
+            self.base_metadata["issue"] = self.volumeinfo.find("issue").find("issuenum").get_text()
 
     def _parse_page(self):
-        if self.article.find("artpagenums"):
-            startpage = self.article.find("artpagenums").get("startpage")
-            endpage = self.article.find("artpagenums").get("endpage")
-            # Using articleid as page_first, to avoid duplicate bibcodes
-            # See IEEE unique ID section above
-            # Because multiple papers in conferences use startpage = 1
-            #self.base_metadata["page_first"] = self._detag(startpage, []) if startpage else None
-            #self.base_metadata["page_last"] = self._detag(endpage, []) if endpage else None
+        n = self.article.find("artpagenums", None)
+        if n:
+            self.base_metadata["page_first"] = self.base_metadata["page_first"] = self._detag(
+                n.get("startpage", None), []
+            )
+            self.base_metadata["page_last"] = self.base_metadata["page_last"] = self._detag(
+                n.get("endpage", None), []
+            )
 
     def _parse_pubdate(self):
         # Look for publication dates in article section
@@ -152,7 +69,6 @@ class IEEEParser(BaseBeautifulSoupParser):
                 year = date.find("year").get_text()
             else:
                 year = "0000"
-            self.year = year
 
             if date.find("month"):
                 month_raw = date.find("month").get_text()
@@ -162,8 +78,7 @@ class IEEEParser(BaseBeautifulSoupParser):
                     month_name = month_raw[0:3].lower()
                     month = utils.MONTH_TO_NUMBER[month_name]
             else:
-                month_raw = "00"
-                month = "00"
+                month_raw == "00"
 
             if date.find("day"):
                 day = date.find("day").get_text()
@@ -173,6 +88,7 @@ class IEEEParser(BaseBeautifulSoupParser):
             # Format date string
             pubdate = year + "-" + month + "-" + day
 
+            # Assign to appropriate metadata field based on date type
             if date_type == "OriginalPub":
                 self.base_metadata["pubdate_print"] = pubdate
             elif date_type == "ePub":
@@ -198,27 +114,15 @@ class IEEEParser(BaseBeautifulSoupParser):
         if self.article.find("articleinfo"):
             articleinfo = self.article.find("articleinfo")
 
-            # Copyright holder and year for article
+            # Get copyright holder and year
             if articleinfo.find("articlecopyright"):
                 copyright = articleinfo.find("articlecopyright")
                 copyright_holder = self._clean_output(copyright.get_text())
-                if copyright_holder == "":
-                    copyright_holder = "IEEE"
-
                 copyright_year = copyright.get("year", "")
-                if copyright_year == "0":
-                    copyright_year = self.year
-
-                # Sadly <article_copyright_statement> doesn't seem to exist in IEEE conference metadata
-                if articleinfo.find("article_copyright_statement"):
-                    copyright_statement = self._detag(
-                        articleinfo.find("article_copyright_statement").get_text(),
-                        self.HTML_TAGSET["license"],
-                    )
-                else:
-                    copyright_statement = ""
-
-            # Copyright holder and year for publication is in <copyrightgroup>
+                copyright_statement = self._detag(
+                    articleinfo.find("article_copyright_statement").get_text(),
+                    self.HTML_TAGSET["license"],
+                )
 
                 # Format copyright string
                 copyright_text = (
@@ -280,9 +184,7 @@ class IEEEParser(BaseBeautifulSoupParser):
         # Parse IEEE keywords from keywordset elements
         keywords = []
 
-        # Handle all keyword types in <articleinfo>
-        # IEEE and IEEEFree keywordtype
-        # DOE & PACS don't exist in this collection?
+        # Handle both IEEE and IEEEFree keyword types
         for keywordset in self.article.find_all("keywordset"):
             keyword_type = keywordset.get("keywordtype", "")
 
@@ -294,28 +196,11 @@ class IEEEParser(BaseBeautifulSoupParser):
                             "string": self._clean_output(keyword.string.strip()),
                         }
                     )
-
-        '''
-        # <pubtopicalbrowse> = topic browse categories in IEEE Xplore
-        # NOTE: Some values of <pubtopicalbrowse> contain commas
-        # How to deal with this in %K ?
-        # Get all pub-level topics in <publicationinfo>
-        for pubtopicset in self.publicationinfo.find_all("pubtopicalbrowseset"):
-            for pubtopic in pubtopicset.find_all("pubtopicalbrowse"):
-                keywords.append(
-                    {
-                        "system": "XploreTopic",
-                        "string": self._clean_output(pubtopic.string.strip()),
-                    }
-                )
-        '''
-
         if keywords:
             self.base_metadata["keywords"] = keywords
 
     def _parse_references(self):
-        # IEEE conferences do not provide references
-        # Check value of <articlereferenceflag>
+        # TODO: check if IEEE gives us references at all
         references = []
         if self.article.find("references"):
             for ref in self.article.find_all("reference"):
@@ -328,8 +213,10 @@ class IEEEParser(BaseBeautifulSoupParser):
     def _parse_funding(self):
         funding = []
 
-        articleinfo = self.article.find("articleinfo")
+        # Look for funding info in article metadata
 
+        articleinfo = self.article.find("articleinfo")
+        # import pdb; pdb.set_trace()
         if articleinfo.find("fundrefgrp"):
             funding_sections = articleinfo.find("fundrefgrp").find_all("fundref", [])
 
@@ -341,7 +228,7 @@ class IEEEParser(BaseBeautifulSoupParser):
                 if funder_name:
                     funder.setdefault("agencyname", self._clean_output(funder_name.get_text()))
 
-                # Get award/grant number(s)
+                # Get award/grant numbers
                 award_nums = funding_section.find_all("grant_number")
                 if award_nums:
                     # Join multiple award numbers with comma if present
@@ -354,11 +241,12 @@ class IEEEParser(BaseBeautifulSoupParser):
         if funding:
             self.base_metadata["funding"] = funding
 
-
-    # Parse IEEE XML into standard JSON format
-    # :param text: string, contents of XML file
-    # :return: parsed file contents in JSON format
     def parse(self, text):
+        """
+        Parse IEEE XML into standard JSON format
+        :param text: string, contents of XML file
+        :return: parsed file contents in JSON format
+        """
         try:
             d = self.bsstrtodict(text, parser="lxml-xml")
         except Exception as err:
@@ -382,7 +270,7 @@ class IEEEParser(BaseBeautifulSoupParser):
         self._parse_permissions()
         self._parse_authors()
         self._parse_keywords()
-        #self._parse_references()
+        self._parse_references()
         self._parse_funding()
 
         output = self.format(self.base_metadata, format="IEEE")
