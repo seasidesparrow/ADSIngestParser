@@ -7,3 +7,9 @@ with open(infile, "r") as fj:
 
 p = JATSNew(raw=raw)
 p._extract_all_xref()
+
+#with open("buh.tsv", "w") as fb:
+#    for k, v in p.xref_dict.items():
+#        fb.write("%s\t%s\n" % (k, v))
+print(p.xref_dict)
+print(p.affil_dict)

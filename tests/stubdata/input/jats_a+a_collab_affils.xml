@@ -1,0 +1,3697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN" "JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="1.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">aa</journal-id><journal-id journal-id-type="url">https://www.aanda.org</journal-id>
+<journal-title-group>
+<journal-title>Astronomy &amp; Astrophysics</journal-title>
+<abbrev-journal-title abbrev-type="publisher">A&amp;A</abbrev-journal-title>
+</journal-title-group>
+<issn pub-type="ppub">0004-6361</issn>
+<issn pub-type="epub">1432-0746</issn>
+<publisher>
+<publisher-name>EDP Sciences</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1051/0004-6361/202451611</article-id>
+<article-id pub-id-type="publisher-id">aa51611-24</article-id>
+<article-id pub-id-type="arxiv">2406.18274</article-id><article-id pub-id-type="other">2025A%26A...693A.249E</article-id><article-categories>
+<subj-group xml:lang="en" subj-group-type="section">
+<subject content-type="3">Cosmology (including clusters of galaxies)</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title xml:lang="en"><italic>Euclid</italic> preparation</article-title>
+<subtitle xml:lang="en">LVI. Sensitivity to non-standard particle dark matter models</subtitle>
+</title-group>
+<contrib-group content-type="authors">
+<contrib contrib-type="collab">
+<collab>Euclid Collaboration
+<contrib-group content-type="authors">
+<contrib contrib-type="author" corresp="yes">
+<contrib-id>http://orcid.org/0000-0001-7627-353X</contrib-id>
+<name>
+<surname>Lesgourgues</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF1" ref-type="aff">1</xref>
+<xref ref-type="corresp" rid="FN1">⋆</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0009-0001-9987-1433</contrib-id>
+<name>
+<surname>Schwagereit</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF1" ref-type="aff">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-1662-1042</contrib-id>
+<name>
+<surname>Bucko</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF2" ref-type="aff">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2539-2472</contrib-id>
+<name>
+<surname>Parimbelli</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF3" ref-type="aff">3</xref>
+<xref rid="AFF4" ref-type="aff">4</xref>
+<xref rid="AFF5" ref-type="aff">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2560-536X</contrib-id>
+<name>
+<surname>Giri</surname>
+<given-names>S. K.</given-names>
+</name>
+<xref rid="AFF2" ref-type="aff">2</xref>
+<xref rid="AFF6" ref-type="aff">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Hervas-Peters</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF7" ref-type="aff">7</xref>
+<xref rid="AFF2" ref-type="aff">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-7055-8104</contrib-id>
+<name>
+<surname>Schneider</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF2" ref-type="aff">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4952-9012</contrib-id>
+<name>
+<surname>Archidiacono</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF8" ref-type="aff">8</xref>
+<xref rid="AFF9" ref-type="aff">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-8039-0480</contrib-id>
+<name>
+<surname>Pace</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF10" ref-type="aff">10</xref>
+<xref rid="AFF11" ref-type="aff">11</xref>
+<xref rid="AFF12" ref-type="aff">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4823-3757</contrib-id>
+<name>
+<surname>Sakr</surname>
+<given-names>Z.</given-names>
+</name>
+<xref rid="AFF13" ref-type="aff">13</xref>
+<xref rid="AFF14" ref-type="aff">14</xref>
+<xref rid="AFF15" ref-type="aff">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Amara</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF16" ref-type="aff">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0835-233X</contrib-id>
+<name>
+<surname>Amendola</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF13" ref-type="aff">13</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2041-8784</contrib-id>
+<name>
+<surname>Andreon</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF17" ref-type="aff">17</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4444-8651</contrib-id>
+<name>
+<surname>Auricchio</surname>
+<given-names>N.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-1371-5705</contrib-id>
+<name>
+<surname>Aussel</surname>
+<given-names>H.</given-names>
+</name>
+<xref rid="AFF7" ref-type="aff">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4145-1943</contrib-id>
+<name>
+<surname>Baldi</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF19" ref-type="aff">19</xref>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-8900-0298</contrib-id>
+<name>
+<surname>Bardelli</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-7179-0626</contrib-id>
+<name>
+<surname>Bender</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+<xref rid="AFF22" ref-type="aff">22</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Bodendorf</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3336-9977</contrib-id>
+<name>
+<surname>Bonino</surname>
+<given-names>D.</given-names>
+</name>
+<xref rid="AFF12" ref-type="aff">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0808-6908</contrib-id>
+<name>
+<surname>Branchini</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF23" ref-type="aff">23</xref>
+<xref rid="AFF24" ref-type="aff">24</xref>
+<xref rid="AFF17" ref-type="aff">17</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-9506-5680</contrib-id>
+<name>
+<surname>Brescia</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF25" ref-type="aff">25</xref>
+<xref rid="AFF26" ref-type="aff">26</xref>
+<xref rid="AFF27" ref-type="aff">27</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4359-8797</contrib-id>
+<name>
+<surname>Brinchmann</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF28" ref-type="aff">28</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-3399-3574</contrib-id>
+<name>
+<surname>Camera</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF10" ref-type="aff">10</xref>
+<xref rid="AFF11" ref-type="aff">11</xref>
+<xref rid="AFF12" ref-type="aff">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3309-7692</contrib-id>
+<name>
+<surname>Capobianco</surname>
+<given-names>V.</given-names>
+</name>
+<xref rid="AFF12" ref-type="aff">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0125-3563</contrib-id>
+<name>
+<surname>Carbone</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF29" ref-type="aff">29</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Cardone</surname>
+<given-names>V. F.</given-names>
+</name>
+<xref rid="AFF30" ref-type="aff">30</xref>
+<xref rid="AFF31" ref-type="aff">31</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3130-0204</contrib-id>
+<name>
+<surname>Carretero</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF32" ref-type="aff">32</xref>
+<xref rid="AFF33" ref-type="aff">33</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4751-5138</contrib-id>
+<name>
+<surname>Casas</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF1" ref-type="aff">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-9875-8263</contrib-id>
+<name>
+<surname>Castellano</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF30" ref-type="aff">30</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3787-4196</contrib-id>
+<name>
+<surname>Cavuoti</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF26" ref-type="aff">26</xref>
+<xref rid="AFF27" ref-type="aff">27</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Cimatti</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF34" ref-type="aff">34</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2508-0046</contrib-id>
+<name>
+<surname>Congedo</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF35" ref-type="aff">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-1949-7638</contrib-id>
+<name>
+<surname>Conselice</surname>
+<given-names>C. J.</given-names>
+</name>
+<xref rid="AFF36" ref-type="aff">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6710-8476</contrib-id>
+<name>
+<surname>Conversi</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF37" ref-type="aff">37</xref>
+<xref rid="AFF38" ref-type="aff">38</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-5317-7518</contrib-id>
+<name>
+<surname>Copin</surname>
+<given-names>Y.</given-names>
+</name>
+<xref rid="AFF39" ref-type="aff">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0758-6510</contrib-id>
+<name>
+<surname>Courbin</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF40" ref-type="aff">40</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0509-1776</contrib-id>
+<name>
+<surname>Courtois</surname>
+<given-names>H. M.</given-names>
+</name>
+<xref rid="AFF41" ref-type="aff">41</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6385-1609</contrib-id>
+<name>
+<surname>Da Silva</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF42" ref-type="aff">42</xref>
+<xref rid="AFF43" ref-type="aff">43</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-5887-6799</contrib-id>
+<name>
+<surname>Degaudenzi</surname>
+<given-names>H.</given-names>
+</name>
+<xref rid="AFF44" ref-type="aff">44</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4767-2360</contrib-id>
+<name>
+<surname>Di Giorgio</surname>
+<given-names>A. M.</given-names>
+</name>
+<xref rid="AFF45" ref-type="aff">45</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Douspis</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF46" ref-type="aff">46</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6533-2810</contrib-id>
+<name>
+<surname>Dubath</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF44" ref-type="aff">44</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Dupac</surname>
+<given-names>X.</given-names>
+</name>
+<xref rid="AFF38" ref-type="aff">38</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-1128-0664</contrib-id>
+<name>
+<surname>Dusini</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF47" ref-type="aff">47</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3089-7846</contrib-id>
+<name>
+<surname>Farina</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF45" ref-type="aff">45</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-9594-9387</contrib-id>
+<name>
+<surname>Farrens</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF7" ref-type="aff">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Ferriol</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF39" ref-type="aff">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-1510-5214</contrib-id>
+<name>
+<surname>Fosalba</surname>
+<given-names>P.</given-names>
+</name>
+<xref rid="AFF48" ref-type="aff">48</xref>
+<xref rid="AFF49" ref-type="aff">49</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-7400-2135</contrib-id>
+<name>
+<surname>Frailis</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0585-6591</contrib-id>
+<name>
+<surname>Franceschi</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-6787-5950</contrib-id>
+<name>
+<surname>Fumana</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF29" ref-type="aff">29</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3748-5115</contrib-id>
+<name>
+<surname>Galeotta</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4478-1270</contrib-id>
+<name>
+<surname>Gillis</surname>
+<given-names>B.</given-names>
+</name>
+<xref rid="AFF35" ref-type="aff">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-9590-7961</contrib-id>
+<name>
+<surname>Giocoli</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF51" ref-type="aff">51</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-5688-0663</contrib-id>
+<name>
+<surname>Grazian</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF52" ref-type="aff">52</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Grupp</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+<xref rid="AFF22" ref-type="aff">22</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-8264-5192</contrib-id>
+<name>
+<surname>Guzzo</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF8" ref-type="aff">8</xref>
+<xref rid="AFF17" ref-type="aff">17</xref>
+<xref rid="AFF9" ref-type="aff">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-9648-7260</contrib-id>
+<name>
+<surname>Haugan</surname>
+<given-names>S. V. H.</given-names>
+</name>
+<xref rid="AFF53" ref-type="aff">53</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0641-3231</contrib-id>
+<name>
+<surname>Hoekstra</surname>
+<given-names>H.</given-names>
+</name>
+<xref rid="AFF54" ref-type="aff">54</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Holmes</surname>
+<given-names>W.</given-names>
+</name>
+<xref rid="AFF55" ref-type="aff">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2960-978X</contrib-id>
+<name>
+<surname>Hook</surname>
+<given-names>I.</given-names>
+</name>
+<xref rid="AFF56" ref-type="aff">56</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Hormuth</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF57" ref-type="aff">57</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3363-0936</contrib-id>
+<name>
+<surname>Hornstrup</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF58" ref-type="aff">58</xref>
+<xref rid="AFF59" ref-type="aff">59</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-3804-2137</contrib-id>
+<name>
+<surname>Jahnke</surname>
+<given-names>K.</given-names>
+</name>
+<xref rid="AFF60" ref-type="aff">60</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-7494-1303</contrib-id>
+<name>
+<surname>Joachimi</surname>
+<given-names>B.</given-names>
+</name>
+<xref rid="AFF61" ref-type="aff">61</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-1804-7715</contrib-id>
+<name>
+<surname>Keihänen</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF62" ref-type="aff">62</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0302-5735</contrib-id>
+<name>
+<surname>Kermiche</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF63" ref-type="aff">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2590-1273</contrib-id>
+<name>
+<surname>Kiessling</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF55" ref-type="aff">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0009-0006-5823-4880</contrib-id>
+<name>
+<surname>Kubik</surname>
+<given-names>B.</given-names>
+</name>
+<xref rid="AFF39" ref-type="aff">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3052-7394</contrib-id>
+<name>
+<surname>Kunz</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF64" ref-type="aff">64</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4618-3063</contrib-id>
+<name>
+<surname>Kurki-Suonio</surname>
+<given-names>H.</given-names>
+</name>
+<xref rid="AFF65" ref-type="aff">65</xref>
+<xref rid="AFF66" ref-type="aff">66</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Laureijs</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF67" ref-type="aff">67</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4172-4606</contrib-id>
+<name>
+<surname>Ligori</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF12" ref-type="aff">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4324-7794</contrib-id>
+<name>
+<surname>Lilje</surname>
+<given-names>P. B.</given-names>
+</name>
+<xref rid="AFF53" ref-type="aff">53</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2317-5471</contrib-id>
+<name>
+<surname>Lindholm</surname>
+<given-names>V.</given-names>
+</name>
+<xref rid="AFF65" ref-type="aff">65</xref>
+<xref rid="AFF66" ref-type="aff">66</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Lloro</surname>
+<given-names>I.</given-names>
+</name>
+<xref rid="AFF68" ref-type="aff">68</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Maino</surname>
+<given-names>D.</given-names>
+</name>
+<xref rid="AFF8" ref-type="aff">8</xref>
+<xref rid="AFF29" ref-type="aff">29</xref>
+<xref rid="AFF9" ref-type="aff">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2593-4355</contrib-id>
+<name>
+<surname>Maiorano</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-5758-4658</contrib-id>
+<name>
+<surname>Mansutti</surname>
+<given-names>O.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-7242-3852</contrib-id>
+<name>
+<surname>Marggraf</surname>
+<given-names>O.</given-names>
+</name>
+<xref rid="AFF69" ref-type="aff">69</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-6764-073X</contrib-id>
+<name>
+<surname>Markovic</surname>
+<given-names>K.</given-names>
+</name>
+<xref rid="AFF55" ref-type="aff">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2786-7790</contrib-id>
+<name>
+<surname>Martinet</surname>
+<given-names>N.</given-names>
+</name>
+<xref rid="AFF70" ref-type="aff">70</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-8850-0303</contrib-id>
+<name>
+<surname>Marulli</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF71" ref-type="aff">71</xref>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6085-3780</contrib-id>
+<name>
+<surname>Massey</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF72" ref-type="aff">72</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4040-7783</contrib-id>
+<name>
+<surname>Medinaceli</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2849-559X</contrib-id>
+<name>
+<surname>Mei</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF73" ref-type="aff">73</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Mellier</surname>
+<given-names>Y.</given-names>
+</name>
+<xref rid="AFF74" ref-type="aff">74</xref>
+<xref rid="AFF75" ref-type="aff">75</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-1225-7084</contrib-id>
+<name>
+<surname>Meneghetti</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-6870-8900</contrib-id>
+<name>
+<surname>Merlin</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF30" ref-type="aff">30</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Meylan</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF40" ref-type="aff">40</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-7616-7136</contrib-id>
+<name>
+<surname>Moresco</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF71" ref-type="aff">71</xref>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3473-6716</contrib-id>
+<name>
+<surname>Moscardini</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF71" ref-type="aff">71</xref>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-1751-5946</contrib-id>
+<name>
+<surname>Munari</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+<xref rid="AFF76" ref-type="aff">76</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Nakajima</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF69" ref-type="aff">69</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Niemi</surname>
+<given-names>S.-M.</given-names>
+</name>
+<xref rid="AFF67" ref-type="aff">67</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-8987-7401</contrib-id>
+<name>
+<surname>Nightingale</surname>
+<given-names>J. W.</given-names>
+</name>
+<xref rid="AFF77" ref-type="aff">77</xref>
+<xref rid="AFF78" ref-type="aff">78</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-7951-0166</contrib-id>
+<name>
+<surname>Padilla</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF79" ref-type="aff">79</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-8108-9179</contrib-id>
+<name>
+<surname>Paltani</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF44" ref-type="aff">44</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4869-3227</contrib-id>
+<name>
+<surname>Pasian</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Pedersen</surname>
+<given-names>K.</given-names>
+</name>
+<xref rid="AFF80" ref-type="aff">80</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0644-5727</contrib-id>
+<name>
+<surname>Percival</surname>
+<given-names>W. J.</given-names>
+</name>
+<xref rid="AFF81" ref-type="aff">81</xref>
+<xref rid="AFF82" ref-type="aff">82</xref>
+<xref rid="AFF83" ref-type="aff">83</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Pettorino</surname>
+<given-names>V.</given-names>
+</name>
+<xref rid="AFF67" ref-type="aff">67</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4067-9196</contrib-id>
+<name>
+<surname>Polenta</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF84" ref-type="aff">84</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Poncet</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF85" ref-type="aff">85</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Popa</surname>
+<given-names>L. A.</given-names>
+</name>
+<xref rid="AFF86" ref-type="aff">86</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-7819-6918</contrib-id>
+<name>
+<surname>Raison</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Rebolo</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF87" ref-type="aff">87</xref>
+<xref rid="AFF88" ref-type="aff">88</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-9856-1970</contrib-id>
+<name>
+<surname>Renzi</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF89" ref-type="aff">89</xref>
+<xref rid="AFF47" ref-type="aff">47</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Rhodes</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF55" ref-type="aff">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Riccio</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF26" ref-type="aff">26</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-3069-9222</contrib-id>
+<name>
+<surname>Romelli</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-9587-7822</contrib-id>
+<name>
+<surname>Roncarelli</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0378-7032</contrib-id>
+<name>
+<surname>Saglia</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF22" ref-type="aff">22</xref>
+<xref rid="AFF21" ref-type="aff">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-7089-4503</contrib-id>
+<name>
+<surname>Sapone</surname>
+<given-names>D.</given-names>
+</name>
+<xref rid="AFF90" ref-type="aff">90</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-1337-5269</contrib-id>
+<name>
+<surname>Sartoris</surname>
+<given-names>B.</given-names>
+</name>
+<xref rid="AFF22" ref-type="aff">22</xref>
+<xref rid="AFF50" ref-type="aff">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2229-193X</contrib-id>
+<name>
+<surname>Scaramella</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF30" ref-type="aff">30</xref>
+<xref rid="AFF31" ref-type="aff">31</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-8561-2679</contrib-id>
+<name>
+<surname>Schneider</surname>
+<given-names>P.</given-names>
+</name>
+<xref rid="AFF69" ref-type="aff">69</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6987-7834</contrib-id>
+<name>
+<surname>Schrabback</surname>
+<given-names>T.</given-names>
+</name>
+<xref rid="AFF91" ref-type="aff">91</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0505-3710</contrib-id>
+<name>
+<surname>Secroun</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF63" ref-type="aff">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2907-353X</contrib-id>
+<name>
+<surname>Seidel</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF60" ref-type="aff">60</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0211-2861</contrib-id>
+<name>
+<surname>Serrano</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF48" ref-type="aff">48</xref>
+<xref rid="AFF3" ref-type="aff">3</xref>
+<xref rid="AFF92" ref-type="aff">92</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0995-7146</contrib-id>
+<name>
+<surname>Sirignano</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF89" ref-type="aff">89</xref>
+<xref rid="AFF47" ref-type="aff">47</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2626-2853</contrib-id>
+<name>
+<surname>Sirri</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-9706-5104</contrib-id>
+<name>
+<surname>Stanco</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF47" ref-type="aff">47</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-1336-8328</contrib-id>
+<name>
+<surname>Tallada-Crespí</surname>
+<given-names>P.</given-names>
+</name>
+<xref rid="AFF32" ref-type="aff">32</xref>
+<xref rid="AFF33" ref-type="aff">33</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Tereno</surname>
+<given-names>I.</given-names>
+</name>
+<xref rid="AFF42" ref-type="aff">42</xref>
+<xref rid="AFF93" ref-type="aff">93</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2997-4859</contrib-id>
+<name>
+<surname>Toledo-Moreo</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF94" ref-type="aff">94</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-1160-1517</contrib-id>
+<name>
+<surname>Torradeflot</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF33" ref-type="aff">33</xref>
+<xref rid="AFF32" ref-type="aff">32</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3199-0399</contrib-id>
+<name>
+<surname>Tutusaus</surname>
+<given-names>I.</given-names>
+</name>
+<xref rid="AFF14" ref-type="aff">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-1170-0104</contrib-id>
+<name>
+<surname>Valenziano</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF95" ref-type="aff">95</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-6512-6358</contrib-id>
+<name>
+<surname>Vassallo</surname>
+<given-names>T.</given-names>
+</name>
+<xref rid="AFF22" ref-type="aff">22</xref>
+<xref rid="AFF50" ref-type="aff">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2387-1194</contrib-id>
+<name>
+<surname>Veropalumbo</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF17" ref-type="aff">17</xref>
+<xref rid="AFF24" ref-type="aff">24</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4749-2984</contrib-id>
+<name>
+<surname>Wang</surname>
+<given-names>Y.</given-names>
+</name>
+<xref rid="AFF96" ref-type="aff">96</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-8282-2010</contrib-id>
+<name>
+<surname>Weller</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF22" ref-type="aff">22</xref>
+<xref rid="AFF21" ref-type="aff">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2318-301X</contrib-id>
+<name>
+<surname>Zamorani</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-5845-8132</contrib-id>
+<name>
+<surname>Zucca</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0857-0732</contrib-id>
+<name>
+<surname>Biviano</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+<xref rid="AFF76" ref-type="aff">76</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-7387-2633</contrib-id>
+<name>
+<surname>Boucaud</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF73" ref-type="aff">73</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-8201-1525</contrib-id>
+<name>
+<surname>Bozzo</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF44" ref-type="aff">44</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3005-5796</contrib-id>
+<name>
+<surname>Burigana</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF97" ref-type="aff">97</xref>
+<xref rid="AFF95" ref-type="aff">95</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2637-2422</contrib-id>
+<name>
+<surname>Calabrese</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF98" ref-type="aff">98</xref>
+<xref rid="AFF29" ref-type="aff">29</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Colodro-Conde</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF87" ref-type="aff">87</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6220-9104</contrib-id>
+<name>
+<surname>De Lucia</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Di Ferdinando</surname>
+<given-names>D.</given-names>
+</name>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Escartin Vigo</surname>
+<given-names>J. A.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3255-4695</contrib-id>
+<name>
+<surname>Fabbian</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF99" ref-type="aff">99</xref>
+<xref rid="AFF100" ref-type="aff">100</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Farinelli</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Gracia-Carpio</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4285-9086</contrib-id>
+<name>
+<surname>Ilić</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF101" ref-type="aff">101</xref>
+<xref rid="AFF14" ref-type="aff">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Mainetti</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF102" ref-type="aff">102</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6943-7732</contrib-id>
+<name>
+<surname>Martinelli</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF30" ref-type="aff">30</xref>
+<xref rid="AFF31" ref-type="aff">31</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-8196-1548</contrib-id>
+<name>
+<surname>Mauri</surname>
+<given-names>N.</given-names>
+</name>
+<xref rid="AFF34" ref-type="aff">34</xref>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-8524-4968</contrib-id>
+<name>
+<surname>Neissner</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF79" ref-type="aff">79</xref>
+<xref rid="AFF33" ref-type="aff">33</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Nucita</surname>
+<given-names>A. A.</given-names>
+</name>
+<xref rid="AFF103" ref-type="aff">103</xref>
+<xref rid="AFF104" ref-type="aff">104</xref>
+<xref rid="AFF105" ref-type="aff">105</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Scottez</surname>
+<given-names>V.</given-names>
+</name>
+<xref rid="AFF74" ref-type="aff">74</xref>
+<xref rid="AFF106" ref-type="aff">106</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4254-5901</contrib-id>
+<name>
+<surname>Tenti</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2642-5707</contrib-id>
+<name>
+<surname>Viel</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF76" ref-type="aff">76</xref>
+<xref rid="AFF50" ref-type="aff">50</xref>
+<xref rid="AFF5" ref-type="aff">5</xref>
+<xref rid="AFF107" ref-type="aff">107</xref>
+<xref rid="AFF108" ref-type="aff">108</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0009-0000-8199-5860</contrib-id>
+<name>
+<surname>Wiesmann</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF53" ref-type="aff">53</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2407-7956</contrib-id>
+<name>
+<surname>Akrami</surname>
+<given-names>Y.</given-names>
+</name>
+<xref rid="AFF109" ref-type="aff">109</xref>
+<xref rid="AFF110" ref-type="aff">110</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3579-9583</contrib-id>
+<name>
+<surname>Anselmi</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF47" ref-type="aff">47</xref>
+<xref rid="AFF89" ref-type="aff">89</xref>
+<xref rid="AFF111" ref-type="aff">111</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-8211-1630</contrib-id>
+<name>
+<surname>Baccigalupi</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF5" ref-type="aff">5</xref>
+<xref rid="AFF50" ref-type="aff">50</xref>
+<xref rid="AFF107" ref-type="aff">107</xref>
+<xref rid="AFF76" ref-type="aff">76</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4481-3559</contrib-id>
+<name>
+<surname>Ballardini</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF112" ref-type="aff">112</xref>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF113" ref-type="aff">113</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2490-7139</contrib-id>
+<name>
+<surname>Bertacca</surname>
+<given-names>D.</given-names>
+</name>
+<xref rid="AFF89" ref-type="aff">89</xref>
+<xref rid="AFF52" ref-type="aff">52</xref>
+<xref rid="AFF47" ref-type="aff">47</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-9622-7167</contrib-id>
+<name>
+<surname>Blot</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF114" ref-type="aff">114</xref>
+<xref rid="AFF111" ref-type="aff">111</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-8241-4204</contrib-id>
+<name>
+<surname>Böhringer</surname>
+<given-names>H.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+<xref rid="AFF115" ref-type="aff">115</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-6151-6439</contrib-id>
+<name>
+<surname>Borgani</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF116" ref-type="aff">116</xref>
+<xref rid="AFF76" ref-type="aff">76</xref>
+<xref rid="AFF50" ref-type="aff">50</xref>
+<xref rid="AFF107" ref-type="aff">107</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6503-5218</contrib-id>
+<name>
+<surname>Bruton</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF117" ref-type="aff">117</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-6679-2600</contrib-id>
+<name>
+<surname>Cabanac</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF14" ref-type="aff">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2536-1614</contrib-id>
+<name>
+<surname>Calabro</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF30" ref-type="aff">30</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Cappi</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF118" ref-type="aff">118</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Carvalho</surname>
+<given-names>C. S.</given-names>
+</name>
+<xref rid="AFF93" ref-type="aff">93</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-6831-0687</contrib-id>
+<name>
+<surname>Castignani</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6292-3228</contrib-id>
+<name>
+<surname>Castro</surname>
+<given-names>T.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+<xref rid="AFF107" ref-type="aff">107</xref>
+<xref rid="AFF76" ref-type="aff">76</xref>
+<xref rid="AFF108" ref-type="aff">108</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-6965-7789</contrib-id>
+<name>
+<surname>Chambers</surname>
+<given-names>K. C.</given-names>
+</name>
+<xref rid="AFF119" ref-type="aff">119</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-9843-723X</contrib-id>
+<name>
+<surname>Contarini</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+<xref rid="AFF71" ref-type="aff">71</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3892-0190</contrib-id>
+<name>
+<surname>Cooray</surname>
+<given-names>A. R.</given-names>
+</name>
+<xref rid="AFF120" ref-type="aff">120</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-3269-1718</contrib-id>
+<name>
+<surname>Davini</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF24" ref-type="aff">24</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>De Caro</surname>
+<given-names>B.</given-names>
+</name>
+<xref rid="AFF47" ref-type="aff">47</xref>
+<xref rid="AFF89" ref-type="aff">89</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>de la Torre</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF70" ref-type="aff">70</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Desprez</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF121" ref-type="aff">121</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0748-4768</contrib-id>
+<name>
+<surname>Díaz-Sánchez</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF122" ref-type="aff">122</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2863-5895</contrib-id>
+<name>
+<surname>Di Domizio</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF23" ref-type="aff">23</xref>
+<xref rid="AFF24" ref-type="aff">24</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-9767-3839</contrib-id>
+<name>
+<surname>Dole</surname>
+<given-names>H.</given-names>
+</name>
+<xref rid="AFF46" ref-type="aff">46</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-2847-7498</contrib-id>
+<name>
+<surname>Escoffier</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF63" ref-type="aff">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0009-0005-5266-4110</contrib-id>
+<name>
+<surname>Ferrari</surname>
+<given-names>A. G.</given-names>
+</name>
+<xref rid="AFF34" ref-type="aff">34</xref>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3021-2851</contrib-id>
+<name>
+<surname>Ferreira</surname>
+<given-names>P. G.</given-names>
+</name>
+<xref rid="AFF123" ref-type="aff">123</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-1295-1132</contrib-id>
+<name>
+<surname>Ferrero</surname>
+<given-names>I.</given-names>
+</name>
+<xref rid="AFF53" ref-type="aff">53</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6694-3269</contrib-id>
+<name>
+<surname>Finelli</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF95" ref-type="aff">95</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2979-6738</contrib-id>
+<name>
+<surname>Fornari</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF95" ref-type="aff">95</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-8486-8856</contrib-id>
+<name>
+<surname>Gabarra</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF123" ref-type="aff">123</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-8159-8208</contrib-id>
+<name>
+<surname>Ganga</surname>
+<given-names>K.</given-names>
+</name>
+<xref rid="AFF73" ref-type="aff">73</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-9370-8360</contrib-id>
+<name>
+<surname>García-Bellido</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF109" ref-type="aff">109</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-9632-0815</contrib-id>
+<name>
+<surname>Gaztanaga</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF3" ref-type="aff">3</xref>
+<xref rid="AFF48" ref-type="aff">48</xref>
+<xref rid="AFF124" ref-type="aff">124</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3129-2814</contrib-id>
+<name>
+<surname>Giacomini</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0236-919X</contrib-id>
+<name>
+<surname>Gozaliasl</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF125" ref-type="aff">125</xref>
+<xref rid="AFF65" ref-type="aff">65</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-9814-3338</contrib-id>
+<name>
+<surname>Hildebrandt</surname>
+<given-names>H.</given-names>
+</name>
+<xref rid="AFF126" ref-type="aff">126</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4571-2306</contrib-id>
+<name>
+<surname>Hjorth</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF127" ref-type="aff">127</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0009-0004-5252-185X</contrib-id>
+<name>
+<surname>Jimenez Munñoz</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF128" ref-type="aff">128</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-8820-673X</contrib-id>
+<name>
+<surname>Joudaki</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF124" ref-type="aff">124</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-3010-8333</contrib-id>
+<name>
+<surname>Kajava</surname>
+<given-names>J. J. E.</given-names>
+</name>
+<xref rid="AFF129" ref-type="aff">129</xref>
+<xref rid="AFF130" ref-type="aff">130</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4008-6078</contrib-id>
+<name>
+<surname>Kansal</surname>
+<given-names>V.</given-names>
+</name>
+<xref rid="AFF131" ref-type="aff">131</xref>
+<xref rid="AFF132" ref-type="aff">132</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4927-0816</contrib-id>
+<name>
+<surname>Karagiannis</surname>
+<given-names>D.</given-names>
+</name>
+<xref rid="AFF133" ref-type="aff">133</xref>
+<xref rid="AFF134" ref-type="aff">134</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Kirkpatrick</surname>
+<given-names>C. C.</given-names>
+</name>
+<xref rid="AFF62" ref-type="aff">62</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0610-5252</contrib-id>
+<name>
+<surname>Legrand</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF135" ref-type="aff">135</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Libet</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF85" ref-type="aff">85</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4371-0876</contrib-id>
+<name>
+<surname>Loureiro</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF136" ref-type="aff">136</xref>
+<xref rid="AFF137" ref-type="aff">137</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-5385-2763</contrib-id>
+<name>
+<surname>Macias-Perez</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF128" ref-type="aff">128</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-4020-4836</contrib-id>
+<name>
+<surname>Maggio</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-9158-4838</contrib-id>
+<name>
+<surname>Magliocchetti</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF45" ref-type="aff">45</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4803-2381</contrib-id>
+<name>
+<surname>Mannucci</surname>
+<given-names>F.</given-names>
+</name>
+<xref rid="AFF138" ref-type="aff">138</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-6065-3025</contrib-id>
+<name>
+<surname>Maoli</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF139" ref-type="aff">139</xref>
+<xref rid="AFF30" ref-type="aff">30</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-4886-9261</contrib-id>
+<name>
+<surname>Martins</surname>
+<given-names>C. J. A. P.</given-names>
+</name>
+<xref rid="AFF140" ref-type="aff">140</xref>
+<xref rid="AFF28" ref-type="aff">28</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Matthew</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF35" ref-type="aff">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-8406-0857</contrib-id>
+<name>
+<surname>Maurin</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF46" ref-type="aff">46</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-3167-2574</contrib-id>
+<name>
+<surname>Metcalf</surname>
+<given-names>R. B.</given-names>
+</name>
+<xref rid="AFF71" ref-type="aff">71</xref>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Migliaccio</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF141" ref-type="aff">141</xref>
+<xref rid="AFF142" ref-type="aff">142</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2083-7564</contrib-id>
+<name>
+<surname>Monaco</surname>
+<given-names>P.</given-names>
+</name>
+<xref rid="AFF116" ref-type="aff">116</xref>
+<xref rid="AFF50" ref-type="aff">50</xref>
+<xref rid="AFF107" ref-type="aff">107</xref>
+<xref rid="AFF76" ref-type="aff">76</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-3314-8936</contrib-id>
+<name>
+<surname>Moretti</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF5" ref-type="aff">5</xref>
+<xref rid="AFF108" ref-type="aff">108</xref>
+<xref rid="AFF50" ref-type="aff">50</xref>
+<xref rid="AFF76" ref-type="aff">76</xref>
+<xref rid="AFF107" ref-type="aff">107</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Morgante</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-9070-3102</contrib-id>
+<name>
+<surname>Nadathur</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF124" ref-type="aff">124</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-3983-8778</contrib-id>
+<name>
+<surname>Walton</surname>
+<given-names>N. A.</given-names>
+</name>
+<xref rid="AFF143" ref-type="aff">143</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Patrizii</surname>
+<given-names>L.</given-names>
+</name>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0726-2268</contrib-id>
+<name>
+<surname>Pezzotta</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-5442-2530</contrib-id>
+<name>
+<surname>Pöntinen</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF65" ref-type="aff">65</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Popa</surname>
+<given-names>V.</given-names>
+</name>
+<xref rid="AFF86" ref-type="aff">86</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-7797-2508</contrib-id>
+<name>
+<surname>Porciani</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF69" ref-type="aff">69</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-0757-5195</contrib-id>
+<name>
+<surname>Potter</surname>
+<given-names>D.</given-names>
+</name>
+<xref rid="AFF2" ref-type="aff">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-3410-0280</contrib-id>
+<name>
+<surname>Reimberg</surname>
+<given-names>P.</given-names>
+</name>
+<xref rid="AFF74" ref-type="aff">74</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-2525-7761</contrib-id>
+<name>
+<surname>Risso</surname>
+<given-names>I.</given-names>
+</name>
+<xref rid="AFF4" ref-type="aff">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Rocci</surname>
+<given-names>P.-F.</given-names>
+</name>
+<xref rid="AFF46" ref-type="aff">46</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0973-4804</contrib-id>
+<name>
+<surname>Sahlén</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF144" ref-type="aff">144</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-1198-831X</contrib-id>
+<name>
+<surname>Sánchez</surname>
+<given-names>A. G.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Schewtschenko</surname>
+<given-names>J. A.</given-names>
+</name>
+<xref rid="AFF35" ref-type="aff">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0473-1567</contrib-id>
+<name>
+<surname>Sefusatti</surname>
+<given-names>E.</given-names>
+</name>
+<xref rid="AFF50" ref-type="aff">50</xref>
+<xref rid="AFF76" ref-type="aff">76</xref>
+<xref rid="AFF107" ref-type="aff">107</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0302-0325</contrib-id>
+<name>
+<surname>Sereno</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Simon</surname>
+<given-names>P.</given-names>
+</name>
+<xref rid="AFF69" ref-type="aff">69</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-5698-0990</contrib-id>
+<name>
+<surname>Spurio Mancini</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF145" ref-type="aff">145</xref>
+<xref rid="AFF146" ref-type="aff">146</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Steinwagner</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF21" ref-type="aff">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-7961-8177</contrib-id>
+<name>
+<surname>Tao</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF63" ref-type="aff">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-9696-7931</contrib-id>
+<name>
+<surname>Tessore</surname>
+<given-names>N.</given-names>
+</name>
+<xref rid="AFF61" ref-type="aff">61</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Testera</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF24" ref-type="aff">24</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-7689-0933</contrib-id>
+<name>
+<surname>Teyssier</surname>
+<given-names>R.</given-names>
+</name>
+<xref rid="AFF147" ref-type="aff">147</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-3631-7176</contrib-id>
+<name>
+<surname>Toft</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF59" ref-type="aff">59</xref>
+<xref rid="AFF148" ref-type="aff">148</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-7275-9193</contrib-id>
+<name>
+<surname>Tosi</surname>
+<given-names>S.</given-names>
+</name>
+<xref rid="AFF23" ref-type="aff">23</xref>
+<xref rid="AFF17" ref-type="aff">17</xref>
+<xref rid="AFF24" ref-type="aff">24</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0239-4595</contrib-id>
+<name>
+<surname>Troja</surname>
+<given-names>A.</given-names>
+</name>
+<xref rid="AFF89" ref-type="aff">89</xref>
+<xref rid="AFF47" ref-type="aff">47</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Tucci</surname>
+<given-names>M.</given-names>
+</name>
+<xref rid="AFF44" ref-type="aff">44</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Valieri</surname>
+<given-names>C.</given-names>
+</name>
+<xref rid="AFF20" ref-type="aff">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0001-6225-3693</contrib-id>
+<name>
+<surname>Valiviita</surname>
+<given-names>J.</given-names>
+</name>
+<xref rid="AFF65" ref-type="aff">65</xref>
+<xref rid="AFF66" ref-type="aff">66</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0003-0898-2216</contrib-id>
+<name>
+<surname>Vergani</surname>
+<given-names>D.</given-names>
+</name>
+<xref rid="AFF18" ref-type="aff">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id>http://orcid.org/0000-0002-1886-8348</contrib-id>
+<name>
+<surname>Verza</surname>
+<given-names>G.</given-names>
+</name>
+<xref rid="AFF149" ref-type="aff">149</xref>
+<xref rid="AFF100" ref-type="aff">100</xref>
+</contrib>
+</contrib-group>
+</collab>
+</contrib>
+<aff id="AFF1">
+<label>1</label>
+<addr-line>
+<institution>Institute for Theoretical Particle Physics and Cosmology (TTK), RWTH Aachen University</institution>, <named-content content-type="postcode">52056</named-content> <named-content content-type="city">Aachen</named-content>, <country>Germany</country>
+</addr-line>
+</aff>
+<aff id="AFF2">
+<label>2</label>
+<addr-line>
+<institution>Department of Astrophysics, University of Zurich</institution>, <named-content content-type="street">Winterthurerstrasse 190</named-content>, <named-content content-type="postcode">8057</named-content> <named-content content-type="city">Zurich</named-content>, <country>Switzerland</country>
+</addr-line>
+</aff>
+<aff id="AFF3">
+<label>3</label>
+<addr-line>
+<institution>Institute of Space Sciences (ICE, CSIC), Campus UAB</institution>, <named-content content-type="street">Carrer de Can Magrans, s/n</named-content>, <named-content content-type="postcode">08193</named-content> <named-content content-type="city">Barcelona</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF4">
+<label>4</label>
+<addr-line>
+<institution>Dipartimento di Fisica, Università degli studi di Genova, and INFN-Sezione di Genova</institution>, <named-content content-type="street">Via Dodecaneso 33</named-content>, <named-content content-type="postcode">16146</named-content> <named-content content-type="city">Genova</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF5">
+<label>5</label>
+<addr-line>
+<institution>SISSA, International School for Advanced Studies</institution>, <named-content content-type="street">Via Bonomea 265</named-content>, <named-content content-type="postcode">34136</named-content> <named-content content-type="city">Trieste</named-content>, <named-content content-type="state">TS</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF6">
+<label>6</label>
+<addr-line>
+<institution>Nordita, KTH Royal Institute of Technology and Stockholm 1859 University</institution>, <named-content content-type="street">Hannes Alfvéns väg 12</named-content>, <named-content content-type="city">Stockholm</named-content> <named-content content-type="postcode">SE-106 91</named-content>, <country>Sweden</country>
+</addr-line>
+</aff>
+<aff id="AFF7">
+<label>7</label>
+<addr-line>
+<institution>Université Paris-Saclay, Université Paris Cité, CEA, CNRS, AIM</institution>, <named-content content-type="postcode">91191</named-content> <named-content content-type="city">Gif-sur-Yvette</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF8">
+<label>8</label>
+<addr-line>
+<institution>Dipartimento di Fisica “Aldo Pontremoli”, Università degli Studi di Milano</institution>, <named-content content-type="street">Via Celoria 16</named-content>, <named-content content-type="postcode">20133</named-content> <named-content content-type="city">Milano</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF9">
+<label>9</label>
+<addr-line>
+<institution>INFN-Sezione di Milano</institution>, <named-content content-type="street">Via Celoria 16</named-content>, <named-content content-type="postcode">20133</named-content> <named-content content-type="city">Milano</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF10">
+<label>10</label>
+<addr-line>
+<institution>Dipartimento di Fisica, Università degli Studi di Torino</institution>, <named-content content-type="street">Via P. Giuria 1</named-content>, <named-content content-type="postcode">10125</named-content> <named-content content-type="city">Torino</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF11">
+<label>11</label>
+<addr-line>
+<institution>INFN-Sezione di Torino</institution>, <named-content content-type="street">Via P. Giuria 1</named-content>, <named-content content-type="postcode">10125</named-content> <named-content content-type="city">Torino</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF12">
+<label>12</label>
+<addr-line>
+<institution>INAF-Osservatorio Astrofisico di Torino</institution>, <named-content content-type="street">Via Osservatorio 20</named-content>, <named-content content-type="postcode">10025</named-content> <named-content content-type="city">Pino Torinese (TO)</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF13">
+<label>13</label>
+<addr-line>
+<institution>Institut für Theoretische Physik, University of Heidelberg</institution>, <named-content content-type="street">Philosophenweg 16</named-content>, <named-content content-type="postcode">69120</named-content> <named-content content-type="city">Heidelberg</named-content>, <country>Germany</country>
+</addr-line>
+</aff>
+<aff id="AFF14">
+<label>14</label>
+<addr-line>
+<institution>Institut de Recherche en Astrophysique et Planétologie (IRAP), Université de Toulouse, CNRS, UPS, CNES</institution>, <named-content content-type="street">14 Av. Edouard Belin</named-content>, <named-content content-type="postcode">31400</named-content> <named-content content-type="city">Toulouse</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF15">
+<label>15</label>
+<addr-line>
+<institution>Université St Joseph; Faculty of Sciences</institution>, <named-content content-type="city">Beirut</named-content>, <country>Lebanon</country>
+</addr-line>
+</aff>
+<aff id="AFF16">
+<label>16</label>
+<addr-line>
+<institution>School of Mathematics and Physics, University of Surrey</institution>, <named-content content-type="city">Guildford</named-content>, <named-content content-type="city">Surrey</named-content> <named-content content-type="postcode">GU2 7XH</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF17">
+<label>17</label>
+<addr-line>
+<institution>INAF-Osservatorio Astronomico di Brera</institution>, <named-content content-type="street">Via Brera 28</named-content>, <named-content content-type="postcode">20122</named-content> <named-content content-type="city">Milano</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF18">
+<label>18</label>
+<addr-line>
+<institution>INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna</institution>, <named-content content-type="street">Via Piero Gobetti 93/3</named-content>, <named-content content-type="postcode">40129</named-content> <named-content content-type="city">Bologna</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF19">
+<label>19</label>
+<addr-line>
+<institution>Dipartimento di Fisica e Astronomia, Università di Bologna</institution>, <named-content content-type="street">Via Gobetti 93/2</named-content>, <named-content content-type="postcode">40129</named-content> <named-content content-type="city">Bologna</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF20">
+<label>20</label>
+<addr-line>
+<institution>INFN-Sezione di Bologna</institution>, <named-content content-type="street">Viale Berti Pichat 6/2</named-content>, <named-content content-type="postcode">40127</named-content> <named-content content-type="city">Bologna</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF21">
+<label>21</label>
+<addr-line>
+<institution>Max Planck Institute for Extraterrestrial Physics</institution>, <named-content content-type="street">Giessenbachstr. 1</named-content>, <named-content content-type="postcode">85748</named-content> <named-content content-type="city">Garching</named-content>, <country>Germany</country>
+</addr-line>
+</aff>
+<aff id="AFF22">
+<label>22</label>
+<addr-line>
+<institution>Universitäts-Sternwarte München, Fakultät für Physik, Ludwig-Maximilians-Universität München</institution>, <named-content content-type="street">Scheinerstrasse 1</named-content>, <named-content content-type="postcode">81679</named-content> <named-content content-type="city">München</named-content>, <country>Germany</country>
+</addr-line>
+</aff>
+<aff id="AFF23">
+<label>23</label>
+<addr-line>
+<institution>Dipartimento di Fisica, Università di Genova</institution>, <named-content content-type="street">Via Dodecaneso 33</named-content>, <named-content content-type="postcode">16146</named-content> <named-content content-type="city">Genova</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF24">
+<label>24</label>
+<addr-line>
+<institution>INFN-Sezione di Genova</institution>, <named-content content-type="street">Via Dodecaneso 33</named-content>, <named-content content-type="postcode">16146</named-content> <named-content content-type="city">Genova</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF25">
+<label>25</label>
+<addr-line>
+<institution>Department of Physics “E. Pancini”, University Federico II</institution>, <named-content content-type="street">Via Cinthia 6</named-content>, <named-content content-type="postcode">80126</named-content> <named-content content-type="city">Napoli</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF26">
+<label>26</label>
+<addr-line>
+<institution>INAF-Osservatorio Astronomico di Capodimonte</institution>, <named-content content-type="street">Via Moiariello 16</named-content>, <named-content content-type="postcode">80131</named-content> <named-content content-type="city">Napoli</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF27">
+<label>27</label>
+<addr-line>
+<institution>INFN section of Naples</institution>, <named-content content-type="street">Via Cinthia 6</named-content>, <named-content content-type="postcode">80126</named-content> <named-content content-type="city">Napoli</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF28">
+<label>28</label>
+<addr-line>
+<institution>Instituto de Astrofísica e Ciências do Espaço, Universidade do Porto, CAUP</institution>, <named-content content-type="street">Rua das Estrelas</named-content>, <named-content content-type="postcode">PT4150-762</named-content> <named-content content-type="city">Porto</named-content>, <country>Portugal</country>
+</addr-line>
+</aff>
+<aff id="AFF29">
+<label>29</label>
+<addr-line>
+<institution>INAF-IASF Milano</institution>, <named-content content-type="street">Via Alfonso Corti 12</named-content>, <named-content content-type="postcode">20133</named-content> <named-content content-type="city">Milano</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF30">
+<label>30</label>
+<addr-line>
+<institution>INAF-Osservatorio Astronomico di Roma</institution>, <named-content content-type="street">Via Frascati 33</named-content>, <named-content content-type="postcode">00078</named-content> <named-content content-type="city">Monteporzio Catone</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF31">
+<label>31</label>
+<addr-line>
+<institution>INFN-Sezione di Roma, Piazzale Aldo Moro, 2 – c/o Dipartimento di Fisica</institution>, <named-content content-type="street">Edificio G. Marconi</named-content>, <named-content content-type="postcode">00185</named-content> <named-content content-type="city">Roma</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF32">
+<label>32</label>
+<addr-line>
+<institution>Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT)</institution>, <named-content content-type="street">Avenida Complutense 40</named-content>, <named-content content-type="postcode">28040</named-content> <named-content content-type="city">Madrid</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF33">
+<label>33</label>
+<addr-line>
+<institution>Port d’Informació Científica, Campus UAB</institution>, <named-content content-type="street">C. Albareda s/n</named-content>, <named-content content-type="postcode">08193</named-content> <named-content content-type="city">Bellaterra</named-content>, <named-content content-type="state">(Barcelona)</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF34">
+<label>34</label>
+<addr-line>
+<institution>Dipartimento di Fisica e Astronomia “Augusto Righi” – Alma Mater Studiorum Università di Bologna</institution>, <named-content content-type="street">Viale Berti Pichat 6/2</named-content>, <named-content content-type="postcode">40127</named-content> <named-content content-type="city">Bologna</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF35">
+<label>35</label>
+<addr-line>
+<institution>Institute for Astronomy, University of Edinburgh, Royal Observatory</institution>, <named-content content-type="street">Blackford Hill</named-content>, <named-content content-type="city">Edinburgh</named-content> <named-content content-type="postcode">EH9 3HJ</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF36">
+<label>36</label>
+<addr-line>
+<institution>Jodrell Bank Centre for Astrophysics, Department of Physics and Astronomy, University of Manchester</institution>, <named-content content-type="street">Oxford Road</named-content>, <named-content content-type="city">Manchester</named-content> <named-content content-type="postcode">M13 9PL</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF37">
+<label>37</label>
+<addr-line>
+<institution>European Space Agency/ESRIN</institution>, <named-content content-type="street">Largo Galileo Galilei 1</named-content>, <named-content content-type="postcode">00044</named-content> <named-content content-type="city">Frascati</named-content>, <named-content content-type="state">Roma</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF38">
+<label>38</label>
+<addr-line>
+<institution>ESAC/ESA, Camino Bajo del Castillo</institution>, <named-content content-type="street">s/n., Urb. Villafranca del Castillo</named-content>, <named-content content-type="city">28692 Villanueva de la Cañada</named-content>, <named-content content-type="state">Madrid</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF39">
+<label>39</label>
+<addr-line>
+<institution>Université Claude Bernard Lyon 1, CNRS/IN2P3, IP2I Lyon, UMR 5822</institution>, <named-content content-type="city">Villeurbanne</named-content> <named-content content-type="postcode">F-69100</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF40">
+<label>40</label>
+<addr-line>
+<institution>Institute of Physics, Laboratory of Astrophysics, Ecole Polytechnique Fédérale de Lausanne (EPFL), Observatoire de Sauverny</institution>, <named-content content-type="postcode">1290</named-content> <named-content content-type="city">Versoix</named-content>, <country>Switzerland</country>
+</addr-line>
+</aff>
+<aff id="AFF41">
+<label>41</label>
+<addr-line>
+<institution>UCB Lyon 1, CNRS/IN2P3, IUF, IP2I Lyon</institution>, <named-content content-type="street">4 rue Enrico Fermi</named-content>, <named-content content-type="postcode">69622</named-content> <named-content content-type="city">Villeurbanne</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF42">
+<label>42</label>
+<addr-line>
+<institution>Departamento de Física, Faculdade de Ciências, Universidade de Lisboa</institution>, <named-content content-type="street">Edifício C8</named-content>, <named-content content-type="city">Campo Grande</named-content>, <named-content content-type="postcode">PT1749-016</named-content> <named-content content-type="state">Lisboa</named-content>, <country>Portugal</country>
+</addr-line>
+</aff>
+<aff id="AFF43">
+<label>43</label>
+<addr-line>
+<institution>Instituto de Astrofísica e Ciências do Espaço, Faculdade de Ciências, Universidade de Lisboa</institution>, <named-content content-type="street">Campo Grande</named-content>, <named-content content-type="postcode">1749-016</named-content> <named-content content-type="city">Lisboa</named-content>, <country>Portugal</country>
+</addr-line>
+</aff>
+<aff id="AFF44">
+<label>44</label>
+<addr-line>
+<institution>Department of Astronomy, University of Geneva</institution>, <named-content content-type="street">ch. d’Ecogia 16</named-content>, <named-content content-type="postcode">1290</named-content> <named-content content-type="city">Versoix</named-content>, <country>Switzerland</country>
+</addr-line>
+</aff>
+<aff id="AFF45">
+<label>45</label>
+<addr-line>
+<institution>INAF-Istituto di Astrofisica e Planetologia Spaziali</institution>, <named-content content-type="street">Via del Fosso del Cavaliere, 100</named-content>, <named-content content-type="postcode">00100</named-content> <named-content content-type="city">Roma</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF46">
+<label>46</label>
+<addr-line>
+<institution>Université Paris-Saclay, CNRS, Institut d’astrophysique spatiale</institution>, <named-content content-type="postcode">91405</named-content> <named-content content-type="city">Orsay</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF47">
+<label>47</label>
+<addr-line>
+<institution>INFN-Padova</institution>, <named-content content-type="street">Via Marzolo 8</named-content>, <named-content content-type="postcode">35131</named-content> <named-content content-type="city">Padova</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF48">
+<label>48</label>
+<addr-line>
+<institution>Institut d’Estudis Espacials de Catalunya (IEEC), Edifici RDIT</institution>, <named-content content-type="street">Campus UPC</named-content>, <named-content content-type="postcode">08860</named-content> <named-content content-type="city">Castelldefels</named-content>, <named-content content-type="state">Barcelona</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF49">
+<label>49</label>
+<addr-line>
+<institution>Institut de Ciencies de l’Espai (IEEC-CSIC)</institution>, <named-content content-type="street">Campus UAB, Carrer de Can Magrans, s/n Cerdanyola del Vallés</named-content>, <named-content content-type="postcode">08193</named-content> <named-content content-type="city">Barcelona</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF50">
+<label>50</label>
+<addr-line>
+<institution>INAF-Osservatorio Astronomico di Trieste</institution>, <named-content content-type="street">Via G. B. Tiepolo 11</named-content>, <named-content content-type="postcode">34143</named-content> <named-content content-type="city">Trieste</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF51">
+<label>51</label>
+<addr-line>
+<institution>Istituto Nazionale di Fisica Nucleare, Sezione di Bologna</institution>, <named-content content-type="street">Via Irnerio 46</named-content>, <named-content content-type="postcode">40126</named-content> <named-content content-type="city">Bologna</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF52">
+<label>52</label>
+<addr-line>
+<institution>INAF-Osservatorio Astronomico di Padova</institution>, <named-content content-type="street">Via dell’Osservatorio 5</named-content>, <named-content content-type="postcode">35122</named-content> <named-content content-type="city">Padova</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF53">
+<label>53</label>
+<addr-line>
+<institution>Institute of Theoretical Astrophysics, University of Oslo</institution>, <named-content content-type="street">PO Box 1029</named-content>, <named-content content-type="city">Blindern</named-content>, <named-content content-type="postcode">0315</named-content> <named-content content-type="state">Oslo</named-content>, <country>Norway</country>
+</addr-line>
+</aff>
+<aff id="AFF54">
+<label>54</label>
+<addr-line>
+<institution>Leiden Observatory, Leiden University</institution>, <named-content content-type="street">Einsteinweg 55</named-content>, <named-content content-type="postcode">2333 CC</named-content> <named-content content-type="city">Leiden</named-content>, <country>The Netherlands</country>
+</addr-line>
+</aff>
+<aff id="AFF55">
+<label>55</label>
+<addr-line>
+<institution>Jet Propulsion Laboratory, California Institute of Technology</institution>, <named-content content-type="street">4800 Oak Grove Drive</named-content>, <named-content content-type="city">Pasadena</named-content>, <named-content content-type="state">CA</named-content> <named-content content-type="postcode">91109</named-content>, <country>USA</country>
+</addr-line>
+</aff>
+<aff id="AFF56">
+<label>56</label>
+<addr-line>
+<institution>Department of Physics, Lancaster University</institution>, <named-content content-type="city">Lancaster</named-content> <named-content content-type="postcode">LA1 4YB</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF57">
+<label>57</label>
+<addr-line>
+<institution>Felix Hormuth Engineering</institution>, <named-content content-type="street">Goethestr. 17</named-content>, <named-content content-type="postcode">69181</named-content> <named-content content-type="city">Leimen</named-content>, <country>Germany</country>
+</addr-line>
+</aff>
+<aff id="AFF58">
+<label>58</label>
+<addr-line>
+<institution>Technical University of Denmark</institution>, <named-content content-type="street">Elektrovej 327</named-content>, <named-content content-type="postcode">2800</named-content> <named-content content-type="city">Kgs. Lyngby</named-content>, <country>Denmark</country>
+</addr-line>
+</aff>
+<aff id="AFF59">
+<label>59</label>
+<addr-line>
+<institution>Cosmic Dawn Center (DAWN)</institution>, <named-content content-type="city">Copenhagen</named-content>, <country>Denmark</country>
+</addr-line>
+</aff>
+<aff id="AFF60">
+<label>60</label>
+<addr-line>
+<institution>Max-Planck-Institut für Astronomie</institution>, <named-content content-type="street">Königstuhl 17</named-content>, <named-content content-type="postcode">69117</named-content> <named-content content-type="city">Heidelberg</named-content>, <country>Germany</country>
+</addr-line>
+</aff>
+<aff id="AFF61">
+<label>61</label>
+<addr-line>
+<institution>Department of Physics and Astronomy, University College London</institution>, <named-content content-type="street">Gower Street</named-content>, <named-content content-type="city">London</named-content> <named-content content-type="postcode">WC1E 6BT</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF62">
+<label>62</label>
+<addr-line>
+<institution>Department of Physics and Helsinki Institute of Physics</institution>, <named-content content-type="street">Gustaf Hällströmin katu 2</named-content>, <named-content content-type="postcode">00014</named-content> <named-content content-type="city">University of Helsinki</named-content>, <country>Finland</country>
+</addr-line>
+</aff>
+<aff id="AFF63">
+<label>63</label>
+<addr-line>
+<institution>Aix-Marseille Université, CNRS/IN2P3, CPPM</institution>, <named-content content-type="city">Marseille</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF64">
+<label>64</label>
+<addr-line>
+<institution>Université de Genève, Département de Physique Théorique and Centre for Astroparticle Physics</institution>, <named-content content-type="street">24 quai Ernest-Ansermet</named-content>, <named-content content-type="postcode">CH-1211</named-content> <named-content content-type="city">Genève 4</named-content>, <country>Switzerland</country>
+</addr-line>
+</aff>
+<aff id="AFF65">
+<label>65</label>
+<addr-line>
+<institution>Department of Physics</institution>, <named-content content-type="street">PO Box 64</named-content>, <named-content content-type="postcode">00014</named-content> <named-content content-type="city">University of Helsinki</named-content>, <country>Finland</country>
+</addr-line>
+</aff>
+<aff id="AFF66">
+<label>66</label>
+<addr-line>
+<institution>Helsinki Institute of Physics, Gustaf Hällströmin katu 2, University of Helsinki</institution>, <named-content content-type="city">Helsinki</named-content>, <country>Finland</country>
+</addr-line>
+</aff>
+<aff id="AFF67">
+<label>67</label>
+<addr-line>
+<institution>European Space Agency/ESTEC</institution>, <named-content content-type="street">Keplerlaan 1</named-content>, <named-content content-type="postcode">2201 AZ</named-content> <named-content content-type="city">Noordwijk</named-content>, <country>The Netherlands</country>
+</addr-line>
+</aff>
+<aff id="AFF68">
+<label>68</label>
+<addr-line>
+<institution>NOVA optical infrared instrumentation group at ASTRON</institution>, <named-content content-type="street">Oude Hoogeveensedijk 4</named-content>, <named-content content-type="postcode">7991 PD</named-content> <named-content content-type="city">Dwingeloo</named-content>, <country>The Netherlands</country>
+</addr-line>
+</aff>
+<aff id="AFF69">
+<label>69</label>
+<addr-line>
+<institution>Universität Bonn, Argelander-Institut für Astronomie</institution>, <named-content content-type="street">Auf dem Hügel 71</named-content>, <named-content content-type="postcode">53121</named-content> <named-content content-type="city">Bonn</named-content>, <country>Germany</country>
+</addr-line>
+</aff>
+<aff id="AFF70">
+<label>70</label>
+<addr-line>
+<institution>Aix-Marseille Université, CNRS, CNES, LAM</institution>, <named-content content-type="city">Marseille</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF71">
+<label>71</label>
+<addr-line>
+<institution>Dipartimento di Fisica e Astronomia “Augusto Righi” – Alma Mater Studiorum Università di Bologna</institution>, <named-content content-type="street">Via Piero Gobetti 93/2</named-content>, <named-content content-type="postcode">40129</named-content> <named-content content-type="city">Bologna</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF72">
+<label>72</label>
+<addr-line>
+<institution>Department of Physics, Centre for Extragalactic Astronomy, Durham University</institution>, <named-content content-type="street">South Road</named-content> <named-content content-type="postcode">DH1 3LE</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF73">
+<label>73</label>
+<addr-line>
+<institution>Université Paris Cité, CNRS, Astroparticule et Cosmologie</institution>, <named-content content-type="postcode">75013</named-content> <named-content content-type="city">Paris</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF74">
+<label>74</label>
+<addr-line>
+<institution>Institut d’Astrophysique de Paris</institution>, <named-content content-type="street">98bis Boulevard Arago</named-content>, <named-content content-type="postcode">75014</named-content> <named-content content-type="city">Paris</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF75">
+<label>75</label>
+<addr-line>
+<institution>Institut d’Astrophysique de Paris, UMR 7095, CNRS, and Sorbonne Université</institution>, <named-content content-type="street">98 bis boulevard Arago</named-content>, <named-content content-type="postcode">75014</named-content> <named-content content-type="city">Paris</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF76">
+<label>76</label>
+<addr-line>
+<institution>IFPU, Institute for Fundamental Physics of the Universe</institution>, <named-content content-type="street">Via Beirut 2</named-content>, <named-content content-type="postcode">34151</named-content> <named-content content-type="city">Trieste</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF77">
+<label>77</label>
+<addr-line>
+<institution>School of Mathematics, Statistics and Physics, Newcastle University</institution>, <named-content content-type="street">Herschel Building</named-content>, <named-content content-type="city">Newcastle-upon-Tyne</named-content> <named-content content-type="postcode">NE1 7RU</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF78">
+<label>78</label>
+<addr-line>
+<institution>Department of Physics, Institute for Computational Cosmology, Durham University</institution>, <named-content content-type="street">South Road</named-content> <named-content content-type="postcode">DH1 3LE</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF79">
+<label>79</label>
+<addr-line>
+<institution>Institut de Física d’Altes Energies (IFAE), The Barcelona Institute of Science and Technology</institution>, <named-content content-type="street">Campus UAB</named-content>, <named-content content-type="postcode">08193</named-content> <named-content content-type="city">Bellaterra</named-content>, <named-content content-type="state">(Barcelona)</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF80">
+<label>80</label>
+<addr-line>
+<institution>Department of Physics and Astronomy, University of Aarhus</institution>, <named-content content-type="street">Ny Munkegade 120</named-content>, <named-content content-type="postcode">DK-8000</named-content> <named-content content-type="city">Aarhus C</named-content>, <country>Denmark</country>
+</addr-line>
+</aff>
+<aff id="AFF81">
+<label>81</label>
+<addr-line>
+<institution>Waterloo Centre for Astrophysics, University of Waterloo</institution>, <named-content content-type="city">Waterloo</named-content>, <named-content content-type="state">Ontario</named-content> <named-content content-type="postcode">N2L 3G1</named-content>, <country>Canada</country>
+</addr-line>
+</aff>
+<aff id="AFF82">
+<label>82</label>
+<addr-line>
+<institution>Department of Physics and Astronomy, University of Waterloo</institution>, <named-content content-type="city">Waterloo</named-content>, <named-content content-type="state">Ontario</named-content> <named-content content-type="postcode">N2L 3G1</named-content>, <country>Canada</country>
+</addr-line>
+</aff>
+<aff id="AFF83">
+<label>83</label>
+<addr-line>
+<institution>Perimeter Institute for Theoretical Physics</institution>, <named-content content-type="city">Waterloo</named-content>, <named-content content-type="state">Ontario</named-content> <named-content content-type="postcode">N2L 2Y5</named-content>, <country>Canada</country>
+</addr-line>
+</aff>
+<aff id="AFF84">
+<label>84</label>
+<addr-line>
+<institution>Space Science Data Center, Italian Space Agency</institution>, <named-content content-type="street">Via del Politecnico snc</named-content>, <named-content content-type="postcode">00133</named-content> <named-content content-type="city">Roma</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF85">
+<label>85</label>
+<addr-line>
+<institution>Centre National d’Etudes Spatiales – Centre spatial de Toulouse</institution>, <named-content content-type="street">18 avenue Edouard Belin</named-content>, <named-content content-type="postcode">31401</named-content> <named-content content-type="city">Toulouse Cedex 9</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF86">
+<label>86</label>
+<addr-line>
+<institution>Institute of Space Science, Str. Atomistilor</institution>, <named-content content-type="street">nr. 409 Măgurele</named-content>, <named-content content-type="city">Ilfov</named-content> <named-content content-type="postcode">077125</named-content>, <country>Romania</country>
+</addr-line>
+</aff>
+<aff id="AFF87">
+<label>87</label>
+<addr-line>
+<institution>Instituto de Astrofísica de Canarias</institution>, <named-content content-type="street">Calle Vía Láctea s/n</named-content>, <named-content content-type="postcode">38204</named-content> <named-content content-type="city">San Cristóbal de La Laguna</named-content>, <named-content content-type="state">Tenerife</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF88">
+<label>88</label>
+<addr-line>
+<institution>Departamento de Astrofísica, Universidad de La Laguna</institution>, <named-content content-type="postcode">38206</named-content> <named-content content-type="city">La Laguna</named-content>, <named-content content-type="state">Tenerife</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF89">
+<label>89</label>
+<addr-line>
+<institution>Dipartimento di Fisica e Astronomia “G. Galilei”, Università di Padova</institution>, <named-content content-type="street">Via Marzolo 8</named-content>, <named-content content-type="postcode">35131</named-content> <named-content content-type="city">Padova</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF90">
+<label>90</label>
+<addr-line>
+<institution>Departamento de Física, FCFM, Universidad de Chile</institution>, <named-content content-type="street">Blanco Encalada 2008</named-content>, <named-content content-type="city">Santiago</named-content>, <country>Chile</country>
+</addr-line>
+</aff>
+<aff id="AFF91">
+<label>91</label>
+<addr-line>
+<institution>Universität Innsbruck, Institut für Astro- und Teilchenphysik</institution>, <named-content content-type="street">Technikerstr. 25/8</named-content>, <named-content content-type="postcode">6020</named-content> <named-content content-type="city">Innsbruck</named-content>, <country>Austria</country>
+</addr-line>
+</aff>
+<aff id="AFF92">
+<label>92</label>
+<addr-line>
+<institution>Satlantis, University Science Park</institution>, <named-content content-type="street">Sede Bld 48940</named-content>, <named-content content-type="city">Leioa-Bilbao</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF93">
+<label>93</label>
+<addr-line>
+<institution>Instituto de Astrofísica e Ciências do Espaço, Faculdade de Ciências, Universidade de Lisboa</institution>, <named-content content-type="city">Tapada da Ajuda</named-content>, <named-content content-type="postcode">1349-018</named-content> <named-content content-type="state">Lisboa</named-content>, <country>Portugal</country>
+</addr-line>
+</aff>
+<aff id="AFF94">
+<label>94</label>
+<addr-line>
+<institution>Universidad Politécnica de Cartagena, Departamento de Electrónica y Tecnología de Computadoras</institution>, <named-content content-type="street">Plaza del Hospital 1</named-content>, <named-content content-type="postcode">30202</named-content> <named-content content-type="city">Cartagena</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF95">
+<label>95</label>
+<addr-line>
+<institution>INFN-Bologna</institution>, <named-content content-type="street">Via Irnerio 46</named-content>, <named-content content-type="postcode">40126</named-content> <named-content content-type="city">Bologna</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF96">
+<label>96</label>
+<addr-line>
+<institution>Infrared Processing and Analysis Center, California Institute of Technology</institution>, <named-content content-type="city">Pasadena</named-content>, <named-content content-type="state">CA</named-content> <named-content content-type="postcode">91125</named-content>, <country>USA</country>
+</addr-line>
+</aff>
+<aff id="AFF97">
+<label>97</label>
+<addr-line>
+<institution>INAF, Istituto di Radioastronomia</institution>, <named-content content-type="street">Via Piero Gobetti 101</named-content>, <named-content content-type="postcode">40129</named-content> <named-content content-type="city">Bologna</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF98">
+<label>98</label>
+<addr-line>
+<institution>Astronomical Observatory of the Autonomous Region of the Aosta Valley (OAVdA)</institution>, <named-content content-type="street">Loc. Lignan 39</named-content>, <named-content content-type="postcode">I-11020</named-content> <named-content content-type="city">Nus</named-content>, <named-content content-type="state">(Aosta Valley)</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF99">
+<label>99</label>
+<addr-line>
+<institution>School of Physics and Astronomy, Cardiff University</institution>, <named-content content-type="city">The Parade</named-content>, <named-content content-type="state">Cardiff</named-content> <named-content content-type="postcode">CF24 3AA</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF100">
+<label>100</label>
+<addr-line>
+<institution>Center for Computational Astrophysics, Flatiron Institute</institution>, <named-content content-type="street">162 5th Avenue</named-content>, <named-content content-type="postcode">10010</named-content> <named-content content-type="city">New York</named-content>, <named-content content-type="state">NY</named-content>, <country>USA</country>
+</addr-line>
+</aff>
+<aff id="AFF101">
+<label>101</label>
+<addr-line>
+<institution>Université Paris-Saclay, CNRS/IN2P3, IJCLab</institution>, <named-content content-type="postcode">91405</named-content> <named-content content-type="city">Orsay</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF102">
+<label>102</label>
+<addr-line>
+<institution>Centre de Calcul de l’IN2P3/CNRS</institution>, <named-content content-type="street">21 avenue Pierre de Coubertin</named-content>, <named-content content-type="postcode">69627</named-content> <named-content content-type="city">Villeurbanne Cedex</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF103">
+<label>103</label>
+<addr-line>
+<institution>Department of Mathematics and Physics E. De Giorgi, University of Salento</institution>, <named-content content-type="street">Via per Arnesano, CP-I93</named-content>, <named-content content-type="postcode">73100</named-content> <named-content content-type="city">Lecce</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF104">
+<label>104</label>
+<addr-line>
+<institution>INAF-Sezione di Lecce, c/o Dipartimento Matematica e Fisica</institution>, <named-content content-type="street">Via per Arnesano</named-content>, <named-content content-type="postcode">73100</named-content> <named-content content-type="city">Lecce</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF105">
+<label>105</label>
+<addr-line>
+<institution>INFN, Sezione di Lecce</institution>, <named-content content-type="street">Via per Arnesano, CP-193</named-content>, <named-content content-type="postcode">73100</named-content> <named-content content-type="city">Lecce</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF106">
+<label>106</label>
+<addr-line>
+<institution>Junia, EPA department</institution>, <named-content content-type="street">41 Bd Vauban</named-content>, <named-content content-type="postcode">59800</named-content> <named-content content-type="city">Lille</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF107">
+<label>107</label>
+<addr-line>
+<institution>INFN, Sezione di Trieste</institution>, <named-content content-type="street">Via Valerio 2</named-content>, <named-content content-type="postcode">34127</named-content> <named-content content-type="city">Trieste</named-content>, <named-content content-type="state">TS</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF108">
+<label>108</label>
+<addr-line>
+<institution>ICSC – Centro Nazionale di Ricerca in High Performance Computing, Big Data e Quantum Computing</institution>, <named-content content-type="street">Via Magnanelli 2</named-content>, <named-content content-type="city">Bologna</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF109">
+<label>109</label>
+<addr-line>
+<institution>Instituto de Física Teórica UAM-CSIC</institution>, <named-content content-type="street">Campus de Cantoblanco</named-content>, <named-content content-type="postcode">28049</named-content> <named-content content-type="city">Madrid</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF110">
+<label>110</label>
+<addr-line>
+<institution>CERCA/ISO, Department of Physics, Case Western Reserve University</institution>, <named-content content-type="street">10900 Euclid Avenue</named-content>, <named-content content-type="city">Cleveland</named-content>, <named-content content-type="state">OH</named-content> <named-content content-type="postcode">44106</named-content>, <country>USA</country>
+</addr-line>
+</aff>
+<aff id="AFF111">
+<label>111</label>
+<addr-line>
+<institution>Laboratoire Univers et Théorie, Observatoire de Paris, Université PSL, Université Paris Cité, CNRS</institution>, <named-content content-type="postcode">92190</named-content> <named-content content-type="city">Meudon</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF112">
+<label>112</label>
+<addr-line>
+<institution>Dipartimento di Fisica e Scienze della Terra, Università degli Studi di Ferrara</institution>, <named-content content-type="street">Via Giuseppe Saragat 1</named-content>, <named-content content-type="postcode">44122</named-content> <named-content content-type="city">Ferrara</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF113">
+<label>113</label>
+<addr-line>
+<institution>Istituto Nazionale di Fisica Nucleare, Sezione di Ferrara</institution>, <named-content content-type="street">Via Giuseppe Saragat 1</named-content>, <named-content content-type="postcode">44122</named-content> <named-content content-type="city">Ferrara</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF114">
+<label>114</label>
+<addr-line>
+<institution>Kavli Institute for the Physics and Mathematics of the Universe (WPI), University of Tokyo</institution>, <named-content content-type="city">Kashiwa</named-content>, <named-content content-type="state">Chiba</named-content> <named-content content-type="postcode">277-8583</named-content>, <country>Japan</country>
+</addr-line>
+</aff>
+<aff id="AFF115">
+<label>115</label>
+<addr-line>
+<institution>Ludwig-Maximilians-University</institution>, <named-content content-type="street">Schellingstrasse 4</named-content>, <named-content content-type="postcode">80799</named-content> <named-content content-type="city">Munich</named-content>, <country>Germany</country>
+</addr-line>
+</aff>
+<aff id="AFF116">
+<label>116</label>
+<addr-line>
+<institution>Dipartimento di Fisica – Sezione di Astronomia, Università di Trieste</institution>, <named-content content-type="street">Via Tiepolo 11</named-content>, <named-content content-type="postcode">34131</named-content> <named-content content-type="city">Trieste</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF117">
+<label>117</label>
+<addr-line>
+<institution>Minnesota Institute for Astrophysics, University of Minnesota</institution>, <named-content content-type="street">116 Church St SE</named-content>, <named-content content-type="city">Minneapolis</named-content>, <named-content content-type="state">MN</named-content> <named-content content-type="postcode">55455</named-content>, <country>USA</country>
+</addr-line>
+</aff>
+<aff id="AFF118">
+<label>118</label>
+<addr-line>
+<institution>Université Côte d’Azur, Observatoire de la Côte d’Azur, CNRS, Laboratoire Lagrange</institution>, <named-content content-type="street">Bd de l’Observatoire, CS 34229</named-content>, <named-content content-type="postcode">06304</named-content> <named-content content-type="city">Nice cedex 4</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF119">
+<label>119</label>
+<addr-line>
+<institution>Institute for Astronomy, University of Hawaii</institution>, <named-content content-type="street">2680 Woodlawn Drive</named-content>, <named-content content-type="city">Honolulu</named-content>, <named-content content-type="state">HI</named-content> <named-content content-type="postcode">96822</named-content>, <country>USA</country>
+</addr-line>
+</aff>
+<aff id="AFF120">
+<label>120</label>
+<addr-line>
+<institution>Department of Physics &amp; Astronomy, University of California Irvine</institution>, <named-content content-type="city">Irvine</named-content>, <named-content content-type="state">CA</named-content> <named-content content-type="postcode">92697</named-content>, <country>USA</country>
+</addr-line>
+</aff>
+<aff id="AFF121">
+<label>121</label>
+<addr-line>
+<institution>Department of Astronomy &amp; Physics and Institute for Computational Astrophysics, Saint Mary’s University</institution>, <named-content content-type="street">923 Robie Street</named-content>, <named-content content-type="city">Halifax</named-content>, <named-content content-type="state">Nova Scotia</named-content> <named-content content-type="postcode">B3H 3C3</named-content>, <country>Canada</country>
+</addr-line>
+</aff>
+<aff id="AFF122">
+<label>122</label>
+<addr-line>
+<institution>Departamento Física Aplicada, Universidad Politécnica de Cartagena</institution>, <named-content content-type="street">Campus Muralla del Mar</named-content>, <named-content content-type="postcode">30202</named-content> <named-content content-type="city">Cartagena</named-content>, <named-content content-type="state">Murcia</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF123">
+<label>123</label>
+<addr-line>
+<institution>Department of Physics, Oxford University</institution>, <named-content content-type="street">Keble Road</named-content>, <named-content content-type="city">Oxford</named-content> <named-content content-type="postcode">OX1 3RH</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF124">
+<label>124</label>
+<addr-line>
+<institution>Institute of Cosmology and Gravitation, University of Portsmouth</institution>, <named-content content-type="city">Portsmouth</named-content> <named-content content-type="postcode">PO1 3FX</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF125">
+<label>125</label>
+<addr-line>
+<institution>Department of Computer Science, Aalto University</institution>, <named-content content-type="street">PO Box 15400</named-content>, <named-content content-type="city">Espoo</named-content> <named-content content-type="postcode">FI-00 076</named-content>, <country>Finland</country>
+</addr-line>
+</aff>
+<aff id="AFF126">
+<label>126</label>
+<addr-line>
+<institution>Ruhr University Bochum, Faculty of Physics and Astronomy, Astronomical Institute (AIRUB), German Centre for Cosmological Lensing (GCCL)</institution>, <named-content content-type="postcode">44780</named-content> <named-content content-type="city">Bochum</named-content>, <country>Germany</country>
+</addr-line>
+</aff>
+<aff id="AFF127">
+<label>127</label>
+<addr-line>
+<institution>DARK, Niels Bohr Institute, University of Copenhagen</institution>, <named-content content-type="street">Jagtvej 155</named-content>, <named-content content-type="postcode">2200</named-content> <named-content content-type="city">Copenhagen</named-content>, <country>Denmark</country>
+</addr-line>
+</aff>
+<aff id="AFF128">
+<label>128</label>
+<addr-line>
+<institution>Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3</institution>, <named-content content-type="street">53, Avenue des Martyrs</named-content>, <named-content content-type="postcode">38000</named-content> <named-content content-type="city">Grenoble</named-content>, <country>France</country>
+</addr-line>
+</aff>
+<aff id="AFF129">
+<label>129</label>
+<addr-line>
+<institution>Department of Physics and Astronomy</institution>, <named-content content-type="street">Vesilinnantie 5</named-content>, <named-content content-type="postcode">20014</named-content> <named-content content-type="city">University of Turku</named-content>, <country>Finland</country>
+</addr-line>
+</aff>
+<aff id="AFF130">
+<label>130</label>
+<addr-line>
+<institution>Serco for European Space Agency (ESA), Camino bajo del Castillo</institution>, <named-content content-type="street">s/n, Urbanizacion Villafranca del Castillo</named-content>, <named-content content-type="city">Villanueva de la Cañada</named-content>, <named-content content-type="postcode">28692</named-content> <named-content content-type="city">Madrid</named-content>, <country>Spain</country>
+</addr-line>
+</aff>
+<aff id="AFF131">
+<label>131</label>
+<addr-line>
+<institution>ARC Centre of Excellence for Dark Matter Particle Physics</institution>, <named-content content-type="city">Melbourne</named-content>, <country>Australia</country>
+</addr-line>
+</aff>
+<aff id="AFF132">
+<label>132</label>
+<addr-line>
+<institution>Centre for Astrophysics &amp; Supercomputing, Swinburne University of Technology</institution>, <named-content content-type="city">Hawthorn</named-content>, <named-content content-type="state">Victoria</named-content> <named-content content-type="postcode">3122</named-content>, <country>Australia</country>
+</addr-line>
+</aff>
+<aff id="AFF133">
+<label>133</label>
+<addr-line>
+<institution>School of Physics and Astronomy, Queen Mary University of London</institution>, <named-content content-type="street">Mile End Road</named-content>, <named-content content-type="city">London</named-content> <named-content content-type="postcode">E1 4NS</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF134">
+<label>134</label>
+<addr-line>
+<institution>Department of Physics and Astronomy, University of the Western Cape</institution>, <named-content content-type="city">Bellville</named-content>, <named-content content-type="state">Cape Town</named-content> <named-content content-type="postcode">7535</named-content>, <country>South Africa</country>
+</addr-line>
+</aff>
+<aff id="AFF135">
+<label>135</label>
+<addr-line>
+<institution>ICTP South American Institute for Fundamental Research, Instituto de Física Teórica, Universidade Estadual Paulista</institution>, <named-content content-type="city">São Paulo</named-content>, <country>Brazil</country>
+</addr-line>
+</aff>
+<aff id="AFF136">
+<label>136</label>
+<addr-line>
+<institution>Oskar Klein Centre for Cosmoparticle Physics, Department of Physics, Stockholm University</institution>, <named-content content-type="city">Stockholm</named-content> <named-content content-type="postcode">SE-106 91</named-content>, <country>Sweden</country>
+</addr-line>
+</aff>
+<aff id="AFF137">
+<label>137</label>
+<addr-line>
+<institution>Astrophysics Group, Blackett Laboratory, Imperial College London</institution>, <named-content content-type="city">London</named-content> <named-content content-type="postcode">SW7 2AZ</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF138">
+<label>138</label>
+<addr-line>
+<institution>INAF-Osservatorio Astrofisico di Arcetri</institution>, <named-content content-type="street">Largo E. Fermi 5</named-content>, <named-content content-type="postcode">50125</named-content> <named-content content-type="city">Firenze</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF139">
+<label>139</label>
+<addr-line>
+<institution>Dipartimento di Fisica, Sapienza Università di Roma</institution>, <named-content content-type="street">Piazzale Aldo Moro 2</named-content>, <named-content content-type="postcode">00185</named-content> <named-content content-type="city">Roma</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF140">
+<label>140</label>
+<addr-line>
+<institution>Centro de Astrofísica da Universidade do Porto</institution>, <named-content content-type="street">Rua das Estrelas</named-content>, <named-content content-type="postcode">4150-762</named-content> <named-content content-type="city">Porto</named-content>, <country>Portugal</country>
+</addr-line>
+</aff>
+<aff id="AFF141">
+<label>141</label>
+<addr-line>
+<institution>Dipartimento di Fisica, Università di Roma Tor Vergata</institution>, <named-content content-type="street">Via della Ricerca Scientifica 1</named-content>, <named-content content-type="city">Roma</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF142">
+<label>142</label>
+<addr-line>
+<institution>INFN, Sezione di Roma 2</institution>, <named-content content-type="street">Via della Ricerca Scientifica 1</named-content>, <named-content content-type="city">Roma</named-content>, <country>Italy</country>
+</addr-line>
+</aff>
+<aff id="AFF143">
+<label>143</label>
+<addr-line>
+<institution>Institute of Astronomy, University of Cambridge</institution>, <named-content content-type="street">Madingley Road</named-content>, <named-content content-type="city">Cambridge</named-content> <named-content content-type="postcode">CB3 0HA</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF144">
+<label>144</label>
+<addr-line>
+<institution>Theoretical astrophysics, Department of Physics and Astronomy, Uppsala University</institution>, <named-content content-type="street">Box 515</named-content>, <named-content content-type="postcode">751 20</named-content> <named-content content-type="city">Uppsala</named-content>, <country>Sweden</country>
+</addr-line>
+</aff>
+<aff id="AFF145">
+<label>145</label>
+<addr-line>
+<institution>Department of Physics, Royal Holloway, University of London</institution>, <named-content content-type="city">London</named-content> <named-content content-type="postcode">TW20 0EX</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF146">
+<label>146</label>
+<addr-line>
+<institution>Mullard Space Science Laboratory, University College London</institution>, <named-content content-type="street">Holmbury St Mary</named-content>, <named-content content-type="city">Dorking</named-content>, <named-content content-type="state">Surrey</named-content> <named-content content-type="postcode">RH5 6NT</named-content>, <country>UK</country>
+</addr-line>
+</aff>
+<aff id="AFF147">
+<label>147</label>
+<addr-line>
+<institution>Department of Astrophysical Sciences, Peyton Hall, Princeton University</institution>, <named-content content-type="city">Princeton</named-content>, <named-content content-type="state">NJ</named-content> <named-content content-type="postcode">08544</named-content>, <country>USA</country>
+</addr-line>
+</aff>
+<aff id="AFF148">
+<label>148</label>
+<addr-line>
+<institution>Niels Bohr Institute, University of Copenhagen</institution>, <named-content content-type="street">Jagtvej 128</named-content>, <named-content content-type="postcode">2200</named-content> <named-content content-type="city">Copenhagen</named-content>, <country>Denmark</country>
+</addr-line>
+</aff>
+<aff id="AFF149">
+<label>149</label>
+<addr-line>
+<institution>Center for Cosmology and Particle Physics, Department of Physics, New York University</institution>, <named-content content-type="city">New York</named-content>, <named-content content-type="state">NY</named-content> <named-content content-type="postcode">10003</named-content>, <country>USA</country>
+</addr-line>
+</aff>
+</contrib-group>
+<author-notes>
+<corresp id="FN1">
+<label>⋆</label> Corresponding author; <email>julien.lesgourgues@physik.rwth-aachen.de</email>
+</corresp>
+</author-notes><pub-date pub-type="final"><day>22</day><month>01</month><year>2025</year></pub-date><pub-date pub-type="epub"><day>22</day><month>01</month><year>2025</year></pub-date>
+<pub-date pub-type="ppub">
+<month>01</month>
+<year>2025</year>
+</pub-date>
+<volume>693</volume><issue-id pub-id-type="publisher-id">aa/2025/01</issue-id>
+<elocation-id>A249</elocation-id>
+<history>
+<date date-type="received">
+<day>22</day>
+<month>07</month>
+<year>2024</year>
+</date>
+<date date-type="accepted">
+<day>18</day>
+<month>10</month>
+<year>2024</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>© The Authors 2025</copyright-statement>
+<copyright-year>2025</copyright-year>
+<copyright-holder>The Authors</copyright-holder>
+<license license-type="open-access">
+<license-p content-type="cc-by-4.0">Open Access article, <ext-link ext-link-type="uri" xlink:href="https://www.edpsciences.org">published by EDP Sciences</ext-link>, under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0">https://creativecommons.org/licenses/by/4.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+<license-p content-type="oa-funding-note" specific-use="s2o">This article is published in open access under the <ext-link ext-link-type="uri" xlink:href="https://www.aanda.org/subscribe-to-open-faqs">Subscribe to Open model</ext-link>. <ext-link ext-link-type="email" xlink:href="mailto:subscribers@edpsciences.org">Subscribe to A&amp;A</ext-link> to support open access publication.</license-p>
+</license>
+</permissions><self-uri content-type="abstract" xlink:href="https://www.aanda.org/articles/aa/abs/2025/01/aa51611-24/aa51611-24.html"/><self-uri content-type="full_html" xlink:href="https://www.aanda.org/articles/aa/full_html/2025/01/aa51611-24/aa51611-24.html"/><self-uri content-type="pdf" xlink:href="https://www.aanda.org/articles/aa/pdf/2025/01/aa51611-24.pdf"/>
+<abstract xml:lang="en">
+<p>The <italic>Euclid</italic> mission of the European Space Agency will provide weak gravitational lensing and galaxy clustering surveys that can be used to constrain the standard cosmological model and its extensions, with an opportunity to test the properties of dark matter beyond the minimal cold dark matter paradigm. We present forecasts from the combination of the <italic>Euclid</italic> weak lensing and photometric galaxy clustering data on the parameters describing four interesting and representative non-minimal dark matter models: a mixture of cold and warm dark matter relics; unstable dark matter decaying either into massless or massive relics; and dark matter undergoing feeble interactions with relativistic relics. We modelled these scenarios at the level of the non-linear matter power spectrum using emulators trained on dedicated <italic>N</italic>-body simulations. We used a mock <italic>Euclid</italic> likelihood and Monte Carlo Markov chains to fit mock data and infer error bars on dark matter parameters marginalised over other parameters. We find that the <italic>Euclid</italic> photometric probe (alone or in combination with cosmic microwave background data from the <italic>Planck</italic> satellite) will be sensitive to the effect of each of the four dark matter models considered here. The improvement will be particularly spectacular for decaying and interacting dark matter models. With <italic>Euclid</italic>, the bounds on some dark matter parameters can improve by up to two orders of magnitude compared to current limits. We discuss the dependence of predicted uncertainties on different assumptions: the inclusion of photometric galaxy clustering data, the minimum angular scale taken into account, and modelling of baryonic feedback effects. We conclude that the <italic>Euclid</italic> mission will be able to measure quantities related to the dark sector of particle physics with unprecedented sensitivity. This will provide important information for model building in high-energy physics. Any hint of a deviation from the minimal cold dark matter paradigm would have profound implications for cosmology and particle physics.</p>
+</abstract>
+<kwd-group xml:lang="en">
+<kwd>cosmological parameters</kwd>
+<kwd>cosmology: observations</kwd>
+<kwd>dark matter</kwd>
+<kwd>large-scale structure of Universe</kwd>
+</kwd-group>
+<counts>
+<fig-count count="22"/>
+<table-count count="7"/>
+<equation-count count="203"/>
+<ref-count count="119"/>
+<page-count count="32"/>
+</counts>
+<custom-meta-group>
+<custom-meta>
+<meta-name>idline</meta-name>
+<meta-value>A&amp;A, 693, A249 (2025)</meta-value>
+</custom-meta>
+<custom-meta>
+<meta-name>cover_date</meta-name>
+<meta-value>January 2025</meta-value>
+</custom-meta>
+<custom-meta>
+<meta-name>first_month</meta-name>
+<meta-value>01</meta-value>
+</custom-meta>
+<custom-meta>
+<meta-name>last_month</meta-name>
+<meta-value>01</meta-value>
+</custom-meta>
+<custom-meta>
+<meta-name>first_year</meta-name>
+<meta-value>2025</meta-value>
+</custom-meta>
+<custom-meta>
+<meta-name>last_year</meta-name>
+<meta-value>2025</meta-value>
+</custom-meta>
+<custom-meta>
+<meta-name>open-access</meta-name>
+<meta-value>yes</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+
+<back>
+
+<ack>
+<p>We acknowledge computing resources granted by RWTH Aachen University under project thes1340, rwth1411, rwth1437, and rwth1481. We also acknowledge funding from DFG project 456622116 and support from the IRAP and IN2P3 Lyon computing centers. The Euclid Consortium acknowledges the European Space Agency and a number of agencies and institutes that have supported the development of <italic>Euclid</italic>, in particular the Agenzia Spaziale Italiana, the Austrian Forschungsförderungsgesellschaft funded through BMK, the Belgian Science Policy, the Canadian Euclid Consortium, the Deutsches Zentrum für Luft-und Raumfahrt, the DTU Space and the Niels Bohr Institute in Denmark, the French Centre National d’Etudes Spatiales, the Fundação para a Ciência e a Tecnologia, the Hungarian Academy of Sciences, the Ministerio de Ciencia, Innovación y Universidades, the National Aeronautics and Space Administration, the National Astronomical Observatory of 1930 Japan, the Netherlandse Onderzoekschool Voor Astronomie, the Norwegian Space Agency, the Research Council of Finland, the Romanian Space Agency, the State Secretariat for Education, Research, and Innovation (SERI) at the Swiss Space Office (SSO), and the United Kingdom Space Agency. A complete and detailed list is available on 1935 the <italic>Euclid</italic> web site (https://www.euclid-ec.org/).</p>
+</ack>
+<ref-list>
+<ref id="R1">
+<mixed-citation publication-type="journal">
+<string-name><surname>Abdalla</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Franco Abellán</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Aboubrahim</surname>, <given-names>A.</given-names></string-name>, et al. <year>2022</year>, <source>JHEAp</source>, <volume>34</volume>, <fpage>49</fpage>
+</mixed-citation>
+</ref>
+<ref id="R2">
+<mixed-citation publication-type="journal">
+<string-name><surname>Ali-Haïmoud</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Gandhi</surname>, <given-names>S. S.</given-names></string-name>, &amp; <string-name><surname>Smith</surname>, <given-names>T. L.</given-names></string-name> <year>2024</year>, <source>Phys. Rev. D</source>, <volume>109</volume>, <fpage>083523</fpage>
+</mixed-citation>
+</ref>
+<ref id="R3">
+<mixed-citation publication-type="journal">
+<string-name><surname>Anderhalden</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Maccio</surname>, <given-names>A. V.</given-names></string-name>, <string-name><surname>Diemand</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Bertone</surname>, <given-names>G.</given-names></string-name> <year>2013</year>, <source>JCAP</source>, <volume>03</volume>, <fpage>014</fpage>
+</mixed-citation>
+</ref>
+<ref id="R4">
+<mixed-citation publication-type="journal">
+<string-name><surname>Angulo</surname>, <given-names>R. E.</given-names></string-name>, <string-name><surname>Zennaro</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Contreras</surname>, <given-names>S.</given-names></string-name>, et al. <year>2021</year>, <source>MNRAS</source>, <volume>507</volume>, <fpage>5869</fpage>
+</mixed-citation>
+</ref>
+<ref id="R5">
+<mixed-citation publication-type="journal">
+<string-name><surname>Aoyama</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Sekiguchi</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Ichiki</surname>, <given-names>K.</given-names></string-name>, &amp; <string-name><surname>Sugiyama</surname>, <given-names>N.</given-names></string-name> <year>2014</year>, <source>JCAP</source>, <volume>07</volume>, <fpage>021</fpage>
+</mixed-citation>
+</ref>
+<ref id="R6">
+<mixed-citation publication-type="journal">
+<string-name><surname>Archidiacono</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Hooper</surname>, <given-names>D. C.</given-names></string-name>, <string-name><surname>Murgia</surname>, <given-names>R.</given-names></string-name>, et al. <year>2019</year>, <source>JCAP</source>, <volume>10</volume>, <fpage>055</fpage>
+</mixed-citation>
+</ref>
+<ref id="R7">
+<mixed-citation publication-type="journal">
+<string-name><surname>Asgari</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Lin</surname>, <given-names>C.-A.</given-names></string-name>, <string-name><surname>Joachimi</surname>, <given-names>B.</given-names></string-name>, et al. <year>2021</year>, <source>A&amp;A</source>, <volume>645</volume>, <fpage>A104</fpage>
+</mixed-citation>
+</ref>
+<ref id="R8">
+<mixed-citation publication-type="journal">
+<string-name><surname>Audren</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Benabed</surname>, <given-names>K.</given-names></string-name>, &amp; <string-name><surname>Prunet</surname>, <given-names>S.</given-names></string-name> <year>2013</year>a, <source>JCAP</source>, <volume>02</volume>, <fpage>001</fpage>
+</mixed-citation>
+</ref>
+<ref id="R9">
+<mixed-citation publication-type="journal">
+<string-name><surname>Audren</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Bird</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Haehnelt</surname>, <given-names>M. G.</given-names></string-name>, &amp; <string-name><surname>Viel</surname>, <given-names>M.</given-names></string-name> <year>2013</year>b, <source>JCAP</source>, <volume>01</volume>, <fpage>026</fpage>
+</mixed-citation>
+</ref>
+<ref id="R10">
+<mixed-citation publication-type="journal">
+<string-name><surname>Audren</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Mangano</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Serpico</surname>, <given-names>P. D.</given-names></string-name>, &amp; <string-name><surname>Tram</surname>, <given-names>T.</given-names></string-name> <year>2014</year>, <source>JCAP</source>, <volume>12</volume>, <fpage>028</fpage>
+</mixed-citation>
+</ref>
+<ref id="R11">
+<mixed-citation publication-type="journal">
+<string-name><surname>Becker</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Hooper</surname>, <given-names>D. C.</given-names></string-name>, <string-name><surname>Kahlhoefer</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Schöneberg</surname>, <given-names>N.</given-names></string-name> <year>2021</year>, <source>JCAP</source>, <volume>02</volume>, <fpage>019</fpage>
+</mixed-citation>
+</ref>
+<ref id="R12">
+<mixed-citation publication-type="journal">
+<string-name><surname>Berezhiani</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Dolgov</surname>, <given-names>A. D.</given-names></string-name>, &amp; <string-name><surname>Tkachev</surname>, <given-names>I. I.</given-names></string-name> <year>2015</year>, <source>Phys. Rev. D</source>, <volume>92</volume>, <fpage>061303</fpage>
+</mixed-citation>
+</ref>
+<ref id="R13">
+<mixed-citation publication-type="journal">
+<string-name><surname>Bertone</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Hooper</surname>, <given-names>D.</given-names></string-name>, &amp; <string-name><surname>Silk</surname>, <given-names>J.</given-names></string-name> <year>2005</year>, <source>Phys. Rept.</source>, <volume>405</volume>, <fpage>279</fpage>
+</mixed-citation>
+</ref>
+<ref id="R14">
+<mixed-citation publication-type="journal">
+<string-name><surname>Bird</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Viel</surname>, <given-names>M.</given-names></string-name>, &amp; <string-name><surname>Haehnelt</surname>, <given-names>M. G.</given-names></string-name> <year>2012</year>, <source>MNRAS</source>, <volume>420</volume>, <fpage>2551</fpage>
+</mixed-citation>
+</ref>
+<ref id="R15">
+<mixed-citation publication-type="journal">
+<string-name><surname>Blas</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Tram</surname>, <given-names>T.</given-names></string-name> <year>2011</year>, <source>JCAP</source>, <volume>07</volume>, <fpage>034</fpage>
+</mixed-citation>
+</ref>
+<ref id="R16">
+<mixed-citation publication-type="journal">
+<string-name><surname>Bode</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Ostriker</surname>, <given-names>J. P.</given-names></string-name>, &amp; <string-name><surname>Turok</surname>, <given-names>N.</given-names></string-name> <year>2001</year>, <source>ApJ</source>, <volume>556</volume>, <fpage>93</fpage>
+</mixed-citation>
+</ref>
+<ref id="R17">
+<mixed-citation publication-type="journal">
+<string-name><surname>Boehm</surname>, <given-names>C.</given-names></string-name>, &amp; <string-name><surname>Schaeffer</surname>, <given-names>R.</given-names></string-name> <year>2005</year>, <source>A&amp;A</source>, <volume>438</volume>, <fpage>419</fpage>
+</mixed-citation>
+</ref>
+<ref id="R18">
+<mixed-citation publication-type="journal">
+<string-name><surname>Boehm</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Fayet</surname>, <given-names>P.</given-names></string-name>, &amp; <string-name><surname>Schaeffer</surname>, <given-names>R.</given-names></string-name> <year>2001</year>, <source>Phys. Lett. B</source>, <volume>518</volume>, <fpage>8</fpage>
+</mixed-citation>
+</ref>
+<ref id="R19">
+<mixed-citation publication-type="journal">
+<string-name><surname>Bond</surname>, <given-names>J. R.</given-names></string-name>, &amp; <string-name><surname>Szalay</surname>, <given-names>A. S.</given-names></string-name> <year>1983</year>, <source>ApJ</source>, <volume>274</volume>, <fpage>443</fpage>
+</mixed-citation>
+</ref>
+<ref id="R20">
+<mixed-citation publication-type="journal">
+<string-name><surname>Bonvin</surname>, <given-names>C.</given-names></string-name>, &amp; <string-name><surname>Durrer</surname>, <given-names>R.</given-names></string-name> <year>2011</year>, <source>Phys. Rev. D</source>, <volume>84</volume>, <fpage>063505</fpage>
+</mixed-citation>
+</ref>
+<ref id="R21">
+<mixed-citation publication-type="journal">
+<string-name><surname>Boyarsky</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Ruchayskiy</surname>, <given-names>O.</given-names></string-name>, &amp; <string-name><surname>Viel</surname>, <given-names>M.</given-names></string-name> <year>2009</year>a, <source>JCAP</source>, <volume>05</volume>, <fpage>012</fpage>
+</mixed-citation>
+</ref>
+<ref id="R22">
+<mixed-citation publication-type="journal">
+<string-name><surname>Boyarsky</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Ruchayskiy</surname>, <given-names>O.</given-names></string-name>, &amp; <string-name><surname>Viel</surname>, <given-names>M.</given-names></string-name> <year>2009</year>b, <source>Phys. Rev. Lett.</source>, <volume>102</volume>, <fpage>201304</fpage>
+</mixed-citation>
+</ref>
+<ref id="R23">
+<mixed-citation publication-type="journal">
+<string-name><surname>Brinckmann</surname>, <given-names>T.</given-names></string-name>, &amp; <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name> <year>2019</year>, <source>Phys. Dark Univ.</source>, <volume>24</volume>, <fpage>100260</fpage>
+</mixed-citation>
+</ref>
+<ref id="R24">
+<mixed-citation publication-type="journal">
+<string-name><surname>Bucko</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Giri</surname>, <given-names>S. K.</given-names></string-name>, &amp; <string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name> <year>2023</year>, <source>A&amp;A</source>, <volume>672</volume>, <fpage>A157</fpage>
+</mixed-citation>
+</ref>
+<ref id="R25">
+<mixed-citation publication-type="journal">
+<string-name><surname>Bucko</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Giri</surname>, <given-names>S. K.</given-names></string-name>, <string-name><surname>Peters</surname>, <given-names>F. H.</given-names></string-name>, &amp; <string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name> <year>2024</year>, <source>A&amp;A</source>, <volume>683</volume>, <fpage>A152</fpage>
+</mixed-citation>
+</ref>
+<ref id="R26">
+<mixed-citation publication-type="journal">
+<string-name><surname>Buen-Abad</surname>, <given-names>M. A.</given-names></string-name>, <string-name><surname>Marques-Tavares</surname>, <given-names>G.</given-names></string-name>, &amp; <string-name><surname>Schmaltz</surname>, <given-names>M.</given-names></string-name> <year>2015</year>, <source>Phys. Rev. D</source>, <volume>92</volume>, <fpage>023531</fpage>
+</mixed-citation>
+</ref>
+<ref id="R27">
+<mixed-citation publication-type="journal">
+<string-name><surname>Buen-Abad</surname>, <given-names>M. A.</given-names></string-name>, <string-name><surname>Schmaltz</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Brinckmann</surname>, <given-names>T.</given-names></string-name> <year>2018</year>, <source>JCAP</source>, <volume>01</volume>, <fpage>008</fpage>
+</mixed-citation>
+</ref>
+<ref id="R28">
+<mixed-citation publication-type="journal">
+<string-name><surname>Casas</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Schöneberg</surname>, <given-names>N.</given-names></string-name>, et al. <year>2024</year>, <source>A&amp;A</source>, <volume>682</volume>, <fpage>A90</fpage>
+</mixed-citation>
+</ref>
+<ref id="R29">
+<mixed-citation publication-type="journal">
+<string-name><surname>Challinor</surname>, <given-names>A.</given-names></string-name>, &amp; <string-name><surname>Lewis</surname>, <given-names>A.</given-names></string-name> <year>2011</year>, <source>Phys. Rev. D</source>, <volume>84</volume>, <fpage>043516</fpage>
+</mixed-citation>
+</ref>
+<ref id="R30">
+<mixed-citation publication-type="journal">
+<string-name><surname>Chen</surname>, <given-names>X.-L.</given-names></string-name>, <string-name><surname>Hannestad</surname>, <given-names>S.</given-names></string-name>, &amp; <string-name><surname>Scherrer</surname>, <given-names>R. J.</given-names></string-name> <year>2002</year>, <source>Phys. Rev. D</source>, <volume>65</volume>, <fpage>123515</fpage>
+</mixed-citation>
+</ref>
+<ref id="R31">
+<mixed-citation publication-type="journal">
+<string-name><surname>Chisari</surname>, <given-names>N. E.</given-names></string-name>, <string-name><surname>Richardson</surname>, <given-names>M. L. A.</given-names></string-name>, <string-name><surname>Devriendt</surname>, <given-names>J.</given-names></string-name>, et al. <year>2018</year>, <source>MNRAS</source>, <volume>480</volume>, <fpage>3962</fpage>
+</mixed-citation>
+</ref>
+<ref id="R32">
+<mixed-citation publication-type="journal">
+<string-name><surname>Chudaykin</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Gorbunov</surname>, <given-names>D.</given-names></string-name>, &amp; <string-name><surname>Tkachev</surname>, <given-names>I.</given-names></string-name> <year>2016</year>, <source>Phys. Rev. D</source>, <volume>94</volume>, <fpage>023528</fpage>
+</mixed-citation>
+</ref>
+<ref id="R33">
+<mixed-citation publication-type="journal">
+<string-name><surname>Chudaykin</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Gorbunov</surname>, <given-names>D.</given-names></string-name>, &amp; <string-name><surname>Tkachev</surname>, <given-names>I.</given-names></string-name> <year>2018</year>, <source>Phys. Rev. D</source>, <volume>97</volume>, <fpage>083508</fpage>
+</mixed-citation>
+</ref>
+<ref id="R34">
+<mixed-citation publication-type="journal">
+<string-name><surname>Colombi</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Dodelson</surname>, <given-names>S.</given-names></string-name>, &amp; <string-name><surname>Widrow</surname>, <given-names>L. M.</given-names></string-name> <year>1996</year>, <source>ApJ</source>, <volume>458</volume>, <fpage>1</fpage>
+</mixed-citation>
+</ref>
+<ref id="R35">
+<mixed-citation publication-type="journal">
+<string-name><surname>Cyr-Racine</surname>, <given-names>F.-Y.</given-names></string-name>, <string-name><surname>Sigurdson</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Zavala</surname>, <given-names>J.</given-names></string-name>, et al. <year>2016</year>, <source>Phys. Rev. D</source>, <volume>93</volume>, <fpage>123527</fpage>
+</mixed-citation>
+</ref>
+<ref id="R36">
+<mixed-citation publication-type="journal">
+<string-name><surname>Dakin</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Hannestad</surname>, <given-names>S.</given-names></string-name>, &amp; <string-name><surname>Tram</surname>, <given-names>T.</given-names></string-name> <year>2022</year>, <source>MNRAS</source>, <volume>513</volume>, <fpage>991</fpage>
+</mixed-citation>
+</ref>
+<ref id="R37">
+<mixed-citation publication-type="journal">
+<string-name><surname>Diamanti</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Ando</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Gariazzo</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Mena</surname>, <given-names>O.</given-names></string-name>, &amp; <string-name><surname>Weniger</surname>, <given-names>C.</given-names></string-name> <year>2017</year>, <source>JCAP</source>, <volume>06</volume>, <fpage>008</fpage>
+</mixed-citation>
+</ref>
+<ref id="R38">
+<mixed-citation publication-type="journal">
+<string-name><surname>Dodelson</surname>, <given-names>S.</given-names></string-name>, &amp; <string-name><surname>Widrow</surname>, <given-names>L. M.</given-names></string-name> <year>1994</year>, <source>Phys. Rev. Lett.</source>, <volume>72</volume>, <fpage>17</fpage>
+</mixed-citation>
+</ref>
+<ref id="R39">
+<mixed-citation publication-type="journal">
+<string-name><surname>Dvorkin</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Blum</surname>, <given-names>K.</given-names></string-name>, &amp; <string-name><surname>Kamionkowski</surname>, <given-names>M.</given-names></string-name> <year>2014</year>, <source>Phys. Rev. D</source>, <volume>89</volume>, <fpage>023519</fpage>
+</mixed-citation>
+</ref>
+<ref id="R40">
+<mixed-citation publication-type="journal">
+<string-name><surname>Enqvist</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Nadathur</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Sekiguchi</surname>, <given-names>T.</given-names></string-name>, &amp; <string-name><surname>Takahashi</surname>, <given-names>T.</given-names></string-name> <year>2015</year>, <source>JCAP</source>, <volume>09</volume>, <fpage>067</fpage>
+</mixed-citation>
+</ref>
+<ref id="R41">
+<mixed-citation publication-type="journal">
+<collab>Euclid Collaboration</collab> (<string-name><surname>Blanchard</surname>, <given-names>A.</given-names></string-name>, et al.) <year>2020</year>, <source>A&amp;A</source>, <volume>642</volume>, <fpage>A191</fpage>
+</mixed-citation>
+</ref>
+<ref id="R42">
+<mixed-citation publication-type="journal">
+<collab>Euclid Collaboration</collab> (<string-name><surname>Archidiacono</surname>, <given-names>M.</given-names></string-name>, et al.) <year>2025</year>, <source>A&amp;A</source>, <volume>693</volume>, <fpage>A58</fpage>
+</mixed-citation>
+</ref>
+<ref id="R43">
+<mixed-citation publication-type="journal">
+<collab>Euclid Collaboration</collab> (<string-name><surname>Mellier</surname>, <given-names>Y.</given-names></string-name>, et al.) <year>2025</year>, <source>A&amp;A</source>, <comment>in press</comment>, <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1051/0004-6361/202450810">https://doi.org/10.1051/0004-6361/202450810</ext-link>
+</mixed-citation>
+</ref>
+<ref id="R44">
+<mixed-citation publication-type="journal">
+<collab>Euclid Collaboration</collab> (<string-name><surname>Cropper</surname>, <given-names>M. S.</given-names></string-name>, et al.) <year>2025</year>, <source>A&amp;A</source>, <comment>in press, <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1051/0004-6361/202450996">https://doi.org/10.1051/0004-6361/202450996</ext-link></comment>
+</mixed-citation>
+</ref>
+<ref id="R45">
+<mixed-citation publication-type="journal">
+<collab>Euclid Collaboration</collab> (<string-name><surname>Jahnke</surname>, <given-names>K.</given-names></string-name>, et al.) <year>2025</year>, <source>A&amp;A</source>, <comment>in press</comment>, <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1051/0004-6361/202450786">https://doi.org/10.1051/0004-6361/202450786</ext-link>
+</mixed-citation>
+</ref>
+<ref id="R46">
+<mixed-citation publication-type="journal">
+<string-name><surname>Feng</surname>, <given-names>J. L.</given-names></string-name> <year>2010</year>, <source>ARA&amp;A</source>, <volume>48</volume>, <fpage>495</fpage>
+</mixed-citation>
+</ref>
+<ref id="R47">
+<mixed-citation publication-type="journal">
+<string-name><surname>Feng</surname>, <given-names>J. L.</given-names></string-name>, <string-name><surname>Kaplinghat</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Tu</surname>, <given-names>H.</given-names></string-name>, &amp; <string-name><surname>Yu</surname>, <given-names>H.-B.</given-names></string-name> <year>2009</year>, <source>JCAP</source>, <volume>07</volume>, <fpage>004</fpage>
+</mixed-citation>
+</ref>
+<ref id="R48">
+<mixed-citation publication-type="journal">
+<string-name><surname>Franco Abellán</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Murgia</surname>, <given-names>R.</given-names></string-name>, &amp; <string-name><surname>Poulin</surname>, <given-names>V.</given-names></string-name> <year>2021</year>, <source>Phys. Rev. D</source>, <volume>104</volume>, <fpage>123533</fpage>
+</mixed-citation>
+</ref>
+<ref id="R49">
+<mixed-citation publication-type="journal">
+<string-name><surname>Franco Abellán</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Murgia</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Poulin</surname>, <given-names>V.</given-names></string-name>, &amp; <string-name><surname>Lavalle</surname>, <given-names>J.</given-names></string-name> <year>2022</year>, <source>Phys. Rev. D</source>, <volume>105</volume>, <fpage>063525</fpage>
+</mixed-citation>
+</ref>
+<ref id="R50">
+<mixed-citation publication-type="journal">
+<string-name><surname>Franco Abellán</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Herrera</surname>, <given-names>G. C.</given-names></string-name>, <string-name><surname>Martinelli</surname>, <given-names>M.</given-names></string-name>, et al. <year>2024</year>, <source>JCAP</source>, <volume>11</volume>, <fpage>057</fpage>
+</mixed-citation>
+</ref>
+<ref id="R51">
+<mixed-citation publication-type="journal">
+<string-name><surname>Fuß</surname>, <given-names>L.</given-names></string-name>, &amp; <string-name><surname>Garny</surname>, <given-names>M.</given-names></string-name> <year>2023</year>, <source>JCAP</source>, <volume>10</volume>, <fpage>020</fpage>
+</mixed-citation>
+</ref>
+<ref id="R52">
+<mixed-citation publication-type="journal">
+<string-name><surname>Gelman</surname>, <given-names>A.</given-names></string-name>, &amp; <string-name><surname>Rubin</surname>, <given-names>D. B.</given-names></string-name> <year>1992</year>, <source>Stat. Sci.</source>, <volume>7</volume>, <fpage>457</fpage>
+</mixed-citation>
+</ref>
+<ref id="R53">
+<mixed-citation publication-type="journal">
+<string-name><surname>Giarè</surname>, <given-names>W.</given-names></string-name>, <string-name><surname>Gómez-Valent</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Di Valentino</surname>, <given-names>E.</given-names></string-name>, &amp; <string-name><surname>van de Bruck</surname>, <given-names>C.</given-names></string-name> <year>2024</year>, <source>Phys. Rev. D</source>, <volume>109</volume>, <fpage>063516</fpage>
+</mixed-citation>
+</ref>
+<ref id="R54">
+<mixed-citation publication-type="journal">
+<string-name><surname>Giri</surname>, <given-names>S. K.</given-names></string-name>, &amp; <string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name> <year>2021</year>, <source>JCAP</source>, <volume>12</volume>, <fpage>046</fpage>
+</mixed-citation>
+</ref>
+<ref id="R55">
+<mixed-citation publication-type="web">
+<string-name><surname>Giri</surname>, <given-names>S. K.</given-names></string-name>, &amp; <string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name> <year>2023</year>, <comment>Astrophysics Source Code Library [record <ext-link ext-link-type="uri" xlink:href="http://ascl.net/2308.010">ascl:2308.010</ext-link>]</comment>
+</mixed-citation>
+</ref>
+<ref id="R56">
+<mixed-citation publication-type="journal">
+<string-name><surname>Gluscevic</surname>, <given-names>V.</given-names></string-name>, <string-name><surname>Ali-Haïmoud</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Bechtol</surname>, <given-names>K.</given-names></string-name>, et al. <year>2019</year>, <source>Bull. Am. Astron. Soc.</source>, <volume>51</volume>, <fpage>134</fpage>
+</mixed-citation>
+</ref>
+<ref id="R57">
+<mixed-citation publication-type="journal">
+<string-name><surname>Grandis</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Aricò</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name>, &amp; <string-name><surname>Linke</surname>, <given-names>L.</given-names></string-name> <year>2024</year>, <source>MNRAS</source>, <volume>528</volume>, <fpage>4379</fpage>
+</mixed-citation>
+</ref>
+<ref id="R58">
+<mixed-citation publication-type="journal">
+<string-name><surname>Haridasu</surname>, <given-names>B. S.</given-names></string-name>, &amp; <string-name><surname>Viel</surname>, <given-names>M.</given-names></string-name> <year>2020</year>, <source>MNRAS</source>, <volume>497</volume>, <fpage>1757</fpage>
+</mixed-citation>
+</ref>
+<ref id="R59">
+<mixed-citation publication-type="journal">
+<string-name><surname>Hervas-Peters</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Bucko</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Giri</surname>, <given-names>S. K.</given-names></string-name>, &amp; <string-name><surname>Parimbelli</surname>, <given-names>G.</given-names></string-name> <year>2024</year>, <source>A&amp;A</source>, <volume>687</volume>, <fpage>A161</fpage>
+</mixed-citation>
+</ref>
+<ref id="R60">
+<mixed-citation publication-type="journal">
+<string-name><surname>Holm</surname>, <given-names>E. B.</given-names></string-name>, <string-name><surname>Herold</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Hannestad</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Nygaard</surname>, <given-names>A.</given-names></string-name>, &amp; <string-name><surname>Tram</surname>, <given-names>T.</given-names></string-name> <year>2023</year>, <source>Phys. Rev. D</source>, <volume>107</volume>, <fpage>L021303</fpage>
+</mixed-citation>
+</ref>
+<ref id="R61">
+<mixed-citation publication-type="journal">
+<string-name><surname>Hooper</surname>, <given-names>D. C.</given-names></string-name>, &amp; <string-name><surname>Lucca</surname>, <given-names>M.</given-names></string-name> <year>2022</year>, <source>Phys. Rev. D</source>, <volume>105</volume>, <fpage>103504</fpage>
+</mixed-citation>
+</ref>
+<ref id="R62">
+<mixed-citation publication-type="journal">
+<string-name><surname>Hooper</surname>, <given-names>D. C.</given-names></string-name>, <string-name><surname>Schöneberg</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Murgia</surname>, <given-names>R.</given-names></string-name>, et al. <year>2022</year>, <source>JCAP</source>, <volume>10</volume>, <fpage>032</fpage>
+</mixed-citation>
+</ref>
+<ref id="R63">
+<mixed-citation publication-type="journal">
+<string-name><surname>Hubert</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Potter</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Stadel</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Giri</surname>, <given-names>S. K.</given-names></string-name> <year>2021</year>, <source>JCAP</source>, <volume>10</volume>, <fpage>040</fpage>
+</mixed-citation>
+</ref>
+<ref id="R64">
+<mixed-citation publication-type="journal">
+<string-name><surname>Huo</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Kaplinghat</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Pan</surname>, <given-names>Z.</given-names></string-name>, &amp; <string-name><surname>Yu</surname>, <given-names>H.-B.</given-names></string-name> <year>2018</year>, <source>Phys. Lett. B</source>, <volume>783</volume>, <fpage>76</fpage>
+</mixed-citation>
+</ref>
+<ref id="R65">
+<mixed-citation publication-type="journal">
+<string-name><surname>Ichiki</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Oguri</surname>, <given-names>M.</given-names></string-name>, &amp; <string-name><surname>Takahashi</surname>, <given-names>K.</given-names></string-name> <year>2004</year>, <source>Phys. Rev. Lett.</source>, <volume>93</volume>, <fpage>071302</fpage>
+</mixed-citation>
+</ref>
+<ref id="R66">
+<mixed-citation publication-type="journal">
+<string-name><surname>Ivezić</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Kahn</surname>, <given-names>S. M.</given-names></string-name>, <string-name><surname>Tyson</surname>, <given-names>J. A.</given-names></string-name>, et al. <year>2019</year>, <source>ApJ</source>, <volume>873</volume>, <fpage>111</fpage>
+</mixed-citation>
+</ref>
+<ref id="R67">
+<mixed-citation publication-type="journal">
+<string-name><surname>Joachimi</surname>, <given-names>B.</given-names></string-name>, &amp; <string-name><surname>Bridle</surname>, <given-names>S. L.</given-names></string-name> <year>2010</year>, <source>A&amp;A</source>, <volume>523</volume>, <fpage>A1</fpage>
+</mixed-citation>
+</ref>
+<ref id="R68">
+<mixed-citation publication-type="journal">
+<string-name><surname>Joachimi</surname>, <given-names>B.</given-names></string-name>, &amp; <string-name><surname>Schneider</surname>, <given-names>P.</given-names></string-name> <year>2009</year>, <source>A&amp;A</source>, <volume>507</volume>, <fpage>105</fpage>
+</mixed-citation>
+</ref>
+<ref id="R69">
+<mixed-citation publication-type="journal">
+<string-name><surname>Kahlhoefer</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Kaplinghat</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Slatyer</surname>, <given-names>T. R.</given-names></string-name>, &amp; <string-name><surname>Wu</surname>, <given-names>C.-L.</given-names></string-name> <year>2019</year>, <source>JCAP</source>, <volume>12</volume>, <fpage>010</fpage>
+</mixed-citation>
+</ref>
+<ref id="R70">
+<mixed-citation publication-type="journal">
+<string-name><surname>Kaiser</surname>, <given-names>N.</given-names></string-name> <year>1992</year>, <source>ApJ</source>, <volume>388</volume>, <fpage>272</fpage>
+</mixed-citation>
+</ref>
+<ref id="R71">
+<mixed-citation publication-type="journal">
+<string-name><surname>Kilbinger</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Heymans</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Asgari</surname>, <given-names>M.</given-names></string-name>, et al. <year>2017</year>, <source>MNRAS</source>, <volume>472</volume>, <fpage>2126</fpage>
+</mixed-citation>
+</ref>
+<ref id="R72">
+<mixed-citation publication-type="journal">
+<string-name><surname>Knabenhans</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Stadel</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Potter</surname>, <given-names>D.</given-names></string-name>, et al. <year>2021</year>, <source>MNRAS</source>, <volume>505</volume>, <fpage>2840</fpage>
+</mixed-citation>
+</ref>
+<ref id="R73">
+<mixed-citation publication-type="journal">
+<string-name><surname>Lepori</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Tutusaus</surname>, <given-names>I.</given-names></string-name>, <string-name><surname>Viglione</surname>, <given-names>C.</given-names></string-name>, et al. <year>2022</year>, <source>A&amp;A</source>, <volume>662</volume>, <fpage>A93</fpage>
+</mixed-citation>
+</ref>
+<ref id="R74">
+<mixed-citation publication-type="web">
+<string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name> <year>2011</year>, <comment>ArXiv e-prints [<ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/1104.2932">arXiv:1104.2932</ext-link>]</comment>
+</mixed-citation>
+</ref>
+<ref id="R75">
+<mixed-citation publication-type="journal">
+<string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Pastor</surname>, <given-names>S.</given-names></string-name> <year>2006</year>, <source>Phys. Rep.</source>, <volume>429</volume>, <fpage>307</fpage>
+</mixed-citation>
+</ref>
+<ref id="R76">
+<mixed-citation publication-type="journal">
+<string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Tram</surname>, <given-names>T.</given-names></string-name> <year>2011</year>, <source>JCAP</source>, <volume>09</volume>, <fpage>032</fpage>
+</mixed-citation>
+</ref>
+<ref id="R77">
+<mixed-citation publication-type="journal">
+<string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Verde</surname>, <given-names>L.</given-names></string-name> <year>2022</year>, <source>Rev. Neutrinos Cosmol. Rev. Part. Phys</source>, <volume>2022</volume>, <fpage>083C01</fpage>
+</mixed-citation>
+</ref>
+<ref id="R78">
+<mixed-citation publication-type="journal">
+<string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Marques-Tavares</surname>, <given-names>G.</given-names></string-name>, &amp; <string-name><surname>Schmaltz</surname>, <given-names>M.</given-names></string-name> <year>2016</year>, <source>JCAP</source>, <volume>02</volume>, <fpage>037</fpage>
+</mixed-citation>
+</ref>
+<ref id="R79">
+<mixed-citation publication-type="journal">
+<string-name><surname>Ma</surname>, <given-names>Z.-M.</given-names></string-name>, <string-name><surname>Hu</surname>, <given-names>W.</given-names></string-name>, &amp; <string-name><surname>Huterer</surname>, <given-names>D.</given-names></string-name> <year>2005</year>, <source>ApJ</source>, <volume>636</volume>, <fpage>21</fpage>
+</mixed-citation>
+</ref>
+<ref id="R80">
+<mixed-citation publication-type="journal">
+<string-name><surname>Maccio</surname>, <given-names>A. V.</given-names></string-name>, <string-name><surname>Ruchayskiy</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Boyarsky</surname>, <given-names>A.</given-names></string-name>, &amp; <string-name><surname>Munoz-Cuartas</surname>, <given-names>J. C.</given-names></string-name> <year>2013</year>, <source>MNRAS</source>, <volume>428</volume>, <fpage>882</fpage>
+</mixed-citation>
+</ref>
+<ref id="R81">
+<mixed-citation publication-type="journal">
+<string-name><surname>Mead</surname>, <given-names>A. J.</given-names></string-name>, <string-name><surname>Brieden</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Tröster</surname>, <given-names>T.</given-names></string-name>, &amp; <string-name><surname>Heymans</surname>, <given-names>C.</given-names></string-name> <year>2021</year>, <source>MNRAS</source>, <volume>502</volume>, <fpage>1401</fpage>
+</mixed-citation>
+</ref>
+<ref id="R82">
+<mixed-citation publication-type="journal">
+<string-name><surname>Mosbech</surname>, <given-names>M. R.</given-names></string-name>, <string-name><surname>Boehm</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Hannestad</surname>, <given-names>S.</given-names></string-name>, et al. <year>2021</year>, <source>JCAP</source>, <volume>03</volume>, <fpage>066</fpage>
+</mixed-citation>
+</ref>
+<ref id="R83">
+<mixed-citation publication-type="journal">
+<string-name><surname>Murgia</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Merle</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Viel</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Totzauer</surname>, <given-names>M.</given-names></string-name>, &amp; <string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name> <year>2017</year>, <source>JCAP</source>, <volume>11</volume>, <fpage>046</fpage>
+</mixed-citation>
+</ref>
+<ref id="R84">
+<mixed-citation publication-type="journal">
+<string-name><surname>Murgia</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Iršič</surname>, <given-names>V.</given-names></string-name>, &amp; <string-name><surname>Viel</surname>, <given-names>M.</given-names></string-name> <year>2018</year>, <source>Phys. Rev. D</source>, <volume>98</volume>, <fpage>083540</fpage>
+</mixed-citation>
+</ref>
+<ref id="R85">
+<mixed-citation publication-type="journal">
+<string-name><surname>Nygaard</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Tram</surname>, <given-names>T.</given-names></string-name>, &amp; <string-name><surname>Hannestad</surname>, <given-names>S.</given-names></string-name> <year>2021</year>, <source>JCAP</source>, <volume>05</volume>, <fpage>017</fpage>
+</mixed-citation>
+</ref>
+<ref id="R86">
+<mixed-citation publication-type="journal">
+<string-name><surname>Oldengott</surname>, <given-names>I. M.</given-names></string-name>, <string-name><surname>Boriero</surname>, <given-names>D.</given-names></string-name>, &amp; <string-name><surname>Schwarz</surname>, <given-names>D. J.</given-names></string-name> <year>2016</year>, <source>JCAP</source>, <volume>08</volume>, <fpage>054</fpage>
+</mixed-citation>
+</ref>
+<ref id="R87">
+<mixed-citation publication-type="journal">
+<string-name><surname>Pandey</surname>, <given-names>K. L.</given-names></string-name>, <string-name><surname>Karwal</surname>, <given-names>T.</given-names></string-name>, &amp; <string-name><surname>Das</surname>, <given-names>S.</given-names></string-name> <year>2020</year>, <source>JCAP</source>, <volume>07</volume>, <fpage>026</fpage>
+</mixed-citation>
+</ref>
+<ref id="R88">
+<mixed-citation publication-type="journal">
+<string-name><surname>Parimbelli</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Scelfo</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Giri</surname>, <given-names>S. K.</given-names></string-name>, et al. <year>2021</year>, <source>JCAP</source>, <volume>12</volume>, <fpage>044</fpage>
+</mixed-citation>
+</ref>
+<ref id="R89">
+<mixed-citation publication-type="journal">
+<string-name><surname>Potter</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Stadel</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Teyssier</surname>, <given-names>R.</given-names></string-name> <year>2017</year>, <source>Comput. Astrophys. Cosmol.</source>, <volume>4</volume>, <fpage>2</fpage>
+</mixed-citation>
+</ref>
+<ref id="R90">
+<mixed-citation publication-type="journal">
+<string-name><surname>Poulin</surname>, <given-names>V.</given-names></string-name>, <string-name><surname>Serpico</surname>, <given-names>P. D.</given-names></string-name>, &amp; <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name> <year>2016</year>, <source>JCAP</source>, <volume>08</volume>, <fpage>036</fpage>
+</mixed-citation>
+</ref>
+<ref id="R91">
+<mixed-citation publication-type="journal">
+<string-name><surname>Rubira</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Mazoun</surname>, <given-names>A.</given-names></string-name>, &amp; <string-name><surname>Garny</surname>, <given-names>M.</given-names></string-name> <year>2023</year>, <source>JCAP</source>, <volume>01</volume>, <fpage>034</fpage>
+</mixed-citation>
+</ref>
+<ref id="R92">
+<mixed-citation publication-type="book">
+<string-name><surname>Santos</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Bull</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Alonso</surname>, <given-names>D.</given-names></string-name>, et al. <year>2015</year>, <source>Advancing Astrophysics with the Square Kilometre Array (AASKA14)</source>, <fpage>19</fpage>
+</mixed-citation>
+</ref>
+<ref id="R93">
+<mixed-citation publication-type="journal">
+<string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name> <year>2015</year>, <source>MNRAS</source>, <volume>451</volume>, <fpage>3117</fpage>
+</mixed-citation>
+</ref>
+<ref id="R94">
+<mixed-citation publication-type="journal">
+<string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name>, &amp; <string-name><surname>Teyssier</surname>, <given-names>R.</given-names></string-name> <year>2015</year>, <source>JCAP</source>, <volume>12</volume>, <fpage>049</fpage>
+</mixed-citation>
+</ref>
+<ref id="R95">
+<mixed-citation publication-type="journal">
+<string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Teyssier</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Stadel</surname>, <given-names>J.</given-names></string-name>, et al. <year>2019</year>, <source>JCAP</source>, <volume>03</volume>, <fpage>020</fpage>
+</mixed-citation>
+</ref>
+<ref id="R96">
+<mixed-citation publication-type="journal">
+<string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Refregier</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Grandis</surname>, <given-names>S.</given-names></string-name>, et al. <year>2020</year>, <source>JCAP</source>, <volume>04</volume>, <fpage>020</fpage>
+</mixed-citation>
+</ref>
+<ref id="R97">
+<mixed-citation publication-type="journal">
+<string-name><surname>Schneider</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Giri</surname>, <given-names>S. K.</given-names></string-name>, <string-name><surname>Amodeo</surname>, <given-names>S.</given-names></string-name>, &amp; <string-name><surname>Refregier</surname>, <given-names>A.</given-names></string-name> <year>2022</year>, <source>MNRAS</source>, <volume>514</volume>, <fpage>3802</fpage>
+</mixed-citation>
+</ref>
+<ref id="R98">
+<mixed-citation publication-type="journal">
+<string-name><surname>Schöneberg</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Franco Abellán</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Pérez Sánchez</surname>, <given-names>A.</given-names></string-name>, et al. <year>2022</year>, <source>Phys. Rept.</source>, <volume>984</volume>, <fpage>1</fpage>
+</mixed-citation>
+</ref>
+<ref id="R99">
+<mixed-citation publication-type="journal">
+<string-name><surname>Serra</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Zalamea</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Cooray</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Mangano</surname>, <given-names>G.</given-names></string-name>, &amp; <string-name><surname>Melchiorri</surname>, <given-names>A.</given-names></string-name> <year>2010</year>, <source>Phys. Rev. D</source>, <volume>81</volume>, <fpage>043507</fpage>
+</mixed-citation>
+</ref>
+<ref id="R100">
+<mixed-citation publication-type="journal">
+<string-name><surname>Simon</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Franco Abellán</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Du</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Poulin</surname>, <given-names>V.</given-names></string-name>, &amp; <string-name><surname>Tsai</surname>, <given-names>Y.</given-names></string-name> <year>2022</year>, <source>Phys. Rev. D</source>, <volume>106</volume>, <fpage>023516</fpage>
+</mixed-citation>
+</ref>
+<ref id="R101">
+<mixed-citation publication-type="web">
+<string-name><surname>Sitzmann</surname>, <given-names>V.</given-names></string-name>, <string-name><surname>Martel</surname>, <given-names>J. N. P.</given-names></string-name>, <string-name><surname>Bergman</surname>, <given-names>A. W.</given-names></string-name>, <string-name><surname>Lindell</surname>, <given-names>D. B.</given-names></string-name>, &amp; <string-name><surname>Wetzstein</surname>, <given-names>G.</given-names></string-name> <year>2020</year>, <comment>Adv. Neural Inf. Process. Syst., submitted [<ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2006.09661">arXiv:2006.09661</ext-link>]</comment>
+</mixed-citation>
+</ref>
+<ref id="R102">
+<mixed-citation publication-type="journal">
+<string-name><surname>Smith</surname>, <given-names>R. E.</given-names></string-name>, <string-name><surname>Peacock</surname>, <given-names>J. A.</given-names></string-name>, <string-name><surname>Jenkins</surname>, <given-names>A.</given-names></string-name>, et al. <year>2003</year>, <source>MNRAS</source>, <volume>341</volume>, <fpage>1311</fpage>
+</mixed-citation>
+</ref>
+<ref id="R103">
+<mixed-citation publication-type="journal">
+<string-name><surname>Spergel</surname>, <given-names>D. N.</given-names></string-name>, &amp; <string-name><surname>Steinhardt</surname>, <given-names>P. J.</given-names></string-name> <year>2000</year>, <source>Phys. Rev. Lett.</source>, <volume>84</volume>, <fpage>3760</fpage>
+</mixed-citation>
+</ref>
+<ref id="R104">
+<mixed-citation publication-type="journal">
+<string-name><surname>Springel</surname>, <given-names>V.</given-names></string-name>, <string-name><surname>White</surname>, <given-names>S. D. M.</given-names></string-name>, <string-name><surname>Jenkins</surname>, <given-names>A.</given-names></string-name>, et al. <year>2005</year>, <source>Nature</source>, <volume>435</volume>, <fpage>629</fpage>
+</mixed-citation>
+</ref>
+<ref id="R105">
+<mixed-citation publication-type="journal">
+<string-name><surname>Stadler</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Bœhm</surname>, <given-names>C.</given-names></string-name>, &amp; <string-name><surname>Mena</surname>, <given-names>O.</given-names></string-name> <year>2019</year>, <source>JCAP</source>, <volume>08</volume>, <fpage>014</fpage>
+</mixed-citation>
+</ref>
+<ref id="R106">
+<mixed-citation publication-type="journal">
+<string-name><surname>Takahashi</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Sato</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Nishimichi</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Taruya</surname>, <given-names>A.</given-names></string-name>, &amp; <string-name><surname>Oguri</surname>, <given-names>M.</given-names></string-name> <year>2012</year>, <source>ApJ</source>, <volume>761</volume>, <fpage>152</fpage>
+</mixed-citation>
+</ref>
+<ref id="R107">
+<mixed-citation publication-type="journal">
+<string-name><surname>Takahashi</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Nishimichi</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Namikawa</surname>, <given-names>T.</given-names></string-name>, et al. <year>2020</year>, <source>ApJ</source>, <volume>895</volume>, <fpage>113</fpage>
+</mixed-citation>
+</ref>
+<ref id="R108">
+<mixed-citation publication-type="journal">
+<string-name><surname>Tanidis</surname>, <given-names>K.</given-names></string-name>, &amp; <string-name><surname>Camera</surname>, <given-names>S.</given-names></string-name> <year>2019</year>, <source>MNRAS</source>, <volume>489</volume>, <fpage>3385</fpage>
+</mixed-citation>
+</ref>
+<ref id="R109">
+<mixed-citation publication-type="journal">
+<string-name><surname>Tanidis</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Cardone</surname>, <given-names>V. F.</given-names></string-name>, <string-name><surname>Martinelli</surname>, <given-names>M.</given-names></string-name>, et al. <year>2024</year>, <source>A&amp;A</source>, <volume>683</volume>, <fpage>A17</fpage>
+</mixed-citation>
+</ref>
+<ref id="R110">
+<mixed-citation publication-type="journal">
+<string-name><surname>Tram</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Brandbyge</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Dakin</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Hannestad</surname>, <given-names>S.</given-names></string-name> <year>2019</year>, <source>JCAP</source>, <volume>03</volume>, <fpage>022</fpage>
+</mixed-citation>
+</ref>
+<ref id="R111">
+<mixed-citation publication-type="journal">
+<string-name><surname>van Daalen</surname>, <given-names>M. P.</given-names></string-name>, <string-name><surname>McCarthy</surname>, <given-names>I. G.</given-names></string-name>, &amp; <string-name><surname>Schaye</surname>, <given-names>J.</given-names></string-name> <year>2020</year>, <source>MNRAS</source>, <volume>491</volume>, <fpage>2424</fpage>
+</mixed-citation>
+</ref>
+<ref id="R112">
+<mixed-citation publication-type="journal">
+<string-name><surname>Vattis</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Koushiappas</surname>, <given-names>S. M.</given-names></string-name>, &amp; <string-name><surname>Loeb</surname>, <given-names>A.</given-names></string-name> <year>2019</year>, <source>Phys. Rev. D</source>, <volume>99</volume>, <fpage>121302</fpage>
+</mixed-citation>
+</ref>
+<ref id="R113">
+<mixed-citation publication-type="journal">
+<string-name><surname>Verde</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Treu</surname>, <given-names>T.</given-names></string-name>, &amp; <string-name><surname>Riess</surname>, <given-names>A. G.</given-names></string-name> <year>2019</year>, <source>Nat. Astron.</source>, <volume>3</volume>, <fpage>891</fpage>
+</mixed-citation>
+</ref>
+<ref id="R114">
+<mixed-citation publication-type="journal">
+<string-name><surname>Voruz</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Tram</surname>, <given-names>T.</given-names></string-name> <year>2014</year>, <source>JCAP</source>, <volume>03</volume>, <fpage>004</fpage>
+</mixed-citation>
+</ref>
+<ref id="R115">
+<mixed-citation publication-type="journal">
+<string-name><surname>Wilkinson</surname>, <given-names>R. J.</given-names></string-name>, <string-name><surname>Boehm</surname>, <given-names>C.</given-names></string-name>, &amp; <string-name><surname>Lesgourgues</surname>, <given-names>J.</given-names></string-name> <year>2014</year>, <source>JCAP</source>, <volume>05</volume>, <fpage>011</fpage>
+</mixed-citation>
+</ref>
+<ref id="R116">
+<mixed-citation publication-type="journal">
+<string-name><surname>Workman</surname>, <given-names>R. L.</given-names></string-name>, <string-name><surname>Burkert</surname>, <given-names>V. D.</given-names></string-name>, <string-name><surname>Crede</surname>, <given-names>V.</given-names></string-name>, et al. <year>2022</year>, <source>PTEP</source>, <volume>2022</volume>, <fpage>083C01</fpage>
+</mixed-citation>
+</ref>
+<ref id="R117">
+<mixed-citation publication-type="journal">
+<string-name><surname>Xiao</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Zhang</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>An</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Feng</surname>, <given-names>C.</given-names></string-name>, &amp; <string-name><surname>Wang</surname>, <given-names>B.</given-names></string-name> <year>2020</year>, <source>JCAP</source>, <volume>01</volume>, <fpage>045</fpage>
+</mixed-citation>
+</ref>
+<ref id="R118">
+<mixed-citation publication-type="journal">
+<string-name><surname>Yoo</surname>, <given-names>J.</given-names></string-name>, &amp; <string-name><surname>Zaldarriaga</surname>, <given-names>M.</given-names></string-name> <year>2014</year>, <source>Phys. Rev. D</source>, <volume>90</volume>, <fpage>023513</fpage>
+</mixed-citation>
+</ref>
+<ref id="R119">
+<mixed-citation publication-type="journal">
+<string-name><surname>Yoo</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Fitzpatrick</surname>, <given-names>A. L.</given-names></string-name>, &amp; <string-name><surname>Zaldarriaga</surname>, <given-names>M.</given-names></string-name> <year>2009</year>, <source>Phys. Rev. D</source>, <volume>80</volume>, <fpage>083514</fpage>
+</mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

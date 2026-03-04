@@ -389,11 +389,9 @@ class IngestBase(object):
         }
 
         output["abstract"] = {
-            "textEnglish": input_dict.get(
-                "abstract", ""
-            ),  # TODO need to tweak for case of foreign language abstract
-            # "textNative": "XXX", # TODO
-            # "langNative": "XXX" # TODO
+            "textEnglish": input_dict.get("abstract", ""),
+            "textNative": input_dict.get("abstract_native", ""),
+            "langNative": input_dict.get("abstract_lang_native", "")
         }
 
         output["comments"] = [

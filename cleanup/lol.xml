@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>^M
+  <doi_record owner="10.1109" timestamp="2023-04-10 19:05:53">^M
+    <crossref>^M
+      <conference>^M
+        <event_metadata>^M
+          <conference_name>2022 3rd Asia Conference on Computers and Communications (ACCC)</conference_name>^M
+          <conference_location>Shanghai, China</conference_location>^M
+          <conference_date start_month="12" start_year="2022" start_day="16" end_month="12" end_year="2022" end_day="18" />^M
+        </event_metadata>^M
+        <proceedings_metadata>^M
+          <proceedings_title>2022 3rd Asia Conference on Computers and Communications (ACCC)</proceedings_title>^M
+          <publisher>^M
+            <publisher_name>IEEE</publisher_name>^M
+          </publisher>^M
+          <publication_date>^M
+            <year>2022</year>^M
+          </publication_date>^M
+          <isbn media_type="electronic">979-8-3503-3295-7</isbn>^M
+          <doi_data>^M
+            <doi>10.1109/ACCC58361.2022</doi>^M
+            <resource>https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10071524</resource>^M
+          </doi_data>^M
+        </proceedings_metadata>^M
+      </conference>^M
+    </crossref>^M
+  </doi_record>^M
+</doi_records>

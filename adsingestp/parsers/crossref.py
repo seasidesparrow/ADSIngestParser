@@ -452,6 +452,7 @@ class CrossrefParser(BaseBeautifulSoupParser):
                     self.record_meta = self.input_metadata.find("conference_paper").extract()
                     self.base_metadata["doctype"] = "inproceedings"
                 else:
+                    print("I am in fact in here...")
                     self.record_meta = None
                     self.base_metadata["doctype"] = "proceedings"
         if self.input_metadata.find("book"):

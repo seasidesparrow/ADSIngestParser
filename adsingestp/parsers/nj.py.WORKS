@@ -13,19 +13,11 @@ from adsingestp import utils
 from adsingestp.ingest_exceptions import XmlLoadException
 from adsingestp.parsers.base import BaseBeautifulSoupParser
 
-# get rid of BS4's markup warning message
-from bs4 import MarkupResemblesLocatorWarning
-import warnings
-warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning)
-
 logger = logging.getLogger(__name__)
 
-class JATSParser(BaseBeautifulSoupParser):
-    # Version 2 of the parser
-
+class NewJATSParser(BaseBeautifulSoupParser):
     regex_email = re.compile(r"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+")
     regex_auth_xid = re.compile(r"^A[0-9]+$")
-    regex_orcid = re.compile(r"(\d{4}-){3}\d{3}(\d|X)")
 
     def __init__(self):
         super(BaseBeautifulSoupParser, self).__init__()
@@ -34,9 +26,52 @@ class JATSParser(BaseBeautifulSoupParser):
         self.article_meta = None
         self.journal_meta = None
         self.isErratum = False
-        self.aff_dict = {}
-        self.authnote_dict = {}
-        self.meta_lang = "en"
+        self.aff_dict = None
+        self.authnote_dict = None
+
+    def _get_date(self, d):
+        """
+        Extract and standarize date from input BeautifulSoup date object
+        :param d: BeautifulSoup date object
+        :return: formatted date string (yyyy-mm-dd)
+        """
+        if d.find("year"):
+            pubdate = self._detag(d.year, [])
+        else:
+            pubdate = "0000"
+
+        if d.find("month"):
+            month_raw = self._detag(d.month, [])
+            if month_raw.isdigit():
+                month = month_raw
+            else:
+                month_name = month_raw[0:3].lower()
+                month = utils.MONTH_TO_NUMBER[month_name]
+
+            if int(month) < 10 and len(str(month)) < 2:
+                month = "0" + str(int(month))
+            else:
+                month = str(month)
+            pubdate = pubdate + "-" + month
+        else:
+            pubdate = pubdate + "-" + "00"
+
+        if d.find("day"):
+            day_raw = self._detag(d.day, [])
+            if day_raw.isdigit():
+                day = day_raw
+            else:
+                day = "00"
+
+            if int(day) < 10 and len(str(day)) < 2:
+                day = "0" + str(int(day))
+            else:
+                day = str(day)
+            pubdate = pubdate + "-" + day
+        else:
+            pubdate = pubdate + "-" + "00"
+
+        return pubdate
 
     def _decompose(self, soup=None, tag=None):
         """
@@ -50,109 +85,14 @@ class JATSParser(BaseBeautifulSoupParser):
 
         return soup
 
-    def _add_leading_zeroes(self, length, quant):
-        delta_len = length - len(str(quant))
-        if delta_len > 0:
-            pad = "0"*delta_len
-            quant = pad + str(quant)
-        return quant
-
-    def _get_date(self, d):
-        """
-        Extract and standarize date from input BeautifulSoup date object
-        :param d: BeautifulSoup date object
-        :return: formatted date string (yyyy-mm-dd)
-        """
-        if d.find("year"):
-            year = self._detag(d.year, [])
-        else:
-            year = ""
-        pubdate = self._add_leading_zeroes(4, str(year))
-
-        if d.find("month"):
-            month_raw = self._detag(d.month, [])
-            if month_raw.isdigit():
-                month = month_raw
-            else:
-                month_name = month_raw[0:3].lower()
-                month = utils.MONTH_TO_NUMBER[month_name]
-        else:
-            month = ""
-        pubdate = pubdate + "-" + self._add_leading_zeroes(2, month)
-
-        if d.find("day"):
-            day = self._detag(d.day, [])
-        else:
-            day = ""
-        pubdate = pubdate + "-" + self._add_leading_zeroes(2, day)
-
-        return pubdate
-
-
-    def _parse_pubdate(self):
-        pub_dates = self.article_meta.find_all("pub-date")
-
-        for d in pub_dates:
-            pub_format = d.get("publication-format", "")
-            pub_type = d.get("pub-type", "")
-            date_type = d.get("date-type", "")
-            accepted_date_types = ["pub", "", "first_release", "epub-ppub", "ppub-epub"]
-            pubdate = self._get_date(d)
-            if (
-                pub_format == "print"
-                or pub_type == "ppub"
-                or pub_type == "cover"
-                or (pub_type == "" and pub_format == "")
-            ) and (date_type == "pub" or date_type == ""):
-                self.base_metadata["pubdate_print"] = pubdate
-
-            if (
-                pub_format == "electronic"
-                or pub_type == "epub"
-                or pub_type == "epub-ppub"
-                or pub_type == "ppub-epub"
-                or (pub_type == "" and pub_format == "")
-            ) and (date_type in accepted_date_types):
-                self.base_metadata["pubdate_electronic"] = pubdate
-
-            elif (date_type != "pub") and (date_type != ""):
-                self.base_metadata["pubdate_other"] = [{"type": date_type, "date": pubdate}]
-
-            if pub_type == "open-access":
-                self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
-
-
-    def _parse_copyright(self):
-        if self.article_meta.find("copyright-statement"):
-            copyright = self._detag(self.article_meta.find("copyright-statement"), [])
-        else:
-            copyright = "&copy;"
-            if self.article_meta.find("copyright-year"):
-                copyright = (
-                    copyright + " " + self._detag(self.article_meta.find("copyright-year"), [])
-                )
-            if self.article_meta.find("copyright-holder"):
-                copyright = (
-                    copyright + " " + self._detag(self.article_meta.find("copyright-holder"), [])
-                )
-            if copyright == "&copy;":
-                # no copyright info found
-                copyright = None
-
-        if copyright:
-            self.base_metadata["copyright"] = copyright
-
-
     def _parse_title_abstract(self):
         title_fn_dict = {}
         title_fn_list = []
         subtitle_fn_list = []
-        art_title = None
-        sub_title = None
         self.titledoi = None
         title_group = self.article_meta.find("title-group")
-        title_native=None
-        lang_native=None
+        art_title = None
+        sub_title = None
         if title_group:
             if title_group.find("article-title"):
                 title = title_group.find("article-title")
@@ -178,26 +118,6 @@ class JATSParser(BaseBeautifulSoupParser):
                 # strip latex out of title
                 title = self._remove_latex(title)
                 art_title = self._detag(title, self.HTML_TAGSET["title"]).strip()
-                # translated title (could be to or from English)
-                if title_group.find("trans-title-group"):
-                    trans_title_group_lang = title_group.find("trans-title-group").get("xml:lang", "")
-                    trans_title = title_group.find("trans-title-group").find("trans-title")
-                    if trans_title:
-                        trans_lang = trans_title.get("xml:lang", "").lower()
-                        trans_title = self._remove_latex(trans_title)
-                        trans_title = self._detag(trans_title, self.HTML_TAGSET["abstract"]).strip()
-                        if trans_lang == "en" or trans_title_group_lang == "en":
-                            #swap title and trans_title in output
-                            old_title = art_title
-                            art_title = trans_title
-                            title_native = old_title
-                            lang_native = self.meta_lang
-                        elif trans_lang:
-                            lang_native = trans_lang
-                            title_native = trans_title
-                        elif self.meta_lang:
-                            lang_native = trans_title_group_lang
-                            title_native = trans_title
 
                 title_notes = []
                 if title_fn_list:
@@ -225,13 +145,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     self.base_metadata["subtitle"] = sub_title
                 if subtitle_notes:
                     self.base_metadata["subtitle_notes"] = subtitle_notes
-                if title_native:
-                    self.base_metadata["title_native"] = title_native
-                if lang_native:
-                    self.base_metadata["lang_native"] = lang_native
 
-
-        # Now the abstract
         if self.article_meta.find("abstract"):
             if self.article_meta.find("abstract").find("p"):
                 abstract_all = self.article_meta.find("abstract").find_all("p")
@@ -249,21 +163,25 @@ class JATSParser(BaseBeautifulSoupParser):
                 abs_txt = self._detag(abs_raw, self.HTML_TAGSET["abstract"])
                 self.base_metadata["abstract"] = abs_txt
 
-        # If there's a trans abstract (either native or english) get it here
-        if self.article_meta.find("trans-abstract"):
-            trans_abstract = self.article_meta.find("trans-abstract")
-            trans_abstract_lang = trans_abstract.get("xml:lang", "en")
-            trans_abstract = self._detag(trans_abstract, self.HTML_TAGSET["abstract"])
-            if trans_abstract_lang == "en":
-                # again, swap abstract and native_abstract if the translation
-                # is in english
-                old_abstract = self.base_metadata["abstract"]
-                self.base_metadata["abstract"] = trans_abstract
-                self.base_metadata["abstract_native"] = old_abstract
-                self.base_metadata["abstract_lang_native"] = self.meta_lang
-            else:
-                self.base_metadata["abstract_native"] = trans_abstract
-                self.base_metadata["abstract_lang_native"] = trans_abstract_lang
+    def _parse_copyright(self):
+        if self.article_meta.find("copyright-statement"):
+            copyright = self._detag(self.article_meta.find("copyright-statement"), [])
+        else:
+            copyright = "&copy;"
+            if self.article_meta.find("copyright-year"):
+                copyright = (
+                    copyright + " " + self._detag(self.article_meta.find("copyright-year"), [])
+                )
+            if self.article_meta.find("copyright-holder"):
+                copyright = (
+                    copyright + " " + self._detag(self.article_meta.find("copyright-holder"), [])
+                )
+            if copyright == "&copy;":
+                # not copyright info found
+                copyright = None
+
+        if copyright:
+            self.base_metadata["copyright"] = copyright
 
     def _parse_edhistory(self):
         # received and revised dates can be arrays, but accepted can just be a single value
@@ -378,7 +296,7 @@ class JATSParser(BaseBeautifulSoupParser):
         event_meta = self.article_meta.find("conference")
 
         if event_meta.find("conf-name"):
-            conf_name = self._remove_latex(event_meta.find("conf-name"))
+            conf_name = self._remove_latex(event_meta.find("conf-name", ""))
             self.base_metadata["conf_name"] = self._detag(conf_name, [])
 
         if event_meta.find("conf-loc"):
@@ -386,26 +304,28 @@ class JATSParser(BaseBeautifulSoupParser):
             self.base_metadata["conf_location"] = self._detag(conf_loc, [])
 
         if event_meta.find("conf-date"):
-            conf_date = self._remove_latex(event_meta.find("conf-date"))
+            conf_date = self._remove_latex(event_meta.find("conf-date", ""))
             self.base_metadata["conf_date"] = self._detag(conf_date, [])
 
     def _parse_pub(self):
-        # BUG: you can have multiple journal titles (e.g. with/out xml:lang)
         journal = None
-        jtgroup = self.journal_meta.find("journal-title-group")
-        if jtgroup and jtgroup.find("journal-title"):
-            jtlist = jtgroup.find_all("journal-title")
-            if len(jtlist) == 1:
-                journal = jtlist[0]
+        if self.journal_meta.find("journal-title-group") and self.journal_meta.find(
+            "journal-title-group"
+        ).find("journal-title"):
+            journal = self.journal_meta.find("journal-title-group").find("journal-title")
+        elif self.journal_meta.find("journal-title-group") and self.journal_meta.find(
+            "journal-title-group"
+        ).find("abbrev-journal-title"):
+            if self.journal_meta.find("journal-title-group").find(
+                "abbrev-journal-title", {"abbrev-type": "pubmed"}
+            ):
+                journal = self.journal_meta.find("journal-title-group").find(
+                    "abbrev-journal-title", {"abbrev-type": "pubmed"}
+                )
             else:
-                for jt in jtlist:
-                    if jt.get("xml:lang", "") == "en":
-                        journal = jt
-        elif jtgroup and jtgroup.find("abbrev-journal-title"):
-            if jtgroup.find("abbrev-journal-title", {"abbrev-type": "pubmed"}):
-                journal = jtgroup.find("abbrev-journal-title", {"abbrev-type": "pubmed"})
-            else:
-                journal = jtgroup.find("abbrev-journal-title")
+                journal = self.journal_meta.find("journal-title-group").find(
+                    "abbrev-journal-title"
+                )
         elif self.journal_meta.find("journal-title"):
             journal = self.journal_meta.find("journal-title")
 
@@ -508,6 +428,38 @@ class JATSParser(BaseBeautifulSoupParser):
             x_value = self._detag(ax.find("meta-value"), [])
             if x_name and x_name == "arxivppt":
                 self.base_metadata["ids"]["preprint"] = {"source": "arxiv", "id": x_value}
+
+    def _parse_pubdate(self):
+        pub_dates = self.article_meta.find_all("pub-date")
+
+        for d in pub_dates:
+            pub_format = d.get("publication-format", "")
+            pub_type = d.get("pub-type", "")
+            date_type = d.get("date-type", "")
+            accepted_date_types = ["pub", "", "first_release", "epub-ppub", "ppub-epub"]
+            pubdate = self._get_date(d)
+            if (
+                pub_format == "print"
+                or pub_type == "ppub"
+                or pub_type == "cover"
+                or (pub_type == "" and pub_format == "")
+            ) and (date_type == "pub" or date_type == ""):
+                self.base_metadata["pubdate_print"] = pubdate
+
+            if (
+                pub_format == "electronic"
+                or pub_type == "epub"
+                or pub_type == "epub-ppub"
+                or pub_type == "ppub-epub"
+                or (pub_type == "" and pub_format == "")
+            ) and (date_type in accepted_date_types):
+                self.base_metadata["pubdate_electronic"] = pubdate
+
+            elif (date_type != "pub") and (date_type != ""):
+                self.base_metadata["pubdate_other"] = [{"type": date_type, "date": pubdate}]
+
+            if pub_type == "open-access":
+                self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
 
     def _parse_permissions(self):
         # Check for open-access / "Permissions" field
@@ -612,7 +564,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 # with institution-wrap
                 institution_tag = ag.find("institution")
                 if institution_tag:
-                    institution = institution_tag.get_text(separator=", ")
+                    institution = institution_tag.get_text()
                 else:
                     institution = None
                 institution_id = ag.find("institution-id")
@@ -677,6 +629,23 @@ class JATSParser(BaseBeautifulSoupParser):
             self.authnote_dict = authnote_dict
         except Exception as err:
             print("auth notes failed: %s" % err)
+                     
+    def _get_inst_identifiers(self, aff):
+        """
+        Takes a single affiliation in soup form, removes any institution-ids from the text, places them in the aff_id array, and returns the soup sans ids and the aff_id array
+        :param aff: BeautifulSoup object/tree
+        :return: BeautifulSoup object/tree, aff_ids array
+        """
+        aff_ids = []
+        aff_external_ids = aff.find_all("institution-id", [])
+        for ident in aff_external_ids:
+            idtype = ident.get("institution-id-type", "")
+            idvalue = ident.get_text()
+            aff_ids.append({idtype: idvalue})
+            ident.decompose()
+        if not aff_external_ids:
+            aff_ids.append({})
+        return aff, aff_ids
 
     def _remove_unbalanced_parentheses(self, affstr):
         # Stack to track balanced parentheses
@@ -703,32 +672,6 @@ class JATSParser(BaseBeautifulSoupParser):
 
         return new_affstr
 
-    def _fix_orcid(self, orcid):
-        """
-        Standarize ORCID formatting
-        :param orcid: string or list of ORCIDs
-        :return: uniqued list of ORCIDs, with URL-part removed if necessary
-        """
-        orcid_new = OrderedSet()
-        to_string = False
-        if isinstance(orcid, str):
-            to_string = True
-            orcid = [orcid]
-        elif not isinstance(orcid, list):
-            raise TypeError("ORCID must be str or list")
-
-        for orc in orcid:
-            osplit = orc.strip().split()
-            for o in osplit:
-                # ORCID IDs sometimes have the URL prepended - remove it
-                if self.regex_orcid.search(o):
-                    orcid_new.add(self.regex_orcid.search(o).group(0))
-        if to_string:
-            return list(orcid_new)[0]
-        else:
-            return list(orcid_new)
-
-
     def _fix_affil(self, affstring):
         """
         Separate email addresses from affiliations in a given input affiliation string
@@ -742,7 +685,8 @@ class JATSParser(BaseBeautifulSoupParser):
         for a in aff_list:
             a = a.strip()
             # check for empty strings with commas
-            if a.replace(",", ""):
+            check_a = a.replace(",", "")
+            if check_a:
                 a = re.sub("\\(e-*mail:\\s*,+\\s*\\)", "", a)
                 a = a.replace("\\n", ",")
                 a = a.replace(" —", "—")
@@ -764,51 +708,67 @@ class JATSParser(BaseBeautifulSoupParser):
         newaffstr = "; ".join(new_aff)
         return newaffstr, emails
 
-
-    def _get_inst_id(self, aff):
-        inst_id_list = []
-        try:
-            instids = aff.find_all("institution-id")
-            for iid in instids:
-                idtype = iid.get("institution-id-type", "")
-                idvalue = iid.get_text()
-                inst_id_list.append({idtype: idvalue})
-                iid.decompose()
-            return inst_id_list
-        except:
-            pass
-
-    def _process_aff_with_id(self, aff):
-        try:
-            affid = aff.get("id", None)
-
-            # this shouldn't happen, raise an exception if it does
-            if not affid:
-                raise Exception("Aff tag with no id attribute! %s " % str(aff))
-
-            # take out the label, we never use them
-            if aff.find("label"):
-                aff.find("label").decompose()
-
-            # if there are isni, ror, grid, get them here
-            aff_ext_id = self._get_inst_id(aff)
-            affstr = aff.get_text(separator=", ")
-            if affstr:
-                ad = {}
-                ad["aff_ext_id"] = aff_ext_id
-                ad["affstr"], ad["extracted_emails"] = self._fix_affil(affstr)
-                self.aff_dict[affid] = ad
-        except Exception as err:
-            pass
-
     def _extract_affils(self):
-        # Make a dictionary of aff with the "id" attribute, and then decompose.
-        # Any aff tags left (w/o id) should be at the single contributor level.
-        aff_list = self.article_meta.find_all("aff", id==True)
-        for aff in aff_list:
-            self._process_aff_with_id(aff)
-            aff.decompose()
+        try:
+            all_affils = self.article_meta.find_all("aff")
+            aff_dict = {}
+            for aff in all_affils:
+                # aff is a tag with child tags for xid, etc
+                aff, aff_inst = self._get_inst_identifiers(aff)
+                aff_id = aff.get("id", None)
 
+                # aff is a tag where the xid is an attribute within aff 
+
+                # BUG: can have multiple addr-line
+                # BUG: can also have find_all("institution"), find("country")
+                #      see jats_springer_ZaMP_s00033-023-02064-z.xml
+                addr_line = aff.find("addr-line")
+                affil_string = ""
+                if addr_line:
+                    label = addr_line.find("label")
+                    if label:
+                        label._decompose()
+                    affil_string = self._detag(addr_line, [])
+                if affil_string:
+                    ad = {}
+                    ad["affstr"], extracted_emails = self._fix_affil(affil_string)
+                    if aff_inst:
+                        ad["aff_ext_id"] = aff_inst
+                    if extracted_emails:
+                        ad["extracted_emails"] = extracted_emails
+                        
+                    aff_dict[aff_id] = ad
+                
+                aff.decompose()
+            self.aff_dict = aff_dict
+        except Exception as err:
+            print("Failed to extract affil data: %s" % err)
+
+    def _fix_orcid(self, orcid):
+        """
+        Standarize ORCID formatting
+        :param orcid: string or list of ORCIDs
+        :return: uniqued list of ORCIDs, with URL-part removed if necessary
+        """
+        orcid_new = OrderedSet()
+        to_string = False
+        if isinstance(orcid, str):
+            to_string = True
+            orcid = [orcid]
+        elif not isinstance(orcid, list):
+            raise TypeError("ORCID must be str or list")
+
+        orcid_format = re.compile(r"(\d{4}-){3}\d{3}(\d|X)")
+        for orc in orcid:
+            osplit = orc.strip().split()
+            for o in osplit:
+                # ORCID IDs sometimes have the URL prepended - remove it
+                if orcid_format.search(o):
+                    orcid_new.add(orcid_format.search(o).group(0))
+        if to_string:
+            return list(orcid_new)[0]
+        else:
+            return list(orcid_new)
 
     def _extract_contributors(self, contribs):
         contrib_list = []
@@ -818,74 +778,46 @@ class JATSParser(BaseBeautifulSoupParser):
             contrib_type = c.get("contrib-type", None)
             contrib_corresp = c.get("corresp", None)
             contrib_id = c.find_all("contrib-id")
-
+                
             xrefs = c.find_all("xref")
 
-            #if contrib_type == "collab":
-            #    # collab_name = c.find("collab")
-            #    # if collab_name:
-            #        # name = collab_name.text
-            if contrib_type == "author":
-                name = c.find_all("name", recursive=False)
-                name_alt = c.find_all("name-alternatives", recursive=False)
-                string_name = c.find_all("string-name", recursive=False)
-                print("Counts\tname: %s\tname_alt: %s\tstring_name: %s" % (len(name), len(name_alt), len(string_name)))
+            if contrib_type == "collab":
+                collab_name = c.find("collab")
+                if collab_name:
+                    name = collab_name.text
+            elif contrib_type == "author":
+                name = c.find("name")
 
-                if name_alt and not name:
-                    if len(name_alt) == 1:
-                        name = name_alt[0].find_all("name")
-                        print("Got %s name(s) from name_alt" % (len(name)))
-                    else:
-                        for i, na in enumerate(name_alt):
-                            namex = na.find_all("name")
-                            print("lol Got %s name(s) from name_alt %s " % (len(na), i))
-
+            #easy first, deal with the name
             contributor = {}
-            for nm in name:
+            if name:
                 try:
-                    namestyle = nm.get("name-style", "")
-                    namelang = nm.get("xml:lang", "")
-                    if (namestyle and namestyle != "western") or (namelang and namelang != "en"):
-                        contributor["native_lang"] = nm.get_text().strip().replace("\n"," ")
-                    else:
-                        if nm.find("surname"):
-                            contributor["surname"] = \
-                                nm.find("surname").get_text().strip().strip("\n")
-                        if nm.find("given-names"):
-                            contributor["given"] = \
-                                nm.find("given-names").get_text().strip().strip("\n")
+                    if name.find("surname"):
+                        contributor["surname"] = \
+                            name.find("surname").text
+                    if name.find("given-names"):
+                        contributor["given"] = \
+                            name.find("given-names").text
                 except Exception as err:
                     print("Failed to extract contributor name: %s" % err)
-
-            """
-            # alternative names suggest both english and native are present
-            native_name = ""
-            name_alt_list = c.find_all("name-alternatives")
-            for na in name_alt_list:
-                if na.find_all("name"):
-                    for nn in na.find_all("name"):
-                        name_style = na.get("name-style", "")
-                        if name_style != "western":
-                            native_name = nn.get_text().strip()
-                elif na.find_all("string-name"):
-                    print("oh, what you sayin",str(na.find_all("string-name")))
-                #if alt:
-                #    if alt.get("name-style", "") != "western":
-                #        native_name = alt.get_text().strip()
-                #elif name_alt_list:
-                #    print("glrbarfglmurg...", str(name_alt_list))
-                #    #if len(name_alt_list) == 1:
-                #    #else:
-                #    #    for nn in name_alt_list:
-            if native_name:
-                contributor["native_lang"] = native_name
-            """
+            if c.find("name-alternatives"):
+                alt = c.find("name-alternatives").find("string-name")
+                if alt:
+                    if alt.get("name-style", "") != "western":
+                        native_name = alt.get_text().strip()
+                    else:
+                        native_name = ""
+                else:
+                    native_name = c.find("name-alternatives").get_text().strip()
+                if native_name:
+                    contributor["native_lang"] = native_name
 
             # attributes
             if contrib_id:
                 for cid in contrib_id:
-                    if cid and cid.get("contrib-id-type", "") == "orcid":
-                        contributor["orcid"] = self._fix_orcid(cid.text)
+                    if cid:
+                        if "orcid" in cid.text.lower():                        
+                            contributor["orcid"] = self._fix_orcid(cid.text)
 
             # now the affils & correspondence
             affils = []
@@ -944,7 +876,7 @@ class JATSParser(BaseBeautifulSoupParser):
                     contrib_data = self._extract_contributors(cg.find_all("contrib"))
                     contrib_list.extend(contrib_data)
         return contrib_list
-
+                
     def parse(self, text, bsparser="lxml-xml"):
         """
         Parse JATS XML into standard JSON format
@@ -958,9 +890,6 @@ class JATSParser(BaseBeautifulSoupParser):
 
         document = d.article
         # front_meta = document.front
-        if document:
-            self.meta_lang = document.get("xml:lang", "en")
-
         try:
             front_meta = document.front
         except Exception as err:
