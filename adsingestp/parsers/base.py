@@ -123,7 +123,16 @@ class IngestBase(object):
         Converts parsed metadata dictionary into formal data model. Parsed metadata dictionary should be
         of the following format:
 
-        input_dict: {'abstract': string,
+        input_dict: {'abstract': [{'atext': string,
+                                   'language': string,
+                                   'datalinks': [{'title': string,
+                                                  'identifier': string,
+                                                  'location': string,
+                                                  'dataType': string,
+                                                  'comment': string}],
+                                   'footnotes': [{'id': string,
+                                                  'label': string,
+                                                  'text': string}]}]
                      'authors': [{'given': string,
                                   'middle': string,
                                   'surname': string,
@@ -169,15 +178,23 @@ class IngestBase(object):
                                           'id': string},
                              'pub-id': [{'Identifier': string,
                                          'attribute': string}]},
-                     'isbn': [{'type': string,
-                               'isbn_str': string}],
-                     'issn': [(pubtype_string, issn_string)],
+                     'isbn': [{'pubtype': string,
+                               'isbnString': string}],
+                     'issn': [{'pubtype':string,
+                               'issnString': string}],
                      'issue': string,
-                     'keywords': [{'string': string,
-                                   'system': string}],
-                     'lang_native': string,
+                     'keywords': [{'keyString': string,
+                                   'keySystem': string,
+                                   'keyID': string}],
+                     'language': string,
                      'numpages': string,
-                     'openAccess': {'open': bool},
+                     'openAccess': {'open': bool,
+                                    'license': string,
+                                    'licenseURL': string,
+                                    'preprint': string,
+                                    'startDate': string,
+                                    'endDate': string,
+                                    'embargoLength': string},
                      'page_first': string,
                      'page_last': string,
                      'page_range': string,
@@ -194,10 +211,18 @@ class IngestBase(object):
                      'series_id': string,
                      'series_id_description': string,
                      'sub_lang_native': string,
-                     'subtitle': string,
+                     'subtitle': [{'atext': string,
+                                   'language': string,
+                                   'footnotes': [{'id': string,
+                                                  'label': string,
+                                                  'text': string}]}]
                      'subtitle_native': string,
                      'subtitle_notes': [string],
-                     'title': string,
+                     'title': [{'atext': string,
+                                'language': string,
+                                'footnotes': [{'id': string,
+                                               'label': string,
+                                               'text': string}]}]
                      'title_native': string,
                      'title_notes': [string],
                      'volume': string
@@ -374,39 +399,32 @@ class IngestBase(object):
             for i in input_dict.get("contributors", [])
         ]
 
-        output["title"] = {
-            "textEnglish": input_dict.get("title", ""),
-            "textNative": input_dict.get("title_native", ""),
-            "langNative": input_dict.get("lang_native", ""),
-            "textNotes": input_dict.get("title_notes", []),
-        }
+        output["title"] = [
+            {"atext": input_dict.get("atext", ""),
+             "language": input_dict.get("language", ""),
+             "footnotes": input_dict.get("footnotes", {})
+            for i in input_dict.get("title")
+        ]
 
-        output["subtitle"] = {
-            "textEnglish": input_dict.get("subtitle", ""),
-            "textNative": input_dict.get("subtitle_native", ""),
-            "langNative": input_dict.get("sub_lang_native", ""),
-            "textNotes": input_dict.get("subtitle_notes", []),
-        }
+        output["subtitle"] = [
+            {"atext": input_dict.get("atext", ""),
+             "language": input_dict.get("language", ""),
+             "footnotes": input_dict.get("footnotes", {})
+            for i in input_dict.get("title")
+        ]
 
-        output["abstract"] = {
-            "textEnglish": input_dict.get(
-                "abstract", ""
-            ),  # TODO need to tweak for case of foreign language abstract
-            # "textNative": "XXX", # TODO
-            # "langNative": "XXX" # TODO
-        }
+        output["abstract"] = [
+            {"atext": i.get("atext",""), "language": i.get("language", ""),
+             "datalinks": i.get("datalinks", {}), "footnotes": i.get("footnotes", {})} 
+            for i in input_dict.get("abstract", [])
+        ]
 
         output["comments"] = [
             {"commentOrigin": i.get("origin", ""), "commentText": i.get("text", "")}
             for i in input_dict.get("comments", [])
         ]
 
-        # output["fulltext"] = {
-        #     "language": "XXX",
-        #     "body": "XXX"
-        # } # TODO this is from fulltext
-
-        # output["acknowledgements"] = "XXX" # TODO this is from fulltext
+        output["acknowledgements"] = input_dict.get("acknowledgements", "")
 
         if input_dict.get("references", None):
             if type(input_dict.get("references")) == list:

@@ -1,6 +1,6 @@
 [project]
 name = "adsingestp"
-version = "0.0.1"
+version = "7.7.7"
 description = "Curation parser library"
 authors = [
     { name = "Kelly Lockhart", email = "kelly.lockhart@cfa.harvard.edu"},
@@ -29,7 +29,7 @@ dependencies = [
     'nameparser==1.1.3',
     'ordered-set==4.1.0',
     'python-dateutil==2.8.1',
-    'adsingestschema @ git+https://github.com/seasidesparrow/ingest_data_model@v1.1.0x',
+    'adsingestschema @ git+https://github.com/seasidesparrow/ingest_data_model@v7.7.7',
     'validators==0.35.0',
 ]
 
@@ -41,16 +41,16 @@ Documentation = "https://adsingestp.readthedocs.io"
 
 [project.optional-dependencies]
 dev = [
-    'black==26.1.0',
+    'black==25.11.0',
     'flake8==7.3.0',
-    'isort==7.0.0',
-    'pytest==9.0.2',
-    'pyupgrade==3.21.2',
+    'isort==6.1.0',
+    'pytest==8.4.2',
+    'pyupgrade==3.21.0',
     'pytest-mock==3.15.1',
-    'pre-commit==4.5.1',
-    'coveralls==7.13.4',
+    'pre-commit==4.3.0',
+    'coveralls==4.0.1',
     'mock==5.2.0',
-    'coverage==7.13.4',
+    'coverage==7.10.7',
     'pytest-cov==7.0.0',
     'pytest-cookies==0.7.0',
     'semantic-release==0.1.0',
