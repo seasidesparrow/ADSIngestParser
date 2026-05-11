@@ -70,6 +70,9 @@ class IEEEParser(BaseBeautifulSoupParser):
                 self._detag(t, self.HTML_TAGSET["title"]).strip()
             )
         self.base_metadata["publication"] = title
+        # %X is removed in postprocessing; used for bibstem lookup
+        #self.base_metadata["comments"] = []
+        #self.base_metadata["comments"].append({"text": title})
 
         # Conference volume number
         if self.volumeinfo:
@@ -80,15 +83,20 @@ class IEEEParser(BaseBeautifulSoupParser):
 
         # Conferences don't have an issue number
 
-        # Conference abbreviation
+        """
+        # Conference abbreviation for creating bibstem
         self.base_metadata["comments"] = []
         ieeeabbrev = self.publicationinfo.find("ieeeabbrev").text or ""
         if ieeeabbrev:
-            cleanabbrev = re.sub(r"[^A-Za-z]", "", ieeeabbrev)
-            confabbrev = cleanabbrev[:4].ljust(4, '.')  # leftmost 4 chars, or pad if <4
-            self.base_metadata["comments"].append({"text": confabbrev})
+            cleanabbrev = re.sub(r"[^A-Za-z]", "", ieeeabbrev)  # delete non-alpha chars
+            if len(cleanabbrev) >= 4:  # rightmost 4 chars
+                bibstem = cleanabbrev[-4:]
+            else:
+                bibstem = cleanabbrev.ljust(4, '.')  # pad on the right if <4 chars
+            self.base_metadata["comments"].append({"text": bibstem})
         else:
             self.base_metadata["comments"].append({"text": "ieee."})
+        """
 
         # Conference location
         if self.publicationinfo.find("conflocation") is not None:
@@ -111,20 +119,33 @@ class IEEEParser(BaseBeautifulSoupParser):
             self.base_metadata["conf_date"] = confdate
 
         # Conference topics
-        # Use for %W
-        collections = []
-        for pubtopicset in self.publicationinfo.find_all("pubtopicalbrowseset"):
+        # These are the same as the browse topics in IEEE Xplore
+        # See: https://ieeexplore.ieee.org/browse/conferences/topic 
+        # Used to assign %W Collection
+        # The ingest data model does not contain a JSON object in which to pass the collection
+
+        # Pass all values of pubtopicalbrowse in comments
+        # %X is removed in postprocessing; used for bibstem lookup
+        self.base_metadata["comments"] = []
+        if self.publicationinfo.find("pubtopicalbrowseset") is not None:
+            pubtopicset = self.publicationinfo.find("pubtopicalbrowseset")
             for pubtopic in pubtopicset.find_all("pubtopicalbrowse"):
-                if pubtopic.get_text() == "Aerospace":
-                    collections.append("astronomy")
-                elif pubtopic.get_text() == "Geoscience":
-                    collections.append("earthscience")
-                else:
-                    collections.append("physics")  # Default for IEEE pubs is collection = physics
-        colls_uniq = list(set(collections))
-        # We don't yet have a JSON object in the ingest data model in which to pass the collection
-        #if colls_uniq:
-        #    self.base_metadata["collection"] = colls_uniq
+                topic = pubtopic.get_text(strip=True)
+                self.base_metadata["comments"].append({"text": topic})
+        '''
+        # TO DO: Implement this as a better method
+        # Pass topics as keywords and parse out in postprocessing
+        keywords = []
+        for topicset in self.publicationinfo.find_all("pubtopicalbrowseset"):
+            for topic in topicset.find_all("pubtopicalbrowse"):
+                if topic.string:
+                    keywords.append(
+                        {
+                            "system": "pubtopicalbrowse",
+                            "string": self._clean_output(topic.string.strip()),
+                        }
+                    )
+        '''
 
         # TO DO: append confDates & confLocation to %J
         if confdate:
@@ -299,6 +320,7 @@ class IEEEParser(BaseBeautifulSoupParser):
         # <pubtopicalbrowse> = topic browse categories in IEEE Xplore
         # NOTE: Some values of <pubtopicalbrowse> contain commas
         # How to deal with this in %K ?
+
         # Get all pub-level topics in <publicationinfo>
         for pubtopicset in self.publicationinfo.find_all("pubtopicalbrowseset"):
             for pubtopic in pubtopicset.find_all("pubtopicalbrowse"):
