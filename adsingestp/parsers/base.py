@@ -252,6 +252,12 @@ class IngestBase(object):
             ],
         }
 
+        # new decision tree for pubyear
+        versionOfRecordDate = ""
+        if input_dict.get("pubdate_other", []):
+            for o in input_dict["pubdate_other"]:
+                if o.get("type", "") == "version-of-record":
+                    versionOfRecordDate = o.get("date")[0:4]
         output["publication"] = {
             # "docType": "XXX",
             "pubName": input_dict.get("publication", ""),
@@ -263,15 +269,19 @@ class IngestBase(object):
             "publisher": input_dict.get("publisher", ""),
             "issueNum": input_dict.get("issue", ""),
             "volumeNum": input_dict.get("volume", ""),
-            "pubYear": input_dict["pubdate_print"][0:4]
-            if "pubdate_print" in input_dict
+            "pubYear": versionOfRecordDate
+            if versionOfRecordDate
             else (
-                input_dict["pubdate_electronic"][0:4]
-                if "pubdate_electronic" in input_dict
+                input_dict["pubdate_print"][0:4]
+                if "pubdate_print" in input_dict
                 else (
-                    input_dict.get("pubdate_other", {})[0].get("date", "")[0:4]
-                    if "pubdate_other" in input_dict
-                    else ""
+                    input_dict["pubdate_electronic"][0:4]
+                    if "pubdate_electronic" in input_dict
+                    else (
+                        input_dict.get("pubdate_other", {})[0].get("date", "")[0:4]
+                        if "pubdate_other" in input_dict
+                        else ""
+                    )
                 )
             ),
             "bookSeries": {
