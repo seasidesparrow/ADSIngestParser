@@ -914,10 +914,10 @@ class JATSParser(BaseBeautifulSoupParser):
                     revised.append(eddate)
                 elif date_type == "accepted":
                     self.base_metadata["edhist_acc"] = eddate
-                #special case: if "version-of-record" add to pubDate.otherDate
+                # special case: if "version-of-record" add to pubDate.otherDate
                 elif date_type == "version-of-record":
                     pd = {"type": date_type, "date": eddate}
-#self.base_metadata["pubdate_other"]
+                    # self.base_metadata["pubdate_other"]
                     if self.base_metadata.get("pubdate_other", []):
                         self.base_metadata["pubdate_other"].append(pd)
                     else:
@@ -1160,7 +1160,14 @@ class JATSParser(BaseBeautifulSoupParser):
             pub_format = d.get("publication-format", "")
             pub_type = d.get("pub-type", "")
             date_type = d.get("date-type", "")
-            accepted_date_types = ["pub", "", "first_release", "epub-ppub", "ppub-epub", "version-of-record"]
+            accepted_date_types = [
+                "pub",
+                "",
+                "first_release",
+                "epub-ppub",
+                "ppub-epub",
+                "version-of-record",
+            ]
             pubdate = self._get_date(d)
             if (
                 pub_format == "print"
@@ -1183,7 +1190,9 @@ class JATSParser(BaseBeautifulSoupParser):
                 # you need to check the next level to see if there's an
                 # embedded version of record date-type
                 if self.base_metadata.get("pubdate_other", []):
-                    self.base_metadata["pubdate_other"].append({"type": date_type, "date": pubdate})
+                    self.base_metadata["pubdate_other"].append(
+                        {"type": date_type, "date": pubdate}
+                    )
                 else:
                     self.base_metadata["pubdate_other"] = [{"type": date_type, "date": pubdate}]
             if pub_type == "open-access":
