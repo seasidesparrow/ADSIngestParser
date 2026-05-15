@@ -1032,9 +1032,13 @@ class JATSParser(BaseBeautifulSoupParser):
 
     def _parse_pub(self):
         journal = None
-        if self.journal_meta.find("journal-title-group") and self.journal_meta.find("journal-title-group").find("journal-title"):
+        if self.journal_meta.find("journal-title-group") and self.journal_meta.find(
+            "journal-title-group"
+        ).find("journal-title"):
             journal = self.journal_meta.find("journal-title-group").find("journal-title")
-        elif self.journal_meta.find("journal-title-group") and self.journal_meta.find("journal-title-group").find("abbrev-journal-title"):
+        elif self.journal_meta.find("journal-title-group") and self.journal_meta.find(
+            "journal-title-group"
+        ).find("abbrev-journal-title"):
             if self.journal_meta.find("journal-title-group").find(
                 "abbrev-journal-title", {"abbrev-type": "pubmed"}
             ):
@@ -1353,11 +1357,11 @@ class JATSParser(BaseBeautifulSoupParser):
         except Exception as err:
             raise XmlLoadException(err)
 
-        document = getattr(d, 'article', None) or getattr(d, 'conf-article', None)
+        document = getattr(d, "article", None) or getattr(d, "conf-article", None)
         if document is None:
             raise XmlLoadException("No <article> or <conf-article> element found")
 
-        front_meta = getattr(document, 'front', None) or getattr(document, 'conf-front', None)
+        front_meta = getattr(document, "front", None) or getattr(document, "conf-front", None)
         if front_meta is None:
             raise XmlLoadException("No <front> or <conf-front> element found")
 
@@ -1379,7 +1383,7 @@ class JATSParser(BaseBeautifulSoupParser):
             confm = front_meta.find("conf-meta")
             for child in list(confm.children):
                 self.journal_meta.append(child)
-            #self.journal_meta = front_meta.find("conf-meta")
+            # self.journal_meta = front_meta.find("conf-meta")
         if front_meta.find("conf-article-meta"):
             self.article_meta = front_meta.find("conf-article-meta")
 

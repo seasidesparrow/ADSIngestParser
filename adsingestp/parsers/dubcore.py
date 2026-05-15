@@ -17,7 +17,6 @@ class MultiDublinCoreParser(IngestBase):
     start_re = r"<record(?!-)[^>]*>"
     end_re = r"</record(?!-)[^>]*>"
 
-
     def parse(self, text, header=False):
         """
         Separate multi-record DublinCore XML document into individual XML documents
@@ -44,13 +43,11 @@ class DublinCoreParser(BaseBeautifulSoupParser):
         "remove_the": False,
     }
 
-
     def __init__(self):
         super(BaseBeautifulSoupParser, self).__init__()
         self.base_metadata = {}
         self.input_header = None
         self.input_metadata = None
-
 
     def _parse_ids(self):
         self.base_metadata["ids"] = {}
@@ -77,7 +74,6 @@ class DublinCoreParser(BaseBeautifulSoupParser):
         if doi:
             self.base_metadata["ids"]["doi"] = doi
 
-
     def _parse_title(self):
         title_array = self.input_metadata.find_all("dc:title")
         if title_array:
@@ -88,7 +84,6 @@ class DublinCoreParser(BaseBeautifulSoupParser):
                 self.base_metadata["title"] = self._clean_output(": ".join(title_array_text))
         else:
             raise MissingTitleException("No title found")
-
 
     def _parse_author(self):
         authors_out = []
@@ -120,13 +115,11 @@ class DublinCoreParser(BaseBeautifulSoupParser):
 
         self.base_metadata["authors"] = authors_out
 
-
     def _parse_pubdate(self):
         if self.input_metadata.find("dc:date"):
             self.base_metadata["pubdate_electronic"] = self.input_metadata.find(
                 "dc:date"
             ).get_text()
-
 
     def _parse_pub(self):
         if self.input_metadata.find("dc:source"):
@@ -134,7 +127,6 @@ class DublinCoreParser(BaseBeautifulSoupParser):
 
         if self.input_metadata.find("dc:publisher"):
             self.base_metadata["publisher"] = self.input_metadata.find("dc:publisher").get_text()
-
 
     def _parse_abstract(self):
         desc_array = self.input_metadata.find_all("dc:description")
@@ -150,7 +142,6 @@ class DublinCoreParser(BaseBeautifulSoupParser):
 
             self.base_metadata["comments"] = comments_out
 
-
     def _parse_keywords(self):
         keywords_array = self.input_metadata.find_all("dc:subject")
 
@@ -159,7 +150,6 @@ class DublinCoreParser(BaseBeautifulSoupParser):
             for k in keywords_array:
                 keywords_out.append({"string": k.get_text()})
             self.base_metadata["keywords"] = keywords_out
-
 
     def parse(self, text):
         """
@@ -177,23 +167,16 @@ class DublinCoreParser(BaseBeautifulSoupParser):
 
         dc_elem = None
         if d.find("record") and d.find("record").find("metadata"):
-            #self.input_metadata = d.find("record").find("metadata").find("oai_dc:dc")
+            # self.input_metadata = d.find("record").find("metadata").find("oai_dc:dc")
             metadata = d.find("record").find("metadata")
-            dc_elem = (
-                metadata.find("oai_dc:dc")
-                or metadata.find("oai-dc:dc")
-            )
+            dc_elem = metadata.find("oai_dc:dc") or metadata.find("oai-dc:dc")
 
         if dc_elem is None:
             raise NoSchemaException("Unknown record schema.")
 
         self.input_metadata = dc_elem
 
-        schema_spec = (
-            dc_elem.get("xmlns:oai_dc")
-            or dc_elem.get("xmlns:oai-dc")
-            or ""
-        )
+        schema_spec = dc_elem.get("xmlns:oai_dc") or dc_elem.get("xmlns:oai-dc") or ""
 
         if not schema_spec:
             raise NoSchemaException("Unknown record schema.")
