@@ -218,6 +218,7 @@ class IngestBase(object):
             "Elsevier",
             "IEEE",
             "Wiley",
+            "Springer",
         ]:
             raise WrongFormatException
 

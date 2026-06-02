@@ -1357,16 +1357,35 @@ class JATSParser(BaseBeautifulSoupParser):
         except Exception as err:
             raise XmlLoadException(err)
 
-        document = d.article
-        # front_meta = document.front
-        try:
-            front_meta = document.front
-        except Exception as err:
-            raise XmlLoadException("No front matter found, stopping: %s" % err)
+        document = getattr(d, "article", None) or getattr(d, "conf-article", None)
+        if document is None:
+            raise XmlLoadException("No <article> or <conf-article> element found")
+
+        front_meta = getattr(document, "front", None) or getattr(document, "conf-front", None)
+        if front_meta is None:
+            raise XmlLoadException("No <front> or <conf-front> element found")
+
         self.back_meta = document.back
 
-        self.article_meta = front_meta.find("article-meta")
-        self.journal_meta = front_meta.find("journal-meta")
+        # If a journal
+        if front_meta.find("journal-meta"):
+            self.journal_meta = front_meta.find("journal-meta")
+        if front_meta.find("article-meta"):
+            self.article_meta = front_meta.find("article-meta")
+
+        # If a conference
+        # IEEE JATS for conferences contains 2 container elements about the conference:
+        # <conf-proc-meta> about the proceedings
+        # <conf-meta> about the conference itself
+        if front_meta.find("conf-proc-meta"):
+            self.journal_meta = front_meta.find("conf-proc-meta")
+        if front_meta.find("conf-meta"):
+            confm = front_meta.find("conf-meta")
+            for child in list(confm.children):
+                self.journal_meta.append(child)
+            # self.journal_meta = front_meta.find("conf-meta")
+        if front_meta.find("conf-article-meta"):
+            self.article_meta = front_meta.find("conf-article-meta")
 
         # parse individual pieces
         self._parse_title_abstract()
