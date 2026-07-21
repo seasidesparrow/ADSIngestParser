@@ -13,6 +13,7 @@
         }
       ],
       "attrib": {
+        "corresp": true,
         "email": "zhou-xin@mail.nwpu.edu.cn"
       },
       "name": {
@@ -197,7 +198,7 @@
     "loadFormat": "JATS",
     "loadLocation": "",
     "loadType": "fromFile",
-    "parsedTime": "",
+    "parsedTime": "2026-07-15T11:34:05.478737Z",
     "recordOrigin": ""
   },
   "references": [

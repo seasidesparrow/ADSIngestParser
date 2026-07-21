@@ -6,10 +6,10 @@
     {
       "affiliation": [
         {
-          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an 710072, China"
+          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an, 710072, China"
         },
         {
-          "affPubRaw": "Xi'an Aeronautical University, Xi'an 710077, China"
+          "affPubRaw": "Xi'an Aeronautical University, Xi'an, 710077, China"
         }
       ],
       "attrib": {
@@ -24,7 +24,7 @@
     {
       "affiliation": [
         {
-          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an 710072, China"
+          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an, 710072, China"
         }
       ],
       "name": {
@@ -36,7 +36,7 @@
     {
       "affiliation": [
         {
-          "affPubRaw": "College of Art and Design, Shaanxi University of Science and Technology, Xi'an 710021, China"
+          "affPubRaw": "College of Art and Design, Shaanxi University of Science and Technology, Xi'an, 710021, China"
         }
       ],
       "name": {
@@ -48,7 +48,7 @@
     {
       "affiliation": [
         {
-          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an 710072, China"
+          "affPubRaw": "Shaanxi Engineering Laboratory for Transmissions and Controls, Northwestern Polytechnical University, Xi'an, 710072, China"
         }
       ],
       "name": {
@@ -60,7 +60,7 @@
     {
       "affiliation": [
         {
-          "affPubRaw": "Xi'an Children's Hospital, Xi'an 710003, China"
+          "affPubRaw": "Xi'an Children's Hospital, Xi'an, 710003, China"
         }
       ],
       "name": {
@@ -197,7 +197,7 @@
     "loadFormat": "JATS",
     "loadLocation": "",
     "loadType": "fromFile",
-    "parsedTime": "",
+    "parsedTime": "2026-07-15T11:48:20.344527Z",
     "recordOrigin": ""
   },
   "references": [
