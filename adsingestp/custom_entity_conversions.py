@@ -1,80 +1,60 @@
-# note: because you'll be modifying a valid json object, if you add a text
-#       double quote ("), you need to escape the slash and the slashed quote
-map_quotes = {
-    "bdquo": '\\"',
-    "rdquo": '\\"',
-    "ldquo": '\\"',
-    "bsquo": "'",
-    "rsquo": "'",
-    "lsquo": "'",
-    "sbquo": ",",
-    "OpenCurlyDoubleQuote": '\\"',
-    "CloseCurlyDoubleQuote": '\\"',
-    "DiacriticalAcute": "'",
-    "OpenCurlySingleQuote": "'",
-    "CloseCurlySingleQuote": "'",
-    "#8218": "'",
-}
-
-map_spaces = {
-    "nbsp": " ",
-    "zwnj": " ",
-    "zwj": " ",
-    "NonBreakingSpace": " ",
-    "ZeroWidthSpace": " ",
-}
-
-map_ligatures = {
+map_char = {
+    "THORN": "Th",
+    "ETH": "D",
+    "thorn": "th",
+    "eth": "d",
     "aelig": "ae",
     "AElig": "AE",
     "oelig": "oe",
     "OElig": "OE",
-    "filig": "fi",
-    "fflig": "ff",
-    "fllig": "fl",
-    "ffilig": "ffi",
-    "ffllig": "ffl",
+    "#64256": "ff",
+    "#64257": "fi",
+    "#64258": "fl",
+    "#64259": "ffi",
+    "#64260": "ffl",
 }
 
-map_other = {
-    "hyphen": "-",
-    "minus": "-",
-    "endash": "--",
+map_pnct = {
+    "nbsp": " ",
+    "zwj": " ",
+    "zwnj": " ",
+    "lsquo": "`",
+    "rsquo": "'",
+    "ldquo": "``",
+    "rdquo": "''",
+    "bdquo": "''",
+    "bsquo": "'",
+    "sbquo": "'",
+    "laquo": "<<",
+    "raquo": ">>",
+    "#8208": "--",
+    "#8209": "-",
+    "#8210": "--",
     "ndash": "--",
-    "emdash": "---",
     "mdash": "---",
-    "HorizontalLine": "---",
-    "#8208": "-",
-    "bull": "*",
-    "bullet": "*",
+    "#8213": "---",
     "hellip": "...",
-    "ldots": "...",
-    "GreaterEqual": ">=",
-    "#xff08": " (",
-    "#65288": " (",
-    "#xff09": ") ",
-    "#65289": ") ",
-    "THORN": "Th",
-    "ETH": "D",
-    "plusnm": "&plusmn;",  # this is a typo of plusmn
+    "lsaquo": "<",
+    "rsaquo": ">",
 }
 
-map_to_numeric = {
-    "TildeTilde": "&#x2248;",
-    "TildeEqual": "&#x2243;",
-    "HorizontalLine": "&#x2500;",
-    "GreaterEqual": "&#x2265;",
-    "sigmaf": "&#x03c2;",
-    "bot": "&#x22a5;",
-    "imath": "&#x0131;",
-    "times": "&#x00D7",
-    "IEcy": "&#x0415;",
-    "srarr": "&#x2192;",
-    "#120484": "&#x0131;",  # bad encoding of Turkish i-no-bar
+map_symb = {
+    "#8723": "-/+",
+    "#8592": "<--",
+    "#8594": "-->",
+    "#8596": "<-->",
+    "#8729": ".",
+    "#8764": "~",
+    "#8800": "!=",
+    "#8804": "<=",
+    "#8805": ">=",
 }
 
+map_typo = {
+    "#121484": "&#305;",
+}
 
-map_list = [map_quotes, map_spaces, map_ligatures, map_other, map_to_numeric]
+map_list = [map_char, map_pnct, map_symb, map_typo]
 
 ASCII_PUNCT_MAP = {}
 for m in map_list:

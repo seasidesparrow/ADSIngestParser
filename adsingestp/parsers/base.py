@@ -492,7 +492,7 @@ class IngestBase(object):
 
         # do a very quick custom entity conversion here:
         if type(output) == dict:
-            json_output = ConvertEntities()._convert_entities_to_ascii(json.dumps(output))
+            json_output = ConvertEntities().convert(json.dumps(output))
             output = json.loads(json_output)
 
         output_clean = self._clean_empty(output)
