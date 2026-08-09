@@ -8,6 +8,6 @@
     "recordOrigin": ""
   },
   "title": {
-    "textEnglish": "This is a \"test\" '...' because some metadata is afflicted by ligatures."
+    "textEnglish": "This is a ``test'' '...' because some metadata is afflicted by ligatures."
   }
 }

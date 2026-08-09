@@ -56,6 +56,6 @@ map_typo = {
 
 map_list = [map_char, map_pnct, map_symb, map_typo]
 
-ASCII_PUNCT_MAP = {}
+ASCII_CUST_MAP = {}
 for m in map_list:
-    ASCII_PUNCT_MAP.update(m)
+    ASCII_CUST_MAP.update(m)

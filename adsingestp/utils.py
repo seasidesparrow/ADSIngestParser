@@ -7,7 +7,7 @@ import re
 import nameparser
 
 from html.entities import codepoint2name
-import adsingestp.custom_entity_conversions as conv
+from adsingestp.custom_entity_conversions import *
 from adsingestp.ingest_exceptions import AuthorParserException
 
 logger = logging.getLogger(__name__)
@@ -432,8 +432,8 @@ class ConvertEntities(object):
             name = match.group(1)
 
             # If it's in our ASCII conversion map, convert it
-            if name in conv:
-                return conv[name]
+            if name in ASCII_CUST_MAP:
+                return ASCII_CUST_MAP[name]
 
             # Otherwise leave unchanged
             return match.group(0)
@@ -471,11 +471,11 @@ class ConvertEntities(object):
             # Preserve ASCII
             if cp < 128:
                 if ch == '&':
-                    out.append('&amp;')
+                    out.append('&')
                 elif ch == '<':
-                    out.append('&lt;')
+                    out.append('<')
                 elif ch == '>':
-                    out.append('&gt;')
+                    out.append('>')
                 else:
                     out.append(ch)
                 continue
@@ -539,9 +539,9 @@ class ConvertEntities(object):
 
         return ''.join(out)
 
-    def convert(self, text):
+    def convert(self, input_text):
         try:
-            new_text = self._convert_html5_to_html4(text)
+            new_text = self._convert_html5_to_html4(input_text)
             new_text = self._convert_entities_to_ascii(new_text)
         except Exception as err:
             raise Exception("Entity conversion failed: %s" % err)
