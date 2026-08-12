@@ -26,6 +26,7 @@ class TestJATS(unittest.TestCase):
             "jats_nature_41467_2023_Article_40261_nlm",
             "jats_nature_natsd_12_7375",
             "jats_nature_natas_tmp",
+            "jats_natur_version_of_record",
             "jats_sci_376_521",
             "jats_spie_jmnmm_1.JMM.21.4.041407",
             "jats_spie_spie_12.2663387",
