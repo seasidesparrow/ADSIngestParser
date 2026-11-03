@@ -75,7 +75,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 month = month_raw
             else:
                 month_name = month_raw[0:3].lower()
-                month = utils.MONTH_TO_NUMBER[month_name]
+                month = utils.MONTH_TO_NUMBER.get(month_name, "")
         else:
             month = ""
         pubdate = pubdate + "-" + self._add_leading_zeroes(2, month)
