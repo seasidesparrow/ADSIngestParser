@@ -195,6 +195,6 @@ class CopernicusParser(BaseBeautifulSoupParser):
 
         self.base_metadata = self._entity_convert(self.base_metadata)
 
-        output = self.format(self.base_metadata, format="OtherXML")
+        output = self.format(self.base_metadata, format="Copernicus")
 
         return output

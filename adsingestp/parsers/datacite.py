@@ -25,7 +25,7 @@ class DataciteParser(BaseBeautifulSoupParser):
         "Audiovisual": "misc",
         "Collection": "misc",
         "DataPaper": "misc",
-        "Dataset": "misc",
+        "Dataset": "dataset",
         "Event": "misc",
         "Image": "misc",
         "InteractiveResource": "misc",

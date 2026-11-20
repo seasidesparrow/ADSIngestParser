@@ -660,7 +660,7 @@
   },
   "recordData": {
     "createdTime": "",
-    "loadFormat": "OtherXML",
+    "loadFormat": "Copernicus",
     "loadLocation": "",
     "loadType": "fromFile",
     "parsedTime": "",

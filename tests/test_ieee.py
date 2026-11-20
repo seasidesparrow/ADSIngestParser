@@ -11,8 +11,6 @@ TIMESTAMP_FMT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
 
 class TestIEEE(unittest.TestCase):
-    maxDiff = None
-
     def setUp(self):
         stubdata_dir = os.path.join(os.path.dirname(__file__), "stubdata/")
         self.inputdir = os.path.join(stubdata_dir, "input")
@@ -20,8 +18,10 @@ class TestIEEE(unittest.TestCase):
 
     def test_ieee(self):
         filenames = [
-            "ieee_example_1",
-            "ieee_example_2",
+            "ieee_conf1",
+            "ieee_conf2",
+            "ieee_conf3",
+            "ieee_conf4",
         ]
         for f in filenames:
             test_infile = os.path.join(self.inputdir, f + ".xml")
@@ -52,4 +52,5 @@ class TestIEEE(unittest.TestCase):
             self.assertTrue(abs(time_difference) < datetime.timedelta(seconds=10))
             parsed["recordData"]["parsedTime"] = ""
 
+            self.maxDiff = None
             self.assertEqual(parsed, output_data)

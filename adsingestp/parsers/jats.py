@@ -348,12 +348,15 @@ class JATSAffils(object):
                 # cycle through <contrib> to check if a <collab> is listed in the same level as an author an has multiple authors nested under it;
                 # targeted for Springer
 
-                if contrib.find("collab"):
+                if contrib.find("collab") or contrib.find("collab-name"):
                     # Springer collab info for nested authors is given as <institution>
-                    if contrib.find("collab").find("institution"):
-                        collab = contrib.find("collab").find("institution")
+                    if contrib.find("collab"):
+                        if contrib.find("collab").find("institution"):
+                            collab = contrib.find("collab").find("institution")
+                        else:
+                            collab = contrib.find("collab")
                     else:
-                        collab = contrib.find("collab")
+                        collab = contrib.find("collab-name")
 
                     # This is checking if a collaboration is listed as an author
                     if collab:
@@ -378,6 +381,8 @@ class JATSAffils(object):
                             "rid": None,
                             "surname": "",
                             "given": "",
+                            "prefix": "",
+                            "suffix": "",
                             "native_lang": "",
                             "orcid": "",
                         }
@@ -466,6 +471,8 @@ class JATSAffils(object):
                             "rid": None,
                             "surname": "",
                             "given": "",
+                            "prefix": "",
+                            "suffix": "",
                             "native_lang": "",
                             "orcid": "",
                         }
@@ -491,15 +498,37 @@ class JATSAffils(object):
                 else:
                     given = ""
 
+                if contrib.find("name") and contrib.find("name").find("suffix"):
+                    suffix = contrib.find("name").find("suffix").get_text()
+                elif contrib.find("string-name") and contrib.find("string-name").find("suffix"):
+                    suffix = contrib.find("string-name").find("suffix").get_text()
+                else:
+                    suffix = ""
+
+                if contrib.find("name") and contrib.find("name").find("prefix"):
+                    prefix = contrib.find("name").find("prefix").get_text()
+                elif contrib.find("string-name") and contrib.find("string-name").find("prefix"):
+                    prefix = contrib.find("string-name").find("prefix").get_text()
+                else:
+                    prefix = ""
+
                 # get native language author name
                 if contrib.find("name-alternatives"):
                     if contrib.find("name-alternatives").find("string-name"):
-                        native_lang = (
+                        if (
                             contrib.find("name-alternatives")
                             .find("string-name")
-                            .get_text()
-                            .strip()
-                        )
+                            .get("name-style", "")
+                            != "western"
+                        ):
+                            native_lang = (
+                                contrib.find("name-alternatives")
+                                .find("string-name")
+                                .get_text()
+                                .strip()
+                            )
+                        else:
+                            native_lang = ""
                     else:
                         native_lang = contrib.find("name-alternatives").get_text().strip()
                 else:
@@ -578,7 +607,10 @@ class JATSAffils(object):
                 # here in case that changes to allow more than one
                 if orcid:
                     orcid_out = self._fix_orcid(orcid)
-                    orcid_out = orcid_out[0]
+                    if orcid_out:
+                        orcid_out = orcid_out[0]
+                    else:
+                        orcid_out = ""
                 else:
                     orcid_out = ""
 
@@ -586,6 +618,8 @@ class JATSAffils(object):
                 auth["corresp"] = l_correspondent
                 auth["surname"] = surname
                 auth["given"] = given
+                auth["suffix"] = suffix
+                auth["prefix"] = prefix
                 auth["native_lang"] = native_lang
                 auth["aff"] = aff_text
                 auth["affid"] = aff_extids
@@ -601,7 +635,7 @@ class JATSAffils(object):
                         auth["collab"] = collab_name
 
                     # Check if author is a duplicate of a collaboration
-                    if auth["surname"] == "" and auth["collab"]:
+                    if auth.get("surname", "") == "" and auth.get("collab", ""):
                         # delete email and correspondence info for collabs
                         auth["email"] = []
                         auth["xemail"] = []
@@ -757,7 +791,7 @@ class JATSParser(BaseBeautifulSoupParser):
                 month = month_raw
             else:
                 month_name = month_raw[0:3].lower()
-                month = utils.MONTH_TO_NUMBER[month_name]
+                month = utils.MONTH_TO_NUMBER.get(month_name, 0)
 
             if int(month) < 10 and len(str(month)) < 2:
                 month = "0" + str(int(month))
@@ -915,6 +949,14 @@ class JATSParser(BaseBeautifulSoupParser):
                     revised.append(eddate)
                 elif date_type == "accepted":
                     self.base_metadata["edhist_acc"] = eddate
+                # special case: if "version-of-record" add to pubDate.otherDate
+                elif date_type == "version-of-record":
+                    pd = {"type": date_type, "date": eddate}
+                    # self.base_metadata["pubdate_other"]
+                    if self.base_metadata.get("pubdate_other", []):
+                        self.base_metadata["pubdate_other"].append(pd)
+                    else:
+                        self.base_metadata["pubdate_other"] = [pd]
                 else:
                     logger.info("Editorial history date type (%s) not recognized.", date_type)
 
@@ -1149,29 +1191,45 @@ class JATSParser(BaseBeautifulSoupParser):
         pub_dates = self.article_meta.find_all("pub-date")
 
         for d in pub_dates:
+            d = d.extract()
             pub_format = d.get("publication-format", "")
             pub_type = d.get("pub-type", "")
             date_type = d.get("date-type", "")
-            accepted_date_types = ["pub", "", "first_release"]
+            accepted_date_types = [
+                "pub",
+                "",
+                "first_release",
+                "epub-ppub",
+                "ppub-epub",
+                "version-of-record",
+            ]
             pubdate = self._get_date(d)
             if (
                 pub_format == "print"
                 or pub_type == "ppub"
                 or pub_type == "cover"
                 or (pub_type == "" and pub_format == "")
-            ) and (date_type == "pub" or date_type == ""):
+            ) and (date_type == "pub" or date_type == "" or date_type == "version-of-record"):
                 self.base_metadata["pubdate_print"] = pubdate
 
             if (
                 pub_format == "electronic"
                 or pub_type == "epub"
+                or pub_type == "epub-ppub"
+                or pub_type == "ppub-epub"
                 or (pub_type == "" and pub_format == "")
             ) and (date_type in accepted_date_types):
                 self.base_metadata["pubdate_electronic"] = pubdate
 
             elif (date_type != "pub") and (date_type != ""):
-                self.base_metadata["pubdate_other"] = [{"type": date_type, "date": pubdate}]
-
+                # you need to check the next level to see if there's an
+                # embedded version of record date-type
+                if self.base_metadata.get("pubdate_other", []):
+                    self.base_metadata["pubdate_other"].append(
+                        {"type": date_type, "date": pubdate}
+                    )
+                else:
+                    self.base_metadata["pubdate_other"] = [{"type": date_type, "date": pubdate}]
             if pub_type == "open-access":
                 self.base_metadata.setdefault("openAccess", {}).setdefault("open", True)
 
@@ -1334,16 +1392,35 @@ class JATSParser(BaseBeautifulSoupParser):
         except Exception as err:
             raise XmlLoadException(err)
 
-        document = d.article
-        # front_meta = document.front
-        try:
-            front_meta = document.front
-        except Exception as err:
-            raise XmlLoadException("No front matter found, stopping: %s" % err)
+        document = getattr(d, "article", None) or getattr(d, "conf-article", None)
+        if document is None:
+            raise XmlLoadException("No <article> or <conf-article> element found")
+
+        front_meta = getattr(document, "front", None) or getattr(document, "conf-front", None)
+        if front_meta is None:
+            raise XmlLoadException("No <front> or <conf-front> element found")
+
         self.back_meta = document.back
 
-        self.article_meta = front_meta.find("article-meta")
-        self.journal_meta = front_meta.find("journal-meta")
+        # If a journal
+        if front_meta.find("journal-meta"):
+            self.journal_meta = front_meta.find("journal-meta")
+        if front_meta.find("article-meta"):
+            self.article_meta = front_meta.find("article-meta")
+
+        # If a conference
+        # IEEE JATS for conferences contains 2 container elements about the conference:
+        # <conf-proc-meta> about the proceedings
+        # <conf-meta> about the conference itself
+        if front_meta.find("conf-proc-meta"):
+            self.journal_meta = front_meta.find("conf-proc-meta")
+        if front_meta.find("conf-meta"):
+            confm = front_meta.find("conf-meta")
+            for child in list(confm.children):
+                self.journal_meta.append(child)
+            # self.journal_meta = front_meta.find("conf-meta")
+        if front_meta.find("conf-article-meta"):
+            self.article_meta = front_meta.find("conf-article-meta")
 
         # parse individual pieces
         self._parse_title_abstract()
